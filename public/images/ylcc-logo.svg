@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <defs>
+    <linearGradient id="ylccWarmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#292524" />
+      <stop offset="100%" stop-color="#1C1917" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Emblem -->
+  <rect x="4" y="8" width="44" height="44" rx="12" fill="url(#ylccWarmGrad)" stroke="#E5DCCE" stroke-width="1.5" />
+  <path d="M16 20L26 33L36 20" stroke="#FAF7F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M26 33V42" stroke="#FAF7F2" stroke-width="3" stroke-linecap="round" />
+  <circle cx="37" cy="18" r="3.5" fill="url(#goldAccent)" />
+
+  <!-- Typography -->
+  <text x="60" y="34" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#1C1917" letter-spacing="-0.03em">
+    YLCC
+  </text>
+  <text x="60" y="47" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#78716C" letter-spacing="0.12em">
+    INSTITUTE OF EXCELLENCE
+  </text>
+</svg>

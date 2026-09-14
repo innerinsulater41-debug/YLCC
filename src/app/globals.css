@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 250 248 245; /* Soft Luxury Beige #FAF8F5 */
+    --foreground: 28 25 23;    /* Warm Deep Espresso #1C1917 */
+    --card: 255 255 255;       /* Pure White #FFFFFF */
+    --card-foreground: 28 25 23;
+    --border: 235 230 221;     /* Warm Sand Border #EBE6DD */
+    --muted: 245 242 235;      /* Light Sand Beige #F5F2EB */
+    --muted-foreground: 120 113 108; /* Warm Muted Charcoal #78716C */
+    --primary: 161 98 7;       /* Refined Warm Bronze / Amber #A16207 */
+    --primary-foreground: 255 255 255;
+    --accent: 180 83 9;        /* Warm Caramel #B45309 */
+  }
+
+  * {
+    border-color: #e8e2d8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #faf7f2; /* Warm Creamy Beige */
+    color: #1c1917;            /* Deep Warm Espresso Charcoal */
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Beige & White Luxury Aesthetic */
+.glass-nav {
+  background: rgba(250, 247, 242, 0.90);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-color: rgba(228, 220, 207, 0.8);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #1c1917 0%, #78350f 50%, #92400e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at 50% 0%, rgba(217, 196, 172, 0.35) 0%, rgba(250, 247, 242, 0) 70%), #faf7f2;
+}
+
+.card-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(78, 60, 40, 0.08), 0 4px 12px -2px rgba(78, 60, 40, 0.03);
+}
+
+/* Custom Smooth Warm Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f2eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6ccbf;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8ab9a;
 }

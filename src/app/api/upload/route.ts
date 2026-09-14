@@ -1,114 +1,135 @@
-import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-import { getSupabaseAdminClient } from "@/lib/supabase";
-import { getCurrentUser } from "@/lib/auth/session";
+import { NextRequest, NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
+import { supabaseAdmin, isSupabaseConfigured } from '@/lib/supabase';
 
-// Allowed MIME types
-const ALLOWED_MIME_TYPES = new Set([
-  "image/jpeg",
-  "image/png",
-  "image/webp",
-  "image/svg+xml",
-  "image/gif",
-  "application/pdf",
-  "application/zip",
-  "application/x-zip-compressed",
-]);
-
-const MAX_FILE_SIZE = 25 * 1024 * 1024; // 25 MB
+const ALLOWED_EXTENSIONS = ['.pdf', '.xlsx', '.xls', '.docx', '.doc', '.pptx', '.ppt', '.zip', '.png', '.jpg', '.jpeg', '.webp'];
+const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
 
 export async function POST(req: NextRequest) {
   try {
-    // Note: Public admission forms might upload resumes/documents; admin uploads images/code
     const formData = await req.formData();
-    const file = formData.get("file") as File | null;
+    const file = formData.get('file') as File | null;
 
     if (!file) {
-      return NextResponse.json({ error: "No file provided" }, { status: 400 });
-    }
-
-    // Size validation
-    if (file.size > MAX_FILE_SIZE) {
       return NextResponse.json(
-        { error: "File size exceeds the 25MB maximum limit" },
+        { success: false, message: 'No file provided' },
         { status: 400 }
       );
     }
 
-    // MIME type validation
-    if (!ALLOWED_MIME_TYPES.has(file.type)) {
+    if (file.size > MAX_FILE_SIZE) {
+      return NextResponse.json(
+        { success: false, message: 'File exceeds 50MB maximum size limit' },
+        { status: 400 }
+      );
+    }
+
+    const originalName = file.name;
+    const ext = path.extname(originalName).toLowerCase();
+
+    if (!ALLOWED_EXTENSIONS.includes(ext)) {
       return NextResponse.json(
         {
-          error: `File type ${file.type} is not supported. Allowed formats: PNG, JPG, WebP, SVG, PDF, ZIP.`,
+          success: false,
+          message: `Unsupported file type "${ext}". Supported types: PDF, Excel, Word, PPT, ZIP, PNG, JPG.`,
         },
         { status: 400 }
       );
     }
 
+    // Generate unique sanitized filename
+    const timestamp = Date.now();
+    const randomSuffix = Math.random().toString(36).substring(2, 8);
+    const cleanBaseName = path
+      .basename(originalName, ext)
+      .replace(/[^a-zA-Z0-9_-]/g, '_')
+      .substring(0, 50);
+    const uniqueFileName = `${cleanBaseName}_${timestamp}_${randomSuffix}${ext}`;
+
     const buffer = Buffer.from(await file.arrayBuffer());
-    const rawExtension = path.extname(file.name).toLowerCase() || ".bin";
-    // Sanitize extension
-    const extension = rawExtension.replace(/[^a-z0-9.]/g, "");
-    const baseName = path
-      .basename(file.name, rawExtension)
-      .toLowerCase()
-      .replace(/[^a-z0-9-]/g, "-")
-      .slice(0, 30);
 
-    const uniqueFileName = `${baseName}-${Date.now()}-${Math.random().toString(36).substring(2, 8)}${extension}`;
-
-    // 1. Check if Supabase Storage is configured
-    const supabaseAdmin = getSupabaseAdminClient();
-    if (supabaseAdmin) {
+    // 1. Try Supabase Storage if configured
+    if (isSupabaseConfigured && supabaseAdmin) {
       try {
         const { data, error } = await supabaseAdmin.storage
-          .from("ylcc-assets")
-          .upload(`uploads/${uniqueFileName}`, buffer, {
-            contentType: file.type,
-            upsert: false,
+          .from('ylcc-files')
+          .upload(uniqueFileName, buffer, {
+            contentType: file.type || 'application/octet-stream',
+            upsert: true,
           });
 
         if (!error && data) {
           const { data: publicUrlData } = supabaseAdmin.storage
-            .from("ylcc-assets")
-            .getPublicUrl(`uploads/${uniqueFileName}`);
+            .from('ylcc-files')
+            .getPublicUrl(uniqueFileName);
+
+          const formattedSize =
+            file.size > 1024 * 1024
+              ? `${(file.size / (1024 * 1024)).toFixed(1)} MB`
+              : `${(file.size / 1024).toFixed(0)} KB`;
 
           return NextResponse.json({
             success: true,
             url: publicUrlData.publicUrl,
-            filename: uniqueFileName,
-            size: file.size,
-            mimeType: file.type,
+            name: originalName,
+            type: ext.replace('.', ''),
+            size: formattedSize,
+            storageEngine: 'supabase',
           });
         }
-      } catch (sbError) {
-        console.warn("Supabase upload skipped or failed, falling back to local storage:", sbError);
+      } catch (err) {
+        console.warn('Supabase storage upload failed, falling back to local storage:', err);
       }
     }
 
-    // 2. Fallback to local persistent storage in public/uploads
-    const uploadsDir = path.join(process.cwd(), "public", "uploads");
-    if (!fs.existsSync(uploadsDir)) {
-      fs.mkdirSync(uploadsDir, { recursive: true });
+    // 2. Local File System Fallback (Works 100% offline & out-of-the-box!)
+    try {
+      const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+      if (!fs.existsSync(uploadDir)) {
+        fs.mkdirSync(uploadDir, { recursive: true });
+      }
+
+      const filePath = path.join(uploadDir, uniqueFileName);
+      fs.writeFileSync(filePath, buffer);
+
+      const publicUrl = `/uploads/${uniqueFileName}`;
+      const formattedSize =
+        file.size > 1024 * 1024
+          ? `${(file.size / (1024 * 1024)).toFixed(1)} MB`
+          : `${(file.size / 1024).toFixed(0)} KB`;
+
+      return NextResponse.json({
+        success: true,
+        url: publicUrl,
+        name: originalName,
+        type: ext.replace('.', ''),
+        size: formattedSize,
+        storageEngine: 'local',
+      });
+    } catch (fsErr) {
+      console.warn('Local filesystem write failed (read-only environment), falling back to data URI:', fsErr);
+      const mimeType = file.type || 'application/octet-stream';
+      const base64Data = buffer.toString('base64');
+      const dataUri = `data:${mimeType};base64,${base64Data}`;
+      const formattedSize =
+        file.size > 1024 * 1024
+          ? `${(file.size / (1024 * 1024)).toFixed(1)} MB`
+          : `${(file.size / 1024).toFixed(0)} KB`;
+
+      return NextResponse.json({
+        success: true,
+        url: dataUri,
+        name: originalName,
+        type: ext.replace('.', ''),
+        size: formattedSize,
+        storageEngine: 'data-uri',
+      });
     }
-
-    const filePath = path.join(uploadsDir, uniqueFileName);
-    fs.writeFileSync(filePath, buffer);
-
-    const publicUrl = `/uploads/${uniqueFileName}`;
-
-    return NextResponse.json({
-      success: true,
-      url: publicUrl,
-      filename: uniqueFileName,
-      size: file.size,
-      mimeType: file.type,
-    });
   } catch (error: any) {
-    console.error("Upload API error:", error);
+    console.error('File upload error:', error);
     return NextResponse.json(
-      { error: error?.message || "Failed to process file upload" },
+      { success: false, message: error.message || 'File upload failed' },
       { status: 500 }
     );
   }

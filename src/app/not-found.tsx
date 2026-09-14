@@ -1,40 +1,38 @@
-import Link from "next/link";
-import { GraduationCap, ArrowLeft, Home, BookOpen } from "lucide-react";
+import React from 'react';
+import Link from 'next/link';
+import { BookOpen, Home, ArrowLeft } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-[#faf7f2] flex flex-col items-center justify-center p-6 text-center">
-      <div className="w-16 h-16 rounded-3xl bg-stone-900 text-amber-400 flex items-center justify-center mb-6 shadow-md">
-        <GraduationCap className="w-9 h-9" />
-      </div>
+    <div className="min-h-screen flex items-center justify-center bg-[#FAF7F0] px-4 py-20">
+      <div className="max-w-md w-full bg-white rounded-2xl border border-[#E2D7C3] p-8 sm:p-10 text-center shadow-lg space-y-6">
+        <div className="w-16 h-16 rounded-2xl bg-[#ECE4D4] text-[#8C6527] flex items-center justify-center mx-auto">
+          <span className="font-serif text-2xl font-bold">404</span>
+        </div>
 
-      <span className="text-sm font-bold uppercase tracking-widest text-amber-800">
-        404 • Page Not Found
-      </span>
+        <div className="space-y-2">
+          <h1 className="text-2xl font-serif font-bold text-[#192538]">Page Not Found</h1>
+          <p className="text-xs text-[#57534E] leading-relaxed">
+            The accounting ledger or page you are looking for has been moved, archived, or does not exist.
+          </p>
+        </div>
 
-      <h1 className="text-4xl sm:text-5xl font-black text-stone-900 mt-2 tracking-tight">
-        The Page You Are Looking For Does Not Exist
-      </h1>
-
-      <p className="text-stone-600 text-sm max-w-md mt-4 leading-relaxed">
-        The link you followed may have been updated, moved, or retired. Explore our active programs or return to the campus homepage.
-      </p>
-
-      <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-stone-900 text-amber-50 hover:bg-stone-800 font-bold text-xs uppercase tracking-wider transition-colors"
-        >
-          <Home className="w-4 h-4 text-amber-400" />
-          <span>Return Home</span>
-        </Link>
-        <Link
-          href="/courses"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-stone-300 text-stone-700 hover:bg-stone-100 font-semibold text-xs transition-colors"
-        >
-          <BookOpen className="w-4 h-4 text-amber-800" />
-          <span>Browse Programs</span>
-        </Link>
+        <div className="pt-2 flex flex-col gap-2.5">
+          <Link
+            href="/"
+            className="w-full bg-[#8C6527] hover:bg-[#74511D] text-white py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-colors shadow-xs"
+          >
+            <Home className="w-4 h-4" />
+            <span>Return to Homepage</span>
+          </Link>
+          <Link
+            href="/programs"
+            className="w-full bg-[#FAF7F0] hover:bg-[#ECE4D4] text-[#192538] border border-[#D4C5AD] py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
+          >
+            <BookOpen className="w-4 h-4 text-[#8C6527]" />
+            <span>Explore Training Programs</span>
+          </Link>
+        </div>
       </div>
     </div>
   );

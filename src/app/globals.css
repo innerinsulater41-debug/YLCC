@@ -1,78 +1,119 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --background: 250 248 245; /* Soft Luxury Beige #FAF8F5 */
-    --foreground: 28 25 23;    /* Warm Deep Espresso #1C1917 */
-    --card: 255 255 255;       /* Pure White #FFFFFF */
-    --card-foreground: 28 25 23;
-    --border: 235 230 221;     /* Warm Sand Border #EBE6DD */
-    --muted: 245 242 235;      /* Light Sand Beige #F5F2EB */
-    --muted-foreground: 120 113 108; /* Warm Muted Charcoal #78716C */
-    --primary: 161 98 7;       /* Refined Warm Bronze / Amber #A16207 */
-    --primary-foreground: 255 255 255;
-    --accent: 180 83 9;        /* Warm Caramel #B45309 */
-  }
+:root {
+  /* Cream & Beige Design System */
+  --cream-50: #FDFCF8;
+  --cream-100: #FAF7F0;
+  --cream-200: #F5EFEB;
+  --cream-300: #EFE8DD;
+  
+  --beige-100: #ECE4D4;
+  --beige-200: #E2D7C3;
+  --beige-300: #D4C5AD;
+  --beige-400: #C1AF93;
+  --beige-500: #A89577;
+  
+  --bronze-600: #8C6527;
+  --bronze-700: #74511D;
+  --bronze-800: #5C3F14;
+  
+  --navy-900: #192538;
+  --navy-950: #0F172A;
+  
+  --charcoal-900: #1C1917;
+  --charcoal-800: #292524;
+  --charcoal-700: #44403C;
+  --charcoal-600: #57534E;
+  
+  --forest-800: #1B4332;
+  --forest-700: #2D6A4F;
 
-  * {
-    border-color: #e8e2d8;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: #faf7f2; /* Warm Creamy Beige */
-    color: #1c1917;            /* Deep Warm Espresso Charcoal */
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  --background: #FAF7F0;
+  --foreground: #1C1917;
+  --card: #FFFFFF;
+  --card-foreground: #1C1917;
+  --border: #E5DCCB;
 }
 
-/* Custom Beige & White Luxury Aesthetic */
-.glass-nav {
-  background: rgba(250, 247, 242, 0.90);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-color: rgba(228, 220, 207, 0.8);
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #1c1917 0%, #78350f 50%, #92400e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Custom Utilities for Cream & Beige Theme */
+.bg-cream-canvas {
+  background-color: #FAF7F0;
 }
 
-.gradient-hero {
-  background: radial-gradient(circle at 50% 0%, rgba(217, 196, 172, 0.35) 0%, rgba(250, 247, 242, 0) 70%), #faf7f2;
+.bg-cream-surface {
+  background-color: #FDFCF8;
 }
 
-.card-hover {
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+.bg-beige-subtle {
+  background-color: #F3ECE0;
 }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 32px -8px rgba(78, 60, 40, 0.08), 0 4px 12px -2px rgba(78, 60, 40, 0.03);
+.bg-beige-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5DCCB;
 }
 
-/* Custom Smooth Warm Scrollbar */
+.border-beige-light {
+  border-color: #E8DFC8;
+}
+
+.border-beige-medium {
+  border-color: #D9CDB7;
+}
+
+.text-bronze-accent {
+  color: #8C6527;
+}
+
+.bg-bronze-accent {
+  background-color: #8C6527;
+}
+
+.hover\:bg-bronze-dark:hover {
+  background-color: #74511D;
+}
+
+.text-navy-corp {
+  color: #192538;
+}
+
+.bg-navy-corp {
+  background-color: #192538;
+}
+
+/* Financial Ledger Pattern */
+.ledger-grid {
+  background-image: linear-gradient(to right, rgba(140, 101, 39, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(140, 101, 39, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.subtle-paper-grain {
+  background-color: #FAF7F0;
+  background-image: radial-gradient(rgba(140, 101, 39, 0.08) 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #f5f2eb;
+  background: #FAF7F0;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #d6ccbf;
-  border-radius: 9999px;
+  background: #D4C5AD;
+  border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8ab9a;
+  background: #A89577;
 }

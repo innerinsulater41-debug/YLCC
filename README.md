@@ -1,218 +1,115 @@
-# 🏛️ YLCC (Youth Leadership & Career Campus)
-### *Premier Higher Technical Education & Leadership Institute — Bengaluru, India*
+# YLCC — Commerce & Professional Accounting Institute Web Platform
 
-A production-ready, full-stack web application and institutional Content Management System (CMS) designed for **YLCC (Youth Leadership & Career Campus)**, Bengaluru.
+A production-ready full-stack web application built for **YLCC (Yukti Ledger & Commerce Centre)**, a specialized commerce, accounting, taxation, banking, costing, and corporate Excel training institute.
 
-Built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, and a dual-tier data persistence layer (Automated Local JSON Store + Supabase PostgreSQL & Storage).
-
----
-
-## 🎨 Design Theme: Luxury Beige & White Aesthetic
-
-The application is styled with a warm, minimalist **Beige & White** palette tailored for modern academia and tech leadership:
-- **Canvas / Background**: Warm Creamy Beige (`#FAF7F2`)
-- **Cards & Surfaces**: Pure Elevated White (`#FFFFFF`)
-- **Borders & Dividers**: Warm Sand (`#E8E2D8`)
-- **Typography / Text**: Deep Espresso Charcoal (`#1C1917`) & Muted Warm Slate (`#78716C`)
-- **Highlights & Accents**: Refined Warm Bronze & Amber (`#A16207` / `#B45309`)
-- **Subtle Glassmorphism**: Translucent ivory navigation headers with backdrop blur (`.glass-nav`)
+> **Important Institutional Context:**  
+> YLCC is strictly a commerce and professional accounting training institute. It is **NOT** a technology or coding institute. The platform is grounded in real business documentation: sales billing, purchase registers, GST portals, TDS/TCS returns, commercial bank CC limits, corporate payroll, industrial costing, and Advanced Excel 365.
 
 ---
 
-## 🚀 Key Highlights & Architectural Features
+## 🎨 Design System: Cream & Beige Luxury
 
-### 1. 🎓 Dedicated Student Learning & Admissions Track
-- **Interactive Course Catalog (`/courses`)**: Live multi-criteria filtering by category (*Software Engineering, AI & Machine Learning, Cloud & DevOps, Data Science & Analytics, Product & Design*), mode (*In-Person, Online, Hybrid*), and level (*Beginner, Intermediate, Advanced*).
-- **Curriculum Deep Dive (`/courses/[slug]`)**: Week-by-week syllabus modules accordion, instructor pedigree, tools & technologies badges, fee breakdown with EMI options, and syllabus brochure download.
-- **Admission Application Engine (`/apply`)**: Multi-step validated application form with drag-and-drop resume upload (`.pdf`), batch selection, and database persistence.
-
-### 2. 💼 Dedicated Corporate & Business Consultation Track (`/business`)
-- **Corporate Upskilling & Enterprise Training**: Custom tech stack workshops for engineering teams.
-- **AI Architecture & Digital Advisory**: Strategic consulting by senior principal architects.
-- **Campus Hiring & Talent Pipeline**: Direct access to top-tier graduates and pre-screened developers.
-- **Interactive Consultation Booking**: Working inquiry form with budget range selection, company size selector, and administrative status tracking.
-
-### 3. 👤 User & Student Authentication Portal (`/login` & `/portal`)
-- **Student Sign In & Registration (`/login`)**: Role-based access with 1-click test fill button.
-- **Student Dashboard (`/portal`)**: Enrolled courses overview, live classroom links, syllabus milestone progress bars, capstone repository links, and 1-on-1 mentor booking scheduling.
-
-### 4. 💻 Capstone Projects Showcase with File Persistence (`/projects`)
-- **Filterable Project Portfolio (`/projects`)**: Filter by category (*Full-Stack Web, AI & Machine Learning, Mobile Application, Cloud Architecture, IoT*).
-- **Interactive Project Deep Dive (`/projects/[slug]`)**: Live demo link, GitHub source code repository link, verified PDF project report download, and downloadable ZIP source code package.
-
-### 5. 🛠️ Complete Institutional Admin CMS (`/admin`)
-Full administrative control with session protection and audit logging:
-| Admin Module | Path | Description |
-| :--- | :--- | :--- |
-| **Control Center** | `/admin` | Key metrics, admissions conversion, inquiries, quick actions, and audit logs |
-| **Projects Manager** | `/admin/projects` | Full CRUD for student capstones with cover photo, gallery, PDF, and ZIP uploads |
-| **Courses Manager** | `/admin/courses` | Course catalog, syllabus module editor, fee pricing, and seating capacity |
-| **Business Clients** | `/admin/consultations` | Corporate leads CRM with status workflows (*New, Contacted, Meeting Scheduled, Proposal Sent, Closed*) and counselor notes |
-| **Enquiries** | `/admin/enquiries` | General public inquiries with contact follow-up workflows |
-| **Applications** | `/admin/applications` | Review student admissions, verify uploaded resumes/documents, and accept/reject applicants |
-| **Faculty & Mentors** | `/admin/faculty` | Manage mentors, credentials, photos, expertise tags, and social profiles |
-| **Achievements** | `/admin/achievements` | Placement hall of fame, salaries, packages, and competition awards |
-| **Campus Gallery** | `/admin/gallery` | Photo albums of classrooms, labs, hackathons, and convocations with full-screen lightbox |
-| **Events & Calendar** | `/admin/events` | Schedule upcoming workshops, guest lectures, hackathons, and seat bookings |
-| **Testimonials** | `/admin/testimonials` | Moderate student reviews, star ratings, and video review URLs |
-| **FAQs** | `/admin/faqs` | Categorized accordion questions and answers |
-| **Statistics** | `/admin/stats` | Live editor for homepage milestone counter values and labels |
-| **Settings** | `/admin/settings` | Institutional identity, official contacts, announcement bar, hero section copy, and social links |
+The website is crafted with a bespoke **Cream & Beige** financial palette tailored for commerce graduates, accountants, and finance professionals:
+* **Backgrounds**: Ivory Cream (`#FAF7F0`), Alabaster Surface (`#FDFCF8`), Warm Beige (`#F3ECE0`)
+* **Cards & Ledger Borders**: Clean white cards with ledger hairline borders (`#E5DCCB`, `#D4C5AD`)
+* **Accents**: Polished Bronze Gold (`#8C6527`, `#74511D`) and Deep Corporate Navy (`#192538`)
+* **Typography**: Elegant serif headings paired with clean legible sans-serif for numbers, financial vouchers, and data tables.
 
 ---
 
-## 🔐 Credentials for Immediate Testing
+## 📚 Course Curriculum (Grounded in Authentic Course PDFs)
 
-### Administrative Access (`/admin/login`):
-- **Super Administrator**:
-  - Email: `admin@ylcc.edu.in`
-  - Password: `Admin@YLCC2026!`
-- **Content Editor**:
-  - Email: `editor@ylcc.edu.in`
-  - Password: `Editor@YLCC2026!`
-
-*(Click the **"Fill Admin Credentials"** button on the login screen for instant 1-click authentication!)*
-
-### Student / User Access (`/login`):
-- **Student User**:
-  - Email: `student@ylcc.edu.in`
-  - Password: `Student@YLCC2026!`
-
-*(Click the **"Fill Demo Student Credentials"** button on the login screen for instant 1-click authentication!)*
+### 8 Core Professional Programs
+1. **Accounts Operator Practical Training**: Live voucher entries, sales billing, purchase feeding, revenue vs capital expenditure, E-way bills, E-invoices, transportation entries, and party balance monitoring.
+2. **Accounts Manager Professional Program**: Supervision of daily entries, monitoring books of accounts, debtor collection cycles, supplier payment cycles, firm legal matters, sales team targets, item/brand/category stock reports, monthly internal accounting audits, and annual Income Tax audit preparation.
+3. **Banking Operations, CC Limits & CMA Preparation**: Cash Credit (CC) and Overdraft (OD) limit documentation, monthly Drawing Power (DP) maintenance, stock statements with margin deductions, and 12-page CMA data with projected balance sheets.
+4. **GST Practitioner Masterclass**: GST Act transaction entries, E-way bills, E-invoicing, monthly GSTR-1, ITC reconciliation (GSTR-2B vs Book Milan), monthly GSTR-3B tax offset, and annual GSTR-9 audit preparation.
+5. **TDS & TCS Practitioner Course**: Section-wise entries (194C, 194J, 194I, 194Q, 206C), Challan 281 tax portal e-payments, quarterly return filing (Form 24Q, 26Q, 27Q, 27EQ) via NSDL RPU/FVU utilities, and TRACES Form 16/16A certificate generation.
+6. **Corporate Payroll Management & Statutory Compliance**: CTC structuring, biometric shift logs, overtime rates, statutory bonus, gratuity liabilities, Labour Law compliance, monthly EPF Electronic Challan-cum-Return (ECR), and ESIC returns.
+7. **Cost Accounting & Industrial Inventory Control**: Perpetual inventory, negative stock alerts, automated purchase orders, manufacturing costing for own-brand products, builder site costing, government tender costing, thekedar road/bridge site costing, vendor contract costing (Britannia / Parle-G model), and job-worker material control.
+8. **Advanced Excel & Corporate Excel 365 Mastery**: 250+ formulas (XLOOKUP, INDEX/MATCH, FILTER, UNIQUE, SORTBY, LET, LAMBDA), 500+ spreadsheet troubleshooting scenarios, 250+ corporate interview challenges, Power Query (ETL), and automated MIS dashboards.
 
 ---
 
-## 📁 Repository Directory Structure
+## 🏢 The 16 Multi-Business Practical Projects Library
 
-```
-├── data/
-│   └── store.json               # Persistent local JSON datastore (auto-seeded)
-├── public/
-│   ├── images/
-│   │   └── ylcc-logo.svg        # Institutional vector logo
-│   └── uploads/                 # Local uploaded images, PDFs, and ZIP archives
-├── src/
-│   ├── app/
-│   │   ├── (public)/
-│   │   │   ├── about/           # About YLCC, mission, leadership, infrastructure
-│   │   │   ├── achievements/    # Placement hall of fame & awards
-│   │   │   ├── apply/           # Student admission application with resume upload
-│   │   │   ├── business/        # Corporate training & business consultation track
-│   │   │   ├── contact/         # Contact inquiries, campus map, phone & WhatsApp
-│   │   │   ├── courses/         # Course catalog & dynamic [slug] curriculum pages
-│   │   │   ├── events/          # Events calendar & dynamic [slug] registration
-│   │   │   ├── faculty/         # Faculty mentors & industry leaders
-│   │   │   ├── gallery/         # Campus photo albums with interactive lightbox
-│   │   │   ├── login/           # Student / User authentication portal
-│   │   │   ├── portal/          # Authenticated student dashboard
-│   │   │   ├── privacy/         # Privacy Policy
-│   │   │   ├── projects/        # Capstone project showcase & [slug] deep dive
-│   │   │   ├── refund/          # Fee Refund & Cancellation Policy
-│   │   │   ├── terms/           # Terms & Conditions
-│   │   │   ├── testimonials/    # Student reviews & video testimonials
-│   │   │   └── page.tsx         # Institutional Homepage
-│   │   ├── admin/
-│   │   │   ├── achievements/    # Placements & awards CMS
-│   │   │   ├── applications/    # Admission applications evaluator
-│   │   │   ├── consultations/   # Corporate client consultations CRM
-│   │   │   ├── courses/         # Course curriculum CMS
-│   │   │   ├── enquiries/       # Lead inquiries CMS
-│   │   │   ├── events/          # Hackathons & workshops CMS
-│   │   │   ├── faculty/         # Faculty mentors CMS
-│   │   │   ├── gallery/         # Campus photo albums CMS
-│   │   │   ├── login/           # Admin authentication
-│   │   │   ├── projects/        # Project showcase CMS with file upload
-│   │   │   ├── settings/        # Institutional contacts & hero copy CMS
-│   │   │   ├── stats/           # Homepage milestone metrics CMS
-│   │   │   ├── testimonials/    # Reviews moderator CMS
-│   │   │   └── page.tsx         # Admin Control Center overview
-│   │   ├── api/
-│   │   │   ├── achievements/    # Achievements REST endpoint
-│   │   │   ├── applications/    # Admission applications REST endpoint
-│   │   │   ├── auth/            # Admin & student session authentication
-│   │   │   ├── consultations/   # Business consultations REST endpoint
-│   │   │   ├── courses/         # Courses REST endpoint
-│   │   │   ├── enquiries/       # Enquiries REST endpoint
-│   │   │   ├── events/          # Events REST endpoint
-│   │   │   ├── faculty/         # Faculty REST endpoint
-│   │   │   ├── faqs/            # FAQs REST endpoint
-│   │   │   ├── gallery/         # Gallery albums REST endpoint
-│   │   │   ├── projects/        # Projects REST endpoint
-│   │   │   ├── settings/        # Institute settings REST endpoint
-│   │   │   ├── stats/           # Site statistics REST endpoint
-│   │   │   ├── testimonials/    # Testimonials REST endpoint
-│   │   │   └── upload/          # Multi-part file upload handler (images, PDFs, ZIPs)
-│   │   ├── globals.css          # Beige & White design system & custom scrollbars
-│   │   ├── layout.tsx           # Root layout with SEO metadata & OpenGraph
-│   │   ├── sitemap.ts           # Dynamic XML sitemap generator
-│   │   └── robots.ts            # Robots.txt handler
-│   ├── components/
-│   │   ├── admin/               # Admin sidebar, header, and metrics components
-│   │   ├── home/                # Homepage sections (Hero, Stats, Featured, Journey)
-│   │   ├── layout/              # Navbar, Footer, AnnouncementBar, PublicLayout
-│   │   └── ui/                  # BrandIcons (GitHub, LinkedIn, Twitter, YouTube)
-│   ├── lib/
-│   │   ├── auth/session.ts      # HMAC signed cookie session management
-│   │   ├── db/
-│   │   │   ├── initial-data.ts  # Rich seed data for instant realism
-│   │   │   └── store.ts         # Persistent Data Access Layer (JSON + Supabase)
-│   │   ├── supabase.ts          # Supabase client & fallback detector
-│   │   ├── utils.ts             # Currency formatter (INR), slugify, date formatting
-│   │   └── validations.ts       # Zod schemas for all models & form inputs
-│   └── types/
-│       └── index.ts             # Complete TypeScript interfaces
-└── supabase/
-    └── migrations/
-        └── 001_initial_schema.sql # PostgreSQL schema with indexes and RLS policies
-```
+Every student practices complete financial years across 16 authentic Indian industries:
+1. **Hospital Business Accounting & Patient Billing System** (IPD/OPD, Doctor 194J shares, TPA mediclaim reconciliation)
+2. **College Accounting & Student Fee Reconciliation System** (Installment fees, scholarship grants, hostel/mess ledgers)
+3. **Freight Logistics & Fleet Transport Management Accounting** (Trip sheets, Fastag, diesel cards, GTA RCM on freight)
+4. **Automobile & Electronics Service Centre Multi-Job Accounting** (Job Cards, spare parts inventory, OEM warranty claims)
+5. **Hotel & Hospitality Multi-Revenue Accounting** (Guest folios, night audit, restaurant POS, OTA commission 194O reconciliations)
+6. **FMCG Wholesale & Multi-Tier Distributor Network Accounting** (Primary vs secondary sales, manufacturer scheme claims, beat collections)
+7. **Comprehensive GST Business Practice Project** (B2B, B2C, SEZ, RCM, monthly GSTR-2B Milan and GSTR-3B offset)
+8. **Corporate TDS/TCS Multi-Section Compliance Project** (Withholding vouchers, RPU compilation, TRACES Form 16A generation)
+9. **Banking Cash Credit (CC) / OD Limit & CMA Proposal Project** (Drawing power verification, margin deductions, 12-page CMA report)
+10. **Multi-Department Corporate Payroll System** (120 employees, overtime, statutory bonus, gratuity, EPF ECR, ESIC portal)
+11. **Furniture Showroom Custom Product Manufacturing & Costing** (Bill of Materials, timber cutting wastage, carpenter piece-rates)
+12. **Architect & Interior Decorator Project Accounting** (Milestone billing, 3D renderer vendor TDS, Form 26AS tax credit tracking)
+13. **Real Estate Builder & Multi-Site Construction Costing** (Civil contractor RA bills, retention money, RERA 70% escrow accounts)
+14. **Job-Worker Inventory & Multi-Stage Processing Cost Control** (Rule 55 delivery challans, cutting loss, quarterly Form ITC-04)
+15. **Government Contractor (Thekedar) Road, Bridge & Bhavan Site Costing** (PWD tenders, measurement books, double TDS: 194C & GST-TDS Sec 51)
+16. **Multi-Branch & Multi-Chain Franchise Accounting** (Javed Habib model, inter-branch stock transfers, franchise royalty billing)
 
 ---
 
-## 🛠️ Getting Started Locally
+## ⚡ Architecture & Dual-Mode Persistence
 
-### 1. Prerequisites
-- Node.js (version 18.18 or newer; recommended v20+)
-- npm or pnpm or yarn
+1. **Zero-Config Local Fallback Engine**:
+   - Out of the box, the application operates using a resilient JSON-backed persistent store in `data/ylcc_database.json` and local file storage in `public/uploads/`.
+   - Seed data includes all 8 programs, 16 projects, faculty profiles, testimonials, FAQs, and settings.
+   - Any edits made through the Admin Portal immediately persist to disk across server restarts.
+2. **Supabase Production Engine**:
+   - Ready for PostgreSQL database and Supabase Storage.
+   - Full SQL migration script provided in `supabase/migrations/0001_initial_schema.sql` with complete Row Level Security (RLS) policies.
+   - Simply populate `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in `.env.local` to switch to Supabase.
 
-### 2. Installation
-Clone the repository and install dependencies:
+---
+
+## 🔐 Administrative Suite (`/admin`)
+
+Access the comprehensive admin suite at: **`http://localhost:3000/admin`**
+
+### Default Administrative Credentials
+* **Admin Email**: `admin@ylcccommerce.in`
+* **Admin Password**: `YLCCAdmin#2026!`
+
+### Admin Modules
+* **Dashboard Analytics**: KPI cards, Recharts admission track trends, and project industry distribution.
+* **Practical Projects Manager**: Upload new projects, attach multiple files (PDF, XLSX, DOCX, PPTX, ZIP), toggle Draft / Published status, edit descriptions, delete.
+* **Training Programs Manager**: Edit fee structures, seat allocations, batch schedules, and draft/published visibility.
+* **Student Enquiries**: Manage incoming student leads with status pipeline (`new`, `contacted`, `resolved`).
+* **Admission Applications**: Review complete student dossiers (DOB, qualification, commerce background, career goals, download attached documents) and save internal committee notes.
+* **Resources Repository**: Upload course brochures and practice formats, manage access tiers (`public`, `student`, `admin`).
+* **Faculty Directory**: Manage mentor profiles and expertise areas.
+* **Institute Settings**: Edit institute full name, tagline, address, phone, WhatsApp, email, and live website counter statistics.
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Installation
 ```bash
-git clone <repository-url>
-cd IDE
+# Clone or enter project directory
+cd /path/to/project
+
+# Install dependencies
 npm install
 ```
 
-### 3. Environment Setup
-A `.env.local` file is already created. For custom deployments, copy the example:
+### 2. Environment Setup
+The repository includes `.env.example` and `.env.local` pre-configured for local execution:
 ```bash
 cp .env.example .env.local
 ```
 
-### 4. Running the Development Server
+### 3. Run Development Server
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to explore the public institutional website, or navigate to [http://localhost:3000/admin](http://localhost:3000/admin) to manage content.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
----
-
-## 🗄️ Database & Persistence Architecture
-
-The platform is designed with a **Dual-Mode Data Access Layer**:
-
-1. **Local Mode (Zero Setup Required)**:
-   - All models automatically persist to `data/store.json`.
-   - File uploads (images, PDF documents, ZIP code archives) are stored in `public/uploads/`.
-   - Realistic seed data is populated on first load.
-2. **Supabase PostgreSQL & Cloud Storage (Production Ready)**:
-   - When `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are provided, the system seamlessly interfaces with Supabase.
-   - Run the provided SQL migration in `supabase/migrations/001_initial_schema.sql` to provision all PostgreSQL tables, indexes, and Row-Level Security (RLS) policies.
-
----
-
-## 🚀 Building for Production
-
-Compile and validate the production bundle:
+### 4. Build for Production
 ```bash
 npm run build
 npm run start
@@ -220,10 +117,24 @@ npm run start
 
 ---
 
-## 📍 Institute Information
-- **Name**: YLCC (Youth Leadership & Career Campus)
-- **Tagline**: Empowering Next-Gen Leaders & Engineering Champions
-- **Location**: 4th Block, 80 Feet Road, Koramangala, Bengaluru, Karnataka 560034, India
-- **Primary Contact**: +91 98765 43210
-- **WhatsApp**: +91 98765 43210
-- **Email**: contact@ylcc.edu.in / admissions@ylcc.edu.in
+## 🗄️ Supabase PostgreSQL Setup (Optional for Cloud Deployment)
+
+1. Create a project at [supabase.com](https://supabase.com).
+2. Go to the **SQL Editor** in your Supabase dashboard.
+3. Paste and run the complete migration script from `supabase/migrations/0001_initial_schema.sql`.
+4. In Supabase Storage, create a public bucket named `ylcc-files`.
+5. Add your project credentials to `.env.local`:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+   ```
+
+---
+
+## 🌐 Deploy to Vercel
+
+1. Push this repository to GitHub or GitLab.
+2. Import the project into [Vercel](https://vercel.com).
+3. Set the environment variables from `.env.local` in Vercel Project Settings.
+4. Deploy! Next.js 15+ App Router builds and deploys automatically.

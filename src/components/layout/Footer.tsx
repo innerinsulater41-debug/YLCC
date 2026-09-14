@@ -1,262 +1,287 @@
-"use client";
-
-import { useState } from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 import {
-  GraduationCap,
   MapPin,
   Phone,
   Mail,
   Clock,
-  ArrowRight,
-  CheckCircle2,
-  ExternalLink,
-  MessageSquare,
-  Shield,
-} from "lucide-react";
-import { InstituteSettings } from "@/types";
+  ArrowUpRight,
+  ShieldCheck,
+  Award,
+  BookOpen,
+  Lock,
+} from 'lucide-react';
+import { InstituteSettings } from '@/types';
 
 interface FooterProps {
   settings?: InstituteSettings;
 }
 
 export default function Footer({ settings }: FooterProps) {
-  const [newsletterEmail, setNewsletterEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
+  const currentYear = new Date().getFullYear();
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (newsletterEmail.trim()) {
-      setSubscribed(true);
-      setNewsletterEmail("");
-    }
-  };
-
-  const address = settings?.address || "YLCC Campus, 4th Block, 80 Feet Road, Koramangala, Bengaluru, Karnataka 560034, India";
-  const phone = settings?.phone || "+91 98765 43210";
-  const whatsapp = settings?.whatsapp || "+91 98765 43210";
-  const email = settings?.email || "contact@ylcc.edu.in";
-  const officeHours = settings?.officeHours || "Mon - Sat: 8:30 AM - 7:30 PM (IST)";
+  const phone = settings?.phone || '+91 98290 12345';
+  const email = settings?.email || 'admissions@ylcccommerce.in';
+  const address =
+    settings?.address ||
+    'YLCC Commerce Centre, 3rd Floor, Corporate Tower, Tonk Road, Jaipur, Rajasthan 302015, India';
+  const officeHours =
+    settings?.officeHours || 'Monday – Saturday: 8:30 AM – 7:30 PM (Sunday Closed)';
+  const fullForm = settings?.fullForm || 'Yukti Ledger & Commerce Centre';
 
   return (
-    <footer className="bg-[#171412] text-stone-300 pt-16 pb-12 border-t border-stone-800">
+    <footer className="bg-[#192538] text-[#E2D7C3] border-t-4 border-[#8C6527] pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-12 border-b border-stone-800">
-          {/* Col 1: Brand & Mission */}
-          <div className="lg:col-span-2 space-y-5">
-            <Link href="/" className="flex items-center gap-3 group inline-flex">
-              <div className="w-10 h-10 rounded-xl bg-stone-800 border border-stone-700 flex items-center justify-center text-amber-400 shadow-md">
-                <GraduationCap className="w-6 h-6" />
+        {/* Main 4-Column Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#2C3E5A]">
+          {/* Col 1: Institute Identity & Credentials */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-[#8C6527] text-white flex flex-col items-center justify-center font-serif shadow-sm">
+                <span className="text-lg font-bold leading-none">YL</span>
+                <span className="text-[8px] uppercase tracking-widest font-sans font-semibold">CC</span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-black tracking-tight text-white">
-                  {settings?.name || "YLCC"}
-                </span>
-                <span className="text-[10px] tracking-widest text-stone-400 font-semibold uppercase">
-                  {settings?.fullForm || "Youth Leadership & Career Campus"}
-                </span>
+              <div>
+                <h3 className="text-xl font-serif font-bold text-white tracking-tight">YLCC</h3>
+                <p className="text-xs text-[#C1AF93] font-medium">{fullForm}</p>
               </div>
-            </Link>
+            </div>
 
-            <p className="text-stone-400 text-sm leading-relaxed pr-4">
-              {settings?.tagline ||
-                "Empowering next-generation tech leaders, software architects, and AI pioneers through industry-immersive cohorts and production capstones."}
+            <p className="text-xs text-[#D4C5AD] leading-relaxed">
+              A premier commerce, accounting, and professional skills training institute. We bridge the gap
+              between textbook theory and actual corporate desk work through multi-business live accounting,
+              GST, TDS/TCS, Banking CC limits, and Advanced Excel 365.
             </p>
 
-            <div className="space-y-2.5 text-sm text-stone-400 pt-1">
+            <div className="pt-2 text-xs space-y-2 text-[#ECE4D4]">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-1" />
+                <MapPin className="w-4 h-4 text-[#C1AF93] shrink-0 mt-0.5" />
                 <span>{address}</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-amber-500 shrink-0" />
+                <Phone className="w-4 h-4 text-[#C1AF93] shrink-0" />
                 <a href={`tel:${phone}`} className="hover:text-white transition-colors">
                   {phone}
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-amber-500 shrink-0" />
+                <Mail className="w-4 h-4 text-[#C1AF93] shrink-0" />
                 <a href={`mailto:${email}`} className="hover:text-white transition-colors">
                   {email}
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-blue-400 shrink-0" />
+                <Clock className="w-4 h-4 text-[#C1AF93] shrink-0" />
                 <span>{officeHours}</span>
               </div>
             </div>
-
-            {settings?.mapEmbedUrl && (
-              <a
-                href={settings.mapEmbedUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 font-medium"
-              >
-                <span>View Campus on Google Maps</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-            )}
           </div>
 
-          {/* Col 2: Core Programs */}
+          {/* Col 2: Core Training Programs */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-sm tracking-wider uppercase">
-              Flagship Programs
-            </h3>
-            <ul className="space-y-2.5 text-sm">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-[#2C3E5A] pb-2">
+              Training Programs
+            </h4>
+            <ul className="space-y-2 text-xs text-[#D4C5AD]">
               <li>
                 <Link
-                  href="/courses/full-stack-software-engineering"
-                  className="hover:text-blue-400 transition-colors"
+                  href="/programs/accounts-operator"
+                  className="hover:text-white transition-colors flex items-center justify-between"
                 >
-                  Full-Stack Software Engineering
+                  <span>Accounts Operator (Live Entries)</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/courses/applied-generative-ai-and-machine-learning"
-                  className="hover:text-blue-400 transition-colors"
+                  href="/programs/accounts-manager"
+                  className="hover:text-white transition-colors flex items-center justify-between"
                 >
-                  Applied Generative AI & ML
+                  <span>Accounts Manager & Audit</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/courses/cloud-infrastructure-and-devops"
-                  className="hover:text-blue-400 transition-colors"
+                  href="/programs/banking-operations-credit-limits"
+                  className="hover:text-white transition-colors flex items-center justify-between"
                 >
-                  Cloud Architecture & DevOps
+                  <span>Banking CC Limits & CMA Data</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/courses/data-analytics-and-business-intelligence"
-                  className="hover:text-blue-400 transition-colors"
+                  href="/programs/gst-practitioner"
+                  className="hover:text-white transition-colors flex items-center justify-between"
                 >
-                  Data Analytics & PowerBI
+                  <span>GST Practitioner Masterclass</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/courses"
-                  className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 font-medium pt-1"
+                  href="/programs/tds-tcs-practitioner"
+                  className="hover:text-white transition-colors flex items-center justify-between"
                 >
-                  <span>Explore All Cohorts</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <span>TDS & TCS Practitioner Course</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/programs/corporate-payroll-management"
+                  className="hover:text-white transition-colors flex items-center justify-between"
+                >
+                  <span>Payroll Management & PF/ESIC</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/programs/cost-accounting-industrial-inventory"
+                  className="hover:text-white transition-colors flex items-center justify-between"
+                >
+                  <span>Cost Accounting & BOM Costing</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/advanced-excel"
+                  className="hover:text-white transition-colors flex items-center justify-between text-[#E8DEC8] font-semibold"
+                >
+                  <span>Corporate Excel 365 (250+ Formulas)</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-80" />
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Institute & Community */}
+          {/* Col 3: Practical Projects & Case Studies */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-sm tracking-wider uppercase">
-              Institute
-            </h3>
-            <ul className="space-y-2.5 text-sm">
-              <li>
-                <Link href="/about" className="hover:text-blue-400 transition-colors">
-                  About YLCC & Pedagogy
+            <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-[#2C3E5A] pb-2">
+              16 Practical Projects
+            </h4>
+            <div className="grid grid-cols-1 gap-1.5 text-xs text-[#D4C5AD]">
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Hospital Patient Billing System
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • College Accounting & Fees
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Freight Logistics & RCM on GTA
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Automobile Service Centre Jobs
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Hotel & Banquet Operations
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • FMCG Wholesale Beat Distributorship
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Real Estate Builder Site Costing
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Govt Thekedar (Roads & Bridges)
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Franchise Retail Chain (Javed Habib Model)
+              </Link>
+              <div className="pt-1">
+                <Link
+                  href="/projects"
+                  className="text-xs font-semibold text-[#C1AF93] hover:text-white flex items-center gap-1"
+                >
+                  <span>View all 16 business projects →</span>
                 </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-blue-400 transition-colors">
-                  Student Capstone Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/faculty" className="hover:text-blue-400 transition-colors">
-                  Distinguished Faculty
-                </Link>
-              </li>
-              <li>
-                <Link href="/achievements" className="hover:text-blue-400 transition-colors">
-                  Student Placements & Awards
-                </Link>
-              </li>
-              <li>
-                <Link href="/events" className="hover:text-blue-400 transition-colors">
-                  Workshops & Hackathons
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="hover:text-blue-400 transition-colors">
-                  Campus Life Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-blue-400 transition-colors">
-                  Contact Admissions Desk
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Col 4: Newsletter & Quick Connect */}
-          <div className="space-y-4">
-            <h3 className="text-white font-semibold text-sm tracking-wider uppercase">
-              Stay Connected
-            </h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Subscribe to YLCC Tech Briefing for monthly tech deep-dives, free open workshops, and early admissions access.
-            </p>
-
-            {subscribed ? (
-              <div className="flex items-center gap-2 p-3 rounded-xl bg-emerald-950/60 border border-emerald-800 text-emerald-300 text-xs">
-                <CheckCircle2 className="w-4 h-4 shrink-0" />
-                <span>Thank you! You are subscribed to updates.</span>
               </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="space-y-2">
-                <input
-                  type="email"
-                  value={newsletterEmail}
-                  onChange={(e) => setNewsletterEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  required
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-hidden focus:border-blue-500"
-                />
-                <button
-                  type="submit"
-                  className="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-wider uppercase transition-colors"
-                >
-                  Join Newsletter
-                </button>
-              </form>
-            )}
+            </div>
+          </div>
 
-            <div className="pt-2">
-              <a
-                href={`https://wa.me/${whatsapp.replace(/[^0-9]/g, "")}`}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-600/40 text-xs font-semibold w-full justify-center transition-colors"
-              >
-                <MessageSquare className="w-4 h-4" />
-                <span>WhatsApp Admissions Desk</span>
-              </a>
+          {/* Col 4: Quick Navigation & Admissions */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-[#2C3E5A] pb-2">
+              Admissions & Resources
+            </h4>
+            <ul className="space-y-2 text-xs text-[#D4C5AD]">
+              <li>
+                <Link href="/about" className="hover:text-white transition-colors">
+                  About YLCC & Our Philosophy
+                </Link>
+              </li>
+              <li>
+                <Link href="/faculty" className="hover:text-white transition-colors">
+                  Chartered Accountants & Faculty
+                </Link>
+              </li>
+              <li>
+                <Link href="/student-success" className="hover:text-white transition-colors">
+                  Student Success Stories
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources" className="hover:text-white transition-colors">
+                  Download Practice Files & Formats
+                </Link>
+              </li>
+              <li>
+                <Link href="/gallery" className="hover:text-white transition-colors">
+                  Accounting Lab & Workshop Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Contact & Campus Visit
+                </Link>
+              </li>
+              <li>
+                <Link href="/apply" className="hover:text-white transition-colors font-semibold text-[#E8DEC8]">
+                  Online Admission Application
+                </Link>
+              </li>
+            </ul>
+
+            <div className="bg-[#24334D] p-3 rounded-lg border border-[#3E5274] text-xs">
+              <span className="font-semibold text-white block mb-1">Commerce Notice</span>
+              <p className="text-[11px] text-[#C1AF93] leading-normal">
+                YLCC is strictly a commerce & professional accounting institute. We do not provide computer
+                science or coding education.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} {settings?.name || "YLCC"} (Youth Leadership & Career Campus). All rights reserved.</p>
-          
-          <div className="flex items-center gap-6">
-            <Link href="/privacy" className="hover:text-slate-400 transition-colors">
+        {/* Bottom Bar: Copyright & Legal */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A89577] gap-4">
+          <p>© {currentYear} YLCC — {fullForm}. All rights reserved.</p>
+
+          <div className="flex flex-wrap items-center gap-4 text-[11px]">
+            <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-slate-400 transition-colors">
+            <span>•</span>
+            <Link href="/terms" className="hover:text-white transition-colors">
               Terms & Conditions
             </Link>
-            <Link href="/refund" className="hover:text-slate-400 transition-colors">
+            <span>•</span>
+            <Link href="/refund-policy" className="hover:text-white transition-colors">
               Refund Policy
             </Link>
-            <Link href="/admin/login" className="hover:text-slate-400 transition-colors flex items-center gap-1">
-              <Shield className="w-3.5 h-3.5" />
-              <span>Admin</span>
+            <span>•</span>
+            <Link href="/disclaimer" className="hover:text-white transition-colors">
+              Disclaimer
+            </Link>
+            <span>•</span>
+            <Link
+              href="/admin/login"
+              className="hover:text-white transition-colors flex items-center gap-1 text-[#C1AF93]"
+            >
+              <Lock className="w-3 h-3" />
+              <span>Admin Login</span>
             </Link>
           </div>
         </div>

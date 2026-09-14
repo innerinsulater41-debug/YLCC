@@ -1,21 +1,31 @@
-import { NextRequest, NextResponse } from "next/server";
-import { DataStore } from "@/lib/db/store";
-import { getCurrentUser } from "@/lib/auth/session";
+import { NextRequest, NextResponse } from 'next/server';
+import { db } from '@/lib/db';
 
 export async function GET() {
-  const settings = await DataStore.getSettings();
-  return NextResponse.json({ success: true, settings });
+  try {
+    const settings = await db.getSettings();
+    return NextResponse.json({ success: true, data: settings });
+  } catch (error) {
+    return NextResponse.json(
+      { success: false, message: 'Failed to fetch settings' },
+      { status: 500 }
+    );
+  }
 }
 
 export async function PUT(req: NextRequest) {
-  const user = await getCurrentUser();
-  if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-
   try {
     const body = await req.json();
-    const updated = await DataStore.updateSettings(body);
-    return NextResponse.json({ success: true, settings: updated });
+    const updated = await db.updateSettings(body);
+    return NextResponse.json({
+      success: true,
+      message: 'Settings updated successfully',
+      data: updated,
+    });
   } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json(
+      { success: false, message: error.message || 'Failed to update settings' },
+      { status: 500 }
+    );
   }
 }

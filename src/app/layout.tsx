@@ -1,69 +1,56 @@
-import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const viewport: Viewport = {
-  themeColor: "#FAF7F2",
-  width: "device-width",
-  initialScale: 1,
-};
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ylcc.edu.in"),
   title: {
-    default: "YLCC | Youth Leadership & Career Campus - Premier Tech & Leadership Institute",
-    template: "%s | YLCC - Youth Leadership & Career Campus",
+    default: 'YLCC | Commerce, Accounting & Professional Skills Training Institute',
+    template: '%s | YLCC Commerce Institute',
   },
   description:
-    "YLCC is an elite engineering and leadership institute in Bengaluru, India. We offer production-focused cohorts in Full-Stack Software Engineering, Generative AI, Cloud Architecture, and Career Leadership.",
+    'Yukti Ledger & Commerce Centre (YLCC) offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through 16 multi-business projects in Jaipur.',
   keywords: [
-    "YLCC",
-    "Youth Leadership & Career Campus",
-    "Full-Stack Software Engineering",
-    "Generative AI Course",
-    "Machine Learning Institute",
-    "DevOps Cloud Training Bangalore",
-    "Tech Institute Koramangala",
-    "Coding Bootcamps India",
-    "Student Projects Showcase",
+    'YLCC',
+    'Commerce Institute',
+    'Accounting Course Jaipur',
+    'Practical GST Training',
+    'TDS TCS Course',
+    'Banking CC Limit Documentation',
+    'CMA Preparation',
+    'Corporate Payroll Training',
+    'Cost Accounting',
+    'Advanced Excel 365',
+    'Accounts Manager Training',
+    'Tally Prime Course',
   ],
-  authors: [{ name: "YLCC Faculty & Academic Council" }],
+  authors: [{ name: 'YLCC - Yukti Ledger & Commerce Centre' }],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   openGraph: {
-    title: "YLCC | Youth Leadership & Career Campus",
-    description: "Accelerate your software engineering and leadership future with real-world systems, industry mentors, and production capstones.",
-    url: "https://ylcc.edu.in",
-    siteName: "YLCC Campus",
-    locale: "en_US",
-    type: "website",
+    title: 'YLCC | Commerce & Professional Accounting Institute',
+    description:
+      'Master live day-to-day accounting, taxation, banking documentation, and Advanced Excel through 16 multi-business practical projects.',
+    url: 'https://ylcccommerce.in',
+    siteName: 'YLCC Commerce Institute',
+    locale: 'en_IN',
+    type: 'website',
   },
-  icons: {
-    icon: "/images/ylcc-logo.svg",
-    shortcut: "/images/ylcc-logo.svg",
-    apple: "/images/ylcc-logo.svg",
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-[#faf7f2] text-[#1c1917] font-sans">
+    <html lang="en" className="h-full scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className="min-h-full flex flex-col bg-[#FAF7F0] text-[#1C1917] antialiased selection:bg-[#E2D7C3] selection:text-[#192538]">
         {children}
       </body>
     </html>

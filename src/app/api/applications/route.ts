@@ -1,90 +1,58 @@
-import { NextRequest, NextResponse } from "next/server";
-import { ApplicationSchema } from "@/lib/validations";
-import { DataStore } from "@/lib/db/store";
-import { getCurrentUser } from "@/lib/auth/session";
+import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+import { db } from '@/lib/db';
 
-export async function GET() {
-  const user = await getCurrentUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const applications = await DataStore.getApplications();
-  return NextResponse.json({ success: true, applications });
-}
+const applicationSchema = z.object({
+  studentName: z.string().min(2, 'Name must be at least 2 characters'),
+  email: z.string().email('Invalid email address'),
+  phone: z.string().min(8, 'Phone must be at least 8 digits'),
+  dob: z.string().min(4, 'Date of birth is required'),
+  address: z.string().min(5, 'Address is required'),
+  qualification: z.string().min(2, 'Qualification is required'),
+  commerceBackground: z.boolean().default(true),
+  selectedProgram: z.string().min(1, 'Please select a program'),
+  preferredMode: z.enum(['Offline Classroom', 'Online Live', 'Hybrid']).default('Offline Classroom'),
+  preferredBatch: z.string().min(1, 'Preferred batch is required'),
+  currentOccupation: z.string().default('Student'),
+  careerGoal: z.string().default(''),
+  documentUrls: z.array(z.string()).default([]),
+  consent: z.boolean().refine((val) => val === true, 'Consent is mandatory'),
+});
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const parsed = ApplicationSchema.safeParse(body);
+    const validated = applicationSchema.parse(body);
 
-    if (!parsed.success) {
+    const application = await db.addApplication(validated);
+
+    return NextResponse.json({
+      success: true,
+      message: 'Admission application submitted successfully. Application ID: ' + application.id,
+      data: application,
+    });
+  } catch (error: any) {
+    if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { error: "Validation failed", details: parsed.error.flatten().fieldErrors },
+        { success: false, message: error.issues[0]?.message || 'Validation error' },
         { status: 400 }
       );
     }
-
-    const application = await DataStore.createApplication(parsed.data);
-    return NextResponse.json({
-      success: true,
-      message: "Application submitted successfully! Your application reference ID is " + application.id,
-      application,
-    });
-  } catch (error: any) {
-    console.error("Application submission error:", error);
     return NextResponse.json(
-      { error: "Failed to submit admission application. Please try again." },
+      { success: false, message: 'Internal server error processing application' },
       { status: 500 }
     );
   }
 }
 
-export async function PATCH(req: NextRequest) {
-  const user = await getCurrentUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
+export async function GET() {
   try {
-    const body = await req.json();
-    const { id, status, adminNotes } = body;
-
-    if (!id || !status) {
-      return NextResponse.json({ error: "id and status are required" }, { status: 400 });
-    }
-
-    const updated = await DataStore.updateApplicationStatus(id, status, adminNotes);
-    if (!updated) {
-      return NextResponse.json({ error: "Application not found" }, { status: 404 });
-    }
-
-    return NextResponse.json({ success: true, application: updated });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  }
-}
-
-export async function DELETE(req: NextRequest) {
-  const user = await getCurrentUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  try {
-    const { searchParams } = new URL(req.url);
-    const id = searchParams.get("id");
-    if (!id) {
-      return NextResponse.json({ error: "id parameter is required" }, { status: 400 });
-    }
-
-    const success = await DataStore.deleteApplication(id);
-    if (!success) {
-      return NextResponse.json({ error: "Application not found" }, { status: 404 });
-    }
-
-    return NextResponse.json({ success: true, message: "Application deleted successfully" });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const applications = await db.getApplications();
+    return NextResponse.json({ success: true, data: applications });
+  } catch (error) {
+    return NextResponse.json(
+      { success: false, message: 'Failed to retrieve applications' },
+      { status: 500 }
+    );
   }
 }

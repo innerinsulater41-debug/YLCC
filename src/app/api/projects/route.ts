@@ -1,96 +1,82 @@
-import { NextRequest, NextResponse } from "next/server";
-import { ProjectSchema } from "@/lib/validations";
-import { DataStore } from "@/lib/db/store";
-import { getCurrentUser } from "@/lib/auth/session";
+import { NextRequest, NextResponse } from 'next/server';
+import { db } from '@/lib/db';
+import { Project } from '@/types';
 
 export async function GET(req: NextRequest) {
-  const { searchParams } = new URL(req.url);
-  const includeUnpublished = searchParams.get("all") === "true";
-  
-  if (includeUnpublished) {
-    const user = await getCurrentUser();
-    if (!user) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
-    const projects = await DataStore.getProjects(true);
-    return NextResponse.json({ success: true, projects });
+  try {
+    const { searchParams } = new URL(req.url);
+    const publishedOnly = searchParams.get('status') === 'published';
+    const projects = await db.getProjects(publishedOnly);
+    return NextResponse.json({ success: true, data: projects });
+  } catch (error) {
+    return NextResponse.json(
+      { success: false, message: 'Failed to retrieve projects' },
+      { status: 500 }
+    );
   }
-
-  const projects = await DataStore.getProjects(false);
-  return NextResponse.json({ success: true, projects });
 }
 
 export async function POST(req: NextRequest) {
-  const user = await getCurrentUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
   try {
     const body = await req.json();
-    const parsed = ProjectSchema.safeParse(body);
 
-    if (!parsed.success) {
+    if (!body.title || !body.industryCategory) {
       return NextResponse.json(
-        { error: "Validation failed", details: parsed.error.flatten().fieldErrors },
+        { success: false, message: 'Title and Industry Category are required' },
         { status: 400 }
       );
     }
 
-    const project = await DataStore.createProject(parsed.data);
-    return NextResponse.json({ success: true, project });
+    const slug =
+      body.slug ||
+      body.title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+
+    const newProject: Project = {
+      id: body.id || `proj-${Date.now()}`,
+      slug,
+      title: body.title,
+      shortDescription: body.shortDescription || '',
+      detailedDescription: body.detailedDescription || '',
+      industryCategory: body.industryCategory,
+      accountingCategory: body.accountingCategory || 'General Accounting',
+      difficultyLevel: body.difficultyLevel || 'Intermediate',
+      skillsCovered: Array.isArray(body.skillsCovered) ? body.skillsCovered : [],
+      softwareUsed: Array.isArray(body.softwareUsed) ? body.softwareUsed : ['Tally Prime 4.0', 'Excel 365'],
+      learningObjectives: Array.isArray(body.learningObjectives) ? body.learningObjectives : [],
+      businessScenario: body.businessScenario || '',
+      tasksToComplete: Array.isArray(body.tasksToComplete) ? body.tasksToComplete : [],
+      expectedOutcomes: Array.isArray(body.expectedOutcomes) ? body.expectedOutcomes : [],
+      coverImageUrl: body.coverImageUrl || '/images/ylcc_tds_brochure_slate_copper.png',
+      media: Array.isArray(body.media) ? body.media : [],
+      resources: Array.isArray(body.resources) ? body.resources : [],
+      videoUrl: body.videoUrl || '',
+      practiceTimeHours: Number(body.practiceTimeHours) || 20,
+      academicYear: body.academicYear || '2025-26',
+      facultyMentor: body.facultyMentor || 'CA Alok Maheshwari',
+      isFeatured: Boolean(body.isFeatured),
+      status: body.status || 'published',
+      displayOrder: Number(body.displayOrder) || 1,
+      seoTitle: body.seoTitle,
+      seoDescription: body.seoDescription,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+
+    const saved = await db.saveProject(newProject);
+
+    return NextResponse.json({
+      success: true,
+      message: 'Project created successfully',
+      data: saved,
+    });
   } catch (error: any) {
-    console.error("Create project error:", error);
-    return NextResponse.json({ error: error.message || "Failed to create project" }, { status: 500 });
-  }
-}
-
-export async function PUT(req: NextRequest) {
-  const user = await getCurrentUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  try {
-    const body = await req.json();
-    const { id, ...data } = body;
-
-    if (!id) {
-      return NextResponse.json({ error: "id is required" }, { status: 400 });
-    }
-
-    const updated = await DataStore.updateProject(id, data);
-    if (!updated) {
-      return NextResponse.json({ error: "Project not found" }, { status: 404 });
-    }
-
-    return NextResponse.json({ success: true, project: updated });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  }
-}
-
-export async function DELETE(req: NextRequest) {
-  const user = await getCurrentUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  try {
-    const { searchParams } = new URL(req.url);
-    const id = searchParams.get("id");
-
-    if (!id) {
-      return NextResponse.json({ error: "id parameter is required" }, { status: 400 });
-    }
-
-    const success = await DataStore.deleteProject(id);
-    if (!success) {
-      return NextResponse.json({ error: "Project not found" }, { status: 404 });
-    }
-
-    return NextResponse.json({ success: true, message: "Project deleted successfully" });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error('Error creating project:', error);
+    return NextResponse.json(
+      { success: false, message: error.message || 'Failed to create project' },
+      { status: 500 }
+    );
   }
 }

@@ -1,123 +1,124 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import React from 'react';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import {
   LayoutDashboard,
-  Code2,
-  BookOpen,
   Briefcase,
-  Mail,
-  FileCheck2,
-  Users2,
-  Award,
-  Image as ImageIcon,
-  Calendar,
-  Star,
-  HelpCircle,
-  TrendingUp,
+  BookOpen,
+  Inbox,
+  GraduationCap,
+  Download,
+  Users,
   Settings,
-  Shield,
+  LogOut,
   ExternalLink,
-} from "lucide-react";
-import { AdminUser } from "@/types";
-import { cn } from "@/lib/utils";
+  ShieldCheck,
+} from 'lucide-react';
+import { SessionUser } from '@/lib/auth';
 
 interface AdminSidebarProps {
-  currentUser: AdminUser | null;
+  user: SessionUser;
 }
 
-export default function AdminSidebar({ currentUser }: AdminSidebarProps) {
+export default function AdminSidebar({ user }: AdminSidebarProps) {
   const pathname = usePathname();
+  const router = useRouter();
 
-  // If on login page, hide the sidebar
-  if (pathname === "/admin/login") return null;
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/auth/logout', { method: 'POST' });
+      router.push('/admin/login');
+      router.refresh();
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
-  const menuItems = [
-    { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
-    { label: "Projects", href: "/admin/projects", icon: Code2, badge: "Core" },
-    { label: "Courses", href: "/admin/courses", icon: BookOpen },
-    { label: "Business Clients", href: "/admin/consultations", icon: Briefcase, badge: "New" },
-    { label: "Enquiries", href: "/admin/enquiries", icon: Mail },
-    { label: "Applications", href: "/admin/applications", icon: FileCheck2 },
-    { label: "Faculty", href: "/admin/faculty", icon: Users2 },
-    { label: "Achievements", href: "/admin/achievements", icon: Award },
-    { label: "Gallery", href: "/admin/gallery", icon: ImageIcon },
-    { label: "Events", href: "/admin/events", icon: Calendar },
-    { label: "Testimonials", href: "/admin/testimonials", icon: Star },
-    { label: "FAQs", href: "/admin/faqs", icon: HelpCircle },
-    { label: "Statistics", href: "/admin/stats", icon: TrendingUp },
-    { label: "Settings", href: "/admin/settings", icon: Settings },
+  const navItems = [
+    { name: 'Dashboard Overview', href: '/admin', icon: LayoutDashboard },
+    { name: 'Practical Projects', href: '/admin/projects', icon: Briefcase },
+    { name: 'Training Programs', href: '/admin/programs', icon: BookOpen },
+    { name: 'Student Enquiries', href: '/admin/enquiries', icon: Inbox },
+    { name: 'Admissions', href: '/admin/applications', icon: GraduationCap },
+    { name: 'Resources & Downloads', href: '/admin/resources', icon: Download },
+    { name: 'Faculty Mentors', href: '/admin/faculty', icon: Users },
+    { name: 'Institute Settings', href: '/admin/settings', icon: Settings },
   ];
 
   return (
-    <aside className="w-full md:w-64 bg-white border-r border-stone-200 shrink-0 flex flex-col justify-between">
-      <div>
-        {/* Brand */}
-        <div className="p-6 border-b border-stone-100 flex items-center justify-between">
-          <Link href="/admin" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-stone-900 flex items-center justify-center text-amber-400 font-bold shadow-xs">
-              <Shield className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-black text-stone-900 tracking-tight text-lg">
-                YLCC Admin
-              </span>
-              <span className="text-[10px] uppercase font-bold text-amber-800">
-                Institutional CMS
-              </span>
-            </div>
-          </Link>
+    <aside className="w-64 bg-[#192538] text-[#E2D7C3] flex flex-col justify-between border-r border-[#2C3E5A] min-h-screen shrink-0">
+      <div className="p-5 space-y-6">
+        {/* Emblem & Identity */}
+        <div className="flex items-center gap-3 border-b border-[#2C3E5A] pb-4">
+          <div className="w-9 h-9 rounded-lg bg-[#8C6527] text-white flex items-center justify-center font-serif font-bold text-lg">
+            YL
+          </div>
+          <div>
+            <span className="font-serif font-bold text-white text-base block leading-none">YLCC Admin</span>
+            <span className="text-[10px] text-[#C1AF93] uppercase tracking-wider font-semibold">
+              Control Suite
+            </span>
+          </div>
         </div>
 
-        {/* Navigation list */}
-        <nav className="p-4 space-y-1">
-          {menuItems.map((item) => {
+        {/* User Card */}
+        <div className="bg-[#24334D] p-3 rounded-xl border border-[#3E5274] flex items-center gap-3">
+          <div className="w-8 h-8 rounded-full bg-[#8C6527] text-white flex items-center justify-center font-bold text-xs">
+            SA
+          </div>
+          <div className="overflow-hidden">
+            <span className="text-xs font-bold text-white block truncate">{user.name}</span>
+            <span className="text-[10px] text-[#E8DEC8] font-mono uppercase bg-[#192538] px-1.5 py-0.2 rounded border border-[#3E5274]">
+              {user.role}
+            </span>
+          </div>
+        </div>
+
+        {/* Navigation Items */}
+        <nav className="space-y-1">
+          {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = pathname === item.href;
+            const active = item.href === '/admin' ? pathname === '/admin' : pathname.startsWith(item.href);
+
             return (
               <Link
-                key={item.href}
+                key={item.name}
                 href={item.href}
-                className={cn(
-                  "flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold transition-all",
-                  isActive
-                    ? "bg-stone-900 text-amber-50 shadow-xs"
-                    : "text-stone-600 hover:text-stone-900 hover:bg-stone-100/70"
-                )}
+                className={`flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold transition-colors ${
+                  active
+                    ? 'bg-[#8C6527] text-white shadow-xs'
+                    : 'text-[#D4C5AD] hover:bg-[#24334D] hover:text-white'
+                }`}
               >
-                <div className="flex items-center gap-3">
-                  <Icon className={cn("w-4 h-4", isActive ? "text-amber-400" : "text-stone-400")} />
-                  <span>{item.label}</span>
-                </div>
-                {item.badge && (
-                  <span
-                    className={cn(
-                      "text-[10px] font-bold px-1.5 py-0.2 rounded-md",
-                      isActive
-                        ? "bg-stone-800 text-amber-400"
-                        : "bg-stone-100 text-stone-600"
-                    )}
-                  >
-                    {item.badge}
-                  </span>
-                )}
+                <Icon className="w-4 h-4 shrink-0" />
+                <span>{item.name}</span>
               </Link>
             );
           })}
         </nav>
       </div>
 
-      {/* Public Link Shortcut */}
-      <div className="p-4 border-t border-stone-100">
+      {/* Bottom Actions */}
+      <div className="p-5 border-t border-[#2C3E5A] space-y-2">
         <Link
           href="/"
           target="_blank"
-          className="flex items-center justify-between p-3 rounded-xl bg-stone-50 hover:bg-stone-100 text-xs font-semibold text-stone-700 transition-colors border border-stone-200"
+          className="flex items-center justify-between px-3.5 py-2 rounded-xl text-xs font-medium text-[#C1AF93] hover:text-white hover:bg-[#24334D] transition-colors"
         >
-          <span>View Live Website</span>
-          <ExternalLink className="w-3.5 h-3.5 text-stone-400" />
+          <span>View Public Website</span>
+          <ExternalLink className="w-3.5 h-3.5" />
         </Link>
+
+        <button
+          type="button"
+          onClick={handleLogout}
+          className="w-full flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold text-red-400 hover:text-red-300 hover:bg-red-950/40 transition-colors"
+        >
+          <LogOut className="w-4 h-4 shrink-0" />
+          <span>Sign Out</span>
+        </button>
       </div>
     </aside>
   );

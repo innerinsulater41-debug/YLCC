@@ -15,15 +15,15 @@ export default async function AdminDashboardLayout({
   }
 
   return (
-    <div className="min-h-screen flex bg-[#FAF7F0]">
+    <div className="min-h-screen flex bg-[#FAF6F0]">
       {/* Sidebar */}
       <AdminSidebar user={user} />
 
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col min-w-0 overflow-y-auto">
-        <header className="bg-white border-b border-[#E2D7C3] px-6 py-4 flex items-center justify-between sticky top-0 z-30 shadow-xs">
+        <header className="bg-white border-b border-[#E5D8CA] px-6 py-4 flex items-center justify-between sticky top-0 z-30 shadow-xs">
           <div>
-            <h1 className="text-sm font-bold text-[#192538]">YLCC Administration Suite</h1>
+            <h1 className="text-sm font-bold text-[#2A1810]">YLCC Administration Suite</h1>
             <p className="text-[11px] text-[#78716C]">Commerce & Practical Accounting Management</p>
           </div>
           <div className="flex items-center gap-3 text-xs">

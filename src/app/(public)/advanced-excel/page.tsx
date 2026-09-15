@@ -71,10 +71,10 @@ export default function AdvancedExcelPage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Hero Section */}
-      <section className="bg-[#192538] text-white pt-14 pb-20 border-b-4 border-[#8C6527] relative overflow-hidden">
+      <section className="bg-[#2A1810] text-white pt-14 pb-20 border-b-4 border-[#8B5A2B] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#24334D] border border-[#3E5274] text-xs font-semibold text-[#E8DEC8]">
-            <FileSpreadsheet className="w-4 h-4 text-[#C1AF93]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#362013] border border-[#4E2F1D] text-xs font-semibold text-[#E8DCCF]">
+            <FileSpreadsheet className="w-4 h-4 text-[#C4AE96]" />
             <span>Corporate Excel 365 & Financial MIS Track</span>
           </div>
 
@@ -82,14 +82,14 @@ export default function AdvancedExcelPage() {
             Corporate Excel 365 & Automated MIS Masterclass
           </h1>
 
-          <p className="text-base sm:text-lg text-[#D4C5AD] max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-lg text-[#D8C5B2] max-w-3xl leading-relaxed">
             Move beyond basic spreadsheets. Master 250+ modern Excel 365 formulas, solve 500+ workplace troubleshooting challenges, practice 250+ real accounting interview questions, and build automated MIS dashboards that refresh with a single click.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-4">
             <Link
               href="/apply?program=advanced-excel-corporate-excel-365"
-              className="bg-[#8C6527] hover:bg-[#74511D] text-white px-6 py-3 rounded-xl font-semibold text-sm shadow transition-all flex items-center gap-2"
+              className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-6 py-3 rounded-xl font-semibold text-sm shadow transition-all flex items-center gap-2"
             >
               <GraduationCap className="w-4 h-4" />
               <span>Enroll for Upcoming Batch</span>
@@ -98,9 +98,9 @@ export default function AdvancedExcelPage() {
             <a
               href="/sample-docs/YLCC-Course-Costing-Excel.pdf"
               download
-              className="bg-[#24334D] hover:bg-[#2C3E5A] text-white border border-[#3E5274] px-6 py-3 rounded-xl font-semibold text-sm transition-all flex items-center gap-2"
+              className="bg-[#362013] hover:bg-[#3D2314] text-white border border-[#4E2F1D] px-6 py-3 rounded-xl font-semibold text-sm transition-all flex items-center gap-2"
             >
-              <Download className="w-4 h-4 text-[#C1AF93]" />
+              <Download className="w-4 h-4 text-[#C4AE96]" />
               <span>Download Excel Syllabus PDF</span>
             </a>
           </div>
@@ -110,33 +110,33 @@ export default function AdvancedExcelPage() {
       {/* 4 Core Pillars */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-          <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8C6527]">250+</span>
-            <h3 className="text-sm font-bold text-[#192538] uppercase">Formulas Mastered</h3>
+          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">250+</span>
+            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Formulas Mastered</h3>
             <p className="text-xs text-[#57534E]">
               Dynamic arrays, modern lookups, text manipulation, and finance equations.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8C6527]">500+</span>
-            <h3 className="text-sm font-bold text-[#192538] uppercase">Troubleshooting Cases</h3>
+          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">500+</span>
+            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Troubleshooting Cases</h3>
             <p className="text-xs text-[#57534E]">
               Fixing broken lookups, corrupt dumps, SPILL errors, and circular references.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8C6527]">250+</span>
-            <h3 className="text-sm font-bold text-[#192538] uppercase">Interview Questions</h3>
+          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">250+</span>
+            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Interview Questions</h3>
             <p className="text-xs text-[#57534E]">
               Actual machine tests from top CA firms, corporate accounts, and MNCs.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8C6527]">100%</span>
-            <h3 className="text-sm font-bold text-[#192538] uppercase">Practical Worksheets</h3>
+          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">100%</span>
+            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Practical Worksheets</h3>
             <p className="text-xs text-[#57534E]">
               Students build actual corporate dashboards using multi-table datasets.
             </p>
@@ -147,10 +147,10 @@ export default function AdvancedExcelPage() {
       {/* Formula Curriculum Deep Dive */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
             Comprehensive Formula Training
           </span>
-          <h2 className="text-3xl font-serif font-bold text-[#192538]">
+          <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
             Mastering Modern Excel 365 Architecture
           </h2>
           <p className="text-sm text-[#57534E]">
@@ -160,16 +160,16 @@ export default function AdvancedExcelPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {formulaCategories.map((cat, idx) => (
-            <div key={idx} className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
-              <h3 className="text-lg font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+            <div key={idx} className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
+              <h3 className="text-lg font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
                 {cat.title}
               </h3>
-              <p className="text-xs text-[#6B6357]">{cat.description}</p>
+              <p className="text-xs text-[#6B584C]">{cat.description}</p>
               <div className="flex flex-wrap gap-2 pt-2">
                 {cat.formulas.map((f, i) => (
                   <span
                     key={i}
-                    className="px-2.5 py-1 rounded bg-[#FAF7F0] border border-[#E2D7C3] text-[11px] font-mono text-[#192538]"
+                    className="px-2.5 py-1 rounded bg-[#FAF6F0] border border-[#E5D8CA] text-[11px] font-mono text-[#2A1810]"
                   >
                     {f}
                   </span>
@@ -181,13 +181,13 @@ export default function AdvancedExcelPage() {
       </section>
 
       {/* 500+ Troubleshooting Scenarios Highlight */}
-      <section className="bg-[#F3ECE0] py-16 border-y border-[#E2D7C3]">
+      <section className="bg-[#F5EFEB] py-16 border-y border-[#E5D8CA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
               The 500+ Error Recovery Engine
             </span>
-            <h2 className="text-3xl font-serif font-bold text-[#192538]">
+            <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
               Excel Troubleshooting & Data Recovery
             </h2>
             <p className="text-sm text-[#57534E]">
@@ -196,22 +196,22 @@ export default function AdvancedExcelPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] space-y-3">
-              <h3 className="text-base font-serif font-bold text-[#192538]">Formula Error Diagnostics</h3>
+            <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] space-y-3">
+              <h3 className="text-base font-serif font-bold text-[#2A1810]">Formula Error Diagnostics</h3>
               <p className="text-xs text-[#57534E] leading-relaxed">
                 Step-by-step techniques to isolate #N/A (unmatched lookup), #VALUE! (data type mismatch), #REF! (deleted reference), and #SPILL! (blocked range).
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] space-y-3">
-              <h3 className="text-base font-serif font-bold text-[#192538]">Corrupt Data & Text Inconsistencies</h3>
+            <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] space-y-3">
+              <h3 className="text-base font-serif font-bold text-[#2A1810]">Corrupt Data & Text Inconsistencies</h3>
               <p className="text-xs text-[#57534E] leading-relaxed">
                 Cleaning non-breaking spaces (CHAR 160), numbers stored as text from banking portals, inconsistent date formats (DD/MM vs MM/DD), and leading apostrophes.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] space-y-3">
-              <h3 className="text-base font-serif font-bold text-[#192538]">Formula Auditing & Trace Precedents</h3>
+            <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] space-y-3">
+              <h3 className="text-base font-serif font-bold text-[#2A1810]">Formula Auditing & Trace Precedents</h3>
               <p className="text-xs text-[#57534E] leading-relaxed">
                 Using Evaluate Formula, Trace Precedents, Trace Dependents, and Watch Window to audit complex 50-sheet corporate financial models.
               </p>
@@ -223,10 +223,10 @@ export default function AdvancedExcelPage() {
       {/* Business Dashboards Created */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
             Executive Reporting
           </span>
-          <h2 className="text-3xl font-serif font-bold text-[#192538]">
+          <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
             Automated Corporate MIS Dashboards
           </h2>
           <p className="text-sm text-[#57534E]">
@@ -238,12 +238,12 @@ export default function AdvancedExcelPage() {
           {dashboardModules.map((dash, i) => {
             const Icon = dash.icon;
             return (
-              <div key={i} className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs flex items-start gap-4">
-                <div className="p-3 bg-[#FAF7F0] text-[#8C6527] rounded-xl shrink-0 border border-[#E2D7C3]">
+              <div key={i} className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs flex items-start gap-4">
+                <div className="p-3 bg-[#FAF6F0] text-[#8B5A2B] rounded-xl shrink-0 border border-[#E5D8CA]">
                   <Icon className="w-6 h-6" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-base font-serif font-bold text-[#192538]">{dash.title}</h3>
+                  <h3 className="text-base font-serif font-bold text-[#2A1810]">{dash.title}</h3>
                   <p className="text-xs text-[#57534E] leading-relaxed">{dash.description}</p>
                 </div>
               </div>
@@ -256,10 +256,10 @@ export default function AdvancedExcelPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-7 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
               Career & Placement
             </span>
-            <h2 className="text-3xl font-serif font-bold text-[#192538]">
+            <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
               250+ Accounting & Finance Excel Interview Questions
             </h2>
             <p className="text-sm text-[#57534E] leading-relaxed">
@@ -267,23 +267,23 @@ export default function AdvancedExcelPage() {
             </p>
 
             <div className="space-y-3 pt-2">
-              <div className="p-4 rounded-xl bg-white border border-[#E2D7C3] flex items-start gap-3">
+              <div className="p-4 rounded-xl bg-white border border-[#E5D8CA] flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
-                <div className="text-xs text-[#192538] space-y-1">
+                <div className="text-xs text-[#2A1810] space-y-1">
                   <strong>Reconciliation Challenge:</strong> Match 2,000 bank ledger entries with company cash books using single dynamic formula.
                 </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-white border border-[#E2D7C3] flex items-start gap-3">
+              <div className="p-4 rounded-xl bg-white border border-[#E5D8CA] flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
-                <div className="text-xs text-[#192538] space-y-1">
+                <div className="text-xs text-[#2A1810] space-y-1">
                   <strong>Tax Deduction Automation:</strong> Auto-calculate TDS under 194C vs 194J based on PAN validity and transaction thresholds.
                 </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-white border border-[#E2D7C3] flex items-start gap-3">
+              <div className="p-4 rounded-xl bg-white border border-[#E5D8CA] flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
-                <div className="text-xs text-[#192538] space-y-1">
+                <div className="text-xs text-[#2A1810] space-y-1">
                   <strong>Executive Dashboard Build:</strong> Transform 12 raw CSV sales sheets into a one-page interactive board report in 30 minutes.
                 </div>
               </div>

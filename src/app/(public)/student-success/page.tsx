@@ -63,12 +63,12 @@ export default async function StudentSuccessPage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#F7F3E9] to-[#FAF7F0] pt-12 pb-16 border-b border-[#E8DFC8]">
+      <section className="bg-gradient-to-b from-[#F6EFE6] to-[#FAF6F0] pt-12 pb-16 border-b border-[#E5D8CA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527] bg-[#ECE4D4] px-3 py-1 rounded-full border border-[#D4C5AD]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#EFE6DD] px-3 py-1 rounded-full border border-[#D8C5B2]">
             Practical Competence in Action
           </span>
-          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#192538]">
+          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#2A1810]">
             Student Success & Skill Journeys
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
@@ -80,7 +80,7 @@ export default async function StudentSuccessPage() {
       {/* Before-and-After Skill Transformations */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#192538]">
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#2A1810]">
             Real Before-and-After Skill Progression
           </h2>
           <p className="text-xs text-[#57534E]">
@@ -92,20 +92,20 @@ export default async function StudentSuccessPage() {
           {skillJourneys.map((journey, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl border border-[#E2D7C3] p-6 sm:p-8 shadow-xs flex flex-col justify-between space-y-6"
+              className="bg-white rounded-2xl border border-[#E5D8CA] p-6 sm:p-8 shadow-xs flex flex-col justify-between space-y-6"
             >
               <div className="space-y-4">
-                <div className="border-b border-[#EFE8DD] pb-3">
-                  <h3 className="text-lg font-serif font-bold text-[#192538]">{journey.student}</h3>
+                <div className="border-b border-[#EFE6DD] pb-3">
+                  <h3 className="text-lg font-serif font-bold text-[#2A1810]">{journey.student}</h3>
                   <p className="text-xs text-[#78716C] mt-0.5">{journey.background}</p>
-                  <p className="text-xs font-bold text-[#8C6527] mt-1 flex items-center gap-1">
+                  <p className="text-xs font-bold text-[#8B5A2B] mt-1 flex items-center gap-1">
                     <ArrowRight className="w-3.5 h-3.5" />
                     <span>{journey.afterTraining}</span>
                   </p>
                 </div>
 
                 <div className="space-y-2">
-                  <span className="text-xs font-bold text-[#192538] block">Practical Competencies Mastered:</span>
+                  <span className="text-xs font-bold text-[#2A1810] block">Practical Competencies Mastered:</span>
                   <ul className="space-y-1.5 text-xs text-[#57534E]">
                     {journey.skillsAcquired.map((skill, i) => (
                       <li key={i} className="flex items-start gap-2">
@@ -116,7 +116,7 @@ export default async function StudentSuccessPage() {
                   </ul>
                 </div>
 
-                <div className="pt-3 border-t border-[#EFE8DD]">
+                <div className="pt-3 border-t border-[#EFE6DD]">
                   <p className="text-xs text-[#57534E] italic leading-relaxed">
                     "{journey.quote}"
                   </p>
@@ -128,13 +128,13 @@ export default async function StudentSuccessPage() {
       </section>
 
       {/* Verified Testimonials */}
-      <section className="bg-[#FAF7F0] py-16 border-y border-[#E2D7C3]">
+      <section className="bg-[#FAF6F0] py-16 border-y border-[#E5D8CA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
               Verified Feedback
             </span>
-            <h2 className="text-3xl font-serif font-bold text-[#192538]">
+            <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
               What Our Alumni Say About YLCC
             </h2>
           </div>
@@ -143,9 +143,9 @@ export default async function StudentSuccessPage() {
             {testimonials.map((test) => (
               <div
                 key={test.id}
-                className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4"
+                className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4"
               >
-                <div className="flex items-center gap-1 text-[#8C6527]">
+                <div className="flex items-center gap-1 text-[#8B5A2B]">
                   {[...Array(test.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
@@ -155,13 +155,13 @@ export default async function StudentSuccessPage() {
                   "{test.quote}"
                 </p>
 
-                <div className="pt-4 border-t border-[#EFE8DD] flex items-center justify-between">
+                <div className="pt-4 border-t border-[#EFE6DD] flex items-center justify-between">
                   <div>
-                    <h4 className="text-base font-serif font-bold text-[#192538]">{test.studentName}</h4>
-                    <p className="text-xs text-[#8C6527] font-semibold">{test.currentRole}</p>
+                    <h4 className="text-base font-serif font-bold text-[#2A1810]">{test.studentName}</h4>
+                    <p className="text-xs text-[#8B5A2B] font-semibold">{test.currentRole}</p>
                     <p className="text-[11px] text-[#78716C]">{test.company}</p>
                   </div>
-                  <span className="text-[11px] bg-[#FAF7F0] border border-[#E2D7C3] px-2.5 py-1 rounded-md text-[#57534E] font-medium">
+                  <span className="text-[11px] bg-[#FAF6F0] border border-[#E5D8CA] px-2.5 py-1 rounded-md text-[#57534E] font-medium">
                     {test.courseTaken}
                   </span>
                 </div>
@@ -173,11 +173,11 @@ export default async function StudentSuccessPage() {
 
       {/* Certification Verification Information */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-2xl border-2 border-[#8C6527] p-8 sm:p-10 space-y-6 shadow-sm">
-          <div className="flex items-center gap-3 border-b border-[#EFE8DD] pb-4">
-            <Award className="w-8 h-8 text-[#8C6527]" />
+        <div className="bg-white rounded-2xl border-2 border-[#8B5A2B] p-8 sm:p-10 space-y-6 shadow-sm">
+          <div className="flex items-center gap-3 border-b border-[#EFE6DD] pb-4">
+            <Award className="w-8 h-8 text-[#8B5A2B]" />
             <div>
-              <h2 className="text-xl font-serif font-bold text-[#192538]">
+              <h2 className="text-xl font-serif font-bold text-[#2A1810]">
                 YLCC Practical Skill Certification Standards
               </h2>
               <p className="text-xs text-[#78716C]">
@@ -198,7 +198,7 @@ export default async function StudentSuccessPage() {
           <div className="pt-2 flex items-center gap-4">
             <Link
               href="/apply"
-              className="bg-[#8C6527] hover:bg-[#74511D] text-white px-6 py-2.5 rounded-lg text-xs font-semibold shadow transition-all"
+              className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-6 py-2.5 rounded-lg text-xs font-semibold shadow transition-all"
             >
               Enroll for Practical Certification
             </Link>

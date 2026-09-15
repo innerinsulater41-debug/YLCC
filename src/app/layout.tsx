@@ -50,7 +50,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="min-h-full flex flex-col bg-[#FAF7F0] text-[#1C1917] antialiased selection:bg-[#E2D7C3] selection:text-[#192538]">
+      <body className="min-h-full flex flex-col bg-[#FAF6F0] text-[#1C1917] antialiased selection:bg-[#E5D8CA] selection:text-[#2A1810]">
         {children}
       </body>
     </html>

@@ -56,17 +56,17 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
 
   if (submitted) {
     return (
-      <div className="bg-[#FAF7F0] border-2 border-[#8C6527] p-8 rounded-xl text-center space-y-4 shadow-sm animate-in fade-in duration-300">
+      <div className="bg-[#FAF6F0] border-2 border-[#8B5A2B] p-8 rounded-xl text-center space-y-4 shadow-sm animate-in fade-in duration-300">
         <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mx-auto">
           <CheckCircle2 className="w-7 h-7" />
         </div>
-        <h4 className="text-xl font-serif font-bold text-[#192538]">Enquiry Received Successfully!</h4>
+        <h4 className="text-xl font-serif font-bold text-[#2A1810]">Enquiry Received Successfully!</h4>
         <p className="text-sm text-[#57534E] max-w-md mx-auto">
           Thank you for reaching out to YLCC. Our academic counseling coordinator will call or WhatsApp you within 2 business hours with course details and batch dates.
         </p>
         <button
           onClick={() => setSubmitted(false)}
-          className="text-xs font-semibold text-[#8C6527] hover:underline pt-2"
+          className="text-xs font-semibold text-[#8B5A2B] hover:underline pt-2"
         >
           Submit another inquiry
         </button>
@@ -75,11 +75,11 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-lg space-y-4">
-      <div className="border-b border-[#EFE8DD] pb-4">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">Fast-Track Admission Desk</span>
-        <h3 className="text-xl font-serif font-bold text-[#192538]">Request Course Syllabus & Fee Details</h3>
-        <p className="text-xs text-[#6B6357] mt-1">Speak directly with an accounting faculty mentor.</p>
+    <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-lg space-y-4">
+      <div className="border-b border-[#EFE6DD] pb-4">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">Fast-Track Admission Desk</span>
+        <h3 className="text-xl font-serif font-bold text-[#2A1810]">Request Course Syllabus & Fee Details</h3>
+        <p className="text-xs text-[#6B584C] mt-1">Speak directly with an accounting faculty mentor.</p>
       </div>
 
       {error && (
@@ -98,7 +98,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
             placeholder="e.g. Gaurav Sharma"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8C6527] focus:border-transparent text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
           />
         </div>
 
@@ -110,7 +110,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
             placeholder="e.g. +91 98290 12345"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8C6527] focus:border-transparent text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
           />
         </div>
       </div>
@@ -123,7 +123,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
           placeholder="e.g. gaurav@gmail.com"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8C6527] focus:border-transparent text-[#192538]"
+          className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
         />
       </div>
 
@@ -133,7 +133,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
           <select
             value={formData.programOfInterest}
             onChange={(e) => setFormData({ ...formData, programOfInterest: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8C6527] focus:border-transparent text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
           >
             <option value="Accounts Operator Practical Training">Accounts Operator Practical Training</option>
             <option value="Accounts Manager Professional Program">Accounts Manager Professional Program</option>
@@ -152,7 +152,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
           <select
             value={formData.preferredBatch}
             onChange={(e) => setFormData({ ...formData, preferredBatch: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8C6527] focus:border-transparent text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
           >
             <option value="Morning Batch (8:30 AM – 10:30 AM)">Morning Batch (8:30 AM – 10:30 AM)</option>
             <option value="Mid-Day Batch (11:00 AM – 1:00 PM)">Mid-Day Batch (11:00 AM – 1:00 PM)</option>
@@ -170,14 +170,14 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
           placeholder="e.g. B.Com final year, looking for practical GST and live sales/purchase billing training."
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8C6527] focus:border-transparent text-[#192538]"
+          className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
         />
       </div>
 
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-[#8C6527] hover:bg-[#74511D] text-white py-3 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 shadow hover:shadow-md transition-all disabled:opacity-50"
+        className="w-full bg-[#8B5A2B] hover:bg-[#70441E] text-white py-3 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 shadow hover:shadow-md transition-all disabled:opacity-50"
       >
         {loading ? (
           <>

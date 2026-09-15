@@ -24,12 +24,12 @@ export default async function ResourcesPage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#F7F3E9] to-[#FAF7F0] pt-12 pb-16 border-b border-[#E8DFC8]">
+      <section className="bg-gradient-to-b from-[#F6EFE6] to-[#FAF6F0] pt-12 pb-16 border-b border-[#E5D8CA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527] bg-[#ECE4D4] px-3 py-1 rounded-full border border-[#D4C5AD]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#EFE6DD] px-3 py-1 rounded-full border border-[#D8C5B2]">
             Commerce Reference Library
           </span>
-          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#192538]">
+          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#2A1810]">
             Resources & Practice Files
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-2xl mx-auto leading-relaxed">
@@ -44,11 +44,11 @@ export default async function ResourcesPage() {
           {resources.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl border border-[#E2D7C3] p-6 shadow-xs hover:shadow-md hover:border-[#8C6527] transition-all flex flex-col justify-between space-y-4"
+              className="bg-white rounded-2xl border border-[#E5D8CA] p-6 shadow-xs hover:shadow-md hover:border-[#8B5A2B] transition-all flex flex-col justify-between space-y-4"
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#8C6527] bg-[#FAF7F0] px-2.5 py-0.5 rounded border border-[#E2D7C3]">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#FAF6F0] px-2.5 py-0.5 rounded border border-[#E5D8CA]">
                     {item.category}
                   </span>
                   <span className="text-[10px] uppercase font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
@@ -57,7 +57,7 @@ export default async function ResourcesPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-3 bg-[#FAF7F0] rounded-xl text-[#8C6527] shrink-0 border border-[#E2D7C3]">
+                  <div className="p-3 bg-[#FAF6F0] rounded-xl text-[#8B5A2B] shrink-0 border border-[#E5D8CA]">
                     {item.fileType === 'xlsx' ? (
                       <FileSpreadsheet className="w-6 h-6" />
                     ) : (
@@ -66,7 +66,7 @@ export default async function ResourcesPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-base font-serif font-bold text-[#192538] leading-snug">
+                    <h3 className="text-base font-serif font-bold text-[#2A1810] leading-snug">
                       {item.title}
                     </h3>
                     <p className="text-xs text-[#57534E] mt-1 line-clamp-2 leading-relaxed">
@@ -76,7 +76,7 @@ export default async function ResourcesPage() {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-[#EFE8DD] flex items-center justify-between text-xs">
+              <div className="pt-4 border-t border-[#EFE6DD] flex items-center justify-between text-xs">
                 <span className="text-[#78716C] text-[11px]">
                   {item.fileType.toUpperCase()} • {item.fileSize} • {item.downloadCount} Downloads
                 </span>
@@ -84,7 +84,7 @@ export default async function ResourcesPage() {
                 <a
                   href={item.fileUrl}
                   download
-                  className="bg-[#8C6527] hover:bg-[#74511D] text-white px-3 py-1.5 rounded-lg font-semibold text-xs flex items-center gap-1.5 transition-colors shadow-xs"
+                  className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-3 py-1.5 rounded-lg font-semibold text-xs flex items-center gap-1.5 transition-colors shadow-xs"
                 >
                   <Download className="w-3.5 h-3.5" />
                   <span>Download</span>
@@ -95,9 +95,9 @@ export default async function ResourcesPage() {
         </div>
 
         {/* Student Notice */}
-        <div className="bg-[#FAF7F0] p-6 rounded-2xl border border-[#E2D7C3] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="bg-[#FAF6F0] p-6 rounded-2xl border border-[#E5D8CA] flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="space-y-1 text-center sm:text-left">
-            <h4 className="text-sm font-serif font-bold text-[#192538]">
+            <h4 className="text-sm font-serif font-bold text-[#2A1810]">
               Looking for Specialized Multi-Business Practice Ledgers?
             </h4>
             <p className="text-xs text-[#57534E]">
@@ -106,7 +106,7 @@ export default async function ResourcesPage() {
           </div>
           <Link
             href="/apply"
-            className="bg-[#192538] hover:bg-[#0F172A] text-white px-5 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-colors"
+            className="bg-[#2A1810] hover:bg-[#1F120A] text-white px-5 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-colors"
           >
             Enroll as Student
           </Link>

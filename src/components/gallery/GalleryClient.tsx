@@ -38,8 +38,8 @@ export default function GalleryClient({ items }: GalleryClientProps) {
             onClick={() => setSelectedCategory(cat)}
             className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
               selectedCategory === cat
-                ? 'bg-[#8C6527] text-white shadow-sm'
-                : 'bg-white text-[#57534E] hover:bg-[#ECE4D4] border border-[#E2D7C3]'
+                ? 'bg-[#8B5A2B] text-white shadow-sm'
+                : 'bg-white text-[#57534E] hover:bg-[#EFE6DD] border border-[#E5D8CA]'
             }`}
           >
             {cat}
@@ -53,16 +53,16 @@ export default function GalleryClient({ items }: GalleryClientProps) {
           <div
             key={item.id}
             onClick={() => setActiveImage(item)}
-            className="group bg-white rounded-2xl border border-[#E2D7C3] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#8C6527] transition-all cursor-pointer flex flex-col"
+            className="group bg-white rounded-2xl border border-[#E5D8CA] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#8B5A2B] transition-all cursor-pointer flex flex-col"
           >
-            <div className="relative h-56 bg-[#FAF7F0] overflow-hidden">
+            <div className="relative h-56 bg-[#FAF6F0] overflow-hidden">
               <img
                 src={item.imageUrl}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[#192538]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="bg-white/90 text-[#192538] px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow">
+              <div className="absolute inset-0 bg-[#2A1810]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="bg-white/90 text-[#2A1810] px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow">
                   <Eye className="w-3.5 h-3.5" />
                   <span>Enlarge</span>
                 </span>
@@ -71,10 +71,10 @@ export default function GalleryClient({ items }: GalleryClientProps) {
 
             <div className="p-5 space-y-2 flex-1 flex flex-col justify-between">
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#8C6527] block">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#8B5A2B] block">
                   {item.albumCategory}
                 </span>
-                <h3 className="text-base font-serif font-bold text-[#192538] mt-1 group-hover:text-[#8C6527] transition-colors">
+                <h3 className="text-base font-serif font-bold text-[#2A1810] mt-1 group-hover:text-[#8B5A2B] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-xs text-[#57534E] mt-1 line-clamp-2 leading-relaxed">
@@ -82,8 +82,8 @@ export default function GalleryClient({ items }: GalleryClientProps) {
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-[#EFE8DD] text-[11px] text-[#78716C] flex items-center gap-1.5">
-                <Calendar className="w-3 h-3 text-[#8C6527]" />
+              <div className="pt-3 border-t border-[#EFE6DD] text-[11px] text-[#78716C] flex items-center gap-1.5">
+                <Calendar className="w-3 h-3 text-[#8B5A2B]" />
                 <span>{item.date}</span>
               </div>
             </div>
@@ -117,10 +117,10 @@ export default function GalleryClient({ items }: GalleryClientProps) {
             </div>
 
             <div className="p-6 space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
                 {activeImage.albumCategory} • {activeImage.date}
               </span>
-              <h3 className="text-xl font-serif font-bold text-[#192538]">{activeImage.title}</h3>
+              <h3 className="text-xl font-serif font-bold text-[#2A1810]">{activeImage.title}</h3>
               <p className="text-sm text-[#57534E] leading-relaxed">{activeImage.caption}</p>
             </div>
           </div>

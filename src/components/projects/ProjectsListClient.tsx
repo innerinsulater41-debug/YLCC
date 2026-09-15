@@ -51,17 +51,17 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   return (
     <div className="space-y-8">
       {/* Search and Filters */}
-      <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
+      <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
           {/* Search bar */}
           <div className="md:col-span-6 relative">
-            <Search className="w-4 h-4 text-[#8C6527] absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-[#8B5A2B] absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               placeholder="Search by industry, e.g. 'Hospital', 'Hotel', 'Builder', 'Thekedar', 'Logistics'..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full pl-10 pr-4 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
 
@@ -70,7 +70,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             <select
               value={selectedDifficulty}
               onChange={(e) => setSelectedDifficulty(e.target.value)}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
               <option value="All">All Difficulty Levels</option>
               <option value="Foundational">Foundational</option>
@@ -81,13 +81,13 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
           </div>
 
           <div className="md:col-span-3 text-right text-xs text-[#78716C]">
-            Showing <strong className="text-[#192538]">{filtered.length}</strong> of{' '}
+            Showing <strong className="text-[#2A1810]">{filtered.length}</strong> of{' '}
             {projects.length} Practical Projects
           </div>
         </div>
 
         {/* Industry Chips */}
-        <div className="flex flex-wrap gap-2 pt-2 border-t border-[#EFE8DD]">
+        <div className="flex flex-wrap gap-2 pt-2 border-t border-[#EFE6DD]">
           {industries.map((ind) => (
             <button
               key={ind}
@@ -95,8 +95,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               onClick={() => setSelectedIndustry(ind)}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                 selectedIndustry === ind
-                  ? 'bg-[#8C6527] text-white shadow-xs'
-                  : 'bg-[#FAF7F0] text-[#57534E] hover:bg-[#ECE4D4] border border-[#E2D7C3]'
+                  ? 'bg-[#8B5A2B] text-white shadow-xs'
+                  : 'bg-[#FAF6F0] text-[#57534E] hover:bg-[#EFE6DD] border border-[#E5D8CA]'
               }`}
             >
               {ind}
@@ -107,9 +107,9 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
 
       {/* Projects Grid */}
       {filtered.length === 0 ? (
-        <div className="text-center py-16 bg-white rounded-2xl border border-[#E2D7C3] p-8 space-y-3">
-          <Briefcase className="w-10 h-10 text-[#C1AF93] mx-auto" />
-          <h3 className="text-lg font-serif font-bold text-[#192538]">No matching projects found</h3>
+        <div className="text-center py-16 bg-white rounded-2xl border border-[#E5D8CA] p-8 space-y-3">
+          <Briefcase className="w-10 h-10 text-[#C4AE96] mx-auto" />
+          <h3 className="text-lg font-serif font-bold text-[#2A1810]">No matching projects found</h3>
           <p className="text-xs text-[#57534E]">Try a different search keyword or industry filter.</p>
           <button
             onClick={() => {
@@ -117,7 +117,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               setSelectedIndustry('All');
               setSelectedDifficulty('All');
             }}
-            className="text-xs font-bold text-[#8C6527] hover:underline pt-2"
+            className="text-xs font-bold text-[#8B5A2B] hover:underline pt-2"
           >
             Reset all filters
           </button>
@@ -127,14 +127,14 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
           {filtered.map((proj) => (
             <div
               key={proj.id}
-              className="bg-white rounded-2xl border border-[#E2D7C3] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#8C6527] transition-all flex flex-col justify-between"
+              className="bg-white rounded-2xl border border-[#E5D8CA] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#8B5A2B] transition-all flex flex-col justify-between"
             >
               <div>
                 {/* Header Banner */}
-                <div className="bg-[#192538] text-white p-5 border-b border-[#2C3E5A]">
-                  <div className="flex items-center justify-between text-[11px] text-[#C1AF93] mb-2">
+                <div className="bg-[#2A1810] text-white p-5 border-b border-[#3D2314]">
+                  <div className="flex items-center justify-between text-[11px] text-[#C4AE96] mb-2">
                     <span className="uppercase font-bold tracking-wider">{proj.industryCategory}</span>
-                    <span className="bg-[#8C6527] text-white px-2 py-0.5 rounded text-[10px] font-semibold">
+                    <span className="bg-[#8B5A2B] text-white px-2 py-0.5 rounded text-[10px] font-semibold">
                       {proj.difficultyLevel}
                     </span>
                   </div>
@@ -149,13 +149,13 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
                   </p>
 
                   {/* Skills tags */}
-                  <div className="space-y-1.5 pt-2 border-t border-[#EFE8DD]">
-                    <span className="text-[11px] font-bold text-[#192538] block">Practical Skills:</span>
+                  <div className="space-y-1.5 pt-2 border-t border-[#EFE6DD]">
+                    <span className="text-[11px] font-bold text-[#2A1810] block">Practical Skills:</span>
                     <div className="flex flex-wrap gap-1.5">
                       {proj.skillsCovered.slice(0, 3).map((sk, i) => (
                         <span
                           key={i}
-                          className="text-[10px] bg-[#FAF7F0] text-[#57534E] border border-[#E2D7C3] px-2 py-0.5 rounded"
+                          className="text-[10px] bg-[#FAF6F0] text-[#57534E] border border-[#E5D8CA] px-2 py-0.5 rounded"
                         >
                           {sk}
                         </span>
@@ -166,22 +166,22 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
                   {/* Software & Mentor */}
                   <div className="text-[11px] text-[#78716C] flex items-center justify-between pt-1">
                     <span>
-                      <strong className="text-[#192538]">Tools:</strong> {proj.softwareUsed[0] || 'Tally Prime'}
+                      <strong className="text-[#2A1810]">Tools:</strong> {proj.softwareUsed[0] || 'Tally Prime'}
                     </span>
-                    <span className="font-semibold text-[#8C6527]">{proj.facultyMentor}</span>
+                    <span className="font-semibold text-[#8B5A2B]">{proj.facultyMentor}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="p-5 pt-0 flex items-center justify-between border-t border-[#EFE8DD] mt-3 pt-4 bg-[#FAF7F0]/50">
+              <div className="p-5 pt-0 flex items-center justify-between border-t border-[#EFE6DD] mt-3 pt-4 bg-[#FAF6F0]/50">
                 <span className="text-xs text-[#78716C] font-medium flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-[#8C6527]" />
+                  <Clock className="w-3.5 h-3.5 text-[#8B5A2B]" />
                   <span>{proj.practiceTimeHours} Hours</span>
                 </span>
 
                 <Link
                   href={`/projects/${proj.slug}`}
-                  className="text-xs font-bold text-[#8C6527] hover:text-[#74511D] flex items-center gap-1"
+                  className="text-xs font-bold text-[#8B5A2B] hover:text-[#70441E] flex items-center gap-1"
                 >
                   <span>Case Study</span>
                   <ArrowRight className="w-3.5 h-3.5" />

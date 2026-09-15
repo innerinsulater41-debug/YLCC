@@ -12,10 +12,10 @@ export default async function AdminSettingsPage() {
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
       <div>
-        <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
           Configuration Center
         </span>
-        <h1 className="text-2xl font-serif font-bold text-[#192538]">
+        <h1 className="text-2xl font-serif font-bold text-[#2A1810]">
           Institute Settings & Statistics
         </h1>
         <p className="text-xs text-[#57534E] mt-0.5">

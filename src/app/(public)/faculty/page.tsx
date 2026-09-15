@@ -23,12 +23,12 @@ export default async function FacultyPage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#F7F3E9] to-[#FAF7F0] pt-12 pb-16 border-b border-[#E8DFC8]">
+      <section className="bg-gradient-to-b from-[#F6EFE6] to-[#FAF6F0] pt-12 pb-16 border-b border-[#E5D8CA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527] bg-[#ECE4D4] px-3 py-1 rounded-full border border-[#D4C5AD]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#EFE6DD] px-3 py-1 rounded-full border border-[#D8C5B2]">
             Practical Commerce Mentorship
           </span>
-          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#192538]">
+          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#2A1810]">
             Our Faculty Panel
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
@@ -43,11 +43,11 @@ export default async function FacultyPage() {
           {faculty.map((fac) => (
             <div
               key={fac.id}
-              className="bg-white rounded-2xl border border-[#E2D7C3] p-6 sm:p-8 shadow-xs hover:shadow-lg hover:border-[#8C6527] transition-all flex flex-col justify-between space-y-6"
+              className="bg-white rounded-2xl border border-[#E5D8CA] p-6 sm:p-8 shadow-xs hover:shadow-lg hover:border-[#8B5A2B] transition-all flex flex-col justify-between space-y-6"
             >
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-full bg-[#192538] text-[#E8DEC8] flex items-center justify-center font-serif text-2xl font-bold border-2 border-[#C1AF93] shrink-0">
+                  <div className="w-16 h-16 rounded-full bg-[#2A1810] text-[#E8DCCF] flex items-center justify-center font-serif text-2xl font-bold border-2 border-[#C4AE96] shrink-0">
                     {fac.name
                       .split(' ')
                       .map((n) => n[0])
@@ -56,10 +56,10 @@ export default async function FacultyPage() {
                   </div>
 
                   <div className="space-y-1">
-                    <h2 className="text-xl font-serif font-bold text-[#192538]">{fac.name}</h2>
-                    <p className="text-xs font-semibold text-[#8C6527]">{fac.designation}</p>
+                    <h2 className="text-xl font-serif font-bold text-[#2A1810]">{fac.name}</h2>
+                    <p className="text-xs font-semibold text-[#8B5A2B]">{fac.designation}</p>
                     <p className="text-[11px] text-[#78716C]">{fac.qualifications}</p>
-                    <span className="inline-block px-2 py-0.5 rounded bg-[#FAF7F0] border border-[#E2D7C3] text-[10px] font-bold text-[#57534E]">
+                    <span className="inline-block px-2 py-0.5 rounded bg-[#FAF6F0] border border-[#E5D8CA] text-[10px] font-bold text-[#57534E]">
                       {fac.experienceYears}+ Years Industry Practice
                     </span>
                   </div>
@@ -70,13 +70,13 @@ export default async function FacultyPage() {
                 </p>
 
                 {/* Areas of Expertise */}
-                <div className="space-y-2 pt-2 border-t border-[#EFE8DD]">
-                  <span className="text-xs font-bold text-[#192538] block">Specialization Areas:</span>
+                <div className="space-y-2 pt-2 border-t border-[#EFE6DD]">
+                  <span className="text-xs font-bold text-[#2A1810] block">Specialization Areas:</span>
                   <div className="flex flex-wrap gap-1.5">
                     {fac.expertiseAreas.map((exp, i) => (
                       <span
                         key={i}
-                        className="text-[11px] bg-[#FAF7F0] text-[#57534E] border border-[#E2D7C3] px-2.5 py-0.5 rounded-md"
+                        className="text-[11px] bg-[#FAF6F0] text-[#57534E] border border-[#E5D8CA] px-2.5 py-0.5 rounded-md"
                       >
                         {exp}
                       </span>
@@ -85,26 +85,26 @@ export default async function FacultyPage() {
                 </div>
 
                 {/* Programs Taught */}
-                <div className="space-y-1 pt-2 border-t border-[#EFE8DD] text-xs">
-                  <span className="font-bold text-[#192538]">Programs Mentored:</span>{' '}
-                  <span className="text-[#8C6527] font-medium">{fac.programsTaught.join(' • ')}</span>
+                <div className="space-y-1 pt-2 border-t border-[#EFE6DD] text-xs">
+                  <span className="font-bold text-[#2A1810]">Programs Mentored:</span>{' '}
+                  <span className="text-[#8B5A2B] font-medium">{fac.programsTaught.join(' • ')}</span>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-[#EFE8DD] flex items-center justify-between text-xs">
+              <div className="pt-4 border-t border-[#EFE6DD] flex items-center justify-between text-xs">
                 {fac.email && (
                   <a
                     href={`mailto:${fac.email}`}
-                    className="text-[#78716C] hover:text-[#192538] flex items-center gap-1.5"
+                    className="text-[#78716C] hover:text-[#2A1810] flex items-center gap-1.5"
                   >
-                    <Mail className="w-3.5 h-3.5 text-[#8C6527]" />
+                    <Mail className="w-3.5 h-3.5 text-[#8B5A2B]" />
                     <span>{fac.email}</span>
                   </a>
                 )}
 
                 <Link
                   href="/apply"
-                  className="bg-[#8C6527] hover:bg-[#74511D] text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-colors"
+                  className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-colors"
                 >
                   Join Mentorship Cohort
                 </Link>

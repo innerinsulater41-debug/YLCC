@@ -49,12 +49,12 @@ export default async function AdminDashboardPage() {
   return (
     <div className="space-y-8 max-w-7xl mx-auto">
       {/* Welcome Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E2D7C3] pb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E5D8CA] pb-5">
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
             Management Center
           </span>
-          <h1 className="text-2xl font-serif font-bold text-[#192538]">
+          <h1 className="text-2xl font-serif font-bold text-[#2A1810]">
             Welcome, Administrator
           </h1>
           <p className="text-xs text-[#57534E] mt-0.5">
@@ -65,7 +65,7 @@ export default async function AdminDashboardPage() {
         <div className="flex items-center gap-3">
           <Link
             href="/admin/projects/new"
-            className="bg-[#8C6527] hover:bg-[#74511D] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors"
+            className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors"
           >
             <Plus className="w-4 h-4" />
             <span>Upload New Project</span>
@@ -73,7 +73,7 @@ export default async function AdminDashboardPage() {
 
           <Link
             href="/admin/settings"
-            className="bg-white hover:bg-[#FAF7F0] text-[#192538] border border-[#D4C5AD] px-4 py-2 rounded-xl text-xs font-semibold transition-colors"
+            className="bg-white hover:bg-[#FAF6F0] text-[#2A1810] border border-[#D8C5B2] px-4 py-2 rounded-xl text-xs font-semibold transition-colors"
           >
             Institute Settings
           </Link>
@@ -82,17 +82,17 @@ export default async function AdminDashboardPage() {
 
       {/* Summary KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
+        <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">
               Practical Projects
             </span>
-            <div className="p-2 rounded-lg bg-[#FAF7F0] text-[#8C6527]">
+            <div className="p-2 rounded-lg bg-[#FAF6F0] text-[#8B5A2B]">
               <Briefcase className="w-4 h-4" />
             </div>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-serif font-bold text-[#192538]">
+            <span className="text-3xl font-serif font-bold text-[#2A1810]">
               {projects.length}
             </span>
             <span className="text-xs text-emerald-700 font-semibold">
@@ -101,46 +101,46 @@ export default async function AdminDashboardPage() {
           </div>
           <Link
             href="/admin/projects"
-            className="text-[11px] font-bold text-[#8C6527] hover:underline flex items-center gap-1 pt-1"
+            className="text-[11px] font-bold text-[#8B5A2B] hover:underline flex items-center gap-1 pt-1"
           >
             <span>Manage Case Studies →</span>
           </Link>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
+        <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">
               Training Programs
             </span>
-            <div className="p-2 rounded-lg bg-[#FAF7F0] text-[#8C6527]">
+            <div className="p-2 rounded-lg bg-[#FAF6F0] text-[#8B5A2B]">
               <BookOpen className="w-4 h-4" />
             </div>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-serif font-bold text-[#192538]">
+            <span className="text-3xl font-serif font-bold text-[#2A1810]">
               {programs.length}
             </span>
             <span className="text-xs text-[#78716C]">Core Commerce Tracks</span>
           </div>
           <Link
             href="/admin/programs"
-            className="text-[11px] font-bold text-[#8C6527] hover:underline flex items-center gap-1 pt-1"
+            className="text-[11px] font-bold text-[#8B5A2B] hover:underline flex items-center gap-1 pt-1"
           >
             <span>Manage Syllabi →</span>
           </Link>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
+        <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">
               Student Enquiries
             </span>
-            <div className="p-2 rounded-lg bg-[#FAF7F0] text-[#8C6527]">
+            <div className="p-2 rounded-lg bg-[#FAF6F0] text-[#8B5A2B]">
               <Inbox className="w-4 h-4" />
             </div>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-serif font-bold text-[#192538]">
+            <span className="text-3xl font-serif font-bold text-[#2A1810]">
               {enquiries.length}
             </span>
             <span className="text-xs text-amber-700 font-semibold">
@@ -149,23 +149,23 @@ export default async function AdminDashboardPage() {
           </div>
           <Link
             href="/admin/enquiries"
-            className="text-[11px] font-bold text-[#8C6527] hover:underline flex items-center gap-1 pt-1"
+            className="text-[11px] font-bold text-[#8B5A2B] hover:underline flex items-center gap-1 pt-1"
           >
             <span>View Leads Pipeline →</span>
           </Link>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-2">
+        <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">
               Admissions Filed
             </span>
-            <div className="p-2 rounded-lg bg-[#FAF7F0] text-[#8C6527]">
+            <div className="p-2 rounded-lg bg-[#FAF6F0] text-[#8B5A2B]">
               <GraduationCap className="w-4 h-4" />
             </div>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-serif font-bold text-[#192538]">
+            <span className="text-3xl font-serif font-bold text-[#2A1810]">
               {applications.length}
             </span>
             <span className="text-xs text-blue-700 font-semibold">
@@ -174,7 +174,7 @@ export default async function AdminDashboardPage() {
           </div>
           <Link
             href="/admin/applications"
-            className="text-[11px] font-bold text-[#8C6527] hover:underline flex items-center gap-1 pt-1"
+            className="text-[11px] font-bold text-[#8B5A2B] hover:underline flex items-center gap-1 pt-1"
           >
             <span>Review Applications →</span>
           </Link>
@@ -190,18 +190,18 @@ export default async function AdminDashboardPage() {
       {/* Recent Activity Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Recent Enquiries */}
-        <div className="lg:col-span-6 bg-white rounded-2xl border border-[#E2D7C3] shadow-xs overflow-hidden flex flex-col justify-between">
+        <div className="lg:col-span-6 bg-white rounded-2xl border border-[#E5D8CA] shadow-xs overflow-hidden flex flex-col justify-between">
           <div className="p-6 space-y-4">
-            <div className="flex items-center justify-between border-b border-[#EFE8DD] pb-3">
+            <div className="flex items-center justify-between border-b border-[#EFE6DD] pb-3">
               <div>
-                <h3 className="text-base font-serif font-bold text-[#192538]">
+                <h3 className="text-base font-serif font-bold text-[#2A1810]">
                   Recent Student Enquiries
                 </h3>
                 <p className="text-xs text-[#78716C]">Prospective students seeking batch counseling</p>
               </div>
               <Link
                 href="/admin/enquiries"
-                className="text-xs font-bold text-[#8C6527] hover:underline"
+                className="text-xs font-bold text-[#8B5A2B] hover:underline"
               >
                 View All ({enquiries.length})
               </Link>
@@ -214,10 +214,10 @@ export default async function AdminDashboardPage() {
                 {enquiries.slice(0, 4).map((enq) => (
                   <div
                     key={enq.id}
-                    className="p-3.5 rounded-xl bg-[#FAF7F0] border border-[#E2D7C3] flex items-center justify-between gap-3 text-xs"
+                    className="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D8CA] flex items-center justify-between gap-3 text-xs"
                   >
                     <div className="space-y-0.5 overflow-hidden">
-                      <div className="font-bold text-[#192538] flex items-center gap-2">
+                      <div className="font-bold text-[#2A1810] flex items-center gap-2">
                         <span>{enq.name}</span>
                         <span
                           className={`text-[9px] uppercase px-1.5 py-0.5 rounded font-bold ${
@@ -232,12 +232,12 @@ export default async function AdminDashboardPage() {
                         </span>
                       </div>
                       <p className="text-[11px] text-[#78716C] truncate">{enq.programOfInterest}</p>
-                      <p className="text-[10px] text-[#A89577]">{enq.phone} • {enq.email}</p>
+                      <p className="text-[10px] text-[#A68A70]">{enq.phone} • {enq.email}</p>
                     </div>
 
                     <Link
                       href="/admin/enquiries"
-                      className="px-2.5 py-1 rounded bg-white hover:bg-[#ECE4D4] border border-[#D4C5AD] text-[#192538] font-semibold text-[11px] shrink-0"
+                      className="px-2.5 py-1 rounded bg-white hover:bg-[#EFE6DD] border border-[#D8C5B2] text-[#2A1810] font-semibold text-[11px] shrink-0"
                     >
                       Inspect
                     </Link>
@@ -249,18 +249,18 @@ export default async function AdminDashboardPage() {
         </div>
 
         {/* Recent Applications */}
-        <div className="lg:col-span-6 bg-white rounded-2xl border border-[#E2D7C3] shadow-xs overflow-hidden flex flex-col justify-between">
+        <div className="lg:col-span-6 bg-white rounded-2xl border border-[#E5D8CA] shadow-xs overflow-hidden flex flex-col justify-between">
           <div className="p-6 space-y-4">
-            <div className="flex items-center justify-between border-b border-[#EFE8DD] pb-3">
+            <div className="flex items-center justify-between border-b border-[#EFE6DD] pb-3">
               <div>
-                <h3 className="text-base font-serif font-bold text-[#192538]">
+                <h3 className="text-base font-serif font-bold text-[#2A1810]">
                   Recent Admission Applications
                 </h3>
                 <p className="text-xs text-[#78716C]">Students applying for batch enrollment</p>
               </div>
               <Link
                 href="/admin/applications"
-                className="text-xs font-bold text-[#8C6527] hover:underline"
+                className="text-xs font-bold text-[#8B5A2B] hover:underline"
               >
                 View All ({applications.length})
               </Link>
@@ -273,10 +273,10 @@ export default async function AdminDashboardPage() {
                 {applications.slice(0, 4).map((app) => (
                   <div
                     key={app.id}
-                    className="p-3.5 rounded-xl bg-[#FAF7F0] border border-[#E2D7C3] flex items-center justify-between gap-3 text-xs"
+                    className="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D8CA] flex items-center justify-between gap-3 text-xs"
                   >
                     <div className="space-y-0.5 overflow-hidden">
-                      <div className="font-bold text-[#192538] flex items-center gap-2">
+                      <div className="font-bold text-[#2A1810] flex items-center gap-2">
                         <span>{app.studentName}</span>
                         <span
                           className={`text-[9px] uppercase px-1.5 py-0.5 rounded font-bold ${
@@ -291,12 +291,12 @@ export default async function AdminDashboardPage() {
                         </span>
                       </div>
                       <p className="text-[11px] text-[#78716C]">{app.qualification}</p>
-                      <p className="text-[10px] text-[#A89577]">{app.phone} • Mode: {app.preferredMode}</p>
+                      <p className="text-[10px] text-[#A68A70]">{app.phone} • Mode: {app.preferredMode}</p>
                     </div>
 
                     <Link
                       href="/admin/applications"
-                      className="px-2.5 py-1 rounded bg-[#8C6527] text-white hover:bg-[#74511D] font-semibold text-[11px] shrink-0"
+                      className="px-2.5 py-1 rounded bg-[#8B5A2B] text-white hover:bg-[#70441E] font-semibold text-[11px] shrink-0"
                     >
                       Review
                     </Link>

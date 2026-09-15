@@ -71,8 +71,8 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
       )}
 
       {/* 1. Institute Identity */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
-        <h2 className="text-base font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
+        <h2 className="text-base font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
           1. Institute Identity & Branding
         </h2>
 
@@ -84,7 +84,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               required
               value={settings.instituteName}
               onChange={(e) => setSettings({ ...settings, instituteName: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -95,7 +95,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               required
               value={settings.fullForm}
               onChange={(e) => setSettings({ ...settings, fullForm: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
             required
             value={settings.tagline}
             onChange={(e) => setSettings({ ...settings, tagline: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
           />
         </div>
 
@@ -118,7 +118,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               type="text"
               value={settings.instituteType}
               onChange={(e) => setSettings({ ...settings, instituteType: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -128,15 +128,15 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               type="text"
               value={settings.location}
               onChange={(e) => setSettings({ ...settings, location: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
         </div>
       </div>
 
       {/* 2. Contact Coordinates */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
-        <h2 className="text-base font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
+        <h2 className="text-base font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
           2. Contact Details & Official Coordinates
         </h2>
 
@@ -148,7 +148,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               required
               value={settings.phone}
               onChange={(e) => setSettings({ ...settings, phone: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -159,7 +159,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               required
               value={settings.whatsapp}
               onChange={(e) => setSettings({ ...settings, whatsapp: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -170,7 +170,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
               required
               value={settings.email}
               onChange={(e) => setSettings({ ...settings, email: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
             required
             value={settings.address}
             onChange={(e) => setSettings({ ...settings, address: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
           />
         </div>
 
@@ -192,14 +192,14 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
             type="text"
             value={settings.officeHours}
             onChange={(e) => setSettings({ ...settings, officeHours: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
           />
         </div>
       </div>
 
       {/* 3. Website Statistics Counters */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
-        <h2 className="text-base font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
+        <h2 className="text-base font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
           3. Live Statistics Counters (Rendered on Homepage)
         </h2>
         <p className="text-xs text-[#78716C]">
@@ -218,7 +218,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
                   stats: { ...settings.stats, studentsTrained: Number(e.target.value) },
                 })
               }
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -233,7 +233,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
                   stats: { ...settings.stats, practicalProjectsCount: Number(e.target.value) },
                 })
               }
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -248,7 +248,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
                   stats: { ...settings.stats, trainingModulesCount: Number(e.target.value) },
                 })
               }
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
 
@@ -263,15 +263,15 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
                   stats: { ...settings.stats, yearsExperience: Number(e.target.value) },
                 })
               }
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
             />
           </div>
         </div>
       </div>
 
       {/* 4. Notice & Announcement Bar */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
-        <h2 className="text-base font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
+        <h2 className="text-base font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
           4. Top Announcement Bar Text
         </h2>
 
@@ -283,7 +283,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
             type="text"
             value={settings.announcementBarText || ''}
             onChange={(e) => setSettings({ ...settings, announcementBarText: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
           />
         </div>
       </div>
@@ -293,7 +293,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
         <button
           type="submit"
           disabled={loading}
-          className="bg-[#8C6527] hover:bg-[#74511D] text-white px-8 py-3 rounded-xl font-bold text-xs flex items-center gap-2 shadow-md transition-all disabled:opacity-50"
+          className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-8 py-3 rounded-xl font-bold text-xs flex items-center gap-2 shadow-md transition-all disabled:opacity-50"
         >
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
           <span>Save Institute Settings</span>

@@ -34,12 +34,12 @@ export default async function ContactPage() {
   return (
     <div className="space-y-16 pb-20">
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#F7F3E9] to-[#FAF7F0] pt-12 pb-16 border-b border-[#E8DFC8]">
+      <section className="bg-gradient-to-b from-[#F6EFE6] to-[#FAF6F0] pt-12 pb-16 border-b border-[#E5D8CA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527] bg-[#ECE4D4] px-3 py-1 rounded-full border border-[#D4C5AD]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#EFE6DD] px-3 py-1 rounded-full border border-[#D8C5B2]">
             Admissions & Campus Visits
           </span>
-          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#192538]">
+          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#2A1810]">
             Get in Touch with YLCC
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-2xl mx-auto leading-relaxed">
@@ -53,34 +53,34 @@ export default async function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Coordinates & Map Card */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-6">
-              <h2 className="text-xl font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-6">
+              <h2 className="text-xl font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
                 Institute Coordinates
               </h2>
 
               <div className="space-y-5 text-sm">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-[#FAF7F0] text-[#8C6527] shrink-0 border border-[#E2D7C3]">
+                  <div className="p-3 rounded-xl bg-[#FAF6F0] text-[#8B5A2B] shrink-0 border border-[#E5D8CA]">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-[#192538] block font-serif">Campus Address:</strong>
+                    <strong className="text-[#2A1810] block font-serif">Campus Address:</strong>
                     <p className="text-xs text-[#57534E] leading-relaxed mt-0.5">{address}</p>
-                    <span className="text-[11px] text-[#8C6527] font-semibold mt-1 block">
+                    <span className="text-[11px] text-[#8B5A2B] font-semibold mt-1 block">
                       Landmark: Near Tonk Road Metro Station, Jaipur
                     </span>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-[#FAF7F0] text-[#8C6527] shrink-0 border border-[#E2D7C3]">
+                  <div className="p-3 rounded-xl bg-[#FAF6F0] text-[#8B5A2B] shrink-0 border border-[#E5D8CA]">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-[#192538] block font-serif">Direct Admissions Hotline:</strong>
+                    <strong className="text-[#2A1810] block font-serif">Direct Admissions Hotline:</strong>
                     <a
                       href={`tel:${phone}`}
-                      className="text-xs text-[#8C6527] font-bold hover:underline mt-0.5 block"
+                      className="text-xs text-[#8B5A2B] font-bold hover:underline mt-0.5 block"
                     >
                       {phone}
                     </a>
@@ -93,7 +93,7 @@ export default async function ContactPage() {
                     <MessageCircle className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-[#192538] block font-serif">WhatsApp Academic Support:</strong>
+                    <strong className="text-[#2A1810] block font-serif">WhatsApp Academic Support:</strong>
                     <a
                       href={`https://wa.me/${cleanWhatsapp}?text=Hi%20YLCC,%20I%20would%20like%20to%20enquire%20about%20commerce%20courses.`}
                       target="_blank"
@@ -107,14 +107,14 @@ export default async function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-[#FAF7F0] text-[#8C6527] shrink-0 border border-[#E2D7C3]">
+                  <div className="p-3 rounded-xl bg-[#FAF6F0] text-[#8B5A2B] shrink-0 border border-[#E5D8CA]">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-[#192538] block font-serif">Official Inquiries Email:</strong>
+                    <strong className="text-[#2A1810] block font-serif">Official Inquiries Email:</strong>
                     <a
                       href={`mailto:${email}`}
-                      className="text-xs text-[#8C6527] font-bold hover:underline mt-0.5 block"
+                      className="text-xs text-[#8B5A2B] font-bold hover:underline mt-0.5 block"
                     >
                       {email}
                     </a>
@@ -122,11 +122,11 @@ export default async function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-[#FAF7F0] text-[#8C6527] shrink-0 border border-[#E2D7C3]">
+                  <div className="p-3 rounded-xl bg-[#FAF6F0] text-[#8B5A2B] shrink-0 border border-[#E5D8CA]">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-[#192538] block font-serif">Office & Lab Hours:</strong>
+                    <strong className="text-[#2A1810] block font-serif">Office & Lab Hours:</strong>
                     <p className="text-xs text-[#57534E] mt-0.5">{officeHours}</p>
                   </div>
                 </div>
@@ -134,9 +134,9 @@ export default async function ContactPage() {
             </div>
 
             {/* Simulated Campus Location Card */}
-            <div className="bg-[#192538] text-white p-6 rounded-2xl border border-[#2C3E5A] space-y-3">
+            <div className="bg-[#2A1810] text-white p-6 rounded-2xl border border-[#3D2314] space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs uppercase font-bold text-[#C1AF93] tracking-wider">
+                <span className="text-xs uppercase font-bold text-[#C4AE96] tracking-wider">
                   Jaipur Commerce Centre
                 </span>
                 <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-900 text-emerald-200 font-bold">
@@ -146,7 +146,7 @@ export default async function ContactPage() {
               <h3 className="text-lg font-serif font-bold text-white">
                 Visit the Accounting & Practical Lab in Person
               </h3>
-              <p className="text-xs text-[#D4C5AD] leading-relaxed">
+              <p className="text-xs text-[#D8C5B2] leading-relaxed">
                 Parents, students, and working accountants are welcome to visit our campus, inspect our accounting lab workstations, review sample project ledgers, and sit for a complimentary 1-on-1 counseling session.
               </p>
             </div>

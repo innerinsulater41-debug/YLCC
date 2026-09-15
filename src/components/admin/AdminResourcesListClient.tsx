@@ -113,18 +113,18 @@ export default function AdminResourcesListClient({
         <button
           type="button"
           onClick={() => setShowAddModal(true)}
-          className="bg-[#8C6527] hover:bg-[#74511D] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors"
+          className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors"
         >
           <Plus className="w-4 h-4" />
           <span>Upload New Resource File</span>
         </button>
       </div>
 
-      <div className="bg-white rounded-2xl border border-[#E2D7C3] shadow-xs overflow-hidden">
+      <div className="bg-white rounded-2xl border border-[#E5D8CA] shadow-xs overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs border-collapse">
             <thead>
-              <tr className="bg-[#FAF7F0] border-b border-[#E2D7C3] text-[#78716C] uppercase font-bold text-[10px] tracking-wider">
+              <tr className="bg-[#FAF6F0] border-b border-[#E5D8CA] text-[#78716C] uppercase font-bold text-[10px] tracking-wider">
                 <th className="p-4">Title & Description</th>
                 <th className="p-4">Category</th>
                 <th className="p-4">Format / Size</th>
@@ -133,10 +133,10 @@ export default function AdminResourcesListClient({
                 <th className="p-4 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#EFE8DD]">
+            <tbody className="divide-y divide-[#EFE6DD]">
               {resources.map((item) => (
-                <tr key={item.id} className="hover:bg-[#FAF7F0]/60 transition-colors">
-                  <td className="p-4 font-semibold text-[#192538] max-w-xs">
+                <tr key={item.id} className="hover:bg-[#FAF6F0]/60 transition-colors">
+                  <td className="p-4 font-semibold text-[#2A1810] max-w-xs">
                     <span className="block truncate">{item.title}</span>
                     <span className="text-[10px] text-[#78716C] font-normal block truncate mt-0.5">
                       {item.description}
@@ -144,7 +144,7 @@ export default function AdminResourcesListClient({
                   </td>
 
                   <td className="p-4 text-[#57534E]">
-                    <span className="bg-[#FAF7F0] border border-[#E2D7C3] px-2 py-0.5 rounded text-[11px]">
+                    <span className="bg-[#FAF6F0] border border-[#E5D8CA] px-2 py-0.5 rounded text-[11px]">
                       {item.category}
                     </span>
                   </td>
@@ -160,7 +160,7 @@ export default function AdminResourcesListClient({
                     </span>
                   </td>
 
-                  <td className="p-4 font-semibold text-[#192538]">
+                  <td className="p-4 font-semibold text-[#2A1810]">
                     {item.downloadCount}
                   </td>
 
@@ -169,7 +169,7 @@ export default function AdminResourcesListClient({
                       <a
                         href={item.fileUrl}
                         download
-                        className="p-1.5 rounded-lg text-[#8C6527] hover:bg-[#ECE4D4]"
+                        className="p-1.5 rounded-lg text-[#8B5A2B] hover:bg-[#EFE6DD]"
                         title="Download file"
                       >
                         <Download className="w-3.5 h-3.5" />
@@ -196,16 +196,16 @@ export default function AdminResourcesListClient({
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
           <form
             onSubmit={handleSaveResource}
-            className="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 space-y-4 shadow-2xl border border-[#D4C5AD]"
+            className="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 space-y-4 shadow-2xl border border-[#D8C5B2]"
           >
-            <div className="flex items-center justify-between border-b border-[#EFE8DD] pb-3">
-              <h3 className="text-base font-serif font-bold text-[#192538]">
+            <div className="flex items-center justify-between border-b border-[#EFE6DD] pb-3">
+              <h3 className="text-base font-serif font-bold text-[#2A1810]">
                 Upload Resource File
               </h3>
               <button
                 type="button"
                 onClick={() => setShowAddModal(false)}
-                className="p-1 text-[#78716C] hover:text-[#192538]"
+                className="p-1 text-[#78716C] hover:text-[#2A1810]"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -220,7 +220,7 @@ export default function AdminResourcesListClient({
                   placeholder="e.g. Bank Stock Statement & Drawing Power Format"
                   value={newRes.title}
                   onChange={(e) => setNewRes({ ...newRes, title: e.target.value })}
-                  className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                  className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                 />
               </div>
 
@@ -230,7 +230,7 @@ export default function AdminResourcesListClient({
                   <select
                     value={newRes.category}
                     onChange={(e) => setNewRes({ ...newRes, category: e.target.value as any })}
-                    className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                    className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                   >
                     <option value="Course Brochures">Course Brochures</option>
                     <option value="Sample Accounting Formats">Sample Accounting Formats</option>
@@ -248,7 +248,7 @@ export default function AdminResourcesListClient({
                   <select
                     value={newRes.accessLevel}
                     onChange={(e) => setNewRes({ ...newRes, accessLevel: e.target.value as any })}
-                    className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                    className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                   >
                     <option value="public">Public (Everyone)</option>
                     <option value="student">Student Only</option>
@@ -263,14 +263,14 @@ export default function AdminResourcesListClient({
                   rows={2}
                   value={newRes.description}
                   onChange={(e) => setNewRes({ ...newRes, description: e.target.value })}
-                  className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                  className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                 />
               </div>
 
               {/* File Uploader */}
-              <div className="border-2 border-dashed border-[#D4C5AD] p-4 rounded-xl text-center space-y-2 bg-[#FAF7F0]">
-                <Upload className="w-6 h-6 text-[#8C6527] mx-auto" />
-                <label className="text-xs font-bold text-[#8C6527] hover:underline cursor-pointer block">
+              <div className="border-2 border-dashed border-[#D8C5B2] p-4 rounded-xl text-center space-y-2 bg-[#FAF6F0]">
+                <Upload className="w-6 h-6 text-[#8B5A2B] mx-auto" />
+                <label className="text-xs font-bold text-[#8B5A2B] hover:underline cursor-pointer block">
                   <span>Browse PDF, Excel, Word, or ZIP file</span>
                   <input
                     type="file"
@@ -279,7 +279,7 @@ export default function AdminResourcesListClient({
                     className="hidden"
                   />
                 </label>
-                {uploading && <p className="text-[11px] text-[#8C6527]">Uploading...</p>}
+                {uploading && <p className="text-[11px] text-[#8B5A2B]">Uploading...</p>}
                 {newRes.fileUrl && (
                   <p className="text-[11px] text-emerald-700 font-bold">
                     ✓ File uploaded: {newRes.fileType.toUpperCase()} ({newRes.fileSize})
@@ -288,18 +288,18 @@ export default function AdminResourcesListClient({
               </div>
             </div>
 
-            <div className="flex justify-end gap-3 pt-3 border-t border-[#EFE8DD]">
+            <div className="flex justify-end gap-3 pt-3 border-t border-[#EFE6DD]">
               <button
                 type="button"
                 onClick={() => setShowAddModal(false)}
-                className="px-4 py-2 rounded-xl border border-[#D4C5AD] text-xs font-semibold text-[#192538]"
+                className="px-4 py-2 rounded-xl border border-[#D8C5B2] text-xs font-semibold text-[#2A1810]"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={!newRes.fileUrl}
-                className="bg-[#8C6527] hover:bg-[#74511D] text-white px-6 py-2 rounded-xl text-xs font-bold transition-colors disabled:opacity-50"
+                className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-6 py-2 rounded-xl text-xs font-bold transition-colors disabled:opacity-50"
               >
                 Save Resource
               </button>

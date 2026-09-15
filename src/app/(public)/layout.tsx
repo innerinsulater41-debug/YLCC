@@ -11,7 +11,7 @@ export default async function PublicLayout({
   const settings = await db.getSettings();
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#FAF7F0]">
+    <div className="flex min-h-screen flex-col bg-[#FAF6F0]">
       <Header settings={settings} />
       <main className="flex-1">{children}</main>
       <Footer settings={settings} />

@@ -231,19 +231,19 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
   return (
     <form onSubmit={handleSubmit} className="space-y-8 max-w-5xl">
       {/* Header Bar */}
-      <div className="flex items-center justify-between border-b border-[#E2D7C3] pb-4">
+      <div className="flex items-center justify-between border-b border-[#E5D8CA] pb-4">
         <div className="flex items-center gap-3">
           <Link
             href="/admin/projects"
-            className="p-2 rounded-lg bg-white border border-[#D4C5AD] text-[#192538] hover:bg-[#FAF7F0] transition-colors"
+            className="p-2 rounded-lg bg-white border border-[#D8C5B2] text-[#2A1810] hover:bg-[#FAF6F0] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
           </Link>
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
               Case Study Editor
             </span>
-            <h1 className="text-2xl font-serif font-bold text-[#192538]">
+            <h1 className="text-2xl font-serif font-bold text-[#2A1810]">
               {isEditing ? `Edit: ${formData.title}` : 'Create & Upload Practical Project'}
             </h1>
           </div>
@@ -270,7 +270,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
           <button
             type="submit"
             disabled={loading}
-            className="bg-[#8C6527] hover:bg-[#74511D] text-white px-5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow transition-all disabled:opacity-50"
+            className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow transition-all disabled:opacity-50"
           >
             {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
             <span>Save Project</span>
@@ -293,8 +293,8 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
       )}
 
       {/* 1. Basic Metadata */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-6">
-        <h2 className="text-base font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-6">
+        <h2 className="text-base font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
           1. Project Details & Classification
         </h2>
 
@@ -307,7 +307,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
               placeholder="e.g. Hospital Business Accounting & Patient Billing System"
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
 
@@ -318,7 +318,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
               placeholder="leave blank to auto-generate from title"
               value={formData.slug}
               onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
         </div>
@@ -332,7 +332,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
               placeholder="e.g. Healthcare, Hotels, Logistics, Builders"
               value={formData.industryCategory}
               onChange={(e) => setFormData({ ...formData, industryCategory: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
 
@@ -343,7 +343,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
               placeholder="e.g. Statutory Taxation, Cost Accounting"
               value={formData.accountingCategory}
               onChange={(e) => setFormData({ ...formData, accountingCategory: e.target.value })}
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
 
@@ -357,7 +357,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
                   difficultyLevel: e.target.value as any,
                 })
               }
-              className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
               <option value="Foundational">Foundational</option>
               <option value="Intermediate">Intermediate</option>
@@ -375,7 +375,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
             placeholder="Brief 2-line summary for project cards"
             value={formData.shortDescription}
             onChange={(e) => setFormData({ ...formData, shortDescription: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
           />
         </div>
 
@@ -387,23 +387,23 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
             placeholder="Describe the company scenario, operations, turnover, and accounting challenges"
             value={formData.businessScenario}
             onChange={(e) => setFormData({ ...formData, businessScenario: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
           />
         </div>
       </div>
 
       {/* 2. File & Document Upload System (Drag & Drop + Multi-Format) */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border-2 border-[#8C6527] shadow-xs space-y-6">
-        <div className="flex items-center justify-between border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border-2 border-[#8B5A2B] shadow-xs space-y-6">
+        <div className="flex items-center justify-between border-b border-[#EFE6DD] pb-3">
           <div>
-            <h2 className="text-base font-serif font-bold text-[#192538]">
+            <h2 className="text-base font-serif font-bold text-[#2A1810]">
               2. Upload Project Documents, PDFs & Spreadsheets
             </h2>
             <p className="text-xs text-[#78716C]">
               Upload PDF reports, Excel models (.xlsx), Word docs (.docx), presentations (.pptx), or ZIP packs
             </p>
           </div>
-          <span className="text-[10px] font-bold text-[#8C6527] uppercase bg-[#FAF7F0] px-2.5 py-1 rounded border border-[#E2D7C3]">
+          <span className="text-[10px] font-bold text-[#8B5A2B] uppercase bg-[#FAF6F0] px-2.5 py-1 rounded border border-[#E5D8CA]">
             Max 50MB per file
           </span>
         </div>
@@ -415,11 +415,11 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
             e.preventDefault();
             handleFileUpload(e.dataTransfer.files);
           }}
-          className="border-2 border-dashed border-[#D4C5AD] hover:border-[#8C6527] bg-[#FAF7F0] p-8 rounded-2xl text-center space-y-3 transition-colors cursor-pointer"
+          className="border-2 border-dashed border-[#D8C5B2] hover:border-[#8B5A2B] bg-[#FAF6F0] p-8 rounded-2xl text-center space-y-3 transition-colors cursor-pointer"
         >
-          <Upload className="w-10 h-10 text-[#8C6527] mx-auto" />
+          <Upload className="w-10 h-10 text-[#8B5A2B] mx-auto" />
           <div className="text-xs text-[#57534E]">
-            <label className="font-bold text-[#8C6527] hover:underline cursor-pointer">
+            <label className="font-bold text-[#8B5A2B] hover:underline cursor-pointer">
               <span>Choose files to upload</span>
               <input
                 type="file"
@@ -432,19 +432,19 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
             </label>{' '}
             <span>or drag and drop here</span>
           </div>
-          <p className="text-[11px] text-[#A89577]">
+          <p className="text-[11px] text-[#A68A70]">
             Supported formats: PDF, Excel, Word, PowerPoint, ZIP, PNG, JPG
           </p>
 
           {uploading && (
             <div className="max-w-xs mx-auto space-y-2 pt-2">
-              <div className="w-full bg-[#E2D7C3] h-2 rounded-full overflow-hidden">
+              <div className="w-full bg-[#E5D8CA] h-2 rounded-full overflow-hidden">
                 <div
-                  className="bg-[#8C6527] h-full transition-all duration-300"
+                  className="bg-[#8B5A2B] h-full transition-all duration-300"
                   style={{ width: `${uploadProgress}%` }}
                 />
               </div>
-              <span className="text-xs font-semibold text-[#8C6527] flex items-center justify-center gap-1.5">
+              <span className="text-xs font-semibold text-[#8B5A2B] flex items-center justify-center gap-1.5">
                 <Loader2 className="w-3.5 h-3.5 animate-spin" />
                 <span>Uploading files ({uploadProgress}%)...</span>
               </span>
@@ -455,14 +455,14 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
         {/* Attached Documents List */}
         {formData.resources && formData.resources.length > 0 && (
           <div className="space-y-3">
-            <span className="text-xs font-bold text-[#192538] block">
+            <span className="text-xs font-bold text-[#2A1810] block">
               Attached Project Resources ({formData.resources.length}):
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {formData.resources.map((res) => (
                 <div
                   key={res.id}
-                  className="p-3 bg-[#FAF7F0] border border-[#E2D7C3] rounded-xl flex items-center justify-between gap-3 text-xs"
+                  className="p-3 bg-[#FAF6F0] border border-[#E5D8CA] rounded-xl flex items-center justify-between gap-3 text-xs"
                 >
                   <div className="flex items-center gap-2.5 overflow-hidden">
                     {res.fileType === 'xlsx' ? (
@@ -473,7 +473,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
                       <FileText className="w-4 h-4 text-red-700 shrink-0" />
                     )}
                     <div className="overflow-hidden">
-                      <p className="font-bold text-[#192538] truncate">{res.title}</p>
+                      <p className="font-bold text-[#2A1810] truncate">{res.title}</p>
                       <p className="text-[10px] text-[#78716C]">
                         {res.fileType.toUpperCase()} • {res.fileSize}
                       </p>
@@ -497,14 +497,14 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
         {/* Uploaded Images / Media */}
         {formData.media && formData.media.length > 0 && (
           <div className="space-y-3">
-            <span className="text-xs font-bold text-[#192538] block">
+            <span className="text-xs font-bold text-[#2A1810] block">
               Project Media & Screenshots ({formData.media.length}):
             </span>
             <div className="flex flex-wrap gap-3">
               {formData.media.map((med) => (
                 <div
                   key={med.id}
-                  className="relative w-24 h-24 rounded-xl overflow-hidden border border-[#D4C5AD] group"
+                  className="relative w-24 h-24 rounded-xl overflow-hidden border border-[#D8C5B2] group"
                 >
                   <img src={med.url} alt={med.name} className="w-full h-full object-cover" />
                   <button
@@ -522,8 +522,8 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
       </div>
 
       {/* 3. Skills, Tasks & Deliverables */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-6">
-        <h2 className="text-base font-serif font-bold text-[#192538] border-b border-[#EFE8DD] pb-3">
+      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-6">
+        <h2 className="text-base font-serif font-bold text-[#2A1810] border-b border-[#EFE6DD] pb-3">
           3. Skills & Execution Tasks
         </h2>
 
@@ -534,7 +534,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
             {formData.skillsCovered?.map((sk, idx) => (
               <span
                 key={idx}
-                className="px-2.5 py-1 rounded-lg bg-[#FAF7F0] border border-[#E2D7C3] text-xs text-[#192538] flex items-center gap-1.5"
+                className="px-2.5 py-1 rounded-lg bg-[#FAF6F0] border border-[#E5D8CA] text-xs text-[#2A1810] flex items-center gap-1.5"
               >
                 <span>{sk}</span>
                 <button
@@ -553,12 +553,12 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
               placeholder="e.g. TDS Section 194J"
               value={newSkill}
               onChange={(e) => setNewSkill(e.target.value)}
-              className="px-3 py-1.5 text-xs bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg text-[#192538] w-64"
+              className="px-3 py-1.5 text-xs bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg text-[#2A1810] w-64"
             />
             <button
               type="button"
               onClick={addSkill}
-              className="px-3 py-1.5 rounded-lg bg-[#ECE4D4] hover:bg-[#E2D7C3] text-xs font-bold text-[#192538]"
+              className="px-3 py-1.5 rounded-lg bg-[#EFE6DD] hover:bg-[#E5D8CA] text-xs font-bold text-[#2A1810]"
             >
               Add Skill
             </button>
@@ -566,13 +566,13 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
         </div>
 
         {/* Tasks to Complete */}
-        <div className="space-y-2 pt-2 border-t border-[#EFE8DD]">
+        <div className="space-y-2 pt-2 border-t border-[#EFE6DD]">
           <label className="block text-xs font-semibold text-[#44403C]">Student Tasks to Execute</label>
           <div className="space-y-1.5 mb-2">
             {formData.tasksToComplete?.map((t, idx) => (
               <div
                 key={idx}
-                className="p-2 rounded-lg bg-[#FAF7F0] border border-[#E2D7C3] flex items-center justify-between text-xs text-[#57534E]"
+                className="p-2 rounded-lg bg-[#FAF6F0] border border-[#E5D8CA] flex items-center justify-between text-xs text-[#57534E]"
               >
                 <span>{idx + 1}. {t}</span>
                 <button
@@ -591,12 +591,12 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
               placeholder="e.g. Reconcile Fastag toll charges with transport bilties"
               value={newTask}
               onChange={(e) => setNewTask(e.target.value)}
-              className="px-3 py-1.5 text-xs bg-[#FAF7F0] border border-[#D4C5AD] rounded-lg text-[#192538] flex-1"
+              className="px-3 py-1.5 text-xs bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg text-[#2A1810] flex-1"
             />
             <button
               type="button"
               onClick={addTask}
-              className="px-3 py-1.5 rounded-lg bg-[#ECE4D4] hover:bg-[#E2D7C3] text-xs font-bold text-[#192538]"
+              className="px-3 py-1.5 rounded-lg bg-[#EFE6DD] hover:bg-[#E5D8CA] text-xs font-bold text-[#2A1810]"
             >
               Add Task
             </button>
@@ -608,14 +608,14 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
       <div className="flex justify-end gap-3 pt-2">
         <Link
           href="/admin/projects"
-          className="px-6 py-2.5 rounded-xl border border-[#D4C5AD] bg-white hover:bg-[#FAF7F0] text-xs font-semibold text-[#192538] transition-colors"
+          className="px-6 py-2.5 rounded-xl border border-[#D8C5B2] bg-white hover:bg-[#FAF6F0] text-xs font-semibold text-[#2A1810] transition-colors"
         >
           Cancel
         </Link>
         <button
           type="submit"
           disabled={loading}
-          className="bg-[#8C6527] hover:bg-[#74511D] text-white px-8 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 shadow-md transition-all disabled:opacity-50"
+          className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-8 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 shadow-md transition-all disabled:opacity-50"
         >
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
           <span>Save & Publish Project</span>

@@ -113,27 +113,27 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
 
   if (submitted) {
     return (
-      <div className="bg-white rounded-2xl border-2 border-[#8C6527] p-8 sm:p-12 text-center space-y-5 shadow-xl max-w-2xl mx-auto animate-in fade-in duration-300">
+      <div className="bg-white rounded-2xl border-2 border-[#8B5A2B] p-8 sm:p-12 text-center space-y-5 shadow-xl max-w-2xl mx-auto animate-in fade-in duration-300">
         <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mx-auto">
           <CheckCircle2 className="w-9 h-9" />
         </div>
-        <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
           Application Received
         </span>
-        <h2 className="text-2xl font-serif font-bold text-[#192538]">
+        <h2 className="text-2xl font-serif font-bold text-[#2A1810]">
           Congratulations, {submitted.studentName}!
         </h2>
-        <div className="bg-[#FAF7F0] p-4 rounded-xl border border-[#E2D7C3] inline-block text-xs text-[#57534E]">
+        <div className="bg-[#FAF6F0] p-4 rounded-xl border border-[#E5D8CA] inline-block text-xs text-[#57534E]">
           <span>Your Application Tracking ID: </span>
-          <strong className="text-[#192538] font-mono text-sm ml-1">{submitted.id}</strong>
+          <strong className="text-[#2A1810] font-mono text-sm ml-1">{submitted.id}</strong>
         </div>
         <p className="text-sm text-[#57534E] leading-relaxed">
           Your admission dossier has been submitted to the academic admissions committee. Our admissions coordinator will review your educational background and contact you on <strong>{submitted.phone}</strong> within 4 business hours to finalize your batch seat and schedule.
         </p>
-        <div className="pt-4 border-t border-[#EFE8DD] flex items-center justify-center gap-4">
+        <div className="pt-4 border-t border-[#EFE6DD] flex items-center justify-center gap-4">
           <a
             href="/"
-            className="bg-[#8C6527] hover:bg-[#74511D] text-white px-6 py-2.5 rounded-lg text-xs font-semibold transition-colors"
+            className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-6 py-2.5 rounded-lg text-xs font-semibold transition-colors"
           >
             Return to Homepage
           </a>
@@ -143,15 +143,15 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-10 rounded-2xl border border-[#E2D7C3] shadow-lg space-y-8 max-w-4xl mx-auto">
-      <div className="border-b border-[#EFE8DD] pb-4">
-        <span className="text-xs font-bold uppercase tracking-wider text-[#8C6527]">
+    <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-10 rounded-2xl border border-[#E5D8CA] shadow-lg space-y-8 max-w-4xl mx-auto">
+      <div className="border-b border-[#EFE6DD] pb-4">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B]">
           Official Enrollment
         </span>
-        <h2 className="text-2xl font-serif font-bold text-[#192538]">
+        <h2 className="text-2xl font-serif font-bold text-[#2A1810]">
           Admission Application Form
         </h2>
-        <p className="text-xs text-[#6B6357] mt-1">
+        <p className="text-xs text-[#6B584C] mt-1">
           Please fill your authentic details. Batches are limited to 20 seats to preserve 1-on-1 practical ledger guidance.
         </p>
       </div>
@@ -165,7 +165,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
 
       {/* 1. Personal & Contact Details */}
       <div className="space-y-4">
-        <h3 className="text-sm font-bold uppercase tracking-wider text-[#192538] border-b border-[#EFE8DD] pb-2">
+        <h3 className="text-sm font-bold uppercase tracking-wider text-[#2A1810] border-b border-[#EFE6DD] pb-2">
           1. Student Personal & Contact Details
         </h3>
 
@@ -178,7 +178,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
               placeholder="e.g. Rahul Sharma"
               value={formData.studentName}
               onChange={(e) => setFormData({ ...formData, studentName: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
 
@@ -190,7 +190,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
               placeholder="e.g. rahul.sharma@gmail.com"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
         </div>
@@ -204,7 +204,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
               placeholder="e.g. +91 98290 12345"
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
 
@@ -215,7 +215,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
               required
               value={formData.dob}
               onChange={(e) => setFormData({ ...formData, dob: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
         </div>
@@ -228,14 +228,14 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             placeholder="e.g. 42, Civil Lines, Jaipur, Rajasthan 302006"
             value={formData.address}
             onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-            className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+            className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
           />
         </div>
       </div>
 
       {/* 2. Educational & Commerce Background */}
       <div className="space-y-4">
-        <h3 className="text-sm font-bold uppercase tracking-wider text-[#192538] border-b border-[#EFE8DD] pb-2">
+        <h3 className="text-sm font-bold uppercase tracking-wider text-[#2A1810] border-b border-[#EFE6DD] pb-2">
           2. Educational Qualification & Commerce Background
         </h3>
 
@@ -245,7 +245,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             <select
               value={formData.qualification}
               onChange={(e) => setFormData({ ...formData, qualification: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
               <option value="Class 12th Commerce">Class 12th Commerce</option>
               <option value="B.Com (Commerce Graduate)">B.Com (Commerce Graduate)</option>
@@ -264,13 +264,13 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
               placeholder="e.g. Student, Junior Billing Clerk, Job Seeker"
               value={formData.currentOccupation}
               onChange={(e) => setFormData({ ...formData, currentOccupation: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             />
           </div>
         </div>
 
-        <div className="p-3.5 rounded-xl bg-[#FAF7F0] border border-[#E2D7C3] flex items-center justify-between">
-          <span className="text-xs text-[#192538] font-semibold">
+        <div className="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D8CA] flex items-center justify-between">
+          <span className="text-xs text-[#2A1810] font-semibold">
             Do you have prior familiarity with basic debits and credits?
           </span>
           <div className="flex items-center gap-4 text-xs">
@@ -280,7 +280,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
                 name="commerceBackground"
                 checked={formData.commerceBackground === true}
                 onChange={() => setFormData({ ...formData, commerceBackground: true })}
-                className="text-[#8C6527] focus:ring-[#8C6527]"
+                className="text-[#8B5A2B] focus:ring-[#8B5A2B]"
               />
               <span>Yes</span>
             </label>
@@ -290,7 +290,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
                 name="commerceBackground"
                 checked={formData.commerceBackground === false}
                 onChange={() => setFormData({ ...formData, commerceBackground: false })}
-                className="text-[#8C6527] focus:ring-[#8C6527]"
+                className="text-[#8B5A2B] focus:ring-[#8B5A2B]"
               />
               <span>No / Beginner</span>
             </label>
@@ -300,7 +300,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
 
       {/* 3. Program & Batch Selection */}
       <div className="space-y-4">
-        <h3 className="text-sm font-bold uppercase tracking-wider text-[#192538] border-b border-[#EFE8DD] pb-2">
+        <h3 className="text-sm font-bold uppercase tracking-wider text-[#2A1810] border-b border-[#EFE6DD] pb-2">
           3. Program & Batch Timing Preferences
         </h3>
 
@@ -310,7 +310,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             <select
               value={formData.selectedProgram}
               onChange={(e) => setFormData({ ...formData, selectedProgram: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
               {programs.map((p) => (
                 <option key={p.id} value={p.slug}>
@@ -330,7 +330,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
                   preferredMode: e.target.value as 'Offline Classroom' | 'Online Live' | 'Hybrid',
                 })
               }
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
               <option value="Offline Classroom">Offline Classroom (Jaipur Lab)</option>
               <option value="Online Live">Online Live Interactive</option>
@@ -343,7 +343,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             <select
               value={formData.preferredBatch}
               onChange={(e) => setFormData({ ...formData, preferredBatch: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
               <option value="Morning Batch (8:30 AM – 10:30 AM)">Morning: 8:30 AM – 10:30 AM</option>
               <option value="Mid-Day Batch (10:30 AM – 12:30 PM)">Mid-Day: 10:30 AM – 12:30 PM</option>
@@ -360,21 +360,21 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             rows={2}
             value={formData.careerGoal}
             onChange={(e) => setFormData({ ...formData, careerGoal: e.target.value })}
-            className="w-full px-3 py-2 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+            className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
           />
         </div>
       </div>
 
       {/* 4. Supporting Document Upload (Optional) */}
       <div className="space-y-4">
-        <h3 className="text-sm font-bold uppercase tracking-wider text-[#192538] border-b border-[#EFE8DD] pb-2">
+        <h3 className="text-sm font-bold uppercase tracking-wider text-[#2A1810] border-b border-[#EFE6DD] pb-2">
           4. Supporting Document (Marksheet or Resume - Optional)
         </h3>
 
-        <div className="p-5 rounded-xl border-2 border-dashed border-[#D4C5AD] bg-[#FAF7F0] text-center space-y-3">
-          <Upload className="w-8 h-8 text-[#8C6527] mx-auto" />
+        <div className="p-5 rounded-xl border-2 border-dashed border-[#D8C5B2] bg-[#FAF6F0] text-center space-y-3">
+          <Upload className="w-8 h-8 text-[#8B5A2B] mx-auto" />
           <div className="text-xs text-[#57534E]">
-            <label className="font-bold text-[#8C6527] hover:underline cursor-pointer">
+            <label className="font-bold text-[#8B5A2B] hover:underline cursor-pointer">
               <span>Click to browse and upload</span>
               <input
                 type="file"
@@ -388,7 +388,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
           </div>
 
           {uploading && (
-            <div className="flex items-center justify-center gap-2 text-xs text-[#8C6527]">
+            <div className="flex items-center justify-center gap-2 text-xs text-[#8B5A2B]">
               <Loader2 className="w-4 h-4 animate-spin" />
               <span>Uploading document securely...</span>
             </div>
@@ -398,8 +398,8 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             <div className="pt-2 space-y-1 text-left max-w-sm mx-auto">
               <span className="text-[11px] font-bold text-emerald-800">Attached Documents:</span>
               {uploadedFiles.map((f, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-xs text-[#192538] bg-white p-2 rounded border border-[#E2D7C3]">
-                  <FileText className="w-4 h-4 text-[#8C6527]" />
+                <div key={idx} className="flex items-center gap-2 text-xs text-[#2A1810] bg-white p-2 rounded border border-[#E5D8CA]">
+                  <FileText className="w-4 h-4 text-[#8B5A2B]" />
                   <span className="truncate">{f.name}</span>
                 </div>
               ))}
@@ -416,7 +416,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
             required
             checked={formData.consent}
             onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
-            className="mt-0.5 text-[#8C6527] focus:ring-[#8C6527] rounded"
+            className="mt-0.5 text-[#8B5A2B] focus:ring-[#8B5A2B] rounded"
           />
           <span>
             I certify that the information provided is accurate and true. I understand that YLCC provides practical commerce and accounting skills training and that final batch seat allocation is subject to faculty counseling.
@@ -426,7 +426,7 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#8C6527] hover:bg-[#74511D] text-white py-3.5 rounded-xl font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all disabled:opacity-50"
+          className="w-full bg-[#8B5A2B] hover:bg-[#70441E] text-white py-3.5 rounded-xl font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all disabled:opacity-50"
         >
           {loading ? (
             <>

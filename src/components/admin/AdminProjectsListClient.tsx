@@ -83,15 +83,15 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
   return (
     <div className="space-y-6">
       {/* Top Filter Bar */}
-      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E2D7C3] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E5D8CA] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="relative w-full sm:w-96">
-          <Search className="w-4 h-4 text-[#8C6527] absolute left-3.5 top-1/2 -translate-y-1/2" />
+          <Search className="w-4 h-4 text-[#8B5A2B] absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             placeholder="Search projects by title or industry..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 text-xs bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+            className="w-full pl-10 pr-4 py-2 text-xs bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
           />
         </div>
 
@@ -99,7 +99,7 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value as any)}
-            className="px-3 py-2 text-xs bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+            className="px-3 py-2 text-xs bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
           >
             <option value="all">All Statuses ({projects.length})</option>
             <option value="published">Published ({projects.filter((p) => p.status === 'published').length})</option>
@@ -108,7 +108,7 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
 
           <Link
             href="/admin/projects/new"
-            className="bg-[#8C6527] hover:bg-[#74511D] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors shrink-0"
+            className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors shrink-0"
           >
             <Plus className="w-4 h-4" />
             <span>New Project</span>
@@ -117,11 +117,11 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
       </div>
 
       {/* Projects Table */}
-      <div className="bg-white rounded-2xl border border-[#E2D7C3] shadow-xs overflow-hidden">
+      <div className="bg-white rounded-2xl border border-[#E5D8CA] shadow-xs overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs border-collapse">
             <thead>
-              <tr className="bg-[#FAF7F0] border-b border-[#E2D7C3] text-[#78716C] uppercase font-bold text-[10px] tracking-wider">
+              <tr className="bg-[#FAF6F0] border-b border-[#E5D8CA] text-[#78716C] uppercase font-bold text-[10px] tracking-wider">
                 <th className="p-4">Project Title</th>
                 <th className="p-4">Industry / Track</th>
                 <th className="p-4">Level</th>
@@ -130,7 +130,7 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
                 <th className="p-4 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#EFE8DD]">
+            <tbody className="divide-y divide-[#EFE6DD]">
               {filtered.length === 0 ? (
                 <tr>
                   <td colSpan={6} className="p-8 text-center text-[#78716C]">
@@ -139,11 +139,11 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
                 </tr>
               ) : (
                 filtered.map((proj) => (
-                  <tr key={proj.id} className="hover:bg-[#FAF7F0]/60 transition-colors">
-                    <td className="p-4 font-semibold text-[#192538] max-w-xs truncate">
+                  <tr key={proj.id} className="hover:bg-[#FAF6F0]/60 transition-colors">
+                    <td className="p-4 font-semibold text-[#2A1810] max-w-xs truncate">
                       <Link
                         href={`/admin/projects/${proj.id}/edit`}
-                        className="hover:text-[#8C6527] transition-colors"
+                        className="hover:text-[#8B5A2B] transition-colors"
                       >
                         {proj.title}
                       </Link>
@@ -153,13 +153,13 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
                     </td>
 
                     <td className="p-4 text-[#57534E]">
-                      <span className="bg-[#FAF7F0] border border-[#E2D7C3] px-2 py-0.5 rounded text-[11px]">
+                      <span className="bg-[#FAF6F0] border border-[#E5D8CA] px-2 py-0.5 rounded text-[11px]">
                         {proj.industryCategory}
                       </span>
                     </td>
 
                     <td className="p-4">
-                      <span className="font-semibold text-[#192538]">{proj.difficultyLevel}</span>
+                      <span className="font-semibold text-[#2A1810]">{proj.difficultyLevel}</span>
                     </td>
 
                     <td className="p-4 text-[#78716C]">
@@ -186,7 +186,7 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
                         <Link
                           href={`/projects/${proj.slug}`}
                           target="_blank"
-                          className="p-1.5 rounded-lg text-[#78716C] hover:text-[#192538] hover:bg-[#FAF7F0]"
+                          className="p-1.5 rounded-lg text-[#78716C] hover:text-[#2A1810] hover:bg-[#FAF6F0]"
                           title="Preview public case study"
                         >
                           <Eye className="w-3.5 h-3.5" />
@@ -194,7 +194,7 @@ export default function AdminProjectsListClient({ initialProjects }: AdminProjec
 
                         <Link
                           href={`/admin/projects/${proj.id}/edit`}
-                          className="p-1.5 rounded-lg text-[#8C6527] hover:bg-[#ECE4D4]"
+                          className="p-1.5 rounded-lg text-[#8B5A2B] hover:bg-[#EFE6DD]"
                           title="Edit project"
                         >
                           <Edit2 className="w-3.5 h-3.5" />

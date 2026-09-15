@@ -50,20 +50,20 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#192538] via-[#141E2E] to-[#0F172A] flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-white rounded-3xl border border-[#D4C5AD] shadow-2xl p-8 sm:p-10 space-y-6">
+    <div className="min-h-screen bg-gradient-to-b from-[#2A1810] via-[#23140D] to-[#1F120A] flex items-center justify-center p-4">
+      <div className="max-w-md w-full bg-white rounded-3xl border border-[#D8C5B2] shadow-2xl p-8 sm:p-10 space-y-6">
         {/* Emblem Header */}
         <div className="text-center space-y-2">
-          <div className="w-14 h-14 rounded-2xl bg-[#192538] text-white flex items-center justify-center font-serif text-2xl font-bold mx-auto border-2 border-[#8C6527] shadow-md">
+          <div className="w-14 h-14 rounded-2xl bg-[#2A1810] text-white flex items-center justify-center font-serif text-2xl font-bold mx-auto border-2 border-[#8B5A2B] shadow-md">
             YL
           </div>
-          <span className="text-[10px] uppercase tracking-widest font-bold text-[#8C6527]">
+          <span className="text-[10px] uppercase tracking-widest font-bold text-[#8B5A2B]">
             Yukti Ledger & Commerce Centre
           </span>
-          <h1 className="text-2xl font-serif font-bold text-[#192538]">
+          <h1 className="text-2xl font-serif font-bold text-[#2A1810]">
             Administrative Portal
           </h1>
-          <p className="text-xs text-[#6B6357]">
+          <p className="text-xs text-[#6B584C]">
             Authorized personnel only. All access is logged and audited.
           </p>
         </div>
@@ -81,14 +81,14 @@ export default function AdminLoginPage() {
               Admin Email Address
             </label>
             <div className="relative">
-              <Mail className="w-4 h-4 text-[#8C6527] absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Mail className="w-4 h-4 text-[#8B5A2B] absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="admin@ylcccommerce.in"
-                className="w-full pl-10 pr-3 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+                className="w-full pl-10 pr-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
               />
             </div>
           </div>
@@ -98,19 +98,19 @@ export default function AdminLoginPage() {
               Password
             </label>
             <div className="relative">
-              <Lock className="w-4 h-4 text-[#8C6527] absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Lock className="w-4 h-4 text-[#8B5A2B] absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type={showPassword ? 'text' : 'password'}
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••••••"
-                className="w-full pl-10 pr-10 py-2.5 text-sm bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8C6527] text-[#192538]"
+                className="w-full pl-10 pr-10 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#78716C] hover:text-[#192538]"
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#78716C] hover:text-[#2A1810]"
               >
                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               </button>
@@ -118,8 +118,8 @@ export default function AdminLoginPage() {
           </div>
 
           {/* Quick Demo Credentials Box */}
-          <div className="bg-[#FAF7F0] p-3 rounded-xl border border-[#E2D7C3] text-[11px] text-[#57534E] space-y-1">
-            <div className="flex items-center gap-1.5 font-bold text-[#8C6527]">
+          <div className="bg-[#FAF6F0] p-3 rounded-xl border border-[#E5D8CA] text-[11px] text-[#57534E] space-y-1">
+            <div className="flex items-center gap-1.5 font-bold text-[#8B5A2B]">
               <KeyRound className="w-3.5 h-3.5" />
               <span>Default Credentials (Pre-filled for Testing):</span>
             </div>
@@ -130,7 +130,7 @@ export default function AdminLoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#8C6527] hover:bg-[#74511D] text-white py-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all disabled:opacity-50"
+            className="w-full bg-[#8B5A2B] hover:bg-[#70441E] text-white py-3 rounded-xl font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all disabled:opacity-50"
           >
             {loading ? (
               <>
@@ -149,7 +149,7 @@ export default function AdminLoginPage() {
         <div className="text-center pt-2">
           <Link
             href="/"
-            className="text-xs text-[#78716C] hover:text-[#192538] hover:underline"
+            className="text-xs text-[#78716C] hover:text-[#2A1810] hover:underline"
           >
             ← Back to Public Website
           </Link>

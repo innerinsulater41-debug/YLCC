@@ -19,7 +19,7 @@ interface AdminAnalyticsChartsProps {
   projectIndustryDistribution: { name: string; value: number }[];
 }
 
-const COLORS = ['#8C6527', '#192538', '#2D6A4F', '#C1AF93', '#4A3E31', '#74511D'];
+const COLORS = ['#8B5A2B', '#2A1810', '#2D6A4F', '#C4AE96', '#4A3E31', '#70441E'];
 
 export default function AdminAnalyticsCharts({
   programCounts,
@@ -28,9 +28,9 @@ export default function AdminAnalyticsCharts({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
       {/* Chart 1: Applications by Program */}
-      <div className="lg:col-span-7 bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
+      <div className="lg:col-span-7 bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
         <div>
-          <h3 className="text-base font-serif font-bold text-[#192538]">
+          <h3 className="text-base font-serif font-bold text-[#2A1810]">
             Admission Applications by Track
           </h3>
           <p className="text-xs text-[#78716C]">Current cohort registration distribution</p>
@@ -44,22 +44,22 @@ export default function AdminAnalyticsCharts({
               <YAxis stroke="#78716C" fontSize={11} />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: '#FAF7F0',
-                  borderColor: '#D4C5AD',
+                  backgroundColor: '#FAF6F0',
+                  borderColor: '#D8C5B2',
                   borderRadius: '8px',
                   fontSize: '12px',
                 }}
               />
-              <Bar dataKey="count" fill="#8C6527" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="count" fill="#8B5A2B" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
       </div>
 
       {/* Chart 2: Project Library by Industry */}
-      <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-[#E2D7C3] shadow-xs space-y-4">
+      <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
         <div>
-          <h3 className="text-base font-serif font-bold text-[#192538]">
+          <h3 className="text-base font-serif font-bold text-[#2A1810]">
             16 Projects by Industry Category
           </h3>
           <p className="text-xs text-[#78716C]">Real-world multi-business case studies</p>
@@ -83,8 +83,8 @@ export default function AdminAnalyticsCharts({
               </Pie>
               <Tooltip
                 contentStyle={{
-                  backgroundColor: '#FAF7F0',
-                  borderColor: '#D4C5AD',
+                  backgroundColor: '#FAF6F0',
+                  borderColor: '#D8C5B2',
                   borderRadius: '8px',
                   fontSize: '12px',
                 }}

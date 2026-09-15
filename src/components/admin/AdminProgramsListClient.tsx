@@ -90,9 +90,9 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
 
   return (
     <div className="space-y-6">
-      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E2D7C3] shadow-xs flex items-center justify-between">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E5D8CA] shadow-xs flex items-center justify-between">
         <span className="text-xs text-[#57534E]">
-          Total Programs Managed: <strong className="text-[#192538]">{programs.length}</strong>
+          Total Programs Managed: <strong className="text-[#2A1810]">{programs.length}</strong>
         </span>
         <button
           type="button"
@@ -123,7 +123,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
             };
             setEditingProgram(newProg);
           }}
-          className="bg-[#8C6527] hover:bg-[#74511D] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors"
+          className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 shadow-xs transition-colors"
         >
           <Plus className="w-4 h-4" />
           <span>Add New Program</span>
@@ -131,11 +131,11 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
       </div>
 
       {/* Programs Table */}
-      <div className="bg-white rounded-2xl border border-[#E2D7C3] shadow-xs overflow-hidden">
+      <div className="bg-white rounded-2xl border border-[#E5D8CA] shadow-xs overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs border-collapse">
             <thead>
-              <tr className="bg-[#FAF7F0] border-b border-[#E2D7C3] text-[#78716C] uppercase font-bold text-[10px] tracking-wider">
+              <tr className="bg-[#FAF6F0] border-b border-[#E5D8CA] text-[#78716C] uppercase font-bold text-[10px] tracking-wider">
                 <th className="p-4">Program Title</th>
                 <th className="p-4">Category</th>
                 <th className="p-4">Duration & Mode</th>
@@ -145,10 +145,10 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                 <th className="p-4 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#EFE8DD]">
+            <tbody className="divide-y divide-[#EFE6DD]">
               {programs.map((prog) => (
-                <tr key={prog.id} className="hover:bg-[#FAF7F0]/60 transition-colors">
-                  <td className="p-4 font-semibold text-[#192538] max-w-xs">
+                <tr key={prog.id} className="hover:bg-[#FAF6F0]/60 transition-colors">
+                  <td className="p-4 font-semibold text-[#2A1810] max-w-xs">
                     <span className="block truncate">{prog.title}</span>
                     <span className="text-[10px] text-[#78716C] font-normal block mt-0.5">
                       {prog.modules.length} Modules • {prog.softwareTools.join(', ')}
@@ -156,7 +156,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                   </td>
 
                   <td className="p-4 text-[#57534E]">
-                    <span className="bg-[#FAF7F0] border border-[#E2D7C3] px-2 py-0.5 rounded text-[11px]">
+                    <span className="bg-[#FAF6F0] border border-[#E5D8CA] px-2 py-0.5 rounded text-[11px]">
                       {prog.category}
                     </span>
                   </td>
@@ -167,11 +167,11 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                   </td>
 
                   <td className="p-4">
-                    <span className="font-bold text-[#192538]">
+                    <span className="font-bold text-[#2A1810]">
                       ₹{prog.discountedFees ? prog.discountedFees.toLocaleString('en-IN') : prog.fees.toLocaleString('en-IN')}
                     </span>
                     {prog.discountedFees && (
-                      <span className="block text-[10px] text-[#A89577] line-through">
+                      <span className="block text-[10px] text-[#A68A70] line-through">
                         ₹{prog.fees.toLocaleString('en-IN')}
                       </span>
                     )}
@@ -200,7 +200,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                       <button
                         type="button"
                         onClick={() => setEditingProgram(prog)}
-                        className="p-1.5 rounded-lg text-[#8C6527] hover:bg-[#ECE4D4]"
+                        className="p-1.5 rounded-lg text-[#8B5A2B] hover:bg-[#EFE6DD]"
                         title="Edit program details"
                       >
                         <Edit2 className="w-3.5 h-3.5" />
@@ -226,15 +226,15 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
       {/* Edit Program Modal */}
       {editingProgram && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 space-y-6 shadow-2xl border border-[#D4C5AD]">
-            <div className="flex items-center justify-between border-b border-[#EFE8DD] pb-3">
-              <h3 className="text-lg font-serif font-bold text-[#192538]">
+          <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 space-y-6 shadow-2xl border border-[#D8C5B2]">
+            <div className="flex items-center justify-between border-b border-[#EFE6DD] pb-3">
+              <h3 className="text-lg font-serif font-bold text-[#2A1810]">
                 Edit Program: {editingProgram.title}
               </h3>
               <button
                 type="button"
                 onClick={() => setEditingProgram(null)}
-                className="p-1 text-[#78716C] hover:text-[#192538]"
+                className="p-1 text-[#78716C] hover:text-[#2A1810]"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -247,7 +247,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                   type="text"
                   value={editingProgram.title}
                   onChange={(e) => setEditingProgram({ ...editingProgram, title: e.target.value })}
-                  className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                  className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                 />
               </div>
 
@@ -258,7 +258,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                     type="number"
                     value={editingProgram.fees}
                     onChange={(e) => setEditingProgram({ ...editingProgram, fees: Number(e.target.value) })}
-                    className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                    className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                   />
                 </div>
 
@@ -273,7 +273,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                         discountedFees: e.target.value ? Number(e.target.value) : undefined,
                       })
                     }
-                    className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                    className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                   />
                 </div>
               </div>
@@ -285,7 +285,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                     type="text"
                     value={editingProgram.duration}
                     onChange={(e) => setEditingProgram({ ...editingProgram, duration: e.target.value })}
-                    className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                    className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                   />
                 </div>
 
@@ -297,7 +297,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                     onChange={(e) =>
                       setEditingProgram({ ...editingProgram, availableSeats: Number(e.target.value) })
                     }
-                    className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                    className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                   />
                 </div>
               </div>
@@ -308,7 +308,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                   type="text"
                   value={editingProgram.batchTiming}
                   onChange={(e) => setEditingProgram({ ...editingProgram, batchTiming: e.target.value })}
-                  className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                  className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                 />
               </div>
 
@@ -320,16 +320,16 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                   onChange={(e) =>
                     setEditingProgram({ ...editingProgram, shortDescription: e.target.value })
                   }
-                  className="w-full px-3 py-2 bg-[#FAF7F0] border border-[#D4C5AD] rounded-xl text-[#192538]"
+                  className="w-full px-3 py-2 bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl text-[#2A1810]"
                 />
               </div>
             </div>
 
-            <div className="flex justify-end gap-3 pt-3 border-t border-[#EFE8DD]">
+            <div className="flex justify-end gap-3 pt-3 border-t border-[#EFE6DD]">
               <button
                 type="button"
                 onClick={() => setEditingProgram(null)}
-                className="px-4 py-2 rounded-xl border border-[#D4C5AD] text-xs font-semibold text-[#192538]"
+                className="px-4 py-2 rounded-xl border border-[#D8C5B2] text-xs font-semibold text-[#2A1810]"
               >
                 Cancel
               </button>
@@ -337,7 +337,7 @@ export default function AdminProgramsListClient({ initialPrograms }: AdminProgra
                 type="button"
                 onClick={handleSaveEdit}
                 disabled={saving}
-                className="bg-[#8C6527] hover:bg-[#74511D] text-white px-6 py-2 rounded-xl text-xs font-bold transition-colors"
+                className="bg-[#8B5A2B] hover:bg-[#70441E] text-white px-6 py-2 rounded-xl text-xs font-bold transition-colors"
               >
                 {saving ? 'Saving...' : 'Save Changes'}
               </button>

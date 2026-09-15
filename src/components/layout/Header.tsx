@@ -42,9 +42,9 @@ export default function Header({ settings }: HeaderProps) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const phone = settings?.phone || '+91 98290 12345';
+  const phone = settings?.phone || '+91 90059 00123';
   const email = settings?.email || 'admissions@ylcccommerce.in';
-  const whatsapp = settings?.whatsapp || '+91 98290 12345';
+  const whatsapp = settings?.whatsapp || '+91 90059 00123';
   const cleanWhatsapp = whatsapp.replace(/[^0-9]/g, '');
 
   const navLinks = [
@@ -86,7 +86,7 @@ export default function Header({ settings }: HeaderProps) {
               className="flex items-center gap-1.5 hover:text-[#D8C5B2] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#C4AE96]" />
-              <span>{phone}</span>
+              <span className="font-semibold">{phone}</span>
             </a>
             <span className="text-[#4E2F1D]">|</span>
             <a
@@ -126,16 +126,13 @@ export default function Header({ settings }: HeaderProps) {
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
-                <span className="text-xl font-serif font-extrabold tracking-tight text-[#2A1810]">
+                <span className="text-2xl font-serif font-extrabold tracking-tight text-[#2A1810]">
                   YLCC
                 </span>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#8B5A2B] bg-[#EFE6DD] px-1.5 py-0.5 rounded border border-[#D8C5B2]">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#8B5A2B] bg-[#EFE6DD] px-2 py-0.5 rounded border border-[#D8C5B2]">
                   Commerce Institute
                 </span>
               </div>
-              <span className="text-[11px] text-[#57534E] font-medium hidden sm:inline-block">
-                {settings?.fullForm || 'Yukti Ledger & Commerce Centre'}
-              </span>
             </div>
           </Link>
 

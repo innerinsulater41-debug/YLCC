@@ -39,10 +39,10 @@ export default async function HomePage() {
   ]);
 
   const stats = settings.stats || {
-    studentsTrained: 4200,
+    studentsTrained: 76,
     practicalProjectsCount: 16,
     trainingModulesCount: 48,
-    yearsExperience: 14,
+    yearsExperience: 20,
     practicalLabHours: 350,
     partnerEnterprises: 120,
   };

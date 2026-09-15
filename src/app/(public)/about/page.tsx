@@ -37,7 +37,7 @@ export default async function AboutPage() {
             About YLCC
           </h1>
           <p className="text-sm sm:text-base text-[#8B5A2B] font-semibold">
-            {settings.fullForm} • {settings.location}
+            Commerce & Accounting Institute • {settings.location}
           </p>
           <p className="text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
             YLCC is an exclusive commerce, accounting, taxation, and financial skills institute. We are NOT a coding or technical institute. Our singular mission is to transform commerce students and graduates into proficient, desk-ready accounting professionals through authentic practical projects.

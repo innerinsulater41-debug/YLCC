@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s | YLCC Commerce Institute',
   },
   description:
-    'Yukti Ledger & Commerce Centre (YLCC) offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through 16 multi-business projects in Jaipur.',
+    'YLCC offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through 16 multi-business projects in Jaipur.',
   keywords: [
     'YLCC',
     'Commerce Institute',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'Accounts Manager Training',
     'Tally Prime Course',
   ],
-  authors: [{ name: 'YLCC - Yukti Ledger & Commerce Centre' }],
+  authors: [{ name: 'YLCC Commerce & Accounting Institute' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   openGraph: {
     title: 'YLCC | Commerce & Professional Accounting Institute',

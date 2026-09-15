@@ -13,12 +13,12 @@ import {
 
 export const initialInstituteSettings: InstituteSettings = {
   instituteName: 'YLCC',
-  fullForm: 'Yukti Ledger & Commerce Centre',
+  fullForm: '',
   tagline: 'Practical Commerce, Accounting, Taxation & Multi-Business Industry Training',
   instituteType: 'Commerce, Accounting and Professional Skills Training Institute',
   location: 'Jaipur, Rajasthan, India',
-  phone: '+91 98290 12345',
-  whatsapp: '+91 98290 12345',
+  phone: '+91 90059 00123',
+  whatsapp: '+91 90059 00123',
   email: 'admissions@ylcccommerce.in',
   address: 'YLCC Commerce Centre, 3rd Floor, Corporate Tower, Tonk Road, Jaipur, Rajasthan 302015, India',
   officeHours: 'Monday – Saturday: 8:30 AM – 7:30 PM (Sunday Closed)',
@@ -29,10 +29,10 @@ export const initialInstituteSettings: InstituteSettings = {
     youtube: 'https://youtube.com/@ylcccommerce',
   },
   stats: {
-    studentsTrained: 4200,
+    studentsTrained: 76,
     practicalProjectsCount: 16,
     trainingModulesCount: 48,
-    yearsExperience: 14,
+    yearsExperience: 20,
     practicalLabHours: 350,
     partnerEnterprises: 120,
   },

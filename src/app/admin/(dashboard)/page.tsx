@@ -58,7 +58,7 @@ export default async function AdminDashboardPage() {
             Welcome, Administrator
           </h1>
           <p className="text-xs text-[#57534E] mt-0.5">
-            {settings.fullForm} • All statistics and database records are live.
+            YLCC Commerce & Accounting Institute • All statistics and database records are live.
           </p>
         </div>
 

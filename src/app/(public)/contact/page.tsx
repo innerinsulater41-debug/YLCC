@@ -21,9 +21,9 @@ export const metadata = {
 export default async function ContactPage() {
   const settings = await db.getSettings();
 
-  const phone = settings.phone || '+91 98290 12345';
+  const phone = settings.phone || '+91 90059 00123';
   const email = settings.email || 'admissions@ylcccommerce.in';
-  const whatsapp = settings.whatsapp || '+91 98290 12345';
+  const whatsapp = settings.whatsapp || '+91 90059 00123';
   const cleanWhatsapp = whatsapp.replace(/[^0-9]/g, '');
   const address =
     settings.address ||

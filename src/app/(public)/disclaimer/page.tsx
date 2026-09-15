@@ -17,7 +17,7 @@ export default function DisclaimerPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-serif font-bold text-[#2A1810]">1. Nature of Institute & Programs</h2>
           <p>
-            Yukti Ledger & Commerce Centre (YLCC) is an independent vocational skill development institute providing practical training in accounting, taxation procedures, banking documentation, and corporate spreadsheets. YLCC is NOT a degree-granting college or university.
+            YLCC is an independent vocational skill development institute providing practical training in accounting, taxation procedures, banking documentation, and corporate spreadsheets. YLCC is NOT a degree-granting college or university.
           </p>
         </section>
 

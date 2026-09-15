@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Privacy Policy | YLCC',
-  description: 'Privacy policy and data protection terms of Yukti Ledger & Commerce Centre (YLCC).',
+  description: 'Privacy policy and data protection terms of YLCC Commerce & Accounting Institute.',
 };
 
 export default function PrivacyPage() {
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-serif font-bold text-[#2A1810]">1. Information We Collect</h2>
           <p>
-            Yukti Ledger & Commerce Centre (YLCC) collects student contact details (name, email address, telephone number, residential address) and educational qualifications when you submit an enquiry, download brochures, or file an admission application.
+            YLCC collects student contact details (name, email address, telephone number, residential address) and educational qualifications when you submit an enquiry, download brochures, or file an admission application.
           </p>
         </section>
 

@@ -58,7 +58,7 @@ export default function AdminLoginPage() {
             YL
           </div>
           <span className="text-[10px] uppercase tracking-widest font-bold text-[#8B5A2B]">
-            Yukti Ledger & Commerce Centre
+            Commerce & Accounting Institute
           </span>
           <h1 className="text-2xl font-serif font-bold text-[#2A1810]">
             Administrative Portal

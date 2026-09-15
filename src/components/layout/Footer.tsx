@@ -20,14 +20,13 @@ interface FooterProps {
 export default function Footer({ settings }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
-  const phone = settings?.phone || '+91 98290 12345';
+  const phone = settings?.phone || '+91 90059 00123';
   const email = settings?.email || 'admissions@ylcccommerce.in';
   const address =
     settings?.address ||
     'YLCC Commerce Centre, 3rd Floor, Corporate Tower, Tonk Road, Jaipur, Rajasthan 302015, India';
   const officeHours =
     settings?.officeHours || 'Monday – Saturday: 8:30 AM – 7:30 PM (Sunday Closed)';
-  const fullForm = settings?.fullForm || 'Yukti Ledger & Commerce Centre';
 
   return (
     <footer className="bg-[#2A1810] text-[#E5D8CA] border-t-4 border-[#8B5A2B] pt-16 pb-8">
@@ -43,7 +42,7 @@ export default function Footer({ settings }: FooterProps) {
               </div>
               <div>
                 <h3 className="text-xl font-serif font-bold text-white tracking-tight">YLCC</h3>
-                <p className="text-xs text-[#C4AE96] font-medium">{fullForm}</p>
+                <p className="text-xs text-[#C4AE96] font-medium">Commerce & Accounting Institute</p>
               </div>
             </div>
 
@@ -257,7 +256,7 @@ export default function Footer({ settings }: FooterProps) {
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A68A70] gap-4">
-          <p>© {currentYear} YLCC — {fullForm}. All rights reserved.</p>
+          <p>© {currentYear} YLCC — Commerce & Accounting Institute. All rights reserved.</p>
 
           <div className="flex flex-wrap items-center gap-4 text-[11px]">
             <Link href="/privacy" className="hover:text-white transition-colors">

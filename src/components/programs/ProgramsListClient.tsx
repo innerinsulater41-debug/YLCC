@@ -50,7 +50,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
       <div className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
           {/* Search Input */}
-          <div className="md:col-span-6 relative">
+          <div className="md:col-span-8 relative">
             <Search className="w-4 h-4 text-[#8B5A2B] absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
@@ -61,23 +61,14 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
             />
           </div>
 
-          {/* Mode Selector */}
-          <div className="md:col-span-3">
-            <select
-              value={selectedMode}
-              onChange={(e) => setSelectedMode(e.target.value)}
-              className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
-            >
-              <option value="All">All Learning Modes</option>
-              <option value="Offline Classroom">Offline Classroom Lab</option>
-              <option value="Online Live">Online Live Interactive</option>
-              <option value="Hybrid">Hybrid (Classroom + Online)</option>
-            </select>
-          </div>
-
-          <div className="md:col-span-3 text-right text-xs text-[#78716C]">
-            Showing <strong className="text-[#2A1810]">{filtered.length}</strong> of{' '}
-            {programs.length} Programs
+          <div className="md:col-span-4 flex items-center justify-end gap-3 text-xs text-[#78716C]">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-semibold text-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+              100% Offline Practical Lab
+            </span>
+            <span>
+              Showing <strong className="text-[#2A1810]">{filtered.length}</strong> Programs
+            </span>
           </div>
         </div>
 
@@ -132,13 +123,9 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#FAF6F0] px-3 py-1 rounded-full border border-[#E5D8CA]">
                     {prog.category}
                   </span>
-                  <div className="flex items-center gap-3 text-xs text-[#78716C] font-medium">
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-[#8B5A2B]" />
-                      <span>{prog.duration}</span>
-                    </span>
-                    <span>•</span>
-                    <span>{prog.mode}</span>
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+                    <span>Offline Classroom Lab</span>
                   </div>
                 </div>
 
@@ -180,24 +167,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               </div>
 
               {/* Card Footer */}
-              <div className="p-6 bg-[#FAF6F0] border-t border-[#E5D8CA] flex flex-wrap items-center justify-between gap-4">
-                <div>
-                  <span className="text-[10px] uppercase font-bold text-[#78716C] block">
-                    Course Fee
-                  </span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-lg font-bold text-[#2A1810]">
-                      ₹{prog.discountedFees ? prog.discountedFees.toLocaleString('en-IN') : prog.fees.toLocaleString('en-IN')}
-                    </span>
-                    {prog.discountedFees && (
-                      <span className="text-xs text-[#A68A70] line-through">
-                        ₹{prog.fees.toLocaleString('en-IN')}
-                      </span>
-                    )}
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
+              <div className="p-6 bg-[#FAF6F0] border-t border-[#E5D8CA] flex items-center justify-end gap-3">
                   {prog.brochureUrl && (
                     <a
                       href={prog.brochureUrl}
@@ -225,7 +195,6 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </Link>
                 </div>
               </div>
-            </div>
           ))}
         </div>
       )}

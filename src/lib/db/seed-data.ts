@@ -50,9 +50,9 @@ export const initialPrograms: Program[] = [
     title: 'Accounts Operator Practical Training',
     category: 'Accounting Operations',
     shortDescription:
-      'Master live day-to-day business accounting entries, sales billing, purchase registers, capital expenditure, e-way bills, e-invoices, and party balance monitoring.',
+      'Master 11 core accounting operations: Day-to-Day Transactions, Sale Billing, Purchase Feeding, Revenue & Capital Expenditure, Capital Investment, E-Way Bill, E-Invoice, Transportation, Party Balance, and Stock View.',
     detailedDescription:
-      'The Accounts Operator program is meticulously structured for commerce students, fresh graduates, and junior accountants. Unlike theoretical book-keeping, this course simulates a live corporate accounts department. You will record actual bills, process vendor invoices, account for capital investments versus revenue expenditures, generate government-mandated E-way bills and E-invoices, manage transportation and freight entries, and reconcile vendor and customer ledgers on a daily live basis.',
+      'The Accounts Operator program is meticulously structured for commerce students, fresh graduates, and junior accountants. Unlike theoretical book-keeping, this course simulates a live corporate accounts department from Day 1. You will master the 11 foundational pillars of professional accounting operations: recording live daily transactions, executing GST sale billing, feeding vendor purchases, accounting for capital investments versus revenue expenditures, managing fixed assets and CapEx, generating government-mandated E-way bills and E-invoices, handling transportation bills and freight inward, reconciling customer & supplier party balances, and maintaining real-time stock and godown inventory views.',
     duration: '2.5 Months',
     mode: 'Offline Classroom',
     fees: 14500,
@@ -69,46 +69,103 @@ export const initialPrograms: Program[] = [
     isFeatured: true,
     status: 'published',
     displayOrder: 1,
+    coreCompetencies: [
+      {
+        title: 'Day-to-Day Transactions',
+        description: 'Voucher feeding for Receipt, Payment, Journal, Contra, and cash/bank book daily maintenance.',
+      },
+      {
+        title: 'Sale Billing',
+        description: 'Generating tax invoices with GST calculations (CGST/SGST/IGST), HSN/SAC codes, and trade discounts.',
+      },
+      {
+        title: 'Purchase Feeding',
+        description: 'Live purchase voucher entries, vendor invoice verification, and purchase register maintenance.',
+      },
+      {
+        title: 'Revenue Expenditure',
+        description: 'Accounting for operating expenses, utilities, maintenance, and administrative business overheads.',
+      },
+      {
+        title: 'Capital Investment',
+        description: 'Recording proprietor/partner capital infusions, capital accounts, and equity funding entries.',
+      },
+      {
+        title: 'Capital Expenditure',
+        description: 'Asset capitalization for machinery, computers, and office assets with depreciation schedules.',
+      },
+      {
+        title: 'E-Way Bill',
+        description: 'Live portal generation, Part-A & Part-B updating, vehicle number changes, and cancellation rules.',
+      },
+      {
+        title: 'E-Invoice',
+        description: 'B2B/B2G e-invoicing compliance, generating IRN (Invoice Reference Number) and QR codes.',
+      },
+      {
+        title: 'Transportation',
+        description: 'Booking Lorry Receipts (LR), freight inward/outward, and handling transporter ledger settlements.',
+      },
+      {
+        title: 'Party Balance',
+        description: 'Sundry Debtors & Creditors balance monitoring, ledger tallying, and confirmation statements.',
+      },
+      {
+        title: 'Stock View',
+        description: 'Real-time item-wise inventory status, godown transfers, reorder levels, and physical stock tally.',
+      },
+    ],
     modules: [
       {
         id: 'mod-1-1',
-        title: 'Day-to-Day Business Accounting Entries',
+        title: 'Day-to-Day Transactions, Sale Billing & Purchase Feeding',
         topics: [
-          'Recording live voucher entries (Receipt, Payment, Journal, Contra)',
-          'Debit Note & Credit Note workflows with tax adjustments',
-          'Sales Billing with HSN/SAC codes and trade discount mechanics',
-          'Purchase entries, freight inward, and supplier terms',
+          'Day-to-Day Transaction voucher entries (Receipt, Payment, Journal, and Contra) in Tally & Busy',
+          'Sale Billing: Generating multi-item GST invoices, HSN/SAC coding, and trade discount mechanics',
+          'Purchase Feeding: Recording vendor purchase bills, matching with POs, and purchase registers',
+          'Debit Note & Credit Note workflows for sales returns, purchase returns, and price adjustments',
         ],
         durationHours: 20,
       },
       {
         id: 'mod-1-2',
-        title: 'Revenue vs Capital Expenditure Accounting',
+        title: 'Capital Investment, Capital Expenditure & Revenue Expenditure',
         topics: [
-          'Differentiating capital investment, revenue expenditure, and deferred revenue expenses',
-          'Asset acquisition entries and depreciation schedules',
-          'Transportation & logistics bill bookings',
-          'Live feeding and verification against physical purchase orders',
+          'Capital Investment: Recording proprietor/partner equity contributions, capital accounts, and bank entries',
+          'Capital Expenditure: Asset acquisition entries, fixed asset register, and depreciation schedules',
+          'Revenue Expenditure: Recording day-to-day administrative expenses, office utilities, and operational costs',
+          'Distinguishing capital vs revenue expenditures for accurate Profit & Loss statements and balance sheets',
         ],
         durationHours: 15,
       },
       {
         id: 'mod-1-3',
-        title: 'Statutory Invoicing & Balances Tracking',
+        title: 'Statutory E-Way Bill, E-Invoice & Transportation Accounting',
         topics: [
-          'E-way Bill generation, cancellation, and vehicle updating',
-          'E-invoicing workflow for B2B and B2G supplies',
-          'Party balances reconciliation and monthly confirmation statements',
-          'Stock view, godown transfers, and physical stock tally',
+          'E-Way Bill: Live portal generation, Part-A & Part-B updating, vehicle changes, and cancellation rules',
+          'E-Invoice: B2B/B2G e-invoice generation, IRN creation, and digitally signed QR code workflows',
+          'Transportation: Booking Lorry Receipts (LR), freight inward/outward, and transporter bill settlements',
+          'Goods Transport Agency (GTA) accounting and reverse charge mechanism (RCM) on freight payments',
         ],
         durationHours: 25,
       },
+      {
+        id: 'mod-1-4',
+        title: 'Party Balance Reconciliation & Real-Time Stock View',
+        topics: [
+          'Party Balance: Scrutinizing Sundry Debtors (receivables) and Sundry Creditors (payables) aging ledgers',
+          'Party Ledger Reconciliation: Running balance confirmation statements and resolving vendor discrepancies',
+          'Stock View: Tracking real-time item stock balances, minimum order levels, and multi-godown transfers',
+          'Physical Stock Tally: Reconciling physical warehouse stock with software ledgers to identify variances',
+        ],
+        durationHours: 20,
+      },
     ],
     learningOutcomes: [
+      'Mastery over all 11 core accounts operator skills: daily transactions, sales, purchases, capital & revenue entries, e-way, e-invoice, transportation, party balance, and stock view',
       'Independent capability to handle sales and purchase desks in any trading or manufacturing firm',
       'Flawless generation of statutory E-way bills and E-invoices on the government portal',
-      'Accurate handling of live cash, bank, supplier, and customer ledger entries',
-      'Confidence to maintain error-free books of accounts from day one on the job',
+      'Accurate handling of live cash, bank, supplier, and customer ledger entries with real-time stock tally',
     ],
     seoTitle: 'Accounts Operator Course | Practical Accounting Training Jaipur | YLCC',
     seoDescription:
@@ -124,7 +181,7 @@ export const initialPrograms: Program[] = [
     detailedDescription:
       'Designed for senior accountants, commerce graduates, and entrepreneurs, the Accounts Manager program prepares you to lead an accounting department. You learn how to scrutinize books of accounts on a live basis, implement strict credit control on debtors cycles, track supplier payment aging, conduct monthly internal accounting audits, inspect negative cash and stock balances, and prepare finalized financial statements for annual income-tax audit filings.',
     duration: '3 Months',
-    mode: 'Hybrid',
+    mode: 'Offline Classroom',
     fees: 21000,
     discountedFees: 16999,
     eligibility: 'B.Com, M.Com, MBA Finance, or 1+ Year Experience in basic accounting',
@@ -194,7 +251,7 @@ export const initialPrograms: Program[] = [
     detailedDescription:
       'Every expanding business relies on commercial bank funding—Cash Credit (CC) limits, Overdraft (OD) limits, and Working Capital term loans. This specialized course trains you in the exact banking paperwork demanded by nationalized and private banks. You will prepare bank loan sanction dossiers, compute monthly Drawing Power (DP) statements with margin deduction, compile CMA data (Credit Monitoring Arrangement), and prepare projected Balance Sheets and Profit & Loss statements for limit renewals.',
     duration: '1.5 Months',
-    mode: 'Hybrid',
+    mode: 'Offline Classroom',
     fees: 16000,
     discountedFees: 12499,
     eligibility: 'Commerce graduates, accountants, finance executives, business owners',
@@ -334,7 +391,7 @@ export const initialPrograms: Program[] = [
     detailedDescription:
       'Withholding tax compliance is mandatory for every business entity in India. Non-compliance invites hefty interest and penalties. In this course, you will learn section-wise transaction recording under TDS (194C contractor, 194J professional fees, 194I rent, 194Q purchase of goods) and TCS (206C(1H) scrap/goods sale). You will execute monthly tax payments on the Protean/NSDL tax portal, prepare quarterly TDS returns using RPU and FVU utilities, handle correction statements, and download and issue Form 16 and Form 16A certificates from the TRACES portal.',
     duration: '1.5 Months',
-    mode: 'Hybrid',
+    mode: 'Offline Classroom',
     fees: 15000,
     discountedFees: 11499,
     eligibility: 'Commerce students, tax interns, accountants, finance executives',
@@ -404,7 +461,7 @@ export const initialPrograms: Program[] = [
     detailedDescription:
       'Payroll accounting is a vital bridge between HR and finance. This course teaches how to build competitive and tax-optimized salary structures (Basic, HRA, Special Allowance, PF, ESIC, Professional Tax). You will maintain daily attendance and biometric shift logs, compute overtime, calculate annual statutory bonus and gratuity liabilities, generate monthly pay-slips and salary registers in accordance with Indian Labour Laws, and execute monthly returns for EPF (Electronic Challan-cum-Return - ECR) and ESIC on official government portals.',
     duration: '1.5 Months',
-    mode: 'Hybrid',
+    mode: 'Offline Classroom',
     fees: 14000,
     discountedFees: 10999,
     eligibility: 'Commerce graduates, HR executives, accountants, payroll administrators',
@@ -544,7 +601,7 @@ export const initialPrograms: Program[] = [
     detailedDescription:
       'Advanced Excel is the indispensable operating system of modern finance and corporate management. This intensive program moves beyond basic spreadsheets into corporate-grade Excel 365 mastery. You will master 250+ modern formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, SORTBY, LET, LAMBDA), solve 500+ common workplace spreadsheet troubleshooting challenges, tackle 250+ real accounting interview questions, and build fully automated executive MIS dashboards that update with a single click.',
     duration: '1.5 Months',
-    mode: 'Hybrid',
+    mode: 'Offline Classroom',
     fees: 12500,
     discountedFees: 9999,
     eligibility: 'Open to all commerce students, accountants, analysts, and working professionals',

@@ -69,6 +69,10 @@ export interface Program {
   displayOrder: number;
   modules: ProgramModule[];
   learningOutcomes: string[];
+  coreCompetencies?: {
+    title: string;
+    description: string;
+  }[];
   seoTitle?: string;
   seoDescription?: string;
 }

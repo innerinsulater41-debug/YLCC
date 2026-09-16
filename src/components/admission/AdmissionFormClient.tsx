@@ -327,15 +327,16 @@ export default function AdmissionFormClient({ programs }: AdmissionFormClientPro
               onChange={(e) =>
                 setFormData({
                   ...formData,
-                  preferredMode: e.target.value as 'Offline Classroom' | 'Online Live' | 'Hybrid',
+                  preferredMode: e.target.value as 'Offline Classroom',
                 })
               }
               className="w-full px-3 py-2.5 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"
             >
-              <option value="Offline Classroom">Offline Classroom (Jaipur Lab)</option>
-              <option value="Online Live">Online Live Interactive</option>
-              <option value="Hybrid">Hybrid (Classroom + Online)</option>
+              <option value="Offline Classroom">Offline Classroom (In-Person Jaipur Accounting Lab)</option>
             </select>
+            <p className="text-[10px] text-[#8B5A2B] mt-1 font-medium">
+              All batches are conducted 100% offline in our practical accounting lab.
+            </p>
           </div>
 
           <div>

@@ -72,20 +72,12 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
           </div>
 
           {/* Quick Stats Bar */}
-          <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl">
-            <div className="bg-white p-3 rounded-xl border border-[#E5D8CA]">
-              <span className="text-[10px] uppercase font-bold text-[#78716C] block">Duration</span>
-              <span className="text-sm font-bold text-[#2A1810] flex items-center gap-1.5 mt-0.5">
-                <Clock className="w-4 h-4 text-[#8B5A2B]" />
-                {program.duration}
-              </span>
-            </div>
-
+          <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
             <div className="bg-white p-3 rounded-xl border border-[#E5D8CA]">
               <span className="text-[10px] uppercase font-bold text-[#78716C] block">Learning Mode</span>
-              <span className="text-sm font-bold text-[#2A1810] flex items-center gap-1.5 mt-0.5">
-                <Laptop className="w-4 h-4 text-[#8B5A2B]" />
-                {program.mode}
+              <span className="text-sm font-bold text-emerald-800 flex items-center gap-1.5 mt-0.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-600" />
+                Offline Classroom Lab
               </span>
             </div>
 
@@ -97,12 +89,9 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
             </div>
 
             <div className="bg-white p-3 rounded-xl border border-[#E5D8CA]">
-              <span className="text-[10px] uppercase font-bold text-[#78716C] block">Course Fee</span>
-              <span className="text-sm font-bold text-[#8B5A2B] block mt-0.5">
-                ₹
-                {program.discountedFees
-                  ? program.discountedFees.toLocaleString('en-IN')
-                  : program.fees.toLocaleString('en-IN')}
+              <span className="text-[10px] uppercase font-bold text-[#78716C] block">Batch Capacity</span>
+              <span className="text-sm font-bold text-[#2A1810] block mt-0.5">
+                {program.availableSeats} Seats Available
               </span>
             </div>
           </div>
@@ -123,6 +112,44 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
                 {program.detailedDescription}
               </div>
             </div>
+
+            {/* Core Operational Capabilities & Skills */}
+            {program.coreCompetencies && program.coreCompetencies.length > 0 && (
+              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-6">
+                <div className="border-b border-[#EFE6DD] pb-4">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#FAF6F0] px-2.5 py-1 rounded border border-[#E5D8CA] inline-block mb-2">
+                    Core Operational Curriculum
+                  </span>
+                  <h2 className="text-xl font-serif font-bold text-[#2A1810]">
+                    11 Essential Practical Skills You Master
+                  </h2>
+                  <p className="text-xs text-[#78716C] mt-1">
+                    Hands-on practical execution covering the complete day-to-day desk operations of an enterprise accounts department.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {program.coreCompetencies.map((comp, idx) => (
+                    <div
+                      key={idx}
+                      className="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D8CA] hover:border-[#8B5A2B] hover:shadow-xs transition-all space-y-1.5"
+                    >
+                      <div className="flex items-center gap-2">
+                        <span className="w-5 h-5 rounded-full bg-[#8B5A2B] text-white flex items-center justify-center font-bold text-[10px] shrink-0">
+                          {idx + 1}
+                        </span>
+                        <h4 className="text-xs font-bold text-[#2A1810] uppercase tracking-wide">
+                          {comp.title}
+                        </h4>
+                      </div>
+                      <p className="text-[11px] text-[#57534E] leading-relaxed pl-7">
+                        {comp.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Modules & Topics Breakdown */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-6">
@@ -224,25 +251,19 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
                 <span className="text-[10px] uppercase font-bold text-[#8B5A2B] tracking-wider block">
                   Batch Enrollment
                 </span>
-                <div className="flex items-baseline gap-2 mt-1">
-                  <span className="text-2xl font-serif font-extrabold text-[#2A1810]">
-                    ₹
-                    {program.discountedFees
-                      ? program.discountedFees.toLocaleString('en-IN')
-                      : program.fees.toLocaleString('en-IN')}
-                  </span>
-                  {program.discountedFees && (
-                    <span className="text-sm text-[#A68A70] line-through">
-                      ₹{program.fees.toLocaleString('en-IN')}
-                    </span>
-                  )}
-                </div>
+                <h4 className="text-lg font-serif font-bold text-[#2A1810] mt-1">
+                  Offline Classroom Cohort
+                </h4>
                 <p className="text-[11px] text-emerald-800 font-semibold mt-0.5">
                   Only {program.availableSeats} Seats Remaining for This Cohort
                 </p>
               </div>
 
               <div className="space-y-2 text-xs text-[#57534E] border-t border-b border-[#EFE6DD] py-3">
+                <div className="flex justify-between">
+                  <span className="text-[#78716C]">Training Mode:</span>
+                  <span className="font-semibold text-emerald-800">100% Offline Lab</span>
+                </div>
                 <div className="flex justify-between">
                   <span className="text-[#78716C]">Start Date:</span>
                   <span className="font-semibold text-[#2A1810]">{program.startDate}</span>
@@ -302,8 +323,8 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
                 <p className="text-xs text-[#6B584C] mt-1 line-clamp-2">{rp.shortDescription}</p>
               </div>
               <div className="pt-4 mt-3 border-t border-[#EFE6DD] flex items-center justify-between text-xs">
-                <span className="font-bold text-[#2A1810]">
-                  ₹{rp.discountedFees ? rp.discountedFees.toLocaleString('en-IN') : rp.fees.toLocaleString('en-IN')}
+                <span className="font-semibold text-emerald-800 text-[11px]">
+                  Offline Classroom
                 </span>
                 <Link href={`/programs/${rp.slug}`} className="font-semibold text-[#8B5A2B] flex items-center gap-1">
                   <span>Details</span>

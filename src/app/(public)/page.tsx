@@ -278,10 +278,13 @@ export default async function HomePage() {
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-[#FAF6F0] text-[#8B5A2B] px-2 py-1 rounded border border-[#E5D8CA]">
-                    {prog.duration}
+                  <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+                    Offline Classroom
                   </span>
-                  <span className="text-xs font-semibold text-[#78716C]">{prog.mode}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#FAF6F0] px-2 py-0.5 rounded border border-[#E5D8CA]">
+                    {prog.category}
+                  </span>
                 </div>
 
                 <div>
@@ -305,14 +308,7 @@ export default async function HomePage() {
                 </div>
               </div>
 
-              <div className="pt-6 mt-4 border-t border-[#EFE6DD] flex items-center justify-between">
-                <div>
-                  <span className="text-[10px] text-[#78716C] block">Fee Structure</span>
-                  <span className="text-sm font-bold text-[#2A1810]">
-                    ₹{prog.discountedFees ? prog.discountedFees.toLocaleString('en-IN') : prog.fees.toLocaleString('en-IN')}
-                  </span>
-                </div>
-
+              <div className="pt-4 mt-4 border-t border-[#EFE6DD] flex items-center justify-end">
                 <Link
                   href={`/programs/${prog.slug}`}
                   className="text-xs font-bold text-[#8B5A2B] group-hover:text-[#70441E] flex items-center gap-1"

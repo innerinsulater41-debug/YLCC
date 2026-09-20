@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     template: '%s | YLCC Commerce Institute',
   },
   description:
-    'YLCC offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through 16 multi-business projects in Jaipur.',
+    'YLCC offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through 30 multi-business projects in Kanpur.',
   keywords: [
     'YLCC',
     'Commerce Institute',
-    'Accounting Course Jaipur',
+    'Accounting Course Kanpur',
     'Practical GST Training',
     'TDS TCS Course',
     'Banking CC Limit Documentation',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'YLCC | Commerce & Professional Accounting Institute',
     description:
-      'Master live day-to-day accounting, taxation, banking documentation, and Advanced Excel through 16 multi-business practical projects.',
+      'Master live day-to-day accounting, taxation, banking documentation, and Advanced Excel through 30 multi-business practical projects.',
     url: 'https://ylcccommerce.in',
     siteName: 'YLCC Commerce Institute',
     locale: 'en_IN',

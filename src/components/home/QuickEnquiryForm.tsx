@@ -143,7 +143,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
             <option value="Corporate Payroll Management">Corporate Payroll Management</option>
             <option value="Cost Accounting & Industrial Inventory">Cost Accounting & Industrial Inventory</option>
             <option value="Advanced Excel & Corporate Excel 365">Advanced Excel & Corporate Excel 365</option>
-            <option value="16 Multi-Business Practical Projects Module">16 Multi-Business Practical Projects</option>
+            <option value="30 Multi-Business Practical Projects Module">30 Multi-Business Practical Projects</option>
           </select>
         </div>
 

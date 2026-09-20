@@ -226,7 +226,7 @@ export default function AdminSettingsClient({ initialSettings }: AdminSettingsCl
             <label className="block text-xs font-semibold text-[#44403C] mb-1">Practical Projects</label>
             <input
               type="number"
-              value={settings.stats?.practicalProjectsCount || 16}
+              value={settings.stats?.practicalProjectsCount || 30}
               onChange={(e) =>
                 setSettings({
                   ...settings,

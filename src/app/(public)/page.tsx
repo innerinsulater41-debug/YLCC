@@ -40,7 +40,7 @@ export default async function HomePage() {
 
   const stats = settings.stats || {
     studentsTrained: 76,
-    practicalProjectsCount: 16,
+    practicalProjectsCount: 30,
     trainingModulesCount: 48,
     yearsExperience: 20,
     practicalLabHours: 350,
@@ -93,7 +93,7 @@ export default async function HomePage() {
                   className="bg-[#EFE6DD] hover:bg-[#E5D8CA] text-[#2A1810] border border-[#D8C5B2] px-6 py-3.5 rounded-xl font-semibold text-sm transition-all flex items-center gap-2"
                 >
                   <Briefcase className="w-4 h-4 text-[#8B5A2B]" />
-                  <span>View 16 Practical Projects</span>
+                  <span>View 30 Practical Projects</span>
                 </Link>
 
                 <Link
@@ -200,7 +200,7 @@ export default async function HomePage() {
                     <span className="text-[10px] uppercase font-bold text-[#C4AE96] tracking-wider">
                       Live Business Case Studies
                     </span>
-                    <p className="font-medium text-white">16 Multi-Business Projects</p>
+                    <p className="font-medium text-white">30 Multi-Business Projects</p>
                   </div>
                   <Link
                     href="/projects"
@@ -393,7 +393,7 @@ export default async function HomePage() {
       </section>
 
       {/* ========================================================================= */}
-      {/* 5. FEATURED PRACTICAL PROJECTS (The 16 Multi-Business Library) */}
+      {/* 5. FEATURED PRACTICAL PROJECTS (The 30 Multi-Business Library) */}
       {/* ========================================================================= */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#E5D8CA] pb-6">
@@ -402,7 +402,7 @@ export default async function HomePage() {
               Multi-Business Experience
             </span>
             <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
-              The 16 Multi-Business Practical Projects
+              The 30 Multi-Business Practical Projects
             </h2>
             <p className="text-sm text-[#57534E] max-w-2xl">
               Gain the equivalent of 2 years of industry experience across hospitals, hotels, freight logistics, real estate, government thekedars, and franchise chains.
@@ -413,7 +413,7 @@ export default async function HomePage() {
             href="/projects"
             className="inline-flex items-center gap-2 bg-[#8B5A2B] hover:bg-[#70441E] text-white px-5 py-2.5 rounded-xl font-semibold text-xs transition-colors shrink-0 shadow-xs"
           >
-            <span>Browse All 16 Projects</span>
+            <span>Browse All 30 Projects</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

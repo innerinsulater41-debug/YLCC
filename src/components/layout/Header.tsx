@@ -208,7 +208,7 @@ export default function Header({ settings }: HeaderProps) {
                 Apply for Admission
               </Link>
               <div className="flex justify-between items-center text-xs text-[#57534E] px-1">
-                <span>{settings?.location || 'Jaipur, Rajasthan'}</span>
+                <span>{settings?.location || 'Kanpur, Uttar Pradesh'}</span>
                 <a href={`tel:${phone}`} className="font-semibold text-[#8B5A2B]">
                   Call: {phone}
                 </a>

@@ -12,8 +12,10 @@ import {
   Download,
   Filter,
   CheckCircle2,
+  Eye,
 } from 'lucide-react';
 import { Program } from '@/types';
+import DocumentViewerModal from '@/components/common/DocumentViewerModal';
 
 interface ProgramsListClientProps {
   programs: Program[];
@@ -23,6 +25,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedMode, setSelectedMode] = useState('All');
+  const [selectedBrochure, setSelectedBrochure] = useState<{ title: string; url: string } | null>(null);
 
   const categories = useMemo(() => {
     const set = new Set(programs.map((p) => p.category));
@@ -169,14 +172,19 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               {/* Card Footer */}
               <div className="p-6 bg-[#FAF6F0] border-t border-[#E5D8CA] flex items-center justify-end gap-3">
                   {prog.brochureUrl && (
-                    <a
-                      href={prog.brochureUrl}
-                      download
-                      className="p-2.5 rounded-lg border border-[#D8C5B2] hover:bg-[#E5D8CA] text-[#2A1810] transition-colors"
-                      title="Download Course Brochure PDF"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelectedBrochure({
+                          title: `${prog.title} - Official Syllabus Brochure`,
+                          url: prog.brochureUrl!,
+                        })
+                      }
+                      className="p-2.5 rounded-lg border border-[#D8C5B2] hover:bg-[#E5D8CA] text-[#8B5A2B] hover:text-[#2A1810] transition-colors"
+                      title="View Course Brochure PDF online"
                     >
-                      <Download className="w-4 h-4" />
-                    </a>
+                      <Eye className="w-4 h-4" />
+                    </button>
                   )}
 
                   <Link
@@ -197,6 +205,17 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               </div>
           ))}
         </div>
+      )}
+
+      {/* Online Brochure Viewer Modal */}
+      {selectedBrochure && (
+        <DocumentViewerModal
+          isOpen={!!selectedBrochure}
+          onClose={() => setSelectedBrochure(null)}
+          title={selectedBrochure.title}
+          fileUrl={selectedBrochure.url}
+          category="Official Program Brochure"
+        />
       )}
     </div>
   );

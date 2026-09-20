@@ -24,7 +24,7 @@ export default function Footer({ settings }: FooterProps) {
   const email = settings?.email || 'admissions@ylcccommerce.in';
   const address =
     settings?.address ||
-    'YLCC Commerce Centre, 3rd Floor, Corporate Tower, Tonk Road, Jaipur, Rajasthan 302015, India';
+    'Barra-4, L.I.G-20, Kanpur, Uttar Pradesh, India';
   const officeHours =
     settings?.officeHours || 'Monday – Saturday: 8:30 AM – 7:30 PM (Sunday Closed)';
 
@@ -160,7 +160,7 @@ export default function Footer({ settings }: FooterProps) {
           {/* Col 3: Practical Projects & Case Studies */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-[#3D2314] pb-2">
-              16 Practical Projects
+              30 Practical Projects
             </h4>
             <div className="grid grid-cols-1 gap-1.5 text-xs text-[#D8C5B2]">
               <Link href="/projects" className="hover:text-white transition-colors">

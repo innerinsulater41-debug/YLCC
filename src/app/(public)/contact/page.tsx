@@ -15,7 +15,7 @@ import QuickEnquiryForm from '@/components/home/QuickEnquiryForm';
 export const metadata = {
   title: 'Contact YLCC | Campus Address, Phone & Counseling Desk',
   description:
-    'Visit YLCC Commerce Centre in Jaipur, Rajasthan. Call, WhatsApp, or submit an admission query to speak directly with an accounting faculty counselor.',
+    'Visit YLCC Commerce Centre in Kanpur, Uttar Pradesh. Call, WhatsApp, or submit an admission query to speak directly with an accounting faculty counselor.',
 };
 
 export default async function ContactPage() {
@@ -27,7 +27,7 @@ export default async function ContactPage() {
   const cleanWhatsapp = whatsapp.replace(/[^0-9]/g, '');
   const address =
     settings.address ||
-    'YLCC Commerce Centre, 3rd Floor, Corporate Tower, Tonk Road, Jaipur, Rajasthan 302015, India';
+    'Barra-4, L.I.G-20, Kanpur, Uttar Pradesh, India';
   const officeHours =
     settings.officeHours || 'Monday – Saturday: 8:30 AM – 7:30 PM (Sunday Closed)';
 
@@ -67,7 +67,7 @@ export default async function ContactPage() {
                     <strong className="text-[#2A1810] block font-serif">Campus Address:</strong>
                     <p className="text-xs text-[#57534E] leading-relaxed mt-0.5">{address}</p>
                     <span className="text-[11px] text-[#8B5A2B] font-semibold mt-1 block">
-                      Landmark: Near Tonk Road Metro Station, Jaipur
+                      Landmark: Barra-4, Kanpur, Uttar Pradesh
                     </span>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default async function ContactPage() {
             <div className="bg-[#2A1810] text-white p-6 rounded-2xl border border-[#3D2314] space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-xs uppercase font-bold text-[#C4AE96] tracking-wider">
-                  Jaipur Commerce Centre
+                  Kanpur Commerce Centre
                 </span>
                 <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-900 text-emerald-200 font-bold">
                   Open for Walk-ins

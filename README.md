@@ -31,9 +31,9 @@ The website is crafted with a bespoke **Cream & Beige** financial palette tailor
 
 ---
 
-## 🏢 The 16 Multi-Business Practical Projects Library
+## 🏢 The 30 Multi-Business Practical Projects Library
 
-Every student practices complete financial years across 16 authentic Indian industries:
+Every student practices complete financial years across 30 authentic Indian industries:
 1. **Hospital Business Accounting & Patient Billing System** (IPD/OPD, Doctor 194J shares, TPA mediclaim reconciliation)
 2. **College Accounting & Student Fee Reconciliation System** (Installment fees, scholarship grants, hostel/mess ledgers)
 3. **Freight Logistics & Fleet Transport Management Accounting** (Trip sheets, Fastag, diesel cards, GTA RCM on freight)

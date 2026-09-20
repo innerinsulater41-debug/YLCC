@@ -60,7 +60,7 @@ export default function AdminAnalyticsCharts({
       <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-4">
         <div>
           <h3 className="text-base font-serif font-bold text-[#2A1810]">
-            16 Projects by Industry Category
+            30 Projects by Industry Category
           </h3>
           <p className="text-xs text-[#78716C]">Real-world multi-business case studies</p>
         </div>

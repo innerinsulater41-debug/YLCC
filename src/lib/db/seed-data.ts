@@ -1296,9 +1296,9 @@ export const initialPrograms: Program[] = [
           'Installment fee collection, fine penalties, scholarship adjustments, faculty salaries, lab consumable expenditures, and hostel/mess accounts.',
       },
       {
-        title: 'Logistic Management',
+        title: 'Logistics (Transport Management)',
         description:
-          'Fleet trip sheets, diesel mileage tracking, tyre wear amortisation, freight billing, transporter TDS (194C), and GTA Reverse Charge.',
+          'Transporter Hisab (fleet expense settlements & driver advances), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.',
       },
       {
         title: 'Service Center Accounting',
@@ -1391,12 +1391,12 @@ export const initialPrograms: Program[] = [
       },
       {
         id: 'mod-9-3',
-        title: 'Logistic & Transport Fleet Operations Accounting',
+        title: 'Logistics: Transporter Hisab, Consignment & City Tracking',
         topics: [
-          'Vehicle-wise trip sheet maintenance, toll/fastag disbursements, and driver route advances',
-          'Diesel consumption mileage audit, tyre retreading amortization, and fleet maintenance costing',
-          'Consignment freight notes (Bilty/LR), demurrage charges, and customer freight billing',
-          'Section 194C transporter TDS exemptions (sub-section 6 declarations) and GTA 5% RCM',
+          'Topic 1 (Transportor Hisab): Reconcile transporter freight payments, driver trip cash advances, diesel fleet cards, Fastag tolls, and broker commissions',
+          'Topic 2 (Consignment Track): End-to-end Bilty/LR registration, consignor-consignee billing weight, detention charges, and Proof of Delivery (POD) monitoring',
+          'Topic 3 (City Wise Transport Tracking): Route-wise freight tracking across major industrial corridors (Delhi, Mumbai, Jaipur), city delivery schedules, and vehicle running cost per km',
+          'Statutory GTA & Tax Compliances: Goods Transport Agency (GTA) 5% RCM vs 12% forward charge and Section 194C transporter TDS declarations',
         ],
         durationHours: 8,
       },
@@ -1702,39 +1702,39 @@ export const initialProjects: Project[] = [
   {
     id: 'proj-3',
     slug: 'logistics-transport-fleet-accounting',
-    title: 'Freight Logistics & Fleet Transport Management Accounting',
+    title: 'Freight Logistics: Transporter Hisab, Consignment & City Tracking',
     shortDescription:
-      'Accounting for inter-state freight carriers: consignment note (Bilty) generation, trip-wise diesel and toll expenses, driver advances, broker commissions, and RCM on GTA.',
+      'Accounting for inter-state freight carriers: Transporter Hisab (trip advances & fuel settlement), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.',
     detailedDescription:
-      'Transport and logistics businesses handle thousands of trips across states with cash advances, fuel slips, toll charges, and broker commissions. In this project for "Speedways Freight Logistics", you will manage consignment note (Bilty/LR) registers, driver trip advances and settlement vouchers, tyre and maintenance logs, vehicle-wise profitability, and Reverse Charge Mechanism (RCM) applicability under GST.',
+      'Transport and logistics businesses handle thousands of trips across states with cash advances, fuel slips, toll charges, and broker commissions. In this signature practical project for "Speedways Freight Logistics", students master all 3 foundational pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).',
     industryCategory: 'Logistics & Transportation',
     accountingCategory: 'Fleet & Service Operations',
     difficultyLevel: 'Advanced',
     skillsCovered: [
-      'Goods Transport Agency (GTA) Accounting',
-      'GST Reverse Charge Mechanism (RCM) on Freight',
-      'Trip-wise Diesel, Toll, and Driver Advance Settlement',
-      'Vehicle-wise Profitability & Operating Cost Analysis',
+      'Transportor Hisab / Fleet Accounts Settlement',
+      'Consignment Tracking (Bilty / LR Register)',
+      'City-Wise Transport & Destination Route Tracking',
+      'Goods Transport Agency (GTA) 5% RCM Accounting',
       'Broker Commission & TDS Section 194C Compliances',
     ],
     softwareUsed: ['Tally Prime 4.0', 'Logistics Fuel & Mileage Excel Tool'],
     learningObjectives: [
-      'Calculate trip-wise net profit across owned and hired fleet trucks',
-      'Correctly book GTA transactions under forward charge (12%) or reverse charge (5%)',
-      'Reconcile fuel card statements (IndianOil / HPCL) against driver trip sheets',
+      'Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing',
+      'Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)',
+      'Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances',
     ],
     businessScenario:
       'Speedways Logistics operates 28 heavy commercial trucks and hires 40+ market trucks monthly for Delhi-Mumbai-Jaipur routes. Each trip involves driver cash advance (₹25,000), diesel fleet card swipes, Fastag tolls, and delivery detention charges. Accurate trip settlement is vital to stop cash leakages.',
     tasksToComplete: [
-      'Feed consignment notes (LR/Bilty) with consignor, consignee, and billing weight',
-      'Reconcile Fastag monthly bank debits and diesel card consumption per truck',
-      'Finalize driver trip settlement sheets deducting advances from total vouchers',
-      'Compute vehicle-wise running cost per kilometer and identify loss-making trucks',
+      'Topic 1 (Transportor Hisab): Reconcile transporter freight ledgers, driver trip advances, diesel fuel cards, Fastag tolls, broker commissions, and final trip profit & loss statements',
+      'Topic 2 (Consignment Track): Track consignment notes (Bilty/LR) from dispatch to delivery, record billing weights, demurrage charges, POD (Proof of Delivery) submissions, and customer freight billing',
+      'Topic 3 (City Wise Transport Tracking): Route-wise freight ledger monitoring (e.g. Delhi, Mumbai, Ahmedabad, Jaipur), destination city delivery timelines, transit detention charges, and inter-city vehicle mileage profitability',
+      'Statutory Compliance: Verify GTA GST Reverse Charge (RCM 5% vs forward 12%), obtain sub-section (6) PAN declarations for transporter TDS exemptions under Section 194C',
     ],
     expectedOutcomes: [
-      'Complete fleet operational P&L showing cost per metric tonne per km',
-      'Clear RCM tax liability statement for GTA compliance',
-      'Zero unresolved driver advances at month-end',
+      'Complete fleet operational P&L showing cost per metric tonne per km across major routes',
+      'Error-free consignment tracking register and Proof of Delivery (POD) audit trail',
+      'Clear RCM tax liability statement and zero unresolved driver advances at month-end',
     ],
     coverImageUrl: '/images/ylcc_tds_brochure_maroon.png',
     media: [

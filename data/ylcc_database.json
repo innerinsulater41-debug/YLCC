@@ -2514,6 +2514,86 @@
       "displayOrder": 2,
       "createdAt": "2026-01-12",
       "updatedAt": "2026-03-05"
+    },
+    {
+      "id": "proj-19",
+      "slug": "corporate-excel-365-mis-automation-project",
+      "title": "Corporate Excel 365 & Executive MIS Reporting Live Simulation",
+      "shortDescription": "Master corporate spreadsheet automation: 250+ modern dynamic array formulas, advanced workplace productivity features, 500+ error troubleshooting scenarios, 250+ corporate interview challenges, and Power Query executive MIS dashboards.",
+      "detailedDescription": "In this intensive practical simulation project, students take charge of corporate reporting and business intelligence for a multi-division enterprise. You will deploy 250+ modern Excel 365 functions (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA), configure workplace productivity features (cascading validation, What-If models, formula-driven conditional formatting), troubleshoot and recover 500+ corrupted files and broken formula models, solve 250+ real accounting machine interview tests, and build automated one-click executive MIS dashboards using Power Query ETL.",
+      "industryCategory": "Corporate Finance & Analytics",
+      "accountingCategory": "MIS & Business Intelligence",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "250+ Modern Formulas & Dynamic Arrays (XLOOKUP, FILTER, UNIQUE)",
+        "Advanced Workplace Features & Cascading Data Validation",
+        "500+ Error Recovery & Formula Diagnostics (#N/A, #SPILL!, Loops)",
+        "250+ Corporate Machine Interview & Speed Modeling Tests",
+        "Automated MIS Dashboards & Power Query ETL Pipelines"
+      ],
+      "softwareUsed": [
+        "Microsoft Excel 365",
+        "Power Query (ETL Engine)",
+        "Power Pivot & Data Models",
+        "Office 365 Cloud"
+      ],
+      "learningObjectives": [
+        "Write dynamic zero-drag formula models using XLOOKUP, FILTER, UNIQUE, LET, and custom LAMBDA functions",
+        "Implement advanced features including cascading dropdowns, What-If analysis, Solver, and conditional formatting audit rules",
+        "Troubleshoot 500+ complex workplace errors and clean messy ERP/banking dumps within minutes",
+        "Solve 250+ timed corporate interview tests and build automated C-Suite executive MIS dashboards"
+      ],
+      "businessScenario": "A fast-growing multi-branch trading and manufacturing corporate receives disparate sales, purchase, and banking dumps across 5 regional offices each month. The finance desk requires automated data transformation pipelines, error-free financial reconciliations, robust auditing models, and one-click refreshable KPI dashboards for senior leadership.",
+      "tasksToComplete": [
+        "Topic 1 (250+ Formulas): Deploy dynamic array formulas (XLOOKUP, FILTER, UNIQUE, SORTBY, SEQUENCE, LET, LAMBDA) to automate payroll, inventory valuation, and multi-currency sales models without dragging formulas",
+        "Topic 2 (Excel Features): Build multi-level cascading dropdowns using INDIRECT/XLOOKUP, establish custom formula-driven conditional formatting rules for audit variances, and run 2-variable What-If sensitivity tables and Solver cost optimization",
+        "Topic 3 (500+ Troubleshooting): Diagnose and resolve 500+ real-world spreadsheet errors (#N/A, #VALUE!, #REF!, #CALC!, #SPILL!), remove non-printable characters (CHAR 160), fix text-stored numbers, break circular calculation loops, and repair corrupted workbooks",
+        "Topic 4 (250+ Interview Questions): Complete 250+ actual corporate interview test challenges under timed exam conditions, including 50,000-row bank ledger reconciliations, automated tax deduction tables, and mouse-free keyboard speed modeling",
+        "Topic 5 (Executive MIS Reports): Build an automated ETL data pipeline using Power Query to consolidate 12 monthly CSV branch files, construct a Star Schema data model in Power Pivot, and deliver interactive C-Suite dashboards (Sales vs Collection, Debtor Aging, Cash Flow) with timeline slicers and one-click refresh"
+      ],
+      "expectedOutcomes": [
+        "Fully automated corporate MIS model ready for executive board presentation with one-click refresh",
+        "Zero formula errors, circular loops, or corrupt data in enterprise financial sheets",
+        "Complete master repository of 250+ solved corporate interview test problems and dynamic array templates",
+        "Ready-to-deploy automated ETL pipeline extracting, transforming, and loading multi-branch commercial data"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-19-1",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Excel 365 MIS Architecture",
+          "type": "image/png",
+          "size": "3.7 MB",
+          "caption": "Executive MIS dashboard design, dynamic array calculations, and Power Query ETL workflows"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-19-1",
+          "title": "Corporate Excel 365 & MIS Automation Project Dossier",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "59 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-19-2",
+          "title": "250+ Formulas, 500+ Troubleshooting Scenarios & Executive Dashboard Master Workbook",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "165 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 30,
+      "academicYear": "2025-26",
+      "facultyMentor": "Vikas Khandelwal",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 3,
+      "createdAt": "2026-01-15",
+      "updatedAt": "2026-03-08"
     }
   ],
   "faculty": [

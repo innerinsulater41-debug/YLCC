@@ -107,38 +107,46 @@ export default function AdvancedExcelPage() {
         </div>
       </section>
 
-      {/* 4 Core Pillars */}
+      {/* 5 Core Pillars */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">250+</span>
-            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Formulas Mastered</h3>
-            <p className="text-xs text-[#57534E]">
-              Dynamic arrays, modern lookups, text manipulation, and finance equations.
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+          <div className="bg-white p-5 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-3xl font-serif font-extrabold text-[#8B5A2B]">250+</span>
+            <h3 className="text-xs font-bold text-[#2A1810] uppercase">Formulas (365)</h3>
+            <p className="text-[11px] text-[#57534E]">
+              Dynamic arrays, modern lookups (XLOOKUP), LET, and custom LAMBDAs.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">500+</span>
-            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Troubleshooting Cases</h3>
-            <p className="text-xs text-[#57534E]">
-              Fixing broken lookups, corrupt dumps, SPILL errors, and circular references.
+          <div className="bg-white p-5 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-3xl font-serif font-extrabold text-[#8B5A2B]">Features</span>
+            <h3 className="text-xs font-bold text-[#2A1810] uppercase">Excel Features</h3>
+            <p className="text-[11px] text-[#57534E]">
+              Cascading dropdowns, What-If tools, Goal Seek, Solver, and conditional formats.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">250+</span>
-            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Interview Questions</h3>
-            <p className="text-xs text-[#57534E]">
-              Actual machine tests from top CA firms, corporate accounts, and MNCs.
+          <div className="bg-white p-5 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-3xl font-serif font-extrabold text-[#8B5A2B]">500+</span>
+            <h3 className="text-xs font-bold text-[#2A1810] uppercase">Troubleshooting</h3>
+            <p className="text-[11px] text-[#57534E]">
+              Resolving #N/A, #VALUE!, #SPILL!, circular loops, and corrupted data dumps.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
-            <span className="text-4xl font-serif font-extrabold text-[#8B5A2B]">100%</span>
-            <h3 className="text-sm font-bold text-[#2A1810] uppercase">Practical Worksheets</h3>
-            <p className="text-xs text-[#57534E]">
-              Students build actual corporate dashboards using multi-table datasets.
+          <div className="bg-white p-5 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-3xl font-serif font-extrabold text-[#8B5A2B]">250+</span>
+            <h3 className="text-xs font-bold text-[#2A1810] uppercase">Interview Tests</h3>
+            <p className="text-[11px] text-[#57534E]">
+              Real corporate machine tests from Big 4 firms, MNCs, and corporate finance.
+            </p>
+          </div>
+
+          <div className="bg-white p-5 rounded-2xl border border-[#E5D8CA] shadow-xs space-y-2">
+            <span className="text-3xl font-serif font-extrabold text-[#8B5A2B]">MIS</span>
+            <h3 className="text-xs font-bold text-[#2A1810] uppercase">MIS Dashboards</h3>
+            <p className="text-[11px] text-[#57534E]">
+              Automated Power Query ETL pipelines, data models, and 1-click refreshable KPIs.
             </p>
           </div>
         </div>

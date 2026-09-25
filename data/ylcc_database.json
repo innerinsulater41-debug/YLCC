@@ -837,8 +837,8 @@
       "slug": "corporate-payroll-management",
       "title": "Corporate Payroll Management & Statutory Compliance",
       "category": "Human Resources & Payroll Accounting",
-      "shortDescription": "Manage complete salary structures, duty/attendance records, overtime, statutory bonus, gratuity, payroll taxes, Labour Law compliance, and ESI/PF transactions.",
-      "detailedDescription": "Payroll accounting is a vital bridge between HR and finance. This course teaches how to build competitive and tax-optimized salary structures (Basic, HRA, Special Allowance, PF, ESIC, Professional Tax). You will maintain daily attendance and biometric shift logs, compute overtime, calculate annual statutory bonus and gratuity liabilities, generate monthly pay-slips and salary registers in accordance with Indian Labour Laws, and execute monthly returns for EPF (Electronic Challan-cum-Return - ECR) and ESIC on official government portals.",
+      "shortDescription": "Master the 3 foundational payroll pillars: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation according to Indian Labour Laws, and statutory ESI & EPF portal compliance.",
+      "detailedDescription": "Payroll accounting is a vital bridge between HR and finance. This practical masterclass trains you across all 3 foundational pillars of professional corporate payroll and labour law compliance: maintaining salary components (biometric duty logs, overtime per Factories Act, statutory bonus, gratuity provisioning, and payroll taxes), generating compliant monthly salary sheets and registers per the Code on Wages, and executing statutory social security transactions under the ESI Act (0.75% & 3.25%) and EPF & MP Act (12% ECR portal filing) with live corporate payroll case studies.",
       "duration": "1.5 Months",
       "mode": "Offline Classroom",
       "fees": 14000,
@@ -846,9 +846,10 @@
       "eligibility": "Commerce graduates, HR executives, accountants, payroll administrators",
       "softwareTools": [
         "Payroll Excel Automation Sheets",
-        "Tally Prime Payroll",
-        "EPF Unified Portal",
-        "ESIC Portal"
+        "Tally Prime Payroll Module",
+        "EPF Unified Employer Portal",
+        "ESIC Portal",
+        "Online Challan Generation Utilities"
       ],
       "facultyId": "fac-3",
       "facultyName": "CS Meenakshi Sharma (Labour Law & Payroll Specialist)",
@@ -860,49 +861,65 @@
       "isFeatured": true,
       "status": "published",
       "displayOrder": 6,
+      "coreCompetenciesHeading": "3 Core Payroll Management & Statutory Pillars You Master",
+      "coreCompetenciesSubheading": "Hands-on practical desk execution covering duty & attendance maintenance, overtime, statutory bonus & gratuity, Labour Law wage generation, and ESI/PF portal compliance.",
+      "coreCompetencies": [
+        {
+          "title": "Salary Maintenance",
+          "description": "Maintaining biometric attendance, duty shifts, overtime calculations per Factories Act, statutory bonus (Bonus Act), gratuity provisioning, and payroll taxes (PT & TDS)."
+        },
+        {
+          "title": "Monthly Salary Generation",
+          "description": "Generating compliant monthly salary sheets per Indian Labour Laws, automated pay-slips, wage registers (Form T), bank disbursement advice, and F&F settlements."
+        },
+        {
+          "title": "ESI & Statutory Transactions",
+          "description": "Statutory ESI Act calculations (0.75% & 3.25%), EPF 12% wage break-up, ECR portal filing, monthly challan generation, and compliance registers."
+        }
+      ],
       "modules": [
         {
           "id": "mod-6-1",
-          "title": "Salary Structure Architecture & Attendance Control",
+          "title": "Salary Maintenance: Duty, Overtime, Bonus, Gratuity & Taxes",
           "topics": [
-            "Structuring CTC: Basic, DA, HRA, Conveyance, Medical, and Special Allowances",
-            "Biometric attendance tracking, duty hours, leaves, and Loss of Pay (LOP) calculations",
-            "Overtime (OT) rate calculation under the Factories Act and Shops & Establishments Act",
-            "Advance salary, loan deductions, and expense reimbursements"
+            "Biometric attendance and duty logs: Shift rosters, late mark rules, leaves (earned/casual/sick), and Loss of Pay (LOP) calculations",
+            "Overtime (OT) rate calculation mechanics under the Factories Act and State Shops & Establishments Act (double the ordinary rate of wages)",
+            "Statutory Bonus (Payment of Bonus Act 8.33% to 20%, allocable surplus, eligibility, Form C register) & Gratuity provisioning (15/26 days formula)",
+            "Payroll tax deductions: State-wise Professional Tax (PT) slab computation and employee salary TDS withholding under Section 192"
           ],
-          "durationHours": 16
+          "durationHours": 20
         },
         {
           "id": "mod-6-2",
-          "title": "Statutory Benefits & Labour Law Considerations",
+          "title": "Monthly Salary Generation According to Labour Law",
           "topics": [
-            "Payment of Bonus Act: eligibility, allocable surplus, and bonus calculation formula",
-            "Payment of Gratuity Act: eligibility criteria, calculation formula, and provisioning",
-            "State Professional Tax slabs, applicability, and monthly deduction entries",
-            "Labour welfare fund (LWF) contributions and statutory register maintenance"
+            "Structuring CTC and gross-to-net salary components per the Code on Wages (Basic, DA, HRA, Conveyance, Special Allowance, and minimum basic threshold)",
+            "Automated monthly payroll sheet generation: Gross earnings, statutory deductions, voluntary deductions (advances, loan EMIs), and net payable wages",
+            "Labour Law compliance: Minimum Wages Act compliance, Payment of Wages Act timely disbursement mandates, and statutory Form T (Wage Register)",
+            "Automated professional pay-slip generation, bank disbursement NEFT/RTGS advice text files, and full & final (F&F) settlement calculations"
           ],
-          "durationHours": 16
+          "durationHours": 20
         },
         {
           "id": "mod-6-3",
-          "title": "EPF, ESIC Portals & Monthly Salary Generation",
+          "title": "ESI & Statutory Social Security Transactions (According to ESI Act & PF Rules)",
           "topics": [
-            "EPF wage ceiling rules, employee (12%) & employer contribution break-up",
-            "Generating EPF Electronic Challan-cum-Return (ECR) and online payment",
-            "ESIC eligibility (₹21,000 ceiling), monthly contribution (0.75% & 3.25%) filing",
-            "Automated monthly salary sheet generation and bank disbursement text files"
+            "ESI Act statutory compliance: Eligibility criteria (₹21,000 wage ceiling), employee (0.75%) & employer (3.25%) contribution calculations",
+            "Operating the ESIC Employer Portal: Monthly contribution filing, online challan generation, Pehchan card issuance, and accident reports (Form 16)",
+            "EPF & MP Act compliance: Wage ceiling rules (₹15,000 threshold), employee (12%) & employer (3.67% EPF + 8.33% EPS) contribution break-up, and EDLI charges",
+            "Generating EPF Electronic Challan-cum-Return (ECR text file), portal upload, online challan payment, and end-to-end multi-business payroll case studies"
           ],
-          "durationHours": 18
+          "durationHours": 20
         }
       ],
       "learningOutcomes": [
-        "Design fully compliant corporate salary structures that optimize employee take-home pay",
-        "Generate monthly pay registers, salary slips, and bank transfer advice without discrepancies",
-        "Execute monthly EPF and ESIC return filing and online payment workflows on portal",
-        "Handle end-to-end full & final (F&F) settlement calculations for departing employees"
+        "Complete executive mastery over all 3 core payroll pillars: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation per Labour Laws, and statutory ESI/EPF transactions",
+        "Design fully compliant corporate salary structures and automated monthly wage registers (Form T) with zero calculation errors",
+        "Total command over the ESIC and EPFO portals for monthly return filing, ECR text generation, and online challan payments",
+        "Authority to handle end-to-end full & final (F&F) settlement calculations and labour law statutory audit compliance"
       ],
-      "seoTitle": "Payroll Management Course | PF ESIC Gratuity Labour Laws | YLCC",
-      "seoDescription": "Practical corporate payroll training: salary structures, attendance, overtime, bonus, gratuity, Labour Law compliance, EPF and ESIC monthly filing at YLCC."
+      "seoTitle": "Corporate Payroll Management & Statutory Compliance Course | YLCC",
+      "seoDescription": "Practical corporate payroll training: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation per Labour Laws, and ESI/EPF portal filing at YLCC."
     },
     {
       "id": "prog-7",

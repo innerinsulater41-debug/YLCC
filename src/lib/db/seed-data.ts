@@ -1250,6 +1250,310 @@ export const initialPrograms: Program[] = [
     seoDescription:
       'Master 250+ Excel 365 formulas, advanced features, 500+ troubleshooting scenarios, 250+ interview questions, and automated MIS dashboards at YLCC Jaipur.',
   },
+  {
+    id: 'prog-9',
+    slug: '16-practice-project-multi-business',
+    title: '16 (PRACTISE PROJECT-MULTI BUSINESS)',
+    category: 'Multi-Business Practical Accounting',
+    shortDescription:
+      'Master complete financial books maintenance, voucher execution, inventory control, and balance sheet finalization across 16 diverse commercial industries.',
+    detailedDescription:
+      'Step beyond single-industry accounting. This premier intensive masterclass trains commerce students and finance professionals across 16 diverse real-world business models. From hospital patient billing, college fee ledgers, transport fleet logistics, and automobile service centers to luxury hotels, FMCG distributor networks, comprehensive GST/TDS filings, bank CC limit CMA proposals, executive payroll, furniture custom costing, architect firms, builder real estate sites, Section 143 job-work control, government thekedar civil tenders, and multi-branch chain franchises (like Javed Habib). Every project simulates complete financial years with physical vouchers, live software data entry, and balance sheet finalization.',
+    duration: '3 Months',
+    mode: 'Offline Classroom',
+    fees: 18500,
+    discountedFees: 14999,
+    eligibility: 'Commerce graduates, accountants, tax consultants, and finance managers seeking multi-industry desk mastery',
+    softwareTools: [
+      'Tally Prime 4.0',
+      'Busy Accounting Software',
+      'Excel 365 Financial Models',
+      'GST & E-Way Bill Simulator',
+      'Income Tax & TDS Utilities',
+    ],
+    facultyId: 'fac-2',
+    facultyName: 'Rajesh Soni & CA Alok Maheshwari (Senior Industry Mentors)',
+    batchTiming: 'Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
+    availableSeats: 8,
+    startDate: '1st & 15th of Every Month',
+    brochureUrl: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
+    certificateInfo: 'YLCC Certified Multi-Business Practical Accounting Specialist',
+    isFeatured: true,
+    status: 'published',
+    displayOrder: 9,
+    coreCompetenciesHeading: '16 Multi-Business Practical Projects You Master',
+    coreCompetenciesSubheading:
+      'Live, hands-on financial books maintenance, voucher execution, inventory control, and balance sheet finalization across 16 diverse commercial industries.',
+    coreCompetencies: [
+      {
+        title: 'Hospital Business',
+        description:
+          'IPD/OPD patient billing, doctor consultant revenue shares (194J), pharmacy dispensary stock tracking, and TPA insurance claim reconciliations.',
+      },
+      {
+        title: 'College Accounting',
+        description:
+          'Installment fee collection, fine penalties, scholarship adjustments, faculty salaries, lab consumable expenditures, and hostel/mess accounts.',
+      },
+      {
+        title: 'Logistic Management',
+        description:
+          'Fleet trip sheets, diesel mileage tracking, tyre wear amortisation, freight billing, transporter TDS (194C), and GTA Reverse Charge.',
+      },
+      {
+        title: 'Service Center Accounting',
+        description:
+          'Multi-job repair card billing, spare parts inventory vs labour charges, manufacturer warranty claims, and reimbursement credits.',
+      },
+      {
+        title: 'Hotel Business',
+        description:
+          'Room guest folio management, night-audit room revenue posting, restaurant F&B kitchen food cost percentages, and banqueting hall events.',
+      },
+      {
+        title: 'Distributor Networking',
+        description:
+          'FMCG primary inward purchase vs secondary retail dealer billing, scheme trade discounts, quantity bonuses, and target turnover rebates.',
+      },
+      {
+        title: 'GST Project',
+        description:
+          'Multi-state B2B, B2C, SEZ exports under LUT, RCM purchases, GSTR-2B purchase book reconciliation, and tax liability offset in GSTR-3B.',
+      },
+      {
+        title: 'TDS/TCS Project',
+        description:
+          'Sectional withholding (194C, 194J, 194I, 194H, 194Q, 206C), Challan 281 e-payments, Form 24Q/26Q filing, and TRACES Form 16/16A.',
+      },
+      {
+        title: 'Banking CC Limit',
+        description:
+          'Cash Credit working capital management, Monthly Stock Statement preparation, Drawing Power (DP) calculations, and CMA data bank proposals.',
+      },
+      {
+        title: 'Payroll Management',
+        description:
+          'Monthly salary register structuring, CTC break-up, PF (12%), ESIC (0.75%/3.25%), PT, TDS on salary (Section 192), and ECR portal filing.',
+      },
+      {
+        title: 'Furniture Showroom Costing',
+        description:
+          'Custom timber/board/fabric BOM calculation, master carpenter daily labour allocation, and showroom display margin vs custom order pricing.',
+      },
+      {
+        title: 'Architect / Interior Decorator',
+        description:
+          'Stage-wise professional fees billing, structural 3D design consulting, client advance retainers, and sub-consultant contractor TDS (194J).',
+      },
+      {
+        title: 'Builders Business',
+        description:
+          'Real estate multi-site construction costing, cement/TMT steel consumption, labour contractor RA bills, square-foot costing, and RERA compliance.',
+      },
+      {
+        title: 'Job Worker (Inventory & Cost Control)',
+        description:
+          'Section 143 GST Delivery Challans, Form GST ITC-04, raw material issuance vs finished conversion yields, and processing loss control.',
+      },
+      {
+        title: 'Government Thekedar (Civil Projects)',
+        description:
+          'PWD/CPWD/Railways tender schedule rates, Running Account (RA) bills against Measurement Book (MB), 2% GST-TDS, and security retention money.',
+      },
+      {
+        title: 'Multi-Branch Chain Business (Like Javed Habib)',
+        description:
+          'Centralized purchasing, warehouse-to-branch stock transfers, branch daily cash collection transfers, franchise royalty sharing (194J), and consolidated P&L.',
+      },
+    ],
+    modules: [
+      {
+        id: 'mod-9-1',
+        title: 'Hospital Business Accounting & Patient Billing',
+        topics: [
+          'IPD/OPD patient billing, advance deposits, bed charges, and pharmacy dispensary inventory',
+          'Doctor visiting fees vs revenue-sharing agreements and TDS deduction under Section 194J',
+          'Cashless mediclaim TPA insurance claims reconciliation, co-pays, and deduction audit',
+          'Hospital monthly department-wise profit & loss and medical equipment depreciation schedules',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-9-2',
+        title: 'College Accounting & Student Fee Management',
+        topics: [
+          'Semester-wise installment fee collection, fine penalties, and defaulter tracking ledgers',
+          'Government scholarship credit adjustments and university examination fee remittances',
+          'Faculty salary payroll, guest lecture remuneration vouchers, and lab consumable allocations',
+          'Hostel room rents, mess catering expense accounting, and educational trust compliance',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-3',
+        title: 'Logistic & Transport Fleet Operations Accounting',
+        topics: [
+          'Vehicle-wise trip sheet maintenance, toll/fastag disbursements, and driver route advances',
+          'Diesel consumption mileage audit, tyre retreading amortization, and fleet maintenance costing',
+          'Consignment freight notes (Bilty/LR), demurrage charges, and customer freight billing',
+          'Section 194C transporter TDS exemptions (sub-section 6 declarations) and GTA 5% RCM',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-4',
+        title: 'Automobile Service Center Multi-Job Accounting',
+        topics: [
+          'Job card opening, multi-stage vehicle servicing workflow, and labor vs spare parts split billing',
+          'Spare parts counter sale inventory, dynamic pricing, and technician incentive tracking',
+          'OEM manufacturer warranty repair claims, scrap battery/oil credits, and credit notes',
+          'Service bay overhead allocation, workshop operating margin, and customer AMC agreements',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-5',
+        title: 'Hotel Business & Hospitality Industry Accounting',
+        topics: [
+          'Guest check-in/check-out folio management, room tariff posting, and daily night audit reconciliation',
+          'Restaurant & bar kitchen food cost percentage (F&B costing), daily kitchen store requisitions',
+          'Banqueting hall event bookings, advance decor deposits, catering contracts, and GST split',
+          'Laundry, minibar, travel desk incidental charges, and luxury hospitality tax compliance',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-6',
+        title: 'FMCG Distributor Networking & Multi-Dealer Billing',
+        topics: [
+          'Primary FMCG company inward purchase reconciliation, freight subsidy, and trade credit terms',
+          'Secondary retail dealer billing, beat-wise salesperson routes, and cash collection settlements',
+          'Scheme accounting: Trade Discounts (TD), Cash Discounts (CD), quantity free-goods, and target turnover rebates',
+          'Damaged stock returns, expiry write-offs, vendor credit notes, and FIFO inventory valuation',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-7',
+        title: 'Comprehensive GST Business Practice Project',
+        topics: [
+          'Invoicing across B2B registered sales, B2C retail, SEZ units, and zero-rated export with LUT',
+          'Reverse Charge Mechanism (RCM) on GTA transport, legal advocate fees, and unregistered inward supplies',
+          'Automated 500+ invoice reconciliation between purchase book ledgers and portal GSTR-2B',
+          'Preparation and offline validation of GSTR-1, tax liability offset sequence in GSTR-3B, and PMT-06 challans',
+        ],
+        durationHours: 12,
+      },
+      {
+        id: 'mod-9-8',
+        title: 'Corporate TDS & TCS Withholding Tax Project',
+        topics: [
+          'Sectional withholding deductions: 194C (contractors), 194J (professionals), 194I (rent), 194Q (goods), and 206C TCS',
+          'Monthly tax deposit via Challan 281, BSR code mapping, and CIN ledger recording',
+          'Quarterly e-TDS return compilation in NSDL RPU tool (Form 24Q for salary & Form 26Q for non-salary) and FVU validation',
+          'TRACES portal utilities: Downloading Form 16/16A certificates, online correction requests, and demand justification',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-9-9',
+        title: 'Banking CC Limit & CMA Proposal Management',
+        topics: [
+          'Bank Cash Credit (CC) limit ledger maintenance, daily drawing power, and interest servicing',
+          'Monthly Bank Stock Statement preparation: Paid stock deduction, debtor aging (<90 days eligibility), and margin calculation',
+          'CMA Data preparation: Form II (operating statement), Form III (balance sheet analysis), and Form VI (fund flow)',
+          'Financial ratio benchmarks: Current Ratio (1.33+), DSCR, Debt-Equity, and MPBF computation under Tandon/Nayak committees',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-9-10',
+        title: 'Corporate Payroll Management & Statutory Compliance',
+        topics: [
+          'Monthly attendance register processing, lop deductions, overtime hours, and gross salary computation',
+          'Statutory PF calculation (12% employee + 12% employer across A/c 1, 2, 10, 21, 22) and monthly ECR portal file generation',
+          'Statutory ESIC calculation (0.75% employee + 3.25% employer) and state Professional Tax (PT) slab deduction',
+          'Section 192 TDS on salary deduction schedules, Form 16 Part A & B compilation, and net salary bank disbursement advice',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-9-11',
+        title: 'Furniture Showroom Costing & Customized Product Manufacturing',
+        topics: [
+          'Timber wood, ply, laminate, hardware fittings, and upholstery fabric multi-level Bill of Materials (BOM)',
+          'Master carpenter, polishing, and upholstery daily labour allocation per custom job order',
+          'Job-order costing vs readymade showroom display items, machine depreciation, and lacquer finishing overheads',
+          'Customer custom order quotation costing sheets, advance booking deposits, and finished product delivery notes',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-12',
+        title: 'Architect & Interior Decorator Project Accounting',
+        topics: [
+          'Milestone-based professional fee agreements (concept design, working drawings, 3D renders, site execution supervision)',
+          'Client advance retainers, running consultation invoices, and Section 194J TDS deductions',
+          'Sub-consultant structural engineer, MEP contractor, and 3D visualizer payment vouchers',
+          'Project-wise profitability ledgers, site inspection travel billings, and GST reverse charge on overseas design software',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-13',
+        title: 'Builders & Real Estate Site-Wise Construction Costing',
+        topics: [
+          'Site-wise Cost Centre configuration for multi-tower residential and commercial schemes',
+          'Inward material tracking per site: Cement, TMT steel, aggregates, bricks, electricals, and sanitary fittings',
+          'Labour contractor Running Account (RA) bills, equipment hire, architect fees, and overhead capitalization',
+          'Square-foot construction cost computation, stage-wise construction progress valuation, and RERA project bank account compliance',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-9-14',
+        title: 'Job-Worker Inventory & Processing Cost Control',
+        topics: [
+          'Statutory GST job-work compliances under Section 143: Delivery Challans and Form GST ITC-04 filing',
+          'Tracking inward-outward material conversion ratios across dyeing, casting, machining, and packaging',
+          'Standard shrinkage and wastage tolerances, scrap recovery valuation, and missing material penalty clauses',
+          'Auditing job-work processing charges, passing TDS deduction entries under Section 194C, and updating finished goods cost',
+        ],
+        durationHours: 8,
+      },
+      {
+        id: 'mod-9-15',
+        title: 'Government Thekedar Civil Projects Costing (Roads, Bridges & Bhavans)',
+        topics: [
+          'PWD, CPWD, Indian Railways, and Municipal Corporation tender schedule of rates (SOR) estimation',
+          'Material transit tracking: Bitumen, road grit, cement, diesel for JCB/rollers, and site store controls',
+          'Preparation of Running Account (RA) bills against Measurement Book (MB) entries approved by executive engineers',
+          'Accounting for statutory deductions from government cheques: 2% GST-TDS, 1%/2% Section 194C TDS, royalty, and security retention deposit',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-9-16',
+        title: 'Multi-Branch & Multi-Chain Business Accounting (Like Javed Habib)',
+        topics: [
+          'Multi-location chain architecture: Central warehouse procurement, stock transfer notes, and branch retail inventory',
+          'Daily salon/branch cash collection reconciliation, bank deposit slips, POS card swipe settlements, and petty cash imprest',
+          'Franchise business economics: Royalty fees calculation (percentage of gross turnover), brand fee invoices, and Section 194J TDS',
+          'Consolidated inter-branch reconciliation, branch-wise P&L comparison, and enterprise trial balance consolidation',
+        ],
+        durationHours: 10,
+      },
+    ],
+    learningOutcomes: [
+      'Attain total practical desk command across 16 diverse commercial industries from hospitals and hotels to manufacturing and civil tenders',
+      'Accurately maintain books, record vouchers, and finalize balance sheets for service, trading, retail, and manufacturing sectors',
+      'Execute live statutory compliances: multi-state GST returns, quarterly TDS/TCS with NSDL RPU, and monthly PF/ESIC ECR filings',
+      'Master specialized commercial workflows: bank CC limit stock statements, builder site costing, government thekedar RA bills, and chain franchise branch accounting',
+    ],
+    seoTitle: '16 Practical Projects: Multi-Business Accounting Course | YLCC',
+    seoDescription:
+      'Master hands-on accounting across 16 industries: Hospital, College, Logistics, Service Center, Hotel, Distributor, GST, TDS, CC Limit, Payroll, Builders, and Govt Thekedar at YLCC Jaipur.',
+  },
 ];
 
 export const initialProjects: Project[] = [

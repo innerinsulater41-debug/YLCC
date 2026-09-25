@@ -1606,6 +1606,124 @@
       ],
       "seoTitle": "Logistics & Transport Accounting Course | Transporter Hisab | YLCC",
       "seoDescription": "Master logistics transport accounting in Jaipur: Transporter Hisab, Consignment Tracking (Bilty/LR), and City Wise Transport Tracking at YLCC."
+    },
+    {
+      "id": "prog-11",
+      "slug": "finance-credit-control-aging-management",
+      "title": "FINANCE",
+      "category": "Corporate Finance & Credit Control",
+      "shortDescription": "Master corporate debtor management, payment follow-up (Tagada), salesman collection tracking, and party & product-wise aging analysis.",
+      "detailedDescription": "Cash flow is the lifeblood of any commercial business. This intensive practical masterclass equips accountants and finance executives with specialized skills in credit control, active collection follow-up (Tagada), and analytical aging reports. You will master Party-Wise Days-Wise collection schedules, align Salesmen-Wise daily recovery targets, build Bill-by-Bill aging portfolios (30/60/90+ days), conduct Salesmen collection audits, and generate Product-Wise stock aging reports to liquidate dead inventory and protect working capital.",
+      "duration": "1.5 Months",
+      "mode": "Offline Classroom",
+      "fees": 12500,
+      "discountedFees": 9999,
+      "eligibility": "Commerce graduates, accountants, credit controllers, sales managers, and finance professionals",
+      "softwareTools": [
+        "Tally Prime 4.0",
+        "Excel 365 Financial Dashboards",
+        "Debtor Aging Analyzers",
+        "MSME Samadhaan Portal"
+      ],
+      "facultyId": "fac-1",
+      "facultyName": "CA Alok Maheshwari & Rajesh Soni (Senior Financial Mentors)",
+      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "availableSeats": 10,
+      "startDate": "1st & 15th of Every Month",
+      "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+      "certificateInfo": "YLCC Certified Corporate Credit Controller & Financial Analyst",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 11,
+      "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical execution covering Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Inventory Control.",
+      "coreCompetencies": [
+        {
+          "title": "Party Wise Days Wise Tagada",
+          "description": "Setting credit terms, tracking daily maturity dues, automated reminder schedules, and rigorous promise-to-pay (PTP) customer follow-up."
+        },
+        {
+          "title": "Salemen Wise Days Wise Tagada",
+          "description": "Territorial salesman collection beats, daily recovery targets, linking commission incentives to cash collections, and default prevention."
+        },
+        {
+          "title": "Party Wise Ageing Report",
+          "description": "Bill-by-bill classification into 0-30, 31-60, 61-90, and 90+ days buckets, identifying sticky receivables, and bad debt management."
+        },
+        {
+          "title": "Salemen Wise Ageing Report",
+          "description": "Tracking salesman overdue portfolios, measuring Days Sales Outstanding (DSO), and monitoring sales team collection performance."
+        },
+        {
+          "title": "Product Wise Age Wise Report",
+          "description": "Warehouse inventory aging (0-30, 31-90, 180+ days), identifying slow-moving and dead stock, and liquidation write-down strategies."
+        }
+      ],
+      "modules": [
+        {
+          "id": "mod-11-1",
+          "title": "Party Wise Days Wise Tagada",
+          "topics": [
+            "Configuring customer credit limits, agreed credit periods (15, 30, 45, 60 days), and bill-by-bill reference tracking",
+            "Daily payment maturity schedules: Tracking due dates, overdue grace periods, and automated payment reminder letters",
+            "Execution of active follow-up (Tagada): Promise-to-Pay (PTP) logs, payment dispute resolution, and balance confirmation statements",
+            "Statutory MSME Act provisions (Section 15/16): 45-day payment rule, compound interest computation on delayed receivables"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-11-2",
+          "title": "Salemen Wise Days Wise Tagada",
+          "topics": [
+            "Mapping customer accounts to territorial sales representatives, beat routes, and collection targets",
+            "Daily salesman recovery sheets: Generating territory-wise overdue lists and daily calling/visiting follow-up schedules",
+            "Linking sales commissions and bonus incentives to actual bank realization rather than gross invoice generation",
+            "Salesman collection dispute escalation protocols, stop-supply alerts for defaulting buyers, and recovery audit trails"
+          ],
+          "durationHours": 10
+        },
+        {
+          "id": "mod-11-3",
+          "title": "Party Wise Ageing Report",
+          "topics": [
+            "Extracting and building multi-interval aging schedules (0–30, 31–60, 61–90, 90+ days) in Tally Prime and Excel",
+            "Auditing on-account advance receipts vs unpaid invoices using strict FIFO bill-by-bill settlement",
+            "Isolating disputed deductions (rate differences, transit damages, scheme disputes) and issuing credit note adjustments",
+            "Provisioning for doubtful debts, bad debt write-offs, and compiling monthly debtor aging summaries for bank CC limits"
+          ],
+          "durationHours": 14
+        },
+        {
+          "id": "mod-11-4",
+          "title": "Salemen Wise Ageing Report",
+          "topics": [
+            "Consolidating overdue receivables by sales representative across 30, 60, and 90+ day aging brackets",
+            "Computing Days Sales Outstanding (DSO) and recovery efficiency index per salesman and sales territory",
+            "Monthly executive management review: Comparing sales quota achievements vs overdue recovery performance",
+            "Legal notice preparation (Section 138 Negotiable Instruments Act & commercial demand notices) for chronic defaulters"
+          ],
+          "durationHours": 10
+        },
+        {
+          "id": "mod-11-5",
+          "title": "Product Wise Age Wise Report",
+          "topics": [
+            "Classifying warehouse inventory into age brackets: 0–30 days (fresh), 31–90 days (active), 91–180 days (slow), 180+ days (dead)",
+            "Calculating product-level inventory turnover ratios, carrying costs, and capital blockage valuation",
+            "Identifying non-moving SKU codes, batch-wise expiry risks, and damaged stock accumulation across godowns",
+            "Formulating commercial liquidation schemes: Clearance discounts, bulk bundle offers, and vendor return debit notes"
+          ],
+          "durationHours": 14
+        }
+      ],
+      "learningOutcomes": [
+        "Master complete credit control and systematic debt recovery (Tagada) workflows to eliminate overdue defaults",
+        "Implement salesman-wise collection tracking and align sales commissions with realized bank receipts",
+        "Construct dynamic party-wise and salesman-wise debtor aging models (0-30, 31-60, 61-90, 90+ days)",
+        "Audit product-wise inventory aging to prevent capital blockage and liquidate slow-moving/dead warehouse stock"
+      ],
+      "seoTitle": "Finance & Credit Control Course | Debtor Aging & Tagada | YLCC",
+      "seoDescription": "Master corporate finance credit control in Jaipur: Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Reports at YLCC."
     }
   ],
   "projects": [

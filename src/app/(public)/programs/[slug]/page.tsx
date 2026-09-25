@@ -122,10 +122,10 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
                     Core Operational Curriculum
                   </span>
                   <h2 className="text-xl font-serif font-bold text-[#2A1810]">
-                    11 Essential Practical Skills You Master
+                    {program.coreCompetenciesHeading || `${program.coreCompetencies.length} Essential Practical Skills You Master`}
                   </h2>
                   <p className="text-xs text-[#78716C] mt-1">
-                    Hands-on practical execution covering the complete day-to-day desk operations of an enterprise accounts department.
+                    {program.coreCompetenciesSubheading || 'Hands-on practical execution covering the complete operational curriculum and desk workflows.'}
                   </p>
                 </div>
 

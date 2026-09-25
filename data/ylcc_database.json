@@ -58,6 +58,8 @@
       "isFeatured": true,
       "status": "published",
       "displayOrder": 1,
+      "coreCompetenciesHeading": "11 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical execution covering the complete day-to-day desk operations of an enterprise accounts department.",
       "coreCompetencies": [
         {
           "title": "Day-to-Day Transactions",
@@ -395,6 +397,8 @@
       ],
       "seoTitle": "Accounts Manager Training | Internal Audit & Debtors Cycle | YLCC",
       "seoDescription": "Executive course for Accounts Managers. Master books scrutiny, debtor collection cycles, monthly internal audits, and income tax audit preparation.",
+      "coreCompetenciesHeading": "11 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Executive-level monitoring, book scrutiny, debtor collection cycles, and statutory tax audit readiness.",
       "coreCompetencies": [
         {
           "title": "Checking Live Voucher Feeding",
@@ -469,37 +473,53 @@
       "isFeatured": true,
       "status": "published",
       "displayOrder": 3,
+      "coreCompetenciesHeading": "3 Core Banking Operations & Credit Limit Pillars You Master",
+      "coreCompetenciesSubheading": "Hands-on practical desk execution covering fresh limit sanction dossiers, monthly drawing power submissions, and annual renewal CMA projections.",
+      "coreCompetencies": [
+        {
+          "title": "Limit Taking Documents Preparation",
+          "description": "End-to-end dossier preparation for fresh Cash Credit (CC), Overdraft (OD) & Term Loan sanctions: compiling KYC dossiers, Net Worth certificates, business profiles, collateral mortgage deeds, hypothecation agreements, CIBIL reports, and sanction checklist compliance."
+        },
+        {
+          "title": "Monthly Bank Submission (Drawing Power Maintain)",
+          "description": "Preparing monthly Bank Stock Statements with 25% paid-stock margin deduction, Sundry Debtors aging scrutiny (< 90 days criteria) with 40% margin, and computing Drawing Power (DP) formula to prevent bank limit freezing and penal interest."
+        },
+        {
+          "title": "Limit Renewal Preparation (Projected Balance Sheet)",
+          "description": "Preparation of 12-page CMA (Credit Monitoring Arrangement) data (Forms I–VI), formulating 3-year projected Balance Sheets and Profit & Loss statements, Current Ratio (≥ 1.33) and DSCR compliance, and handling bank credit queries."
+        }
+      ],
       "modules": [
         {
           "id": "mod-3-1",
-          "title": "Working Capital & Bank Limit Sanctions",
+          "title": "Limit Taking Documents Preparation & Bank Sanctions",
           "topics": [
-            "Understanding Cash Credit (CC), Overdraft (OD), and Term Loan mechanisms",
-            "Complete document checklist for fresh bank limit sanction applications",
-            "Collateral security documentation, hypothecation deeds, and guarantor affidavits",
-            "KYC and financial ratio benchmarks required by bank credit officers"
+            "Understanding Cash Credit (CC), Overdraft (OD), and Term Loan sanction mechanisms",
+            "Complete document checklist & dossier compilation for fresh bank limit sanction applications",
+            "Collateral security documentation, hypothecation deeds, primary charge, and guarantor affidavits",
+            "KYC, Net Worth certificates, and financial benchmark verification required by bank credit officers"
           ],
           "durationHours": 15
         },
         {
           "id": "mod-3-2",
-          "title": "Monthly Drawing Power (DP) Maintenance",
+          "title": "Monthly Document Submission for Drawing Power (DP) Maintenance",
           "topics": [
-            "Drawing Power formula: Paid stock + eligible book debts minus margin",
-            "Drafting and validating monthly Bank Stock Statements",
-            "Debtors aging scrutiny for DP eligibility (less than 90 days criteria)",
-            "Bank inspection readiness and stock physical verification reconciliation"
+            "Drawing Power (DP) formula calculation: Paid Stock + Eligible Book Debts minus Margin deduction",
+            "Drafting and validating monthly Bank Stock Statements in bank-prescribed formats",
+            "Debtors aging scrutiny for DP eligibility (less than 90 days criteria and creditor deductions)",
+            "Bank stock inspection readiness, stock physical verification reconciliation, and penal interest safeguards"
           ],
           "durationHours": 18
         },
         {
           "id": "mod-3-3",
-          "title": "CMA Data & Projected Balance Sheet Preparation",
+          "title": "Limit Renewal Preparation & Projected Balance Sheet Submission (CMA Data)",
           "topics": [
-            "Preparation of 12-page CMA format (Operating statement, balance sheet analysis, fund flow)",
-            "Projected Balance Sheet & Profit & Loss statements for annual limit renewal",
-            "Current Ratio, Debt-Equity Ratio, and DSCR computation and compliance",
-            "Handling bank query letters and credit committee representations"
+            "Preparation of 12-page CMA format (Operating statement, balance sheet analysis, fund flow, and working capital gap)",
+            "Drafting Projected Balance Sheet & Profit & Loss statements for annual bank limit renewals",
+            "Current Ratio (≥ 1.33 benchmark), Debt-Equity Ratio, and DSCR computation and compliance",
+            "Handling bank query letters, responding to credit committee observations, and limit enhancement proposals"
           ],
           "durationHours": 17
         }
@@ -518,8 +538,8 @@
       "slug": "gst-practitioner",
       "title": "GST Practitioner Practical Masterclass",
       "category": "Taxation & Compliance",
-      "shortDescription": "Comprehensive hands-on training in GST Act transaction entries, E-way bill, E-invoicing, monthly GSTR-1 & GSTR-3B filing, GSTR-2B ITC reconciliation, and GSTR-9 audit preparation.",
-      "detailedDescription": "Goods and Services Tax is the backbone of Indian commercial compliance. This practical masterclass teaches you how to record daily transactions per GST laws, generate E-way bills and E-invoices, file monthly GSTR-1 return data, conduct deep Input Tax Credit (ITC) reconciliation between GSTR-2B and company purchase books, file GSTR-3B with tax offset calculations, and prepare working papers for annual GST returns (GSTR-9 and GSTR-9C). Includes real case studies across trading, manufacturing, and service businesses.",
+      "shortDescription": "Master the 9 foundational GST practitioner pillars: GST Act transaction entries, E-way bills, E-invoicing, monthly GSTR-1, ITC 2B reconciliation (Book Milan), GSTR-3B tax offset, yearly GST audit prep, GSTR-9 annual returns, and live client projects.",
+      "detailedDescription": "Goods and Services Tax is the backbone of Indian commercial compliance. This comprehensive practical masterclass trains you across all 9 foundational pillars of professional GST practice: recording day-to-day transactions per the GST Act, operating government E-way bill and E-invoicing portals with IRN/QR code generation, live preparation and filing of monthly GSTR-1 and GSTR-3B returns, executing rigorous Input Tax Credit (ITC) reconciliation between portal GSTR-2B and purchase registers (Book Milan), compiling working papers for yearly GST audits, preparing annual returns (GSTR-9 and GSTR-9C), and executing live case studies across trading, manufacturing, and export businesses.",
       "duration": "2 Months",
       "mode": "Offline Classroom",
       "fees": 18000,
@@ -528,6 +548,7 @@
       "softwareTools": [
         "Official GST Portal",
         "GST Offline Tool",
+        "E-Way Bill & E-Invoice Portal",
         "Tally Prime GST Suite",
         "Excel ITC 2B Milan Sheets"
       ],
@@ -541,46 +562,152 @@
       "isFeatured": true,
       "status": "published",
       "displayOrder": 4,
+      "coreCompetenciesHeading": "9 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical desk execution covering the complete statutory GST compliance cycle from transaction feeding to annual returns and audit.",
+      "coreCompetencies": [
+        {
+          "title": "Business Transaction Feed",
+          "description": "Recording intra-state and inter-state purchase and sale vouchers under GST Act provisions, RCM liabilities, debit/credit notes, and multi-tax rate rules."
+        },
+        {
+          "title": "E-Way Bill",
+          "description": "Complete government portal execution for Part-A & Part-B, multi-vehicle updates, validity extensions, consolidated bills, and transit compliance."
+        },
+        {
+          "title": "E-Invoice",
+          "description": "Mandatory B2B e-invoicing workflows, generating 64-character IRN, JSON schema uploads to IRP, and printing digitally signed QR codes."
+        },
+        {
+          "title": "Monthly GSTR-1 Filing",
+          "description": "End-to-end live filing of Table 4 (B2B), Table 5/7 (B2C), Table 6 (Exports), Table 9 amendments, and mandatory Table 12 HSN summaries."
+        },
+        {
+          "title": "ITC 2B & Book Milan",
+          "description": "In-depth Input Tax Credit matching between portal GSTR-2B and purchase register (Milan), identifying missing bills, ineligible ITC, and vendor follow-up."
+        },
+        {
+          "title": "Monthly GSTR-3B Filing",
+          "description": "Monthly tax liability compilation, eligible ITC claims, statutory set-off order under Section 49, PMT-06 challans, and electronic cash ledger payments."
+        },
+        {
+          "title": "Yearly GST Audit",
+          "description": "Preparing comprehensive audit working papers, turnover reconciliation with audited financials, and drafting Section 61 notice replies."
+        },
+        {
+          "title": "GSTR-9 Filing Preparation",
+          "description": "Table-by-table data compilation for annual returns, Table 8 ITC reconciliation with GSTR-2A/2B, and GSTR-9C reconciliation readiness."
+        },
+        {
+          "title": "GST Practice Projects",
+          "description": "Hands-on simulated client desk projects covering trading, manufacturing, and export firms from voucher feeding to annual return closure."
+        }
+      ],
       "modules": [
         {
           "id": "mod-4-1",
-          "title": "GST Transaction Feeding & Invoicing Laws",
+          "title": "Business Transaction Feeding According to GST Act",
           "topics": [
-            "Recording intrastate and interstate sales & purchases (CGST, SGST, IGST, RCM)",
-            "E-way bill portal operations, multi-vehicle updates, and consignor-consignee rules",
-            "E-invoicing: IRN generation, QR code validation, and B2B/Export invoices",
-            "Credit note, debit note, and GST rate change adjustments"
+            "Feeding intra-state (CGST + SGST) and inter-state (IGST) sales and purchase vouchers per GST Act statutory rules",
+            "Configuring multi-tier GST rates (0%, 5%, 12%, 18%, 28%) and assigning accurate 4/6/8-digit HSN and SAC codes",
+            "Accounting for Reverse Charge Mechanism (RCM) transactions under Section 9(3) and 9(4) with self-invoicing and tax payment",
+            "Recording statutory Debit Notes and Credit Notes under Section 34 for sales returns, rate differences, and post-sale discounts"
           ],
-          "durationHours": 20
+          "durationHours": 12
         },
         {
           "id": "mod-4-2",
-          "title": "Monthly Return Filing & ITC 2B Reconciliation",
+          "title": "E-Way Bill Complete Practical Knowledge & In-Transit Compliance",
           "topics": [
-            "Monthly GSTR-1 live preparation: B2B, B2C Large/Small, Export, HSN summary",
-            "ITC reconciliation: Matching GSTR-2B with Purchase Ledger (Book Milan)",
-            "Handling mismatched, missed, and ineligible ITC per Rule 37A and Section 16(4)",
-            "GSTR-3B preparation, tax liability calculation, ITC utilization, and PMT-06 challans"
+            "Statutory applicability rules: Mandatory ₹50,000 consignment value threshold, distance calculations, and exempted commodities",
+            "Live government portal generation of Part-A (consignor/consignee, invoice value, HSN) and Part-B (vehicle number, transporter ID)",
+            "Managing multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and statutory validity extension",
+            "Consolidated E-Way bills, handling rejected consignments, 24-hour cancellation rules, and avoiding Section 129 transit penalties"
           ],
-          "durationHours": 24
+          "durationHours": 10
         },
         {
           "id": "mod-4-3",
-          "title": "Annual GST Returns & Audit Preparation",
+          "title": "E-Invoice Complete Practical Knowledge, IRN & QR Code Generation",
           "topics": [
-            "Annual GSTR-9 filing preparation and table-by-table data compilation",
-            "Reconciliation with audited financial statements (GSTR-9C readiness)",
-            "Handling GST departmental notices, demand letters, and reply drafting",
-            "End-to-end practical GST multi-business project execution"
+            "Understanding statutory e-invoicing thresholds (turnover criteria) and mandatory B2B, B2G, and export invoice coverage",
+            "Generating JSON schema payloads from accounting software and direct uploading to the Invoice Registration Portal (IRP)",
+            "Generating unique 64-character Invoice Reference Number (IRN) and digitally signed cryptographic QR codes",
+            "Printing statutory e-invoices, issuing e-invoice credit/debit notes, 24-hour cancellation rules, and auto-population into GSTR-1"
           ],
-          "durationHours": 16
+          "durationHours": 10
+        },
+        {
+          "id": "mod-4-4",
+          "title": "Monthly GSTR-1 Live Return Preparation & Filing",
+          "topics": [
+            "Compiling outward supplies: B2B invoices (Table 4A), B2C Large inter-state (Table 5), and B2C Small intra-state (Table 7)",
+            "Documenting zero-rated supplies, SEZ sales, deemed exports (Table 6), and credit/debit notes issued to registered parties (Table 9B)",
+            "Compiling mandatory HSN-wise outward summary (Table 12) and document issued count summary (Table 13)",
+            "Preparing return data via GST Offline Tool, JSON schema error debugging, portal upload, and final EVC / DSC verification"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-4-5",
+          "title": "ITC 2B Reconciliation & Purchase Book Milan",
+          "topics": [
+            "Downloading and importing dynamic monthly GSTR-2B statements and static GSTR-2A data from the GST portal",
+            "Systematic purchase register matching (Book Milan): Identifying matched, invoice value mismatched, and supplier-missing bills",
+            "Enforcing Rule 37A and Section 16(4) statutory time limits, identifying blocked ITC under Section 17(5), and vendor reversal tracking",
+            "Automated Excel & ERP reconciliation models, preparing vendor follow-up lists for unfiled supplier returns to safeguard client ITC"
+          ],
+          "durationHours": 14
+        },
+        {
+          "id": "mod-4-6",
+          "title": "Monthly GSTR-3B Return Filing & Tax Offset Calculation",
+          "topics": [
+            "Preparing monthly summary return: Table 3.1 outward taxable supplies & RCM liability, Table 3.2 inter-state supplies to unregistered",
+            "Claiming eligible ITC under Table 4(A), recording reversals under Table 4(B) (Rule 38/42/43), and reporting net eligible ITC",
+            "Applying statutory tax liability offset rules (IGST credit utilization first against IGST, then CGST & SGST) under Section 49",
+            "Generating electronic cash ledger payment challans (Form PMT-06), interest & late fee computation under Section 50, and filing via EVC/DSC"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-4-7",
+          "title": "Preparation of Yearly GST Audit & Working Papers",
+          "topics": [
+            "Preparing comprehensive GST audit working papers: Reconciling audited Profit & Loss / Balance Sheet revenue with GST returns",
+            "Expense ledger scrutiny: Cross-checking import of services, director remuneration, GTA freight, and legal fees for RCM liability",
+            "Input Tax Credit audit: Verification of capital goods ITC, 180-day vendor payment compliance under Rule 37, and reversal audits",
+            "Handling departmental scrutiny notices under Section 61 (ASMT-10), drafting formal replies, and voluntary payments via DRC-03"
+          ],
+          "durationHours": 10
+        },
+        {
+          "id": "mod-4-8",
+          "title": "GSTR-9 Annual Return Filing Preparation & GSTR-9C Readiness",
+          "topics": [
+            "Understanding mandatory filing thresholds for Annual Return GSTR-9 and Self-Certified Reconciliation Statement GSTR-9C",
+            "Table-by-table compilation: Outward supplies declared in returns (Part II), ITC availed & reversed during the financial year (Part III)",
+            "Deep Table 8 analysis: Portal GSTR-2A auto-populated credit vs ITC claimed in GSTR-3B, identifying lapsed and unreconciled credits",
+            "Reporting prior period adjustments made in subsequent year returns (Part V), penalty minimization, and final return submission"
+          ],
+          "durationHours": 10
+        },
+        {
+          "id": "mod-4-9",
+          "title": "GST Practice Projects & Live Multi-Firm Client Execution",
+          "topics": [
+            "Live Case Study 1 (Trading Enterprise): Multi-rate GST billing, E-way bill generation, and complete monthly GSTR-1/3B filing cycle",
+            "Live Case Study 2 (Manufacturing Firm): Inward raw materials with RCM freight, job-work challans, E-invoicing IRN generation, and ITC 2B Milan",
+            "Live Case Study 3 (Service Provider & Exporter): Zero-rated export billing (LUT/payment), Input Service Distributor (ISD), and export refund filing",
+            "Complete year-end simulation: Annual reconciliation, preparing GSTR-9 working papers, and handling client audit inquiries independently"
+          ],
+          "durationHours": 10
         }
       ],
       "learningOutcomes": [
-        "Flawless monthly return filing for GSTR-1 and GSTR-3B across multiple business clients",
-        "Bulletproof ITC reconciliation between portal data (GSTR-2B) and accounting records",
-        "Ability to prepare annual GSTR-9 data tables without departmental discrepancies",
-        "Confidence to handle day-to-day GST queries and portal workflows independently"
+        "Complete executive mastery over all 9 core GST practitioner responsibilities: GST Act transaction feeding, E-way bills, E-invoicing, monthly GSTR-1, ITC 2B book milan, GSTR-3B tax offset, yearly GST audit, GSTR-9 annual return prep, and live practice projects",
+        "Flawless monthly return filing for GSTR-1 and GSTR-3B across multiple client businesses with zero departmental mismatch penalties",
+        "Bulletproof Input Tax Credit reconciliation matching portal GSTR-2B with purchase ledgers (Book Milan) per Rule 37A and Section 16(4)",
+        "Authority to compile annual GSTR-9 data tables, prepare GSTR-9C reconciliation statements, and draft professional replies to GST departmental notices"
       ],
       "seoTitle": "GST Practitioner Practical Course | GSTR-1, GSTR-3B, GSTR-2B Milan | YLCC",
       "seoDescription": "Hands-on GST Practitioner training in Jaipur: E-way bills, E-invoicing, GSTR-1, GSTR-3B filing, ITC 2B reconciliation, and annual GSTR-9 audit prep."

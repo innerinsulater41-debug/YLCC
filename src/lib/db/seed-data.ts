@@ -1127,15 +1127,21 @@ export const initialPrograms: Program[] = [
     title: 'Advanced Excel & Corporate Excel 365 Mastery',
     category: 'Advanced Excel & MIS Reporting',
     shortDescription:
-      'Master 250+ Excel 365 formulas, Power Query, 500+ troubleshooting techniques, 250+ corporate interview challenges, and dynamic automated MIS dashboards.',
+      'Master the 5 foundational Excel 365 pillars: 250+ dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ corporate interview challenges, and automated executive MIS dashboards.',
     detailedDescription:
-      'Advanced Excel is the indispensable operating system of modern finance and corporate management. This intensive program moves beyond basic spreadsheets into corporate-grade Excel 365 mastery. You will master 250+ modern formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, SORTBY, LET, LAMBDA), solve 500+ common workplace spreadsheet troubleshooting challenges, tackle 250+ real accounting interview questions, and build fully automated executive MIS dashboards that update with a single click.',
+      'Corporate Excel 365 is the indispensable operating system of modern finance, commerce, and business intelligence. This comprehensive practical masterclass trains you across all 5 foundational pillars of corporate spreadsheet mastery: mastering 250+ modern formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA), commanding essential productivity features (cascading dropdowns, What-If tools, custom conditional formatting), diagnosing and fixing 500+ real-world troubleshooting and error scenarios, solving 250+ technical interview test problems from top MNCs, and building fully automated one-click MIS dashboards using Power Query ETL.',
     duration: '1.5 Months',
     mode: 'Offline Classroom',
     fees: 12500,
     discountedFees: 9999,
     eligibility: 'Open to all commerce students, accountants, analysts, and working professionals',
-    softwareTools: ['Microsoft Excel 365', 'Power Query', 'Power Pivot', 'Office 365 Cloud'],
+    softwareTools: [
+      'Microsoft Excel 365',
+      'Power Query (ETL Engine)',
+      'Power Pivot & Data Models',
+      'Dynamic Array Engine',
+      'Office 365 Cloud',
+    ],
     facultyId: 'fac-4',
     facultyName: 'Vikas Khandelwal (Corporate MIS Analyst & Excel Specialist)',
     batchTiming: 'Morning: 7:00 AM – 8:30 AM | Evening: 7:00 PM – 8:30 PM | Sunday Intensive',
@@ -1146,50 +1152,103 @@ export const initialPrograms: Program[] = [
     isFeatured: true,
     status: 'published',
     displayOrder: 8,
+    coreCompetenciesHeading: '5 Essential Practical Skills You Master',
+    coreCompetenciesSubheading:
+      'Hands-on corporate spreadsheet mastery covering 250+ modern Excel 365 dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ interview challenges, and automated MIS reporting.',
+    coreCompetencies: [
+      {
+        title: '250+ Formulas (Excel 365)',
+        description:
+          'Mastering 250+ modern functions: dynamic arrays (XLOOKUP, FILTER, UNIQUE, SORTBY, SEQUENCE), calculation engines (LET, LAMBDA), and financial math.',
+      },
+      {
+        title: 'Excel Features & Productivity Tools',
+        description:
+          'Advanced Data Validation, cascading dependent dropdowns, formula-driven Conditional Formatting, What-If Analysis, Goal Seek, Solver, and Flash Fill.',
+      },
+      {
+        title: '500+ Excel Troubleshooting Scenarios',
+        description:
+          'Diagnosing and fixing #N/A, #VALUE!, #REF!, #CALC!, #SPILL!, and circular errors, corrupt data cleaning, text-to-number repair, and audit tracing.',
+      },
+      {
+        title: '250+ Corporate Interview Challenges',
+        description:
+          'Cracking 250+ real-world corporate Excel interview tests, speed modeling challenges, timed aptitude assessments, and business case scenarios.',
+      },
+      {
+        title: 'Automated MIS Reports & Dashboards',
+        description:
+          'Automating raw data extraction via Power Query (ETL), multi-table data modeling, dynamic Pivot Tables, Slicers, and interactive KPI executive dashboards.',
+      },
+    ],
     modules: [
       {
         id: 'mod-8-1',
-        title: '250+ Formulas & Modern Dynamic Array Functions',
+        title: '250+ Formulas & Modern Dynamic Array Functions (Excel 365)',
         topics: [
-          'Modern Lookups: XLOOKUP (reverse, multi-criteria, wildcard), INDEX-MATCH-MATCH',
-          'Dynamic Array Functions: FILTER, UNIQUE, SORT, SORTBY, SEQUENCE, CHOOSEROWS',
-          'Advanced Calculations: LET (speed optimization) and custom reusable LAMBDA functions',
-          'Financial and Date-Time formulas: PMT, XIRR, NPV, EDATE, EOMONTH, NETWORKDAYS',
+          'Modern Lookups: XLOOKUP (bidirectional, multi-criteria, wildcard matches), INDEX-MATCH-MATCH, CHOOSEROWS, CHOOSECOLS',
+          'Dynamic Array Engine: FILTER, UNIQUE, SORT, SORTBY, SEQUENCE, EXPAND, TOCOL, and TOROW for zero-formula-drag models',
+          'Formula Optimization: LET function for caching intermediate calculations & custom reusable recursive LAMBDA functions',
+          'Financial, Statistical & Date functions: XIRR, XNPV, PMT, PPMT, EDATE, EOMONTH, WORKDAY.INTL, and DATEDIF',
         ],
-        durationHours: 20,
+        durationHours: 16,
       },
       {
         id: 'mod-8-2',
-        title: '500+ Excel Troubleshooting Scenarios & Error Recovery',
+        title: 'Advanced Excel Features & Workplace Productivity Tools',
         topics: [
-          'Resolving complex errors: #N/A, #VALUE!, #REF!, #CALC!, #SPILL!, and circular references',
-          'Cleaning corrupt data, text-to-numbers conversion, and trailing space removal',
-          'Advanced Data Validation: Dynamic cascading dropdowns and input constraint rules',
-          'Conditional Formatting rules with custom formulas for financial audits',
+          'Data Validation architecture: Dynamic searchable dropdowns, cascading dependent dropdowns (INDIRECT), and custom input limits',
+          'Advanced Conditional Formatting: Formula-driven formatting rules, heat maps, data bars, icon sets, and automated variance flagging',
+          'Analytical & What-If tools: Goal Seek, Data Tables (1-variable & 2-variable), Scenario Manager, and Solver optimization models',
+          'Data management accelerators: Flash Fill patterns, Text-to-Columns parsing, advanced multi-level sorting, and formula auditing (Trace Precedents/Dependents)',
         ],
-        durationHours: 15,
+        durationHours: 12,
       },
       {
         id: 'mod-8-3',
-        title: 'MIS Dashboards, Power Query & 250+ Interview Challenges',
+        title: '500+ Excel Troubleshooting Scenarios & Error Recovery',
         topics: [
-          'Automating raw data imports and transformation using Power Query (ETL)',
-          'Multi-table Pivot Tables and Pivot Charts with Slicers and Timelines',
-          'Building Executive MIS Dashboards: Sales vs Collection, Aging, and Cash Flow',
-          'Comprehensive practice of 250+ real-world accounting and finance interview questions',
+          'Diagnosing and resolving formula errors: #N/A, #VALUE!, #REF!, #DIV/0!, #NAME?, #NUM!, #CALC!, and dynamic array #SPILL! errors',
+          'Identifying and resolving circular reference loops, broken external workbook links, and volatile function calculation slowdowns',
+          'Data hygiene & cleaning: Stripping non-printable characters (CLEAN, TRIM), fixing ghost spaces, converting text-stored numbers, and date format repairs',
+          'Repairing corrupted workbooks, protecting intellectual property (sheet/range locking, password hashing), and spreadsheet audit inspection trails',
         ],
-        durationHours: 25,
+        durationHours: 14,
+      },
+      {
+        id: 'mod-8-4',
+        title: '250+ Corporate Excel Interview Tests & Technical Challenges',
+        topics: [
+          'Practicing 250+ actual Excel technical test questions asked by Big 4 firms, MNCs, private equity, and corporate finance departments',
+          'Speed modeling drills: Fast keyboard navigation (mouse-free Excel), shortcut masteries, and timed lookup/aggregation challenges',
+          'Real-world case study tests: Reconciling 50,000-row disparate bank statements vs ERP ledgers under strict 30-minute exam conditions',
+          'Interview portfolio creation: Presenting clean financial models, modular workbook designs, and executive-ready summary outputs',
+        ],
+        durationHours: 12,
+      },
+      {
+        id: 'mod-8-5',
+        title: 'Automated MIS Reports, Power Query ETL & Interactive KPI Dashboards',
+        topics: [
+          'Power Query ETL engine: Connecting to multiple folder files, automated data cleansing, unpivoting columns, and merging multi-source tables',
+          'Data modeling with Power Pivot: Establishing One-to-Many relationships, Star Schema design, and basic DAX measures (CALCULATE, RELATED)',
+          'Interactive Pivot Tables & Pivot Charts: Timeline slicers, interactive drill-downs, dynamic top/bottom filters, and custom calculated fields',
+          'Designing C-Suite MIS Dashboards: Sales vs Collection tracking, debtor aging summaries, cash flow monitoring, and one-click data refresh pipelines',
+        ],
+        durationHours: 16,
       },
     ],
     learningOutcomes: [
-      'Design fully automated corporate MIS dashboards with one-click refresh capabilities',
-      'Troubleshoot and fix any spreadsheet error or corrupted dataset in minutes',
-      'Crack accounting and financial analyst Excel technical interviews with complete confidence',
-      'Save hours of repetitive manual data entry using modern Excel 365 dynamic formulas',
+      'Master 250+ modern Excel 365 formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA) for high-speed modeling',
+      'Deploy advanced workplace features: cascading dropdowns, What-If analysis, Solver optimization, and formula-driven conditional formatting',
+      'Diagnose, troubleshoot, and fix 500+ spreadsheet errors (#N/A, #REF!, #SPILL!, circular loops, corrupt data) in minutes',
+      'Crack 250+ corporate Excel interview technical tests with mouse-free speed modeling and real-world accounting reconciliations',
+      'Design fully automated executive MIS dashboards and Power Query ETL pipelines with one-click data refresh capabilities',
     ],
-    seoTitle: 'Advanced Excel 365 Course | 250+ Formulas MIS Dashboards | YLCC',
+    seoTitle: 'Advanced Excel 365 & Corporate MIS Course | 250+ Formulas | YLCC',
     seoDescription:
-      'Master 250+ Excel 365 formulas, Power Query, 500+ troubleshooting scenarios, 250+ interview questions, and automated MIS dashboards at YLCC Jaipur.',
+      'Master 250+ Excel 365 formulas, advanced features, 500+ troubleshooting scenarios, 250+ interview questions, and automated MIS dashboards at YLCC Jaipur.',
   },
 ];
 

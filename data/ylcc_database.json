@@ -1857,6 +1857,109 @@
       ],
       "seoTitle": "Sales Analysis Course | Commercial MIS & Revenue Analytics | YLCC",
       "seoDescription": "Master commercial sales analytics in Jaipur: Party Wise, Salesmen Wise, Area Wise, Product Wise, Category Wise, and Brand Wise sales MIS at YLCC."
+    },
+    {
+      "id": "prog-13",
+      "slug": "crm-field-sales-force-automation",
+      "title": "CRM",
+      "category": "Sales Force Automation & CRM Operations",
+      "shortDescription": "Master modern Field Sales CRM: Sales staff live geo-tracking, daily travel & conveyance (TA/DA) expense auditing, attendance & salary processing, and daily visit records (DVR).",
+      "detailedDescription": "Modern commercial enterprises rely on real-time CRM and Sales Force Automation (SFA) systems to manage field teams, eliminate expense leakages, and optimize customer relationship touchpoints. This hands-on masterclass trains commerce students, HR/payroll executives, and operations accountants to manage end-to-end sales team operations: Live GPS geo-tracking and beat route compliance, verification and accounting of daily field expenses (TA/DA claims, lodging, conveyance), mobile attendance integration with payroll/salary calculations, and recording and auditing daily customer visit reports (DVR/DSR) linked with spot order booking.",
+      "duration": "1.5 Months",
+      "mode": "Offline Classroom",
+      "fees": 12500,
+      "discountedFees": 9999,
+      "eligibility": "Commerce graduates, accountants, sales coordinators, CRM administrators, and payroll professionals",
+      "softwareTools": [
+        "Field Sales CRM & SFA Portals",
+        "Tally Prime 4.0 (Payroll & Expenses)",
+        "Excel 365 Sales Operations",
+        "GPS & Geo-Fencing Beat Trackers"
+      ],
+      "facultyId": "fac-2",
+      "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & Operations Mentors)",
+      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "availableSeats": 10,
+      "startDate": "1st & 15th of Every Month",
+      "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+      "certificateInfo": "YLCC Certified CRM & Sales Force Automation Specialist",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 13,
+      "coreCompetenciesHeading": "4 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical execution covering Sales Staff Live Geo Tracking, Sales Staff Daily Expenses, Sales Staff Attendance / Salary, and Sales Staff Daily Visit Record.",
+      "coreCompetencies": [
+        {
+          "title": "Sales Staff Live Geo. Tracking",
+          "description": "Real-time GPS tracking, beat route adherence, geofencing client store check-ins/check-outs, and travel path mileage verification."
+        },
+        {
+          "title": "Sales Staff Daily Expenses",
+          "description": "Daily allowance (DA) policies, travel conveyance (TA) per-kilometer rate claims, fuel/hotel bill verification, and expense ledger vouchers."
+        },
+        {
+          "title": "Sales Staff Attendance / Salary",
+          "description": "Mobile app punch-in/out, leave rules, monthly attendance register reconciliation, target incentives, and net take-home salary disbursement."
+        },
+        {
+          "title": "Sales Staff Daily Visit Record",
+          "description": "Daily Visit Report (DVR/DSR) logs, productive vs non-productive client meetings, sample distribution records, and spot order booking."
+        }
+      ],
+      "modules": [
+        {
+          "id": "mod-13-1",
+          "title": "Sales Staff Live Geo Tracking & Route Compliance",
+          "topics": [
+            "Configuring salesman beat plans, territory geofences, and customer store GPS location tags in SFA systems",
+            "Real-time live location monitoring: Tracking field executive transit, route deviation alerts, and on-field idle time",
+            "Automated check-in & check-out time-stamping at retailer/wholesaler counters with geofence proximity verification",
+            "Generating daily travel distance logs (Google Maps API integration) to cross-verify physical field presence"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-13-2",
+          "title": "Sales Staff Daily Expenses & Claim Reconciliation",
+          "topics": [
+            "Formulating corporate travel allowance policies: City tier classifications (Metro/Non-Metro), daily DA slabs, and night halt limits",
+            "Digital expense claim workflow: Submitting petrol slips, toll receipts, public transport tickets, and food/lodging vouchers",
+            "Audit & fraud detection: Comparing claimed odometer kilometers against GPS geo-tracking logs to eliminate false claims",
+            "Accounting entries in Tally Prime: Booking staff advance adjustments, conveyance expense ledgers, and reimbursable payouts"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-13-3",
+          "title": "Sales Staff Attendance & Payroll / Salary Processing",
+          "topics": [
+            "Managing mobile selfie attendance, geo-tagged login/logout timestamps, and field leave management rules",
+            "Compiling monthly muster rolls: Late-coming deductions, half-day policies, paid leaves, and Sunday / holiday working credits",
+            "Sales incentive & commission integration: Linking sales revenue quotas, collection targets, and bonus accelerators to payroll",
+            "Preparing professional payslips in Tally Prime & Excel: Basic, HRA, Conveyance, PF/ESIC deductions, PT, and net bank salary transfer"
+          ],
+          "durationHours": 14
+        },
+        {
+          "id": "mod-13-4",
+          "title": "Sales Staff Daily Visit Record (DVR) & Order Booking",
+          "topics": [
+            "Structuring Daily Visit Reports (DVR / DSR): Recording customer contact person, meeting outcome, and next follow-up dates",
+            "Productive vs non-productive call analysis: Measuring strike rate (number of orders booked vs total store visits made)",
+            "Spot order booking: Logging SKU-level order quantities, preferred delivery dates, and payment collection commitments in CRM",
+            "Marketing collateral & sample distribution tracking: Auditing free promotional samples, tester units, and gift giveaways"
+          ],
+          "durationHours": 12
+        }
+      ],
+      "learningOutcomes": [
+        "Implement live GPS geo-tracking and geofencing to audit sales staff beat routes and customer visit authenticity",
+        "Audit daily travel (TA/DA) expense claims with precision, eliminating bogus conveyance reimbursements",
+        "Process field sales attendance, incentive calculations, statutory deductions, and monthly salary disbursement",
+        "Analyze Daily Visit Records (DVR/DSR) to optimize salesperson productivity, strike rates, and spot order pipelines"
+      ],
+      "seoTitle": "CRM & Sales Force Automation Course | Field Staff MIS & Payroll | YLCC",
+      "seoDescription": "Master field sales CRM in Jaipur: Live Geo Tracking, Daily Expenses, Attendance & Salary, and Daily Visit Records (DVR) at YLCC."
     }
   ],
   "projects": [

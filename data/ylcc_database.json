@@ -717,8 +717,8 @@
       "slug": "tds-tcs-practitioner",
       "title": "TDS & TCS Practitioner Practical Course",
       "category": "Direct Taxation & Withholding",
-      "shortDescription": "Master transaction recording according to TDS/TCS provisions, monthly portal payments (Challan 281), quarterly return filing (Form 24Q, 26Q, 27Q, 27EQ), and Form 16/16A certificate generation.",
-      "detailedDescription": "Withholding tax compliance is mandatory for every business entity in India. Non-compliance invites hefty interest and penalties. In this course, you will learn section-wise transaction recording under TDS (194C contractor, 194J professional fees, 194I rent, 194Q purchase of goods) and TCS (206C(1H) scrap/goods sale). You will execute monthly tax payments on the Protean/NSDL tax portal, prepare quarterly TDS returns using RPU and FVU utilities, handle correction statements, and download and issue Form 16 and Form 16A certificates from the TRACES portal.",
+      "shortDescription": "Master the 5 foundational TDS & TCS practitioner pillars: statutory withholding transaction entries, monthly Challan 281 portal payments, quarterly return filing (Form 24Q, 26Q, 27EQ), TRACES certificate issuance (Form 16/16A, 27D & Form 13), and live client projects.",
+      "detailedDescription": "Withholding tax compliance is mandatory for every business entity in India. Non-compliance invites hefty interest under Section 201(1A), penal late fees under Section 234E, and disallowance of business expenses under Section 40(a)(ia). This practical masterclass trains you across all 5 foundational pillars of professional TDS & TCS practice: recording day-to-day business transactions per the Income Tax Act (194C, 194J, 194I, 194Q, 206C(1H)), executing monthly tax payments via Challan 281 on the e-Pay Tax portal, preparing and validating quarterly returns (Form 24Q, 26Q, 27EQ) using government RPU and FVU utilities, managing the TRACES portal for Form 16/16A and Form 27D certificate issuance, handling Form 13 lower-deduction certificates, and executing live client projects across corporate, trading, and manufacturing entities.",
       "duration": "1.5 Months",
       "mode": "Offline Classroom",
       "fees": 15000,
@@ -726,9 +726,11 @@
       "eligibility": "Commerce students, tax interns, accountants, finance executives",
       "softwareTools": [
         "TRACES Portal",
-        "NSDL RPU/FVU Utility",
-        "Tally Prime TDS Module",
-        "Income Tax E-Filing Portal"
+        "Income Tax E-Filing Portal (e-Pay Tax)",
+        "NSDL e-TDS RPU Utility",
+        "NSDL File Validation Utility (FVU)",
+        "Tally Prime TDS/TCS Module",
+        "Excel TDS Automation Sheets"
       ],
       "facultyId": "fac-1",
       "facultyName": "CA Alok Maheshwari (Senior Chartered Accountant)",
@@ -740,49 +742,95 @@
       "isFeatured": true,
       "status": "published",
       "displayOrder": 5,
+      "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical desk execution covering the complete statutory TDS & TCS compliance cycle from transaction feeding to return filing, TRACES certificates, and live client projects.",
+      "coreCompetencies": [
+        {
+          "title": "Business Transaction Feed",
+          "description": "Recording purchase and expense vouchers with statutory TDS/TCS deductions under Sections 194C, 194J, 194I, 194Q, and 206C(1H) with PAN validation."
+        },
+        {
+          "title": "Monthly TDS/TCS Portal Payment",
+          "description": "Calculating monthly withholding liabilities, Challan 281 generation on the e-Pay Tax portal, Major/Minor head selection, and CSI file creation."
+        },
+        {
+          "title": "Quarterly Return Filing",
+          "description": "Preparing and filing quarterly Form 24Q (Salary), Form 26Q (Non-Salary), and Form 27EQ (TCS) using official government RPU and FVU utilities."
+        },
+        {
+          "title": "TRACES Certificate Issuance",
+          "description": "Downloading and issuing Form 16, Form 16A, and Form 27D certificates from TRACES, handling Form 13 lower-deduction certificates, and C1-C5 corrections."
+        },
+        {
+          "title": "TDS/TCS Practice Projects",
+          "description": "Hands-on simulated corporate client desk projects covering end-to-end deduction, challan payments, quarterly return validation, and default resolution."
+        }
+      ],
       "modules": [
         {
           "id": "mod-5-1",
-          "title": "TDS & TCS Sectional Law & Accounting Entries",
+          "title": "Business Transaction Feeding According to TDS/TCS Act",
           "topics": [
-            "Recording business vouchers with accurate TDS deductions (194C, 194J, 194I, 194A, 194H)",
-            "Understanding Section 194Q (purchase of goods) vs Section 206C(1H) (TCS on sales)",
-            "Threshold limits, PAN validation, lower-deduction certificates (Section 197)",
-            "Monthly tax liability calculation and Challan 281 e-payment workflow"
+            "Recording business vouchers with section-wise statutory TDS deductions: 194C (contractors), 194J (professional/technical fees), 194I (rent), 194A (interest), 194H (commission)",
+            "Accounting for Section 194Q (TDS on purchase of goods > ₹50L @ 0.1%) vs Section 206C(1H) (TCS on sale of goods) priority rules",
+            "PAN verification, higher-rate tax deduction @ 20% under Section 206AA, and Section 206AB compliance check for specified non-filers",
+            "TCS transaction feeding: Sale of scrap, minerals, motor vehicles (Section 206C(1F)), and Liberalised Remittance Scheme (LRS 206C(1G))"
           ],
           "durationHours": 16
         },
         {
           "id": "mod-5-2",
-          "title": "Quarterly TDS/TCS Return Preparation",
+          "title": "Monthly TDS/TCS Portal Payments & Challan 281 E-Filing",
           "topics": [
-            "Form 24Q (Salary TDS) salary annexure preparation and validation",
-            "Form 26Q (Non-salary domestic TDS) challan and deductee mapping",
-            "Form 27EQ (TCS returns) data compilation and CSI file verification",
-            "Using official RPU and FVU software tools to generate validated return files"
+            "Monthly tax computation on or before the 7th of every month (and 30th April for March deductions) with ledger balance verification",
+            "Navigating the Income Tax E-Filing Portal (e-Pay Tax facility) and generating online Challan 281 for corporate and non-corporate deductees",
+            "Correct Major Head selection (0020 Company vs 0021 Non-Company) and Minor Head selection (200 Self-TDS vs 400 Regular Assessment)",
+            "Challan payment execution via net-banking/NEFT/RTGS, BSR code and CIN record upkeep, and Section 201(1A) interest calculation"
           ],
-          "durationHours": 18
+          "durationHours": 12
         },
         {
           "id": "mod-5-3",
-          "title": "TRACES Portal Operations & Certificate Issuance",
+          "title": "Quarterly TDS/TCS Return Preparation & Government FVU Filing",
           "topics": [
-            "TRACES portal registration, login, and challan status verification",
-            "Requesting and issuing Form 16A (non-salary) and Form 16 Part A & B (salary)",
-            "Downloading Conso file and filing TDS Correction Statements (C1, C2, C3, C5)",
-            "Handling TDS default notices, late fee computation, and interest settlement"
+            "Form 24Q (Salary TDS): Compiling Annexure-I quarterly salary deductions and Annexure-II (Q4 tax calculation per Old vs New tax regimes)",
+            "Form 26Q (Non-Salary Domestic TDS): Line-by-line deductee mapping, Section code assignment, payment booking date, and challan matching",
+            "Form 27EQ (TCS Collections): Compiling collection details, buyer PAN scrutiny, and Form 27Q for payments made to non-resident entities",
+            "Working on NSDL Return Preparation Utility (RPU), validating against Challan Status File (.csi) via FVU tool, and portal uploading via TAN login"
           ],
           "durationHours": 16
+        },
+        {
+          "id": "mod-5-4",
+          "title": "TRACES Portal Operations, Form 16/16A & Form 13 Lower Deduction",
+          "topics": [
+            "TRACES portal deductor registration, KYC validation, profile management, and dashboard default surveillance",
+            "Requesting, downloading, and converting text files to issue digitally signed Form 16 (Part A & B) and quarterly Form 16A / Form 27D certificates",
+            "Verifying Assessing Officer Lower Deduction Certificates issued under Form 13 / Section 197 and updating 10-digit certificate numbers in software",
+            "Filing online TDS Correction Statements (C1 challan update, C2 deductee update, C3 PAN correction) and resolving Section 200A demand notices"
+          ],
+          "durationHours": 14
+        },
+        {
+          "id": "mod-5-5",
+          "title": "TDS/TCS Practice Projects & Live Multi-Entity Case Studies",
+          "topics": [
+            "Live Case Study 1 (Corporate Enterprise): Multi-contractor billing, professional fees, monthly Challan 281 payment, and Form 26Q return filing",
+            "Live Case Study 2 (Industrial Manufacturing): Scrap sales, high-value goods sale under Section 206C(1H), Form 27EQ compilation, and Form 27D issuance",
+            "Live Case Study 3 (Payroll & Staff Withholding): Complete executive salary TDS computation under Form 24Q, Chapter VI-A deductions, and Form 16 generation",
+            "End-to-End Audit & Correction Workshop: Downloading TRACES Conso files, executing C3 PAN correction statements, and clearing Section 234E late fee defaults"
+          ],
+          "durationHours": 14
         }
       ],
       "learningOutcomes": [
-        "Complete mastery over all domestic TDS and TCS deduction thresholds and rates",
-        "Confidence to prepare and file quarterly Forms 24Q, 26Q, and 27EQ using government FVU tools",
-        "Seamless operation on the TRACES portal for certificate issuance and default resolution",
-        "High-value consulting skill for corporate payroll and tax compliance desks"
+        "Complete executive mastery over all 5 core TDS/TCS practitioner responsibilities: transaction feeding per Income Tax Act, monthly e-Pay Tax challans, quarterly return filing (24Q/26Q/27EQ), TRACES certificate issuance (Form 16/16A/27D), and client projects",
+        "Flawless quarterly return preparation and error-free validation using government RPU and FVU utilities with zero portal rejection errors",
+        "Total command over the TRACES portal for Form 16/16A downloads, Form 13 lower deduction scrutiny, and filing online C1, C2, C3 correction statements",
+        "Authority to calculate monthly withholding liability, generate Challan 281, and resolve departmental demand notices under Section 200A"
       ],
-      "seoTitle": "TDS TCS Course Jaipur | Return Filing Form 26Q 24Q TRACES | YLCC",
-      "seoDescription": "Learn practical TDS and TCS accounting, monthly portal payments, quarterly return filing Form 24Q/26Q, and Form 16/16A issuance at YLCC."
+      "seoTitle": "TDS & TCS Practitioner Practical Course | Return Filing Form 24Q, 26Q, 27EQ | YLCC",
+      "seoDescription": "Learn practical TDS and TCS accounting, monthly portal payments (Challan 281), quarterly return filing (Form 24Q, 26Q, 27EQ), and TRACES certificate issuance at YLCC."
     },
     {
       "id": "prog-6",

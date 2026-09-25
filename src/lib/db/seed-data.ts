@@ -1776,6 +1776,149 @@ export const initialPrograms: Program[] = [
     seoDescription:
       'Master corporate finance credit control in Jaipur: Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Reports at YLCC.',
   },
+  {
+    id: 'prog-12',
+    slug: 'sales-analysis-commercial-revenue-mis',
+    title: 'SALES ANALYSIS',
+    category: 'Sales Analytics & Business Intelligence',
+    shortDescription:
+      'Master multi-dimensional sales analytics: Party-Wise sales volume, Salesmen performance tracking, Area-Wise territory mapping, Product & Category distribution, and Brand-Wise margin reporting.',
+    detailedDescription:
+      'In modern enterprise commerce, raw billing data must be transformed into actionable executive intelligence. This intensive practical masterclass trains accountants, sales coordinators, and financial analysts across all 6 core pillars of commercial sales analysis: Party-Wise sales volume and customer concentration, Salesmen-Wise target vs realization tracking, Area-Wise regional market penetration, Product/SKU-Wise sales velocity, Product Category-Wise revenue segmentation, and Brand-Wise gross margin analytics in Tally Prime, Excel 365, and Power BI dashboards.',
+    duration: '1.5 Months',
+    mode: 'Offline Classroom',
+    fees: 12500,
+    discountedFees: 9999,
+    eligibility: 'Commerce graduates, accountants, sales coordinators, business analysts, and finance professionals',
+    softwareTools: [
+      'Tally Prime 4.0',
+      'Excel 365 Sales MIS',
+      'Power BI Sales Analytics',
+      'Power Query Data Engine',
+    ],
+    facultyId: 'fac-2',
+    facultyName: 'Rajesh Soni & Vikas Khandelwal (Senior Corporate & MIS Mentors)',
+    batchTiming: 'Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
+    availableSeats: 10,
+    startDate: '1st & 15th of Every Month',
+    brochureUrl: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
+    certificateInfo: 'YLCC Certified Commercial Sales MIS & Revenue Analyst',
+    isFeatured: true,
+    status: 'published',
+    displayOrder: 12,
+    coreCompetenciesHeading: '6 Essential Practical Skills You Master',
+    coreCompetenciesSubheading:
+      'Hands-on practical execution covering Party Wise Sale, Salesmen Wise Sale, Area Wise Sale, Product Wise Sale, Product Category Wise Sale, and Brand Wise Sale.',
+    coreCompetencies: [
+      {
+        title: 'Party Wise Sale',
+        description:
+          'Customer-wise sales volume tracking, key account revenue contribution, Pareto 80/20 customer analysis, and recurring purchase trends.',
+      },
+      {
+        title: 'Salesmen Wise Sale',
+        description:
+          'Territory executive target vs actual sales realization, incentive commission structures, daily beat achievement, and sales conversion ratios.',
+      },
+      {
+        title: 'Area Wise Sale',
+        description:
+          'Geographical and regional market penetration, city-wise and zone-wise distribution, transit hub sales volume, and territory expansion insights.',
+      },
+      {
+        title: 'Product Wise Sale',
+        description:
+          'SKU-level billing volume, unit price realization, contribution margin per unit, and fast-moving vs slow-moving SKU velocity analysis.',
+      },
+      {
+        title: 'Product Category Wise Sale',
+        description:
+          'Classification into product groups and categories, category revenue share, seasonal demand cycles, and cross-category basket analysis.',
+      },
+      {
+        title: 'Brand Wise Sale',
+        description:
+          'Brand-level revenue distribution, gross margin tracking across multi-brand inventory, OEM volume rebates, and brand portfolio profitability.',
+      },
+    ],
+    modules: [
+      {
+        id: 'mod-12-1',
+        title: 'Party Wise Sale Analysis & Customer Revenue Mapping',
+        topics: [
+          'Configuring customer master hierarchies, credit buyer tagging, and bill-level sales register extraction in Tally Prime',
+          'Pareto 80/20 analysis: Identifying top 20% high-value accounts contributing 80% turnover and customer concentration risk',
+          'Customer order frequency, average order value (AOV), churn detection, and repeat purchase velocity tracking in Excel 365',
+          'Party-wise trade discount impact, turnover incentive schemes, credit note deductions, and net revenue realization audit',
+        ],
+        durationHours: 12,
+      },
+      {
+        id: 'mod-12-2',
+        title: 'Salesmen Wise Sale Performance & Incentive Tracking',
+        topics: [
+          'Assigning sales executive cost centers, territory beat routes, and monthly/quarterly revenue quota baselines',
+          'Daily Sales Report (DSR) automation: Comparing sales orders booked vs invoiced billing vs actual customer collections',
+          'Sales incentive & commission modeling: Tiered commission slabs, target achievement multipliers, and deduction for return goods',
+          'Sales representative conversion efficiency, strike rate analytics, and salesperson contribution margin reporting',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-12-3',
+        title: 'Area Wise Regional & Territory Sales Distribution',
+        topics: [
+          'Structuring multi-tier geographical hierarchies: State > Zone > City > District > Route beat in ERP and accounting masters',
+          'State-wise and city-wise sales volume mapping, interstate IGST vs local CGST/SGST sales distribution patterns',
+          'Market penetration index: Evaluating regional distributor coverage, transport transit route efficiency, and untapped market zones',
+          'Building dynamic Excel and Power BI heatmaps for area-wise sales growth, logistics freight cost-to-sales ratios',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-12-4',
+        title: 'Product Wise SKU Sales Velocity & Contribution Margin',
+        topics: [
+          'Item-level sales register analytics: Quantity sold, gross billing value, invoice rate variance, and net price realization',
+          'Product profitability & contribution margin: Computing unit gross profit, landed COGS deduction, and net margin per SKU',
+          'Fast-Moving vs Slow-Moving Consumer Goods (FMCG) classification, stock-to-sales velocity ratios, and stockout risk alerts',
+          'Price elasticity and discount sensitivity: Evaluating sales volume surge vs margin erosion during promotional schemes',
+        ],
+        durationHours: 12,
+      },
+      {
+        id: 'mod-12-5',
+        title: 'Product Category Wise Revenue Segmentation',
+        topics: [
+          'Configuring parent stock groups, sub-categories, and product classification hierarchies in Tally Prime 4.0',
+          'Category revenue share analysis: Monitoring primary category growth trajectories vs declining product line segments',
+          'Seasonal and cyclical sales patterns: Tracking festive season peaks, off-season troughs, and seasonal stock provisioning',
+          'Cross-category basket analysis: Identifying bundled purchases, complementary product sales, and cross-selling opportunities',
+        ],
+        durationHours: 12,
+      },
+      {
+        id: 'mod-12-6',
+        title: 'Brand Wise Margin Analytics & Portfolio Optimization',
+        topics: [
+          'Managing multi-brand corporate portfolios: In-house private labels vs national distributor brands vs imported product lines',
+          'Brand-level gross margin and EBITDA contribution tracking: Analyzing royalty fees, brand marketing expenses, and trade margins',
+          'OEM volume discount schemes, quarterly target achievement rebates, and special price support claim reconciliations',
+          'Building executive Power BI & Excel interactive dashboards for Brand-Wise performance reviews and brand portfolio rationalization',
+        ],
+        durationHours: 12,
+      },
+    ],
+    learningOutcomes: [
+      'Master comprehensive multi-dimensional sales analysis across party, salesmen, area, product, category, and brand axes',
+      'Extract and analyze sales registers in Tally Prime and automate commercial MIS reporting in Excel 365 and Power BI',
+      'Evaluate salesmen target vs realization, optimize incentive structures, and improve territorial beat recovery',
+      'Determine SKU-level unit contribution margins, product category trends, and brand portfolio profitability',
+    ],
+    seoTitle: 'Sales Analysis Course | Commercial MIS & Revenue Analytics | YLCC',
+    seoDescription:
+      'Master commercial sales analytics in Jaipur: Party Wise, Salesmen Wise, Area Wise, Product Wise, Category Wise, and Brand Wise sales MIS at YLCC.',
+  },
 ];
 
 export const initialProjects: Project[] = [

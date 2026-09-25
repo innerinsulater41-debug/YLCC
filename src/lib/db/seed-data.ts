@@ -1554,6 +1554,101 @@ export const initialPrograms: Program[] = [
     seoDescription:
       'Master hands-on accounting across 16 industries: Hospital, College, Logistics, Service Center, Hotel, Distributor, GST, TDS, CC Limit, Payroll, Builders, and Govt Thekedar at YLCC Jaipur.',
   },
+  {
+    id: 'prog-10',
+    slug: 'logistics-transport-management',
+    title: 'LOGISTICS',
+    category: 'Logistics & Transport Management',
+    shortDescription:
+      'Master end-to-end transport accounting: Transporter Hisab (fleet expense settlements), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.',
+    detailedDescription:
+      'Transport and logistics businesses handle thousands of inter-state trips with cash advances, fuel slips, toll charges, and broker commissions. This practical masterclass trains you across all 3 core pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).',
+    duration: '1.5 Months',
+    mode: 'Offline Classroom',
+    fees: 12500,
+    discountedFees: 9999,
+    eligibility: 'Open to commerce students, accountants, fleet managers, and working logistics professionals',
+    softwareTools: [
+      'Tally Prime 4.0',
+      'Logistics Fuel & Mileage Excel Tool',
+      'Fastag & Fleet Portal',
+      'GST & E-Way Bill Simulator',
+    ],
+    facultyId: 'fac-2',
+    facultyName: 'Rajesh Soni (Head of Accounting & Banking Operations)',
+    batchTiming: 'Morning: 8:00 AM – 9:30 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
+    availableSeats: 10,
+    startDate: '1st & 15th of Every Month',
+    brochureUrl: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
+    certificateInfo: 'YLCC Certified Logistics & Fleet Accounting Specialist',
+    isFeatured: true,
+    status: 'published',
+    displayOrder: 10,
+    coreCompetenciesHeading: '3 Essential Practical Skills You Master',
+    coreCompetenciesSubheading:
+      'Hands-on practical desk execution covering Transporter Hisab, Consignment Tracking, and City-Wise Transport Monitoring.',
+    coreCompetencies: [
+      {
+        title: 'Transportor Hisab',
+        description:
+          'Reconciling driver trip cash advances, diesel consumption, Fastag tolls, broker commissions, and final trip profit & loss statements.',
+      },
+      {
+        title: 'Consignment Track',
+        description:
+          'Tracking consignment notes (Bilty/LR) from dispatch to delivery, recording billing weights, demurrage charges, and Proof of Delivery (POD) monitoring.',
+      },
+      {
+        title: 'City Wise Transport Tracking',
+        description:
+          'Route-wise freight ledger monitoring across major industrial corridors (Delhi, Mumbai, Jaipur), city delivery schedules, and vehicle running cost per km.',
+      },
+    ],
+    modules: [
+      {
+        id: 'mod-10-1',
+        title: 'Transportor Hisab',
+        topics: [
+          'Driver trip cash advance disbursements and trip voucher settlement registers',
+          'Diesel consumption mileage audit, fleet fuel card swipes, and bulk fuel tank reconciliation',
+          'Fastag toll charges tracking, en-route cash disbursements, and vehicle maintenance logs',
+          'Transporter freight payment settlement, owner-operator ledger balancing, and broker commissions',
+        ],
+        durationHours: 15,
+      },
+      {
+        id: 'mod-10-2',
+        title: 'Consignment Track',
+        topics: [
+          'Inward and outward Consignment Note (Bilty / Lorry Receipt) generation and register maintenance',
+          'Recording consignor, consignee, chargeable billing weight, and freight tariff rate structures',
+          'Demurrage and detention charges computation for delayed vehicle unloading at destination godowns',
+          'Proof of Delivery (POD) collection, customer invoice generation, and pending bilty reconciliation',
+        ],
+        durationHours: 15,
+      },
+      {
+        id: 'mod-10-3',
+        title: 'City Wise Transport Tracking',
+        topics: [
+          'Route-wise freight tracking across major industrial corridors (e.g. Delhi, Mumbai, Ahmedabad, Jaipur)',
+          'Destination city transit times, vehicle turnaround cycles, and hub-and-spoke transfer management',
+          'Vehicle-wise operating cost per metric tonne per km and route profitability analysis',
+          'Statutory compliances: Goods Transport Agency (GTA) 5% RCM vs 12% forward charge, and Section 194C transporter TDS exemptions',
+        ],
+        durationHours: 15,
+      },
+    ],
+    learningOutcomes: [
+      'Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing',
+      'Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)',
+      'Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances',
+      'Eliminate cash leakages and optimize inter-state fleet transport accounting workflows',
+    ],
+    seoTitle: 'Logistics & Transport Accounting Course | Transporter Hisab | YLCC',
+    seoDescription:
+      'Master logistics transport accounting in Jaipur: Transporter Hisab, Consignment Tracking (Bilty/LR), and City Wise Transport Tracking at YLCC.',
+  },
 ];
 
 export const initialProjects: Project[] = [

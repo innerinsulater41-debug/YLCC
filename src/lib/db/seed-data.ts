@@ -919,15 +919,21 @@ export const initialPrograms: Program[] = [
     title: 'Cost Accounting & Industrial Inventory Control',
     category: 'Cost Accounting & Industrial Management',
     shortDescription:
-      'Master stock maintenance, negative inventory alerts, automatic purchase orders, manufacturing costing, builder site costing, government tender costing, and job-worker cost control.',
+      'Master the 10 foundational cost accounting & inventory pillars: perpetual stock control, negative inventory prevention, automated POs, own-brand manufacturing BOM, builder site costing, government tender costing, thekedar civil works, contract manufacturing (Britannia/Parle-G model taken & given), and job-work cost control.',
     detailedDescription:
-      'Manufacturing companies, contractors, and multi-unit businesses rely on precise cost accounting to remain profitable. This course equips you with advanced techniques to maintain accurate inventory, eliminate negative stock anomalies, and configure automated purchase-order triggers based on reorder levels. You will calculate unit manufacturing costs for own-brand products, prepare site-wise costing for construction projects and government tenders (roads, drains, bridges), and manage costing for contract vendors (e.g. Britannia / Parle-G model) and outsourced job-workers.',
+      'Manufacturing enterprises, infrastructure contractors, real estate builders, and FMCG contract processors rely on precise cost accounting and strict stock control to safeguard profitability. This comprehensive practical masterclass trains you across all 10 foundational pillars of industrial costing: maintaining perpetual inventory and eliminating negative stock balances, automating purchase order triggers, configuring multi-level Bills of Materials (BOM) for own-brand manufacturing, site-wise costing for real estate developers and government thekedars (roads, drains, bridges), multi-department tender estimation, contract manufacturing economics for FMCG vendors and brand principals (Britannia / Parle-G model), and Section 143 job-work inventory control.',
     duration: '2 Months',
     mode: 'Offline Classroom',
     fees: 18500,
     discountedFees: 14499,
     eligibility: 'Commerce graduates, cost accountants, factory managers, business proprietors',
-    softwareTools: ['Tally Prime Bill of Materials (BOM)', 'Advanced Costing Models', 'Industrial Excel 365'],
+    softwareTools: [
+      'Tally Prime Bill of Materials (BOM)',
+      'Industrial Costing & Excel 365 Models',
+      'GST ITC-04 Job-Work Portal',
+      'Tender Rate Analysis Spreadsheets',
+      'E-Way Bill & Store Ledger Systems',
+    ],
     facultyId: 'fac-2',
     facultyName: 'Rajesh Soni (Industrial Costing Consultant)',
     batchTiming: 'Morning: 8:30 AM – 10:30 AM | Afternoon: 2:00 PM – 4:00 PM',
@@ -938,50 +944,182 @@ export const initialPrograms: Program[] = [
     isFeatured: true,
     status: 'published',
     displayOrder: 7,
+    coreCompetenciesHeading: '10 Essential Practical Skills You Master',
+    coreCompetenciesSubheading:
+      'Hands-on practical desk execution covering industrial inventory control, manufacturing BOM, builder site costing, government tender costing, and contract/job-work economics.',
+    coreCompetencies: [
+      {
+        title: 'Inventory Control / Stock Maintain',
+        description:
+          'Maintaining perpetual inventory records, item-wise & batch-wise godown ledgers, FIFO & Weighted Average valuation methods, and physical stock tally.',
+      },
+      {
+        title: 'Negative Stock Monitoring',
+        description:
+          'Real-time surveillance of negative inventory warnings, identifying unbilled dispatches or delayed purchase feeding, and instituting internal audit controls.',
+      },
+      {
+        title: 'Automatic Purchase Order Generation',
+        description:
+          'Setting Minimum Reorder Levels (ROL), Reorder Quantities (ROQ), safety stock buffers, and configuring automated PO generation workflows.',
+      },
+      {
+        title: 'Manufacturing Costing (Own Brand)',
+        description:
+          'Configuring multi-level Bill of Materials (BOM), allocating direct material, labour, factory overheads, and machine-hour rates for own-brand products.',
+      },
+      {
+        title: 'Builder Site-Wise Costing',
+        description:
+          'Allocating construction materials, cement/steel consumption, labour contractors, architect fees, and equipment rentals across independent real estate sites.',
+      },
+      {
+        title: 'Government Tender Costing',
+        description:
+          'Estimating bid costs across multi-department tenders (PWD, Railways, CPWD, Municipalities), tender schedule rate analysis, EMD, and bid margins.',
+      },
+      {
+        title: 'Government Thekedar Site Costing',
+        description:
+          'Accurate site-wise cost sheets for civil projects (roads, drains, bridges), bitumen/diesel tracking, running account (RA) bills, and retention money.',
+      },
+      {
+        title: 'Contract Taken (Vendor Model)',
+        description:
+          'Costing for third-party contract manufacturing vendors (Britannia/Parle-G biscuit model), principal-supplied raw materials, conversion charges, and yield audit.',
+      },
+      {
+        title: 'Contract Given (Brand Model)',
+        description:
+          'Costing for brand principals outsourcing manufacturing, raw material dispatch tracking, conversion fee audits, and quality rejection adjustments.',
+      },
+      {
+        title: 'Job-Worker Inventory & Costing',
+        description:
+          'Managing Section 143 GST job-work Delivery Challans, tracking raw material issuance vs finished receipts, scrap recovery, and processing fee bills.',
+      },
+    ],
     modules: [
       {
         id: 'mod-7-1',
-        title: 'Inventory Control & Automated Reordering Workflows',
+        title: 'Inventory Control & Multi-Godown Stock Maintenance',
         topics: [
-          'Perpetual inventory records, weighted average and FIFO valuation methods',
-          'Negative stock monitoring and prevention of illegal inventory books',
-          'Setting minimum levels, maximum levels, and automatic purchase order generation',
-          'Physical stock audit, godown transfers, and variance reconciliation',
+          'Perpetual stock register maintenance across raw materials, work-in-progress (WIP), and finished goods',
+          'Configuring item masters with standard costing, batch-wise tracking, expiry dates, and alternate units of measurement',
+          'Stock valuation techniques: FIFO (First-In, First-Out), Weighted Average Cost (WAC), and net realizable value (NRV) testing',
+          'Multi-godown transfers (Stock Journal vouchers), physical warehouse verification checklists, and handling stock shortage/breakage',
         ],
-        durationHours: 18,
+        durationHours: 8,
       },
       {
         id: 'mod-7-2',
-        title: 'Manufacturing Costing & Own-Brand Economics',
+        title: 'Negative Stock Surveillance & Accounting Control',
         topics: [
-          'Bill of Materials (BOM) configuration: Raw materials, scrap, and finished goods',
-          'Allocation of direct labour, factory overheads, and machine-hour rates',
-          'Accurate unit cost calculation for own-brand manufacturing operations',
-          'Vendor contract costing: Taken vs Given contracts (Britannia / Parle-G biscuit model)',
+          'Configuring system-level warnings and strict prevention controls for negative stock balances in ERP/Tally Prime',
+          'Investigating root causes: Dispatch billing executed prior to inward GRN/purchase voucher feeding, or erroneous unit conversion',
+          'Detecting unauthorized stock leakages, unregistered sales, and negative balance anomalies during statutory book audits',
+          'Instituting rectification voucher entries, material receipt tracking, and physical inventory lockdown procedures',
         ],
-        durationHours: 20,
+        durationHours: 8,
       },
       {
         id: 'mod-7-3',
-        title: 'Site-Wise Construction & Government Tender Costing',
+        title: 'Automated Reordering & Purchase Order Generation Workflows',
         topics: [
-          'Site-wise costing for builders and multi-location real estate projects',
-          'Government thekedar (contractor for roads, bridges, and bhavans) site costing',
-          'Tender-wise cost estimation, running account (RA) bill preparation, and retention money',
-          'Job-worker material issuance, processing loss, and conversion cost control',
+          'Determining economic order quantities (EOQ), supplier lead times, and average consumption rates to calculate Reorder Levels (ROL)',
+          'Setting safety stock buffers and maximum storage limits to prevent working capital blockage and plant stock-outs',
+          'Automating Purchase Order (PO) triggers in software based on real-time reorder point breaches',
+          'Tracking PO-to-GRN fulfilment, vendor delivery schedules, pending purchase order registers, and rate variance audits',
         ],
-        durationHours: 22,
+        durationHours: 8,
+      },
+      {
+        id: 'mod-7-4',
+        title: 'Manufacturing Costing & Own-Brand Product Economics',
+        topics: [
+          'Configuring multi-level Bill of Materials (BOM) in ERP: Raw materials, consumable packaging, co-products, and by-products',
+          'Allocation and apportionment of factory overheads: Direct labour hours, power consumption, machine-hour rates, and factory rent',
+          'Preparing comprehensive unit Cost Sheets (Prime Cost, Factory Cost, Cost of Production, and Cost of Sales)',
+          'Gross margin sensitivity analysis, break-even point (BEP) computation, and profit pricing strategies for own-brand retail/wholesale goods',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-7-5',
+        title: 'Real Estate & Builder Site-Wise Costing & Inventory Control',
+        topics: [
+          'Setting up project-specific Cost Centres and multi-site godowns for residential and commercial real estate schemes',
+          'Inward material tracking per site: Cement, TMT steel, aggregates, bricks, electricals, and sanitary fittings against delivery challans',
+          'Tracking site labour contractor bills, equipment machinery hire charges, architect/structural consulting fees, and overhead allocation',
+          'Square-foot construction cost computation, stage-wise construction progress valuation, and reconciling site consumption against architectural estimates',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-7-6',
+        title: 'Multi-Department Government Tender Costing & Bid Estimation',
+        topics: [
+          'Deciphering government tender documents (PWD, CPWD, Indian Railways, PHED, and Municipal Corporations) and Schedule of Rates (SOR)',
+          'Detailed item-rate estimation: Material rates, transit freight, statutory royalties, equipment wear & tear, and water/electricity charges',
+          'Accounting for Earnest Money Deposits (EMD), Performance Bank Guarantees (PBG), tender form fees, and bid security margin provisions',
+          'Tender-wise cost ledger maintenance, comparing estimated tender cost vs actual execution expenditures, and bid profitability analysis',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-7-7',
+        title: 'Government Thekedar Civil Projects Costing (Roads, Drains & Bridges)',
+        topics: [
+          'Site-wise cost recording for public infrastructure works: Road asphalting, concrete drains (nali), culverts, and bridge construction',
+          'In-transit material tracking: Bitumen, crushed stone grit, diesel for heavy machinery (JCB, pavers, rollers), and site store controls',
+          'Preparation of Running Account (RA) bills against Measurement Book (MB) entries approved by government executive engineers',
+          'Accounting for statutory deductions from contractor bills: GST-TDS (2%), Income-tax TDS (194C @ 1%/2%), royalty, and security retention money',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-7-8',
+        title: 'Contract Taken Costing: FMCG Third-Party Manufacturing Vendor Model',
+        topics: [
+          'Understanding the contract manufacturing vendor business model (e.g. Dedicated third-party biscuit manufacturing for Britannia / Parle-G)',
+          'Accounting for principal-supplied ingredients (flour, sugar, edible oils) received on stock transfer vs vendor-procured consumables',
+          'Computation of unit conversion charges, packaging charges, electricity fuel consumption, and standard recipe yield percentages',
+          'Reconciling input raw materials with output finished goods, standard processing loss tolerances, and penalty clause accounting',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-7-9',
+        title: 'Contract Given Costing: Brand Principal & Subcontracting Model',
+        topics: [
+          'Understanding the brand principal perspective: Outsourcing production to contract packers and third-party manufacturing plants',
+          'Accounting for outward raw material dispatches under Delivery Challans and monitoring vendor warehouse stocks off-balance sheet',
+          'Auditing third-party conversion bills against agreed unit rates, quality lab test reports, and net production receipts',
+          'Accounting for scrap realization, off-spec product deductions, vendor debit notes, and finished goods landed cost finalization',
+        ],
+        durationHours: 10,
+      },
+      {
+        id: 'mod-7-10',
+        title: 'Job-Worker Material Accounting, Wastage & Cost Control',
+        topics: [
+          'Statutory GST job-work compliances under Section 143: Issuing Form GST ITC-04, 1-year input and 3-year capital goods return deadlines',
+          'Delivery Challan processing for material sent to job-workers (dyeing, casting, machining, assembling, packaging)',
+          'Tracking input-output conversion ratios, standard shrinkage/wastage tolerances, and scrap recovery reconciliation',
+          'Auditing job-work processing charges, passing TDS deduction entries under Section 194C, and updating final product capitalized cost',
+        ],
+        durationHours: 10,
       },
     ],
     learningOutcomes: [
-      'Accurately calculate unit manufacturing cost including direct material, labour, and overheads',
-      'Manage complex multi-site construction and government contractor project accounts',
-      'Automate purchase orders and inventory control to stop inventory pilferage and capital blockage',
-      'Maintain strict control over job-worker raw material movement and processing losses',
+      'Complete executive mastery over all 10 core industrial cost accounting & inventory control pillars across manufacturing, real estate, contracting, and FMCG sectors',
+      'Accurately construct multi-level Bills of Materials (BOM), allocate machine-hour overheads, and establish unit product cost sheets',
+      'Manage site-wise accounting for real estate builders and government thekedars (roads, drains, bridges) with Running Account (RA) billing',
+      'Total command over contract manufacturing economics (taken & given models) and Section 143 statutory job-work inventory reconciliation',
     ],
-    seoTitle: 'Cost Accounting & Inventory Control Course | Site Costing | YLCC',
+    seoTitle: 'Cost Accounting & Industrial Inventory Control Course | YLCC',
     seoDescription:
-      'Learn industrial cost accounting, BOM, negative stock monitoring, builder site costing, government thekedar tender costing, and job-worker inventory at YLCC.',
+      'Hands-on industrial cost accounting in Jaipur: inventory control, negative stock prevention, manufacturing BOM, builder site costing, government thekedar tenders, and contract manufacturing.',
   },
   {
     id: 'prog-8',

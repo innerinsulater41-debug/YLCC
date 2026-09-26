@@ -15,6 +15,7 @@ import {
   Eye,
   ShieldCheck,
   Layers,
+  FileSpreadsheet,
 } from 'lucide-react';
 import { Program } from '@/types';
 import DocumentViewerModal from '@/components/common/DocumentViewerModal';
@@ -128,7 +129,9 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               prog.id === 'prog-13' ||
               prog.id === 'prog-4' ||
               prog.id === 'prog-5' ||
-              prog.id === 'prog-6';
+              prog.id === 'prog-6' ||
+              prog.id === 'prog-7' ||
+              prog.id === 'prog-8';
 
             const isPrimaryTheme =
               isFullWidthTrack ||
@@ -323,6 +326,21 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                       <div className="relative bg-[#FAF6F0] px-5 py-2 rounded-full border border-[#D8C5B2] flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8B5A2B] shadow-2xs">
                         <Layers className="w-4 h-4 text-[#8B5A2B]" />
                         <span>Specialized Professional Tracks (Taxation, Banking, MIS & Operations)</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Partition Divider between Cost Accounting and Advanced Excel */}
+                {prog.id === 'prog-7' && selectedCategory === 'All' && !search.trim() && (
+                  <div className="md:col-span-2 py-4">
+                    <div className="relative flex items-center justify-center">
+                      <div className="absolute inset-0 flex items-center">
+                        <div className="w-full border-t-2 border-[#D8C5B2] border-dashed" />
+                      </div>
+                      <div className="relative bg-[#FAF6F0] px-5 py-2 rounded-full border border-[#D8C5B2] flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8B5A2B] shadow-2xs">
+                        <FileSpreadsheet className="w-4 h-4 text-[#8B5A2B]" />
+                        <span>Executive MIS & Corporate Excel 365 Mastery</span>
                       </div>
                     </div>
                   </div>

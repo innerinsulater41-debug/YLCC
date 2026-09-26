@@ -130,10 +130,10 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   {/* Header Meta */}
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span
-                      className={`text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full border shadow-xs transition-colors ${
+                      className={`text-xs font-bold uppercase rounded-full border shadow-xs transition-all inline-flex items-center justify-center ${
                         isTallyPrime
-                          ? 'bg-[#8B5A2B] text-white border-[#7A4E24]'
-                          : 'text-[#8B5A2B] bg-[#FAF6F0] border-[#E5D8CA]'
+                          ? 'bg-[#8B5A2B] text-white border-[#7A4E24] px-5 py-1.5 min-w-[135px] tracking-widest shadow-sm'
+                          : 'text-[#8B5A2B] bg-[#FAF6F0] border-[#E5D8CA] px-3.5 py-1 tracking-wider'
                       }`}
                     >
                       {prog.category}

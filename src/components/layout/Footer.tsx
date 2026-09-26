@@ -87,7 +87,7 @@ export default function Footer({ settings }: FooterProps) {
                   href="/programs/accounts-operator"
                   className="hover:text-white transition-colors flex items-center justify-between"
                 >
-                  <span>Accounts Operator (Live Entries)</span>
+                  <span>Business Operations with Tally Prime</span>
                   <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
                 </Link>
               </li>

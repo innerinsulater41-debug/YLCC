@@ -14,6 +14,7 @@ import {
   GraduationCap,
 } from 'lucide-react';
 import QuickEnquiryForm from '@/components/home/QuickEnquiryForm';
+import ExcelFormulaCheatsheet from '@/components/programs/ExcelFormulaCheatsheet';
 
 export const metadata = {
   title: 'Advanced Excel & Corporate Excel 365 Mastery | YLCC',
@@ -185,6 +186,11 @@ export default function AdvancedExcelPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* 250+ Advanced Excel Formula Cheats Interactive Section */}
+        <div className="pt-4">
+          <ExcelFormulaCheatsheet />
         </div>
       </section>
 

@@ -17,6 +17,7 @@ import {
 import { db } from '@/lib/db';
 import QuickEnquiryForm from '@/components/home/QuickEnquiryForm';
 import ProgramBrochureButton from '@/components/programs/ProgramBrochureButton';
+import ExcelFormulaCheatsheet from '@/components/programs/ExcelFormulaCheatsheet';
 
 interface ProgramDetailProps {
   params: Promise<{ slug: string }>;
@@ -159,6 +160,11 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
                   ))}
                 </div>
               </div>
+            )}
+
+            {/* 250+ Advanced Excel Formula Cheats Section */}
+            {program.slug === 'advanced-excel-corporate-excel-365' && (
+              <ExcelFormulaCheatsheet />
             )}
 
             {/* Modules & Topics Breakdown */}

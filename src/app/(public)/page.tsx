@@ -284,7 +284,10 @@ export default async function HomePage() {
                   </span>
                   <span
                     className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border transition-colors ${
-                      prog.category === 'Tally Prime' || prog.id === 'prog-1'
+                      prog.category === 'Tally Prime' ||
+                      prog.id === 'prog-1' ||
+                      prog.category === 'Accounts Manager & Audit' ||
+                      prog.id === 'prog-2'
                         ? 'bg-[#8B5A2B] text-white border-[#7A4E24]'
                         : 'text-[#8B5A2B] bg-[#FAF6F0] border-[#E5D8CA]'
                     }`}

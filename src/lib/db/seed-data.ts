@@ -266,7 +266,7 @@ export const initialPrograms: Program[] = [
     id: "prog-2",
     slug: "accounts-manager",
     title: "Accounts Manager Professional Program",
-    category: "Accounts Management & Audit",
+    category: "Accounts Manager & Audit",
     shortDescription: "Supervise books of accounts, control debtors/creditors cycles, monitor sales teams, conduct monthly internal audits, and prepare annual income-tax audits.",
     detailedDescription: "Designed for senior accountants, commerce graduates, and entrepreneurs, the Accounts Manager program prepares you to lead an accounting department. You learn how to scrutinize books of accounts on a live basis, implement strict credit control on debtors cycles, track supplier payment aging, conduct monthly internal accounting audits, inspect negative cash and stock balances, and prepare finalized financial statements for annual income-tax audit filings.",
     duration: "3 Months",

@@ -116,12 +116,16 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filtered.map((prog) => {
-            const isTallyPrime = prog.category === 'Tally Prime' || prog.id === 'prog-1';
+            const isPrimaryTheme =
+              prog.category === 'Tally Prime' ||
+              prog.id === 'prog-1' ||
+              prog.category === 'Accounts Manager & Audit' ||
+              prog.id === 'prog-2';
             return (
               <div
                 key={prog.id}
                 className={`bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all flex flex-col justify-between ${
-                  isTallyPrime
+                  isPrimaryTheme
                     ? 'border-2 border-[#8B5A2B]/40 hover:border-[#8B5A2B]'
                     : 'border border-[#E5D8CA] hover:border-[#8B5A2B]'
                 }`}
@@ -131,7 +135,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span
                       className={`text-xs font-bold uppercase rounded-full border shadow-xs transition-all inline-flex items-center justify-center ${
-                        isTallyPrime
+                        isPrimaryTheme
                           ? 'bg-[#8B5A2B] text-white border-[#7A4E24] px-5 py-1.5 min-w-[135px] tracking-widest shadow-sm'
                           : 'text-[#8B5A2B] bg-[#FAF6F0] border-[#E5D8CA] px-3.5 py-1 tracking-wider'
                       }`}
@@ -161,7 +165,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                         <div key={mod.id} className="text-xs text-[#57534E] flex items-start gap-2">
                           <span
                             className={`w-4 h-4 rounded-full flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5 ${
-                              isTallyPrime
+                              isPrimaryTheme
                                 ? 'bg-[#8B5A2B] text-white'
                                 : 'bg-[#EFE6DD] text-[#8B5A2B]'
                             }`}

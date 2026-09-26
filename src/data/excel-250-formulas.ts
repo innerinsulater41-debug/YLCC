@@ -708,823 +708,823 @@ export const EXCEL_FORMULAS_250: ExcelFormulaItem[] = [
     "id": 100
   },
   {
-    "id": 101,
+    "name": "WORKDAY.INTL",
+    "category": "Dates, Deadlines & Working Days",
+    "syntax": "=WORKDAY.INTL(start_date, days, [weekend], [holidays])",
+    "description": "Returns the date before or after a specified number of workdays with custom weekend parameters (e.g., 6-day manufacturing workweeks or Friday-Saturday weekends).",
+    "id": 101
+  },
+  {
+    "name": "WEEKNUM",
+    "category": "Dates, Deadlines & Working Days",
+    "syntax": "=WEEKNUM(serial_number, [return_type])",
+    "description": "Returns the week number of a specific date in the calendar year (1-54); standard for tracking FMCG weekly sales cycles and production batch schedules.",
+    "id": 102
+  },
+  {
+    "name": "WEEKDAY",
+    "category": "Dates, Deadlines & Working Days",
+    "syntax": "=WEEKDAY(serial_number, [return_type])",
+    "description": "Returns the day of the week corresponding to a date (1 for Sunday to 7 for Saturday); used for weekend shift allowances and weekend sales surge analysis.",
+    "id": 103
+  },
+  {
+    "name": "DATEVALUE",
+    "category": "Dates, Deadlines & Working Days",
+    "syntax": "=DATEVALUE(date_text)",
+    "description": "Converts a date stored as text into a serial number that Excel recognizes as a genuine date; fixes date formats imported from banking and portal CSV files.",
+    "id": 104
+  },
+  {
+    "name": "TIMEVALUE",
+    "category": "Dates, Deadlines & Working Days",
+    "syntax": "=TIMEVALUE(time_text)",
+    "description": "Converts a time stored in text format to a serial decimal number (from 0 to 0.9999); critical for calculating night shift hours and login timestamps.",
+    "id": 105
+  },
+  {
+    "name": "YEARFRAC",
+    "category": "Dates, Deadlines & Working Days",
+    "syntax": "=YEARFRAC(start_date, end_date, [basis])",
+    "description": "Calculates the fraction of the year represented by the number of whole days between two dates; core for employee gratuity tenure, bond accruals, and depreciation.",
+    "id": 106
+  },
+  {
+    "name": "ROUND",
+    "category": "Math, Rounding & Aggregations",
+    "syntax": "=ROUND(number, num_digits)",
+    "description": "Rounds a number to a specified number of digits; standard in corporate invoicing, GST rounding off rules (Rule 54), and financial balance sheets.",
+    "id": 107
+  },
+  {
+    "name": "ROUNDDOWN",
+    "category": "Math, Rounding & Aggregations",
+    "syntax": "=ROUNDDOWN(number, num_digits)",
+    "description": "Rounds a number down towards zero; used in conservative tax provision estimations, completed tenure years for bonuses, and pack sizing.",
+    "id": 108
+  },
+  {
+    "name": "ROUNDUP",
+    "category": "Math, Rounding & Aggregations",
+    "syntax": "=ROUNDUP(number, num_digits)",
+    "description": "Rounds a number up away from zero; used for shipping freight carton counts, pallet allocation, and buffer cash reserve requirements.",
+    "id": 109
+  },
+  {
+    "name": "MROUND",
+    "category": "Math, Rounding & Aggregations",
+    "syntax": "=MROUND(number, multiple)",
+    "description": "Rounds a number to the nearest specified multiple (e.g., nearest 5, 10, or 50 rupees); essential for retail cash payment rounding and currency demonetization.",
+    "id": 110
+  },
+  {
+    "name": "ISBLANK",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISBLANK(value)",
+    "description": "Returns TRUE if a cell is completely empty; widely used in conditional audits to detect missing customer PAN, email IDs, or bank mandate forms.",
+    "id": 111
+  },
+  {
+    "name": "ISERR",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISERR(value)",
+    "description": "Returns TRUE if a value refers to any error value except #N/A (#VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, #NULL!); useful when #N/A is an acceptable missing lookup state.",
+    "id": 112
+  },
+  {
+    "name": "ISERROR",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISERROR(value)",
+    "description": "Returns TRUE if a value refers to any error value (#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, #NULL!); used in robust legacy audit formulas.",
+    "id": 113
+  },
+  {
+    "name": "ISEVEN",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISEVEN(number)",
+    "description": "Returns TRUE if a number is even, and FALSE if it is odd; used for alternating table row shading and even/odd production batch sequencing.",
+    "id": 114
+  },
+  {
+    "name": "ISLOGICAL",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISLOGICAL(value)",
+    "description": "Returns TRUE if a cell contains a logical Boolean value (TRUE or FALSE); audits data validation rules and automated workflow triggers.",
+    "id": 115
+  },
+  {
+    "name": "ISNA",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISNA(value)",
+    "description": "Returns TRUE if a value refers to the #N/A (value not available) error; specifically used to catch missing inventory master items or unmapped debtor accounts.",
+    "id": 116
+  },
+  {
+    "name": "ISNONTEXT",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISNONTEXT(value)",
+    "description": "Returns TRUE if a value is not text (including numbers, blank cells, booleans, and dates); validates numerical input columns in ERP sheets.",
+    "id": 117
+  },
+  {
+    "name": "ISNUMBER",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISNUMBER(value)",
+    "description": "Returns TRUE if a cell contains a genuine number; used in nested lookup validation formulas (e.g., ISNUMBER(SEARCH(...)) for partial text matching).",
+    "id": 118
+  },
+  {
+    "name": "ISODD",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISODD(number)",
+    "description": "Returns TRUE if a number is odd, and FALSE if even; used for vehicle odd-even logistics schedules and shift rota patterns.",
+    "id": 119
+  },
+  {
+    "name": "ISREF",
+    "category": "Logical & Decision Modeling",
+    "syntax": "=ISREF(value)",
+    "description": "Returns TRUE if a value is a valid cell or range reference; guards complex dynamic INDIRECT and OFFSET financial model links from breaking.",
+    "id": 120
+  },
+  {
+    "id": 121,
     "name": "XLOOKUP",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])",
     "description": "Modern replacement for VLOOKUP/HLOOKUP; performs two-way lookups and looks left without column counting."
   },
   {
-    "id": 102,
+    "id": 122,
     "name": "FILTER",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=FILTER(array, include, [if_empty])",
     "description": "Dynamically filters a range or array based on Boolean criteria; automatically spills matching records."
   },
   {
-    "id": 103,
+    "id": 123,
     "name": "UNIQUE",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=UNIQUE(array, [by_col], [exactly_once])",
     "description": "Extracts unique distinct items from a range or list; eliminates duplicates dynamically."
   },
   {
-    "id": 104,
+    "id": 124,
     "name": "SORT",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=SORT(array, [sort_index], [sort_order], [by_col])",
     "description": "Sorts the contents of a range or array by specified column index in ascending or descending order."
   },
   {
-    "id": 105,
+    "id": 125,
     "name": "SORTBY",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=SORTBY(array, by_array1, [sort_order1], ...)",
     "description": "Sorts a table or range by values in a secondary independent helper array or criteria column."
   },
   {
-    "id": 106,
+    "id": 126,
     "name": "SEQUENCE",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=SEQUENCE(rows, [columns], [start], [step])",
     "description": "Generates a dynamic array of sequential numbers (e.g., automated serial numbering and date series)."
   },
   {
-    "id": 107,
+    "id": 127,
     "name": "RANDARRAY",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=RANDARRAY([rows], [columns], [min], [max], [whole_number])",
     "description": "Returns an array of random numbers for simulation, Monte Carlo stress testing, and sample audits."
   },
   {
-    "id": 108,
+    "id": 128,
     "name": "INDEX",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=INDEX(array, row_num, [column_num])",
     "description": "Returns the value at a given row and column intersection within a matrix or table."
   },
   {
-    "id": 109,
+    "id": 129,
     "name": "MATCH",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=MATCH(lookup_value, lookup_array, [match_type])",
     "description": "Finds relative position (row/column index) of an item in a list or vector."
   },
   {
-    "id": 110,
+    "id": 130,
     "name": "XMATCH",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])",
     "description": "Next-generation MATCH supporting exact, wildcard, and reverse bottom-to-top position lookups."
   },
   {
-    "id": 111,
+    "id": 131,
     "name": "VLOOKUP",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])",
     "description": "Standard vertical lookup searching the leftmost column for tax codes, party names, and item rates."
   },
   {
-    "id": 112,
+    "id": 132,
     "name": "HLOOKUP",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])",
     "description": "Horizontal lookup searching the top row of a table across monthly columnar budget templates."
   },
   {
-    "id": 113,
+    "id": 133,
     "name": "LOOKUP",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=LOOKUP(lookup_value, lookup_vector, [result_vector])",
     "description": "Legacy vector lookup for graded tax slabs, commission brackets, and incentive tiers."
   },
   {
-    "id": 114,
+    "id": 134,
     "name": "CHOOSE",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=CHOOSE(index_num, value1, [value2], ...)",
     "description": "Selects a specific value or financial calculation scenario (Worst Case, Base Case, Best Case) from a list."
   },
   {
-    "id": 115,
+    "id": 135,
     "name": "CHOOSEROWS",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=CHOOSEROWS(array, row_num1, [row_num2], ...)",
     "description": "Extracts specific rows from an array or matrix dynamically without helper columns."
   },
   {
-    "id": 116,
+    "id": 136,
     "name": "CHOOSECOLS",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=CHOOSECOLS(array, col_num1, [col_num2], ...)",
     "description": "Extracts specific columns (e.g., Invoice No, Party, Net Taxable) from a broad ERP dump."
   },
   {
-    "id": 117,
+    "id": 137,
     "name": "DROP",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=DROP(array, rows, [columns])",
     "description": "Excludes a specified number of header rows or summary columns from the start or end of an array."
   },
   {
-    "id": 118,
+    "id": 138,
     "name": "TAKE",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=TAKE(array, rows, [columns])",
     "description": "Returns a specified number of top rows (e.g., Top 10 Debtors) or columns from an array."
   },
   {
-    "id": 119,
+    "id": 139,
     "name": "EXPAND",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=EXPAND(array, rows, [columns], [pad_with])",
     "description": "Expands an array to specified dimensions, padding blank space with custom values like 'N/A' or 0."
   },
   {
-    "id": 120,
+    "id": 140,
     "name": "VSTACK",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=VSTACK(array1, [array2], ...)",
     "description": "Vertically stacks multiple ledger sheets or quarterly sales reports into a single consolidated table."
   },
   {
-    "id": 121,
+    "id": 141,
     "name": "HSTACK",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=HSTACK(array1, [array2], ...)",
     "description": "Horizontally appends multiple adjacent columnar arrays together into one unified dataset."
   },
   {
-    "id": 122,
+    "id": 142,
     "name": "TOCOL",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=TOCOL(array, [ignore], [scan_by_column])",
     "description": "Transforms a 2D multi-column table into a single continuous vertical column for pivot analysis."
   },
   {
-    "id": 123,
+    "id": 143,
     "name": "TOROW",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=TOROW(array, [ignore], [scan_by_column])",
     "description": "Flattens a 2D matrix into a single horizontal row."
   },
   {
-    "id": 124,
+    "id": 144,
     "name": "WRAPROWS",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=WRAPROWS(vector, wrap_count, [pad_with])",
     "description": "Wraps a 1D vertical list into a 2D table by row at specified item intervals."
   },
   {
-    "id": 125,
+    "id": 145,
     "name": "WRAPCOLS",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=WRAPCOLS(vector, wrap_count, [pad_with])",
     "description": "Wraps a 1D horizontal vector into a 2D columnar matrix."
   },
   {
-    "id": 126,
+    "id": 146,
     "name": "OFFSET",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=OFFSET(reference, rows, cols, [height], [width])",
     "description": "Returns a dynamic reference range shifted by a specified number of rows and columns."
   },
   {
-    "id": 127,
+    "id": 147,
     "name": "INDIRECT",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=INDIRECT(ref_text, [a1])",
     "description": "Converts a text string into an active cell reference for dynamic multi-sheet rollups."
   },
   {
-    "id": 128,
+    "id": 148,
     "name": "ADDRESS",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])",
     "description": "Generates a cell address text string based on specified row and column coordinates."
   },
   {
-    "id": 129,
+    "id": 149,
     "name": "FORMULATEXT",
     "category": "Dynamic Arrays & Modern Lookups",
     "syntax": "=FORMULATEXT(reference)",
     "description": "Extracts formula syntax as readable plain text for audit verification and model documentation."
   },
   {
-    "id": 130,
+    "id": 150,
     "name": "PMT",
     "category": "Corporate Finance & Banking",
     "syntax": "=PMT(rate, nper, pv, [fv], [type])",
     "description": "Computes fixed monthly EMI installment for bank term loans, car loans, and machinery leases."
   },
   {
-    "id": 131,
+    "id": 151,
     "name": "IPMT",
     "category": "Corporate Finance & Banking",
     "syntax": "=IPMT(rate, per, nper, pv, [fv], [type])",
     "description": "Calculates interest portion of a loan installment for a specific period for tax deduction."
   },
   {
-    "id": 132,
+    "id": 152,
     "name": "PPMT",
     "category": "Corporate Finance & Banking",
     "syntax": "=PPMT(rate, per, nper, pv, [fv], [type])",
     "description": "Calculates principal repayment component for a specific loan payment period."
   },
   {
-    "id": 133,
+    "id": 153,
     "name": "CUMIPMT",
     "category": "Corporate Finance & Banking",
     "syntax": "=CUMIPMT(rate, nper, pv, start_period, end_period, type)",
     "description": "Computes cumulative interest paid between two financial periods for yearly balance sheet notes."
   },
   {
-    "id": 134,
+    "id": 154,
     "name": "CUMPRINC",
     "category": "Corporate Finance & Banking",
     "syntax": "=CUMPRINC(rate, nper, pv, start_period, end_period, type)",
     "description": "Computes cumulative principal repaid across a financial year for loan liability reduction."
   },
   {
-    "id": 135,
+    "id": 155,
     "name": "NPER",
     "category": "Corporate Finance & Banking",
     "syntax": "=NPER(rate, pmt, pv, [fv], [type])",
     "description": "Returns number of repayment periods required to amortize a loan or reach an investment target."
   },
   {
-    "id": 136,
+    "id": 156,
     "name": "RATE",
     "category": "Corporate Finance & Banking",
     "syntax": "=RATE(nper, pmt, pv, [fv], [type], [guess])",
     "description": "Derives effective periodic interest rate of a loan or annuity investment."
   },
   {
-    "id": 137,
+    "id": 157,
     "name": "PV",
     "category": "Corporate Finance & Banking",
     "syntax": "=PV(rate, nper, pmt, [fv], [type])",
     "description": "Computes present discounted value of future cash flow streams or bond investments."
   },
   {
-    "id": 138,
+    "id": 158,
     "name": "FV",
     "category": "Corporate Finance & Banking",
     "syntax": "=FV(rate, nper, pmt, [pv], [type])",
     "description": "Computes future compounded value of recurring investments (sinking funds, gratuity reserves)."
   },
   {
-    "id": 139,
+    "id": 159,
     "name": "NPV",
     "category": "Corporate Finance & Banking",
     "syntax": "=NPV(rate, value1, [value2], ...)",
     "description": "Calculates Net Present Value of periodic investment cash flows at a specified discount hurdle rate."
   },
   {
-    "id": 140,
+    "id": 160,
     "name": "XNPV",
     "category": "Corporate Finance & Banking",
     "syntax": "=XNPV(rate, values, dates)",
     "description": "Computes Net Present Value for irregular, non-periodic project cash flows using exact calendar transaction dates."
   },
   {
-    "id": 141,
+    "id": 161,
     "name": "IRR",
     "category": "Corporate Finance & Banking",
     "syntax": "=IRR(values, [guess])",
     "description": "Derives Internal Rate of Return for periodic cash flow projections."
   },
   {
-    "id": 142,
+    "id": 162,
     "name": "XIRR",
     "category": "Corporate Finance & Banking",
     "syntax": "=XIRR(values, dates, [guess])",
     "description": "Gold standard for annualized return calculation across irregular investment dates and capital drawdowns."
   },
   {
-    "id": 143,
+    "id": 163,
     "name": "MIRR",
     "category": "Corporate Finance & Banking",
     "syntax": "=MIRR(values, finance_rate, reinvest_rate)",
     "description": "Modified Internal Rate of Return assuming realistic reinvestment rates on positive cash flows."
   },
   {
-    "id": 144,
+    "id": 164,
     "name": "PRICE",
     "category": "Corporate Finance & Banking",
     "syntax": "=PRICE(settlement, maturity, rate, yld, redemption, frequency, [basis])",
     "description": "Computes price per ₹100 face value of coupon-paying corporate bonds or government securities."
   },
   {
-    "id": 145,
+    "id": 165,
     "name": "YIELD",
     "category": "Corporate Finance & Banking",
     "syntax": "=YIELD(settlement, maturity, rate, pr, redemption, frequency, [basis])",
     "description": "Returns annual yield on fixed-income securities and treasury debt papers."
   },
   {
-    "id": 146,
+    "id": 166,
     "name": "DURATION",
     "category": "Corporate Finance & Banking",
     "syntax": "=DURATION(settlement, maturity, coupon, yld, frequency, [basis])",
     "description": "Calculates Macaulay duration to measure debt portfolio sensitivity to interest rate shifts."
   },
   {
-    "id": 147,
+    "id": 167,
     "name": "MDURATION",
     "category": "Corporate Finance & Banking",
     "syntax": "=MDURATION(settlement, maturity, coupon, yld, frequency, [basis])",
     "description": "Calculates Modified Duration measuring percentage price change for a 1% yield shift."
   },
   {
-    "id": 148,
+    "id": 168,
     "name": "ACCRINT",
     "category": "Corporate Finance & Banking",
     "syntax": "=ACCRINT(issue, first_interest, settlement, rate, par, frequency, [basis])",
     "description": "Computes accrued interest on bonds from issue date to settlement date."
   },
   {
-    "id": 149,
+    "id": 169,
     "name": "NOMINAL",
     "category": "Corporate Finance & Banking",
     "syntax": "=NOMINAL(effect_rate, npery)",
     "description": "Converts effective annual yield into nominal APR for loan agreements and credit quotes."
   },
   {
-    "id": 150,
+    "id": 170,
     "name": "SLN",
     "category": "Corporate Finance & Banking",
     "syntax": "=SLN(cost, salvage, life)",
     "description": "Calculates straight-line depreciation per period for corporate fixed asset registers."
   },
   {
-    "id": 151,
+    "id": 171,
     "name": "DB",
     "category": "Corporate Finance & Banking",
     "syntax": "=DB(cost, salvage, life, period, [month])",
     "description": "Calculates declining balance depreciation using fixed-percentage method for statutory books."
   },
   {
-    "id": 152,
+    "id": 172,
     "name": "DDB",
     "category": "Corporate Finance & Banking",
     "syntax": "=DDB(cost, salvage, life, period, [factor])",
     "description": "Computes double-declining balance accelerated depreciation for rapid tech asset write-offs."
   },
   {
-    "id": 153,
+    "id": 173,
     "name": "SYD",
     "category": "Corporate Finance & Banking",
     "syntax": "=SYD(cost, salvage, life, per)",
     "description": "Sum-of-Years' Digits depreciation allocating higher wear-and-tear in initial operating years."
   },
   {
-    "id": 154,
+    "id": 174,
     "name": "VDB",
     "category": "Corporate Finance & Banking",
     "syntax": "=VDB(cost, salvage, life, start_period, end_period, [factor], [no_switch])",
     "description": "Variable declining balance depreciation for partial-year machinery capitalization."
   },
   {
-    "id": 155,
+    "id": 175,
     "name": "DISC",
     "category": "Corporate Finance & Banking",
     "syntax": "=DISC(settlement, maturity, pr, redemption, [basis])",
     "description": "Calculates discount rate for zero-coupon commercial papers and treasury bills."
   },
   {
-    "id": 156,
+    "id": 176,
     "name": "PRICEDISC",
     "category": "Corporate Finance & Banking",
     "syntax": "=PRICEDISC(settlement, maturity, discount, redemption, [basis])",
     "description": "Computes purchase price of a discounted debt instrument per ₹100 face value."
   },
   {
-    "id": 157,
+    "id": 177,
     "name": "RECEIVED",
     "category": "Corporate Finance & Banking",
     "syntax": "=RECEIVED(settlement, maturity, investment, discount, [basis])",
     "description": "Calculates total amount received at maturity for a fully discounted security."
   },
   {
-    "id": 158,
+    "id": 178,
     "name": "INTRATE",
     "category": "Corporate Finance & Banking",
     "syntax": "=INTRATE(settlement, maturity, investment, redemption, [basis])",
     "description": "Returns annualized interest rate for a fully invested fixed-income instrument."
   },
   {
-    "id": 159,
+    "id": 179,
     "name": "MODE.SNGL",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=MODE.SNGL(number1, [number2], ...)",
     "description": "Identifies most frequently occurring order size, price point, or discount tier."
   },
   {
-    "id": 160,
-    "name": "ROUND",
-    "category": "Math, Rounding & Aggregations",
-    "syntax": "=ROUND(number, num_digits)",
-    "description": "Rounds a financial number to a specified number of decimal digits."
-  },
-  {
-    "id": 161,
-    "name": "ROUNDUP",
-    "category": "Math, Rounding & Aggregations",
-    "syntax": "=ROUNDUP(number, num_digits)",
-    "description": "Rounds numbers upward away from zero (used for packaging cartons and freight billable weights)."
-  },
-  {
-    "id": 162,
-    "name": "ROUNDDOWN",
-    "category": "Math, Rounding & Aggregations",
-    "syntax": "=ROUNDDOWN(number, num_digits)",
-    "description": "Rounds numbers downward toward zero (used for conservative accrual provisioning)."
-  },
-  {
-    "id": 163,
-    "name": "MROUND",
-    "category": "Math, Rounding & Aggregations",
-    "syntax": "=MROUND(number, multiple)",
-    "description": "Rounds a number to nearest specified multiple (e.g., nearest ₹10 or ₹50 denomination)."
-  },
-  {
-    "id": 164,
+    "id": 180,
     "name": "CEILING.MATH",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=CEILING.MATH(number, [significance], [mode])",
     "description": "Rounds a number up to the nearest multiple of significance."
   },
   {
-    "id": 165,
+    "id": 181,
     "name": "FLOOR.MATH",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=FLOOR.MATH(number, [significance], [mode])",
     "description": "Rounds a number down to the nearest multiple of significance."
   },
   {
-    "id": 166,
+    "id": 182,
     "name": "INT",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=INT(number)",
     "description": "Rounds a number down to the nearest whole integer, truncating decimal fractions."
   },
   {
-    "id": 167,
+    "id": 183,
     "name": "TRUNC",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=TRUNC(number, [num_digits])",
     "description": "Truncates a number to a specified precision without mathematical rounding."
   },
   {
-    "id": 168,
+    "id": 184,
     "name": "MOD",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=MOD(number, divisor)",
     "description": "Returns the remainder after integer division (used for batch allocations and alternate row formatting)."
   },
   {
-    "id": 169,
+    "id": 185,
     "name": "QUOTIENT",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=QUOTIENT(numerator, denominator)",
     "description": "Returns integer portion of division without fractional remainder."
   },
   {
-    "id": 170,
+    "id": 186,
     "name": "MAXIFS",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=MAXIFS(max_range, criteria_range1, criteria1, ...)",
     "description": "Returns maximum value meeting multiple criteria (highest single billing for client X)."
   },
   {
-    "id": 171,
+    "id": 187,
     "name": "MINIFS",
     "category": "Math, Rounding & Aggregations",
     "syntax": "=MINIFS(min_range, criteria_range1, criteria1, ...)",
     "description": "Returns minimum value satisfying multiple specific business constraints."
   },
   {
-    "id": 172,
+    "id": 188,
     "name": "TEXTSPLIT",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])",
     "description": "Splits a text string across columns and rows using specified delimiters (e.g., splitting Address into City, State, PIN)."
   },
   {
-    "id": 173,
+    "id": 189,
     "name": "TEXTBEFORE",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=TEXTBEFORE(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found])",
     "description": "Extracts all characters before a specified delimiter (extracting invoice prefix before slash)."
   },
   {
-    "id": 174,
+    "id": 190,
     "name": "TEXTAFTER",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found])",
     "description": "Extracts all characters after a delimiter (extracting invoice serial number after slash)."
   },
   {
-    "id": 175,
+    "id": 191,
     "name": "TEXTJOIN",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)",
     "description": "Combines multiple strings with a separator, skipping empty cells (concatenating item lists)."
   },
   {
-    "id": 176,
+    "id": 192,
     "name": "CONCAT",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=CONCAT(text1, [text2], ...)",
     "description": "Joins multiple text ranges and cell arrays together without delimiter."
   },
   {
-    "id": 177,
+    "id": 193,
     "name": "SUBSTITUTE",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=SUBSTITUTE(text, old_text, new_text, [instance_num])",
     "description": "Replaces specific instances of target text with new text (replacing hyphens with slashes)."
   },
   {
-    "id": 178,
+    "id": 194,
     "name": "NUMBERVALUE",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=NUMBERVALUE(text, [decimal_separator], [group_separator])",
     "description": "Converts text numbers with international comma/period decimal formats into Excel numbers."
   },
   {
-    "id": 179,
+    "id": 195,
     "name": "UNICHAR",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=UNICHAR(number)",
     "description": "Returns Unicode character represented by numeric value (currency symbols, status icons)."
   },
   {
-    "id": 180,
+    "id": 196,
     "name": "UNICODE",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=UNICODE(text)",
     "description": "Returns Unicode code point corresponding to the first character of text."
   },
   {
-    "id": 181,
+    "id": 197,
     "name": "FIXED",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=FIXED(number, [decimals], [no_commas])",
     "description": "Formats number with fixed decimal places and optional thousand commas as text."
   },
   {
-    "id": 182,
+    "id": 198,
     "name": "ARRAYTOTEXT",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=ARRAYTOTEXT(array, [format])",
     "description": "Converts an array of values into a single comma-separated text string."
   },
   {
-    "id": 183,
+    "id": 199,
     "name": "VALUETOTEXT",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=VALUETOTEXT(value, [format])",
     "description": "Converts any cell value or formula result into readable text format."
   },
   {
-    "id": 184,
+    "id": 200,
     "name": "REPT_PAD",
     "category": "Text Manipulation & Data Cleaning",
     "syntax": "=LEFT(text&REPT(' ', 20), 20)",
     "description": "Specialized string padding idiom used for fixed-width bank NEFT upload files."
   },
   {
-    "id": 185,
-    "name": "DATEVALUE",
-    "category": "Date & Time Intelligence",
-    "syntax": "=DATEVALUE(date_text)",
-    "description": "Converts date entered as text (e.g., '25/12/2025') into valid Excel date serial."
-  },
-  {
-    "id": 186,
-    "name": "WORKDAY.INTL",
-    "category": "Date & Time Intelligence",
-    "syntax": "=WORKDAY.INTL(start_date, days, [weekend], [holidays])",
-    "description": "Calculates delivery target date considering customized organizational holidays."
-  },
-  {
-    "id": 187,
+    "id": 201,
     "name": "DATEDIF",
     "category": "Date & Time Intelligence",
     "syntax": "=DATEDIF(start_date, end_date, unit)",
     "description": "Calculates difference between two dates in completed years ('Y'), months ('M'), or days ('D')."
   },
   {
-    "id": 188,
-    "name": "YEARFRAC",
-    "category": "Date & Time Intelligence",
-    "syntax": "=YEARFRAC(start_date, end_date, [basis])",
-    "description": "Returns fractional portion of year elapsed between two dates for pro-rata interest and depreciation."
-  },
-  {
-    "id": 189,
-    "name": "TIMEVALUE",
-    "category": "Date & Time Intelligence",
-    "syntax": "=TIMEVALUE(time_text)",
-    "description": "Converts time stored as text string (e.g., '09:30 AM') into decimal fraction of day."
-  },
-  {
-    "id": 190,
-    "name": "WEEKNUM",
-    "category": "Date & Time Intelligence",
-    "syntax": "=WEEKNUM(serial_number, [return_type])",
-    "description": "Returns calendar week number of the year (1-53) for weekly sales velocity reports."
-  },
-  {
-    "id": 191,
+    "id": 202,
     "name": "ISOWEEKNUM",
     "category": "Date & Time Intelligence",
     "syntax": "=ISOWEEKNUM(date)",
     "description": "Returns ISO-8601 standard week number of the year for export logistics."
   },
   {
-    "id": 192,
-    "name": "WEEKDAY",
-    "category": "Date & Time Intelligence",
-    "syntax": "=WEEKDAY(serial_number, [return_type])",
-    "description": "Returns day of the week (1 for Sunday to 7 for Saturday) for retail footfall patterns."
-  },
-  {
-    "id": 193,
+    "id": 203,
     "name": "DATE_TEXT_DDMMMYYYY",
     "category": "Date & Time Intelligence",
     "syntax": "=TEXT(date, 'dd-mmm-yyyy')",
     "description": "Standardizes invoice dates into non-ambiguous Indian business format ('15-Aug-2025')."
   },
   {
-    "id": 194,
+    "id": 204,
     "name": "DATE_TEXT_MONTHNAME",
     "category": "Date & Time Intelligence",
     "syntax": "=TEXT(date, 'mmmm')",
     "description": "Converts date into full spelled month name (e.g., 'September') for summary headers."
   },
   {
-    "id": 195,
+    "id": 205,
     "name": "DATE_TEXT_DAYNAME",
     "category": "Date & Time Intelligence",
     "syntax": "=TEXT(date, 'dddd')",
     "description": "Extracts day of the week text (e.g., 'Monday') to detect weekend transaction anomalies."
   },
   {
-    "id": 196,
+    "id": 206,
     "name": "FINANCIAL_YEAR",
     "category": "Date & Time Intelligence",
     "syntax": "=IF(MONTH(A2)>=4, YEAR(A2)&'-'&RIGHT(YEAR(A2)+1,2), YEAR(A2)-1&'-'&RIGHT(YEAR(A2),2))",
     "description": "Dynamically derives Indian Financial Year (e.g., '2025-26') from any transaction date."
   },
   {
-    "id": 197,
+    "id": 207,
     "name": "QUARTER_CALC",
     "category": "Date & Time Intelligence",
     "syntax": "='Q'&ROUNDUP(MONTH(EDATE(A2,-3))/3,0)",
     "description": "Computes Indian Financial Quarter (Q1: Apr-Jun, Q2: Jul-Sep, Q3: Oct-Dec, Q4: Jan-Mar)."
   },
   {
-    "id": 198,
+    "id": 208,
     "name": "IF",
     "category": "Logical & Decision Modeling",
     "syntax": "=IF(logical_test, value_if_true, [value_if_false])",
     "description": "Fundamental decision formula evaluating conditions and branching calculations accordingly."
   },
   {
-    "id": 199,
+    "id": 209,
     "name": "IFS",
     "category": "Logical & Decision Modeling",
     "syntax": "=IFS(logical_test1, value_if_true1, ...)",
     "description": "Evaluates multiple sequential conditions without nesting multiple IF statements."
   },
   {
-    "id": 200,
+    "id": 210,
     "name": "SWITCH",
     "category": "Logical & Decision Modeling",
     "syntax": "=SWITCH(expression, value1, result1, [default])",
     "description": "Evaluates an expression against a list of exact matches and returns corresponding result."
   },
   {
-    "id": 201,
+    "id": 211,
     "name": "AND",
     "category": "Logical & Decision Modeling",
     "syntax": "=AND(logical1, [logical2], ...)",
     "description": "Returns TRUE only if all combined arguments evaluate to TRUE."
   },
   {
-    "id": 202,
+    "id": 212,
     "name": "OR",
     "category": "Logical & Decision Modeling",
     "syntax": "=OR(logical1, [logical2], ...)",
     "description": "Returns TRUE if at least one of the conditions evaluates to TRUE."
   },
   {
-    "id": 203,
+    "id": 213,
     "name": "NOT",
     "category": "Logical & Decision Modeling",
     "syntax": "=NOT(logical)",
     "description": "Reverses logical state: turns TRUE into FALSE and FALSE into TRUE."
   },
   {
-    "id": 204,
+    "id": 214,
     "name": "XOR",
     "category": "Logical & Decision Modeling",
     "syntax": "=XOR(logical1, [logical2], ...)",
     "description": "Logical exclusive OR: returns TRUE if an odd number of conditions are TRUE."
   },
   {
-    "id": 205,
+    "id": 215,
     "name": "IFERROR",
     "category": "Logical & Decision Modeling",
     "syntax": "=IFERROR(value, value_if_error)",
     "description": "Traps calculation errors (#N/A, #DIV/0!, #VALUE!) and returns clean fallback (0 or 'Pending')."
   },
   {
-    "id": 206,
+    "id": 216,
     "name": "IFNA",
     "category": "Logical & Decision Modeling",
     "syntax": "=IFNA(value, value_if_na)",
     "description": "Specifically traps lookup #N/A errors while allowing other critical syntax errors to surface."
   },
   {
-    "id": 207,
-    "name": "ISBLANK",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISBLANK(value)",
-    "description": "Checks if cell is completely empty; returns TRUE/FALSE for data audit checklists."
-  },
-  {
-    "id": 208,
-    "name": "ISNUMBER",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISNUMBER(value)",
-    "description": "Verifies if cell contents are valid numbers before performing mathematical operations."
-  },
-  {
-    "id": 209,
+    "id": 217,
     "name": "ISTEXT",
     "category": "Logical & Decision Modeling",
     "syntax": "=ISTEXT(value)",
     "description": "Verifies if cell contains text string rather than numerical value."
-  },
-  {
-    "id": 210,
-    "name": "ISNONTEXT",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISNONTEXT(value)",
-    "description": "Returns TRUE if cell does not contain text (numbers, blanks, or booleans)."
-  },
-  {
-    "id": 211,
-    "name": "ISERROR",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISERROR(value)",
-    "description": "Tests if cell contains any Excel error code (#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, #NULL!)."
-  },
-  {
-    "id": 212,
-    "name": "ISERR",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISERR(value)",
-    "description": "Tests for any error excluding #N/A."
-  },
-  {
-    "id": 213,
-    "name": "ISNA",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISNA(value)",
-    "description": "Checks specifically for missing lookup #N/A error."
-  },
-  {
-    "id": 214,
-    "name": "ISREF",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISREF(value)",
-    "description": "Tests whether an argument is a valid cell reference rather than a literal value."
-  },
-  {
-    "id": 215,
-    "name": "ISLOGICAL",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISLOGICAL(value)",
-    "description": "Tests if cell contains Boolean TRUE or FALSE value."
-  },
-  {
-    "id": 216,
-    "name": "ISEVEN",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISEVEN(number)",
-    "description": "Returns TRUE if integer number is even (used for split alternating reconciliations)."
-  },
-  {
-    "id": 217,
-    "name": "ISODD",
-    "category": "Logical & Decision Modeling",
-    "syntax": "=ISODD(number)",
-    "description": "Returns TRUE if integer number is odd."
   },
   {
     "id": 218,

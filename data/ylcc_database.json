@@ -9,7 +9,7 @@
     "whatsapp": "+91 90059 00123",
     "email": "admissions@ylcccommerce.in",
     "address": "Barra-4, L.I.G-20, Kanpur, Uttar Pradesh, India",
-    "officeHours": "Monday – Saturday: 8:30 AM – 7:30 PM (Sunday Closed)",
+    "officeHours": "Monday \u2013 Saturday: 8:30 AM \u2013 7:30 PM (Sunday Closed)",
     "socialLinks": {
       "instagram": "https://instagram.com/ylcc_commerce",
       "facebook": "https://facebook.com/ylcccommerce",
@@ -26,7 +26,7 @@
     },
     "heroTitle": "Master Real-World Accounting & Taxation with Multi-Business Practical Projects",
     "heroSubtitle": "Bridge the gap between commerce theory and actual corporate desk work. Get hands-on training in Live Accounting, GST, TDS/TCS, Banking CC Limits, Payroll, Cost Accounting, and Advanced Excel 365.",
-    "announcementBarText": "📢 Admissions Open for Upcoming Practical Batches — Limited to 20 Students per Cohort for 1-on-1 Mentorship!",
+    "announcementBarText": "\ud83d\udce2 Admissions Open for Upcoming Practical Batches \u2014 Limited to 20 Students per Cohort for 1-on-1 Mentorship!",
     "showAnnouncementBar": true
   },
   "programs": [
@@ -50,7 +50,7 @@
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni (Corporate Accounts Specialist)",
-      "batchTiming": "Morning: 8:30 AM – 10:30 AM | Evening: 5:00 PM – 7:00 PM",
+      "batchTiming": "Morning: 8:30 AM \u2013 10:30 AM | Evening: 5:00 PM \u2013 7:00 PM",
       "availableSeats": 6,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
@@ -177,7 +177,7 @@
           "id": "mod-1-7",
           "title": "E-Way Bill Generation & In-Transit Compliance",
           "topics": [
-            "Statutory applicability: Understanding the ₹50,000 consignment value threshold, exempted goods, and distance validity rules",
+            "Statutory applicability: Understanding the \u20b950,000 consignment value threshold, exempted goods, and distance validity rules",
             "Live government portal generation: Entering Part-A (Consignor, Consignee, Item, Tax) & Part-B (Transporter ID, Vehicle Number)",
             "Handling multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and extending validity",
             "E-Way bill cancellation workflows within 24 hours, consolidated E-Way bills, and preventing vehicle interception penalties under Section 129"
@@ -258,7 +258,7 @@
       ],
       "facultyId": "fac-1",
       "facultyName": "CA Alok Maheshwari (Senior CA)",
-      "batchTiming": "Morning: 10:30 AM – 12:30 PM | Weekend Executive Batch",
+      "batchTiming": "Morning: 10:30 AM \u2013 12:30 PM | Weekend Executive Batch",
       "availableSeats": 5,
       "startDate": "1st of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
@@ -293,7 +293,7 @@
           "id": "mod-2-3",
           "title": "Debtors Cycle & Collection Period-Wise Tracking",
           "topics": [
-            "Debtors aging schedule analysis: 0–30 days, 31–60 days, 61–90 days, and 90+ days overdue buckets",
+            "Debtors aging schedule analysis: 0\u201330 days, 31\u201360 days, 61\u201390 days, and 90+ days overdue buckets",
             "Establishing and enforcing customer credit limits, payment terms, and supply-stop flags for overdue accounts",
             "Bill-by-bill outstanding reconciliation and issuing automated periodic debtor balance confirmation letters",
             "Designing collection follow-up workflows and escalation matrices to eliminate bad debt risk"
@@ -370,7 +370,7 @@
           "id": "mod-2-10",
           "title": "Age-Wise Inventory Control & Dead Stock Liquidation",
           "topics": [
-            "Inventory aging analysis: tracking stock holding duration (0–30, 31–60, 61–90, 91–180, 180+ days)",
+            "Inventory aging analysis: tracking stock holding duration (0\u201330, 31\u201360, 61\u201390, 91\u2013180, 180+ days)",
             "Identifying non-moving, obsolete, damaged, and dead stock items in central warehouse and retail godowns",
             "Computing inventory carrying costs, capital blockage, and insurance holding expenses",
             "Formulating dead stock liquidation strategies, scrap salvage valuations, and accounting write-down entries"
@@ -452,7 +452,7 @@
       "title": "Banking Operations, CC Limits & CMA Preparation",
       "category": "Banking & Financial Documentation",
       "shortDescription": "Prepare comprehensive bank limit documents (CC/OD limits), monthly drawing power (DP) calculations, stock statements, and projected balance sheets.",
-      "detailedDescription": "Every expanding business relies on commercial bank funding—Cash Credit (CC) limits, Overdraft (OD) limits, and Working Capital term loans. This specialized course trains you in the exact banking paperwork demanded by nationalized and private banks. You will prepare bank loan sanction dossiers, compute monthly Drawing Power (DP) statements with margin deduction, compile CMA data (Credit Monitoring Arrangement), and prepare projected Balance Sheets and Profit & Loss statements for limit renewals.",
+      "detailedDescription": "Every expanding business relies on commercial bank funding\u2014Cash Credit (CC) limits, Overdraft (OD) limits, and Working Capital term loans. This specialized course trains you in the exact banking paperwork demanded by nationalized and private banks. You will prepare bank loan sanction dossiers, compute monthly Drawing Power (DP) statements with margin deduction, compile CMA data (Credit Monitoring Arrangement), and prepare projected Balance Sheets and Profit & Loss statements for limit renewals.",
       "duration": "1.5 Months",
       "mode": "Offline Classroom",
       "fees": 16000,
@@ -465,7 +465,7 @@
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni (Ex-Banking Documentation Head)",
-      "batchTiming": "Evening: 6:00 PM – 8:00 PM | Saturday & Sunday Special Batch",
+      "batchTiming": "Evening: 6:00 PM \u2013 8:00 PM | Saturday & Sunday Special Batch",
       "availableSeats": 8,
       "startDate": "10th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Banking-GST.pdf",
@@ -486,7 +486,7 @@
         },
         {
           "title": "Limit Renewal Preparation (Projected Balance Sheet)",
-          "description": "Preparation of 12-page CMA (Credit Monitoring Arrangement) data (Forms I–VI), formulating 3-year projected Balance Sheets and Profit & Loss statements, Current Ratio (≥ 1.33) and DSCR compliance, and handling bank credit queries."
+          "description": "Preparation of 12-page CMA (Credit Monitoring Arrangement) data (Forms I\u2013VI), formulating 3-year projected Balance Sheets and Profit & Loss statements, Current Ratio (\u2265 1.33) and DSCR compliance, and handling bank credit queries."
         }
       ],
       "modules": [
@@ -518,7 +518,7 @@
           "topics": [
             "Preparation of 12-page CMA format (Operating statement, balance sheet analysis, fund flow, and working capital gap)",
             "Drafting Projected Balance Sheet & Profit & Loss statements for annual bank limit renewals",
-            "Current Ratio (≥ 1.33 benchmark), Debt-Equity Ratio, and DSCR computation and compliance",
+            "Current Ratio (\u2265 1.33 benchmark), Debt-Equity Ratio, and DSCR computation and compliance",
             "Handling bank query letters, responding to credit committee observations, and limit enhancement proposals"
           ],
           "durationHours": 17
@@ -554,7 +554,7 @@
       ],
       "facultyId": "fac-1",
       "facultyName": "CA Alok Maheshwari (GST & Tax Specialist)",
-      "batchTiming": "Morning: 7:30 AM – 9:30 AM | Evening: 6:30 PM – 8:30 PM",
+      "batchTiming": "Morning: 7:30 AM \u2013 9:30 AM | Evening: 6:30 PM \u2013 8:30 PM",
       "availableSeats": 7,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Banking-GST.pdf",
@@ -618,7 +618,7 @@
           "id": "mod-4-2",
           "title": "E-Way Bill Complete Practical Knowledge & In-Transit Compliance",
           "topics": [
-            "Statutory applicability rules: Mandatory ₹50,000 consignment value threshold, distance calculations, and exempted commodities",
+            "Statutory applicability rules: Mandatory \u20b950,000 consignment value threshold, distance calculations, and exempted commodities",
             "Live government portal generation of Part-A (consignor/consignee, invoice value, HSN) and Part-B (vehicle number, transporter ID)",
             "Managing multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and statutory validity extension",
             "Consolidated E-Way bills, handling rejected consignments, 24-hour cancellation rules, and avoiding Section 129 transit penalties"
@@ -734,7 +734,7 @@
       ],
       "facultyId": "fac-1",
       "facultyName": "CA Alok Maheshwari (Senior Chartered Accountant)",
-      "batchTiming": "Morning: 9:00 AM – 11:00 AM | Evening: 5:30 PM – 7:30 PM",
+      "batchTiming": "Morning: 9:00 AM \u2013 11:00 AM | Evening: 5:30 PM \u2013 7:30 PM",
       "availableSeats": 6,
       "startDate": "5th & 20th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
@@ -772,7 +772,7 @@
           "title": "Business Transaction Feeding According to TDS/TCS Act",
           "topics": [
             "Recording business vouchers with section-wise statutory TDS deductions: 194C (contractors), 194J (professional/technical fees), 194I (rent), 194A (interest), 194H (commission)",
-            "Accounting for Section 194Q (TDS on purchase of goods > ₹50L @ 0.1%) vs Section 206C(1H) (TCS on sale of goods) priority rules",
+            "Accounting for Section 194Q (TDS on purchase of goods > \u20b950L @ 0.1%) vs Section 206C(1H) (TCS on sale of goods) priority rules",
             "PAN verification, higher-rate tax deduction @ 20% under Section 206AA, and Section 206AB compliance check for specified non-filers",
             "TCS transaction feeding: Sale of scrap, minerals, motor vehicles (Section 206C(1F)), and Liberalised Remittance Scheme (LRS 206C(1G))"
           ],
@@ -853,7 +853,7 @@
       ],
       "facultyId": "fac-3",
       "facultyName": "CS Meenakshi Sharma (Labour Law & Payroll Specialist)",
-      "batchTiming": "Morning: 10:00 AM – 12:00 PM | Evening: 4:00 PM – 6:00 PM",
+      "batchTiming": "Morning: 10:00 AM \u2013 12:00 PM | Evening: 4:00 PM \u2013 6:00 PM",
       "availableSeats": 8,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
@@ -904,9 +904,9 @@
           "id": "mod-6-3",
           "title": "ESI & Statutory Social Security Transactions (According to ESI Act & PF Rules)",
           "topics": [
-            "ESI Act statutory compliance: Eligibility criteria (₹21,000 wage ceiling), employee (0.75%) & employer (3.25%) contribution calculations",
+            "ESI Act statutory compliance: Eligibility criteria (\u20b921,000 wage ceiling), employee (0.75%) & employer (3.25%) contribution calculations",
             "Operating the ESIC Employer Portal: Monthly contribution filing, online challan generation, Pehchan card issuance, and accident reports (Form 16)",
-            "EPF & MP Act compliance: Wage ceiling rules (₹15,000 threshold), employee (12%) & employer (3.67% EPF + 8.33% EPS) contribution break-up, and EDLI charges",
+            "EPF & MP Act compliance: Wage ceiling rules (\u20b915,000 threshold), employee (12%) & employer (3.67% EPF + 8.33% EPS) contribution break-up, and EDLI charges",
             "Generating EPF Electronic Challan-cum-Return (ECR text file), portal upload, online challan payment, and end-to-end multi-business payroll case studies"
           ],
           "durationHours": 20
@@ -942,7 +942,7 @@
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni (Industrial Costing Consultant)",
-      "batchTiming": "Morning: 8:30 AM – 10:30 AM | Afternoon: 2:00 PM – 4:00 PM",
+      "batchTiming": "Morning: 8:30 AM \u2013 10:30 AM | Afternoon: 2:00 PM \u2013 4:00 PM",
       "availableSeats": 7,
       "startDate": "10th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
@@ -1136,7 +1136,7 @@
       ],
       "facultyId": "fac-4",
       "facultyName": "Vikas Khandelwal (Corporate MIS Analyst & Excel Specialist)",
-      "batchTiming": "Morning: 7:00 AM – 8:30 AM | Evening: 7:00 PM – 8:30 PM | Sunday Intensive",
+      "batchTiming": "Morning: 7:00 AM \u2013 8:30 AM | Evening: 7:00 PM \u2013 8:30 PM | Sunday Intensive",
       "availableSeats": 10,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
@@ -1236,290 +1236,6 @@
       "seoDescription": "Master 250+ Excel 365 formulas, advanced features, 500+ troubleshooting scenarios, 250+ interview questions, and automated MIS dashboards at YLCC Jaipur."
     },
     {
-      "id": "prog-9",
-      "slug": "16-practice-project-multi-business",
-      "title": "16 (PRACTISE PROJECT-MULTI BUSINESS)",
-      "category": "Multi-Business Practical Accounting",
-      "shortDescription": "Master complete financial books maintenance, voucher execution, inventory control, and balance sheet finalization across 16 diverse commercial industries.",
-      "detailedDescription": "Step beyond single-industry accounting. This premier intensive masterclass trains commerce students and finance professionals across 16 diverse real-world business models. From hospital patient billing, college fee ledgers, transport fleet logistics, and automobile service centers to luxury hotels, FMCG distributor networks, comprehensive GST/TDS filings, bank CC limit CMA proposals, executive payroll, furniture custom costing, architect firms, builder real estate sites, Section 143 job-work control, government thekedar civil tenders, and multi-branch chain franchises (like Javed Habib). Every project simulates complete financial years with physical vouchers, live software data entry, and balance sheet finalization.",
-      "duration": "3 Months",
-      "mode": "Offline Classroom",
-      "fees": 18500,
-      "discountedFees": 14999,
-      "eligibility": "Commerce graduates, accountants, tax consultants, and finance managers seeking multi-industry desk mastery",
-      "softwareTools": [
-        "Tally Prime 4.0",
-        "Busy Accounting Software",
-        "Excel 365 Financial Models",
-        "GST & E-Way Bill Simulator",
-        "Income Tax & TDS Utilities"
-      ],
-      "facultyId": "fac-2",
-      "facultyName": "Rajesh Soni & CA Alok Maheshwari (Senior Industry Mentors)",
-      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
-      "availableSeats": 8,
-      "startDate": "1st & 15th of Every Month",
-      "brochureUrl": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
-      "certificateInfo": "YLCC Certified Multi-Business Practical Accounting Specialist",
-      "isFeatured": true,
-      "status": "published",
-      "displayOrder": 9,
-      "coreCompetenciesHeading": "16 Multi-Business Practical Projects You Master",
-      "coreCompetenciesSubheading": "Live, hands-on financial books maintenance, voucher execution, inventory control, and balance sheet finalization across 16 diverse commercial industries.",
-      "coreCompetencies": [
-        {
-          "title": "Hospital Business",
-          "description": "IPD/OPD patient billing, doctor consultant revenue shares (194J), pharmacy dispensary stock tracking, and TPA insurance claim reconciliations."
-        },
-        {
-          "title": "College Accounting",
-          "description": "Installment fee collection, fine penalties, scholarship adjustments, faculty salaries, lab consumable expenditures, and hostel/mess accounts."
-        },
-        {
-          "title": "Logistics (Transport Management)",
-          "description": "Transporter Hisab (fleet expense settlements & driver advances), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring."
-        },
-        {
-          "title": "Service Center Accounting",
-          "description": "Multi-job repair card billing, spare parts inventory vs labour charges, manufacturer warranty claims, and reimbursement credits."
-        },
-        {
-          "title": "Hotel Business",
-          "description": "Room guest folio management, night-audit room revenue posting, restaurant F&B kitchen food cost percentages, and banqueting hall events."
-        },
-        {
-          "title": "Distributor Networking",
-          "description": "FMCG primary inward purchase vs secondary retail dealer billing, scheme trade discounts, quantity bonuses, and target turnover rebates."
-        },
-        {
-          "title": "GST Project",
-          "description": "Multi-state B2B, B2C, SEZ exports under LUT, RCM purchases, GSTR-2B purchase book reconciliation, and tax liability offset in GSTR-3B."
-        },
-        {
-          "title": "TDS/TCS Project",
-          "description": "Sectional withholding (194C, 194J, 194I, 194H, 194Q, 206C), Challan 281 e-payments, Form 24Q/26Q filing, and TRACES Form 16/16A."
-        },
-        {
-          "title": "Banking CC Limit",
-          "description": "Cash Credit working capital management, Monthly Stock Statement preparation, Drawing Power (DP) calculations, and CMA data bank proposals."
-        },
-        {
-          "title": "Payroll Management",
-          "description": "Monthly salary register structuring, CTC break-up, PF (12%), ESIC (0.75%/3.25%), PT, TDS on salary (Section 192), and ECR portal filing."
-        },
-        {
-          "title": "Furniture Showroom Costing",
-          "description": "Custom timber/board/fabric BOM calculation, master carpenter daily labour allocation, and showroom display margin vs custom order pricing."
-        },
-        {
-          "title": "Architect / Interior Decorator",
-          "description": "Stage-wise professional fees billing, structural 3D design consulting, client advance retainers, and sub-consultant contractor TDS (194J)."
-        },
-        {
-          "title": "Builders Business",
-          "description": "Real estate multi-site construction costing, cement/TMT steel consumption, labour contractor RA bills, square-foot costing, and RERA compliance."
-        },
-        {
-          "title": "Job Worker (Inventory & Cost Control)",
-          "description": "Section 143 GST Delivery Challans, Form GST ITC-04, raw material issuance vs finished conversion yields, and processing loss control."
-        },
-        {
-          "title": "Government Thekedar (Civil Projects)",
-          "description": "PWD/CPWD/Railways tender schedule rates, Running Account (RA) bills against Measurement Book (MB), 2% GST-TDS, and security retention money."
-        },
-        {
-          "title": "Multi-Branch Chain Business (Like Javed Habib)",
-          "description": "Centralized purchasing, warehouse-to-branch stock transfers, branch daily cash collection transfers, franchise royalty sharing (194J), and consolidated P&L."
-        }
-      ],
-      "modules": [
-        {
-          "id": "mod-9-1",
-          "title": "Hospital Business Accounting & Patient Billing",
-          "topics": [
-            "IPD/OPD patient billing, advance deposits, bed charges, and pharmacy dispensary inventory",
-            "Doctor visiting fees vs revenue-sharing agreements and TDS deduction under Section 194J",
-            "Cashless mediclaim TPA insurance claims reconciliation, co-pays, and deduction audit",
-            "Hospital monthly department-wise profit & loss and medical equipment depreciation schedules"
-          ],
-          "durationHours": 10
-        },
-        {
-          "id": "mod-9-2",
-          "title": "College Accounting & Student Fee Management",
-          "topics": [
-            "Semester-wise installment fee collection, fine penalties, and defaulter tracking ledgers",
-            "Government scholarship credit adjustments and university examination fee remittances",
-            "Faculty salary payroll, guest lecture remuneration vouchers, and lab consumable allocations",
-            "Hostel room rents, mess catering expense accounting, and educational trust compliance"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-3",
-          "title": "Logistics: Transporter Hisab, Consignment & City Tracking",
-          "topics": [
-            "Topic 1 (Transportor Hisab): Reconcile transporter freight payments, driver trip cash advances, diesel fleet cards, Fastag tolls, and broker commissions",
-            "Topic 2 (Consignment Track): End-to-end Bilty/LR registration, consignor-consignee billing weight, detention charges, and Proof of Delivery (POD) monitoring",
-            "Topic 3 (City Wise Transport Tracking): Route-wise freight tracking across major industrial corridors (Delhi, Mumbai, Jaipur), city delivery schedules, and vehicle running cost per km",
-            "Statutory GTA & Tax Compliances: Goods Transport Agency (GTA) 5% RCM vs 12% forward charge and Section 194C transporter TDS declarations"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-4",
-          "title": "Automobile Service Center Multi-Job Accounting",
-          "topics": [
-            "Job card opening, multi-stage vehicle servicing workflow, and labor vs spare parts split billing",
-            "Spare parts counter sale inventory, dynamic pricing, and technician incentive tracking",
-            "OEM manufacturer warranty repair claims, scrap battery/oil credits, and credit notes",
-            "Service bay overhead allocation, workshop operating margin, and customer AMC agreements"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-5",
-          "title": "Hotel Business & Hospitality Industry Accounting",
-          "topics": [
-            "Guest check-in/check-out folio management, room tariff posting, and daily night audit reconciliation",
-            "Restaurant & bar kitchen food cost percentage (F&B costing), daily kitchen store requisitions",
-            "Banqueting hall event bookings, advance decor deposits, catering contracts, and GST split",
-            "Laundry, minibar, travel desk incidental charges, and luxury hospitality tax compliance"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-6",
-          "title": "FMCG Distributor Networking & Multi-Dealer Billing",
-          "topics": [
-            "Primary FMCG company inward purchase reconciliation, freight subsidy, and trade credit terms",
-            "Secondary retail dealer billing, beat-wise salesperson routes, and cash collection settlements",
-            "Scheme accounting: Trade Discounts (TD), Cash Discounts (CD), quantity free-goods, and target turnover rebates",
-            "Damaged stock returns, expiry write-offs, vendor credit notes, and FIFO inventory valuation"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-7",
-          "title": "Comprehensive GST Business Practice Project",
-          "topics": [
-            "Invoicing across B2B registered sales, B2C retail, SEZ units, and zero-rated export with LUT",
-            "Reverse Charge Mechanism (RCM) on GTA transport, legal advocate fees, and unregistered inward supplies",
-            "Automated 500+ invoice reconciliation between purchase book ledgers and portal GSTR-2B",
-            "Preparation and offline validation of GSTR-1, tax liability offset sequence in GSTR-3B, and PMT-06 challans"
-          ],
-          "durationHours": 12
-        },
-        {
-          "id": "mod-9-8",
-          "title": "Corporate TDS & TCS Withholding Tax Project",
-          "topics": [
-            "Sectional withholding deductions: 194C (contractors), 194J (professionals), 194I (rent), 194Q (goods), and 206C TCS",
-            "Monthly tax deposit via Challan 281, BSR code mapping, and CIN ledger recording",
-            "Quarterly e-TDS return compilation in NSDL RPU tool (Form 24Q for salary & Form 26Q for non-salary) and FVU validation",
-            "TRACES portal utilities: Downloading Form 16/16A certificates, online correction requests, and demand justification"
-          ],
-          "durationHours": 10
-        },
-        {
-          "id": "mod-9-9",
-          "title": "Banking CC Limit & CMA Proposal Management",
-          "topics": [
-            "Bank Cash Credit (CC) limit ledger maintenance, daily drawing power, and interest servicing",
-            "Monthly Bank Stock Statement preparation: Paid stock deduction, debtor aging (<90 days eligibility), and margin calculation",
-            "CMA Data preparation: Form II (operating statement), Form III (balance sheet analysis), and Form VI (fund flow)",
-            "Financial ratio benchmarks: Current Ratio (1.33+), DSCR, Debt-Equity, and MPBF computation under Tandon/Nayak committees"
-          ],
-          "durationHours": 10
-        },
-        {
-          "id": "mod-9-10",
-          "title": "Corporate Payroll Management & Statutory Compliance",
-          "topics": [
-            "Monthly attendance register processing, lop deductions, overtime hours, and gross salary computation",
-            "Statutory PF calculation (12% employee + 12% employer across A/c 1, 2, 10, 21, 22) and monthly ECR portal file generation",
-            "Statutory ESIC calculation (0.75% employee + 3.25% employer) and state Professional Tax (PT) slab deduction",
-            "Section 192 TDS on salary deduction schedules, Form 16 Part A & B compilation, and net salary bank disbursement advice"
-          ],
-          "durationHours": 10
-        },
-        {
-          "id": "mod-9-11",
-          "title": "Furniture Showroom Costing & Customized Product Manufacturing",
-          "topics": [
-            "Timber wood, ply, laminate, hardware fittings, and upholstery fabric multi-level Bill of Materials (BOM)",
-            "Master carpenter, polishing, and upholstery daily labour allocation per custom job order",
-            "Job-order costing vs readymade showroom display items, machine depreciation, and lacquer finishing overheads",
-            "Customer custom order quotation costing sheets, advance booking deposits, and finished product delivery notes"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-12",
-          "title": "Architect & Interior Decorator Project Accounting",
-          "topics": [
-            "Milestone-based professional fee agreements (concept design, working drawings, 3D renders, site execution supervision)",
-            "Client advance retainers, running consultation invoices, and Section 194J TDS deductions",
-            "Sub-consultant structural engineer, MEP contractor, and 3D visualizer payment vouchers",
-            "Project-wise profitability ledgers, site inspection travel billings, and GST reverse charge on overseas design software"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-13",
-          "title": "Builders & Real Estate Site-Wise Construction Costing",
-          "topics": [
-            "Site-wise Cost Centre configuration for multi-tower residential and commercial schemes",
-            "Inward material tracking per site: Cement, TMT steel, aggregates, bricks, electricals, and sanitary fittings",
-            "Labour contractor Running Account (RA) bills, equipment hire, architect fees, and overhead capitalization",
-            "Square-foot construction cost computation, stage-wise construction progress valuation, and RERA project bank account compliance"
-          ],
-          "durationHours": 10
-        },
-        {
-          "id": "mod-9-14",
-          "title": "Job-Worker Inventory & Processing Cost Control",
-          "topics": [
-            "Statutory GST job-work compliances under Section 143: Delivery Challans and Form GST ITC-04 filing",
-            "Tracking inward-outward material conversion ratios across dyeing, casting, machining, and packaging",
-            "Standard shrinkage and wastage tolerances, scrap recovery valuation, and missing material penalty clauses",
-            "Auditing job-work processing charges, passing TDS deduction entries under Section 194C, and updating finished goods cost"
-          ],
-          "durationHours": 8
-        },
-        {
-          "id": "mod-9-15",
-          "title": "Government Thekedar Civil Projects Costing (Roads, Bridges & Bhavans)",
-          "topics": [
-            "PWD, CPWD, Indian Railways, and Municipal Corporation tender schedule of rates (SOR) estimation",
-            "Material transit tracking: Bitumen, road grit, cement, diesel for JCB/rollers, and site store controls",
-            "Preparation of Running Account (RA) bills against Measurement Book (MB) entries approved by executive engineers",
-            "Accounting for statutory deductions from government cheques: 2% GST-TDS, 1%/2% Section 194C TDS, royalty, and security retention deposit"
-          ],
-          "durationHours": 10
-        },
-        {
-          "id": "mod-9-16",
-          "title": "Multi-Branch & Multi-Chain Business Accounting (Like Javed Habib)",
-          "topics": [
-            "Multi-location chain architecture: Central warehouse procurement, stock transfer notes, and branch retail inventory",
-            "Daily salon/branch cash collection reconciliation, bank deposit slips, POS card swipe settlements, and petty cash imprest",
-            "Franchise business economics: Royalty fees calculation (percentage of gross turnover), brand fee invoices, and Section 194J TDS",
-            "Consolidated inter-branch reconciliation, branch-wise P&L comparison, and enterprise trial balance consolidation"
-          ],
-          "durationHours": 10
-        }
-      ],
-      "learningOutcomes": [
-        "Attain total practical desk command across 16 diverse commercial industries from hospitals and hotels to manufacturing and civil tenders",
-        "Accurately maintain books, record vouchers, and finalize balance sheets for service, trading, retail, and manufacturing sectors",
-        "Execute live statutory compliances: multi-state GST returns, quarterly TDS/TCS with NSDL RPU, and monthly PF/ESIC ECR filings",
-        "Master specialized commercial workflows: bank CC limit stock statements, builder site costing, government thekedar RA bills, and chain franchise branch accounting"
-      ],
-      "seoTitle": "16 Practical Projects: Multi-Business Accounting Course | YLCC",
-      "seoDescription": "Master hands-on accounting across 16 industries: Hospital, College, Logistics, Service Center, Hotel, Distributor, GST, TDS, CC Limit, Payroll, Builders, and Govt Thekedar at YLCC Jaipur."
-    },
-    {
       "id": "prog-10",
       "slug": "logistics-transport-management",
       "title": "LOGISTICS",
@@ -1539,14 +1255,14 @@
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni (Head of Accounting & Banking Operations)",
-      "batchTiming": "Morning: 8:00 AM – 9:30 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "batchTiming": "Morning: 8:00 AM \u2013 9:30 AM | Evening: 6:30 PM \u2013 8:00 PM | Sunday Intensive",
       "availableSeats": 10,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
       "certificateInfo": "YLCC Certified Logistics & Fleet Accounting Specialist",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 10,
+      "displayOrder": 9,
       "coreCompetenciesHeading": "3 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical desk execution covering Transporter Hisab, Consignment Tracking, and City-Wise Transport Monitoring.",
       "coreCompetencies": [
@@ -1627,14 +1343,14 @@
       ],
       "facultyId": "fac-1",
       "facultyName": "CA Alok Maheshwari & Rajesh Soni (Senior Financial Mentors)",
-      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "batchTiming": "Morning: 7:30 AM \u2013 9:00 AM | Evening: 6:30 PM \u2013 8:00 PM | Sunday Intensive",
       "availableSeats": 10,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
       "certificateInfo": "YLCC Certified Corporate Credit Controller & Financial Analyst",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 11,
+      "displayOrder": 10,
       "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical execution covering Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Inventory Control.",
       "coreCompetencies": [
@@ -1686,7 +1402,7 @@
           "id": "mod-11-3",
           "title": "Party Wise Ageing Report",
           "topics": [
-            "Extracting and building multi-interval aging schedules (0–30, 31–60, 61–90, 90+ days) in Tally Prime and Excel",
+            "Extracting and building multi-interval aging schedules (0\u201330, 31\u201360, 61\u201390, 90+ days) in Tally Prime and Excel",
             "Auditing on-account advance receipts vs unpaid invoices using strict FIFO bill-by-bill settlement",
             "Isolating disputed deductions (rate differences, transit damages, scheme disputes) and issuing credit note adjustments",
             "Provisioning for doubtful debts, bad debt write-offs, and compiling monthly debtor aging summaries for bank CC limits"
@@ -1708,7 +1424,7 @@
           "id": "mod-11-5",
           "title": "Product Wise Age Wise Report",
           "topics": [
-            "Classifying warehouse inventory into age brackets: 0–30 days (fresh), 31–90 days (active), 91–180 days (slow), 180+ days (dead)",
+            "Classifying warehouse inventory into age brackets: 0\u201330 days (fresh), 31\u201390 days (active), 91\u2013180 days (slow), 180+ days (dead)",
             "Calculating product-level inventory turnover ratios, carrying costs, and capital blockage valuation",
             "Identifying non-moving SKU codes, batch-wise expiry risks, and damaged stock accumulation across godowns",
             "Formulating commercial liquidation schemes: Clearance discounts, bulk bundle offers, and vendor return debit notes"
@@ -1745,14 +1461,14 @@
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & MIS Mentors)",
-      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "batchTiming": "Morning: 7:30 AM \u2013 9:00 AM | Evening: 6:30 PM \u2013 8:00 PM | Sunday Intensive",
       "availableSeats": 10,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
       "certificateInfo": "YLCC Certified Commercial Sales MIS & Revenue Analyst",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 12,
+      "displayOrder": 11,
       "coreCompetenciesHeading": "6 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical execution covering Party Wise Sale, Salesmen Wise Sale, Area Wise Sale, Product Wise Sale, Product Category Wise Sale, and Brand Wise Sale.",
       "coreCompetencies": [
@@ -1878,14 +1594,14 @@
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & Operations Mentors)",
-      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "batchTiming": "Morning: 7:30 AM \u2013 9:00 AM | Evening: 6:30 PM \u2013 8:00 PM | Sunday Intensive",
       "availableSeats": 10,
       "startDate": "1st & 15th of Every Month",
       "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
       "certificateInfo": "YLCC Certified CRM & Sales Force Automation Specialist",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 13,
+      "displayOrder": 12,
       "coreCompetenciesHeading": "4 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical execution covering Sales Staff Live Geo Tracking, Sales Staff Daily Expenses, Sales Staff Attendance / Salary, and Sales Staff Daily Visit Record.",
       "coreCompetencies": [
@@ -1989,7 +1705,7 @@
         "Accurately withhold TDS under Section 194J on doctor visiting fees and surgical sharing",
         "Reconcile TPA insurance claims and track deductions, co-pays, and claim delays"
       ],
-      "businessScenario": "Jeevandhara Hospital operates 100 beds, an in-house pathology lab, and a round-the-clock medical store. Monthly revenues cross ₹75 Lakhs across private cash patients, corporate panels, and government health schemes (Ayushman / RGHS). The accounts manager must ensure live billing, prevent medicine expiry losses, and reconcile insurance settlements.",
+      "businessScenario": "Jeevandhara Hospital operates 100 beds, an in-house pathology lab, and a round-the-clock medical store. Monthly revenues cross \u20b975 Lakhs across private cash patients, corporate panels, and government health schemes (Ayushman / RGHS). The accounts manager must ensure live billing, prevent medicine expiry losses, and reconcile insurance settlements.",
       "tasksToComplete": [
         "Record daily OPD cash receipts and IPD admission advance vouchers",
         "Process monthly doctor consultancy bills with TDS deduction under 194J",
@@ -2131,7 +1847,7 @@
         "Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)",
         "Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances"
       ],
-      "businessScenario": "Speedways Logistics operates 28 heavy commercial trucks and hires 40+ market trucks monthly for Delhi-Mumbai-Jaipur routes. Each trip involves driver cash advance (₹25,000), diesel fleet card swipes, Fastag tolls, and delivery detention charges. Accurate trip settlement is vital to stop cash leakages.",
+      "businessScenario": "Speedways Logistics operates 28 heavy commercial trucks and hires 40+ market trucks monthly for Delhi-Mumbai-Jaipur routes. Each trip involves driver cash advance (\u20b925,000), diesel fleet card swipes, Fastag tolls, and delivery detention charges. Accurate trip settlement is vital to stop cash leakages.",
       "tasksToComplete": [
         "Topic 1 (Transportor Hisab): Reconcile transporter freight ledgers, driver trip advances, diesel fuel cards, Fastag tolls, broker commissions, and final trip profit & loss statements",
         "Topic 2 (Consignment Track): Track consignment notes (Bilty/LR) from dispatch to delivery, record billing weights, demurrage charges, POD (Proof of Delivery) submissions, and customer freight billing",
@@ -2402,7 +2118,7 @@
         "Perform advanced GSTR-2B reconciliations identifying missing vendor invoices and ineligible ITC",
         "Calculate optimal ITC offset sequences per Section 49 to minimize cash tax liability"
       ],
-      "businessScenario": "Shree Govind Enterprises has monthly turnover of ₹1.2 Crores with sales in Rajasthan, Gujarat, and Maharashtra. It imports specialized packaging material and exports finished spices. The company received 12 vendor invoices not reflecting in GSTR-2B.",
+      "businessScenario": "Shree Govind Enterprises has monthly turnover of \u20b91.2 Crores with sales in Rajasthan, Gujarat, and Maharashtra. It imports specialized packaging material and exports finished spices. The company received 12 vendor invoices not reflecting in GSTR-2B.",
       "tasksToComplete": [
         "Enter all monthly sales and purchase invoices with verified HSN codes and tax rates",
         "Run GSTR-2B reconciliation and classify discrepancies into vendor reminders and timing differences",
@@ -2478,7 +2194,7 @@
         "Generate error-free quarterly e-TDS return text files validated through NSDL FVU",
         "Operate TRACES portal to download Form 16A and file online correction statements"
       ],
-      "businessScenario": "Continental Infotech engages multiple external agencies: software consultants, website developers, security guards, premises landlords, and legal advisors. Monthly TDS deductions exceed ₹3.5 Lakhs across 80+ deductees.",
+      "businessScenario": "Continental Infotech engages multiple external agencies: software consultants, website developers, security guards, premises landlords, and legal advisors. Monthly TDS deductions exceed \u20b93.5 Lakhs across 80+ deductees.",
       "tasksToComplete": [
         "Verify 80+ vendor invoices and book corresponding TDS entries with correct section codes",
         "Reconcile monthly Challan 281 payments and prepare CIN/BSR mapping statements",
@@ -2524,8 +2240,8 @@
       "id": "proj-9",
       "slug": "banking-cc-limit-cma-proposal-project",
       "title": "Banking Cash Credit (CC) / OD Limit & CMA Proposal Project",
-      "shortDescription": "Prepare complete commercial bank proposal for ₹5 Crore CC limit renewal and expansion: stock statements, drawing power calculations, 12-page CMA data, and financial ratio modeling.",
-      "detailedDescription": "Commercial banking credit documentation requires rigorous financial modeling and strict compliance with RBI lending norms. In this project for \"Maruti Polyplast Industries\", students prepare a full ₹5 Crore Cash Credit (CC) limit enhancement proposal submitted to State Bank of India. You will compile monthly bank stock and debtors statements, calculate Drawing Power (DP) with 25% margin deductions, build the complete CMA report (Forms I to VI), and prepare projected Balance Sheets and Profit & Loss statements.",
+      "shortDescription": "Prepare complete commercial bank proposal for \u20b95 Crore CC limit renewal and expansion: stock statements, drawing power calculations, 12-page CMA data, and financial ratio modeling.",
+      "detailedDescription": "Commercial banking credit documentation requires rigorous financial modeling and strict compliance with RBI lending norms. In this project for \"Maruti Polyplast Industries\", students prepare a full \u20b95 Crore Cash Credit (CC) limit enhancement proposal submitted to State Bank of India. You will compile monthly bank stock and debtors statements, calculate Drawing Power (DP) with 25% margin deductions, build the complete CMA report (Forms I to VI), and prepare projected Balance Sheets and Profit & Loss statements.",
       "industryCategory": "Industrial Manufacturing & Banking",
       "accountingCategory": "Banking Credit & CMA Documentation",
       "difficultyLevel": "Executive",
@@ -2546,7 +2262,7 @@
         "Build institutional-grade CMA data for credit officers and sanction committees",
         "Project future year Balance Sheets and Profit & Loss statements consistent with growth targets"
       ],
-      "businessScenario": "Maruti Polyplast is doubling its manufacturing capacity of PVC pipes and requires limit enhancement from ₹3 Crores to ₹5 Crores. The bank requires audited figures for the past 2 years, provisional figures for current year, and projected figures for next 3 years along with monthly DP track records.",
+      "businessScenario": "Maruti Polyplast is doubling its manufacturing capacity of PVC pipes and requires limit enhancement from \u20b93 Crores to \u20b95 Crores. The bank requires audited figures for the past 2 years, provisional figures for current year, and projected figures for next 3 years along with monthly DP track records.",
       "tasksToComplete": [
         "Compile 12 consecutive months of Bank Stock Statements and reconcile with Tally stock register",
         "Filter out debtors exceeding 90 days and calculate monthly eligible Drawing Power",
@@ -2815,7 +2531,7 @@
         "Enforce the 80% procurement rule from registered GST dealers to prevent RCM penalties under RERA",
         "Maintain separate site books and escrow bank accounts per RERA statutory norms"
       ],
-      "businessScenario": "Aashiyana Residency is a ₹45 Crore project under construction. Materials arrive in bulk: ready-mix concrete, TMT steel, bricks, and tiles. Sub-contractors submit bi-weekly RA bills. The Chief Financial Officer must monitor cost per square foot constructed.",
+      "businessScenario": "Aashiyana Residency is a \u20b945 Crore project under construction. Materials arrive in bulk: ready-mix concrete, TMT steel, bricks, and tiles. Sub-contractors submit bi-weekly RA bills. The Chief Financial Officer must monitor cost per square foot constructed.",
       "tasksToComplete": [
         "Enter material delivery challans and match with weighbridge slips and purchase bills",
         "Process civil contractor RA Bill #04: deduct 5% retention, 2% TDS (194C), and material advances",
@@ -2949,7 +2665,7 @@
         "Track security deposit deductions released only upon expiration of the defect liability period",
         "Reconcile GST-TDS certificates (Form GSTR-7A) issued by government departments"
       ],
-      "businessScenario": "Khandelwal Infra Projects has won a ₹12.5 Crore PWD tender for 15 km highway widening and 2 major bridges. Every government running bill is subjected to deductions: 5% security deposit, 2% Income Tax TDS, 2% GST-TDS, 1% labour welfare cess, and testing charges.",
+      "businessScenario": "Khandelwal Infra Projects has won a \u20b912.5 Crore PWD tender for 15 km highway widening and 2 major bridges. Every government running bill is subjected to deductions: 5% security deposit, 2% Income Tax TDS, 2% GST-TDS, 1% labour welfare cess, and testing charges.",
       "tasksToComplete": [
         "Enter contract tender award, EMD mobilization advances, and bank guarantee commissions",
         "Prepare gross RA bill entries and account for all 5 statutory government treasury deductions",
@@ -3099,7 +2815,7 @@
         "Topic 4 (Revenue Expenditure): Book monthly office rent, utility bills, factory electricity, and create month-end accrual adjustments for outstanding expenses",
         "Topic 5 (Capital Investment): Account for equity infusion by directors into company bank accounts and maintain partner/director capital ledgers",
         "Topic 6 (Capital Expenditure): Capitalize new industrial packaging machinery and commercial delivery van, accounting for transit insurance and depreciation schedules",
-        "Topic 7 (E-Way Bill): Generate statutory E-Way bills on the portal for interstate consignments exceeding ₹50,000 and update vehicle numbers for transit transshipment",
+        "Topic 7 (E-Way Bill): Generate statutory E-Way bills on the portal for interstate consignments exceeding \u20b950,000 and update vehicle numbers for transit transshipment",
         "Topic 8 (E-Invoice): Upload B2B invoice JSON to the Invoice Registration Portal (IRP), generate unique 64-character IRN, and print digitally signed QR codes",
         "Topic 9 (Transportation): Book transporter Lorry Receipts (LRs), compute GTA 5% Reverse Charge Mechanism (RCM) tax liability, and deduct Section 194C TDS",
         "Topic 10 (Party Balance): Scrutinize Sundry Debtors and Creditors aging ledgers, perform bill-by-bill reconciliation, and generate balance confirmation letters",
@@ -3183,18 +2899,18 @@
         "Execute monthly internal accounting audits, detect control leakages, and prepare Form 3CD Income Tax Audit schedules",
         "Generate multi-dimensional stock profitability reports and manage age-wise inventory to eliminate dead stock"
       ],
-      "businessScenario": "At Shree Shyam Industrial Hardware & Distribution Pvt. Ltd., the accounting department handles 300+ monthly vendor bills, 800+ customer invoices, and ₹12 Crores in annual turnover. As Accounts Manager, you must ensure that junior voucher feeding is 100% audited daily, debtor collection cycles are tracked (30/60/90 days) to prevent defaults, supplier terms are maximized for cash discounts, sales teams are evaluated on real recoveries, internal monthly audits are conducted without delay, inventory is audited age-wise to purge dead stock, and year-end books are prepared for statutory CA Tax Audit.",
+      "businessScenario": "At Shree Shyam Industrial Hardware & Distribution Pvt. Ltd., the accounting department handles 300+ monthly vendor bills, 800+ customer invoices, and \u20b912 Crores in annual turnover. As Accounts Manager, you must ensure that junior voucher feeding is 100% audited daily, debtor collection cycles are tracked (30/60/90 days) to prevent defaults, supplier terms are maximized for cash discounts, sales teams are evaluated on real recoveries, internal monthly audits are conducted without delay, inventory is audited age-wise to purge dead stock, and year-end books are prepared for statutory CA Tax Audit.",
       "tasksToComplete": [
         "Topic 1 (Checking All Feeding Day to Day Live Basis): Scrutinize 100+ daily vouchers entered by junior operators, verify supporting documents, correct wrong ledger heads, and authorize entry postings",
         "Topic 2 (Accounts Book Monitor): Review Cash Book, Bank Books, and General Ledgers daily, identify and clear suspense account balances, and verify trial balance balancing",
-        "Topic 3 (Debtors Cycle / Track Collection Period Wise): Build period-wise aging schedules (0–30, 31–60, 61–90, 90+ days), enforce credit limits, and issue balance confirmation letters",
+        "Topic 3 (Debtors Cycle / Track Collection Period Wise): Build period-wise aging schedules (0\u201330, 31\u201360, 61\u201390, 90+ days), enforce credit limits, and issue balance confirmation letters",
         "Topic 4 (Suppliers Cycle / Track Collection Period Wise): Track vendor credit terms, compile payment maturity registers, capture early payment cash discounts, and verify 3-way matching",
         "Topic 5 (Firm Legal Matters): Review commercial agreements, warehouse lease contracts, vendor SLAs, and draft legal demand notices under Section 138 for dishonored cheques",
         "Topic 6 (Sales Team Monitoring): Audit salesperson targets vs actual billing and real cash collection recovery, and calculate monthly sales commissions and incentive deductions",
         "Topic 7 (Stock Item Wise / Brand Wise / Category Wise Report): Extract multi-tier inventory reports in Excel and Tally, calculating gross margin contribution by item, brand, and category",
         "Topic 8 (Monthly Account Internal Audit): Conduct an end-of-month internal audit checklist across 25 verification points, detect expense leakages, and compile management audit memos",
         "Topic 9 (Yearly Income Tax Audit): Prepare year-end finalized balance sheet schedules, compile Form 3CD annexures (40(a)(ia), 43B, 269SS/T), and draft IT Act depreciation schedules",
-        "Topic 10 (Inventory Control Age Wise): Classify godown inventory into aging buckets (0–30, 31–90, 91–180, 180+ days), identify non-moving dead stock, and propose liquidation write-downs",
+        "Topic 10 (Inventory Control Age Wise): Classify godown inventory into aging buckets (0\u201330, 31\u201390, 91\u2013180, 180+ days), identify non-moving dead stock, and propose liquidation write-downs",
         "Topic 11 (Negative Ledger Monitoring): Audit ledger accounts for negative cash in hand, negative warehouse stock items, and abnormal credit balances in asset accounts, and execute rectifications"
       ],
       "expectedOutcomes": [
@@ -3472,13 +3188,13 @@
       "id": "faq-1",
       "category": "Curriculum & Software",
       "question": "How is YLCC different from ordinary computer training institutes?",
-      "answer": "YLCC is exclusively a commerce and professional accounting training institute—we do not teach coding or general basic computer courses. Every training topic is grounded in actual business documents: sales registers, tax invoices, bank stock statements, E-way bills, TDS certificates, and government portals. Students work on authentic practical projects across 30 different business industries (Hospitals, Hotels, Logistics, Builders, Government Contractors, FMCG, etc.)."
+      "answer": "YLCC is exclusively a commerce and professional accounting training institute\u2014we do not teach coding or general basic computer courses. Every training topic is grounded in actual business documents: sales registers, tax invoices, bank stock statements, E-way bills, TDS certificates, and government portals. Students work on authentic practical projects across 30 different business industries (Hospitals, Hotels, Logistics, Builders, Government Contractors, FMCG, etc.)."
     },
     {
       "id": "faq-2",
       "category": "Admissions",
       "question": "What educational qualification is required to enroll?",
-      "answer": "Anyone with a commerce background—including Class 12th Commerce students, B.Com, BBA, M.Com, MBA Finance graduates, CA/CS inter students, as well as working accountants and business owners looking to master their books—is welcome. Prior computer experience is not required as we start from live voucher feeding and build up to advanced audits."
+      "answer": "Anyone with a commerce background\u2014including Class 12th Commerce students, B.Com, BBA, M.Com, MBA Finance graduates, CA/CS inter students, as well as working accountants and business owners looking to master their books\u2014is welcome. Prior computer experience is not required as we start from live voucher feeding and build up to advanced audits."
     },
     {
       "id": "faq-3",
@@ -3496,7 +3212,7 @@
       "id": "faq-5",
       "category": "Batches & Timings",
       "question": "What batch options are available for working professionals and college students?",
-      "answer": "We offer flexible batch schedules: Early Morning (7:30 AM – 9:30 AM), Regular Morning (10:00 AM – 12:00 PM), Evening (5:00 PM – 7:00 PM & 6:30 PM – 8:30 PM), and Weekend Executive Cohorts (Saturday & Sunday). Batches are strictly capped at 15–20 students to guarantee personalized 1-on-1 practical ledger guidance."
+      "answer": "We offer flexible batch schedules: Early Morning (7:30 AM \u2013 9:30 AM), Regular Morning (10:00 AM \u2013 12:00 PM), Evening (5:00 PM \u2013 7:00 PM & 6:30 PM \u2013 8:30 PM), and Weekend Executive Cohorts (Saturday & Sunday). Batches are strictly capped at 15\u201320 students to guarantee personalized 1-on-1 practical ledger guidance."
     },
     {
       "id": "faq-6",
@@ -3627,7 +3343,7 @@
       "email": "pooja.agarwal@test.com",
       "phone": "+91 98290 99887",
       "programOfInterest": "GST Practitioner Masterclass",
-      "preferredBatch": "Morning Batch (8:30 AM – 10:30 AM)",
+      "preferredBatch": "Morning Batch (8:30 AM \u2013 10:30 AM)",
       "message": "Looking for practical GST return filing training.",
       "id": "enq-1789418202606-nwhmu",
       "status": "new",
@@ -3669,7 +3385,7 @@
       "commerceBackground": true,
       "selectedProgram": "accounts-operator",
       "preferredMode": "Offline Classroom",
-      "preferredBatch": "Morning Batch (8:30 AM – 10:30 AM)",
+      "preferredBatch": "Morning Batch (8:30 AM \u2013 10:30 AM)",
       "currentOccupation": "Fresher",
       "careerGoal": "Accounts Executive role",
       "documentUrls": [],
@@ -3689,7 +3405,7 @@
       "commerceBackground": true,
       "selectedProgram": "accounts-manager",
       "preferredMode": "Offline Classroom",
-      "preferredBatch": "Morning: 10:30 AM – 12:30 PM",
+      "preferredBatch": "Morning: 10:30 AM \u2013 12:30 PM",
       "currentOccupation": "Junior Accountant (Seeking Promotion)",
       "careerGoal": "To independently manage books of accounts and internal audits for manufacturing firms.",
       "documentUrls": [

@@ -124,7 +124,8 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               prog.id === 'prog-3' ||
               prog.id === 'prog-10' ||
               prog.id === 'prog-11' ||
-              prog.id === 'prog-12';
+              prog.id === 'prog-12' ||
+              prog.id === 'prog-13';
 
             const isPrimaryTheme =
               isExecutiveTrack ||
@@ -309,8 +310,8 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </div>
                 )}
 
-                {/* Partition Divider after Executive Track (SALES ANALYSIS) */}
-                {prog.id === 'prog-12' && selectedCategory === 'All' && !search.trim() && (
+                {/* Partition Divider after Executive Track (CRM) */}
+                {prog.id === 'prog-13' && selectedCategory === 'All' && !search.trim() && (
                   <div className="md:col-span-2 py-4">
                     <div className="relative flex items-center justify-center">
                       <div className="absolute inset-0 flex items-center">

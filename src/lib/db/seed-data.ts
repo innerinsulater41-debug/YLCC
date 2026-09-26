@@ -44,1688 +44,1653 @@ export const initialInstituteSettings: InstituteSettings = {
 };
 
 export const initialPrograms: Program[] = [
-{
-    id: 'prog-1',
-    slug: 'accounts-operator',
-    title: 'Business Operations',
-    category: 'Tally Prime',
-    shortDescription:
-      'Master 11 core accounting operations: Day-to-Day Transactions, Sale Billing, Purchase Feeding, Revenue & Capital Expenditure, Capital Investment, E-Way Bill, E-Invoice, Transportation, Party Balance, and Stock View.',
-    detailedDescription:
-      'The Business Operations program is meticulously structured for commerce students, fresh graduates, and junior accountants. Unlike theoretical book-keeping, this course simulates a live corporate accounts department from Day 1. You will master the 11 foundational pillars of professional accounting operations: recording live daily transactions, executing GST sale billing, feeding vendor purchases, accounting for capital investments versus revenue expenditures, managing fixed assets and CapEx, generating government-mandated E-way bills and E-invoices, handling transportation bills and freight inward, reconciling customer & supplier party balances, and maintaining real-time stock and godown inventory views.',
-    duration: '2.5 Months',
-    mode: 'Offline Classroom',
-    fees: 14500,
-    discountedFees: 11999,
-    eligibility: 'Class 12th Commerce, B.Com, BBA, or anyone aspiring to start an accounting career',
-    softwareTools: ['Tally Prime 4.0', 'Busy Accounting Software', 'Advanced Excel 365', 'GST & E-Way Bill Portal'],
-    facultyId: 'fac-2',
-    facultyName: 'Rajesh Soni (Corporate Accounts Specialist)',
-    batchTiming: 'Morning: 8:30 AM – 10:30 AM | Evening: 5:00 PM – 7:00 PM',
-    availableSeats: 6,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-    certificateInfo: 'YLCC Verified Business Operations Certification upon practical ledger evaluation',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 1,
-    coreCompetenciesHeading: '11 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical execution covering the complete day-to-day desk operations of an enterprise accounts department.',
-    coreCompetencies: [
-      {
-        title: 'Day-to-Day Transactions',
-        description:
-          'Voucher feeding for Receipt (F6), Payment (F5), Journal (F7), Contra (F4), petty cash imprest, and live cash/bank book daily maintenance.',
-      },
-      {
-        title: 'Sale Billing',
-        description:
-          'Generating statutory GST tax invoices (B2B/B2C) with multi-rate calculations, HSN/SAC codes, trade discounts, and credit notes.',
-      },
-      {
-        title: 'Purchase Feeding',
-        description:
-          'Inward purchase voucher recording against PO/GRN, vendor invoice verification, purchase register upkeep, and ITC eligibility scrutiny.',
-      },
-      {
-        title: 'Revenue Expenditure',
-        description:
-          'Booking day-to-day operating expenses, administrative overheads, office utilities, and executing period-end accrual adjustments.',
-      },
-      {
-        title: 'Capital Investment',
-        description:
-          'Accounting for proprietor/partner equity contributions, capital infusion via banking, share allocation, and drawings ledgers.',
-      },
-      {
-        title: 'Capital Expenditure',
-        description:
-          'Asset capitalization for plant & machinery, IT hardware, and vehicles with FAR upkeep and Companies Act / IT Act depreciation.',
-      },
-      {
-        title: 'E-Way Bill',
-        description:
-          'Live government portal generation of Part-A & Part-B, multi-vehicle updates, validity extensions, and cancellation compliance.',
-      },
-      {
-        title: 'E-Invoice',
-        description:
-          'Mandatory B2B/B2G e-invoicing workflows, generating 64-character IRN, and printing digitally signed QR codes on invoices.',
-      },
-      {
-        title: 'Transportation',
-        description:
-          'Booking Lorry Receipts (LR/Bilty), freight inward/outward ledgers, transporter reconciliations, and GTA 5% RCM compliance.',
-      },
-      {
-        title: 'Party Balance',
-        description:
-          'Sundry Debtors & Creditors aging analysis, bill-by-bill adjustment, balance confirmation statements, and dispute resolution.',
-      },
-      {
-        title: 'Stock View',
-        description:
-          'Real-time item-wise and batch-wise stock views, multi-godown transfers, minimum reorder levels, and physical stock tally.',
-      },
+  {
+    "id": "prog-1",
+    "slug": "accounts-operator",
+    "title": "Business Operations",
+    "category": "Tally Prime",
+    "shortDescription": "Master 11 core accounting operations: Day-to-Day Transactions, Sale Billing, Purchase Feeding, Revenue & Capital Expenditure, Capital Investment, E-Way Bill, E-Invoice, Transportation, Party Balance, and Stock View.",
+    "detailedDescription": "The Business Operations program is meticulously structured for commerce students, fresh graduates, and junior accountants. Unlike theoretical book-keeping, this course simulates a live corporate accounts department from Day 1. You will master the 11 foundational pillars of professional accounting operations: recording live daily transactions, executing GST sale billing, feeding vendor purchases, accounting for capital investments versus revenue expenditures, managing fixed assets and CapEx, generating government-mandated E-way bills and E-invoices, handling transportation bills and freight inward, reconciling customer & supplier party balances, and maintaining real-time stock and godown inventory views.",
+    "duration": "2.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 14500,
+    "discountedFees": 11999,
+    "eligibility": "Class 12th Commerce, B.Com, BBA, or anyone aspiring to start an accounting career",
+    "softwareTools": [
+      "Tally Prime 4.0",
+      "Busy Accounting Software",
+      "Advanced Excel 365",
+      "GST & E-Way Bill Portal"
     ],
-    modules: [
+    "facultyId": "fac-2",
+    "facultyName": "Rajesh Soni (Corporate Accounts Specialist)",
+    "batchTiming": "Morning: 8:30 AM – 10:30 AM | Evening: 5:00 PM – 7:00 PM",
+    "availableSeats": 6,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+    "certificateInfo": "YLCC Verified Business Operations Certification upon practical ledger evaluation",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 1,
+    "coreCompetenciesHeading": "11 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical execution covering the complete day-to-day desk operations of an enterprise accounts department.",
+    "coreCompetencies": [
       {
-        id: 'mod-1-1',
-        title: 'Day-to-Day Transactions & Cash/Bank Book Operations',
-        topics: [
-          'Feeding daily voucher entries: Receipt (F6), Payment (F5), Journal (F7), and Contra (F4) in Tally Prime & Busy',
-          'Cash Book & Imprest management: Handling petty cash vouchers, daily physical cash verification, and negative cash alerts',
-          'Live banking entries: Accounting for NEFT, RTGS, IMPS, cheque issuances, stale cheques, and bank service charges',
-          'General Ledger scrutiny: Inspecting nominal accounts, closing cash in hand, and real-time trial balance balancing',
-        ],
-        durationHours: 12,
+        "title": "Day-to-Day Transactions",
+        "description": "Voucher feeding for Receipt (F6), Payment (F5), Journal (F7), Contra (F4), petty cash imprest, and live cash/bank book daily maintenance."
       },
       {
-        id: 'mod-1-2',
-        title: 'Sale Billing & Statutory GST Tax Invoicing',
-        topics: [
-          'Generating statutory B2B, B2C Large, and B2C Small tax invoices with multi-item tax rates (5%, 12%, 18%, 28%)',
-          'HSN/SAC code determination and applying intra-state (CGST + SGST) versus inter-state (IGST) taxation rules',
-          'Trade discount mechanics, cash discounts, freight additions, round-off ledgers, and delivery challan conversions',
-          'Processing Credit Notes for sales returns, post-sale price adjustments, rate revisions, and damaged goods',
-        ],
-        durationHours: 12,
+        "title": "Sale Billing",
+        "description": "Generating statutory GST tax invoices (B2B/B2C) with multi-rate calculations, HSN/SAC codes, trade discounts, and credit notes."
       },
       {
-        id: 'mod-1-3',
-        title: 'Purchase Feeding & Input Tax Credit (ITC) Management',
-        topics: [
-          'Recording vendor raw material, trading goods, and expense bills against Purchase Orders (POs) and GRNs',
-          'Vendor invoice verification: Quantity checking, rate matching, item specification, and tax rate auditing',
-          'Input Tax Credit (ITC) eligibility scrutiny: Segregating eligible vs ineligible ITC under Section 17(5) and RCM purchases',
-          'Processing Debit Notes for purchase returns, short supply claims, quality rejections, and supplier discounts',
-        ],
-        durationHours: 12,
+        "title": "Purchase Feeding",
+        "description": "Inward purchase voucher recording against PO/GRN, vendor invoice verification, purchase register upkeep, and ITC eligibility scrutiny."
       },
       {
-        id: 'mod-1-4',
-        title: 'Revenue Expenditure & Operational Overhead Accounting',
-        topics: [
-          'Identification and accounting for day-to-day business operational expenses (rent, electricity, stationery, legal fees, staff welfare)',
-          'Distinguishing Direct Expenses (factory/production impact on Gross Profit) vs Indirect Expenses (administrative overheads on Net Profit)',
-          'Month-end accrual adjustments: Booking outstanding expenses, prepaid insurance, and accrued expenses',
-          'Audit scrutiny to prevent improper capitalization and eliminate mixing of business expenses with personal drawings',
-        ],
-        durationHours: 10,
+        "title": "Revenue Expenditure",
+        "description": "Booking day-to-day operating expenses, administrative overheads, office utilities, and executing period-end accrual adjustments."
       },
       {
-        id: 'mod-1-5',
-        title: 'Capital Investment & Proprietor/Partner Equity Ledgers',
-        topics: [
-          'Recording initial proprietor/partner capital infusion and subsequent bank fund transfers into the business entity',
-          'Maintaining Proprietor Capital Accounts, Partner Current Accounts, and Interest on Capital computations',
-          'Private Limited equity accounting: Share capital subscription, share allotment entries, and securities premium',
-          'Accounting for partner monthly drawings, profit distributions, and capital adjustments upon partner changes',
-        ],
-        durationHours: 10,
+        "title": "Capital Investment",
+        "description": "Accounting for proprietor/partner equity contributions, capital infusion via banking, share allocation, and drawings ledgers."
       },
       {
-        id: 'mod-1-6',
-        title: 'Capital Expenditure (CapEx) & Fixed Asset Accounting',
-        topics: [
-          'Capitalization criteria: Accounting for acquisition of plant & machinery, commercial vehicles, IT hardware, and office fit-outs',
-          'Capitalizing incidental acquisition costs: Inward freight, transit insurance, erection/installation, and trial-run expenses',
-          'Maintaining physical Fixed Asset Register (FAR) with asset code, purchase date, invoice reference, and location tagging',
-          'Depreciation scheduling and booking entries under Companies Act (SLM/WDV) and Income Tax Block of Assets rules',
-        ],
-        durationHours: 12,
+        "title": "Capital Expenditure",
+        "description": "Asset capitalization for plant & machinery, IT hardware, and vehicles with FAR upkeep and Companies Act / IT Act depreciation."
       },
       {
-        id: 'mod-1-7',
-        title: 'E-Way Bill Generation & In-Transit Compliance',
-        topics: [
-          'Statutory applicability: Understanding the ₹50,000 consignment value threshold, exempted goods, and distance validity rules',
-          'Live government portal generation: Entering Part-A (Consignor, Consignee, Item, Tax) & Part-B (Transporter ID, Vehicle Number)',
-          'Handling multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and extending validity',
-          'E-Way bill cancellation workflows within 24 hours, consolidated E-Way bills, and preventing vehicle interception penalties under Section 129',
-        ],
-        durationHours: 10,
+        "title": "E-Way Bill",
+        "description": "Live government portal generation of Part-A & Part-B, multi-vehicle updates, validity extensions, and cancellation compliance."
       },
       {
-        id: 'mod-1-8',
-        title: 'E-Invoice Generation, IRN & QR Code Compliance',
-        topics: [
-          'Understanding the government e-invoicing mandate: Turnover applicability thresholds, B2B scope, and export transactions',
-          'ERP-to-IRP direct integration workflows: JSON payload schema generation and uploading to the Invoice Registration Portal',
-          'Generating unique 64-character Invoice Reference Number (IRN) and digitally signed cryptographic QR codes',
-          'Printing statutory e-invoices, e-invoice credit/debit notes, cancellation restrictions, and auto-population into GSTR-1',
-        ],
-        durationHours: 10,
+        "title": "E-Invoice",
+        "description": "Mandatory B2B/B2G e-invoicing workflows, generating 64-character IRN, and printing digitally signed QR codes on invoices."
       },
       {
-        id: 'mod-1-9',
-        title: 'Transportation Accounting, Lorry Receipts (LR) & GTA RCM',
-        topics: [
-          'Booking Lorry Receipts (LR / Bilty), dispatch consignment notes, freight inward (landed cost), and freight outward (selling cost)',
-          'Transporter ledger management: Verifying trip-wise freight bills, loading/unloading charges, and detention claim deductions',
-          'Goods Transport Agency (GTA) tax compliance: Reverse Charge Mechanism (5% RCM without ITC) vs 12% Forward Charge',
-          'Tax Deducted at Source (TDS) on transporter contracts under Section 194C, Form 15H/15G declarations, and PAN validation',
-        ],
-        durationHours: 12,
+        "title": "Transportation",
+        "description": "Booking Lorry Receipts (LR/Bilty), freight inward/outward ledgers, transporter reconciliations, and GTA 5% RCM compliance."
       },
       {
-        id: 'mod-1-10',
-        title: 'Party Balance Scrutiny & Ledger Reconciliation',
-        topics: [
-          'Scrutinizing Sundry Debtors (customer receivables) and Sundry Creditors (vendor payables) running ledger balances',
-          'Bill-by-bill reference matching in software: Advance, Against Reference (Agst Ref), New Reference, and On Account adjustments',
-          'Preparing periodic Party Ledger Reconciliation statements to identify missing bills, unadjusted advances, and TDS differences',
-          'Generating balance confirmation letters, calculating interest on overdue payments, and credit period aging monitoring',
-        ],
-        durationHours: 12,
+        "title": "Party Balance",
+        "description": "Sundry Debtors & Creditors aging analysis, bill-by-bill adjustment, balance confirmation statements, and dispute resolution."
       },
       {
-        id: 'mod-1-11',
-        title: 'Real-Time Stock View & Godown Inventory Management',
-        topics: [
-          'Tracking real-time item-wise, batch-wise, and category-wise inventory balances across multiple company godowns',
-          'Processing Stock Journal vouchers, godown-to-godown transfer entries, and Delivery Challans for job-work movements',
-          'Setting Minimum Reorder Levels (ROL), Reorder Quantities (ROQ), safety stocks, and identifying slow-moving / dead stock',
-          'Physical stock audit verification: Reconciling warehouse physical counts with book inventory and recording shortage/wastage journals',
-        ],
-        durationHours: 12,
-      },
+        "title": "Stock View",
+        "description": "Real-time item-wise and batch-wise stock views, multi-godown transfers, minimum reorder levels, and physical stock tally."
+      }
     ],
-    learningOutcomes: [
-      'Complete mastery over all 11 foundational accounts operator operations: daily transactions, sales billing, purchase feeding, revenue expenses, capital investment, CapEx, e-way bills, e-invoicing, transportation, party balance, and stock view',
-      'Independent capability to handle the sales billing and purchase feeding desks of any trading, wholesale, or manufacturing enterprise',
-      'Flawless real-time generation and compliance of government-mandated E-Way bills and B2B E-Invoices with IRN & QR codes',
-      'Accurate live management of cash book, bank accounts, vendor/customer ledgers with zero discrepancies, and real-time godown inventory tallies',
+    "modules": [
+      {
+        "id": "mod-1-1",
+        "title": "Day-to-Day Transactions & Cash/Bank Book Operations",
+        "topics": [
+          "Feeding daily voucher entries: Receipt (F6), Payment (F5), Journal (F7), and Contra (F4) in Tally Prime & Busy",
+          "Cash Book & Imprest management: Handling petty cash vouchers, daily physical cash verification, and negative cash alerts",
+          "Live banking entries: Accounting for NEFT, RTGS, IMPS, cheque issuances, stale cheques, and bank service charges",
+          "General Ledger scrutiny: Inspecting nominal accounts, closing cash in hand, and real-time trial balance balancing"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-1-2",
+        "title": "Sale Billing & Statutory GST Tax Invoicing",
+        "topics": [
+          "Generating statutory B2B, B2C Large, and B2C Small tax invoices with multi-item tax rates (5%, 12%, 18%, 28%)",
+          "HSN/SAC code determination and applying intra-state (CGST + SGST) versus inter-state (IGST) taxation rules",
+          "Trade discount mechanics, cash discounts, freight additions, round-off ledgers, and delivery challan conversions",
+          "Processing Credit Notes for sales returns, post-sale price adjustments, rate revisions, and damaged goods"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-1-3",
+        "title": "Purchase Feeding & Input Tax Credit (ITC) Management",
+        "topics": [
+          "Recording vendor raw material, trading goods, and expense bills against Purchase Orders (POs) and GRNs",
+          "Vendor invoice verification: Quantity checking, rate matching, item specification, and tax rate auditing",
+          "Input Tax Credit (ITC) eligibility scrutiny: Segregating eligible vs ineligible ITC under Section 17(5) and RCM purchases",
+          "Processing Debit Notes for purchase returns, short supply claims, quality rejections, and supplier discounts"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-1-4",
+        "title": "Revenue Expenditure & Operational Overhead Accounting",
+        "topics": [
+          "Identification and accounting for day-to-day business operational expenses (rent, electricity, stationery, legal fees, staff welfare)",
+          "Distinguishing Direct Expenses (factory/production impact on Gross Profit) vs Indirect Expenses (administrative overheads on Net Profit)",
+          "Month-end accrual adjustments: Booking outstanding expenses, prepaid insurance, and accrued expenses",
+          "Audit scrutiny to prevent improper capitalization and eliminate mixing of business expenses with personal drawings"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-1-5",
+        "title": "Capital Investment & Proprietor/Partner Equity Ledgers",
+        "topics": [
+          "Recording initial proprietor/partner capital infusion and subsequent bank fund transfers into the business entity",
+          "Maintaining Proprietor Capital Accounts, Partner Current Accounts, and Interest on Capital computations",
+          "Private Limited equity accounting: Share capital subscription, share allotment entries, and securities premium",
+          "Accounting for partner monthly drawings, profit distributions, and capital adjustments upon partner changes"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-1-6",
+        "title": "Capital Expenditure (CapEx) & Fixed Asset Accounting",
+        "topics": [
+          "Capitalization criteria: Accounting for acquisition of plant & machinery, commercial vehicles, IT hardware, and office fit-outs",
+          "Capitalizing incidental acquisition costs: Inward freight, transit insurance, erection/installation, and trial-run expenses",
+          "Maintaining physical Fixed Asset Register (FAR) with asset code, purchase date, invoice reference, and location tagging",
+          "Depreciation scheduling and booking entries under Companies Act (SLM/WDV) and Income Tax Block of Assets rules"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-1-7",
+        "title": "E-Way Bill Generation & In-Transit Compliance",
+        "topics": [
+          "Statutory applicability: Understanding the ₹50,000 consignment value threshold, exempted goods, and distance validity rules",
+          "Live government portal generation: Entering Part-A (Consignor, Consignee, Item, Tax) & Part-B (Transporter ID, Vehicle Number)",
+          "Handling multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and extending validity",
+          "E-Way bill cancellation workflows within 24 hours, consolidated E-Way bills, and preventing vehicle interception penalties under Section 129"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-1-8",
+        "title": "E-Invoice Generation, IRN & QR Code Compliance",
+        "topics": [
+          "Understanding the government e-invoicing mandate: Turnover applicability thresholds, B2B scope, and export transactions",
+          "ERP-to-IRP direct integration workflows: JSON payload schema generation and uploading to the Invoice Registration Portal",
+          "Generating unique 64-character Invoice Reference Number (IRN) and digitally signed cryptographic QR codes",
+          "Printing statutory e-invoices, e-invoice credit/debit notes, cancellation restrictions, and auto-population into GSTR-1"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-1-9",
+        "title": "Transportation Accounting, Lorry Receipts (LR) & GTA RCM",
+        "topics": [
+          "Booking Lorry Receipts (LR / Bilty), dispatch consignment notes, freight inward (landed cost), and freight outward (selling cost)",
+          "Transporter ledger management: Verifying trip-wise freight bills, loading/unloading charges, and detention claim deductions",
+          "Goods Transport Agency (GTA) tax compliance: Reverse Charge Mechanism (5% RCM without ITC) vs 12% Forward Charge",
+          "Tax Deducted at Source (TDS) on transporter contracts under Section 194C, Form 15H/15G declarations, and PAN validation"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-1-10",
+        "title": "Party Balance Scrutiny & Ledger Reconciliation",
+        "topics": [
+          "Scrutinizing Sundry Debtors (customer receivables) and Sundry Creditors (vendor payables) running ledger balances",
+          "Bill-by-bill reference matching in software: Advance, Against Reference (Agst Ref), New Reference, and On Account adjustments",
+          "Preparing periodic Party Ledger Reconciliation statements to identify missing bills, unadjusted advances, and TDS differences",
+          "Generating balance confirmation letters, calculating interest on overdue payments, and credit period aging monitoring"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-1-11",
+        "title": "Real-Time Stock View & Godown Inventory Management",
+        "topics": [
+          "Tracking real-time item-wise, batch-wise, and category-wise inventory balances across multiple company godowns",
+          "Processing Stock Journal vouchers, godown-to-godown transfer entries, and Delivery Challans for job-work movements",
+          "Setting Minimum Reorder Levels (ROL), Reorder Quantities (ROQ), safety stocks, and identifying slow-moving / dead stock",
+          "Physical stock audit verification: Reconciling warehouse physical counts with book inventory and recording shortage/wastage journals"
+        ],
+        "durationHours": 12
+      }
     ],
-    seoTitle: 'Business Operations Course | Practical Accounting Training Jaipur | YLCC',
-    seoDescription:
-      'Learn live business accounting entries, sales billing, purchase registers, E-way bill, E-invoicing, and ledger reconciliations at YLCC Jaipur.',
+    "learningOutcomes": [
+      "Complete mastery over all 11 foundational accounts operator operations: daily transactions, sales billing, purchase feeding, revenue expenses, capital investment, CapEx, e-way bills, e-invoicing, transportation, party balance, and stock view",
+      "Independent capability to handle the sales billing and purchase feeding desks of any trading, wholesale, or manufacturing enterprise",
+      "Flawless real-time generation and compliance of government-mandated E-Way bills and B2B E-Invoices with IRN & QR codes",
+      "Accurate live management of cash book, bank accounts, vendor/customer ledgers with zero discrepancies, and real-time godown inventory tallies"
+    ],
+    "seoTitle": "Business Operations Course | Practical Accounting Training Jaipur | YLCC",
+    "seoDescription": "Learn live business accounting entries, sales billing, purchase registers, E-way bill, E-invoicing, and ledger reconciliations at YLCC Jaipur."
   },
-{
-    id: "prog-2",
-    slug: "accounts-manager",
-    title: "Accounts Manager Professional Program",
-    category: "Accounts Manager & Audit",
-    shortDescription: "Supervise books of accounts, control debtors/creditors cycles, monitor sales teams, conduct monthly internal audits, and prepare annual income-tax audits.",
-    detailedDescription: "Designed for senior accountants, commerce graduates, and entrepreneurs, the Accounts Manager program prepares you to lead an accounting department. You learn how to scrutinize books of accounts on a live basis, implement strict credit control on debtors cycles, track supplier payment aging, conduct monthly internal accounting audits, inspect negative cash and stock balances, and prepare finalized financial statements for annual income-tax audit filings.",
-    duration: "3 Months",
-    mode: "Offline Classroom",
-    fees: 21000,
-    discountedFees: 16999,
-    eligibility: "B.Com, M.Com, MBA Finance, or 1+ Year Experience in basic accounting",
-    softwareTools: ["Tally Prime Multi-User", "Excel 365 MIS", "Income Tax Filing Utility", "Audit Automation Sheets"],
-    facultyId: "fac-1",
-    facultyName: "CA Alok Maheshwari (Senior CA)",
-    batchTiming: "Morning: 10:30 AM – 12:30 PM | Weekend Executive Batch",
-    availableSeats: 5,
-    startDate: "1st of Every Month",
-    brochureUrl: "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
-    certificateInfo: "YLCC Executive Accounts Management Diploma with Audit Capstone Review",
-    isFeatured: true,
-    status: "published",
-    displayOrder: 2,
-    modules: [
-      {
-        id: "mod-2-1",
-        title: "Checking All Feeding Day-to-Day on Live Basis",
-        topics: ["Live monitoring and audit of day-to-day voucher feeding (Receipt F6, Payment F5, Journal F7, Contra F4)", "Scrutinizing primary supporting bills, purchase orders, approval signatures, and tax invoices before posting", "Detecting and rectifying ledger classification errors and cost center allocation discrepancies in real time", "Enforcing desk-level accounting SOPs to ensure 100% voucher integrity and zero backlogs"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-2",
-        title: "Accounts Book Monitoring & General Ledger Scrutiny",
-        topics: ["Continuous supervisory review of Cash Book, Bank Books, Purchase/Sale Registers, and General Ledgers", "Scrutiny of nominal accounts, administrative overheads, and identifying unusual or unauthorized transactions", "Detecting and clearing suspense account balances, unexplained journal vouchers, and reconciliation differences", "Live balancing of the Trial Balance to ensure complete debit-credit equilibrium"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-3",
-        title: "Debtors Cycle & Collection Period-Wise Tracking",
-        topics: ["Debtors aging schedule analysis: 0–30 days, 31–60 days, 61–90 days, and 90+ days overdue buckets", "Establishing and enforcing customer credit limits, payment terms, and supply-stop flags for overdue accounts", "Bill-by-bill outstanding reconciliation and issuing automated periodic debtor balance confirmation letters", "Designing collection follow-up workflows and escalation matrices to eliminate bad debt risk"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-4",
-        title: "Suppliers Cycle & Payment Schedule Optimization",
-        topics: ["Tracking vendor credit terms, aging schedules, and projecting weekly/monthly outward cash flow requirements", "Capturing early payment cash discounts, optimizing working capital liquidity, and avoiding interest penalties", "Three-way matching: verifying Purchase Order (PO), Goods Receipt Note (GRN), and Vendor Tax Invoice", "Managing vendor billing disputes, debit note deductions, and conducting monthly balance reconciliations"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-5",
-        title: "Firm Legal Matters, Commercial Contracts & Settlements",
-        topics: ["Reviewing commercial sales contracts, vendor supply agreements, tenancy/lease deeds, and NDAs", "Drafting formal legal demand notices under Section 138 of the Negotiable Instruments Act for dishonored cheques", "Managing commercial dispute resolutions, settlement deeds, and arbitration documentation", "Maintaining statutory compliance registers, legal expense ledgers, and litigation contingency notes"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-6",
-        title: "Sales Team Monitoring (Sale & Collection Recovery)",
-        topics: ["Tracking sales team performance: assigned billing targets versus actual achievement", "Monitoring live payment recovery and collection efficiency for each sales executive", "Computing monthly sales commissions, performance incentives, and overdue penalty holdbacks", "Generating sales management MIS reports: executive-wise sales velocity, average recovery days, and default rates"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-7",
-        title: "Stock Reporting (Item-Wise, Brand-Wise & Category-Wise)",
-        topics: ["Generating multi-dimensional inventory MIS reports classified item-wise, brand-wise, and category-wise", "Calculating gross profit margins and profitability contribution by brand and SKU", "Stock velocity classification: fast-moving, steady, slow-moving, and dormant inventory lines", "Multi-godown stock visibility, inter-branch transfer valuation, and reorder level monitoring"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-8",
-        title: "Monthly Account Internal Audit & Variance Detection",
-        topics: ["Conducting comprehensive 25-point monthly internal accounting audit across all ledger heads", "Detecting revenue leakages, unrecorded liabilities, duplicate vendor payments, and cash misappropriations", "Budget versus actual expense variance analysis, identifying cost overrun centers and operational inefficiencies", "Drafting internal audit observation memos and actionable management recommendations"],
-        durationHours: 10,
-      },
-      {
-        id: "mod-2-9",
-        title: "Yearly Income Tax Audit Preparation (Form 3CD Documentation)",
-        topics: ["Year-end financial finalization of books of accounts for corporate entities and partnership firms", "Compiling schedules required for statutory Tax Audit under Section 44AB of the Income Tax Act", "Preparing Form 3CD annexures: Section 40(a)(ia) TDS non-deduction, Section 43B statutory dues, Section 269SS/T", "Fixed asset block-wise depreciation calculation under Section 32 of Income Tax Act vs Companies Act"],
-        durationHours: 10,
-      },
-      {
-        id: "mod-2-10",
-        title: "Age-Wise Inventory Control & Dead Stock Liquidation",
-        topics: ["Inventory aging analysis: tracking stock holding duration (0–30, 31–60, 61–90, 91–180, 180+ days)", "Identifying non-moving, obsolete, damaged, and dead stock items in central warehouse and retail godowns", "Computing inventory carrying costs, capital blockage, and insurance holding expenses", "Formulating dead stock liquidation strategies, scrap salvage valuations, and accounting write-down entries"],
-        durationHours: 8,
-      },
-      {
-        id: "mod-2-11",
-        title: "Negative Ledger & Cash Balance Surveillance",
-        topics: ["Configuring automated negative cash balance warnings and executing daily physical cash vs book cash reconciliations", "Detecting negative inventory balances resulting from dispatch billing before purchase entry feeding", "Investigating abnormal credit balances in Sundry Debtors and abnormal debit balances in Sundry Creditors", "Executing rectification entries and instituting preventive accounting controls"],
-        durationHours: 6,
-      },
+  {
+    "id": "prog-2",
+    "slug": "accounts-manager",
+    "title": "Accounts Manager Professional Program",
+    "category": "Accounts Manager & Audit",
+    "shortDescription": "Supervise books of accounts, control debtors/creditors cycles, monitor sales teams, conduct monthly internal audits, and prepare annual income-tax audits.",
+    "detailedDescription": "Designed for senior accountants, commerce graduates, and entrepreneurs, the Accounts Manager program prepares you to lead an accounting department. You learn how to scrutinize books of accounts on a live basis, implement strict credit control on debtors cycles, track supplier payment aging, conduct monthly internal accounting audits, inspect negative cash and stock balances, and prepare finalized financial statements for annual income-tax audit filings.",
+    "duration": "3 Months",
+    "mode": "Offline Classroom",
+    "fees": 21000,
+    "discountedFees": 16999,
+    "eligibility": "B.Com, M.Com, MBA Finance, or 1+ Year Experience in basic accounting",
+    "softwareTools": [
+      "Tally Prime Multi-User",
+      "Excel 365 MIS",
+      "Income Tax Filing Utility",
+      "Audit Automation Sheets"
     ],
-    learningOutcomes: ["Complete executive mastery over all 11 core accounts manager responsibilities: live voucher scrutiny, books monitoring, debtor/supplier cycles, legal contracts, sales team tracking, multi-dimensional stock reports, internal audit, tax audit Form 3CD, age-wise inventory control, and negative ledger prevention", "Confidence to independently lead the accounts department of MSMEs, trading firms, and corporate enterprises", "Authority to implement strict credit control and working capital optimization across customer and vendor aging schedules", "Full proficiency in executing monthly internal accounting audits to eliminate financial leakages and ensure statutory tax audit readiness"],
-    seoTitle: "Accounts Manager Training | Internal Audit & Debtors Cycle | YLCC",
-    seoDescription: "Executive course for Accounts Managers. Master books scrutiny, debtor collection cycles, monthly internal audits, and income tax audit preparation.",
-    coreCompetenciesHeading: '11 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Executive-level monitoring, book scrutiny, debtor collection cycles, and statutory tax audit readiness.',
-    coreCompetencies: [
+    "facultyId": "fac-1",
+    "facultyName": "CA Alok Maheshwari (Senior CA)",
+    "batchTiming": "Morning: 10:30 AM – 12:30 PM | Weekend Executive Batch",
+    "availableSeats": 5,
+    "startDate": "1st of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+    "certificateInfo": "YLCC Executive Accounts Management Diploma with Audit Capstone Review",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 2,
+    "modules": [
       {
-        title: "Checking Live Voucher Feeding",
-        description: "Live day-to-day checking and scrutiny of all voucher entries (Receipt, Payment, Journal, Contra) on an active monitoring basis.",
+        "id": "mod-2-1",
+        "title": "Checking All Feeding Day-to-Day on Live Basis",
+        "topics": [
+          "Live monitoring and audit of day-to-day voucher feeding (Receipt F6, Payment F5, Journal F7, Contra F4)",
+          "Scrutinizing primary supporting bills, purchase orders, approval signatures, and tax invoices before posting",
+          "Detecting and rectifying ledger classification errors and cost center allocation discrepancies in real time",
+          "Enforcing desk-level accounting SOPs to ensure 100% voucher integrity and zero backlogs"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Accounts Book Monitor",
-        description: "Daily monitoring and scrutiny of Cash Book, Bank Books, Day Books, and General Ledgers for zero suspense and real-time trial balance balancing.",
+        "id": "mod-2-2",
+        "title": "Accounts Book Monitoring & General Ledger Scrutiny",
+        "topics": [
+          "Continuous supervisory review of Cash Book, Bank Books, Purchase/Sale Registers, and General Ledgers",
+          "Scrutiny of nominal accounts, administrative overheads, and identifying unusual or unauthorized transactions",
+          "Detecting and clearing suspense account balances, unexplained journal vouchers, and reconciliation differences",
+          "Live balancing of the Trial Balance to ensure complete debit-credit equilibrium"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Debtors Cycle & Collection",
-        description: "Tracking debtor collection periods (30, 60, 90+ days), setting client credit limits, bill-by-bill reconciliation, and accelerating recovery.",
+        "id": "mod-2-3",
+        "title": "Debtors Cycle & Collection Period-Wise Tracking",
+        "topics": [
+          "Debtors aging schedule analysis: 0–30 days, 31–60 days, 61–90 days, and 90+ days overdue buckets",
+          "Establishing and enforcing customer credit limits, payment terms, and supply-stop flags for overdue accounts",
+          "Bill-by-bill outstanding reconciliation and issuing automated periodic debtor balance confirmation letters",
+          "Designing collection follow-up workflows and escalation matrices to eliminate bad debt risk"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Suppliers Cycle & Payments",
-        description: "Managing supplier credit periods, tracking payment aging schedules, optimizing cash outflows, and securing prompt payment cash discounts.",
+        "id": "mod-2-4",
+        "title": "Suppliers Cycle & Payment Schedule Optimization",
+        "topics": [
+          "Tracking vendor credit terms, aging schedules, and projecting weekly/monthly outward cash flow requirements",
+          "Capturing early payment cash discounts, optimizing working capital liquidity, and avoiding interest penalties",
+          "Three-way matching: verifying Purchase Order (PO), Goods Receipt Note (GRN), and Vendor Tax Invoice",
+          "Managing vendor billing disputes, debit note deductions, and conducting monthly balance reconciliations"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Firm Legal Matters",
-        description: "Supervising commercial contracts, vendor agreements, rent/lease documentation, statutory legal notice compliance, and dispute settlements.",
+        "id": "mod-2-5",
+        "title": "Firm Legal Matters, Commercial Contracts & Settlements",
+        "topics": [
+          "Reviewing commercial sales contracts, vendor supply agreements, tenancy/lease deeds, and NDAs",
+          "Drafting formal legal demand notices under Section 138 of the Negotiable Instruments Act for dishonored cheques",
+          "Managing commercial dispute resolutions, settlement deeds, and arbitration documentation",
+          "Maintaining statutory compliance registers, legal expense ledgers, and litigation contingency notes"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Sales Team Monitoring",
-        description: "Supervising sales executive targets vs actual billings, tracking live collection recovery per salesperson, and calculating sales commissions.",
+        "id": "mod-2-6",
+        "title": "Sales Team Monitoring (Sale & Collection Recovery)",
+        "topics": [
+          "Tracking sales team performance: assigned billing targets versus actual achievement",
+          "Monitoring live payment recovery and collection efficiency for each sales executive",
+          "Computing monthly sales commissions, performance incentives, and overdue penalty holdbacks",
+          "Generating sales management MIS reports: executive-wise sales velocity, average recovery days, and default rates"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Stock Reporting",
-        description: "Generating multi-dimensional inventory reports filtered item-wise, brand-wise, and category-wise with gross margin profitability analysis.",
+        "id": "mod-2-7",
+        "title": "Stock Reporting (Item-Wise, Brand-Wise & Category-Wise)",
+        "topics": [
+          "Generating multi-dimensional inventory MIS reports classified item-wise, brand-wise, and category-wise",
+          "Calculating gross profit margins and profitability contribution by brand and SKU",
+          "Stock velocity classification: fast-moving, steady, slow-moving, and dormant inventory lines",
+          "Multi-godown stock visibility, inter-branch transfer valuation, and reorder level monitoring"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Monthly Internal Audit",
-        description: "Executing systematic monthly internal accounting audit checklists, expense variance detection, and internal control verification.",
+        "id": "mod-2-8",
+        "title": "Monthly Account Internal Audit & Variance Detection",
+        "topics": [
+          "Conducting comprehensive 25-point monthly internal accounting audit across all ledger heads",
+          "Detecting revenue leakages, unrecorded liabilities, duplicate vendor payments, and cash misappropriations",
+          "Budget versus actual expense variance analysis, identifying cost overrun centers and operational inefficiencies",
+          "Drafting internal audit observation memos and actionable management recommendations"
+        ],
+        "durationHours": 10
       },
       {
-        title: "Yearly Income Tax Audit",
-        description: "Year-end financial finalization of books, preparing schedules for Section 44AB Tax Audit, and compiling Form 3CD documentation.",
+        "id": "mod-2-9",
+        "title": "Yearly Income Tax Audit Preparation (Form 3CD Documentation)",
+        "topics": [
+          "Year-end financial finalization of books of accounts for corporate entities and partnership firms",
+          "Compiling schedules required for statutory Tax Audit under Section 44AB of the Income Tax Act",
+          "Preparing Form 3CD annexures: Section 40(a)(ia) TDS non-deduction, Section 43B statutory dues, Section 269SS/T",
+          "Fixed asset block-wise depreciation calculation under Section 32 of Income Tax Act vs Companies Act"
+        ],
+        "durationHours": 10
       },
       {
-        title: "Inventory Control Age-Wise",
-        description: "Classifying warehouse stock by aging brackets, identifying slow-moving and dead stock, and optimizing working capital turnover.",
+        "id": "mod-2-10",
+        "title": "Age-Wise Inventory Control & Dead Stock Liquidation",
+        "topics": [
+          "Inventory aging analysis: tracking stock holding duration (0–30, 31–60, 61–90, 91–180, 180+ days)",
+          "Identifying non-moving, obsolete, damaged, and dead stock items in central warehouse and retail godowns",
+          "Computing inventory carrying costs, capital blockage, and insurance holding expenses",
+          "Formulating dead stock liquidation strategies, scrap salvage valuations, and accounting write-down entries"
+        ],
+        "durationHours": 8
       },
       {
-        title: "Negative Ledger Monitoring",
-        description: "Real-time surveillance of negative cash balance alerts, negative stock quantities, and abnormal credit balances in asset accounts.",
-      },
+        "id": "mod-2-11",
+        "title": "Negative Ledger & Cash Balance Surveillance",
+        "topics": [
+          "Configuring automated negative cash balance warnings and executing daily physical cash vs book cash reconciliations",
+          "Detecting negative inventory balances resulting from dispatch billing before purchase entry feeding",
+          "Investigating abnormal credit balances in Sundry Debtors and abnormal debit balances in Sundry Creditors",
+          "Executing rectification entries and instituting preventive accounting controls"
+        ],
+        "durationHours": 6
+      }
     ],
+    "learningOutcomes": [
+      "Complete executive mastery over all 11 core accounts manager responsibilities: live voucher scrutiny, books monitoring, debtor/supplier cycles, legal contracts, sales team tracking, multi-dimensional stock reports, internal audit, tax audit Form 3CD, age-wise inventory control, and negative ledger prevention",
+      "Confidence to independently lead the accounts department of MSMEs, trading firms, and corporate enterprises",
+      "Authority to implement strict credit control and working capital optimization across customer and vendor aging schedules",
+      "Full proficiency in executing monthly internal accounting audits to eliminate financial leakages and ensure statutory tax audit readiness"
+    ],
+    "seoTitle": "Accounts Manager Training | Internal Audit & Debtors Cycle | YLCC",
+    "seoDescription": "Executive course for Accounts Managers. Master books scrutiny, debtor collection cycles, monthly internal audits, and income tax audit preparation.",
+    "coreCompetenciesHeading": "11 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Executive-level monitoring, book scrutiny, debtor collection cycles, and statutory tax audit readiness.",
+    "coreCompetencies": [
+      {
+        "title": "Checking Live Voucher Feeding",
+        "description": "Live day-to-day checking and scrutiny of all voucher entries (Receipt, Payment, Journal, Contra) on an active monitoring basis."
+      },
+      {
+        "title": "Accounts Book Monitor",
+        "description": "Daily monitoring and scrutiny of Cash Book, Bank Books, Day Books, and General Ledgers for zero suspense and real-time trial balance balancing."
+      },
+      {
+        "title": "Debtors Cycle & Collection",
+        "description": "Tracking debtor collection periods (30, 60, 90+ days), setting client credit limits, bill-by-bill reconciliation, and accelerating recovery."
+      },
+      {
+        "title": "Suppliers Cycle & Payments",
+        "description": "Managing supplier credit periods, tracking payment aging schedules, optimizing cash outflows, and securing prompt payment cash discounts."
+      },
+      {
+        "title": "Firm Legal Matters",
+        "description": "Supervising commercial contracts, vendor agreements, rent/lease documentation, statutory legal notice compliance, and dispute settlements."
+      },
+      {
+        "title": "Sales Team Monitoring",
+        "description": "Supervising sales executive targets vs actual billings, tracking live collection recovery per salesperson, and calculating sales commissions."
+      },
+      {
+        "title": "Stock Reporting",
+        "description": "Generating multi-dimensional inventory reports filtered item-wise, brand-wise, and category-wise with gross margin profitability analysis."
+      },
+      {
+        "title": "Monthly Internal Audit",
+        "description": "Executing systematic monthly internal accounting audit checklists, expense variance detection, and internal control verification."
+      },
+      {
+        "title": "Yearly Income Tax Audit",
+        "description": "Year-end financial finalization of books, preparing schedules for Section 44AB Tax Audit, and compiling Form 3CD documentation."
+      },
+      {
+        "title": "Inventory Control Age-Wise",
+        "description": "Classifying warehouse stock by aging brackets, identifying slow-moving and dead stock, and optimizing working capital turnover."
+      },
+      {
+        "title": "Negative Ledger Monitoring",
+        "description": "Real-time surveillance of negative cash balance alerts, negative stock quantities, and abnormal credit balances in asset accounts."
+      }
+    ]
   },
-{
-    id: 'prog-3',
-    slug: 'banking-operations-credit-limits',
-    title: 'Banking Operations, CC Limits & CMA Preparation',
-    category: 'Banking & Financial Documentation',
-    shortDescription:
-      'Prepare comprehensive bank limit documents (CC/OD limits), monthly drawing power (DP) calculations, stock statements, and projected balance sheets.',
-    detailedDescription:
-      'Every expanding business relies on commercial bank funding—Cash Credit (CC) limits, Overdraft (OD) limits, and Working Capital term loans. This specialized course trains you in the exact banking paperwork demanded by nationalized and private banks. You will prepare bank loan sanction dossiers, compute monthly Drawing Power (DP) statements with margin deduction, compile CMA data (Credit Monitoring Arrangement), and prepare projected Balance Sheets and Profit & Loss statements for limit renewals.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 16000,
-    discountedFees: 12499,
-    eligibility: 'Commerce graduates, accountants, finance executives, business owners',
-    softwareTools: ['Banking CMA Modeling Sheets', 'Excel 365 Financials', 'Tally Prime Financial Statements'],
-    facultyId: 'fac-2',
-    facultyName: 'Rajesh Soni (Ex-Banking Documentation Head)',
-    batchTiming: 'Evening: 6:00 PM – 8:00 PM | Saturday & Sunday Special Batch',
-    availableSeats: 8,
-    startDate: '10th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Banking-GST.pdf',
-    certificateInfo: 'YLCC Certified Commercial Banking & Credit Documentation Specialist',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 3,
-    coreCompetenciesHeading: '3 Core Banking Operations & Credit Limit Pillars You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical desk execution covering fresh limit sanction dossiers, monthly drawing power submissions, and annual renewal CMA projections.',
-    coreCompetencies: [
-      {
-        title: 'Limit Taking Documents Preparation',
-        description:
-          'End-to-end dossier preparation for fresh Cash Credit (CC), Overdraft (OD) & Term Loan sanctions: compiling KYC dossiers, Net Worth certificates, business profiles, collateral mortgage deeds, hypothecation agreements, CIBIL reports, and sanction checklist compliance.',
-      },
-      {
-        title: 'Monthly Bank Submission (Drawing Power Maintain)',
-        description:
-          'Preparing monthly Bank Stock Statements with 25% paid-stock margin deduction, Sundry Debtors aging scrutiny (< 90 days criteria) with 40% margin, and computing Drawing Power (DP) formula to prevent bank limit freezing and penal interest.',
-      },
-      {
-        title: 'Limit Renewal Preparation (Projected Balance Sheet)',
-        description:
-          'Preparation of 12-page CMA (Credit Monitoring Arrangement) data (Forms I–VI), formulating 3-year projected Balance Sheets and Profit & Loss statements, Current Ratio (≥ 1.33) and DSCR compliance, and handling bank credit queries.',
-      },
+  {
+    "id": "prog-3",
+    "slug": "banking-operations-credit-limits",
+    "title": "Banking Operations, CC Limits & CMA Preparation",
+    "category": "Banking & Financial Documentation",
+    "shortDescription": "Prepare comprehensive bank limit documents (CC/OD limits), monthly drawing power (DP) calculations, stock statements, and projected balance sheets.",
+    "detailedDescription": "Every expanding business relies on commercial bank funding—Cash Credit (CC) limits, Overdraft (OD) limits, and Working Capital term loans. This specialized course trains you in the exact banking paperwork demanded by nationalized and private banks. You will prepare bank loan sanction dossiers, compute monthly Drawing Power (DP) statements with margin deduction, compile CMA data (Credit Monitoring Arrangement), and prepare projected Balance Sheets and Profit & Loss statements for limit renewals.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 16000,
+    "discountedFees": 12499,
+    "eligibility": "Commerce graduates, accountants, finance executives, business owners",
+    "softwareTools": [
+      "Banking CMA Modeling Sheets",
+      "Excel 365 Financials",
+      "Tally Prime Financial Statements"
     ],
-    modules: [
+    "facultyId": "fac-2",
+    "facultyName": "Rajesh Soni (Ex-Banking Documentation Head)",
+    "batchTiming": "Evening: 6:00 PM – 8:00 PM | Saturday & Sunday Special Batch",
+    "availableSeats": 8,
+    "startDate": "10th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+    "certificateInfo": "YLCC Certified Commercial Banking & Credit Documentation Specialist",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 3,
+    "coreCompetenciesHeading": "3 Core Banking Operations & Credit Limit Pillars You Master",
+    "coreCompetenciesSubheading": "Hands-on practical desk execution covering fresh limit sanction dossiers, monthly drawing power submissions, and annual renewal CMA projections.",
+    "coreCompetencies": [
       {
-        id: 'mod-3-1',
-        title: 'Limit Taking Documents Preparation & Bank Sanctions',
-        topics: [
-          'Understanding Cash Credit (CC), Overdraft (OD), and Term Loan sanction mechanisms',
-          'Complete document checklist & dossier compilation for fresh bank limit sanction applications',
-          'Collateral security documentation, hypothecation deeds, primary charge, and guarantor affidavits',
-          'KYC, Net Worth certificates, and financial benchmark verification required by bank credit officers',
-        ],
-        durationHours: 15,
+        "title": "Limit Taking Documents Preparation",
+        "description": "End-to-end dossier preparation for fresh Cash Credit (CC), Overdraft (OD) & Term Loan sanctions: compiling KYC dossiers, Net Worth certificates, business profiles, collateral mortgage deeds, hypothecation agreements, CIBIL reports, and sanction checklist compliance."
       },
       {
-        id: 'mod-3-2',
-        title: 'Monthly Document Submission for Drawing Power (DP) Maintenance',
-        topics: [
-          'Drawing Power (DP) formula calculation: Paid Stock + Eligible Book Debts minus Margin deduction',
-          'Drafting and validating monthly Bank Stock Statements in bank-prescribed formats',
-          'Debtors aging scrutiny for DP eligibility (less than 90 days criteria and creditor deductions)',
-          'Bank stock inspection readiness, stock physical verification reconciliation, and penal interest safeguards',
-        ],
-        durationHours: 18,
+        "title": "Monthly Bank Submission (Drawing Power Maintain)",
+        "description": "Preparing monthly Bank Stock Statements with 25% paid-stock margin deduction, Sundry Debtors aging scrutiny (< 90 days criteria) with 40% margin, and computing Drawing Power (DP) formula to prevent bank limit freezing and penal interest."
       },
       {
-        id: 'mod-3-3',
-        title: 'Limit Renewal Preparation & Projected Balance Sheet Submission (CMA Data)',
-        topics: [
-          'Preparation of 12-page CMA format (Operating statement, balance sheet analysis, fund flow, and working capital gap)',
-          'Drafting Projected Balance Sheet & Profit & Loss statements for annual bank limit renewals',
-          'Current Ratio (≥ 1.33 benchmark), Debt-Equity Ratio, and DSCR computation and compliance',
-          'Handling bank query letters, responding to credit committee observations, and limit enhancement proposals',
-        ],
-        durationHours: 17,
-      },
+        "title": "Limit Renewal Preparation (Projected Balance Sheet)",
+        "description": "Preparation of 12-page CMA (Credit Monitoring Arrangement) data (Forms I–VI), formulating 3-year projected Balance Sheets and Profit & Loss statements, Current Ratio (≥ 1.33) and DSCR compliance, and handling bank credit queries."
+      }
     ],
-    learningOutcomes: [
-      'Ability to independently prepare monthly bank stock and book-debt statements for DP maintenance',
-      'End-to-end preparation of CMA reports for bank loan applications and limit enhancements',
-      'Mastery of projected financial statements aligned with banking credit evaluation criteria',
-      'High-demand skills for consulting MSMEs seeking commercial bank limits',
+    "modules": [
+      {
+        "id": "mod-3-1",
+        "title": "Limit Taking Documents Preparation & Bank Sanctions",
+        "topics": [
+          "Understanding Cash Credit (CC), Overdraft (OD), and Term Loan sanction mechanisms",
+          "Complete document checklist & dossier compilation for fresh bank limit sanction applications",
+          "Collateral security documentation, hypothecation deeds, primary charge, and guarantor affidavits",
+          "KYC, Net Worth certificates, and financial benchmark verification required by bank credit officers"
+        ],
+        "durationHours": 15
+      },
+      {
+        "id": "mod-3-2",
+        "title": "Monthly Document Submission for Drawing Power (DP) Maintenance",
+        "topics": [
+          "Drawing Power (DP) formula calculation: Paid Stock + Eligible Book Debts minus Margin deduction",
+          "Drafting and validating monthly Bank Stock Statements in bank-prescribed formats",
+          "Debtors aging scrutiny for DP eligibility (less than 90 days criteria and creditor deductions)",
+          "Bank stock inspection readiness, stock physical verification reconciliation, and penal interest safeguards"
+        ],
+        "durationHours": 18
+      },
+      {
+        "id": "mod-3-3",
+        "title": "Limit Renewal Preparation & Projected Balance Sheet Submission (CMA Data)",
+        "topics": [
+          "Preparation of 12-page CMA format (Operating statement, balance sheet analysis, fund flow, and working capital gap)",
+          "Drafting Projected Balance Sheet & Profit & Loss statements for annual bank limit renewals",
+          "Current Ratio (≥ 1.33 benchmark), Debt-Equity Ratio, and DSCR computation and compliance",
+          "Handling bank query letters, responding to credit committee observations, and limit enhancement proposals"
+        ],
+        "durationHours": 17
+      }
     ],
-    seoTitle: 'Bank CC Limit & CMA Training | Drawing Power & Stock Statements | YLCC',
-    seoDescription:
-      'Learn bank limit documentation, monthly Drawing Power calculation, stock statements, CMA data preparation, and projected balance sheets at YLCC.',
+    "learningOutcomes": [
+      "Ability to independently prepare monthly bank stock and book-debt statements for DP maintenance",
+      "End-to-end preparation of CMA reports for bank loan applications and limit enhancements",
+      "Mastery of projected financial statements aligned with banking credit evaluation criteria",
+      "High-demand skills for consulting MSMEs seeking commercial bank limits"
+    ],
+    "seoTitle": "Bank CC Limit & CMA Training | Drawing Power & Stock Statements | YLCC",
+    "seoDescription": "Learn bank limit documentation, monthly Drawing Power calculation, stock statements, CMA data preparation, and projected balance sheets at YLCC."
   },
-{
-    id: 'prog-10',
-    slug: 'logistics-transport-management',
-    title: 'LOGISTICS',
-    category: 'Logistics & Transport Management',
-    shortDescription:
-      'Master end-to-end transport accounting: Transporter Hisab (fleet expense settlements), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.',
-    detailedDescription:
-      'Transport and logistics businesses handle thousands of inter-state trips with cash advances, fuel slips, toll charges, and broker commissions. This practical masterclass trains you across all 3 core pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 12500,
-    discountedFees: 9999,
-    eligibility: 'Open to commerce students, accountants, fleet managers, and working logistics professionals',
-    softwareTools: [
-      'Tally Prime 4.0',
-      'Logistics Fuel & Mileage Excel Tool',
-      'Fastag & Fleet Portal',
-      'GST & E-Way Bill Simulator',
+  {
+    "id": "prog-10",
+    "slug": "logistics-transport-management",
+    "title": "LOGISTICS",
+    "category": "Logistics & Transport Management",
+    "shortDescription": "Master end-to-end transport accounting: Transporter Hisab (fleet expense settlements), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.",
+    "detailedDescription": "Transport and logistics businesses handle thousands of inter-state trips with cash advances, fuel slips, toll charges, and broker commissions. This practical masterclass trains you across all 3 core pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 12500,
+    "discountedFees": 9999,
+    "eligibility": "Open to commerce students, accountants, fleet managers, and working logistics professionals",
+    "softwareTools": [
+      "Tally Prime 4.0",
+      "Logistics Fuel & Mileage Excel Tool",
+      "Fastag & Fleet Portal",
+      "GST & E-Way Bill Simulator"
     ],
-    facultyId: 'fac-2',
-    facultyName: 'Rajesh Soni (Head of Accounting & Banking Operations)',
-    batchTiming: 'Morning: 8:00 AM – 9:30 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
-    availableSeats: 10,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-    certificateInfo: 'YLCC Certified Logistics & Fleet Accounting Specialist',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 4,
-    coreCompetenciesHeading: '3 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical desk execution covering Transporter Hisab, Consignment Tracking, and City-Wise Transport Monitoring.',
-    coreCompetencies: [
+    "facultyId": "fac-2",
+    "facultyName": "Rajesh Soni (Head of Accounting & Banking Operations)",
+    "batchTiming": "Morning: 8:00 AM – 9:30 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+    "availableSeats": 10,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+    "certificateInfo": "YLCC Certified Logistics & Fleet Accounting Specialist",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 4,
+    "coreCompetenciesHeading": "3 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical desk execution covering Transporter Hisab, Consignment Tracking, and City-Wise Transport Monitoring.",
+    "coreCompetencies": [
       {
-        title: 'Transportor Hisab',
-        description:
-          'Reconciling driver trip cash advances, diesel consumption, Fastag tolls, broker commissions, and final trip profit & loss statements.',
+        "title": "Transportor Hisab",
+        "description": "Reconciling driver trip cash advances, diesel consumption, Fastag tolls, broker commissions, and final trip profit & loss statements."
       },
       {
-        title: 'Consignment Track',
-        description:
-          'Tracking consignment notes (Bilty/LR) from dispatch to delivery, recording billing weights, demurrage charges, and Proof of Delivery (POD) monitoring.',
+        "title": "Consignment Track",
+        "description": "Tracking consignment notes (Bilty/LR) from dispatch to delivery, recording billing weights, demurrage charges, and Proof of Delivery (POD) monitoring."
       },
       {
-        title: 'City Wise Transport Tracking',
-        description:
-          'Route-wise freight ledger monitoring across major industrial corridors (Delhi, Mumbai, Jaipur), city delivery schedules, and vehicle running cost per km.',
-      },
+        "title": "City Wise Transport Tracking",
+        "description": "Route-wise freight ledger monitoring across major industrial corridors (Delhi, Mumbai, Jaipur), city delivery schedules, and vehicle running cost per km."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-10-1',
-        title: 'Transportor Hisab',
-        topics: [
-          'Driver trip cash advance disbursements and trip voucher settlement registers',
-          'Diesel consumption mileage audit, fleet fuel card swipes, and bulk fuel tank reconciliation',
-          'Fastag toll charges tracking, en-route cash disbursements, and vehicle maintenance logs',
-          'Transporter freight payment settlement, owner-operator ledger balancing, and broker commissions',
+        "id": "mod-10-1",
+        "title": "Transportor Hisab",
+        "topics": [
+          "Driver trip cash advance disbursements and trip voucher settlement registers",
+          "Diesel consumption mileage audit, fleet fuel card swipes, and bulk fuel tank reconciliation",
+          "Fastag toll charges tracking, en-route cash disbursements, and vehicle maintenance logs",
+          "Transporter freight payment settlement, owner-operator ledger balancing, and broker commissions"
         ],
-        durationHours: 15,
+        "durationHours": 15
       },
       {
-        id: 'mod-10-2',
-        title: 'Consignment Track',
-        topics: [
-          'Inward and outward Consignment Note (Bilty / Lorry Receipt) generation and register maintenance',
-          'Recording consignor, consignee, chargeable billing weight, and freight tariff rate structures',
-          'Demurrage and detention charges computation for delayed vehicle unloading at destination godowns',
-          'Proof of Delivery (POD) collection, customer invoice generation, and pending bilty reconciliation',
+        "id": "mod-10-2",
+        "title": "Consignment Track",
+        "topics": [
+          "Inward and outward Consignment Note (Bilty / Lorry Receipt) generation and register maintenance",
+          "Recording consignor, consignee, chargeable billing weight, and freight tariff rate structures",
+          "Demurrage and detention charges computation for delayed vehicle unloading at destination godowns",
+          "Proof of Delivery (POD) collection, customer invoice generation, and pending bilty reconciliation"
         ],
-        durationHours: 15,
+        "durationHours": 15
       },
       {
-        id: 'mod-10-3',
-        title: 'City Wise Transport Tracking',
-        topics: [
-          'Route-wise freight tracking across major industrial corridors (e.g. Delhi, Mumbai, Ahmedabad, Jaipur)',
-          'Destination city transit times, vehicle turnaround cycles, and hub-and-spoke transfer management',
-          'Vehicle-wise operating cost per metric tonne per km and route profitability analysis',
-          'Statutory compliances: Goods Transport Agency (GTA) 5% RCM vs 12% forward charge, and Section 194C transporter TDS exemptions',
+        "id": "mod-10-3",
+        "title": "City Wise Transport Tracking",
+        "topics": [
+          "Route-wise freight tracking across major industrial corridors (e.g. Delhi, Mumbai, Ahmedabad, Jaipur)",
+          "Destination city transit times, vehicle turnaround cycles, and hub-and-spoke transfer management",
+          "Vehicle-wise operating cost per metric tonne per km and route profitability analysis",
+          "Statutory compliances: Goods Transport Agency (GTA) 5% RCM vs 12% forward charge, and Section 194C transporter TDS exemptions"
         ],
-        durationHours: 15,
-      },
+        "durationHours": 15
+      }
     ],
-    learningOutcomes: [
-      'Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing',
-      'Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)',
-      'Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances',
-      'Eliminate cash leakages and optimize inter-state fleet transport accounting workflows',
+    "learningOutcomes": [
+      "Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing",
+      "Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)",
+      "Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances",
+      "Eliminate cash leakages and optimize inter-state fleet transport accounting workflows"
     ],
-    seoTitle: 'Logistics & Transport Accounting Course | Transporter Hisab | YLCC',
-    seoDescription:
-      'Master logistics transport accounting in Jaipur: Transporter Hisab, Consignment Tracking (Bilty/LR), and City Wise Transport Tracking at YLCC.',
+    "seoTitle": "Logistics & Transport Accounting Course | Transporter Hisab | YLCC",
+    "seoDescription": "Master logistics transport accounting in Jaipur: Transporter Hisab, Consignment Tracking (Bilty/LR), and City Wise Transport Tracking at YLCC."
   },
-{
-    id: 'prog-11',
-    slug: 'finance-credit-control-aging-management',
-    title: 'FINANCE',
-    category: 'Corporate Finance & Credit Control',
-    shortDescription:
-      'Master corporate debtor management, payment follow-up (Tagada), salesman collection tracking, and party & product-wise aging analysis.',
-    detailedDescription:
-      'Cash flow is the lifeblood of any commercial business. This intensive practical masterclass equips accountants and finance executives with specialized skills in credit control, active collection follow-up (Tagada), and analytical aging reports. You will master Party-Wise Days-Wise collection schedules, align Salesmen-Wise daily recovery targets, build Bill-by-Bill aging portfolios (30/60/90+ days), conduct Salesmen collection audits, and generate Product-Wise stock aging reports to liquidate dead inventory and protect working capital.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 12500,
-    discountedFees: 9999,
-    eligibility: 'Commerce graduates, accountants, credit controllers, sales managers, and finance professionals',
-    softwareTools: [
-      'Tally Prime 4.0',
-      'Excel 365 Financial Dashboards',
-      'Debtor Aging Analyzers',
-      'MSME Samadhaan Portal',
+  {
+    "id": "prog-11",
+    "slug": "finance-credit-control-aging-management",
+    "title": "FINANCE",
+    "category": "Corporate Finance & Credit Control",
+    "shortDescription": "Master corporate debtor management, payment follow-up (Tagada), salesman collection tracking, and party & product-wise aging analysis.",
+    "detailedDescription": "Cash flow is the lifeblood of any commercial business. This intensive practical masterclass equips accountants and finance executives with specialized skills in credit control, active collection follow-up (Tagada), and analytical aging reports. You will master Party-Wise Days-Wise collection schedules, align Salesmen-Wise daily recovery targets, build Bill-by-Bill aging portfolios (30/60/90+ days), conduct Salesmen collection audits, and generate Product-Wise stock aging reports to liquidate dead inventory and protect working capital.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 12500,
+    "discountedFees": 9999,
+    "eligibility": "Commerce graduates, accountants, credit controllers, sales managers, and finance professionals",
+    "softwareTools": [
+      "Tally Prime 4.0",
+      "Excel 365 Financial Dashboards",
+      "Debtor Aging Analyzers",
+      "MSME Samadhaan Portal"
     ],
-    facultyId: 'fac-1',
-    facultyName: 'CA Alok Maheshwari & Rajesh Soni (Senior Financial Mentors)',
-    batchTiming: 'Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
-    availableSeats: 10,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-    certificateInfo: 'YLCC Certified Corporate Credit Controller & Financial Analyst',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 5,
-    coreCompetenciesHeading: '5 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical execution covering Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Inventory Control.',
-    coreCompetencies: [
+    "facultyId": "fac-1",
+    "facultyName": "CA Alok Maheshwari & Rajesh Soni (Senior Financial Mentors)",
+    "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+    "availableSeats": 10,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+    "certificateInfo": "YLCC Certified Corporate Credit Controller & Financial Analyst",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 5,
+    "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical execution covering Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Inventory Control.",
+    "coreCompetencies": [
       {
-        title: 'Party Wise Days Wise Tagada',
-        description:
-          'Setting credit terms, tracking daily maturity dues, automated reminder schedules, and rigorous promise-to-pay (PTP) customer follow-up.',
+        "title": "Party Wise Days Wise Tagada",
+        "description": "Setting credit terms, tracking daily maturity dues, automated reminder schedules, and rigorous promise-to-pay (PTP) customer follow-up."
       },
       {
-        title: 'Salemen Wise Days Wise Tagada',
-        description:
-          'Territorial salesman collection beats, daily recovery targets, linking commission incentives to cash collections, and default prevention.',
+        "title": "Salemen Wise Days Wise Tagada",
+        "description": "Territorial salesman collection beats, daily recovery targets, linking commission incentives to cash collections, and default prevention."
       },
       {
-        title: 'Party Wise Ageing Report',
-        description:
-          'Bill-by-bill classification into 0-30, 31-60, 61-90, and 90+ days buckets, identifying sticky receivables, and bad debt management.',
+        "title": "Party Wise Ageing Report",
+        "description": "Bill-by-bill classification into 0-30, 31-60, 61-90, and 90+ days buckets, identifying sticky receivables, and bad debt management."
       },
       {
-        title: 'Salemen Wise Ageing Report',
-        description:
-          'Tracking salesman overdue portfolios, measuring Days Sales Outstanding (DSO), and monitoring sales team collection performance.',
+        "title": "Salemen Wise Ageing Report",
+        "description": "Tracking salesman overdue portfolios, measuring Days Sales Outstanding (DSO), and monitoring sales team collection performance."
       },
       {
-        title: 'Product Wise Age Wise Report',
-        description:
-          'Warehouse inventory aging (0-30, 31-90, 180+ days), identifying slow-moving and dead stock, and liquidation write-down strategies.',
-      },
+        "title": "Product Wise Age Wise Report",
+        "description": "Warehouse inventory aging (0-30, 31-90, 180+ days), identifying slow-moving and dead stock, and liquidation write-down strategies."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-11-1',
-        title: 'Party Wise Days Wise Tagada',
-        topics: [
-          'Configuring customer credit limits, agreed credit periods (15, 30, 45, 60 days), and bill-by-bill reference tracking',
-          'Daily payment maturity schedules: Tracking due dates, overdue grace periods, and automated payment reminder letters',
-          'Execution of active follow-up (Tagada): Promise-to-Pay (PTP) logs, payment dispute resolution, and balance confirmation statements',
-          'Statutory MSME Act provisions (Section 15/16): 45-day payment rule, compound interest computation on delayed receivables',
+        "id": "mod-11-1",
+        "title": "Party Wise Days Wise Tagada",
+        "topics": [
+          "Configuring customer credit limits, agreed credit periods (15, 30, 45, 60 days), and bill-by-bill reference tracking",
+          "Daily payment maturity schedules: Tracking due dates, overdue grace periods, and automated payment reminder letters",
+          "Execution of active follow-up (Tagada): Promise-to-Pay (PTP) logs, payment dispute resolution, and balance confirmation statements",
+          "Statutory MSME Act provisions (Section 15/16): 45-day payment rule, compound interest computation on delayed receivables"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
       {
-        id: 'mod-11-2',
-        title: 'Salemen Wise Days Wise Tagada',
-        topics: [
-          'Mapping customer accounts to territorial sales representatives, beat routes, and collection targets',
-          'Daily salesman recovery sheets: Generating territory-wise overdue lists and daily calling/visiting follow-up schedules',
-          'Linking sales commissions and bonus incentives to actual bank realization rather than gross invoice generation',
-          'Salesman collection dispute escalation protocols, stop-supply alerts for defaulting buyers, and recovery audit trails',
+        "id": "mod-11-2",
+        "title": "Salemen Wise Days Wise Tagada",
+        "topics": [
+          "Mapping customer accounts to territorial sales representatives, beat routes, and collection targets",
+          "Daily salesman recovery sheets: Generating territory-wise overdue lists and daily calling/visiting follow-up schedules",
+          "Linking sales commissions and bonus incentives to actual bank realization rather than gross invoice generation",
+          "Salesman collection dispute escalation protocols, stop-supply alerts for defaulting buyers, and recovery audit trails"
         ],
-        durationHours: 10,
+        "durationHours": 10
       },
       {
-        id: 'mod-11-3',
-        title: 'Party Wise Ageing Report',
-        topics: [
-          'Extracting and building multi-interval aging schedules (0–30, 31–60, 61–90, 90+ days) in Tally Prime and Excel',
-          'Auditing on-account advance receipts vs unpaid invoices using strict FIFO bill-by-bill settlement',
-          'Isolating disputed deductions (rate differences, transit damages, scheme disputes) and issuing credit note adjustments',
-          'Provisioning for doubtful debts, bad debt write-offs, and compiling monthly debtor aging summaries for bank CC limits',
+        "id": "mod-11-3",
+        "title": "Party Wise Ageing Report",
+        "topics": [
+          "Extracting and building multi-interval aging schedules (0–30, 31–60, 61–90, 90+ days) in Tally Prime and Excel",
+          "Auditing on-account advance receipts vs unpaid invoices using strict FIFO bill-by-bill settlement",
+          "Isolating disputed deductions (rate differences, transit damages, scheme disputes) and issuing credit note adjustments",
+          "Provisioning for doubtful debts, bad debt write-offs, and compiling monthly debtor aging summaries for bank CC limits"
         ],
-        durationHours: 14,
+        "durationHours": 14
       },
       {
-        id: 'mod-11-4',
-        title: 'Salemen Wise Ageing Report',
-        topics: [
-          'Consolidating overdue receivables by sales representative across 30, 60, and 90+ day aging brackets',
-          'Computing Days Sales Outstanding (DSO) and recovery efficiency index per salesman and sales territory',
-          'Monthly executive management review: Comparing sales quota achievements vs overdue recovery performance',
-          'Legal notice preparation (Section 138 Negotiable Instruments Act & commercial demand notices) for chronic defaulters',
+        "id": "mod-11-4",
+        "title": "Salemen Wise Ageing Report",
+        "topics": [
+          "Consolidating overdue receivables by sales representative across 30, 60, and 90+ day aging brackets",
+          "Computing Days Sales Outstanding (DSO) and recovery efficiency index per salesman and sales territory",
+          "Monthly executive management review: Comparing sales quota achievements vs overdue recovery performance",
+          "Legal notice preparation (Section 138 Negotiable Instruments Act & commercial demand notices) for chronic defaulters"
         ],
-        durationHours: 10,
+        "durationHours": 10
       },
       {
-        id: 'mod-11-5',
-        title: 'Product Wise Age Wise Report',
-        topics: [
-          'Classifying warehouse inventory into age brackets: 0–30 days (fresh), 31–90 days (active), 91–180 days (slow), 180+ days (dead)',
-          'Calculating product-level inventory turnover ratios, carrying costs, and capital blockage valuation',
-          'Identifying non-moving SKU codes, batch-wise expiry risks, and damaged stock accumulation across godowns',
-          'Formulating commercial liquidation schemes: Clearance discounts, bulk bundle offers, and vendor return debit notes',
+        "id": "mod-11-5",
+        "title": "Product Wise Age Wise Report",
+        "topics": [
+          "Classifying warehouse inventory into age brackets: 0–30 days (fresh), 31–90 days (active), 91–180 days (slow), 180+ days (dead)",
+          "Calculating product-level inventory turnover ratios, carrying costs, and capital blockage valuation",
+          "Identifying non-moving SKU codes, batch-wise expiry risks, and damaged stock accumulation across godowns",
+          "Formulating commercial liquidation schemes: Clearance discounts, bulk bundle offers, and vendor return debit notes"
         ],
-        durationHours: 14,
-      },
+        "durationHours": 14
+      }
     ],
-    learningOutcomes: [
-      'Master complete credit control and systematic debt recovery (Tagada) workflows to eliminate overdue defaults',
-      'Implement salesman-wise collection tracking and align sales commissions with realized bank receipts',
-      'Construct dynamic party-wise and salesman-wise debtor aging models (0-30, 31-60, 61-90, 90+ days)',
-      'Audit product-wise inventory aging to prevent capital blockage and liquidate slow-moving/dead warehouse stock',
+    "learningOutcomes": [
+      "Master complete credit control and systematic debt recovery (Tagada) workflows to eliminate overdue defaults",
+      "Implement salesman-wise collection tracking and align sales commissions with realized bank receipts",
+      "Construct dynamic party-wise and salesman-wise debtor aging models (0-30, 31-60, 61-90, 90+ days)",
+      "Audit product-wise inventory aging to prevent capital blockage and liquidate slow-moving/dead warehouse stock"
     ],
-    seoTitle: 'Finance & Credit Control Course | Debtor Aging & Tagada | YLCC',
-    seoDescription:
-      'Master corporate finance credit control in Jaipur: Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Reports at YLCC.',
+    "seoTitle": "Finance & Credit Control Course | Debtor Aging & Tagada | YLCC",
+    "seoDescription": "Master corporate finance credit control in Jaipur: Party Tagada, Salesmen Tagada, Party Ageing, Salesmen Ageing, and Product Age-Wise Reports at YLCC."
   },
-{
-    id: 'prog-12',
-    slug: 'sales-analysis-commercial-revenue-mis',
-    title: 'SALES ANALYSIS',
-    category: 'Sales Analytics & Business Intelligence',
-    shortDescription:
-      'Master multi-dimensional sales analytics: Party-Wise sales volume, Salesmen performance tracking, Area-Wise territory mapping, Product & Category distribution, and Brand-Wise margin reporting.',
-    detailedDescription:
-      'In modern enterprise commerce, raw billing data must be transformed into actionable executive intelligence. This intensive practical masterclass trains accountants, sales coordinators, and financial analysts across all 6 core pillars of commercial sales analysis: Party-Wise sales volume and customer concentration, Salesmen-Wise target vs realization tracking, Area-Wise regional market penetration, Product/SKU-Wise sales velocity, Product Category-Wise revenue segmentation, and Brand-Wise gross margin analytics in Tally Prime, Excel 365, and Power BI dashboards.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 12500,
-    discountedFees: 9999,
-    eligibility: 'Commerce graduates, accountants, sales coordinators, business analysts, and finance professionals',
-    softwareTools: [
-      'Tally Prime 4.0',
-      'Excel 365 Sales MIS',
-      'Power BI Sales Analytics',
-      'Power Query Data Engine',
+  {
+    "id": "prog-12",
+    "slug": "sales-analysis-commercial-revenue-mis",
+    "title": "SALES ANALYSIS",
+    "category": "Sales Analytics & Business Intelligence",
+    "shortDescription": "Master multi-dimensional sales analytics: Party-Wise sales volume, Salesmen performance tracking, Area-Wise territory mapping, Product & Category distribution, and Brand-Wise margin reporting.",
+    "detailedDescription": "In modern enterprise commerce, raw billing data must be transformed into actionable executive intelligence. This intensive practical masterclass trains accountants, sales coordinators, and financial analysts across all 6 core pillars of commercial sales analysis: Party-Wise sales volume and customer concentration, Salesmen-Wise target vs realization tracking, Area-Wise regional market penetration, Product/SKU-Wise sales velocity, Product Category-Wise revenue segmentation, and Brand-Wise gross margin analytics in Tally Prime, Excel 365, and Power BI dashboards.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 12500,
+    "discountedFees": 9999,
+    "eligibility": "Commerce graduates, accountants, sales coordinators, business analysts, and finance professionals",
+    "softwareTools": [
+      "Tally Prime 4.0",
+      "Excel 365 Sales MIS",
+      "Power BI Sales Analytics",
+      "Power Query Data Engine"
     ],
-    facultyId: 'fac-2',
-    facultyName: 'Rajesh Soni & Vikas Khandelwal (Senior Corporate & MIS Mentors)',
-    batchTiming: 'Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
-    availableSeats: 10,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-    certificateInfo: 'YLCC Certified Commercial Sales MIS & Revenue Analyst',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 6,
-    coreCompetenciesHeading: '6 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical execution covering Party Wise Sale, Salesmen Wise Sale, Area Wise Sale, Product Wise Sale, Product Category Wise Sale, and Brand Wise Sale.',
-    coreCompetencies: [
+    "facultyId": "fac-2",
+    "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & MIS Mentors)",
+    "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+    "availableSeats": 10,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+    "certificateInfo": "YLCC Certified Commercial Sales MIS & Revenue Analyst",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 6,
+    "coreCompetenciesHeading": "6 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical execution covering Party Wise Sale, Salesmen Wise Sale, Area Wise Sale, Product Wise Sale, Product Category Wise Sale, and Brand Wise Sale.",
+    "coreCompetencies": [
       {
-        title: 'Party Wise Sale',
-        description:
-          'Customer-wise sales volume tracking, key account revenue contribution, Pareto 80/20 customer analysis, and recurring purchase trends.',
+        "title": "Party Wise Sale",
+        "description": "Customer-wise sales volume tracking, key account revenue contribution, Pareto 80/20 customer analysis, and recurring purchase trends."
       },
       {
-        title: 'Salesmen Wise Sale',
-        description:
-          'Territory executive target vs actual sales realization, incentive commission structures, daily beat achievement, and sales conversion ratios.',
+        "title": "Salesmen Wise Sale",
+        "description": "Territory executive target vs actual sales realization, incentive commission structures, daily beat achievement, and sales conversion ratios."
       },
       {
-        title: 'Area Wise Sale',
-        description:
-          'Geographical and regional market penetration, city-wise and zone-wise distribution, transit hub sales volume, and territory expansion insights.',
+        "title": "Area Wise Sale",
+        "description": "Geographical and regional market penetration, city-wise and zone-wise distribution, transit hub sales volume, and territory expansion insights."
       },
       {
-        title: 'Product Wise Sale',
-        description:
-          'SKU-level billing volume, unit price realization, contribution margin per unit, and fast-moving vs slow-moving SKU velocity analysis.',
+        "title": "Product Wise Sale",
+        "description": "SKU-level billing volume, unit price realization, contribution margin per unit, and fast-moving vs slow-moving SKU velocity analysis."
       },
       {
-        title: 'Product Category Wise Sale',
-        description:
-          'Classification into product groups and categories, category revenue share, seasonal demand cycles, and cross-category basket analysis.',
+        "title": "Product Category Wise Sale",
+        "description": "Classification into product groups and categories, category revenue share, seasonal demand cycles, and cross-category basket analysis."
       },
       {
-        title: 'Brand Wise Sale',
-        description:
-          'Brand-level revenue distribution, gross margin tracking across multi-brand inventory, OEM volume rebates, and brand portfolio profitability.',
-      },
+        "title": "Brand Wise Sale",
+        "description": "Brand-level revenue distribution, gross margin tracking across multi-brand inventory, OEM volume rebates, and brand portfolio profitability."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-12-1',
-        title: 'Party Wise Sale Analysis & Customer Revenue Mapping',
-        topics: [
-          'Configuring customer master hierarchies, credit buyer tagging, and bill-level sales register extraction in Tally Prime',
-          'Pareto 80/20 analysis: Identifying top 20% high-value accounts contributing 80% turnover and customer concentration risk',
-          'Customer order frequency, average order value (AOV), churn detection, and repeat purchase velocity tracking in Excel 365',
-          'Party-wise trade discount impact, turnover incentive schemes, credit note deductions, and net revenue realization audit',
+        "id": "mod-12-1",
+        "title": "Party Wise Sale Analysis & Customer Revenue Mapping",
+        "topics": [
+          "Configuring customer master hierarchies, credit buyer tagging, and bill-level sales register extraction in Tally Prime",
+          "Pareto 80/20 analysis: Identifying top 20% high-value accounts contributing 80% turnover and customer concentration risk",
+          "Customer order frequency, average order value (AOV), churn detection, and repeat purchase velocity tracking in Excel 365",
+          "Party-wise trade discount impact, turnover incentive schemes, credit note deductions, and net revenue realization audit"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
       {
-        id: 'mod-12-2',
-        title: 'Salesmen Wise Sale Performance & Incentive Tracking',
-        topics: [
-          'Assigning sales executive cost centers, territory beat routes, and monthly/quarterly revenue quota baselines',
-          'Daily Sales Report (DSR) automation: Comparing sales orders booked vs invoiced billing vs actual customer collections',
-          'Sales incentive & commission modeling: Tiered commission slabs, target achievement multipliers, and deduction for return goods',
-          'Sales representative conversion efficiency, strike rate analytics, and salesperson contribution margin reporting',
+        "id": "mod-12-2",
+        "title": "Salesmen Wise Sale Performance & Incentive Tracking",
+        "topics": [
+          "Assigning sales executive cost centers, territory beat routes, and monthly/quarterly revenue quota baselines",
+          "Daily Sales Report (DSR) automation: Comparing sales orders booked vs invoiced billing vs actual customer collections",
+          "Sales incentive & commission modeling: Tiered commission slabs, target achievement multipliers, and deduction for return goods",
+          "Sales representative conversion efficiency, strike rate analytics, and salesperson contribution margin reporting"
         ],
-        durationHours: 10,
+        "durationHours": 10
       },
       {
-        id: 'mod-12-3',
-        title: 'Area Wise Regional & Territory Sales Distribution',
-        topics: [
-          'Structuring multi-tier geographical hierarchies: State > Zone > City > District > Route beat in ERP and accounting masters',
-          'State-wise and city-wise sales volume mapping, interstate IGST vs local CGST/SGST sales distribution patterns',
-          'Market penetration index: Evaluating regional distributor coverage, transport transit route efficiency, and untapped market zones',
-          'Building dynamic Excel and Power BI heatmaps for area-wise sales growth, logistics freight cost-to-sales ratios',
+        "id": "mod-12-3",
+        "title": "Area Wise Regional & Territory Sales Distribution",
+        "topics": [
+          "Structuring multi-tier geographical hierarchies: State > Zone > City > District > Route beat in ERP and accounting masters",
+          "State-wise and city-wise sales volume mapping, interstate IGST vs local CGST/SGST sales distribution patterns",
+          "Market penetration index: Evaluating regional distributor coverage, transport transit route efficiency, and untapped market zones",
+          "Building dynamic Excel and Power BI heatmaps for area-wise sales growth, logistics freight cost-to-sales ratios"
         ],
-        durationHours: 10,
+        "durationHours": 10
       },
       {
-        id: 'mod-12-4',
-        title: 'Product Wise SKU Sales Velocity & Contribution Margin',
-        topics: [
-          'Item-level sales register analytics: Quantity sold, gross billing value, invoice rate variance, and net price realization',
-          'Product profitability & contribution margin: Computing unit gross profit, landed COGS deduction, and net margin per SKU',
-          'Fast-Moving vs Slow-Moving Consumer Goods (FMCG) classification, stock-to-sales velocity ratios, and stockout risk alerts',
-          'Price elasticity and discount sensitivity: Evaluating sales volume surge vs margin erosion during promotional schemes',
+        "id": "mod-12-4",
+        "title": "Product Wise SKU Sales Velocity & Contribution Margin",
+        "topics": [
+          "Item-level sales register analytics: Quantity sold, gross billing value, invoice rate variance, and net price realization",
+          "Product profitability & contribution margin: Computing unit gross profit, landed COGS deduction, and net margin per SKU",
+          "Fast-Moving vs Slow-Moving Consumer Goods (FMCG) classification, stock-to-sales velocity ratios, and stockout risk alerts",
+          "Price elasticity and discount sensitivity: Evaluating sales volume surge vs margin erosion during promotional schemes"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
       {
-        id: 'mod-12-5',
-        title: 'Product Category Wise Revenue Segmentation',
-        topics: [
-          'Configuring parent stock groups, sub-categories, and product classification hierarchies in Tally Prime 4.0',
-          'Category revenue share analysis: Monitoring primary category growth trajectories vs declining product line segments',
-          'Seasonal and cyclical sales patterns: Tracking festive season peaks, off-season troughs, and seasonal stock provisioning',
-          'Cross-category basket analysis: Identifying bundled purchases, complementary product sales, and cross-selling opportunities',
+        "id": "mod-12-5",
+        "title": "Product Category Wise Revenue Segmentation",
+        "topics": [
+          "Configuring parent stock groups, sub-categories, and product classification hierarchies in Tally Prime 4.0",
+          "Category revenue share analysis: Monitoring primary category growth trajectories vs declining product line segments",
+          "Seasonal and cyclical sales patterns: Tracking festive season peaks, off-season troughs, and seasonal stock provisioning",
+          "Cross-category basket analysis: Identifying bundled purchases, complementary product sales, and cross-selling opportunities"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
       {
-        id: 'mod-12-6',
-        title: 'Brand Wise Margin Analytics & Portfolio Optimization',
-        topics: [
-          'Managing multi-brand corporate portfolios: In-house private labels vs national distributor brands vs imported product lines',
-          'Brand-level gross margin and EBITDA contribution tracking: Analyzing royalty fees, brand marketing expenses, and trade margins',
-          'OEM volume discount schemes, quarterly target achievement rebates, and special price support claim reconciliations',
-          'Building executive Power BI & Excel interactive dashboards for Brand-Wise performance reviews and brand portfolio rationalization',
+        "id": "mod-12-6",
+        "title": "Brand Wise Margin Analytics & Portfolio Optimization",
+        "topics": [
+          "Managing multi-brand corporate portfolios: In-house private labels vs national distributor brands vs imported product lines",
+          "Brand-level gross margin and EBITDA contribution tracking: Analyzing royalty fees, brand marketing expenses, and trade margins",
+          "OEM volume discount schemes, quarterly target achievement rebates, and special price support claim reconciliations",
+          "Building executive Power BI & Excel interactive dashboards for Brand-Wise performance reviews and brand portfolio rationalization"
         ],
-        durationHours: 12,
-      },
+        "durationHours": 12
+      }
     ],
-    learningOutcomes: [
-      'Master comprehensive multi-dimensional sales analysis across party, salesmen, area, product, category, and brand axes',
-      'Extract and analyze sales registers in Tally Prime and automate commercial MIS reporting in Excel 365 and Power BI',
-      'Evaluate salesmen target vs realization, optimize incentive structures, and improve territorial beat recovery',
-      'Determine SKU-level unit contribution margins, product category trends, and brand portfolio profitability',
+    "learningOutcomes": [
+      "Master comprehensive multi-dimensional sales analysis across party, salesmen, area, product, category, and brand axes",
+      "Extract and analyze sales registers in Tally Prime and automate commercial MIS reporting in Excel 365 and Power BI",
+      "Evaluate salesmen target vs realization, optimize incentive structures, and improve territorial beat recovery",
+      "Determine SKU-level unit contribution margins, product category trends, and brand portfolio profitability"
     ],
-    seoTitle: 'Sales Analysis Course | Commercial MIS & Revenue Analytics | YLCC',
-    seoDescription:
-      'Master commercial sales analytics in Jaipur: Party Wise, Salesmen Wise, Area Wise, Product Wise, Category Wise, and Brand Wise sales MIS at YLCC.',
+    "seoTitle": "Sales Analysis Course | Commercial MIS & Revenue Analytics | YLCC",
+    "seoDescription": "Master commercial sales analytics in Jaipur: Party Wise, Salesmen Wise, Area Wise, Product Wise, Category Wise, and Brand Wise sales MIS at YLCC."
   },
-{
-    id: 'prog-4',
-    slug: 'gst-practitioner',
-    title: 'GST Practitioner Practical Masterclass',
-    category: 'Taxation & Compliance',
-    shortDescription:
-      'Master the 9 foundational GST practitioner pillars: GST Act transaction entries, E-way bills, E-invoicing, monthly GSTR-1, ITC 2B reconciliation (Book Milan), GSTR-3B tax offset, yearly GST audit prep, GSTR-9 annual returns, and live client projects.',
-    detailedDescription:
-      'Goods and Services Tax is the backbone of Indian commercial compliance. This comprehensive practical masterclass trains you across all 9 foundational pillars of professional GST practice: recording day-to-day transactions per the GST Act, operating government E-way bill and E-invoicing portals with IRN/QR code generation, live preparation and filing of monthly GSTR-1 and GSTR-3B returns, executing rigorous Input Tax Credit (ITC) reconciliation between portal GSTR-2B and purchase registers (Book Milan), compiling working papers for yearly GST audits, preparing annual returns (GSTR-9 and GSTR-9C), and executing live case studies across trading, manufacturing, and export businesses.',
-    duration: '2 Months',
-    mode: 'Offline Classroom',
-    fees: 18000,
-    discountedFees: 13999,
-    eligibility: 'Commerce students, tax practitioners, accountants, business operators',
-    softwareTools: [
-      'Official GST Portal',
-      'GST Offline Tool',
-      'E-Way Bill & E-Invoice Portal',
-      'Tally Prime GST Suite',
-      'Excel ITC 2B Milan Sheets',
+  {
+    "id": "prog-13",
+    "slug": "crm-field-sales-force-automation",
+    "title": "CRM",
+    "category": "Sales Force Automation & CRM Operations",
+    "shortDescription": "Master modern Field Sales CRM: Sales staff live geo-tracking, daily travel & conveyance (TA/DA) expense auditing, attendance & salary processing, and daily visit records (DVR).",
+    "detailedDescription": "Modern commercial enterprises rely on real-time CRM and Sales Force Automation (SFA) systems to manage field teams, eliminate expense leakages, and optimize customer relationship touchpoints. This hands-on masterclass trains commerce students, HR/payroll executives, and operations accountants to manage end-to-end sales team operations: Live GPS geo-tracking and beat route compliance, verification and accounting of daily field expenses (TA/DA claims, lodging, conveyance), mobile attendance integration with payroll/salary calculations, and recording and auditing daily customer visit reports (DVR/DSR) linked with spot order booking.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 12500,
+    "discountedFees": 9999,
+    "eligibility": "Commerce graduates, accountants, sales coordinators, CRM administrators, and payroll professionals",
+    "softwareTools": [
+      "Field Sales CRM & SFA Portals",
+      "Tally Prime 4.0 (Payroll & Expenses)",
+      "Excel 365 Sales Operations",
+      "GPS & Geo-Fencing Beat Trackers"
     ],
-    facultyId: 'fac-1',
-    facultyName: 'CA Alok Maheshwari (GST & Tax Specialist)',
-    batchTiming: 'Morning: 7:30 AM – 9:30 AM | Evening: 6:30 PM – 8:30 PM',
-    availableSeats: 7,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Banking-GST.pdf',
-    certificateInfo: 'YLCC Certified Practical GST Practitioner Credentials',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 7,
-    coreCompetenciesHeading: '9 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical desk execution covering the complete statutory GST compliance cycle from transaction feeding to annual returns and audit.',
-    coreCompetencies: [
+    "facultyId": "fac-2",
+    "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & Operations Mentors)",
+    "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+    "availableSeats": 10,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+    "certificateInfo": "YLCC Certified CRM & Sales Force Automation Specialist",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 7,
+    "coreCompetenciesHeading": "4 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical execution covering Sales Staff Live Geo Tracking, Sales Staff Daily Expenses, Sales Staff Attendance / Salary, and Sales Staff Daily Visit Record.",
+    "coreCompetencies": [
       {
-        title: 'Business Transaction Feed',
-        description:
-          'Recording intra-state and inter-state purchase and sale vouchers under GST Act provisions, RCM liabilities, debit/credit notes, and multi-tax rate rules.',
+        "title": "Sales Staff Live Geo. Tracking",
+        "description": "Real-time GPS tracking, beat route adherence, geofencing client store check-ins/check-outs, and travel path mileage verification."
       },
       {
-        title: 'E-Way Bill',
-        description:
-          'Complete government portal execution for Part-A & Part-B, multi-vehicle updates, validity extensions, consolidated bills, and transit compliance.',
+        "title": "Sales Staff Daily Expenses",
+        "description": "Daily allowance (DA) policies, travel conveyance (TA) per-kilometer rate claims, fuel/hotel bill verification, and expense ledger vouchers."
       },
       {
-        title: 'E-Invoice',
-        description:
-          'Mandatory B2B e-invoicing workflows, generating 64-character IRN, JSON schema uploads to IRP, and printing digitally signed QR codes.',
+        "title": "Sales Staff Attendance / Salary",
+        "description": "Mobile app punch-in/out, leave rules, monthly attendance register reconciliation, target incentives, and net take-home salary disbursement."
       },
       {
-        title: 'Monthly GSTR-1 Filing',
-        description:
-          'End-to-end live filing of Table 4 (B2B), Table 5/7 (B2C), Table 6 (Exports), Table 9 amendments, and mandatory Table 12 HSN summaries.',
-      },
-      {
-        title: 'ITC 2B & Book Milan',
-        description:
-          'In-depth Input Tax Credit matching between portal GSTR-2B and purchase register (Milan), identifying missing bills, ineligible ITC, and vendor follow-up.',
-      },
-      {
-        title: 'Monthly GSTR-3B Filing',
-        description:
-          'Monthly tax liability compilation, eligible ITC claims, statutory set-off order under Section 49, PMT-06 challans, and electronic cash ledger payments.',
-      },
-      {
-        title: 'Yearly GST Audit',
-        description:
-          'Preparing comprehensive audit working papers, turnover reconciliation with audited financials, and drafting Section 61 notice replies.',
-      },
-      {
-        title: 'GSTR-9 Filing Preparation',
-        description:
-          'Table-by-table data compilation for annual returns, Table 8 ITC reconciliation with GSTR-2A/2B, and GSTR-9C reconciliation readiness.',
-      },
-      {
-        title: 'GST Practice Projects',
-        description:
-          'Hands-on simulated client desk projects covering trading, manufacturing, and export firms from voucher feeding to annual return closure.',
-      },
+        "title": "Sales Staff Daily Visit Record",
+        "description": "Daily Visit Report (DVR/DSR) logs, productive vs non-productive client meetings, sample distribution records, and spot order booking."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-4-1',
-        title: 'Business Transaction Feeding According to GST Act',
-        topics: [
-          'Feeding intra-state (CGST + SGST) and inter-state (IGST) sales and purchase vouchers per GST Act statutory rules',
-          'Configuring multi-tier GST rates (0%, 5%, 12%, 18%, 28%) and assigning accurate 4/6/8-digit HSN and SAC codes',
-          'Accounting for Reverse Charge Mechanism (RCM) transactions under Section 9(3) and 9(4) with self-invoicing and tax payment',
-          'Recording statutory Debit Notes and Credit Notes under Section 34 for sales returns, rate differences, and post-sale discounts',
+        "id": "mod-13-1",
+        "title": "Sales Staff Live Geo Tracking & Route Compliance",
+        "topics": [
+          "Configuring salesman beat plans, territory geofences, and customer store GPS location tags in SFA systems",
+          "Real-time live location monitoring: Tracking field executive transit, route deviation alerts, and on-field idle time",
+          "Automated check-in & check-out time-stamping at retailer/wholesaler counters with geofence proximity verification",
+          "Generating daily travel distance logs (Google Maps API integration) to cross-verify physical field presence"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
       {
-        id: 'mod-4-2',
-        title: 'E-Way Bill Complete Practical Knowledge & In-Transit Compliance',
-        topics: [
-          'Statutory applicability rules: Mandatory ₹50,000 consignment value threshold, distance calculations, and exempted commodities',
-          'Live government portal generation of Part-A (consignor/consignee, invoice value, HSN) and Part-B (vehicle number, transporter ID)',
-          'Managing multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and statutory validity extension',
-          'Consolidated E-Way bills, handling rejected consignments, 24-hour cancellation rules, and avoiding Section 129 transit penalties',
+        "id": "mod-13-2",
+        "title": "Sales Staff Daily Expenses & Claim Reconciliation",
+        "topics": [
+          "Formulating corporate travel allowance policies: City tier classifications (Metro/Non-Metro), daily DA slabs, and night halt limits",
+          "Digital expense claim workflow: Submitting petrol slips, toll receipts, public transport tickets, and food/lodging vouchers",
+          "Audit & fraud detection: Comparing claimed odometer kilometers against GPS geo-tracking logs to eliminate false claims",
+          "Accounting entries in Tally Prime: Booking staff advance adjustments, conveyance expense ledgers, and reimbursable payouts"
         ],
-        durationHours: 10,
+        "durationHours": 12
       },
       {
-        id: 'mod-4-3',
-        title: 'E-Invoice Complete Practical Knowledge, IRN & QR Code Generation',
-        topics: [
-          'Understanding statutory e-invoicing thresholds (turnover criteria) and mandatory B2B, B2G, and export invoice coverage',
-          'Generating JSON schema payloads from accounting software and direct uploading to the Invoice Registration Portal (IRP)',
-          'Generating unique 64-character Invoice Reference Number (IRN) and digitally signed cryptographic QR codes',
-          'Printing statutory e-invoices, issuing e-invoice credit/debit notes, 24-hour cancellation rules, and auto-population into GSTR-1',
+        "id": "mod-13-3",
+        "title": "Sales Staff Attendance & Payroll / Salary Processing",
+        "topics": [
+          "Managing mobile selfie attendance, geo-tagged login/logout timestamps, and field leave management rules",
+          "Compiling monthly muster rolls: Late-coming deductions, half-day policies, paid leaves, and Sunday / holiday working credits",
+          "Sales incentive & commission integration: Linking sales revenue quotas, collection targets, and bonus accelerators to payroll",
+          "Preparing professional payslips in Tally Prime & Excel: Basic, HRA, Conveyance, PF/ESIC deductions, PT, and net bank salary transfer"
         ],
-        durationHours: 10,
+        "durationHours": 14
       },
       {
-        id: 'mod-4-4',
-        title: 'Monthly GSTR-1 Live Return Preparation & Filing',
-        topics: [
-          'Compiling outward supplies: B2B invoices (Table 4A), B2C Large inter-state (Table 5), and B2C Small intra-state (Table 7)',
-          'Documenting zero-rated supplies, SEZ sales, deemed exports (Table 6), and credit/debit notes issued to registered parties (Table 9B)',
-          'Compiling mandatory HSN-wise outward summary (Table 12) and document issued count summary (Table 13)',
-          'Preparing return data via GST Offline Tool, JSON schema error debugging, portal upload, and final EVC / DSC verification',
+        "id": "mod-13-4",
+        "title": "Sales Staff Daily Visit Record (DVR) & Order Booking",
+        "topics": [
+          "Structuring Daily Visit Reports (DVR / DSR): Recording customer contact person, meeting outcome, and next follow-up dates",
+          "Productive vs non-productive call analysis: Measuring strike rate (number of orders booked vs total store visits made)",
+          "Spot order booking: Logging SKU-level order quantities, preferred delivery dates, and payment collection commitments in CRM",
+          "Marketing collateral & sample distribution tracking: Auditing free promotional samples, tester units, and gift giveaways"
         ],
-        durationHours: 12,
-      },
-      {
-        id: 'mod-4-5',
-        title: 'ITC 2B Reconciliation & Purchase Book Milan',
-        topics: [
-          'Downloading and importing dynamic monthly GSTR-2B statements and static GSTR-2A data from the GST portal',
-          'Systematic purchase register matching (Book Milan): Identifying matched, invoice value mismatched, and supplier-missing bills',
-          'Enforcing Rule 37A and Section 16(4) statutory time limits, identifying blocked ITC under Section 17(5), and vendor reversal tracking',
-          'Automated Excel & ERP reconciliation models, preparing vendor follow-up lists for unfiled supplier returns to safeguard client ITC',
-        ],
-        durationHours: 14,
-      },
-      {
-        id: 'mod-4-6',
-        title: 'Monthly GSTR-3B Return Filing & Tax Offset Calculation',
-        topics: [
-          'Preparing monthly summary return: Table 3.1 outward taxable supplies & RCM liability, Table 3.2 inter-state supplies to unregistered',
-          'Claiming eligible ITC under Table 4(A), recording reversals under Table 4(B) (Rule 38/42/43), and reporting net eligible ITC',
-          'Applying statutory tax liability offset rules (IGST credit utilization first against IGST, then CGST & SGST) under Section 49',
-          'Generating electronic cash ledger payment challans (Form PMT-06), interest & late fee computation under Section 50, and filing via EVC/DSC',
-        ],
-        durationHours: 12,
-      },
-      {
-        id: 'mod-4-7',
-        title: 'Preparation of Yearly GST Audit & Working Papers',
-        topics: [
-          'Preparing comprehensive GST audit working papers: Reconciling audited Profit & Loss / Balance Sheet revenue with GST returns',
-          'Expense ledger scrutiny: Cross-checking import of services, director remuneration, GTA freight, and legal fees for RCM liability',
-          'Input Tax Credit audit: Verification of capital goods ITC, 180-day vendor payment compliance under Rule 37, and reversal audits',
-          'Handling departmental scrutiny notices under Section 61 (ASMT-10), drafting formal replies, and voluntary payments via DRC-03',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-4-8',
-        title: 'GSTR-9 Annual Return Filing Preparation & GSTR-9C Readiness',
-        topics: [
-          'Understanding mandatory filing thresholds for Annual Return GSTR-9 and Self-Certified Reconciliation Statement GSTR-9C',
-          'Table-by-table compilation: Outward supplies declared in returns (Part II), ITC availed & reversed during the financial year (Part III)',
-          'Deep Table 8 analysis: Portal GSTR-2A auto-populated credit vs ITC claimed in GSTR-3B, identifying lapsed and unreconciled credits',
-          'Reporting prior period adjustments made in subsequent year returns (Part V), penalty minimization, and final return submission',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-4-9',
-        title: 'GST Practice Projects & Live Multi-Firm Client Execution',
-        topics: [
-          'Live Case Study 1 (Trading Enterprise): Multi-rate GST billing, E-way bill generation, and complete monthly GSTR-1/3B filing cycle',
-          'Live Case Study 2 (Manufacturing Firm): Inward raw materials with RCM freight, job-work challans, E-invoicing IRN generation, and ITC 2B Milan',
-          'Live Case Study 3 (Service Provider & Exporter): Zero-rated export billing (LUT/payment), Input Service Distributor (ISD), and export refund filing',
-          'Complete year-end simulation: Annual reconciliation, preparing GSTR-9 working papers, and handling client audit inquiries independently',
-        ],
-        durationHours: 10,
-      },
+        "durationHours": 12
+      }
     ],
-    learningOutcomes: [
-      'Complete executive mastery over all 9 core GST practitioner responsibilities: GST Act transaction feeding, E-way bills, E-invoicing, monthly GSTR-1, ITC 2B book milan, GSTR-3B tax offset, yearly GST audit, GSTR-9 annual return prep, and live practice projects',
-      'Flawless monthly return filing for GSTR-1 and GSTR-3B across multiple client businesses with zero departmental mismatch penalties',
-      'Bulletproof Input Tax Credit reconciliation matching portal GSTR-2B with purchase ledgers (Book Milan) per Rule 37A and Section 16(4)',
-      'Authority to compile annual GSTR-9 data tables, prepare GSTR-9C reconciliation statements, and draft professional replies to GST departmental notices',
+    "learningOutcomes": [
+      "Implement live GPS geo-tracking and geofencing to audit sales staff beat routes and customer visit authenticity",
+      "Audit daily travel (TA/DA) expense claims with precision, eliminating bogus conveyance reimbursements",
+      "Process field sales attendance, incentive calculations, statutory deductions, and monthly salary disbursement",
+      "Analyze Daily Visit Records (DVR/DSR) to optimize salesperson productivity, strike rates, and spot order pipelines"
     ],
-    seoTitle: 'GST Practitioner Practical Course | GSTR-1, GSTR-3B, GSTR-2B Milan | YLCC',
-    seoDescription:
-      'Hands-on GST Practitioner training in Jaipur: E-way bills, E-invoicing, GSTR-1, GSTR-3B filing, ITC 2B reconciliation, and annual GSTR-9 audit prep.',
+    "seoTitle": "CRM & Sales Force Automation Course | Field Staff MIS & Payroll | YLCC",
+    "seoDescription": "Master field sales CRM in Jaipur: Live Geo Tracking, Daily Expenses, Attendance & Salary, and Daily Visit Records (DVR) at YLCC."
   },
-{
-    id: 'prog-5',
-    slug: 'tds-tcs-practitioner',
-    title: 'TDS & TCS Practitioner Practical Course',
-    category: 'Direct Taxation & Withholding',
-    shortDescription:
-      'Master the 5 foundational TDS & TCS practitioner pillars: statutory withholding transaction entries, monthly Challan 281 portal payments, quarterly return filing (Form 24Q, 26Q, 27EQ), TRACES certificate issuance (Form 16/16A, 27D & Form 13), and live client projects.',
-    detailedDescription:
-      'Withholding tax compliance is mandatory for every business entity in India. Non-compliance invites hefty interest under Section 201(1A), penal late fees under Section 234E, and disallowance of business expenses under Section 40(a)(ia). This practical masterclass trains you across all 5 foundational pillars of professional TDS & TCS practice: recording day-to-day business transactions per the Income Tax Act (194C, 194J, 194I, 194Q, 206C(1H)), executing monthly tax payments via Challan 281 on the e-Pay Tax portal, preparing and validating quarterly returns (Form 24Q, 26Q, 27EQ) using government RPU and FVU utilities, managing the TRACES portal for Form 16/16A and Form 27D certificate issuance, handling Form 13 lower-deduction certificates, and executing live client projects across corporate, trading, and manufacturing entities.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 15000,
-    discountedFees: 11499,
-    eligibility: 'Commerce students, tax interns, accountants, finance executives',
-    softwareTools: [
-      'TRACES Portal',
-      'Income Tax E-Filing Portal (e-Pay Tax)',
-      'NSDL e-TDS RPU Utility',
-      'NSDL File Validation Utility (FVU)',
-      'Tally Prime TDS/TCS Module',
-      'Excel TDS Automation Sheets',
+  {
+    "id": "prog-4",
+    "slug": "gst-practitioner",
+    "title": "GST Practitioner Practical Masterclass",
+    "category": "Taxation & Compliance",
+    "shortDescription": "Master the 9 foundational GST practitioner pillars: GST Act transaction entries, E-way bills, E-invoicing, monthly GSTR-1, ITC 2B reconciliation (Book Milan), GSTR-3B tax offset, yearly GST audit prep, GSTR-9 annual returns, and live client projects.",
+    "detailedDescription": "Goods and Services Tax is the backbone of Indian commercial compliance. This comprehensive practical masterclass trains you across all 9 foundational pillars of professional GST practice: recording day-to-day transactions per the GST Act, operating government E-way bill and E-invoicing portals with IRN/QR code generation, live preparation and filing of monthly GSTR-1 and GSTR-3B returns, executing rigorous Input Tax Credit (ITC) reconciliation between portal GSTR-2B and purchase registers (Book Milan), compiling working papers for yearly GST audits, preparing annual returns (GSTR-9 and GSTR-9C), and executing live case studies across trading, manufacturing, and export businesses.",
+    "duration": "2 Months",
+    "mode": "Offline Classroom",
+    "fees": 18000,
+    "discountedFees": 13999,
+    "eligibility": "Commerce students, tax practitioners, accountants, business operators",
+    "softwareTools": [
+      "Official GST Portal",
+      "GST Offline Tool",
+      "E-Way Bill & E-Invoice Portal",
+      "Tally Prime GST Suite",
+      "Excel ITC 2B Milan Sheets"
     ],
-    facultyId: 'fac-1',
-    facultyName: 'CA Alok Maheshwari (Senior Chartered Accountant)',
-    batchTiming: 'Morning: 9:00 AM – 11:00 AM | Evening: 5:30 PM – 7:30 PM',
-    availableSeats: 6,
-    startDate: '5th & 20th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-TDS-Payroll.pdf',
-    certificateInfo: 'YLCC Certified Withholding Tax & TDS Specialist',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 8,
-    coreCompetenciesHeading: '5 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical desk execution covering the complete statutory TDS & TCS compliance cycle from transaction feeding to return filing, TRACES certificates, and live client projects.',
-    coreCompetencies: [
+    "facultyId": "fac-1",
+    "facultyName": "CA Alok Maheshwari (GST & Tax Specialist)",
+    "batchTiming": "Morning: 7:30 AM – 9:30 AM | Evening: 6:30 PM – 8:30 PM",
+    "availableSeats": 7,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+    "certificateInfo": "YLCC Certified Practical GST Practitioner Credentials",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 8,
+    "coreCompetenciesHeading": "9 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical desk execution covering the complete statutory GST compliance cycle from transaction feeding to annual returns and audit.",
+    "coreCompetencies": [
       {
-        title: 'Business Transaction Feed',
-        description:
-          'Recording purchase and expense vouchers with statutory TDS/TCS deductions under Sections 194C, 194J, 194I, 194Q, and 206C(1H) with PAN validation.',
+        "title": "Business Transaction Feed",
+        "description": "Recording intra-state and inter-state purchase and sale vouchers under GST Act provisions, RCM liabilities, debit/credit notes, and multi-tax rate rules."
       },
       {
-        title: 'Monthly TDS/TCS Portal Payment',
-        description:
-          'Calculating monthly withholding liabilities, Challan 281 generation on the e-Pay Tax portal, Major/Minor head selection, and CSI file creation.',
+        "title": "E-Way Bill",
+        "description": "Complete government portal execution for Part-A & Part-B, multi-vehicle updates, validity extensions, consolidated bills, and transit compliance."
       },
       {
-        title: 'Quarterly Return Filing',
-        description:
-          'Preparing and filing quarterly Form 24Q (Salary), Form 26Q (Non-Salary), and Form 27EQ (TCS) using official government RPU and FVU utilities.',
+        "title": "E-Invoice",
+        "description": "Mandatory B2B e-invoicing workflows, generating 64-character IRN, JSON schema uploads to IRP, and printing digitally signed QR codes."
       },
       {
-        title: 'TRACES Certificate Issuance',
-        description:
-          'Downloading and issuing Form 16, Form 16A, and Form 27D certificates from TRACES, handling Form 13 lower-deduction certificates, and C1-C5 corrections.',
+        "title": "Monthly GSTR-1 Filing",
+        "description": "End-to-end live filing of Table 4 (B2B), Table 5/7 (B2C), Table 6 (Exports), Table 9 amendments, and mandatory Table 12 HSN summaries."
       },
       {
-        title: 'TDS/TCS Practice Projects',
-        description:
-          'Hands-on simulated corporate client desk projects covering end-to-end deduction, challan payments, quarterly return validation, and default resolution.',
+        "title": "ITC 2B & Book Milan",
+        "description": "In-depth Input Tax Credit matching between portal GSTR-2B and purchase register (Milan), identifying missing bills, ineligible ITC, and vendor follow-up."
       },
+      {
+        "title": "Monthly GSTR-3B Filing",
+        "description": "Monthly tax liability compilation, eligible ITC claims, statutory set-off order under Section 49, PMT-06 challans, and electronic cash ledger payments."
+      },
+      {
+        "title": "Yearly GST Audit",
+        "description": "Preparing comprehensive audit working papers, turnover reconciliation with audited financials, and drafting Section 61 notice replies."
+      },
+      {
+        "title": "GSTR-9 Filing Preparation",
+        "description": "Table-by-table data compilation for annual returns, Table 8 ITC reconciliation with GSTR-2A/2B, and GSTR-9C reconciliation readiness."
+      },
+      {
+        "title": "GST Practice Projects",
+        "description": "Hands-on simulated client desk projects covering trading, manufacturing, and export firms from voucher feeding to annual return closure."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-5-1',
-        title: 'Business Transaction Feeding According to TDS/TCS Act',
-        topics: [
-          'Recording business vouchers with section-wise statutory TDS deductions: 194C (contractors), 194J (professional/technical fees), 194I (rent), 194A (interest), 194H (commission)',
-          'Accounting for Section 194Q (TDS on purchase of goods > ₹50L @ 0.1%) vs Section 206C(1H) (TCS on sale of goods) priority rules',
-          'PAN verification, higher-rate tax deduction @ 20% under Section 206AA, and Section 206AB compliance check for specified non-filers',
-          'TCS transaction feeding: Sale of scrap, minerals, motor vehicles (Section 206C(1F)), and Liberalised Remittance Scheme (LRS 206C(1G))',
+        "id": "mod-4-1",
+        "title": "Business Transaction Feeding According to GST Act",
+        "topics": [
+          "Feeding intra-state (CGST + SGST) and inter-state (IGST) sales and purchase vouchers per GST Act statutory rules",
+          "Configuring multi-tier GST rates (0%, 5%, 12%, 18%, 28%) and assigning accurate 4/6/8-digit HSN and SAC codes",
+          "Accounting for Reverse Charge Mechanism (RCM) transactions under Section 9(3) and 9(4) with self-invoicing and tax payment",
+          "Recording statutory Debit Notes and Credit Notes under Section 34 for sales returns, rate differences, and post-sale discounts"
         ],
-        durationHours: 16,
+        "durationHours": 12
       },
       {
-        id: 'mod-5-2',
-        title: 'Monthly TDS/TCS Portal Payments & Challan 281 E-Filing',
-        topics: [
-          'Monthly tax computation on or before the 7th of every month (and 30th April for March deductions) with ledger balance verification',
-          'Navigating the Income Tax E-Filing Portal (e-Pay Tax facility) and generating online Challan 281 for corporate and non-corporate deductees',
-          'Correct Major Head selection (0020 Company vs 0021 Non-Company) and Minor Head selection (200 Self-TDS vs 400 Regular Assessment)',
-          'Challan payment execution via net-banking/NEFT/RTGS, BSR code and CIN record upkeep, and Section 201(1A) interest calculation',
+        "id": "mod-4-2",
+        "title": "E-Way Bill Complete Practical Knowledge & In-Transit Compliance",
+        "topics": [
+          "Statutory applicability rules: Mandatory ₹50,000 consignment value threshold, distance calculations, and exempted commodities",
+          "Live government portal generation of Part-A (consignor/consignee, invoice value, HSN) and Part-B (vehicle number, transporter ID)",
+          "Managing multi-vehicle transshipment, updating vehicle numbers during transit breakdowns, and statutory validity extension",
+          "Consolidated E-Way bills, handling rejected consignments, 24-hour cancellation rules, and avoiding Section 129 transit penalties"
         ],
-        durationHours: 12,
+        "durationHours": 10
       },
       {
-        id: 'mod-5-3',
-        title: 'Quarterly TDS/TCS Return Preparation & Government FVU Filing',
-        topics: [
-          'Form 24Q (Salary TDS): Compiling Annexure-I quarterly salary deductions and Annexure-II (Q4 tax calculation per Old vs New tax regimes)',
-          'Form 26Q (Non-Salary Domestic TDS): Line-by-line deductee mapping, Section code assignment, payment booking date, and challan matching',
-          'Form 27EQ (TCS Collections): Compiling collection details, buyer PAN scrutiny, and Form 27Q for payments made to non-resident entities',
-          'Working on NSDL Return Preparation Utility (RPU), validating against Challan Status File (.csi) via FVU tool, and portal uploading via TAN login',
+        "id": "mod-4-3",
+        "title": "E-Invoice Complete Practical Knowledge, IRN & QR Code Generation",
+        "topics": [
+          "Understanding statutory e-invoicing thresholds (turnover criteria) and mandatory B2B, B2G, and export invoice coverage",
+          "Generating JSON schema payloads from accounting software and direct uploading to the Invoice Registration Portal (IRP)",
+          "Generating unique 64-character Invoice Reference Number (IRN) and digitally signed cryptographic QR codes",
+          "Printing statutory e-invoices, issuing e-invoice credit/debit notes, 24-hour cancellation rules, and auto-population into GSTR-1"
         ],
-        durationHours: 16,
+        "durationHours": 10
       },
       {
-        id: 'mod-5-4',
-        title: 'TRACES Portal Operations, Form 16/16A & Form 13 Lower Deduction',
-        topics: [
-          'TRACES portal deductor registration, KYC validation, profile management, and dashboard default surveillance',
-          'Requesting, downloading, and converting text files to issue digitally signed Form 16 (Part A & B) and quarterly Form 16A / Form 27D certificates',
-          'Verifying Assessing Officer Lower Deduction Certificates issued under Form 13 / Section 197 and updating 10-digit certificate numbers in software',
-          'Filing online TDS Correction Statements (C1 challan update, C2 deductee update, C3 PAN correction) and resolving Section 200A demand notices',
+        "id": "mod-4-4",
+        "title": "Monthly GSTR-1 Live Return Preparation & Filing",
+        "topics": [
+          "Compiling outward supplies: B2B invoices (Table 4A), B2C Large inter-state (Table 5), and B2C Small intra-state (Table 7)",
+          "Documenting zero-rated supplies, SEZ sales, deemed exports (Table 6), and credit/debit notes issued to registered parties (Table 9B)",
+          "Compiling mandatory HSN-wise outward summary (Table 12) and document issued count summary (Table 13)",
+          "Preparing return data via GST Offline Tool, JSON schema error debugging, portal upload, and final EVC / DSC verification"
         ],
-        durationHours: 14,
+        "durationHours": 12
       },
       {
-        id: 'mod-5-5',
-        title: 'TDS/TCS Practice Projects & Live Multi-Entity Case Studies',
-        topics: [
-          'Live Case Study 1 (Corporate Enterprise): Multi-contractor billing, professional fees, monthly Challan 281 payment, and Form 26Q return filing',
-          'Live Case Study 2 (Industrial Manufacturing): Scrap sales, high-value goods sale under Section 206C(1H), Form 27EQ compilation, and Form 27D issuance',
-          'Live Case Study 3 (Payroll & Staff Withholding): Complete executive salary TDS computation under Form 24Q, Chapter VI-A deductions, and Form 16 generation',
-          'End-to-End Audit & Correction Workshop: Downloading TRACES Conso files, executing C3 PAN correction statements, and clearing Section 234E late fee defaults',
+        "id": "mod-4-5",
+        "title": "ITC 2B Reconciliation & Purchase Book Milan",
+        "topics": [
+          "Downloading and importing dynamic monthly GSTR-2B statements and static GSTR-2A data from the GST portal",
+          "Systematic purchase register matching (Book Milan): Identifying matched, invoice value mismatched, and supplier-missing bills",
+          "Enforcing Rule 37A and Section 16(4) statutory time limits, identifying blocked ITC under Section 17(5), and vendor reversal tracking",
+          "Automated Excel & ERP reconciliation models, preparing vendor follow-up lists for unfiled supplier returns to safeguard client ITC"
         ],
-        durationHours: 14,
+        "durationHours": 14
       },
+      {
+        "id": "mod-4-6",
+        "title": "Monthly GSTR-3B Return Filing & Tax Offset Calculation",
+        "topics": [
+          "Preparing monthly summary return: Table 3.1 outward taxable supplies & RCM liability, Table 3.2 inter-state supplies to unregistered",
+          "Claiming eligible ITC under Table 4(A), recording reversals under Table 4(B) (Rule 38/42/43), and reporting net eligible ITC",
+          "Applying statutory tax liability offset rules (IGST credit utilization first against IGST, then CGST & SGST) under Section 49",
+          "Generating electronic cash ledger payment challans (Form PMT-06), interest & late fee computation under Section 50, and filing via EVC/DSC"
+        ],
+        "durationHours": 12
+      },
+      {
+        "id": "mod-4-7",
+        "title": "Preparation of Yearly GST Audit & Working Papers",
+        "topics": [
+          "Preparing comprehensive GST audit working papers: Reconciling audited Profit & Loss / Balance Sheet revenue with GST returns",
+          "Expense ledger scrutiny: Cross-checking import of services, director remuneration, GTA freight, and legal fees for RCM liability",
+          "Input Tax Credit audit: Verification of capital goods ITC, 180-day vendor payment compliance under Rule 37, and reversal audits",
+          "Handling departmental scrutiny notices under Section 61 (ASMT-10), drafting formal replies, and voluntary payments via DRC-03"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-4-8",
+        "title": "GSTR-9 Annual Return Filing Preparation & GSTR-9C Readiness",
+        "topics": [
+          "Understanding mandatory filing thresholds for Annual Return GSTR-9 and Self-Certified Reconciliation Statement GSTR-9C",
+          "Table-by-table compilation: Outward supplies declared in returns (Part II), ITC availed & reversed during the financial year (Part III)",
+          "Deep Table 8 analysis: Portal GSTR-2A auto-populated credit vs ITC claimed in GSTR-3B, identifying lapsed and unreconciled credits",
+          "Reporting prior period adjustments made in subsequent year returns (Part V), penalty minimization, and final return submission"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-4-9",
+        "title": "GST Practice Projects & Live Multi-Firm Client Execution",
+        "topics": [
+          "Live Case Study 1 (Trading Enterprise): Multi-rate GST billing, E-way bill generation, and complete monthly GSTR-1/3B filing cycle",
+          "Live Case Study 2 (Manufacturing Firm): Inward raw materials with RCM freight, job-work challans, E-invoicing IRN generation, and ITC 2B Milan",
+          "Live Case Study 3 (Service Provider & Exporter): Zero-rated export billing (LUT/payment), Input Service Distributor (ISD), and export refund filing",
+          "Complete year-end simulation: Annual reconciliation, preparing GSTR-9 working papers, and handling client audit inquiries independently"
+        ],
+        "durationHours": 10
+      }
     ],
-    learningOutcomes: [
-      'Complete executive mastery over all 5 core TDS/TCS practitioner responsibilities: transaction feeding per Income Tax Act, monthly e-Pay Tax challans, quarterly return filing (24Q/26Q/27EQ), TRACES certificate issuance (Form 16/16A/27D), and client projects',
-      'Flawless quarterly return preparation and error-free validation using government RPU and FVU utilities with zero portal rejection errors',
-      'Total command over the TRACES portal for Form 16/16A downloads, Form 13 lower deduction scrutiny, and filing online C1, C2, C3 correction statements',
-      'Authority to calculate monthly withholding liability, generate Challan 281, and resolve departmental demand notices under Section 200A',
+    "learningOutcomes": [
+      "Complete executive mastery over all 9 core GST practitioner responsibilities: GST Act transaction feeding, E-way bills, E-invoicing, monthly GSTR-1, ITC 2B book milan, GSTR-3B tax offset, yearly GST audit, GSTR-9 annual return prep, and live practice projects",
+      "Flawless monthly return filing for GSTR-1 and GSTR-3B across multiple client businesses with zero departmental mismatch penalties",
+      "Bulletproof Input Tax Credit reconciliation matching portal GSTR-2B with purchase ledgers (Book Milan) per Rule 37A and Section 16(4)",
+      "Authority to compile annual GSTR-9 data tables, prepare GSTR-9C reconciliation statements, and draft professional replies to GST departmental notices"
     ],
-    seoTitle: 'TDS & TCS Practitioner Practical Course | Return Filing Form 24Q, 26Q, 27EQ | YLCC',
-    seoDescription:
-      'Learn practical TDS and TCS accounting, monthly portal payments (Challan 281), quarterly return filing (Form 24Q, 26Q, 27EQ), and TRACES certificate issuance at YLCC.',
+    "seoTitle": "GST Practitioner Practical Course | GSTR-1, GSTR-3B, GSTR-2B Milan | YLCC",
+    "seoDescription": "Hands-on GST Practitioner training in Jaipur: E-way bills, E-invoicing, GSTR-1, GSTR-3B filing, ITC 2B reconciliation, and annual GSTR-9 audit prep."
   },
-{
-    id: 'prog-6',
-    slug: 'corporate-payroll-management',
-    title: 'Corporate Payroll Management & Statutory Compliance',
-    category: 'Human Resources & Payroll Accounting',
-    shortDescription:
-      'Master the 3 foundational payroll pillars: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation according to Indian Labour Laws, and statutory ESI & EPF portal compliance.',
-    detailedDescription:
-      'Payroll accounting is a vital bridge between HR and finance. This practical masterclass trains you across all 3 foundational pillars of professional corporate payroll and labour law compliance: maintaining salary components (biometric duty logs, overtime per Factories Act, statutory bonus, gratuity provisioning, and payroll taxes), generating compliant monthly salary sheets and registers per the Code on Wages, and executing statutory social security transactions under the ESI Act (0.75% & 3.25%) and EPF & MP Act (12% ECR portal filing) with live corporate payroll case studies.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 14000,
-    discountedFees: 10999,
-    eligibility: 'Commerce graduates, HR executives, accountants, payroll administrators',
-    softwareTools: [
-      'Payroll Excel Automation Sheets',
-      'Tally Prime Payroll Module',
-      'EPF Unified Employer Portal',
-      'ESIC Portal',
-      'Online Challan Generation Utilities',
+  {
+    "id": "prog-5",
+    "slug": "tds-tcs-practitioner",
+    "title": "TDS & TCS Practitioner Practical Course",
+    "category": "Direct Taxation & Withholding",
+    "shortDescription": "Master the 5 foundational TDS & TCS practitioner pillars: statutory withholding transaction entries, monthly Challan 281 portal payments, quarterly return filing (Form 24Q, 26Q, 27EQ), TRACES certificate issuance (Form 16/16A, 27D & Form 13), and live client projects.",
+    "detailedDescription": "Withholding tax compliance is mandatory for every business entity in India. Non-compliance invites hefty interest under Section 201(1A), penal late fees under Section 234E, and disallowance of business expenses under Section 40(a)(ia). This practical masterclass trains you across all 5 foundational pillars of professional TDS & TCS practice: recording day-to-day business transactions per the Income Tax Act (194C, 194J, 194I, 194Q, 206C(1H)), executing monthly tax payments via Challan 281 on the e-Pay Tax portal, preparing and validating quarterly returns (Form 24Q, 26Q, 27EQ) using government RPU and FVU utilities, managing the TRACES portal for Form 16/16A and Form 27D certificate issuance, handling Form 13 lower-deduction certificates, and executing live client projects across corporate, trading, and manufacturing entities.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 15000,
+    "discountedFees": 11499,
+    "eligibility": "Commerce students, tax interns, accountants, finance executives",
+    "softwareTools": [
+      "TRACES Portal",
+      "Income Tax E-Filing Portal (e-Pay Tax)",
+      "NSDL e-TDS RPU Utility",
+      "NSDL File Validation Utility (FVU)",
+      "Tally Prime TDS/TCS Module",
+      "Excel TDS Automation Sheets"
     ],
-    facultyId: 'fac-3',
-    facultyName: 'CS Meenakshi Sharma (Labour Law & Payroll Specialist)',
-    batchTiming: 'Morning: 10:00 AM – 12:00 PM | Evening: 4:00 PM – 6:00 PM',
-    availableSeats: 8,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-TDS-Payroll.pdf',
-    certificateInfo: 'YLCC Certified Corporate Payroll & Labour Compliance Executive',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 9,
-    coreCompetenciesHeading: '3 Core Payroll Management & Statutory Pillars You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical desk execution covering duty & attendance maintenance, overtime, statutory bonus & gratuity, Labour Law wage generation, and ESI/PF portal compliance.',
-    coreCompetencies: [
+    "facultyId": "fac-1",
+    "facultyName": "CA Alok Maheshwari (Senior Chartered Accountant)",
+    "batchTiming": "Morning: 9:00 AM – 11:00 AM | Evening: 5:30 PM – 7:30 PM",
+    "availableSeats": 6,
+    "startDate": "5th & 20th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
+    "certificateInfo": "YLCC Certified Withholding Tax & TDS Specialist",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 9,
+    "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical desk execution covering the complete statutory TDS & TCS compliance cycle from transaction feeding to return filing, TRACES certificates, and live client projects.",
+    "coreCompetencies": [
       {
-        title: 'Salary Maintenance',
-        description:
-          'Maintaining biometric attendance, duty shifts, overtime calculations per Factories Act, statutory bonus (Bonus Act), gratuity provisioning, and payroll taxes (PT & TDS).',
+        "title": "Business Transaction Feed",
+        "description": "Recording purchase and expense vouchers with statutory TDS/TCS deductions under Sections 194C, 194J, 194I, 194Q, and 206C(1H) with PAN validation."
       },
       {
-        title: 'Monthly Salary Generation',
-        description:
-          'Generating compliant monthly salary sheets per Indian Labour Laws, automated pay-slips, wage registers (Form T), bank disbursement advice, and F&F settlements.',
+        "title": "Monthly TDS/TCS Portal Payment",
+        "description": "Calculating monthly withholding liabilities, Challan 281 generation on the e-Pay Tax portal, Major/Minor head selection, and CSI file creation."
       },
       {
-        title: 'ESI & Statutory Transactions',
-        description:
-          'Statutory ESI Act calculations (0.75% & 3.25%), EPF 12% wage break-up, ECR portal filing, monthly challan generation, and compliance registers.',
+        "title": "Quarterly Return Filing",
+        "description": "Preparing and filing quarterly Form 24Q (Salary), Form 26Q (Non-Salary), and Form 27EQ (TCS) using official government RPU and FVU utilities."
       },
+      {
+        "title": "TRACES Certificate Issuance",
+        "description": "Downloading and issuing Form 16, Form 16A, and Form 27D certificates from TRACES, handling Form 13 lower-deduction certificates, and C1-C5 corrections."
+      },
+      {
+        "title": "TDS/TCS Practice Projects",
+        "description": "Hands-on simulated corporate client desk projects covering end-to-end deduction, challan payments, quarterly return validation, and default resolution."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-6-1',
-        title: 'Salary Maintenance: Duty, Overtime, Bonus, Gratuity & Taxes',
-        topics: [
-          'Biometric attendance and duty logs: Shift rosters, late mark rules, leaves (earned/casual/sick), and Loss of Pay (LOP) calculations',
-          'Overtime (OT) rate calculation mechanics under the Factories Act and State Shops & Establishments Act (double the ordinary rate of wages)',
-          'Statutory Bonus (Payment of Bonus Act 8.33% to 20%, allocable surplus, eligibility, Form C register) & Gratuity provisioning (15/26 days formula)',
-          'Payroll tax deductions: State-wise Professional Tax (PT) slab computation and employee salary TDS withholding under Section 192',
+        "id": "mod-5-1",
+        "title": "Business Transaction Feeding According to TDS/TCS Act",
+        "topics": [
+          "Recording business vouchers with section-wise statutory TDS deductions: 194C (contractors), 194J (professional/technical fees), 194I (rent), 194A (interest), 194H (commission)",
+          "Accounting for Section 194Q (TDS on purchase of goods > ₹50L @ 0.1%) vs Section 206C(1H) (TCS on sale of goods) priority rules",
+          "PAN verification, higher-rate tax deduction @ 20% under Section 206AA, and Section 206AB compliance check for specified non-filers",
+          "TCS transaction feeding: Sale of scrap, minerals, motor vehicles (Section 206C(1F)), and Liberalised Remittance Scheme (LRS 206C(1G))"
         ],
-        durationHours: 20,
+        "durationHours": 16
       },
       {
-        id: 'mod-6-2',
-        title: 'Monthly Salary Generation According to Labour Law',
-        topics: [
-          'Structuring CTC and gross-to-net salary components per the Code on Wages (Basic, DA, HRA, Conveyance, Special Allowance, and minimum basic threshold)',
-          'Automated monthly payroll sheet generation: Gross earnings, statutory deductions, voluntary deductions (advances, loan EMIs), and net payable wages',
-          'Labour Law compliance: Minimum Wages Act compliance, Payment of Wages Act timely disbursement mandates, and statutory Form T (Wage Register)',
-          'Automated professional pay-slip generation, bank disbursement NEFT/RTGS advice text files, and full & final (F&F) settlement calculations',
+        "id": "mod-5-2",
+        "title": "Monthly TDS/TCS Portal Payments & Challan 281 E-Filing",
+        "topics": [
+          "Monthly tax computation on or before the 7th of every month (and 30th April for March deductions) with ledger balance verification",
+          "Navigating the Income Tax E-Filing Portal (e-Pay Tax facility) and generating online Challan 281 for corporate and non-corporate deductees",
+          "Correct Major Head selection (0020 Company vs 0021 Non-Company) and Minor Head selection (200 Self-TDS vs 400 Regular Assessment)",
+          "Challan payment execution via net-banking/NEFT/RTGS, BSR code and CIN record upkeep, and Section 201(1A) interest calculation"
         ],
-        durationHours: 20,
+        "durationHours": 12
       },
       {
-        id: 'mod-6-3',
-        title: 'ESI & Statutory Social Security Transactions (According to ESI Act & PF Rules)',
-        topics: [
-          'ESI Act statutory compliance: Eligibility criteria (₹21,000 wage ceiling), employee (0.75%) & employer (3.25%) contribution calculations',
-          'Operating the ESIC Employer Portal: Monthly contribution filing, online challan generation, Pehchan card issuance, and accident reports (Form 16)',
-          'EPF & MP Act compliance: Wage ceiling rules (₹15,000 threshold), employee (12%) & employer (3.67% EPF + 8.33% EPS) contribution break-up, and EDLI charges',
-          'Generating EPF Electronic Challan-cum-Return (ECR text file), portal upload, online challan payment, and end-to-end multi-business payroll case studies',
+        "id": "mod-5-3",
+        "title": "Quarterly TDS/TCS Return Preparation & Government FVU Filing",
+        "topics": [
+          "Form 24Q (Salary TDS): Compiling Annexure-I quarterly salary deductions and Annexure-II (Q4 tax calculation per Old vs New tax regimes)",
+          "Form 26Q (Non-Salary Domestic TDS): Line-by-line deductee mapping, Section code assignment, payment booking date, and challan matching",
+          "Form 27EQ (TCS Collections): Compiling collection details, buyer PAN scrutiny, and Form 27Q for payments made to non-resident entities",
+          "Working on NSDL Return Preparation Utility (RPU), validating against Challan Status File (.csi) via FVU tool, and portal uploading via TAN login"
         ],
-        durationHours: 20,
+        "durationHours": 16
       },
+      {
+        "id": "mod-5-4",
+        "title": "TRACES Portal Operations, Form 16/16A & Form 13 Lower Deduction",
+        "topics": [
+          "TRACES portal deductor registration, KYC validation, profile management, and dashboard default surveillance",
+          "Requesting, downloading, and converting text files to issue digitally signed Form 16 (Part A & B) and quarterly Form 16A / Form 27D certificates",
+          "Verifying Assessing Officer Lower Deduction Certificates issued under Form 13 / Section 197 and updating 10-digit certificate numbers in software",
+          "Filing online TDS Correction Statements (C1 challan update, C2 deductee update, C3 PAN correction) and resolving Section 200A demand notices"
+        ],
+        "durationHours": 14
+      },
+      {
+        "id": "mod-5-5",
+        "title": "TDS/TCS Practice Projects & Live Multi-Entity Case Studies",
+        "topics": [
+          "Live Case Study 1 (Corporate Enterprise): Multi-contractor billing, professional fees, monthly Challan 281 payment, and Form 26Q return filing",
+          "Live Case Study 2 (Industrial Manufacturing): Scrap sales, high-value goods sale under Section 206C(1H), Form 27EQ compilation, and Form 27D issuance",
+          "Live Case Study 3 (Payroll & Staff Withholding): Complete executive salary TDS computation under Form 24Q, Chapter VI-A deductions, and Form 16 generation",
+          "End-to-End Audit & Correction Workshop: Downloading TRACES Conso files, executing C3 PAN correction statements, and clearing Section 234E late fee defaults"
+        ],
+        "durationHours": 14
+      }
     ],
-    learningOutcomes: [
-      'Complete executive mastery over all 3 core payroll pillars: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation per Labour Laws, and statutory ESI/EPF transactions',
-      'Design fully compliant corporate salary structures and automated monthly wage registers (Form T) with zero calculation errors',
-      'Total command over the ESIC and EPFO portals for monthly return filing, ECR text generation, and online challan payments',
-      'Authority to handle end-to-end full & final (F&F) settlement calculations and labour law statutory audit compliance',
+    "learningOutcomes": [
+      "Complete executive mastery over all 5 core TDS/TCS practitioner responsibilities: transaction feeding per Income Tax Act, monthly e-Pay Tax challans, quarterly return filing (24Q/26Q/27EQ), TRACES certificate issuance (Form 16/16A/27D), and client projects",
+      "Flawless quarterly return preparation and error-free validation using government RPU and FVU utilities with zero portal rejection errors",
+      "Total command over the TRACES portal for Form 16/16A downloads, Form 13 lower deduction scrutiny, and filing online C1, C2, C3 correction statements",
+      "Authority to calculate monthly withholding liability, generate Challan 281, and resolve departmental demand notices under Section 200A"
     ],
-    seoTitle: 'Corporate Payroll Management & Statutory Compliance Course | YLCC',
-    seoDescription:
-      'Practical corporate payroll training: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation per Labour Laws, and ESI/EPF portal filing at YLCC.',
+    "seoTitle": "TDS & TCS Practitioner Practical Course | Return Filing Form 24Q, 26Q, 27EQ | YLCC",
+    "seoDescription": "Learn practical TDS and TCS accounting, monthly portal payments (Challan 281), quarterly return filing (Form 24Q, 26Q, 27EQ), and TRACES certificate issuance at YLCC."
   },
-{
-    id: 'prog-7',
-    slug: 'cost-accounting-industrial-inventory',
-    title: 'Cost Accounting & Industrial Inventory Control',
-    category: 'Cost Accounting & Industrial Management',
-    shortDescription:
-      'Master the 10 foundational cost accounting & inventory pillars: perpetual stock control, negative inventory prevention, automated POs, own-brand manufacturing BOM, builder site costing, government tender costing, thekedar civil works, contract manufacturing (Britannia/Parle-G model taken & given), and job-work cost control.',
-    detailedDescription:
-      'Manufacturing enterprises, infrastructure contractors, real estate builders, and FMCG contract processors rely on precise cost accounting and strict stock control to safeguard profitability. This comprehensive practical masterclass trains you across all 10 foundational pillars of industrial costing: maintaining perpetual inventory and eliminating negative stock balances, automating purchase order triggers, configuring multi-level Bills of Materials (BOM) for own-brand manufacturing, site-wise costing for real estate developers and government thekedars (roads, drains, bridges), multi-department tender estimation, contract manufacturing economics for FMCG vendors and brand principals (Britannia / Parle-G model), and Section 143 job-work inventory control.',
-    duration: '2 Months',
-    mode: 'Offline Classroom',
-    fees: 18500,
-    discountedFees: 14499,
-    eligibility: 'Commerce graduates, cost accountants, factory managers, business proprietors',
-    softwareTools: [
-      'Tally Prime Bill of Materials (BOM)',
-      'Industrial Costing & Excel 365 Models',
-      'GST ITC-04 Job-Work Portal',
-      'Tender Rate Analysis Spreadsheets',
-      'E-Way Bill & Store Ledger Systems',
+  {
+    "id": "prog-6",
+    "slug": "corporate-payroll-management",
+    "title": "Corporate Payroll Management & Statutory Compliance",
+    "category": "Human Resources & Payroll Accounting",
+    "shortDescription": "Master the 3 foundational payroll pillars: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation according to Indian Labour Laws, and statutory ESI & EPF portal compliance.",
+    "detailedDescription": "Payroll accounting is a vital bridge between HR and finance. This practical masterclass trains you across all 3 foundational pillars of professional corporate payroll and labour law compliance: maintaining salary components (biometric duty logs, overtime per Factories Act, statutory bonus, gratuity provisioning, and payroll taxes), generating compliant monthly salary sheets and registers per the Code on Wages, and executing statutory social security transactions under the ESI Act (0.75% & 3.25%) and EPF & MP Act (12% ECR portal filing) with live corporate payroll case studies.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 14000,
+    "discountedFees": 10999,
+    "eligibility": "Commerce graduates, HR executives, accountants, payroll administrators",
+    "softwareTools": [
+      "Payroll Excel Automation Sheets",
+      "Tally Prime Payroll Module",
+      "EPF Unified Employer Portal",
+      "ESIC Portal",
+      "Online Challan Generation Utilities"
     ],
-    facultyId: 'fac-2',
-    facultyName: 'Rajesh Soni (Industrial Costing Consultant)',
-    batchTiming: 'Morning: 8:30 AM – 10:30 AM | Afternoon: 2:00 PM – 4:00 PM',
-    availableSeats: 7,
-    startDate: '10th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-    certificateInfo: 'YLCC Certified Industrial Cost Accountant & Inventory Controller',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 10,
-    coreCompetenciesHeading: '10 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical desk execution covering industrial inventory control, manufacturing BOM, builder site costing, government tender costing, and contract/job-work economics.',
-    coreCompetencies: [
+    "facultyId": "fac-3",
+    "facultyName": "CS Meenakshi Sharma (Labour Law & Payroll Specialist)",
+    "batchTiming": "Morning: 10:00 AM – 12:00 PM | Evening: 4:00 PM – 6:00 PM",
+    "availableSeats": 8,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
+    "certificateInfo": "YLCC Certified Corporate Payroll & Labour Compliance Executive",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 10,
+    "coreCompetenciesHeading": "3 Core Payroll Management & Statutory Pillars You Master",
+    "coreCompetenciesSubheading": "Hands-on practical desk execution covering duty & attendance maintenance, overtime, statutory bonus & gratuity, Labour Law wage generation, and ESI/PF portal compliance.",
+    "coreCompetencies": [
       {
-        title: 'Inventory Control / Stock Maintain',
-        description:
-          'Maintaining perpetual inventory records, item-wise & batch-wise godown ledgers, FIFO & Weighted Average valuation methods, and physical stock tally.',
+        "title": "Salary Maintenance",
+        "description": "Maintaining biometric attendance, duty shifts, overtime calculations per Factories Act, statutory bonus (Bonus Act), gratuity provisioning, and payroll taxes (PT & TDS)."
       },
       {
-        title: 'Negative Stock Monitoring',
-        description:
-          'Real-time surveillance of negative inventory warnings, identifying unbilled dispatches or delayed purchase feeding, and instituting internal audit controls.',
+        "title": "Monthly Salary Generation",
+        "description": "Generating compliant monthly salary sheets per Indian Labour Laws, automated pay-slips, wage registers (Form T), bank disbursement advice, and F&F settlements."
       },
       {
-        title: 'Automatic Purchase Order Generation',
-        description:
-          'Setting Minimum Reorder Levels (ROL), Reorder Quantities (ROQ), safety stock buffers, and configuring automated PO generation workflows.',
-      },
-      {
-        title: 'Manufacturing Costing (Own Brand)',
-        description:
-          'Configuring multi-level Bill of Materials (BOM), allocating direct material, labour, factory overheads, and machine-hour rates for own-brand products.',
-      },
-      {
-        title: 'Builder Site-Wise Costing',
-        description:
-          'Allocating construction materials, cement/steel consumption, labour contractors, architect fees, and equipment rentals across independent real estate sites.',
-      },
-      {
-        title: 'Government Tender Costing',
-        description:
-          'Estimating bid costs across multi-department tenders (PWD, Railways, CPWD, Municipalities), tender schedule rate analysis, EMD, and bid margins.',
-      },
-      {
-        title: 'Government Thekedar Site Costing',
-        description:
-          'Accurate site-wise cost sheets for civil projects (roads, drains, bridges), bitumen/diesel tracking, running account (RA) bills, and retention money.',
-      },
-      {
-        title: 'Contract Taken (Vendor Model)',
-        description:
-          'Costing for third-party contract manufacturing vendors (Britannia/Parle-G biscuit model), principal-supplied raw materials, conversion charges, and yield audit.',
-      },
-      {
-        title: 'Contract Given (Brand Model)',
-        description:
-          'Costing for brand principals outsourcing manufacturing, raw material dispatch tracking, conversion fee audits, and quality rejection adjustments.',
-      },
-      {
-        title: 'Job-Worker Inventory & Costing',
-        description:
-          'Managing Section 143 GST job-work Delivery Challans, tracking raw material issuance vs finished receipts, scrap recovery, and processing fee bills.',
-      },
+        "title": "ESI & Statutory Transactions",
+        "description": "Statutory ESI Act calculations (0.75% & 3.25%), EPF 12% wage break-up, ECR portal filing, monthly challan generation, and compliance registers."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-7-1',
-        title: 'Inventory Control & Multi-Godown Stock Maintenance',
-        topics: [
-          'Perpetual stock register maintenance across raw materials, work-in-progress (WIP), and finished goods',
-          'Configuring item masters with standard costing, batch-wise tracking, expiry dates, and alternate units of measurement',
-          'Stock valuation techniques: FIFO (First-In, First-Out), Weighted Average Cost (WAC), and net realizable value (NRV) testing',
-          'Multi-godown transfers (Stock Journal vouchers), physical warehouse verification checklists, and handling stock shortage/breakage',
+        "id": "mod-6-1",
+        "title": "Salary Maintenance: Duty, Overtime, Bonus, Gratuity & Taxes",
+        "topics": [
+          "Biometric attendance and duty logs: Shift rosters, late mark rules, leaves (earned/casual/sick), and Loss of Pay (LOP) calculations",
+          "Overtime (OT) rate calculation mechanics under the Factories Act and State Shops & Establishments Act (double the ordinary rate of wages)",
+          "Statutory Bonus (Payment of Bonus Act 8.33% to 20%, allocable surplus, eligibility, Form C register) & Gratuity provisioning (15/26 days formula)",
+          "Payroll tax deductions: State-wise Professional Tax (PT) slab computation and employee salary TDS withholding under Section 192"
         ],
-        durationHours: 8,
+        "durationHours": 20
       },
       {
-        id: 'mod-7-2',
-        title: 'Negative Stock Surveillance & Accounting Control',
-        topics: [
-          'Configuring system-level warnings and strict prevention controls for negative stock balances in ERP/Tally Prime',
-          'Investigating root causes: Dispatch billing executed prior to inward GRN/purchase voucher feeding, or erroneous unit conversion',
-          'Detecting unauthorized stock leakages, unregistered sales, and negative balance anomalies during statutory book audits',
-          'Instituting rectification voucher entries, material receipt tracking, and physical inventory lockdown procedures',
+        "id": "mod-6-2",
+        "title": "Monthly Salary Generation According to Labour Law",
+        "topics": [
+          "Structuring CTC and gross-to-net salary components per the Code on Wages (Basic, DA, HRA, Conveyance, Special Allowance, and minimum basic threshold)",
+          "Automated monthly payroll sheet generation: Gross earnings, statutory deductions, voluntary deductions (advances, loan EMIs), and net payable wages",
+          "Labour Law compliance: Minimum Wages Act compliance, Payment of Wages Act timely disbursement mandates, and statutory Form T (Wage Register)",
+          "Automated professional pay-slip generation, bank disbursement NEFT/RTGS advice text files, and full & final (F&F) settlement calculations"
         ],
-        durationHours: 8,
+        "durationHours": 20
       },
       {
-        id: 'mod-7-3',
-        title: 'Automated Reordering & Purchase Order Generation Workflows',
-        topics: [
-          'Determining economic order quantities (EOQ), supplier lead times, and average consumption rates to calculate Reorder Levels (ROL)',
-          'Setting safety stock buffers and maximum storage limits to prevent working capital blockage and plant stock-outs',
-          'Automating Purchase Order (PO) triggers in software based on real-time reorder point breaches',
-          'Tracking PO-to-GRN fulfilment, vendor delivery schedules, pending purchase order registers, and rate variance audits',
+        "id": "mod-6-3",
+        "title": "ESI & Statutory Social Security Transactions (According to ESI Act & PF Rules)",
+        "topics": [
+          "ESI Act statutory compliance: Eligibility criteria (₹21,000 wage ceiling), employee (0.75%) & employer (3.25%) contribution calculations",
+          "Operating the ESIC Employer Portal: Monthly contribution filing, online challan generation, Pehchan card issuance, and accident reports (Form 16)",
+          "EPF & MP Act compliance: Wage ceiling rules (₹15,000 threshold), employee (12%) & employer (3.67% EPF + 8.33% EPS) contribution break-up, and EDLI charges",
+          "Generating EPF Electronic Challan-cum-Return (ECR text file), portal upload, online challan payment, and end-to-end multi-business payroll case studies"
         ],
-        durationHours: 8,
-      },
-      {
-        id: 'mod-7-4',
-        title: 'Manufacturing Costing & Own-Brand Product Economics',
-        topics: [
-          'Configuring multi-level Bill of Materials (BOM) in ERP: Raw materials, consumable packaging, co-products, and by-products',
-          'Allocation and apportionment of factory overheads: Direct labour hours, power consumption, machine-hour rates, and factory rent',
-          'Preparing comprehensive unit Cost Sheets (Prime Cost, Factory Cost, Cost of Production, and Cost of Sales)',
-          'Gross margin sensitivity analysis, break-even point (BEP) computation, and profit pricing strategies for own-brand retail/wholesale goods',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-7-5',
-        title: 'Real Estate & Builder Site-Wise Costing & Inventory Control',
-        topics: [
-          'Setting up project-specific Cost Centres and multi-site godowns for residential and commercial real estate schemes',
-          'Inward material tracking per site: Cement, TMT steel, aggregates, bricks, electricals, and sanitary fittings against delivery challans',
-          'Tracking site labour contractor bills, equipment machinery hire charges, architect/structural consulting fees, and overhead allocation',
-          'Square-foot construction cost computation, stage-wise construction progress valuation, and reconciling site consumption against architectural estimates',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-7-6',
-        title: 'Multi-Department Government Tender Costing & Bid Estimation',
-        topics: [
-          'Deciphering government tender documents (PWD, CPWD, Indian Railways, PHED, and Municipal Corporations) and Schedule of Rates (SOR)',
-          'Detailed item-rate estimation: Material rates, transit freight, statutory royalties, equipment wear & tear, and water/electricity charges',
-          'Accounting for Earnest Money Deposits (EMD), Performance Bank Guarantees (PBG), tender form fees, and bid security margin provisions',
-          'Tender-wise cost ledger maintenance, comparing estimated tender cost vs actual execution expenditures, and bid profitability analysis',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-7-7',
-        title: 'Government Thekedar Civil Projects Costing (Roads, Drains & Bridges)',
-        topics: [
-          'Site-wise cost recording for public infrastructure works: Road asphalting, concrete drains (nali), culverts, and bridge construction',
-          'In-transit material tracking: Bitumen, crushed stone grit, diesel for heavy machinery (JCB, pavers, rollers), and site store controls',
-          'Preparation of Running Account (RA) bills against Measurement Book (MB) entries approved by government executive engineers',
-          'Accounting for statutory deductions from contractor bills: GST-TDS (2%), Income-tax TDS (194C @ 1%/2%), royalty, and security retention money',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-7-8',
-        title: 'Contract Taken Costing: FMCG Third-Party Manufacturing Vendor Model',
-        topics: [
-          'Understanding the contract manufacturing vendor business model (e.g. Dedicated third-party biscuit manufacturing for Britannia / Parle-G)',
-          'Accounting for principal-supplied ingredients (flour, sugar, edible oils) received on stock transfer vs vendor-procured consumables',
-          'Computation of unit conversion charges, packaging charges, electricity fuel consumption, and standard recipe yield percentages',
-          'Reconciling input raw materials with output finished goods, standard processing loss tolerances, and penalty clause accounting',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-7-9',
-        title: 'Contract Given Costing: Brand Principal & Subcontracting Model',
-        topics: [
-          'Understanding the brand principal perspective: Outsourcing production to contract packers and third-party manufacturing plants',
-          'Accounting for outward raw material dispatches under Delivery Challans and monitoring vendor warehouse stocks off-balance sheet',
-          'Auditing third-party conversion bills against agreed unit rates, quality lab test reports, and net production receipts',
-          'Accounting for scrap realization, off-spec product deductions, vendor debit notes, and finished goods landed cost finalization',
-        ],
-        durationHours: 10,
-      },
-      {
-        id: 'mod-7-10',
-        title: 'Job-Worker Material Accounting, Wastage & Cost Control',
-        topics: [
-          'Statutory GST job-work compliances under Section 143: Issuing Form GST ITC-04, 1-year input and 3-year capital goods return deadlines',
-          'Delivery Challan processing for material sent to job-workers (dyeing, casting, machining, assembling, packaging)',
-          'Tracking input-output conversion ratios, standard shrinkage/wastage tolerances, and scrap recovery reconciliation',
-          'Auditing job-work processing charges, passing TDS deduction entries under Section 194C, and updating final product capitalized cost',
-        ],
-        durationHours: 10,
-      },
+        "durationHours": 20
+      }
     ],
-    learningOutcomes: [
-      'Complete executive mastery over all 10 core industrial cost accounting & inventory control pillars across manufacturing, real estate, contracting, and FMCG sectors',
-      'Accurately construct multi-level Bills of Materials (BOM), allocate machine-hour overheads, and establish unit product cost sheets',
-      'Manage site-wise accounting for real estate builders and government thekedars (roads, drains, bridges) with Running Account (RA) billing',
-      'Total command over contract manufacturing economics (taken & given models) and Section 143 statutory job-work inventory reconciliation',
+    "learningOutcomes": [
+      "Complete executive mastery over all 3 core payroll pillars: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation per Labour Laws, and statutory ESI/EPF transactions",
+      "Design fully compliant corporate salary structures and automated monthly wage registers (Form T) with zero calculation errors",
+      "Total command over the ESIC and EPFO portals for monthly return filing, ECR text generation, and online challan payments",
+      "Authority to handle end-to-end full & final (F&F) settlement calculations and labour law statutory audit compliance"
     ],
-    seoTitle: 'Cost Accounting & Industrial Inventory Control Course | YLCC',
-    seoDescription:
-      'Hands-on industrial cost accounting in Jaipur: inventory control, negative stock prevention, manufacturing BOM, builder site costing, government thekedar tenders, and contract manufacturing.',
+    "seoTitle": "Corporate Payroll Management & Statutory Compliance Course | YLCC",
+    "seoDescription": "Practical corporate payroll training: salary maintenance (duty, overtime, bonus, gratuity, taxes), monthly salary generation per Labour Laws, and ESI/EPF portal filing at YLCC."
   },
-{
-    id: 'prog-8',
-    slug: 'advanced-excel-corporate-excel-365',
-    title: 'Advanced Excel & Corporate Excel 365 Mastery',
-    category: 'Advanced Excel & MIS Reporting',
-    shortDescription:
-      'Master the 5 foundational Excel 365 pillars: 250+ dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ corporate interview challenges, and automated executive MIS dashboards.',
-    detailedDescription:
-      'Corporate Excel 365 is the indispensable operating system of modern finance, commerce, and business intelligence. This comprehensive practical masterclass trains you across all 5 foundational pillars of corporate spreadsheet mastery: mastering 250+ modern formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA), commanding essential productivity features (cascading dropdowns, What-If tools, custom conditional formatting), diagnosing and fixing 500+ real-world troubleshooting and error scenarios, solving 250+ technical interview test problems from top MNCs, and building fully automated one-click MIS dashboards using Power Query ETL.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 12500,
-    discountedFees: 9999,
-    eligibility: 'Open to all commerce students, accountants, analysts, and working professionals',
-    softwareTools: [
-      'Microsoft Excel 365',
-      'Power Query (ETL Engine)',
-      'Power Pivot & Data Models',
-      'Dynamic Array Engine',
-      'Office 365 Cloud',
+  {
+    "id": "prog-7",
+    "slug": "cost-accounting-industrial-inventory",
+    "title": "Cost Accounting & Industrial Inventory Control",
+    "category": "Cost Accounting & Industrial Management",
+    "shortDescription": "Master the 10 foundational cost accounting & inventory pillars: perpetual stock control, negative inventory prevention, automated POs, own-brand manufacturing BOM, builder site costing, government tender costing, thekedar civil works, contract manufacturing (Britannia/Parle-G model taken & given), and job-work cost control.",
+    "detailedDescription": "Manufacturing enterprises, infrastructure contractors, real estate builders, and FMCG contract processors rely on precise cost accounting and strict stock control to safeguard profitability. This comprehensive practical masterclass trains you across all 10 foundational pillars of industrial costing: maintaining perpetual inventory and eliminating negative stock balances, automating purchase order triggers, configuring multi-level Bills of Materials (BOM) for own-brand manufacturing, site-wise costing for real estate developers and government thekedars (roads, drains, bridges), multi-department tender estimation, contract manufacturing economics for FMCG vendors and brand principals (Britannia / Parle-G model), and Section 143 job-work inventory control.",
+    "duration": "2 Months",
+    "mode": "Offline Classroom",
+    "fees": 18500,
+    "discountedFees": 14499,
+    "eligibility": "Commerce graduates, cost accountants, factory managers, business proprietors",
+    "softwareTools": [
+      "Tally Prime Bill of Materials (BOM)",
+      "Industrial Costing & Excel 365 Models",
+      "GST ITC-04 Job-Work Portal",
+      "Tender Rate Analysis Spreadsheets",
+      "E-Way Bill & Store Ledger Systems"
     ],
-    facultyId: 'fac-4',
-    facultyName: 'Vikas Khandelwal (Corporate MIS Analyst & Excel Specialist)',
-    batchTiming: 'Morning: 7:00 AM – 8:30 AM | Evening: 7:00 PM – 8:30 PM | Sunday Intensive',
-    availableSeats: 10,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-    certificateInfo: 'YLCC Certified Corporate Excel 365 & MIS Specialist',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 11,
-    coreCompetenciesHeading: '5 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on corporate spreadsheet mastery covering 250+ modern Excel 365 dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ interview challenges, and automated MIS reporting.',
-    coreCompetencies: [
+    "facultyId": "fac-2",
+    "facultyName": "Rajesh Soni (Industrial Costing Consultant)",
+    "batchTiming": "Morning: 8:30 AM – 10:30 AM | Afternoon: 2:00 PM – 4:00 PM",
+    "availableSeats": 7,
+    "startDate": "10th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+    "certificateInfo": "YLCC Certified Industrial Cost Accountant & Inventory Controller",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 11,
+    "coreCompetenciesHeading": "10 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on practical desk execution covering industrial inventory control, manufacturing BOM, builder site costing, government tender costing, and contract/job-work economics.",
+    "coreCompetencies": [
       {
-        title: '250+ Formulas (Excel 365)',
-        description:
-          'Mastering 250+ modern functions: dynamic arrays (XLOOKUP, FILTER, UNIQUE, SORTBY, SEQUENCE), calculation engines (LET, LAMBDA), and financial math.',
+        "title": "Inventory Control / Stock Maintain",
+        "description": "Maintaining perpetual inventory records, item-wise & batch-wise godown ledgers, FIFO & Weighted Average valuation methods, and physical stock tally."
       },
       {
-        title: 'Excel Features & Productivity Tools',
-        description:
-          'Advanced Data Validation, cascading dependent dropdowns, formula-driven Conditional Formatting, What-If Analysis, Goal Seek, Solver, and Flash Fill.',
+        "title": "Negative Stock Monitoring",
+        "description": "Real-time surveillance of negative inventory warnings, identifying unbilled dispatches or delayed purchase feeding, and instituting internal audit controls."
       },
       {
-        title: '500+ Excel Troubleshooting Scenarios',
-        description:
-          'Diagnosing and fixing #N/A, #VALUE!, #REF!, #CALC!, #SPILL!, and circular errors, corrupt data cleaning, text-to-number repair, and audit tracing.',
+        "title": "Automatic Purchase Order Generation",
+        "description": "Setting Minimum Reorder Levels (ROL), Reorder Quantities (ROQ), safety stock buffers, and configuring automated PO generation workflows."
       },
       {
-        title: '250+ Corporate Interview Challenges',
-        description:
-          'Cracking 250+ real-world corporate Excel interview tests, speed modeling challenges, timed aptitude assessments, and business case scenarios.',
+        "title": "Manufacturing Costing (Own Brand)",
+        "description": "Configuring multi-level Bill of Materials (BOM), allocating direct material, labour, factory overheads, and machine-hour rates for own-brand products."
       },
       {
-        title: 'Automated MIS Reports & Dashboards',
-        description:
-          'Automating raw data extraction via Power Query (ETL), multi-table data modeling, dynamic Pivot Tables, Slicers, and interactive KPI executive dashboards.',
+        "title": "Builder Site-Wise Costing",
+        "description": "Allocating construction materials, cement/steel consumption, labour contractors, architect fees, and equipment rentals across independent real estate sites."
       },
+      {
+        "title": "Government Tender Costing",
+        "description": "Estimating bid costs across multi-department tenders (PWD, Railways, CPWD, Municipalities), tender schedule rate analysis, EMD, and bid margins."
+      },
+      {
+        "title": "Government Thekedar Site Costing",
+        "description": "Accurate site-wise cost sheets for civil projects (roads, drains, bridges), bitumen/diesel tracking, running account (RA) bills, and retention money."
+      },
+      {
+        "title": "Contract Taken (Vendor Model)",
+        "description": "Costing for third-party contract manufacturing vendors (Britannia/Parle-G biscuit model), principal-supplied raw materials, conversion charges, and yield audit."
+      },
+      {
+        "title": "Contract Given (Brand Model)",
+        "description": "Costing for brand principals outsourcing manufacturing, raw material dispatch tracking, conversion fee audits, and quality rejection adjustments."
+      },
+      {
+        "title": "Job-Worker Inventory & Costing",
+        "description": "Managing Section 143 GST job-work Delivery Challans, tracking raw material issuance vs finished receipts, scrap recovery, and processing fee bills."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-8-1',
-        title: '250+ Formulas & Modern Dynamic Array Functions (Excel 365)',
-        topics: [
-          'Modern Lookups: XLOOKUP (bidirectional, multi-criteria, wildcard matches), INDEX-MATCH-MATCH, CHOOSEROWS, CHOOSECOLS',
-          'Dynamic Array Engine: FILTER, UNIQUE, SORT, SORTBY, SEQUENCE, EXPAND, TOCOL, and TOROW for zero-formula-drag models',
-          'Formula Optimization: LET function for caching intermediate calculations & custom reusable recursive LAMBDA functions',
-          'Financial, Statistical & Date functions: XIRR, XNPV, PMT, PPMT, EDATE, EOMONTH, WORKDAY.INTL, and DATEDIF',
+        "id": "mod-7-1",
+        "title": "Inventory Control & Multi-Godown Stock Maintenance",
+        "topics": [
+          "Perpetual stock register maintenance across raw materials, work-in-progress (WIP), and finished goods",
+          "Configuring item masters with standard costing, batch-wise tracking, expiry dates, and alternate units of measurement",
+          "Stock valuation techniques: FIFO (First-In, First-Out), Weighted Average Cost (WAC), and net realizable value (NRV) testing",
+          "Multi-godown transfers (Stock Journal vouchers), physical warehouse verification checklists, and handling stock shortage/breakage"
         ],
-        durationHours: 16,
+        "durationHours": 8
       },
       {
-        id: 'mod-8-2',
-        title: 'Advanced Excel Features & Workplace Productivity Tools',
-        topics: [
-          'Data Validation architecture: Dynamic searchable dropdowns, cascading dependent dropdowns (INDIRECT), and custom input limits',
-          'Advanced Conditional Formatting: Formula-driven formatting rules, heat maps, data bars, icon sets, and automated variance flagging',
-          'Analytical & What-If tools: Goal Seek, Data Tables (1-variable & 2-variable), Scenario Manager, and Solver optimization models',
-          'Data management accelerators: Flash Fill patterns, Text-to-Columns parsing, advanced multi-level sorting, and formula auditing (Trace Precedents/Dependents)',
+        "id": "mod-7-2",
+        "title": "Negative Stock Surveillance & Accounting Control",
+        "topics": [
+          "Configuring system-level warnings and strict prevention controls for negative stock balances in ERP/Tally Prime",
+          "Investigating root causes: Dispatch billing executed prior to inward GRN/purchase voucher feeding, or erroneous unit conversion",
+          "Detecting unauthorized stock leakages, unregistered sales, and negative balance anomalies during statutory book audits",
+          "Instituting rectification voucher entries, material receipt tracking, and physical inventory lockdown procedures"
         ],
-        durationHours: 12,
+        "durationHours": 8
       },
       {
-        id: 'mod-8-3',
-        title: '500+ Excel Troubleshooting Scenarios & Error Recovery',
-        topics: [
-          'Diagnosing and resolving formula errors: #N/A, #VALUE!, #REF!, #DIV/0!, #NAME?, #NUM!, #CALC!, and dynamic array #SPILL! errors',
-          'Identifying and resolving circular reference loops, broken external workbook links, and volatile function calculation slowdowns',
-          'Data hygiene & cleaning: Stripping non-printable characters (CLEAN, TRIM), fixing ghost spaces, converting text-stored numbers, and date format repairs',
-          'Repairing corrupted workbooks, protecting intellectual property (sheet/range locking, password hashing), and spreadsheet audit inspection trails',
+        "id": "mod-7-3",
+        "title": "Automated Reordering & Purchase Order Generation Workflows",
+        "topics": [
+          "Determining economic order quantities (EOQ), supplier lead times, and average consumption rates to calculate Reorder Levels (ROL)",
+          "Setting safety stock buffers and maximum storage limits to prevent working capital blockage and plant stock-outs",
+          "Automating Purchase Order (PO) triggers in software based on real-time reorder point breaches",
+          "Tracking PO-to-GRN fulfilment, vendor delivery schedules, pending purchase order registers, and rate variance audits"
         ],
-        durationHours: 14,
+        "durationHours": 8
       },
       {
-        id: 'mod-8-4',
-        title: '250+ Corporate Excel Interview Tests & Technical Challenges',
-        topics: [
-          'Practicing 250+ actual Excel technical test questions asked by Big 4 firms, MNCs, private equity, and corporate finance departments',
-          'Speed modeling drills: Fast keyboard navigation (mouse-free Excel), shortcut masteries, and timed lookup/aggregation challenges',
-          'Real-world case study tests: Reconciling 50,000-row disparate bank statements vs ERP ledgers under strict 30-minute exam conditions',
-          'Interview portfolio creation: Presenting clean financial models, modular workbook designs, and executive-ready summary outputs',
+        "id": "mod-7-4",
+        "title": "Manufacturing Costing & Own-Brand Product Economics",
+        "topics": [
+          "Configuring multi-level Bill of Materials (BOM) in ERP: Raw materials, consumable packaging, co-products, and by-products",
+          "Allocation and apportionment of factory overheads: Direct labour hours, power consumption, machine-hour rates, and factory rent",
+          "Preparing comprehensive unit Cost Sheets (Prime Cost, Factory Cost, Cost of Production, and Cost of Sales)",
+          "Gross margin sensitivity analysis, break-even point (BEP) computation, and profit pricing strategies for own-brand retail/wholesale goods"
         ],
-        durationHours: 12,
+        "durationHours": 10
       },
       {
-        id: 'mod-8-5',
-        title: 'Automated MIS Reports, Power Query ETL & Interactive KPI Dashboards',
-        topics: [
-          'Power Query ETL engine: Connecting to multiple folder files, automated data cleansing, unpivoting columns, and merging multi-source tables',
-          'Data modeling with Power Pivot: Establishing One-to-Many relationships, Star Schema design, and basic DAX measures (CALCULATE, RELATED)',
-          'Interactive Pivot Tables & Pivot Charts: Timeline slicers, interactive drill-downs, dynamic top/bottom filters, and custom calculated fields',
-          'Designing C-Suite MIS Dashboards: Sales vs Collection tracking, debtor aging summaries, cash flow monitoring, and one-click data refresh pipelines',
+        "id": "mod-7-5",
+        "title": "Real Estate & Builder Site-Wise Costing & Inventory Control",
+        "topics": [
+          "Setting up project-specific Cost Centres and multi-site godowns for residential and commercial real estate schemes",
+          "Inward material tracking per site: Cement, TMT steel, aggregates, bricks, electricals, and sanitary fittings against delivery challans",
+          "Tracking site labour contractor bills, equipment machinery hire charges, architect/structural consulting fees, and overhead allocation",
+          "Square-foot construction cost computation, stage-wise construction progress valuation, and reconciling site consumption against architectural estimates"
         ],
-        durationHours: 16,
+        "durationHours": 10
       },
+      {
+        "id": "mod-7-6",
+        "title": "Multi-Department Government Tender Costing & Bid Estimation",
+        "topics": [
+          "Deciphering government tender documents (PWD, CPWD, Indian Railways, PHED, and Municipal Corporations) and Schedule of Rates (SOR)",
+          "Detailed item-rate estimation: Material rates, transit freight, statutory royalties, equipment wear & tear, and water/electricity charges",
+          "Accounting for Earnest Money Deposits (EMD), Performance Bank Guarantees (PBG), tender form fees, and bid security margin provisions",
+          "Tender-wise cost ledger maintenance, comparing estimated tender cost vs actual execution expenditures, and bid profitability analysis"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-7-7",
+        "title": "Government Thekedar Civil Projects Costing (Roads, Drains & Bridges)",
+        "topics": [
+          "Site-wise cost recording for public infrastructure works: Road asphalting, concrete drains (nali), culverts, and bridge construction",
+          "In-transit material tracking: Bitumen, crushed stone grit, diesel for heavy machinery (JCB, pavers, rollers), and site store controls",
+          "Preparation of Running Account (RA) bills against Measurement Book (MB) entries approved by government executive engineers",
+          "Accounting for statutory deductions from contractor bills: GST-TDS (2%), Income-tax TDS (194C @ 1%/2%), royalty, and security retention money"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-7-8",
+        "title": "Contract Taken Costing: FMCG Third-Party Manufacturing Vendor Model",
+        "topics": [
+          "Understanding the contract manufacturing vendor business model (e.g. Dedicated third-party biscuit manufacturing for Britannia / Parle-G)",
+          "Accounting for principal-supplied ingredients (flour, sugar, edible oils) received on stock transfer vs vendor-procured consumables",
+          "Computation of unit conversion charges, packaging charges, electricity fuel consumption, and standard recipe yield percentages",
+          "Reconciling input raw materials with output finished goods, standard processing loss tolerances, and penalty clause accounting"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-7-9",
+        "title": "Contract Given Costing: Brand Principal & Subcontracting Model",
+        "topics": [
+          "Understanding the brand principal perspective: Outsourcing production to contract packers and third-party manufacturing plants",
+          "Accounting for outward raw material dispatches under Delivery Challans and monitoring vendor warehouse stocks off-balance sheet",
+          "Auditing third-party conversion bills against agreed unit rates, quality lab test reports, and net production receipts",
+          "Accounting for scrap realization, off-spec product deductions, vendor debit notes, and finished goods landed cost finalization"
+        ],
+        "durationHours": 10
+      },
+      {
+        "id": "mod-7-10",
+        "title": "Job-Worker Material Accounting, Wastage & Cost Control",
+        "topics": [
+          "Statutory GST job-work compliances under Section 143: Issuing Form GST ITC-04, 1-year input and 3-year capital goods return deadlines",
+          "Delivery Challan processing for material sent to job-workers (dyeing, casting, machining, assembling, packaging)",
+          "Tracking input-output conversion ratios, standard shrinkage/wastage tolerances, and scrap recovery reconciliation",
+          "Auditing job-work processing charges, passing TDS deduction entries under Section 194C, and updating final product capitalized cost"
+        ],
+        "durationHours": 10
+      }
     ],
-    learningOutcomes: [
-      'Master 250+ modern Excel 365 formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA) for high-speed modeling',
-      'Deploy advanced workplace features: cascading dropdowns, What-If analysis, Solver optimization, and formula-driven conditional formatting',
-      'Diagnose, troubleshoot, and fix 500+ spreadsheet errors (#N/A, #REF!, #SPILL!, circular loops, corrupt data) in minutes',
-      'Crack 250+ corporate Excel interview technical tests with mouse-free speed modeling and real-world accounting reconciliations',
-      'Design fully automated executive MIS dashboards and Power Query ETL pipelines with one-click data refresh capabilities',
+    "learningOutcomes": [
+      "Complete executive mastery over all 10 core industrial cost accounting & inventory control pillars across manufacturing, real estate, contracting, and FMCG sectors",
+      "Accurately construct multi-level Bills of Materials (BOM), allocate machine-hour overheads, and establish unit product cost sheets",
+      "Manage site-wise accounting for real estate builders and government thekedars (roads, drains, bridges) with Running Account (RA) billing",
+      "Total command over contract manufacturing economics (taken & given models) and Section 143 statutory job-work inventory reconciliation"
     ],
-    seoTitle: 'Advanced Excel 365 & Corporate MIS Course | 250+ Formulas | YLCC',
-    seoDescription:
-      'Master 250+ Excel 365 formulas, advanced features, 500+ troubleshooting scenarios, 250+ interview questions, and automated MIS dashboards at YLCC Jaipur.',
+    "seoTitle": "Cost Accounting & Industrial Inventory Control Course | YLCC",
+    "seoDescription": "Hands-on industrial cost accounting in Jaipur: inventory control, negative stock prevention, manufacturing BOM, builder site costing, government thekedar tenders, and contract manufacturing."
   },
-{
-    id: 'prog-13',
-    slug: 'crm-field-sales-force-automation',
-    title: 'CRM',
-    category: 'Sales Force Automation & CRM Operations',
-    shortDescription:
-      'Master modern Field Sales CRM: Sales staff live geo-tracking, daily travel & conveyance (TA/DA) expense auditing, attendance & salary processing, and daily visit records (DVR).',
-    detailedDescription:
-      'Modern commercial enterprises rely on real-time CRM and Sales Force Automation (SFA) systems to manage field teams, eliminate expense leakages, and optimize customer relationship touchpoints. This hands-on masterclass trains commerce students, HR/payroll executives, and operations accountants to manage end-to-end sales team operations: Live GPS geo-tracking and beat route compliance, verification and accounting of daily field expenses (TA/DA claims, lodging, conveyance), mobile attendance integration with payroll/salary calculations, and recording and auditing daily customer visit reports (DVR/DSR) linked with spot order booking.',
-    duration: '1.5 Months',
-    mode: 'Offline Classroom',
-    fees: 12500,
-    discountedFees: 9999,
-    eligibility: 'Commerce graduates, accountants, sales coordinators, CRM administrators, and payroll professionals',
-    softwareTools: [
-      'Field Sales CRM & SFA Portals',
-      'Tally Prime 4.0 (Payroll & Expenses)',
-      'Excel 365 Sales Operations',
-      'GPS & Geo-Fencing Beat Trackers',
+  {
+    "id": "prog-8",
+    "slug": "advanced-excel-corporate-excel-365",
+    "title": "Advanced Excel & Corporate Excel 365 Mastery",
+    "category": "Advanced Excel & MIS Reporting",
+    "shortDescription": "Master the 5 foundational Excel 365 pillars: 250+ dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ corporate interview challenges, and automated executive MIS dashboards.",
+    "detailedDescription": "Corporate Excel 365 is the indispensable operating system of modern finance, commerce, and business intelligence. This comprehensive practical masterclass trains you across all 5 foundational pillars of corporate spreadsheet mastery: mastering 250+ modern formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA), commanding essential productivity features (cascading dropdowns, What-If tools, custom conditional formatting), diagnosing and fixing 500+ real-world troubleshooting and error scenarios, solving 250+ technical interview test problems from top MNCs, and building fully automated one-click MIS dashboards using Power Query ETL.",
+    "duration": "1.5 Months",
+    "mode": "Offline Classroom",
+    "fees": 12500,
+    "discountedFees": 9999,
+    "eligibility": "Open to all commerce students, accountants, analysts, and working professionals",
+    "softwareTools": [
+      "Microsoft Excel 365",
+      "Power Query (ETL Engine)",
+      "Power Pivot & Data Models",
+      "Dynamic Array Engine",
+      "Office 365 Cloud"
     ],
-    facultyId: 'fac-2',
-    facultyName: 'Rajesh Soni & Vikas Khandelwal (Senior Corporate & Operations Mentors)',
-    batchTiming: 'Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive',
-    availableSeats: 10,
-    startDate: '1st & 15th of Every Month',
-    brochureUrl: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-    certificateInfo: 'YLCC Certified CRM & Sales Force Automation Specialist',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 12,
-    coreCompetenciesHeading: '4 Essential Practical Skills You Master',
-    coreCompetenciesSubheading:
-      'Hands-on practical execution covering Sales Staff Live Geo Tracking, Sales Staff Daily Expenses, Sales Staff Attendance / Salary, and Sales Staff Daily Visit Record.',
-    coreCompetencies: [
+    "facultyId": "fac-4",
+    "facultyName": "Vikas Khandelwal (Corporate MIS Analyst & Excel Specialist)",
+    "batchTiming": "Morning: 7:00 AM – 8:30 AM | Evening: 7:00 PM – 8:30 PM | Sunday Intensive",
+    "availableSeats": 10,
+    "startDate": "1st & 15th of Every Month",
+    "brochureUrl": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+    "certificateInfo": "YLCC Certified Corporate Excel 365 & MIS Specialist",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 12,
+    "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
+    "coreCompetenciesSubheading": "Hands-on corporate spreadsheet mastery covering 250+ modern Excel 365 dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ interview challenges, and automated MIS reporting.",
+    "coreCompetencies": [
       {
-        title: 'Sales Staff Live Geo. Tracking',
-        description:
-          'Real-time GPS tracking, beat route adherence, geofencing client store check-ins/check-outs, and travel path mileage verification.',
+        "title": "250+ Formulas (Excel 365)",
+        "description": "Mastering 250+ modern functions: dynamic arrays (XLOOKUP, FILTER, UNIQUE, SORTBY, SEQUENCE), calculation engines (LET, LAMBDA), and financial math."
       },
       {
-        title: 'Sales Staff Daily Expenses',
-        description:
-          'Daily allowance (DA) policies, travel conveyance (TA) per-kilometer rate claims, fuel/hotel bill verification, and expense ledger vouchers.',
+        "title": "Excel Features & Productivity Tools",
+        "description": "Advanced Data Validation, cascading dependent dropdowns, formula-driven Conditional Formatting, What-If Analysis, Goal Seek, Solver, and Flash Fill."
       },
       {
-        title: 'Sales Staff Attendance / Salary',
-        description:
-          'Mobile app punch-in/out, leave rules, monthly attendance register reconciliation, target incentives, and net take-home salary disbursement.',
+        "title": "500+ Excel Troubleshooting Scenarios",
+        "description": "Diagnosing and fixing #N/A, #VALUE!, #REF!, #CALC!, #SPILL!, and circular errors, corrupt data cleaning, text-to-number repair, and audit tracing."
       },
       {
-        title: 'Sales Staff Daily Visit Record',
-        description:
-          'Daily Visit Report (DVR/DSR) logs, productive vs non-productive client meetings, sample distribution records, and spot order booking.',
+        "title": "250+ Corporate Interview Challenges",
+        "description": "Cracking 250+ real-world corporate Excel interview tests, speed modeling challenges, timed aptitude assessments, and business case scenarios."
       },
+      {
+        "title": "Automated MIS Reports & Dashboards",
+        "description": "Automating raw data extraction via Power Query (ETL), multi-table data modeling, dynamic Pivot Tables, Slicers, and interactive KPI executive dashboards."
+      }
     ],
-    modules: [
+    "modules": [
       {
-        id: 'mod-13-1',
-        title: 'Sales Staff Live Geo Tracking & Route Compliance',
-        topics: [
-          'Configuring salesman beat plans, territory geofences, and customer store GPS location tags in SFA systems',
-          'Real-time live location monitoring: Tracking field executive transit, route deviation alerts, and on-field idle time',
-          'Automated check-in & check-out time-stamping at retailer/wholesaler counters with geofence proximity verification',
-          'Generating daily travel distance logs (Google Maps API integration) to cross-verify physical field presence',
+        "id": "mod-8-1",
+        "title": "250+ Formulas & Modern Dynamic Array Functions (Excel 365)",
+        "topics": [
+          "Modern Lookups: XLOOKUP (bidirectional, multi-criteria, wildcard matches), INDEX-MATCH-MATCH, CHOOSEROWS, CHOOSECOLS",
+          "Dynamic Array Engine: FILTER, UNIQUE, SORT, SORTBY, SEQUENCE, EXPAND, TOCOL, and TOROW for zero-formula-drag models",
+          "Formula Optimization: LET function for caching intermediate calculations & custom reusable recursive LAMBDA functions",
+          "Financial, Statistical & Date functions: XIRR, XNPV, PMT, PPMT, EDATE, EOMONTH, WORKDAY.INTL, and DATEDIF"
         ],
-        durationHours: 12,
+        "durationHours": 16
       },
       {
-        id: 'mod-13-2',
-        title: 'Sales Staff Daily Expenses & Claim Reconciliation',
-        topics: [
-          'Formulating corporate travel allowance policies: City tier classifications (Metro/Non-Metro), daily DA slabs, and night halt limits',
-          'Digital expense claim workflow: Submitting petrol slips, toll receipts, public transport tickets, and food/lodging vouchers',
-          'Audit & fraud detection: Comparing claimed odometer kilometers against GPS geo-tracking logs to eliminate false claims',
-          'Accounting entries in Tally Prime: Booking staff advance adjustments, conveyance expense ledgers, and reimbursable payouts',
+        "id": "mod-8-2",
+        "title": "Advanced Excel Features & Workplace Productivity Tools",
+        "topics": [
+          "Data Validation architecture: Dynamic searchable dropdowns, cascading dependent dropdowns (INDIRECT), and custom input limits",
+          "Advanced Conditional Formatting: Formula-driven formatting rules, heat maps, data bars, icon sets, and automated variance flagging",
+          "Analytical & What-If tools: Goal Seek, Data Tables (1-variable & 2-variable), Scenario Manager, and Solver optimization models",
+          "Data management accelerators: Flash Fill patterns, Text-to-Columns parsing, advanced multi-level sorting, and formula auditing (Trace Precedents/Dependents)"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
       {
-        id: 'mod-13-3',
-        title: 'Sales Staff Attendance & Payroll / Salary Processing',
-        topics: [
-          'Managing mobile selfie attendance, geo-tagged login/logout timestamps, and field leave management rules',
-          'Compiling monthly muster rolls: Late-coming deductions, half-day policies, paid leaves, and Sunday / holiday working credits',
-          'Sales incentive & commission integration: Linking sales revenue quotas, collection targets, and bonus accelerators to payroll',
-          'Preparing professional payslips in Tally Prime & Excel: Basic, HRA, Conveyance, PF/ESIC deductions, PT, and net bank salary transfer',
+        "id": "mod-8-3",
+        "title": "500+ Excel Troubleshooting Scenarios & Error Recovery",
+        "topics": [
+          "Diagnosing and resolving formula errors: #N/A, #VALUE!, #REF!, #DIV/0!, #NAME?, #NUM!, #CALC!, and dynamic array #SPILL! errors",
+          "Identifying and resolving circular reference loops, broken external workbook links, and volatile function calculation slowdowns",
+          "Data hygiene & cleaning: Stripping non-printable characters (CLEAN, TRIM), fixing ghost spaces, converting text-stored numbers, and date format repairs",
+          "Repairing corrupted workbooks, protecting intellectual property (sheet/range locking, password hashing), and spreadsheet audit inspection trails"
         ],
-        durationHours: 14,
+        "durationHours": 14
       },
       {
-        id: 'mod-13-4',
-        title: 'Sales Staff Daily Visit Record (DVR) & Order Booking',
-        topics: [
-          'Structuring Daily Visit Reports (DVR / DSR): Recording customer contact person, meeting outcome, and next follow-up dates',
-          'Productive vs non-productive call analysis: Measuring strike rate (number of orders booked vs total store visits made)',
-          'Spot order booking: Logging SKU-level order quantities, preferred delivery dates, and payment collection commitments in CRM',
-          'Marketing collateral & sample distribution tracking: Auditing free promotional samples, tester units, and gift giveaways',
+        "id": "mod-8-4",
+        "title": "250+ Corporate Excel Interview Tests & Technical Challenges",
+        "topics": [
+          "Practicing 250+ actual Excel technical test questions asked by Big 4 firms, MNCs, private equity, and corporate finance departments",
+          "Speed modeling drills: Fast keyboard navigation (mouse-free Excel), shortcut masteries, and timed lookup/aggregation challenges",
+          "Real-world case study tests: Reconciling 50,000-row disparate bank statements vs ERP ledgers under strict 30-minute exam conditions",
+          "Interview portfolio creation: Presenting clean financial models, modular workbook designs, and executive-ready summary outputs"
         ],
-        durationHours: 12,
+        "durationHours": 12
       },
+      {
+        "id": "mod-8-5",
+        "title": "Automated MIS Reports, Power Query ETL & Interactive KPI Dashboards",
+        "topics": [
+          "Power Query ETL engine: Connecting to multiple folder files, automated data cleansing, unpivoting columns, and merging multi-source tables",
+          "Data modeling with Power Pivot: Establishing One-to-Many relationships, Star Schema design, and basic DAX measures (CALCULATE, RELATED)",
+          "Interactive Pivot Tables & Pivot Charts: Timeline slicers, interactive drill-downs, dynamic top/bottom filters, and custom calculated fields",
+          "Designing C-Suite MIS Dashboards: Sales vs Collection tracking, debtor aging summaries, cash flow monitoring, and one-click data refresh pipelines"
+        ],
+        "durationHours": 16
+      }
     ],
-    learningOutcomes: [
-      'Implement live GPS geo-tracking and geofencing to audit sales staff beat routes and customer visit authenticity',
-      'Audit daily travel (TA/DA) expense claims with precision, eliminating bogus conveyance reimbursements',
-      'Process field sales attendance, incentive calculations, statutory deductions, and monthly salary disbursement',
-      'Analyze Daily Visit Records (DVR/DSR) to optimize salesperson productivity, strike rates, and spot order pipelines',
+    "learningOutcomes": [
+      "Master 250+ modern Excel 365 formulas including dynamic arrays (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA) for high-speed modeling",
+      "Deploy advanced workplace features: cascading dropdowns, What-If analysis, Solver optimization, and formula-driven conditional formatting",
+      "Diagnose, troubleshoot, and fix 500+ spreadsheet errors (#N/A, #REF!, #SPILL!, circular loops, corrupt data) in minutes",
+      "Crack 250+ corporate Excel interview technical tests with mouse-free speed modeling and real-world accounting reconciliations",
+      "Design fully automated executive MIS dashboards and Power Query ETL pipelines with one-click data refresh capabilities"
     ],
-    seoTitle: 'CRM & Sales Force Automation Course | Field Staff MIS & Payroll | YLCC',
-    seoDescription:
-      'Master field sales CRM in Jaipur: Live Geo Tracking, Daily Expenses, Attendance & Salary, and Daily Visit Records (DVR) at YLCC.',
-  },
+    "seoTitle": "Advanced Excel 365 & Corporate MIS Course | 250+ Formulas | YLCC",
+    "seoDescription": "Master 250+ Excel 365 formulas, advanced features, 500+ troubleshooting scenarios, 250+ interview questions, and automated MIS dashboards at YLCC Jaipur."
+  }
 ];
 
 export const initialProjects: Project[] = [

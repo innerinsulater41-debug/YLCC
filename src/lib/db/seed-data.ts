@@ -1695,1323 +1695,1971 @@ export const initialPrograms: Program[] = [
 
 export const initialProjects: Project[] = [
   {
-    id: 'proj-1',
-    slug: 'hospital-business-accounting-system',
-    title: 'Hospital Business Accounting & Patient Billing System',
-    shortDescription:
-      'Complete accounting for a 100-bed multi-specialty hospital: IPD/OPD patient billing, doctor consultant revenue shares, pharmacy inventory, and TPA insurance claims.',
-    detailedDescription:
-      'In this practical project, students manage the complete financial accounts of "Jeevandhara Multi-Specialty Hospital". You will handle patient admission deposits, OPD consultation billing, pharmacy dispensary stock tracking, doctor visiting fees vs revenue-sharing agreements, and reconciliation of cashless mediclaim receivables from Third Party Administrators (TPAs).',
-    industryCategory: 'Healthcare & Hospitals',
-    accountingCategory: 'Service & Retail Accounting',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'IPD / OPD Billing Structures',
-      'Doctor Revenue Sharing (TDS 194J)',
-      'Pharmacy Inventory & Batch Control',
-      'TPA Insurance Claims Reconciliation',
-      'Medical Equipment Capitalization & AMC Bookings',
+    "id": "proj-mfg-1",
+    "slug": "fmcg-food-processing-manufacturing-costing",
+    "title": "FMCG Food Processing Plant: Multi-Stage BOM & Batch Costing",
+    "shortDescription": "Complete factory accounting for a high-volume biscuit & confectionery plant: multi-tier BOM for flour, edible oils & sweeteners, baking heat shrinkage loss, packaging laminate consumption, and finished batch unit costing.",
+    "detailedDescription": "In this industrial training project, students manage production ledgers for \"Annapurna Food Products Ltd.\", a large-scale biscuit and confectionery manufacturer. You will configure multi-level Bill of Materials (BOM) in Tally Prime, record raw ingredient issuance from central silos, pass production vouchers with baking heat loss (evaporation loss), account for corrugated box and BOPP printed wrapper consumption, calculate unit cost per carton, and prepare Cost of Goods Manufactured (COGM) statements.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Recipe BOM & Batch Stage Costing",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Multi-Level Bill of Materials (BOM) Configuration",
+      "Raw Material Requisition & Godown Transfer Vouchers",
+      "Baking Heat Evaporation Loss & Burning Scrap Accounting",
+      "Secondary Packaging & Corrugated Carton Apportionment",
+      "Cost of Goods Manufactured (COGM) & Per-Packet Unit Costing"
     ],
-    softwareUsed: ['Tally Prime 4.0', 'Excel 365 Financials', 'Pharmacy Stock Manager'],
-    learningObjectives: [
-      'Account for multi-stream hospital revenues (OPD, IPD, Diagnostics, Pharmacy)',
-      'Accurately withhold TDS under Section 194J on doctor visiting fees and surgical sharing',
-      'Reconcile TPA insurance claims and track deductions, co-pays, and claim delays',
+    "softwareUsed": [
+      "Tally Prime Manufacturing",
+      "Excel Batch Costing Engine",
+      "Food ERP Simulator"
     ],
-    businessScenario:
-      'Jeevandhara Hospital operates 100 beds, an in-house pathology lab, and a round-the-clock medical store. Monthly revenues cross ₹75 Lakhs across private cash patients, corporate panels, and government health schemes (Ayushman / RGHS). The accounts manager must ensure live billing, prevent medicine expiry losses, and reconcile insurance settlements.',
-    tasksToComplete: [
-      'Record daily OPD cash receipts and IPD admission advance vouchers',
-      'Process monthly doctor consultancy bills with TDS deduction under 194J',
-      'Reconcile pharmacy medicine purchases, credit terms, and near-expiry stock returns',
-      'Prepare monthly TPA outstanding aging report and submit reconciliation to management',
+    "learningObjectives": [
+      "Configure compound units (KG, Quintal, Gram, Carton) and automated production voucher types in Tally Prime",
+      "Differentiate between normal baking moisture loss and abnormal burnt dough wastage",
+      "Derive final selling price and distributor trade margin based on net manufacturing cost"
     ],
-    expectedOutcomes: [
-      'Complete trial balance and monthly P&L for hospital operations',
-      'Zero discrepancies between pharmacy physical inventory and books',
-      'Accurate TPA receivables register with clear aging breakdown',
+    "businessScenario": "Annapurna Food Products produces 50,000 biscuit packets daily across 3 shifts. The plant uses maida, sugar, palm oil, leavening agents, and 3-ply corrugated cartons. Fluctuation in palm oil prices requires monthly revision of standard vs actual recipe costs.",
+    "tasksToComplete": [
+      "Set up BOM for 3 biscuit variants (Glucose, Marie, Cream Sandwich) including raw materials and packaging",
+      "Pass monthly Production Vouchers in Tally recording raw material consumption and finished output",
+      "Record 2.8% standard moisture evaporation loss and scrap recovery accounting",
+      "Compute final factory cost per carton and reconcile with factory trial balance"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "expectedOutcomes": [
+      "Production and stock consumption register with yield percentage reports",
+      "Standard vs actual batch variance analysis sheet",
+      "Distributor pricing schedule with gross margin thresholds"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
       {
-        id: 'med-1-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Hospital Billing Framework',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'Hospital departmental billing and doctor payout schedule',
-      },
+        "id": "med-mfg-1",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "Food Manufacturing BOM Architecture",
+        "type": "image/png",
+        "size": "3.5 MB",
+        "caption": "Multi-level recipe BOM, baking loss accounting, and carton unit costing"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-1-1',
-        title: 'Hospital Multi-Specialty Project Brief & Patient Billing Data',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
+        "id": "res-mfg-1-1",
+        "title": "FMCG Food Processing Plant Production Manual & Batch Cost Sheets",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "65 KB",
+        "isDownloadable": true
       },
       {
-        id: 'res-1-2',
-        title: 'Hospital Doctor Payout & TPA Reconciliation Model',
-        url: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-        fileType: 'xlsx',
-        fileSize: '124 KB',
-        isDownloadable: true,
-      },
+        "id": "res-mfg-1-2",
+        "title": "Baking Evaporation Loss & Recipe Variance Calculation Model",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "xlsx",
+        "fileSize": "142 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 24,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 1,
-    createdAt: '2025-10-15',
-    updatedAt: '2026-01-10',
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 1,
+    "createdAt": "2025-11-01",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-2',
-    slug: 'college-accounting-fee-management',
-    title: 'College Accounting & Student Fee Reconciliation System',
-    shortDescription:
-      'Manage financial books of a premier educational institute: semester fee collections, scholarship distributions, faculty salaries, lab expenditure, and hostel accounts.',
-    detailedDescription:
-      'Educational institutions have unique accounting requirements governed by trust regulations, fee regulatory committees, and student installment schedules. This project simulates "Vidyapeeth Degree College". You will account for multi-installment student fee collection, government scholarship adjustments, university examination fees, lab consumable expenses, faculty payroll, and library book purchases.',
-    industryCategory: 'Education & Institutional',
-    accountingCategory: 'Trust & Institutional Accounting',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Installment Fee Accounting & Defaulter Tracking',
-      'Government Scholarship Adjustments',
-      'Faculty Salary & Guest Lecture Vouchers',
-      'Hostel & Mess Separate Ledger Balancing',
-      'Depreciation on Educational Infrastructure',
+    "id": "proj-mfg-2",
+    "slug": "textile-garment-manufacturing-costing",
+    "title": "Textile & Garment Manufacturing: Yarn to Finished Apparel Costing",
+    "shortDescription": "End-to-end multi-process accounting for an integrated textile mill: raw cotton/yarn spinning, fabric weaving, bleaching/dyeing job-work (GST ITC-04), cutting shrinkage, and ready-to-wear apparel SKU costing.",
+    "detailedDescription": "Textile manufacturing passes through sequential transformation stages where raw material changes physical state and unit of measurement (from KG of yarn to meters of grey fabric to stitched garment pieces). In this simulation for \"Rajasthan Weaving & Apparel Mills\", students manage process cost sheets across spinning, weaving, external dyeing job-work, cutting room shrinkage, button/zipper accessories consumption, and final garment export packaging.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Process Costing & Job-Work ITC-04",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Multi-Stage Process Costing (Yarn to Greige to Finished Fabric)",
+      "External Job-Work Challans under Section 143 & Form GST ITC-04",
+      "Fabric Shrinkage, Comber Noil & Cutting Waste Accounting",
+      "Accessories & Trims BOM (Buttons, Zippers, Thread, Labels)",
+      "Export Garment SKU Costing & Duty Drawback Records"
     ],
-    softwareUsed: ['Tally Prime', 'Excel 365 Student Master Database'],
-    learningObjectives: [
-      'Maintain student-wise fee subsidiary ledgers with installment due dates',
-      'Reconcile government scholarship grants credited through PFMS portal',
-      'Finalize institutional Income & Expenditure accounts and Balance Sheet',
+    "softwareUsed": [
+      "Tally Prime 4.0",
+      "Textile ERP Process Master",
+      "GST Offline ITC-04 Tool"
     ],
-    businessScenario:
-      'Vidyapeeth College educates 1,800 students across Commerce, Science, and Arts streams. Fees are payable in two equal installments. The college also runs an attached 250-capacity hostel and operates 12 college buses. The accountant must monitor defaulter lists and manage monthly fuel and driver expenses.',
-    tasksToComplete: [
-      'Feed semester fee receipts across cash, UPI, and bank transfers into student ledgers',
-      'Reconcile scholarship grants received from the Social Justice Department',
-      'Generate monthly staff salary registers and guest faculty TDS vouchers',
-      'Prepare income and expenditure account separating general fund from endowment funds',
+    "learningObjectives": [
+      "Track material balance when units change from weight (KG) to length (Meters) to count (Pieces)",
+      "File quarterly GST ITC-04 for goods dispatched to dyeing and embroidery job-workers",
+      "Compute stage-wise cost additions and accurately value Work-in-Progress (WIP)"
     ],
-    expectedOutcomes: [
-      'Comprehensive student fee outstanding statement sorted by course and semester',
-      'Reconciled hostel and mess operating accounts',
-      'Institutional financial statements prepared for statutory audit',
+    "businessScenario": "Rajasthan Weaving Mills procures raw cotton yarn, weaves denim and twill fabrics, sends grey cloth to Surat for chemical dyeing, and manufactures finished jeans and shirts in Jaipur for retail brands.",
+    "tasksToComplete": [
+      "Record yarn issuance and weaving production entries with comber noil waste realization",
+      "Issue delivery challans for 10,000 meters grey cloth to dye house and track return within 180 days",
+      "Compile quarterly Form GST ITC-04 on the GST portal simulator",
+      "Calculate garment piece cost including fabric consumption per meter and tailor stitching piece-rate"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_v2.png',
-    media: [
+    "expectedOutcomes": [
+      "Complete stage-wise WIP inventory valuation statement",
+      "GST ITC-04 quarterly compliance audit log",
+      "Finished apparel SKU costing sheet with break-even wholesale price"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
       {
-        id: 'med-2-1',
-        url: '/images/ylcc_tds_brochure_v2.png',
-        name: 'College Ledger Architecture',
-        type: 'image/png',
-        size: '3.8 MB',
-        caption: 'Institutional fee management and fund accounting structure',
-      },
+        "id": "med-mfg-2",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Textile Process Flow Diagram",
+        "type": "image/png",
+        "size": "3.8 MB",
+        "caption": "Yarn conversion, job-work ITC-04 challans, and garment SKU costing structure"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-2-1',
-        title: 'College Institutional Accounting Project Dossier',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
+        "id": "res-mfg-2-1",
+        "title": "Textile Mill Process Costing & Job-Work Accounting Manual",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "68 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-mfg-2-2",
+        "title": "GST Form ITC-04 Offline Job-Work Reconciliation Master",
+        "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+        "fileType": "xlsx",
+        "fileSize": "135 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 20,
-    academicYear: '2025-26',
-    facultyMentor: 'CA Alok Maheshwari',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 2,
-    createdAt: '2025-10-18',
-    updatedAt: '2026-01-12',
+    "practiceTimeHours": 26,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 2,
+    "createdAt": "2025-11-04",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-3',
-    slug: 'logistics-transport-fleet-accounting',
-    title: 'Freight Logistics: Transporter Hisab, Consignment & City Tracking',
-    shortDescription:
-      'Accounting for inter-state freight carriers: Transporter Hisab (trip advances & fuel settlement), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.',
-    detailedDescription:
-      'Transport and logistics businesses handle thousands of trips across states with cash advances, fuel slips, toll charges, and broker commissions. In this signature practical project for "Speedways Freight Logistics", students master all 3 foundational pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).',
-    industryCategory: 'Logistics & Transportation',
-    accountingCategory: 'Fleet & Service Operations',
-    difficultyLevel: 'Advanced',
-    skillsCovered: [
-      'Transportor Hisab / Fleet Accounts Settlement',
-      'Consignment Tracking (Bilty / LR Register)',
-      'City-Wise Transport & Destination Route Tracking',
-      'Goods Transport Agency (GTA) 5% RCM Accounting',
-      'Broker Commission & TDS Section 194C Compliances',
+    "id": "proj-mfg-3",
+    "slug": "steel-fabrication-rolling-mill-costing",
+    "title": "Steel Fabrication & Rolling Mill: Ingot Conversion & Job-Work Costing",
+    "shortDescription": "Heavy industrial costing for an induction furnace & structural steel fabrication plant: MS scrap & sponge iron melting, heavy electricity tariff allocation, Section 143 job-work challans, and mill burning scale scrap accounting.",
+    "detailedDescription": "Steel manufacturing is a capital and power-intensive industry where yield percentages and burning losses dictate profitability. In this project for \"Kalinga Steel & Structural Fabtech\", students handle production accounting for induction furnace melting, continuous casting of billets, hot re-rolling into TMT bars and MS angles, and customized pre-engineered building (PEB) structural fabrication. You will calculate high-tension (HT) electricity tariff per metric ton, account for mill scale burning loss (3.5%), track job-work under Section 143, and reconcile scrap recovery.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Heavy Fabrication & Power Cost Absorption",
+    "difficultyLevel": "Executive",
+    "skillsCovered": [
+      "Induction Furnace Scrap & Sponge Iron Melting Ratios",
+      "High-Tension (HT) Electricity & Industrial Fuel Cost Absorption",
+      "Mill Scale Burning Loss (3.5%) & Scrap Recovery Accounting",
+      "Job-Work Inward/Outward Challans under Section 143",
+      "TMT Bar & Structural MS Angles Metric Ton Unit Costing"
     ],
-    softwareUsed: ['Tally Prime 4.0', 'Logistics Fuel & Mileage Excel Tool'],
-    learningObjectives: [
-      'Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing',
-      'Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)',
-      'Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances',
+    "softwareUsed": [
+      "Tally Prime Manufacturing",
+      "Steel Melting Heat Sheet Model",
+      "Excel Cost Center"
     ],
-    businessScenario:
-      'Speedways Logistics operates 28 heavy commercial trucks and hires 40+ market trucks monthly for Delhi-Mumbai-Jaipur routes. Each trip involves driver cash advance (₹25,000), diesel fleet card swipes, Fastag tolls, and delivery detention charges. Accurate trip settlement is vital to stop cash leakages.',
-    tasksToComplete: [
-      'Topic 1 (Transportor Hisab): Reconcile transporter freight ledgers, driver trip advances, diesel fuel cards, Fastag tolls, broker commissions, and final trip profit & loss statements',
-      'Topic 2 (Consignment Track): Track consignment notes (Bilty/LR) from dispatch to delivery, record billing weights, demurrage charges, POD (Proof of Delivery) submissions, and customer freight billing',
-      'Topic 3 (City Wise Transport Tracking): Route-wise freight ledger monitoring (e.g. Delhi, Mumbai, Ahmedabad, Jaipur), destination city delivery timelines, transit detention charges, and inter-city vehicle mileage profitability',
-      'Statutory Compliance: Verify GTA GST Reverse Charge (RCM 5% vs forward 12%), obtain sub-section (6) PAN declarations for transporter TDS exemptions under Section 194C',
+    "learningObjectives": [
+      "Allocate monthly electricity bills exceeding ₹40 Lakhs across induction furnace and rolling mill stages",
+      "Account for burning losses and by-products like iron slag and mill scale",
+      "Prepare tender cost estimates for heavy structural pre-engineered building (PEB) projects"
     ],
-    expectedOutcomes: [
-      'Complete fleet operational P&L showing cost per metric tonne per km across major routes',
-      'Error-free consignment tracking register and Proof of Delivery (POD) audit trail',
-      'Clear RCM tax liability statement and zero unresolved driver advances at month-end',
+    "businessScenario": "Kalinga Steel processes 1,200 metric tons of steel monthly. Raw material includes sponge iron, heavy melting scrap, and ferro-alloys. The plant also takes outside job-work for rolling third-party billets into 12mm TMT bars on conversion charges.",
+    "tasksToComplete": [
+      "Prepare Heat Sheets recording furnace charge mix, ferro-alloy additions, and liquid steel yield",
+      "Compute electricity cost per MT of billet produced using time-of-day (TOD) tariff slabs",
+      "Record outward Section 143 challans and job-work conversion billing with 18% GST",
+      "Calculate finished TMT bar cost and reconcile stock registers with weighing scale slips"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_maroon.png',
-    media: [
+    "expectedOutcomes": [
+      "Heat-wise production costing report and yield summary",
+      "Electricity and fuel power cost absorption analysis",
+      "Job-work conversion ledger with zero pending reconciliation items"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+    "media": [
       {
-        id: 'med-3-1',
-        url: '/images/ylcc_tds_brochure_maroon.png',
-        name: 'Logistics Fleet Cost Model',
-        type: 'image/png',
-        size: '2.8 MB',
-        caption: 'Fleet trip expense settlement and vehicle margin tracking',
-      },
+        "id": "med-mfg-3",
+        "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+        "name": "Steel Mill Heat Costing Workflow",
+        "type": "image/png",
+        "size": "3.6 MB",
+        "caption": "Melting heat charges, power allocation, and structural fabrication stage costing"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-3-1',
-        title: 'Logistics Accounting & GTA Compliance Practice File',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
+        "id": "res-mfg-3-1",
+        "title": "Steel Rolling Mill & Heavy Engineering Fabrication Project Guide",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "72 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-mfg-3-2",
+        "title": "Furnace Heat Yield & High-Tension Power Cost Apportionment Model",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "xlsx",
+        "fileSize": "160 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 25,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 3,
-    createdAt: '2025-10-22',
-    updatedAt: '2026-01-15',
+    "practiceTimeHours": 30,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 3,
+    "createdAt": "2025-11-08",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-4',
-    slug: 'service-centre-multi-job-accounting',
-    title: 'Automobile & Electronics Service Centre Multi-Job Accounting',
-    shortDescription:
-      'Financial operations for authorized service centres: Job Card billing, spare parts inventory, labour charges, warranty claims reimbursement, and insurance accidental repairs.',
-    detailedDescription:
-      'Service centres blend physical spare parts sales with skilled labour services. This project covers "Apex Auto Care & Authorized Service Hub". You will track Job Cards from vehicle intake to gate pass, account for replacement spare parts at MRP, calculate mechanic labour charges, bill insurance survey accidental damages, and process warranty claims submitted to OEM manufacturers.',
-    industryCategory: 'Automobile & Consumer Electronics',
-    accountingCategory: 'Job-Card & Hybrid Sales-Service',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Job Card Accounting & Labour Cost Allocation',
-      'Spare Parts Inventory & Counter Sales',
-      'OEM Warranty Claims Processing & Credit Notes',
-      'Accidental Insurance Surveyor Bill Settlement',
-      'Mixed GST Rates (18% Labour vs 28% Auto Spares)',
+    "id": "proj-mfg-4",
+    "slug": "pharmaceutical-formulations-batch-costing",
+    "title": "Pharmaceutical Formulations Plant: Batch Expiry & Active Ingredient Costing",
+    "shortDescription": "Statutory pharmaceutical production accounting: Active Pharmaceutical Ingredients (API) & excipients BOM, Batch Manufacturing Record (BMR) ledgers, cleanroom HVAC overheads, QC rejection reserves, and DPCO price ceilings.",
+    "detailedDescription": "Pharmaceutical manufacturing is governed by strict regulatory compliance, mandatory batch traceability, and price control orders. In this project for \"Aura Lifesciences Formulations Ltd.\", students manage accounts for tablet, capsule, and liquid oral manufacturing. You will track Active Pharmaceutical Ingredients (API) with potency assay percentages, account for Batch Manufacturing Records (BMR), allocate HEPA cleanroom HVAC power overheads, handle quality control (QC) laboratory rejections, track near-expiry medicine provisions, and ensure compliance with DPCO ceiling prices.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "BMR & Expiry Batch Valuation",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "API (Active Ingredient) & Excipient Formulation BOM",
+      "Batch Manufacturing Record (BMR) & Batch Traceability Vouchers",
+      "Controlled Cleanroom HVAC & Quality Control Lab Overhead Allocation",
+      "QC Rejection, Near-Expiry Stock Provisions & Drug Recall Accounting",
+      "Drug Price Control Orders (DPCO) Maximum Retail Price Validation"
     ],
-    softwareUsed: ['Tally Prime Job Costing', 'Automotive Workshop ERP Worksheets'],
-    learningObjectives: [
-      'Differentiate tax rates between spare parts (28%) and servicing labour (18%) on a single tax invoice',
-      'Account for warranty spare replacements reimbursed by the manufacturing company via credit note',
-      'Reconcile cashless accidental repair claims approved by General Insurance companies',
+    "softwareUsed": [
+      "Tally Prime Batch & Expiry Module",
+      "Pharma BMR Costing Engine",
+      "NPPA Regulatory Simulator"
     ],
-    businessScenario:
-      'Apex Auto Care services 45 vehicles daily. Every repair order originates as a Job Card with mechanic assignment, parts requisitions from the parts store, and outside lathe work. Insurance repairs require surveyor re-inspection and liability split between customer and insurer.',
-    tasksToComplete: [
-      'Convert completed Job Cards into statutory GST tax invoices with dual tax slabs',
-      'Record OEM warranty claims and reconcile manufacturer reimbursement credit notes',
-      'Perform monthly spare parts store physical inventory audit and write off scrap',
-      'Track technician efficiency and calculate monthly performance incentives',
+    "learningObjectives": [
+      "Implement batch-wise and expiry-wise inventory tracking in Tally Prime for sterile medicines",
+      "Account for chemical assay potency adjustments when raw materials have variable active content",
+      "Calculate maximum permitted selling price under National Pharmaceutical Pricing Authority (NPPA)"
     ],
-    expectedOutcomes: [
-      'Consolidated workshop profitability statement with parts margin vs labour margin',
-      'Reconciled insurance cashless claims ledger',
-      'Accurate auto spare parts inventory with reorder level warnings',
+    "businessScenario": "Aura Lifesciences produces Paracetamol 650mg tablets, Azithromycin 500mg, and Cough Syrups. Each batch requires raw API, binders, coatings, blister PVC/Alu foils, and mono-cartons. Batches undergo 14-day microbiology testing before release.",
+    "tasksToComplete": [
+      "Create batch masters with manufacturing date, expiry date, and shelf-life alerts",
+      "Pass production vouchers for 100,000 Paracetamol tablets with coating weight gain adjustments",
+      "Apportion microbiology testing lab expenses and cleanroom maintenance overheads",
+      "Pass provisioning entries for batch lots failing QC dissolution tests"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_espresso_sage_improved.png',
-    media: [
+    "expectedOutcomes": [
+      "Batch-wise profitability and cost breakdown statement",
+      "Mandatory batch traceability audit report for regulatory inspections",
+      "DPCO pricing validation worksheet ensuring 100% statutory adherence"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
       {
-        id: 'med-4-1',
-        url: '/images/ylcc_tds_brochure_espresso_sage_improved.png',
-        name: 'Service Centre Workflow',
-        type: 'image/png',
-        size: '2.8 MB',
-        caption: 'Automotive job card, spare parts stock, and insurance billing workflow',
-      },
+        "id": "med-mfg-4",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Pharma BMR Ledger Protocol",
+        "type": "image/png",
+        "size": "3.4 MB",
+        "caption": "Batch record trace, API assay potency adjustments, and expiry provisions"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-4-1',
-        title: 'Service Centre Accounting & Job Card Project Case Study',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
+        "id": "res-mfg-4-1",
+        "title": "Pharmaceutical Plant Batch Costing & Regulatory Audit Guidelines",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "64 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-mfg-4-2",
+        "title": "Pharma BMR Batch Traceability & Near-Expiry Provision Model",
+        "url": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
+        "fileType": "xlsx",
+        "fileSize": "148 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 22,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 4,
-    createdAt: '2025-10-25',
-    updatedAt: '2026-01-18',
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "CS Meenakshi Sharma",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 4,
+    "createdAt": "2025-11-12",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-5',
-    slug: 'hotel-hospitality-business-accounting',
-    title: 'Hotel & Hospitality Multi-Revenue Accounting',
-    shortDescription:
-      'Manage accounts of a 4-star boutique hotel: room guest folios, restaurant & banquet billing, OTA portal commissions (MakeMyTrip/Agoda), laundry, and GST hospitality compliance.',
-    detailedDescription:
-      'Hospitality accounting requires handling multiple distinct revenue centers under one roof. For "The Grand Heritage Boutique Hotel", you will manage front-desk guest folios, food and beverage restaurant billing (KOTs), banquet booking advances, room mini-bar sales, and OTA commission reconciliations with TDS under Section 194O.',
-    industryCategory: 'Hospitality & Tourism',
-    accountingCategory: 'Multi-Department Hospitality Operations',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Guest Folio & Night Audit Procedures',
-      'Restaurant POS Kitchen Order Ticket (KOT) Accounting',
-      'Online Travel Agency (OTA) Payout & Commission Reconciliation',
-      'Banquet Hall Advance & Cancellation Forfeiture Accounting',
-      'Hospitality GST Rates (Room Tariff slabs vs Restaurant 5% No-ITC)',
+    "id": "proj-mfg-5",
+    "slug": "plastic-polymers-injection-moulding-costing",
+    "title": "Plastic Polymers & Injection Moulding: Regrind Scrap & Unit Costing",
+    "shortDescription": "High-speed injection & blow moulding factory accounting: virgin polymer granules (HDPE/PP/PET) & masterbatch BOM, machine tonnage hour rates, mould tooling amortization per shot, and runner regrind scrap recycling.",
+    "detailedDescription": "Plastic container and component manufacturing requires precision tracking of machine cycle times and material regrinding. In this project for \"NeoPlast Polymers & Packaging\", students calculate the cost of manufacturing rigid containers, caps, and industrial crates. You will track raw polymer granules (PP, HDPE, PET) and color masterbatches, calculate Machine Hour Rate (MHR) across 150-ton to 450-ton injection machines, amortize customer-specific mould tooling costs per shot, and account for runner regrind reuse without compromising tensile specifications.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Machine Hour Rate & Scrap Regrinding",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Virgin Resin (HDPE/PP/PET) & Masterbatch Pigment BOM",
+      "Machine Hour Rate (MHR) Computation for Injection Moulding Presses",
+      "Mould Die Tooling Depreciation & Per-Shot Amortization",
+      "Sprue & Runner Scrap Regrinding, Blending Ratio & Valuation",
+      "Per-Gram Finished Component Costing & Minimum Order Quantity (MOQ)"
     ],
-    softwareUsed: ['Tally Prime Multi-Cost Centre', 'Hospitality Night Audit Spreadsheets'],
-    learningObjectives: [
-      'Execute daily Night Audit balancing front desk receipts against room occupancy records',
-      'Reconcile net bank deposits from OTA partners after deduction of commissions and TCS',
-      'Manage raw food inventory for kitchen operations and monitor Food Cost Percentage',
+    "softwareUsed": [
+      "Tally Prime Manufacturing",
+      "MHR Excel Modeling Sheet",
+      "Plastic Molding Estimator"
     ],
-    businessScenario:
-      'The Grand Heritage has 45 luxury rooms, a multi-cuisine restaurant, and 2 banquet halls. 60% of room bookings flow via OTAs (MakeMyTrip, Booking.com). Restaurant billing attracts 5% GST without ITC, whereas banquet packages with catering attract 18% GST with ITC.',
-    tasksToComplete: [
-      'Post daily Night Audit journal entries for room tariffs, taxes, and service charges',
-      'Reconcile OTA remittance statements against gross bookings and TDS deductions',
-      'Account for banquet wedding contracts, advances, and stage payments',
-      'Calculate monthly Food Cost Percentage and beverage inventory consumption',
+    "learningObjectives": [
+      "Calculate exact machine hourly operating cost including 3-phase electric power and chiller units",
+      "Value recycled regrind plastic resin versus virgin prime raw material",
+      "Derive quote prices per 1,000 units based on component weight in grams and cycle time in seconds"
     ],
-    expectedOutcomes: [
-      'Departmental profit and loss account (Rooms, F&B, Banquets)',
-      'Accurate reconciliation of OTA receivables and TDS under 194O',
-      'Clear food raw material consumption statement',
+    "businessScenario": "NeoPlast operates 8 automatic injection moulding machines manufacturing bottle caps and paint containers. Client moulds are kept under custody for exclusive production runs. Raw material prices change fortnightly based on Reliance polymer index.",
+    "tasksToComplete": [
+      "Establish BOM for 500ml lubricant container with flip-top cap",
+      "Compute hourly cost rate for a 250-Ton Toshiba injection moulding machine",
+      "Record grinding of runner waste into re-usable flakes and pass blended consumption vouchers",
+      "Generate customer quotation comparing 100% virgin polymer vs 20% recycled blend"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "expectedOutcomes": [
+      "Machine Hour Rate (MHR) master calculation worksheet",
+      "Scrap generation, regrinding and stock reconciliation register",
+      "Component piece-cost card showing weight, cycle time, and margin"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
       {
-        id: 'med-5-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Hotel Revenue Matrix',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'Night audit, room tariff slabs, and banquet advance accounting model',
-      },
+        "id": "med-mfg-5",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "Plastic Moulding MHR Model",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Machine hour rate breakdown, mould amortization, and regrind blending balance"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-5-1',
-        title: 'Hotel Business Accounting Practical Project Brief',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
+        "id": "res-mfg-5-1",
+        "title": "Plastic Injection Moulding Plant Accounting & Costing Guide",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "61 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-mfg-5-2",
+        "title": "Machine Hour Rate (MHR) & Mould Tooling Amortization Calculator",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "xlsx",
+        "fileSize": "138 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 24,
-    academicYear: '2025-26',
-    facultyMentor: 'CA Alok Maheshwari',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 5,
-    createdAt: '2025-10-28',
-    updatedAt: '2026-01-20',
+    "practiceTimeHours": 24,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 5,
+    "createdAt": "2025-11-15",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-6',
-    slug: 'fmcg-distributor-network-accounting',
-    title: 'FMCG Wholesale & Multi-Tier Distributor Network Accounting',
-    shortDescription:
-      'Manage accounts of an authorized FMCG super-stockist: primary vs secondary sales, company scheme claims, damaged stock returns, retailer credit limits, and sales beat collections.',
-    detailedDescription:
-      'Wholesale FMCG distribution involves rapid stock turnover with tight margins and complex manufacturer schemes. For "Radhe Krishna FMCG Distributors" (distributor for leading food and personal care brands), you will account for bulk primary purchases, secondary sales to 600+ retailers, company scheme discount reimbursements, breakage/damage claims, and field salesman beat collections.',
-    industryCategory: 'FMCG & Consumer Goods Wholesale',
-    accountingCategory: 'High-Volume Wholesale Distribution',
-    difficultyLevel: 'Advanced',
-    skillsCovered: [
-      'Primary Purchase vs Secondary Retail Invoicing',
-      'Manufacturer Trade Scheme & Discount Claim Accounting',
-      'Retailer Credit Period Enforcement & Interest Debits',
-      'Damaged & Expired Stock Verification & Company Claims',
-      'Salesman Beat Cash Collection & Shortage Reconciliations',
+    "id": "proj-11",
+    "slug": "furniture-showroom-custom-product-costing",
+    "title": "Furniture Showroom & Modular Woodcraft Manufacturing & Costing",
+    "shortDescription": "Costing and accounting for a bespoke wooden and modular furniture showroom: raw timber and hardware requisition, Bill of Materials (BOM), carpenter piece-rate labour, cutting scrap salvage, and turnkey site installation.",
+    "detailedDescription": "Customized manufacturing involves unique material combinations and variable labour requirements for each customer order. In this project for \"Royal Oak Custom Woodcraft & Interior Furniture\", students manage accounts for customized furniture orders (executive desks, modular kitchens, sofa suites, conference tables). You will prepare unit Bill of Materials (BOM) for timber, plywood, laminates, and fittings, compute carpenter piece-rate labour, allocate machine depreciation, and bill site installation.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Job-Order & Custom Woodcraft BOM",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Bill of Materials (BOM) for Custom Woodcraft Orders",
+      "Raw Material Requisitions (Timber, Laminate, Hardware, Adhesives)",
+      "Carpenter Piece-Rate vs Daily Labour Allocation",
+      "Finished Goods Costing & Markup Pricing Strategy",
+      "Customer Stage Advances & Site Installation Billing"
     ],
-    softwareUsed: ['Busy Accounting Software', 'Tally Prime FMCG Add-on', 'Excel Beat Sales Manager'],
-    learningObjectives: [
-      'Process company promotional schemes (quantity freebies, target rebates, turnover incentives)',
-      'Establish strict retailer credit limits and daily cash handover controls for delivery vans',
-      'Reconcile company credit notes issued against expiry/breakage return shipments',
+    "softwareUsed": [
+      "Tally Prime BOM Module",
+      "Furniture Costing & Quotation Excel Engine"
     ],
-    businessScenario:
-      'Radhe Krishna Distributors handles 5,000 SKUs supplied to 650 kirana stores across 6 delivery beats. The brand parent company offers monthly target incentives and promotional discounts that must be claimed through monthly scheme debit notes.',
-    tasksToComplete: [
-      'Feed bulk truckload primary purchase invoices and verify trade discount deductions',
-      'Generate daily batch-wise secondary sales bills across van delivery beats',
-      'Draft monthly scheme debit notes to the FMCG parent company for discount reimbursements',
-      'Audit salesman daily collections and track overdue retailer accounts',
+    "learningObjectives": [
+      "Build accurate BOM cost sheets for customized furniture items to avoid quote underpricing",
+      "Track raw material scrap, cutting wastage, and salvage timber valuation",
+      "Manage customer advance payments and milestone billing for interior turnkey projects"
     ],
-    expectedOutcomes: [
-      'Flawless retailer balance confirmation statements',
-      'Pending company claim register showing status of scheme reimbursements',
-      'Fast-moving vs slow-moving SKU inventory aging report',
+    "businessScenario": "Royal Oak manufactures bespoke wooden interiors for residential villas and corporate offices. Each order requires customized dimensions, Italian hardware, and multi-coat PU polishing. An inaccurate cost estimate can turn a profitable project into a heavy loss.",
+    "tasksToComplete": [
+      "Create Bill of Materials in Tally Prime for 5 distinct furniture models",
+      "Record material issuance from wood godown to production workshop floor",
+      "Compute total unit manufacturing cost including labour and factory rent allocation",
+      "Generate final GST invoice including site delivery and installation charges"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_v2.png',
-    media: [
+    "expectedOutcomes": [
+      "Standardized job-cost card for customized furniture manufacturing",
+      "Timber and hardware stock consumption register with wastage percentages",
+      "Order profitability comparison report showing quoted price vs actual cost"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
       {
-        id: 'med-6-1',
-        url: '/images/ylcc_tds_brochure_v2.png',
-        name: 'Distributor Beat Structure',
-        type: 'image/png',
-        size: '3.8 MB',
-        caption: 'FMCG secondary distribution ledger, scheme debit notes, and beat recovery',
-      },
+        "id": "med-11-1",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "Furniture Cost Sheet",
+        "type": "image/png",
+        "size": "3.8 MB",
+        "caption": "BOM configuration, timber consumption, and custom furniture pricing model"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-6-1',
-        title: 'FMCG Distribution Practical Project Dataset',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
-      },
+        "id": "res-11-1",
+        "title": "Furniture Custom Manufacturing Costing Project Dossier",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "63 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 26,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 6,
-    createdAt: '2025-11-02',
-    updatedAt: '2026-01-22',
+    "practiceTimeHours": 24,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 6,
+    "createdAt": "2025-11-22",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-7',
-    slug: 'gst-comprehensive-business-practice-project',
-    title: 'Comprehensive GST Business Practice Project (B2B, B2C, SEZ, RCM)',
-    shortDescription:
-      'End-to-end GST practical simulation: record diverse transactions, reconcile purchase books with GSTR-2B, file GSTR-1, execute tax offset in GSTR-3B, and prepare GSTR-9.',
-    detailedDescription:
-      'This signature practical project immerses students in the full monthly GST cycle of "Shree Govind Enterprises" (a multi-state trading and processing company). You will record B2B registered sales, B2C interstate supplies, exports with LUT, SEZ supplies, purchases from unregistered dealers under RCM, reconcile 500+ purchase entries against portal GSTR-2B, resolve ITC mismatches, and prepare complete GSTR-1 and GSTR-3B filings.',
-    industryCategory: 'Manufacturing & Trading',
-    accountingCategory: 'Statutory Taxation & Return Filing',
-    difficultyLevel: 'Advanced',
-    skillsCovered: [
-      'Multi-state GST Invoicing & Tax Determination',
-      'Zero-Rated Supplies (Export under LUT & SEZ Sales)',
-      'Reverse Charge Mechanism (GTA, Legal Fees, Sponsorship)',
-      'GSTR-2B vs Purchase Book Automated Reconciliation',
-      'Cash Ledger / Credit Ledger Offset Rules in GSTR-3B',
+    "id": "proj-mfg-7",
+    "slug": "automobile-ancillary-precision-machining-costing",
+    "title": "Automobile Ancillaries: Precision CNC Machining & OEM Stage Costing",
+    "shortDescription": "Tier-1 automobile supplier practical accounting: forged steel blanks to CNC turned gears & shafts, multi-stage heat treatment & phosphating, OEM Just-In-Time (JIT) schedules, tooling wear amortization, and rejection debit notes.",
+    "detailedDescription": "Automotive tier-1 ancillaries operate under stringent quality standards and OEM delivery schedules. In this simulation for \"Precision AutoDrive Components Ltd.\", students handle accounting for precision machining of automotive transmission gears, wheel hubs, and engine valves. You will track raw forged blanks, allocate multi-axis CNC machine amortization, pass vouchers for induction heat treatment and phosphating, account for customer quality rejections (PPM tracking), manage tooling insert wear costs, and process OEM supply invoices with electronic delivery schedules.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Automotive Stage Costing & Tooling Amortization",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Raw Forging & Cast Blank Requisition Vouchers",
+      "Multi-Stage Machining (CNC Turning, Hobbing, Grinding, Washing)",
+      "Specialized Tooling Insert & Cutting Fluid Cost Amortization",
+      "Customer Rejection Debit Notes & PPM Defect Accounting",
+      "OEM JIT Consignment Stock & Delivery Schedule Billing"
     ],
-    softwareUsed: ['Official GST Portal Simulator', 'GST Offline Tool', 'Tally Prime 4.0', 'Excel 2B Milan Master'],
-    learningObjectives: [
-      'Accurately identify place of supply and applicable taxes (CGST+SGST vs IGST)',
-      'Perform advanced GSTR-2B reconciliations identifying missing vendor invoices and ineligible ITC',
-      'Calculate optimal ITC offset sequences per Section 49 to minimize cash tax liability',
+    "softwareUsed": [
+      "Tally Prime 4.0",
+      "Automotive Tier-1 Costing Worksheets",
+      "E-Way Bill & IRN Engine"
     ],
-    businessScenario:
-      'Shree Govind Enterprises has monthly turnover of ₹1.2 Crores with sales in Rajasthan, Gujarat, and Maharashtra. It imports specialized packaging material and exports finished spices. The company received 12 vendor invoices not reflecting in GSTR-2B.',
-    tasksToComplete: [
-      'Enter all monthly sales and purchase invoices with verified HSN codes and tax rates',
-      'Run GSTR-2B reconciliation and classify discrepancies into vendor reminders and timing differences',
-      'Prepare and validate JSON file for GSTR-1 uploading on the offline tool',
-      'Compute final tax payable in GSTR-3B, generate PMT-06 challan, and pass accounting offset entries',
+    "learningObjectives": [
+      "Track stage-by-stage value addition across cutting, heat treatment, and surface finishing",
+      "Account for tooling wear and insert consumption per 100 components machined",
+      "Reconcile customer self-billing portals (Maruti / Tata Motors / Mahindra) with sales accounts"
     ],
-    expectedOutcomes: [
-      'Filed GSTR-1 and GSTR-3B acknowledgment reports',
-      'Comprehensive ITC reconciliation working paper for internal audit',
-      'Accurate closing balances in Electronic Cash and Credit Ledgers',
+    "businessScenario": "Precision AutoDrive supplies 25,000 transmission gear blanks monthly to automotive OEMs. Parts failing micron-level coordinate measuring machine (CMM) tolerances are returned with penalty debit notes.",
+    "tasksToComplete": [
+      "Configure stage-wise BOM covering forged blanks, carbide inserts, and quenching oils",
+      "Record stage completion transfers from CNC machine shop to heat-treatment furnace",
+      "Pass accounting entries for customer rejection debit notes and scrap value recovery",
+      "Prepare monthly customer reconciliation statement against OEM remittance advice"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure.png',
-    media: [
+    "expectedOutcomes": [
+      "Automotive component stage-cost audit sheet",
+      "Tooling and cutting consumable consumption ledger",
+      "OEM portal reconciled debtor ledger with zero discrepancy"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
       {
-        id: 'med-7-1',
-        url: '/images/ylcc_tds_brochure.png',
-        name: 'GST Filing Architecture',
-        type: 'image/png',
-        size: '3.2 MB',
-        caption: 'GST transaction feeding, ITC reconciliation, and GSTR-3B offset mechanics',
-      },
+        "id": "med-mfg-7",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Auto Components Stage Costing Engine",
+        "type": "image/png",
+        "size": "3.5 MB",
+        "caption": "Forging blank feeding, CNC machining stages, tooling wear, and OEM delivery reconciliation"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-7-1',
-        title: 'GST Live Practice Simulation Project Manual',
-        url: '/sample-docs/YLCC-Course-Banking-GST.pdf',
-        fileType: 'pdf',
-        fileSize: '60 KB',
-        isDownloadable: true,
+        "id": "res-mfg-7-1",
+        "title": "Automobile Ancillary Stage Costing & Tooling Amortization Dossier",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "66 KB",
+        "isDownloadable": true
       },
       {
-        id: 'res-7-2',
-        title: 'GSTR-2B vs Purchase Ledger Milan Excel Automation Model',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'xlsx',
-        fileSize: '185 KB',
-        isDownloadable: true,
-      },
+        "id": "res-mfg-7-2",
+        "title": "OEM Self-Billing Portal vs Sales Register Reconciliation Sheet",
+        "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+        "fileType": "xlsx",
+        "fileSize": "145 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 30,
-    academicYear: '2025-26',
-    facultyMentor: 'CA Alok Maheshwari',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 7,
-    createdAt: '2025-11-05',
-    updatedAt: '2026-01-25',
+    "practiceTimeHours": 26,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 7,
+    "createdAt": "2025-11-26",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-8',
-    slug: 'tds-tcs-corporate-compliance-project',
-    title: 'Corporate TDS/TCS Multi-Section Compliance Project',
-    shortDescription:
-      'Comprehensive withholding tax project: section deductions (194C, 194J, 194I, 194Q, 206C), Challan 281 payments, Form 24Q/26Q quarterly filings, and TRACES Form 16/16A generation.',
-    detailedDescription:
-      'In this corporate taxation project for "Continental Infotech & Media Services", students execute the entire quarterly withholding tax cycle. You will audit vendor bills for TDS applicability, account for contractor payments, rent, legal retainers, and machinery hire, deduct TDS on buyer purchase of goods under Section 194Q, collect TCS on scrap sales under 206C, prepare Form 26Q using NSDL RPU, generate the .fvu file, and issue Form 16A certificates from TRACES.',
-    industryCategory: 'Corporate Services & IT',
-    accountingCategory: 'Direct Taxation & Statutory Withholding',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Withholding Deductions under 194C, 194J, 194I, 194H, 194Q',
-      'TCS on Sale of Scrap & High-Value Goods (206C)',
-      'Monthly Challan 281 E-payment & BSR Code Mapping',
-      'Quarterly Form 26Q & Form 24Q Filing with NSDL Utilities',
-      'TRACES Portal KYC, Form 16/16A Issuance, and Correction Returns',
+    "id": "proj-mfg-8",
+    "slug": "paints-chemical-resins-manufacturing-costing",
+    "title": "Paints & Chemical Resins: Dispersion Yield & Packaging Costing",
+    "shortDescription": "Specialty chemical and decorative coatings factory accounting: liquid solvent, pigment & alkyd resin dispersion, high-speed bead mill yield variance, tin/drum filling losses, hazardous material compliance, and per-liter standard costing.",
+    "detailedDescription": "Paints and chemical coatings manufacturing involves batch reactions where volatile solvents evaporate during high-speed dispersion and sand milling. In this project for \"Apex Coatings & Industrial Polymers\", students manage the accounts of an industrial resin and decorative paint manufacturing unit. You will record formulations of alkyd resins, titanium dioxide pigments, and mineral solvents, compute batch dispersion yields, account for tin and HDPE drum filling line losses, track hazardous waste disposal compliance, and establish standard vs actual cost per liter.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Chemical Batch Yield & Formulation Costing",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Liquid Chemical Formulation BOM (Resins, Pigments, Solvents, Additives)",
+      "High-Speed Dispersion & Sand Mill Evaporation Yield Variances",
+      "Automated Filling Line Tin & Pail Container Packaging Consumption",
+      "Pollution Control Board & Effluent Treatment CapEx Accounting",
+      "Standard vs Actual Cost Variance per Liter & Bulk Kilogram"
     ],
-    softwareUsed: ['NSDL e-Gov RPU & FVU Tools', 'TRACES Portal Utilities', 'Tally Prime TDS'],
-    learningObjectives: [
-      'Correctly identify applicable TDS sections, threshold limits, and pan/non-pan tax rates',
-      'Generate error-free quarterly e-TDS return text files validated through NSDL FVU',
-      'Operate TRACES portal to download Form 16A and file online correction statements',
+    "softwareUsed": [
+      "Tally Prime Manufacturing",
+      "Chemical Batch Yield Engine",
+      "Excel 365 Variance Model"
     ],
-    businessScenario:
-      'Continental Infotech engages multiple external agencies: software consultants, website developers, security guards, premises landlords, and legal advisors. Monthly TDS deductions exceed ₹3.5 Lakhs across 80+ deductees.',
-    tasksToComplete: [
-      'Verify 80+ vendor invoices and book corresponding TDS entries with correct section codes',
-      'Reconcile monthly Challan 281 payments and prepare CIN/BSR mapping statements',
-      'Compile quarter-ended data into NSDL RPU tool and run CSI file validation',
-      'Request bulk Form 16A from TRACES portal and convert into digitally signed PDF certificates',
+    "learningObjectives": [
+      "Handle density and specific gravity conversions between weight (KG) and volume (Liters)",
+      "Calculate evaporation solvent loss percentages during high-temperature resin cooking",
+      "Allocate packaging expenses across 1-liter tins, 4-liter cans, and 20-liter industrial pails"
     ],
-    expectedOutcomes: [
-      'FVU-validated return file (.fvu) ready for tin-FC submission',
-      'Reconciled TRACES challan ledger with zero unresolved demand notices',
-      'Generated Form 16A certificates ready for vendor distribution',
+    "businessScenario": "Apex Coatings produces synthetic enamels, acrylic emulsions, and epoxy primers. Chemical raw materials are purchased in metric tons and tanker loads, while finished goods are sold through paint dealer networks in liters.",
+    "tasksToComplete": [
+      "Set up Tally Prime multi-compound units (KG to Liters based on Specific Gravity 1.25)",
+      "Record batch production of 5,000 liters white gloss enamel with pigment grinding loss",
+      "Issue empty tins, handles, printed labels, and outer cartons to packaging floor",
+      "Compute final cost per liter and establish dealer wholesale price list with cash discounts"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_maroon.png',
-    media: [
+    "expectedOutcomes": [
+      "Chemical batch formulation yield and loss variance statement",
+      "Density conversion inventory register with zero measurement discrepancies",
+      "Dealer price matrix showing gross margins across packaging sizes"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+    "media": [
       {
-        id: 'med-8-1',
-        url: '/images/ylcc_tds_brochure_maroon.png',
-        name: 'TDS Withholding Structure',
-        type: 'image/png',
-        size: '2.8 MB',
-        caption: 'Corporate TDS sectional checklist, RPU compilation, and TRACES issuance',
-      },
+        "id": "med-mfg-8",
+        "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+        "name": "Paint Formulation Cost Matrix",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Resin batch reactions, solvent evaporation losses, and container packaging economics"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-8-1',
-        title: 'TDS/TCS Corporate Practice Project Dossier',
-        url: '/sample-docs/YLCC-Course-TDS-Payroll.pdf',
-        fileType: 'pdf',
-        fileSize: '60 KB',
-        isDownloadable: true,
+        "id": "res-mfg-8-1",
+        "title": "Paints & Chemical Resins Batch Costing Manual & Formula Sheets",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "63 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-mfg-8-2",
+        "title": "Density-to-Volume Unit Conversion & Evaporation Loss Model",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "xlsx",
+        "fileSize": "132 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 24,
-    academicYear: '2025-26',
-    facultyMentor: 'CA Alok Maheshwari',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 8,
-    createdAt: '2025-11-10',
-    updatedAt: '2026-01-28',
+    "practiceTimeHours": 25,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 8,
+    "createdAt": "2025-11-29",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-9',
-    slug: 'banking-cc-limit-cma-proposal-project',
-    title: 'Banking Cash Credit (CC) / OD Limit & CMA Proposal Project',
-    shortDescription:
-      'Prepare complete commercial bank proposal for ₹5 Crore CC limit renewal and expansion: stock statements, drawing power calculations, 12-page CMA data, and financial ratio modeling.',
-    detailedDescription:
-      'Commercial banking credit documentation requires rigorous financial modeling and strict compliance with RBI lending norms. In this project for "Maruti Polyplast Industries", students prepare a full ₹5 Crore Cash Credit (CC) limit enhancement proposal submitted to State Bank of India. You will compile monthly bank stock and debtors statements, calculate Drawing Power (DP) with 25% margin deductions, build the complete CMA report (Forms I to VI), and prepare projected Balance Sheets and Profit & Loss statements.',
-    industryCategory: 'Industrial Manufacturing & Banking',
-    accountingCategory: 'Banking Credit & CMA Documentation',
-    difficultyLevel: 'Executive',
-    skillsCovered: [
-      'Cash Credit (CC) & Working Capital Limit Structuring',
-      'Monthly Drawing Power (DP) Computation with Margin Deduction',
-      'Bank Stock Statement & Debtors Aging Scrutiny (< 90 Days)',
-      '12-Page CMA Data Preparation (Operating Statement & Fund Flow)',
-      'Key Banking Financial Ratios (Current Ratio, DSCR, TOL/TNW)',
+    "id": "proj-mfg-9",
+    "slug": "electronics-electrical-appliance-assembly-costing",
+    "title": "Electronics & Electrical Appliance Assembly: SMT PCB & Warranty Costing",
+    "shortDescription": "High-tech electronics assembly accounting: Surface Mount (SMT) component BOM, wave soldering & ESD line assembly, customs import duty on ICs, testing yield fallout, and 1-year product warranty replacement provisions.",
+    "detailedDescription": "Electronics and electrical appliance assembly involves thousands of miniature micro-components, sensitive clean-room assembly lines, and warranty liabilities. In this practical simulation for \"VoltCore Electronics & LED Appliances\", students manage accounts for an electronics manufacturing service (EMS) plant assembling smart LED fixtures, power inverters, and IoT control boards. You will configure high-density BOMs for surface-mount ICs, capacitors, and PCB boards, account for customs duty and freight on imported components, record wave soldering testing rejections, and compute 1-year warranty replacement liability reserves.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Electronics Assembly BOM & Warranty Reserves",
+    "difficultyLevel": "Executive",
+    "skillsCovered": [
+      "SMT Component Bill of Materials (Microcontrollers, SMD Diodes, Multi-layer PCBs)",
+      "Customs Basic Duty (BCD), Social Welfare Surcharge & IGST on Imported ICs",
+      "Surface Mount Assembly & Burn-In Testing Yield Fallout Accounting",
+      "Statutory 1-Year Warranty Replacement Provisioning (Ind AS 37)",
+      "Finished Appliance Unit Costing (Driver, Housing, Optic Lens & Box)"
     ],
-    softwareUsed: ['Banking CMA Modeling Workbooks', 'Excel 365 Financial Projections', 'Tally Prime'],
-    learningObjectives: [
-      'Master the mathematical formula and margin mechanics of bank Drawing Power',
-      'Build institutional-grade CMA data for credit officers and sanction committees',
-      'Project future year Balance Sheets and Profit & Loss statements consistent with growth targets',
+    "softwareUsed": [
+      "Tally Prime Manufacturing",
+      "Customs Import Duty Calculator",
+      "Electronics Cost Workbook"
     ],
-    businessScenario:
-      'Maruti Polyplast is doubling its manufacturing capacity of PVC pipes and requires limit enhancement from ₹3 Crores to ₹5 Crores. The bank requires audited figures for the past 2 years, provisional figures for current year, and projected figures for next 3 years along with monthly DP track records.',
-    tasksToComplete: [
-      'Compile 12 consecutive months of Bank Stock Statements and reconcile with Tally stock register',
-      'Filter out debtors exceeding 90 days and calculate monthly eligible Drawing Power',
-      'Fill all 6 core sheets of CMA format ensuring fund-flow balancing and working capital gap calculations',
-      'Calculate Current Ratio (minimum 1.33 benchmark) and Debt-Equity benchmarks',
+    "learningObjectives": [
+      "Capitalize customs clearance, port terminal charges, and inland freight into imported component costs",
+      "Manage high-volume small-value inventory with zero component shrinkage or ESD damage losses",
+      "Create prudent accounting provisions for expected customer warranty return claims"
     ],
-    expectedOutcomes: [
-      'Complete, bank-ready CMA proposal file with projected financials',
-      'Validated 12-month Drawing Power and stock audit dossier',
-      'Executive summary for Bank Credit Sanction Committee',
+    "businessScenario": "VoltCore Electronics imports microchips from Taiwan and manufactures 20,000 smart LED drivers and solar inverters monthly. Components are issued to high-speed pick-and-place robot lines where defective boards undergo manual rework.",
+    "tasksToComplete": [
+      "Record Bill of Entry import purchase entry with customs duty capitalization into item land cost",
+      "Pass automated assembly production vouchers for 5,000 LED driver units",
+      "Account for rework soldering cost and scrapped PCB components",
+      "Compute 2.5% standard warranty liability provision under Ind AS 37 provisions"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "expectedOutcomes": [
+      "Landed cost calculation sheet for imported electronic components",
+      "Pick-and-place line assembly yield and scrap report",
+      "Product warranty reserve schedule and unit profitability summary"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
       {
-        id: 'med-9-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Banking Limit Framework',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'CMA data modeling, drawing power verification, and projected balance sheet',
-      },
+        "id": "med-mfg-9",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "Electronics EMS Costing Framework",
+        "type": "image/png",
+        "size": "3.6 MB",
+        "caption": "SMT component import costing, pick-and-place line scrap, and warranty provisioning"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-9-1',
-        title: 'Banking CC Limit & CMA Proposal Practice Guide',
-        url: '/sample-docs/YLCC-Course-Banking-GST.pdf',
-        fileType: 'pdf',
-        fileSize: '60 KB',
-        isDownloadable: true,
+        "id": "res-mfg-9-1",
+        "title": "Electronics Manufacturing & EMS Plant Costing Project Manual",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "67 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-mfg-9-2",
+        "title": "Import Landed Cost & Warranty Provisioning Financial Model",
+        "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+        "fileType": "xlsx",
+        "fileSize": "152 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 28,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 9,
-    createdAt: '2025-11-14',
-    updatedAt: '2026-02-01',
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "CS Meenakshi Sharma",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 9,
+    "createdAt": "2025-12-02",
+    "updatedAt": "2026-03-01"
   },
   {
-    id: 'proj-10',
-    slug: 'corporate-payroll-statutory-compliance-system',
-    title: 'Multi-Department Corporate Payroll & Statutory Compliance System',
-    shortDescription:
-      'End-to-end payroll processing for 120 employees: biometric attendance, overtime, statutory bonus, gratuity computation, monthly salary registers, EPF ECR, and ESIC returns.',
-    detailedDescription:
-      'Managing payroll across corporate departments requires flawless statutory accuracy and timely compliance. In this project for "Zenith Engineering & Automotive Components", students process monthly salaries for 120 staff across executives, engineers, shop-floor machine operators, and security personnel. You will handle biometric punch logs, overtime hours, LOP leaves, statutory bonus calculations under the Bonus Act, gratuity provisions, monthly EPF ECR generation, and ESIC portal filings.',
-    industryCategory: 'Engineering & Manufacturing',
-    accountingCategory: 'Payroll & Labour Law Compliance',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Multi-Tier CTC & Salary Structure Architecture',
-      'Shift Attendance, Overtime & Leave Without Pay (LWP) Tracking',
-      'Statutory Bonus (8.33% to 20%) & Gratuity Liability Computation',
-      'EPF Wage Ceiling Rules & Electronic Challan-cum-Return (ECR)',
-      'ESIC Portal Monthly Filing & Full & Final (F&F) Settlements',
+    "id": "proj-1",
+    "slug": "hospital-business-accounting-system",
+    "title": "Hospital Business Accounting & Patient Billing System",
+    "shortDescription": "Complete accounting for a 100-bed multi-specialty hospital: IPD/OPD patient billing, doctor consultant revenue shares, pharmacy inventory, and TPA insurance claims.",
+    "detailedDescription": "In this practical project, students manage the complete financial accounts of \"Jeevandhara Multi-Specialty Hospital\". You will handle patient admission deposits, OPD consultation billing, pharmacy dispensary stock tracking, doctor visiting fees vs revenue-sharing agreements, and reconciliation of cashless mediclaim receivables from Third Party Administrators (TPAs).",
+    "industryCategory": "Healthcare & Hospitals",
+    "accountingCategory": "Service & Retail Accounting",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "IPD / OPD Billing Structures",
+      "Doctor Revenue Sharing (TDS 194J)",
+      "Pharmacy Inventory & Batch Control",
+      "TPA Insurance Claims Reconciliation",
+      "Medical Equipment Capitalization & AMC Bookings"
     ],
-    softwareUsed: ['Payroll Automation Spreadsheets', 'Tally Prime Payroll', 'Unified PF Portal Simulator'],
-    learningObjectives: [
-      'Generate monthly salary sheets and bank NEFT transfer advice for 100+ employees',
-      'Accurately calculate employee and employer contributions for EPF, EPS, EDLI, and ESIC',
-      'Compute statutory bonus and gratuity liabilities per Labour Law provisions',
+    "softwareUsed": [
+      "Tally Prime 4.0",
+      "Excel 365 Financials",
+      "Pharmacy Stock Manager"
     ],
-    businessScenario:
-      'Zenith Engineering employs 35 white-collar staff and 85 factory floor workers working across 3 shifts. The HR department must ensure monthly salaries are credited by the 7th and statutory PF/ESI challans paid by the 15th without fail.',
-    tasksToComplete: [
-      'Import biometric attendance CSV files and calculate payable days and overtime hours',
-      'Apply salary deductions: PF, ESIC, Professional Tax, TDS Section 192, and staff loan advances',
-      'Format and validate text file for EPF Unified Member portal ECR upload',
-      'Calculate Full & Final settlement for two resigned employees including earned leave encashment',
+    "learningObjectives": [
+      "Account for multi-stream hospital revenues (OPD, IPD, Diagnostics, Pharmacy)",
+      "Accurately withhold TDS under Section 194J on doctor visiting fees and surgical sharing",
+      "Reconcile TPA insurance claims and track deductions, co-pays, and claim delays"
     ],
-    expectedOutcomes: [
-      'Department-wise monthly payroll register with statutory liability breakdown',
-      'EPF ECR text file and ESIC monthly contribution summary sheet',
-      'Individual password-protected salary slips ready for email distribution',
+    "businessScenario": "Jeevandhara Hospital operates 100 beds, an in-house pathology lab, and a round-the-clock medical store. Monthly revenues cross ₹75 Lakhs across private cash patients, corporate panels, and government health schemes (Ayushman / RGHS). The accounts manager must ensure live billing, prevent medicine expiry losses, and reconcile insurance settlements.",
+    "tasksToComplete": [
+      "Record daily OPD cash receipts and IPD admission advance vouchers",
+      "Process monthly doctor consultancy bills with TDS deduction under 194J",
+      "Reconcile pharmacy medicine purchases, credit terms, and near-expiry stock returns",
+      "Prepare monthly TPA outstanding aging report and submit reconciliation to management"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_espresso_sage_improved.png',
-    media: [
+    "expectedOutcomes": [
+      "Complete trial balance and monthly P&L for hospital operations",
+      "Zero discrepancies between pharmacy physical inventory and books",
+      "Accurate TPA receivables register with clear aging breakdown"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
       {
-        id: 'med-10-1',
-        url: '/images/ylcc_tds_brochure_espresso_sage_improved.png',
-        name: 'Corporate Payroll Architecture',
-        type: 'image/png',
-        size: '2.8 MB',
-        caption: 'Salary register, overtime computation, EPF ECR, and ESIC return filing model',
-      },
+        "id": "med-1-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Hospital Billing Framework",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Hospital departmental billing and doctor payout schedule"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-10-1',
-        title: 'Corporate Payroll & Statutory Labour Compliance Project Manual',
-        url: '/sample-docs/YLCC-Course-TDS-Payroll.pdf',
-        fileType: 'pdf',
-        fileSize: '60 KB',
-        isDownloadable: true,
+        "id": "res-1-1",
+        "title": "Hospital Multi-Specialty Project Brief & Patient Billing Data",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-1-2",
+        "title": "Hospital Doctor Payout & TPA Reconciliation Model",
+        "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+        "fileType": "xlsx",
+        "fileSize": "124 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 22,
-    academicYear: '2025-26',
-    facultyMentor: 'CS Meenakshi Sharma',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 10,
-    createdAt: '2025-11-18',
-    updatedAt: '2026-02-05',
+    "practiceTimeHours": 24,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 10,
+    "createdAt": "2025-10-15",
+    "updatedAt": "2026-01-10"
   },
   {
-    id: 'proj-11',
-    slug: 'furniture-showroom-custom-product-costing',
-    title: 'Furniture Showroom Custom Product Manufacturing & Costing',
-    shortDescription:
-      'Costing and accounting for a bespoke wooden and modular furniture showroom: raw timber and hardware requisition, Bill of Materials (BOM), carpenter piece-rate labour, and delivery installation.',
-    detailedDescription:
-      'Customized manufacturing involves unique material combinations and variable labour requirements for each customer order. In this project for "Royal Oak Custom Woodcraft & Interior Furniture", students manage accounts for customized furniture orders (executive desks, modular kitchens, sofa suites, conference tables). You will prepare unit Bill of Materials (BOM) for timber, plywood, laminates, and fittings, compute carpenter piece-rate labour, allocate machine depreciation, and bill site installation.',
-    industryCategory: 'Furniture & Interior Manufacturing',
-    accountingCategory: 'Job-Order & Batch Costing',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Bill of Materials (BOM) for Custom Woodcraft Orders',
-      'Raw Material Requisitions (Timber, Laminate, Hardware, Adhesives)',
-      'Carpenter Piece-Rate vs Daily Labour Allocation',
-      'Finished Goods Costing & Markup Pricing Strategy',
-      'Customer Stage Advances & Site Installation Billing',
+    "id": "proj-2",
+    "slug": "college-accounting-fee-management",
+    "title": "College Accounting & Student Fee Reconciliation System",
+    "shortDescription": "Manage financial books of a premier educational institute: semester fee collections, scholarship distributions, faculty salaries, lab expenditure, and hostel accounts.",
+    "detailedDescription": "Educational institutions have unique accounting requirements governed by trust regulations, fee regulatory committees, and student installment schedules. This project simulates \"Vidyapeeth Degree College\". You will account for multi-installment student fee collection, government scholarship adjustments, university examination fees, lab consumable expenses, faculty payroll, and library book purchases.",
+    "industryCategory": "Education & Institutional",
+    "accountingCategory": "Trust & Institutional Accounting",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Installment Fee Accounting & Defaulter Tracking",
+      "Government Scholarship Adjustments",
+      "Faculty Salary & Guest Lecture Vouchers",
+      "Hostel & Mess Separate Ledger Balancing",
+      "Depreciation on Educational Infrastructure"
     ],
-    softwareUsed: ['Tally Prime BOM Module', 'Furniture Costing & Quotation Excel Engine'],
-    learningObjectives: [
-      'Build accurate BOM cost sheets for customized furniture items to avoid quote underpricing',
-      'Track raw material scrap, cutting wastage, and salvage timber valuation',
-      'Manage customer advance payments and milestone billing for interior turnkey projects',
+    "softwareUsed": [
+      "Tally Prime",
+      "Excel 365 Student Master Database"
     ],
-    businessScenario:
-      'Royal Oak manufactures bespoke wooden interiors for residential villas and corporate offices. Each order requires customized dimensions, Italian hardware, and multi-coat PU polishing. An inaccurate cost estimate can turn a profitable project into a heavy loss.',
-    tasksToComplete: [
-      'Create Bill of Materials in Tally Prime for 5 distinct furniture models',
-      'Record material issuance from wood godown to production workshop floor',
-      'Compute total unit manufacturing cost including labour and factory rent allocation',
-      'Generate final GST invoice including site delivery and installation charges',
+    "learningObjectives": [
+      "Maintain student-wise fee subsidiary ledgers with installment due dates",
+      "Reconcile government scholarship grants credited through PFMS portal",
+      "Finalize institutional Income & Expenditure accounts and Balance Sheet"
     ],
-    expectedOutcomes: [
-      'Standardized job-cost card for customized furniture manufacturing',
-      'Timber and hardware stock consumption register with wastage percentages',
-      'Order profitability comparison report showing quoted price vs actual cost',
+    "businessScenario": "Vidyapeeth College educates 1,800 students across Commerce, Science, and Arts streams. Fees are payable in two equal installments. The college also runs an attached 250-capacity hostel and operates 12 college buses. The accountant must monitor defaulter lists and manage monthly fuel and driver expenses.",
+    "tasksToComplete": [
+      "Feed semester fee receipts across cash, UPI, and bank transfers into student ledgers",
+      "Reconcile scholarship grants received from the Social Justice Department",
+      "Generate monthly staff salary registers and guest faculty TDS vouchers",
+      "Prepare income and expenditure account separating general fund from endowment funds"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_v2.png',
-    media: [
+    "expectedOutcomes": [
+      "Comprehensive student fee outstanding statement sorted by course and semester",
+      "Reconciled hostel and mess operating accounts",
+      "Institutional financial statements prepared for statutory audit"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
       {
-        id: 'med-11-1',
-        url: '/images/ylcc_tds_brochure_v2.png',
-        name: 'Furniture Cost Sheet',
-        type: 'image/png',
-        size: '3.8 MB',
-        caption: 'BOM configuration, timber consumption, and custom furniture pricing model',
-      },
+        "id": "med-2-1",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "College Ledger Architecture",
+        "type": "image/png",
+        "size": "3.8 MB",
+        "caption": "Institutional fee management and fund accounting structure"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-11-1',
-        title: 'Furniture Custom Manufacturing Costing Project Dossier',
-        url: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-        fileType: 'pdf',
-        fileSize: '63 KB',
-        isDownloadable: true,
-      },
+        "id": "res-2-1",
+        "title": "College Institutional Accounting Project Dossier",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 20,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 11,
-    createdAt: '2025-11-22',
-    updatedAt: '2026-02-08',
+    "practiceTimeHours": 20,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 11,
+    "createdAt": "2025-10-18",
+    "updatedAt": "2026-01-12"
   },
   {
-    id: 'proj-12',
-    slug: 'architect-interior-decorator-project-accounting',
-    title: 'Architect & Interior Decorator Project Accounting & Stage Billing',
-    shortDescription:
-      'Accounting for professional architectural and interior consulting firms: project milestone billing, 3D visualization sub-contracts, site supervision fees, and Section 194J TDS reconciliations.',
-    detailedDescription:
-      'Architecture and interior design studios operate on intellectual capital, concept design phases, and project supervision retainers. For "Studio Forma Architects & Interior Designers", you will manage client design contracts, stage-wise fee billing (Concept 20%, Municipal Sanction 30%, Working Drawings 30%, Handover 20%), 3D renderer vendor payments, site engineer travel expenses, and client TDS deductions under Section 194J.',
-    industryCategory: 'Architecture & Professional Design',
-    accountingCategory: 'Professional Services & Milestone Billing',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'Project-wise Milestone Invoicing & Advance Fees',
-      'Sub-contractor TDS Deduction (Draftsmen, 3D Renderers, Structural Engineers)',
-      'Client TDS Section 194J Reconciliation via Form 26AS',
-      'Project Profitability & Consultant Billing Hours Tracking',
-      'Client Reimbursable Expenses (Municipal Fees, Printing, Site Travel)',
+    "id": "proj-3",
+    "slug": "logistics-transport-fleet-accounting",
+    "title": "Freight Logistics: Transporter Hisab, Consignment & City Tracking",
+    "shortDescription": "Accounting for inter-state freight carriers: Transporter Hisab (trip advances & fuel settlement), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.",
+    "detailedDescription": "Transport and logistics businesses handle thousands of trips across states with cash advances, fuel slips, toll charges, and broker commissions. In this signature practical project for \"Speedways Freight Logistics\", students master all 3 foundational pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).",
+    "industryCategory": "Logistics & Transportation",
+    "accountingCategory": "Fleet & Service Operations",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Transportor Hisab / Fleet Accounts Settlement",
+      "Consignment Tracking (Bilty / LR Register)",
+      "City-Wise Transport & Destination Route Tracking",
+      "Goods Transport Agency (GTA) 5% RCM Accounting",
+      "Broker Commission & TDS Section 194C Compliances"
     ],
-    softwareUsed: ['Tally Prime Multi-Project', 'Architectural Fee Billing Spreadsheets'],
-    learningObjectives: [
-      'Invoice architectural consulting fees in alignment with statutory Council of Architecture stages',
-      'Reconcile 10% TDS deducted by corporate and individual clients against Form 26AS / AIS',
-      'Separate professional service fees from pass-through client statutory sanction expenses',
+    "softwareUsed": [
+      "Tally Prime 4.0",
+      "Logistics Fuel & Mileage Excel Tool"
     ],
-    businessScenario:
-      'Studio Forma is designing 3 luxury residential bungalows and a commercial shopping arcade. The studio charges a combination of square-foot rates and percentage-of-cost fees. Managing client milestone approvals is essential for steady cash flow.',
-    tasksToComplete: [
-      'Draft stage-wise GST tax invoices based on architectural project milestone sign-offs',
-      'Book external structural consultant fees and apply TDS under Section 194J',
-      'Reconcile quarterly 26AS tax credits and track pending client TDS certificates',
-      'Calculate net project profitability per square foot designed',
+    "learningObjectives": [
+      "Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing",
+      "Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)",
+      "Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances"
     ],
-    expectedOutcomes: [
-      'Project-by-project profitability register showing billable vs unbilled hours',
-      'Client fee outstanding aging report linked to construction milestones',
-      'Reconciled Form 26AS tax credit ledger ready for annual income tax filing',
+    "businessScenario": "Speedways Logistics operates 28 heavy commercial trucks and hires 40+ market trucks monthly for Delhi-Mumbai-Jaipur routes. Each trip involves driver cash advance (₹25,000), diesel fleet card swipes, Fastag tolls, and delivery detention charges. Accurate trip settlement is vital to stop cash leakages.",
+    "tasksToComplete": [
+      "Topic 1 (Transportor Hisab): Reconcile transporter freight ledgers, driver trip advances, diesel fuel cards, Fastag tolls, broker commissions, and final trip profit & loss statements",
+      "Topic 2 (Consignment Track): Track consignment notes (Bilty/LR) from dispatch to delivery, record billing weights, demurrage charges, POD (Proof of Delivery) submissions, and customer freight billing",
+      "Topic 3 (City Wise Transport Tracking): Route-wise freight ledger monitoring (e.g. Delhi, Mumbai, Ahmedabad, Jaipur), destination city delivery timelines, transit detention charges, and inter-city vehicle mileage profitability",
+      "Statutory Compliance: Verify GTA GST Reverse Charge (RCM 5% vs forward 12%), obtain sub-section (6) PAN declarations for transporter TDS exemptions under Section 194C"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "expectedOutcomes": [
+      "Complete fleet operational P&L showing cost per metric tonne per km across major routes",
+      "Error-free consignment tracking register and Proof of Delivery (POD) audit trail",
+      "Clear RCM tax liability statement and zero unresolved driver advances at month-end"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_maroon.png",
+    "media": [
       {
-        id: 'med-12-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Architectural Fee Architecture',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'Milestone billing, consultant sub-contracts, and 26AS reconciliation model',
-      },
+        "id": "med-3-1",
+        "url": "/images/ylcc_tds_brochure_maroon.png",
+        "name": "Logistics Fleet Cost Model",
+        "type": "image/png",
+        "size": "2.8 MB",
+        "caption": "Fleet trip expense settlement and vehicle margin tracking"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-12-1',
-        title: 'Architect & Interior Design Accounting Project Brief',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
-      },
+        "id": "res-3-1",
+        "title": "Logistics Accounting & GTA Compliance Practice File",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 18,
-    academicYear: '2025-26',
-    facultyMentor: 'CA Alok Maheshwari',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 12,
-    createdAt: '2025-11-26',
-    updatedAt: '2026-02-12',
+    "practiceTimeHours": 25,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 12,
+    "createdAt": "2025-10-22",
+    "updatedAt": "2026-01-15"
   },
   {
-    id: 'proj-13',
-    slug: 'builder-real-estate-site-costing',
-    title: 'Real Estate Builder & Multi-Site Construction Costing',
-    shortDescription:
-      'Costing and accounting for a multi-story residential housing project: land acquisition, cement/steel procurement, contractor running bills, RERA escrow bank accounts, and GST under residential real estate rules.',
-    detailedDescription:
-      'Real estate construction is one of the most capital-intensive and heavily regulated sectors in India. In this project for "Aashiyana Infratech Developers" (constructing a 120-unit luxury apartment complex "Aashiyana Residency"), students manage site-wise cost accounting, cement and TMT steel delivery registers, contractor running account (RA) bill measurements, retention money, RERA 70% escrow bank account rules, and GST under the affordable (1%) vs non-affordable (5%) residential scheme without ITC.',
-    industryCategory: 'Real Estate & Infrastructure Construction',
-    accountingCategory: 'Construction Contract & RERA Accounting',
-    difficultyLevel: 'Executive',
-    skillsCovered: [
-      'Site-wise Cost Centers (Civil, Electrical, Plumbing, Finishing)',
-      'Contractor Running Account (RA) Bill Passing & Retention Deductions',
-      'TDS under Section 194C on Labour & Construction Contracts',
-      'RERA 70% Escrow Bank Account Fund Transfer Compliance',
-      'GST Residential Real Estate Regime (5% without ITC & 80% Procurement Rule)',
+    "id": "proj-4",
+    "slug": "service-centre-multi-job-accounting",
+    "title": "Automobile & Electronics Service Centre Multi-Job Accounting",
+    "shortDescription": "Financial operations for authorized service centres: Job Card billing, spare parts inventory, labour charges, warranty claims reimbursement, and insurance accidental repairs.",
+    "detailedDescription": "Service centres blend physical spare parts sales with skilled labour services. This project covers \"Apex Auto Care & Authorized Service Hub\". You will track Job Cards from vehicle intake to gate pass, account for replacement spare parts at MRP, calculate mechanic labour charges, bill insurance survey accidental damages, and process warranty claims submitted to OEM manufacturers.",
+    "industryCategory": "Automobile & Consumer Electronics",
+    "accountingCategory": "Job-Card & Hybrid Sales-Service",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Job Card Accounting & Labour Cost Allocation",
+      "Spare Parts Inventory & Counter Sales",
+      "OEM Warranty Claims Processing & Credit Notes",
+      "Accidental Insurance Surveyor Bill Settlement",
+      "Mixed GST Rates (18% Labour vs 28% Auto Spares)"
     ],
-    softwareUsed: ['Tally Prime Construction Costing', 'Civil Engineering RA Bill Spreadsheets'],
-    learningObjectives: [
-      'Audit contractor RA bills verifying engineer measurement book (MB) records and retention money',
-      'Enforce the 80% procurement rule from registered GST dealers to prevent RCM penalties under RERA',
-      'Maintain separate site books and escrow bank accounts per RERA statutory norms',
+    "softwareUsed": [
+      "Tally Prime Job Costing",
+      "Automotive Workshop ERP Worksheets"
     ],
-    businessScenario:
-      'Aashiyana Residency is a ₹45 Crore project under construction. Materials arrive in bulk: ready-mix concrete, TMT steel, bricks, and tiles. Sub-contractors submit bi-weekly RA bills. The Chief Financial Officer must monitor cost per square foot constructed.',
-    tasksToComplete: [
-      'Enter material delivery challans and match with weighbridge slips and purchase bills',
-      'Process civil contractor RA Bill #04: deduct 5% retention, 2% TDS (194C), and material advances',
-      'Calculate monthly construction cost per sq. ft. of super built-up area',
-      'Reconcile the 70% RERA designated project escrow account against architect stage certificates',
+    "learningObjectives": [
+      "Differentiate tax rates between spare parts (28%) and servicing labour (18%) on a single tax invoice",
+      "Account for warranty spare replacements reimbursed by the manufacturing company via credit note",
+      "Reconcile cashless accidental repair claims approved by General Insurance companies"
     ],
-    expectedOutcomes: [
-      'Site-wise cost sheet showing civil, MEP, and finishing expenditures against budget',
-      'Contractor ledger statement displaying cumulative billings, retentions, and payments',
-      'RERA procurement compliance audit statement for statutory filing',
+    "businessScenario": "Apex Auto Care services 45 vehicles daily. Every repair order originates as a Job Card with mechanic assignment, parts requisitions from the parts store, and outside lathe work. Insurance repairs require surveyor re-inspection and liability split between customer and insurer.",
+    "tasksToComplete": [
+      "Convert completed Job Cards into statutory GST tax invoices with dual tax slabs",
+      "Record OEM warranty claims and reconcile manufacturer reimbursement credit notes",
+      "Perform monthly spare parts store physical inventory audit and write off scrap",
+      "Track technician efficiency and calculate monthly performance incentives"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_maroon.png',
-    media: [
+    "expectedOutcomes": [
+      "Consolidated workshop profitability statement with parts margin vs labour margin",
+      "Reconciled insurance cashless claims ledger",
+      "Accurate auto spare parts inventory with reorder level warnings"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+    "media": [
       {
-        id: 'med-13-1',
-        url: '/images/ylcc_tds_brochure_maroon.png',
-        name: 'Construction Site Cost Matrix',
-        type: 'image/png',
-        size: '2.8 MB',
-        caption: 'Civil contractor RA bills, retention deduction, and RERA escrow fund model',
-      },
+        "id": "med-4-1",
+        "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+        "name": "Service Centre Workflow",
+        "type": "image/png",
+        "size": "2.8 MB",
+        "caption": "Automotive job card, spare parts stock, and insurance billing workflow"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-13-1',
-        title: 'Builder & Construction Site Costing Project Dossier',
-        url: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-        fileType: 'pdf',
-        fileSize: '63 KB',
-        isDownloadable: true,
-      },
+        "id": "res-4-1",
+        "title": "Service Centre Accounting & Job Card Project Case Study",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 30,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 13,
-    createdAt: '2025-11-30',
-    updatedAt: '2026-02-15',
+    "practiceTimeHours": 22,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 13,
+    "createdAt": "2025-10-25",
+    "updatedAt": "2026-01-18"
   },
   {
-    id: 'proj-14',
-    slug: 'job-worker-inventory-cost-control',
-    title: 'Job-Worker Inventory & Multi-Stage Processing Cost Control',
-    shortDescription:
-      'Inventory control and costing for outsourced manufacturing operations: delivery challans (ITC-04), raw material conversion losses, job-work processing charges, and finished item stock reconciliations.',
-    detailedDescription:
-      'Manufacturing enterprises routinely outsource specialized processing stages (dyeing, embroidery, lathe turning, heat treatment, powder coating) to third-party job-workers. In this project for "Heritage Textiles & Garment Exports", students manage the full job-work accounting cycle. You will issue raw fabrics via GST Job Work Delivery Challans, track material lying at job-worker premises, calculate processing loss percentages, audit job-worker conversion invoices, and file quarterly GST Form ITC-04 returns.',
-    industryCategory: 'Textiles & Precision Engineering',
-    accountingCategory: 'Outsourced Processing & Job-Work Costing',
-    difficultyLevel: 'Intermediate',
-    skillsCovered: [
-      'GST Job Work Challan Preparation (Rule 55)',
-      'Tracking Material in Transit & at Job-Worker Premises',
-      'Allowable Processing Loss vs Unauthorized Material Wastage',
-      'Job-Work Processing Invoices & Section 194C TDS',
-      'Quarterly Form ITC-04 Preparation and Goods Return Reconciliation',
+    "id": "proj-5",
+    "slug": "hotel-hospitality-business-accounting",
+    "title": "Hotel & Hospitality Multi-Revenue Accounting",
+    "shortDescription": "Manage accounts of a 4-star boutique hotel: room guest folios, restaurant & banquet billing, OTA portal commissions (MakeMyTrip/Agoda), laundry, and GST hospitality compliance.",
+    "detailedDescription": "Hospitality accounting requires handling multiple distinct revenue centers under one roof. For \"The Grand Heritage Boutique Hotel\", you will manage front-desk guest folios, food and beverage restaurant billing (KOTs), banquet booking advances, room mini-bar sales, and OTA commission reconciliations with TDS under Section 194O.",
+    "industryCategory": "Hospitality & Tourism",
+    "accountingCategory": "Multi-Department Hospitality Operations",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Guest Folio & Night Audit Procedures",
+      "Restaurant POS Kitchen Order Ticket (KOT) Accounting",
+      "Online Travel Agency (OTA) Payout & Commission Reconciliation",
+      "Banquet Hall Advance & Cancellation Forfeiture Accounting",
+      "Hospitality GST Rates (Room Tariff slabs vs Restaurant 5% No-ITC)"
     ],
-    softwareUsed: ['Tally Prime Job Work Module', 'Textile Processing Loss Worksheets'],
-    learningObjectives: [
-      'Master the legal 1-year / 3-year time limit for return of capital goods and inputs under GST job-work',
-      'Reconcile raw fabric meters issued against finished dyed garments received',
-      'Compile and validate quarterly Form ITC-04 data for the GST portal',
+    "softwareUsed": [
+      "Tally Prime Multi-Cost Centre",
+      "Hospitality Night Audit Spreadsheets"
     ],
-    businessScenario:
-      'Heritage Textiles issues greige fabric to 4 specialized processors: bleaching, printing, computerized embroidery, and buttoning. Processors must return finished fabric within 30 days with standard 3% cutting loss.',
-    tasksToComplete: [
-      'Generate Rule 55 Delivery Challans for raw fabric dispatch to multiple processors',
-      'Record receipts of finished processed goods and reconcile material balances',
-      'Audit processing bills, verify rates per meter, and book TDS under Section 194C',
-      'Prepare quarterly Form ITC-04 statement for goods dispatched to and received from job workers',
+    "learningObjectives": [
+      "Execute daily Night Audit balancing front desk receipts against room occupancy records",
+      "Reconcile net bank deposits from OTA partners after deduction of commissions and TCS",
+      "Manage raw food inventory for kitchen operations and monitor Food Cost Percentage"
     ],
-    expectedOutcomes: [
-      'Job-worker wise material balance ledger showing live stock lying outside factory',
-      'Processing loss variance report identifying processors exceeding standard wastage',
-      'Completed Form ITC-04 return ready for quarterly GST upload',
+    "businessScenario": "The Grand Heritage has 45 luxury rooms, a multi-cuisine restaurant, and 2 banquet halls. 60% of room bookings flow via OTAs (MakeMyTrip, Booking.com). Restaurant billing attracts 5% GST without ITC, whereas banquet packages with catering attract 18% GST with ITC.",
+    "tasksToComplete": [
+      "Post daily Night Audit journal entries for room tariffs, taxes, and service charges",
+      "Reconcile OTA remittance statements against gross bookings and TDS deductions",
+      "Account for banquet wedding contracts, advances, and stage payments",
+      "Calculate monthly Food Cost Percentage and beverage inventory consumption"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_espresso_sage_improved.png',
-    media: [
+    "expectedOutcomes": [
+      "Departmental profit and loss account (Rooms, F&B, Banquets)",
+      "Accurate reconciliation of OTA receivables and TDS under 194O",
+      "Clear food raw material consumption statement"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
       {
-        id: 'med-14-1',
-        url: '/images/ylcc_tds_brochure_espresso_sage_improved.png',
-        name: 'Job Work Architecture',
-        type: 'image/png',
-        size: '2.8 MB',
-        caption: 'Job work delivery challan, conversion loss calculation, and ITC-04 reconciliation',
-      },
+        "id": "med-5-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Hotel Revenue Matrix",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Night audit, room tariff slabs, and banquet advance accounting model"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-14-1',
-        title: 'Job-Worker Inventory & Processing Costing Project File',
-        url: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-        fileType: 'pdf',
-        fileSize: '63 KB',
-        isDownloadable: true,
-      },
+        "id": "res-5-1",
+        "title": "Hotel Business Accounting Practical Project Brief",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 20,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: false,
-    status: 'published',
-    displayOrder: 14,
-    createdAt: '2025-12-04',
-    updatedAt: '2026-02-18',
+    "practiceTimeHours": 24,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 14,
+    "createdAt": "2025-10-28",
+    "updatedAt": "2026-01-20"
   },
   {
-    id: 'proj-15',
-    slug: 'government-contractor-thekedar-site-costing',
-    title: 'Government Contractor (Thekedar) Road, Bridge & Bhavan Site Costing',
-    shortDescription:
-      'Accounting for government infrastructure contractors (PWD / CPWD / NHAI): tender BOQ estimation, earnest money (EMD), security deposit, GST-TDS & IT-TDS deductions, and running bills.',
-    detailedDescription:
-      'Government infrastructure contracting operates under distinct procurement rules, government treasury bills, statutory retention funds, and double TDS deductions. In this project for "Khandelwal Infra Projects Ltd." (contractor executing road widening, highway bridges, and government school bhavans), students manage the entire accounting cycle. You will account for tender Earnest Money Deposits (EMD), bank guarantees, Bill of Quantities (BOQ) site costing, PWD measurement books, running bills passed by government treasuries, 2% GST-TDS (Section 51), and 2% IT-TDS (Section 194C).',
-    industryCategory: 'Government Contracting & Public Infrastructure',
-    accountingCategory: 'Public Works & Tender Project Costing',
-    difficultyLevel: 'Executive',
-    skillsCovered: [
-      'Tender Bill of Quantities (BOQ) Cost Estimation & Quotation Analysis',
-      'Earnest Money Deposit (EMD) & Bank Guarantee (BG) Accounting',
-      'PWD / CPWD Running Account (RA) Bill Processing & Measurement Books',
-      'Double TDS Accounting: IT-TDS (194C) and 2% GST-TDS (Section 51)',
-      'Security Deposit & Performance Guarantee Release Reconciliations',
+    "id": "proj-6",
+    "slug": "fmcg-distributor-network-accounting",
+    "title": "FMCG Wholesale & Multi-Tier Distributor Network Accounting",
+    "shortDescription": "Manage accounts of an authorized FMCG super-stockist: primary vs secondary sales, company scheme claims, damaged stock returns, retailer credit limits, and sales beat collections.",
+    "detailedDescription": "Wholesale FMCG distribution involves rapid stock turnover with tight margins and complex manufacturer schemes. For \"Radhe Krishna FMCG Distributors\" (distributor for leading food and personal care brands), you will account for bulk primary purchases, secondary sales to 600+ retailers, company scheme discount reimbursements, breakage/damage claims, and field salesman beat collections.",
+    "industryCategory": "FMCG & Consumer Goods Wholesale",
+    "accountingCategory": "High-Volume Wholesale Distribution",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Primary Purchase vs Secondary Retail Invoicing",
+      "Manufacturer Trade Scheme & Discount Claim Accounting",
+      "Retailer Credit Period Enforcement & Interest Debits",
+      "Damaged & Expired Stock Verification & Company Claims",
+      "Salesman Beat Cash Collection & Shortage Reconciliations"
     ],
-    softwareUsed: ['Tally Prime Government Project Costing', 'PWD Tender Accounting Spreadsheets'],
-    learningObjectives: [
-      'Reconcile net treasury payments received in bank against gross PWD bill amounts',
-      'Track security deposit deductions released only upon expiration of the defect liability period',
-      'Reconcile GST-TDS certificates (Form GSTR-7A) issued by government departments',
+    "softwareUsed": [
+      "Busy Accounting Software",
+      "Tally Prime FMCG Add-on",
+      "Excel Beat Sales Manager"
     ],
-    businessScenario:
-      'Khandelwal Infra Projects has won a ₹12.5 Crore PWD tender for 15 km highway widening and 2 major bridges. Every government running bill is subjected to deductions: 5% security deposit, 2% Income Tax TDS, 2% GST-TDS, 1% labour welfare cess, and testing charges.',
-    tasksToComplete: [
-      'Enter contract tender award, EMD mobilization advances, and bank guarantee commissions',
-      'Prepare gross RA bill entries and account for all 5 statutory government treasury deductions',
-      'Reconcile monthly GST-TDS credits on the GST portal (GSTR-7A) and accept TDS credits',
-      'Maintain site-wise bitumen, aggregate, cement, and diesel consumption records',
+    "learningObjectives": [
+      "Process company promotional schemes (quantity freebies, target rebates, turnover incentives)",
+      "Establish strict retailer credit limits and daily cash handover controls for delivery vans",
+      "Reconcile company credit notes issued against expiry/breakage return shipments"
     ],
-    expectedOutcomes: [
-      'Site-wise profitability statement for roads, bridges, and building contracts',
-      'Government deduction reconciliation register (TDS, GST-TDS, Cess, Security Deposit)',
-      'Complete treasury bill realization statement',
+    "businessScenario": "Radhe Krishna Distributors handles 5,000 SKUs supplied to 650 kirana stores across 6 delivery beats. The brand parent company offers monthly target incentives and promotional discounts that must be claimed through monthly scheme debit notes.",
+    "tasksToComplete": [
+      "Feed bulk truckload primary purchase invoices and verify trade discount deductions",
+      "Generate daily batch-wise secondary sales bills across van delivery beats",
+      "Draft monthly scheme debit notes to the FMCG parent company for discount reimbursements",
+      "Audit salesman daily collections and track overdue retailer accounts"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "expectedOutcomes": [
+      "Flawless retailer balance confirmation statements",
+      "Pending company claim register showing status of scheme reimbursements",
+      "Fast-moving vs slow-moving SKU inventory aging report"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
       {
-        id: 'med-15-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Government Thekedar Model',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'PWD tender running bills, treasury deductions, and GSTR-7A reconciliation',
-      },
+        "id": "med-6-1",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "Distributor Beat Structure",
+        "type": "image/png",
+        "size": "3.8 MB",
+        "caption": "FMCG secondary distribution ledger, scheme debit notes, and beat recovery"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-15-1',
-        title: 'Government Contractor (Thekedar) Project Costing Manual',
-        url: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-        fileType: 'pdf',
-        fileSize: '63 KB',
-        isDownloadable: true,
-      },
+        "id": "res-6-1",
+        "title": "FMCG Distribution Practical Project Dataset",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 28,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 15,
-    createdAt: '2025-12-08',
-    updatedAt: '2026-02-20',
+    "practiceTimeHours": 26,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 15,
+    "createdAt": "2025-11-02",
+    "updatedAt": "2026-01-22"
   },
   {
-    id: 'proj-16',
-    slug: 'multi-branch-multi-chain-franchise-accounting',
-    title: 'Multi-Branch & Multi-Chain Business Accounting (Javed Habib Model)',
-    shortDescription:
-      'Consolidated and inter-branch accounting for multi-outlet retail & salon chains: branch stock transfers, royalty fee calculation, centralized marketing fund, and inter-branch ledger reconciliations.',
-    detailedDescription:
-      'Operating a retail chain across 15+ company-owned and franchisee-operated outlets requires sophisticated branch accounting and tight inventory controls. In this project inspired by the "Javed Habib Salon & Wellness Chain" model, students manage financial operations for a 12-branch network. You will record centralized warehouse purchases, branch stock transfers via GST Delivery Challans, compute monthly franchisee royalty fees and centralized marketing fund contributions, reconcile inter-branch accounts, and prepare consolidated corporate balance sheets.',
-    industryCategory: 'Retail Chain & Franchise Network',
-    accountingCategory: 'Branch Accounting & Franchise Consolidations',
-    difficultyLevel: 'Executive',
-    skillsCovered: [
-      'Company-Owned (COCO) vs Franchisee-Operated (FOFO) Accounting',
-      'Inter-Branch Stock Transfers & Goods-in-Transit Reconciliations',
-      'Franchise Royalty (8% of Gross Sales) & Marketing Fund Billing',
-      'Centralized Vendor Procurement vs Local Branch Petty Cash Controls',
-      'Head Office (HO) vs Branch Current Account Elimination & Consolidated P&L',
+    "id": "proj-7",
+    "slug": "gst-comprehensive-business-practice-project",
+    "title": "Comprehensive GST Business Practice Project (B2B, B2C, SEZ, RCM)",
+    "shortDescription": "End-to-end GST practical simulation: record diverse transactions, reconcile purchase books with GSTR-2B, file GSTR-1, execute tax offset in GSTR-3B, and prepare GSTR-9.",
+    "detailedDescription": "This signature practical project immerses students in the full monthly GST cycle of \"Shree Govind Enterprises\" (a multi-state trading and processing company). You will record B2B registered sales, B2C interstate supplies, exports with LUT, SEZ supplies, purchases from unregistered dealers under RCM, reconcile 500+ purchase entries against portal GSTR-2B, resolve ITC mismatches, and prepare complete GSTR-1 and GSTR-3B filings.",
+    "industryCategory": "Manufacturing & Trading",
+    "accountingCategory": "Statutory Taxation & Return Filing",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Multi-state GST Invoicing & Tax Determination",
+      "Zero-Rated Supplies (Export under LUT & SEZ Sales)",
+      "Reverse Charge Mechanism (GTA, Legal Fees, Sponsorship)",
+      "GSTR-2B vs Purchase Book Automated Reconciliation",
+      "Cash Ledger / Credit Ledger Offset Rules in GSTR-3B"
     ],
-    softwareUsed: ['Tally Prime Multi-Branch Suite', 'Retail Chain Franchise Management Engine'],
-    learningObjectives: [
-      'Master inter-branch stock transfers and eliminate unrealized branch profits on closing stock',
-      'Calculate and bill monthly franchise royalty fees and reconcile salon POS collections',
-      'Consolidate separate branch trial balances into a unified corporate Balance Sheet',
+    "softwareUsed": [
+      "Official GST Portal Simulator",
+      "GST Offline Tool",
+      "Tally Prime 4.0",
+      "Excel 2B Milan Master"
     ],
-    businessScenario:
-      'The salon chain operates 5 company-owned outlets and 7 franchisee units across 3 cities. The Head Office purchases hair care products in bulk from Loreal and Wella and distributes them to branches. Monthly royalty must be billed based on live POS revenue reports.',
-    tasksToComplete: [
-      'Record bulk warehouse purchases and inter-branch stock transfer challans',
-      'Generate monthly franchise royalty invoices with GST and track realization',
-      'Perform month-end inter-branch reconciliation and resolve goods-in-transit differences',
-      'Prepare consolidated Profit & Loss statement showing individual branch contributions',
+    "learningObjectives": [
+      "Accurately identify place of supply and applicable taxes (CGST+SGST vs IGST)",
+      "Perform advanced GSTR-2B reconciliations identifying missing vendor invoices and ineligible ITC",
+      "Calculate optimal ITC offset sequences per Section 49 to minimize cash tax liability"
     ],
-    expectedOutcomes: [
-      'Consolidated corporate balance sheet and branch-by-branch P&L ranking',
-      'Fully reconciled Inter-Branch Current Account balances with zero unposted debits',
-      'Franchisee royalty and marketing fund collection statement',
+    "businessScenario": "Shree Govind Enterprises has monthly turnover of ₹1.2 Crores with sales in Rajasthan, Gujarat, and Maharashtra. It imports specialized packaging material and exports finished spices. The company received 12 vendor invoices not reflecting in GSTR-2B.",
+    "tasksToComplete": [
+      "Enter all monthly sales and purchase invoices with verified HSN codes and tax rates",
+      "Run GSTR-2B reconciliation and classify discrepancies into vendor reminders and timing differences",
+      "Prepare and validate JSON file for GSTR-1 uploading on the offline tool",
+      "Compute final tax payable in GSTR-3B, generate PMT-06 challan, and pass accounting offset entries"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_v2.png',
-    media: [
+    "expectedOutcomes": [
+      "Filed GSTR-1 and GSTR-3B acknowledgment reports",
+      "Comprehensive ITC reconciliation working paper for internal audit",
+      "Accurate closing balances in Electronic Cash and Credit Ledgers"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure.png",
+    "media": [
       {
-        id: 'med-16-1',
-        url: '/images/ylcc_tds_brochure_v2.png',
-        name: 'Multi-Branch Chain Matrix',
-        type: 'image/png',
-        size: '3.8 MB',
-        caption: 'Inter-branch transfers, franchise royalty billing, and consolidated balance sheet',
-      },
+        "id": "med-7-1",
+        "url": "/images/ylcc_tds_brochure.png",
+        "name": "GST Filing Architecture",
+        "type": "image/png",
+        "size": "3.2 MB",
+        "caption": "GST transaction feeding, ITC reconciliation, and GSTR-3B offset mechanics"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-16-1',
-        title: 'Multi-Branch & Franchise Chain Accounting Project Dossier',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
+        "id": "res-7-1",
+        "title": "GST Live Practice Simulation Project Manual",
+        "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+        "fileType": "pdf",
+        "fileSize": "60 KB",
+        "isDownloadable": true
       },
+      {
+        "id": "res-7-2",
+        "title": "GSTR-2B vs Purchase Ledger Milan Excel Automation Model",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "xlsx",
+        "fileSize": "185 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 26,
-    academicYear: '2025-26',
-    facultyMentor: 'CA Alok Maheshwari',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 16,
-    createdAt: '2025-12-12',
-    updatedAt: '2026-02-22',
+    "practiceTimeHours": 30,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 16,
+    "createdAt": "2025-11-05",
+    "updatedAt": "2026-01-25"
   },
   {
-    id: 'proj-17',
-    slug: 'corporate-accounts-operator-11-pillars-simulation',
-    title: 'Corporate Accounts Operator Desk: 11 Practical Pillars Live Simulation',
-    shortDescription:
-      'End-to-end practical desk simulation of an active corporate trading firm: daily transactions, GST sale billing, purchase feeding, CapEx/Revenue expenses, E-Way bills, E-invoices, transportation, party balance reconciliation, and real-time stock view.',
-    detailedDescription:
-      'Step into the shoes of an Accounts Operator at \'Shree Shyam Industrial Hardware & Distribution Pvt. Ltd.\'. In this comprehensive project simulation, students execute all 11 foundational day-to-day accounting desk operations across an entire operating quarter. From handling day-to-day cash and bank transactions, issuing statutory GST invoices, feeding vendor purchase bills, capitalizing equipment CapEx, recording operating revenue expenditures, generating portal E-Way bills and government E-invoices, to booking transportation LRs with GTA RCM, scrutinizing party balances, and managing godown inventory stock views.',
-    industryCategory: 'Corporate Trading & Distribution',
-    accountingCategory: 'Enterprise Desk Operations',
-    difficultyLevel: 'Foundational',
-    skillsCovered: [
-      'Day-to-Day Transaction Vouchers (F4, F5, F6, F7)',
-      'GST Sale Billing & Tax Invoices (B2B / B2C)',
-      'Vendor Purchase Feeding & ITC Eligibility',
-      'Revenue vs Capital Expenditure Accounting',
-      'Capital Investment & Partner Equity Ledgers',
-      'E-Way Bill Generation & In-Transit Compliance',
-      'E-Invoice IRN & Signed QR Code Workflows',
-      'Transportation LR Booking & GTA Reverse Charge',
-      'Debtors & Creditors Party Balance Reconciliation',
-      'Real-Time Stock View & Godown Inventory Control',
+    "id": "proj-8",
+    "slug": "tds-tcs-corporate-compliance-project",
+    "title": "Corporate TDS/TCS Multi-Section Compliance Project",
+    "shortDescription": "Comprehensive withholding tax project: section deductions (194C, 194J, 194I, 194Q, 206C), Challan 281 payments, Form 24Q/26Q quarterly filings, and TRACES Form 16/16A generation.",
+    "detailedDescription": "In this corporate taxation project for \"Continental Infotech & Media Services\", students execute the entire quarterly withholding tax cycle. You will audit vendor bills for TDS applicability, account for contractor payments, rent, legal retainers, and machinery hire, deduct TDS on buyer purchase of goods under Section 194Q, collect TCS on scrap sales under 206C, prepare Form 26Q using NSDL RPU, generate the .fvu file, and issue Form 16A certificates from TRACES.",
+    "industryCategory": "Corporate Services & IT",
+    "accountingCategory": "Direct Taxation & Statutory Withholding",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Withholding Deductions under 194C, 194J, 194I, 194H, 194Q",
+      "TCS on Sale of Scrap & High-Value Goods (206C)",
+      "Monthly Challan 281 E-payment & BSR Code Mapping",
+      "Quarterly Form 26Q & Form 24Q Filing with NSDL Utilities",
+      "TRACES Portal KYC, Form 16/16A Issuance, and Correction Returns"
     ],
-    softwareUsed: [
-      'Tally Prime 4.0',
-      'Busy Accounting 21',
-      'GST & E-Way Portal Simulator',
-      'Excel 365 Ledgers',
+    "softwareUsed": [
+      "NSDL e-Gov RPU & FVU Tools",
+      "TRACES Portal Utilities",
+      "Tally Prime TDS"
     ],
-    learningObjectives: [
-      'Execute live day-to-day voucher entries and maintain cash/bank books with zero negative balances',
-      'Generate accurate GST tax invoices with HSN codes and statutory E-Way Bills & E-Invoices on government portals',
-      'Scrutinize vendor purchase bills, record transportation LRs, and account for GTA Reverse Charge (RCM)',
-      'Reconcile customer and supplier party balances using bill-by-bill matching and maintain real-time godown inventory',
+    "learningObjectives": [
+      "Correctly identify applicable TDS sections, threshold limits, and pan/non-pan tax rates",
+      "Generate error-free quarterly e-TDS return text files validated through NSDL FVU",
+      "Operate TRACES portal to download Form 16A and file online correction statements"
     ],
-    businessScenario:
-      'Shree Shyam Industrial Traders Pvt. Ltd. operates a central distribution warehouse and two regional godowns, supplying industrial hardware to 250+ B2B clients and receiving regular supplies from 40+ manufacturers. The accounts operator desk must process daily transactions without backlogs, generate error-free GST invoices with mandatory E-Way and E-Invoice details for shipments above threshold, settle transporter freight bills, track debtor aging to protect working capital, and tally physical warehouse stock against book inventory.',
-    tasksToComplete: [
-      'Topic 1 (Day-to-Day Transactions): Record 50+ live daily transaction vouchers (Receipt, Payment, Journal, Contra) and reconcile petty cash imprest with cash in hand',
-      'Topic 2 (Sale Billing): Generate B2B tax invoices with multi-tier GST rates (18% and 28%), verify HSN codes, and process Credit Notes for customer rate disputes',
-      'Topic 3 (Purchase Feeding): Verify and feed inward vendor purchase invoices against POs, audit rate variances, and record Debit Notes for damaged supplies',
-      'Topic 4 (Revenue Expenditure): Book monthly office rent, utility bills, factory electricity, and create month-end accrual adjustments for outstanding expenses',
-      'Topic 5 (Capital Investment): Account for equity infusion by directors into company bank accounts and maintain partner/director capital ledgers',
-      'Topic 6 (Capital Expenditure): Capitalize new industrial packaging machinery and commercial delivery van, accounting for transit insurance and depreciation schedules',
-      'Topic 7 (E-Way Bill): Generate statutory E-Way bills on the portal for interstate consignments exceeding ₹50,000 and update vehicle numbers for transit transshipment',
-      'Topic 8 (E-Invoice): Upload B2B invoice JSON to the Invoice Registration Portal (IRP), generate unique 64-character IRN, and print digitally signed QR codes',
-      'Topic 9 (Transportation): Book transporter Lorry Receipts (LRs), compute GTA 5% Reverse Charge Mechanism (RCM) tax liability, and deduct Section 194C TDS',
-      'Topic 10 (Party Balance): Scrutinize Sundry Debtors and Creditors aging ledgers, perform bill-by-bill reconciliation, and generate balance confirmation letters',
-      'Topic 11 (Stock View): Monitor real-time item-wise stock balances, execute godown-to-godown transfer vouchers, and tally physical inventory against book balances',
+    "businessScenario": "Continental Infotech engages multiple external agencies: software consultants, website developers, security guards, premises landlords, and legal advisors. Monthly TDS deductions exceed ₹3.5 Lakhs across 80+ deductees.",
+    "tasksToComplete": [
+      "Verify 80+ vendor invoices and book corresponding TDS entries with correct section codes",
+      "Reconcile monthly Challan 281 payments and prepare CIN/BSR mapping statements",
+      "Compile quarter-ended data into NSDL RPU tool and run CSI file validation",
+      "Request bulk Form 16A from TRACES portal and convert into digitally signed PDF certificates"
     ],
-    expectedOutcomes: [
-      'Complete, balanced general ledger and error-free trial balance for the operational quarter',
-      '100% statutory compliance on GST invoices, E-Way bills, and E-Invoice IRN archives',
-      'Fully reconciled debtor and creditor aging registers with verified counterparty balances',
-      'Zero inventory variance between physical warehouse count and real-time stock ledgers',
+    "expectedOutcomes": [
+      "FVU-validated return file (.fvu) ready for tin-FC submission",
+      "Reconciled TRACES challan ledger with zero unresolved demand notices",
+      "Generated Form 16A certificates ready for vendor distribution"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "coverImageUrl": "/images/ylcc_tds_brochure_maroon.png",
+    "media": [
       {
-        id: 'med-17-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Accounts Operator Live Desk Workflow',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'Live accounting simulation covering all 11 foundational desk operations',
-      },
+        "id": "med-8-1",
+        "url": "/images/ylcc_tds_brochure_maroon.png",
+        "name": "TDS Withholding Structure",
+        "type": "image/png",
+        "size": "2.8 MB",
+        "caption": "Corporate TDS sectional checklist, RPU compilation, and TRACES issuance"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-17-1',
-        title: 'Accounts Operator 11 Pillars Master Practice Dossier',
-        url: '/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
-      },
-      {
-        id: 'res-17-2',
-        title: 'Daily Voucher Entries, Sale-Purchase & Party Ledger Master Template',
-        url: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-        fileType: 'xlsx',
-        fileSize: '124 KB',
-        isDownloadable: true,
-      },
+        "id": "res-8-1",
+        "title": "TDS/TCS Corporate Practice Project Dossier",
+        "url": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
+        "fileType": "pdf",
+        "fileSize": "60 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 28,
-    academicYear: '2025-26',
-    facultyMentor: 'Rajesh Soni',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 1,
-    createdAt: '2026-01-10',
-    updatedAt: '2026-03-01',
+    "practiceTimeHours": 24,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 17,
+    "createdAt": "2025-11-10",
+    "updatedAt": "2026-01-28"
   },
   {
-    id: "proj-18",
-    slug: "corporate-accounts-manager-11-pillars-simulation",
-    title: "Corporate Accounts Manager Desk: 11 Practical Pillars Live Simulation",
-    shortDescription: "End-to-end practical supervisory desk simulation of an enterprise business: live voucher feeding scrutiny, books monitoring, debtor/supplier cycle aging, firm legal matters, sales team performance, multi-dimensional stock reports, internal audit checklists, income tax audit prep, age-wise inventory control, and negative ledger tracking.",
-    detailedDescription: "Step into the role of an Accounts Manager at Shree Shyam Industrial Hardware & Distribution Pvt. Ltd. In this comprehensive project simulation, students lead an active accounting department and execute all 11 foundational managerial desk operations across an entire fiscal year. From scrutinizing day-to-day voucher feeding across junior operator desks, monitoring books to eliminate suspense, implementing strict period-wise debtor credit control, optimizing supplier payment cycles, reviewing commercial legal agreements, evaluating sales team collection performance, generating multi-dimensional stock reports, conducting monthly internal accounting audits, preparing Form 3CD Income Tax Audit working papers, managing age-wise inventory, to resolving negative ledger and cash balance alerts.",
-    industryCategory: "Corporate Trading & Distribution",
-    accountingCategory: "Managerial Supervision & Internal Audit",
-    difficultyLevel: "Advanced",
-    skillsCovered: ["Live Voucher Feeding Scrutiny (F4, F5, F6, F7)", "Accounts Book & General Ledger Monitoring", "Debtors Aging & Collection Cycle Tracking", "Suppliers Credit Cycle & Payment Scheduling", "Firm Legal Matters & Commercial Agreements", "Sales Team Performance & Commission Monitoring", "Multi-Dimensional Stock Valuation (Item/Brand/Category)", "Monthly Account Internal Audit & Controls", "Yearly Income Tax Audit (Form 3CD Preparation)", "Age-Wise Inventory Control & Dead Stock Liquidation", "Negative Ledger & Cash Balance Alert Resolution"],
-    softwareUsed: ["Tally Prime Multi-User", "Excel 365 MIS & Power Query", "Income Tax Filing Utility", "Audit Automation Sheets"],
-    learningObjectives: ["Supervise daily voucher entries across junior desks and maintain balanced books with zero negative balances", "Enforce period-wise credit control on debtor collections and optimize vendor payment cycles to protect liquidity", "Execute monthly internal accounting audits, detect control leakages, and prepare Form 3CD Income Tax Audit schedules", "Generate multi-dimensional stock profitability reports and manage age-wise inventory to eliminate dead stock"],
-    businessScenario: "At Shree Shyam Industrial Hardware & Distribution Pvt. Ltd., the accounting department handles 300+ monthly vendor bills, 800+ customer invoices, and ₹12 Crores in annual turnover. As Accounts Manager, you must ensure that junior voucher feeding is 100% audited daily, debtor collection cycles are tracked (30/60/90 days) to prevent defaults, supplier terms are maximized for cash discounts, sales teams are evaluated on real recoveries, internal monthly audits are conducted without delay, inventory is audited age-wise to purge dead stock, and year-end books are prepared for statutory CA Tax Audit.",
-    tasksToComplete: ["Topic 1 (Checking All Feeding Day to Day Live Basis): Scrutinize 100+ daily vouchers entered by junior operators, verify supporting documents, correct wrong ledger heads, and authorize entry postings", "Topic 2 (Accounts Book Monitor): Review Cash Book, Bank Books, and General Ledgers daily, identify and clear suspense account balances, and verify trial balance balancing", "Topic 3 (Debtors Cycle / Track Collection Period Wise): Build period-wise aging schedules (0–30, 31–60, 61–90, 90+ days), enforce credit limits, and issue balance confirmation letters", "Topic 4 (Suppliers Cycle / Track Collection Period Wise): Track vendor credit terms, compile payment maturity registers, capture early payment cash discounts, and verify 3-way matching", "Topic 5 (Firm Legal Matters): Review commercial agreements, warehouse lease contracts, vendor SLAs, and draft legal demand notices under Section 138 for dishonored cheques", "Topic 6 (Sales Team Monitoring): Audit salesperson targets vs actual billing and real cash collection recovery, and calculate monthly sales commissions and incentive deductions", "Topic 7 (Stock Item Wise / Brand Wise / Category Wise Report): Extract multi-tier inventory reports in Excel and Tally, calculating gross margin contribution by item, brand, and category", "Topic 8 (Monthly Account Internal Audit): Conduct an end-of-month internal audit checklist across 25 verification points, detect expense leakages, and compile management audit memos", "Topic 9 (Yearly Income Tax Audit): Prepare year-end finalized balance sheet schedules, compile Form 3CD annexures (40(a)(ia), 43B, 269SS/T), and draft IT Act depreciation schedules", "Topic 10 (Inventory Control Age Wise): Classify godown inventory into aging buckets (0–30, 31–90, 91–180, 180+ days), identify non-moving dead stock, and propose liquidation write-downs", "Topic 11 (Negative Ledger Monitoring): Audit ledger accounts for negative cash in hand, negative warehouse stock items, and abnormal credit balances in asset accounts, and execute rectifications"],
-    expectedOutcomes: ["Zero unverified vouchers, suspense balances, or negative cash/stock records across all operating quarters", "Overdue debtors beyond 60 days reduced by 40% through systematic period-wise tracking and credit limits", "Comprehensive monthly internal audit dossier with identified cost savings and variance explanations", "100% completed Form 3CD Income Tax Audit documentation dossier ready for statutory Chartered Accountant review"],
-    coverImageUrl: "/images/ylcc_tds_brochure_slate_copper.png",
-    media: [
-      {
-        id: "med-18-1",
-        url: "/images/ylcc_tds_brochure_slate_copper.png",
-        name: "Accounts Manager Supervisory Desk Workflow",
-        type: "image/png",
-        size: "3.7 MB",
-        caption: "Live accounting managerial simulation covering all 11 executive desk operations",
-      },
+    "id": "proj-9",
+    "slug": "banking-cc-limit-cma-proposal-project",
+    "title": "Banking Cash Credit (CC) / OD Limit & CMA Proposal Project",
+    "shortDescription": "Prepare complete commercial bank proposal for ₹5 Crore CC limit renewal and expansion: stock statements, drawing power calculations, 12-page CMA data, and financial ratio modeling.",
+    "detailedDescription": "Commercial banking credit documentation requires rigorous financial modeling and strict compliance with RBI lending norms. In this project for \"Maruti Polyplast Industries\", students prepare a full ₹5 Crore Cash Credit (CC) limit enhancement proposal submitted to State Bank of India. You will compile monthly bank stock and debtors statements, calculate Drawing Power (DP) with 25% margin deductions, build the complete CMA report (Forms I to VI), and prepare projected Balance Sheets and Profit & Loss statements.",
+    "industryCategory": "Industrial Manufacturing & Banking",
+    "accountingCategory": "Banking Credit & CMA Documentation",
+    "difficultyLevel": "Executive",
+    "skillsCovered": [
+      "Cash Credit (CC) & Working Capital Limit Structuring",
+      "Monthly Drawing Power (DP) Computation with Margin Deduction",
+      "Bank Stock Statement & Debtors Aging Scrutiny (< 90 Days)",
+      "12-Page CMA Data Preparation (Operating Statement & Fund Flow)",
+      "Key Banking Financial Ratios (Current Ratio, DSCR, TOL/TNW)"
     ],
-    resources: [
-      {
-        id: "res-18-1",
-        title: "Accounts Manager 11 Pillars Master Practice Dossier",
-        url: "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
-        fileType: "pdf",
-        fileSize: "59 KB",
-        isDownloadable: true,
-      },
-      {
-        id: "res-18-2",
-        title: "Internal Audit Checklists, Aging MIS & Tax Audit 3CD Master Worksheets",
-        url: "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
-        fileType: "xlsx",
-        fileSize: "138 KB",
-        isDownloadable: true,
-      },
+    "softwareUsed": [
+      "Banking CMA Modeling Workbooks",
+      "Excel 365 Financial Projections",
+      "Tally Prime"
     ],
-    practiceTimeHours: 32,
-    academicYear: "2025-26",
-    facultyMentor: "CA Alok Maheshwari",
-    isFeatured: true,
-    status: "published",
-    displayOrder: 2,
-    createdAt: "2026-01-12",
-    updatedAt: "2026-03-05",
+    "learningObjectives": [
+      "Master the mathematical formula and margin mechanics of bank Drawing Power",
+      "Build institutional-grade CMA data for credit officers and sanction committees",
+      "Project future year Balance Sheets and Profit & Loss statements consistent with growth targets"
+    ],
+    "businessScenario": "Maruti Polyplast is doubling its manufacturing capacity of PVC pipes and requires limit enhancement from ₹3 Crores to ₹5 Crores. The bank requires audited figures for the past 2 years, provisional figures for current year, and projected figures for next 3 years along with monthly DP track records.",
+    "tasksToComplete": [
+      "Compile 12 consecutive months of Bank Stock Statements and reconcile with Tally stock register",
+      "Filter out debtors exceeding 90 days and calculate monthly eligible Drawing Power",
+      "Fill all 6 core sheets of CMA format ensuring fund-flow balancing and working capital gap calculations",
+      "Calculate Current Ratio (minimum 1.33 benchmark) and Debt-Equity benchmarks"
+    ],
+    "expectedOutcomes": [
+      "Complete, bank-ready CMA proposal file with projected financials",
+      "Validated 12-month Drawing Power and stock audit dossier",
+      "Executive summary for Bank Credit Sanction Committee"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-9-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Banking Limit Framework",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "CMA data modeling, drawing power verification, and projected balance sheet"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-9-1",
+        "title": "Banking CC Limit & CMA Proposal Practice Guide",
+        "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+        "fileType": "pdf",
+        "fileSize": "60 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 18,
+    "createdAt": "2025-11-14",
+    "updatedAt": "2026-02-01"
   },
   {
-    id: 'proj-19',
-    slug: 'corporate-excel-365-mis-automation-project',
-    title: 'Corporate Excel 365 & Executive MIS Reporting Live Simulation',
-    shortDescription:
-      'Master corporate spreadsheet automation: 250+ modern dynamic array formulas, advanced workplace productivity features, 500+ error troubleshooting scenarios, 250+ corporate interview challenges, and Power Query executive MIS dashboards.',
-    detailedDescription:
-      'In this intensive practical simulation project, students take charge of corporate reporting and business intelligence for a multi-division enterprise. You will deploy 250+ modern Excel 365 functions (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA), configure workplace productivity features (cascading validation, What-If models, formula-driven conditional formatting), troubleshoot and recover 500+ corrupted files and broken formula models, solve 250+ real accounting machine interview tests, and build automated one-click executive MIS dashboards using Power Query ETL.',
-    industryCategory: 'Corporate Finance & Analytics',
-    accountingCategory: 'MIS & Business Intelligence',
-    difficultyLevel: 'Advanced',
-    skillsCovered: [
-      '250+ Modern Formulas & Dynamic Arrays (XLOOKUP, FILTER, UNIQUE)',
-      'Advanced Workplace Features & Cascading Data Validation',
-      '500+ Error Recovery & Formula Diagnostics (#N/A, #SPILL!, Loops)',
-      '250+ Corporate Machine Interview & Speed Modeling Tests',
-      'Automated MIS Dashboards & Power Query ETL Pipelines',
+    "id": "proj-10",
+    "slug": "corporate-payroll-statutory-compliance-system",
+    "title": "Multi-Department Corporate Payroll & Statutory Compliance System",
+    "shortDescription": "End-to-end payroll processing for 120 employees: biometric attendance, overtime, statutory bonus, gratuity computation, monthly salary registers, EPF ECR, and ESIC returns.",
+    "detailedDescription": "Managing payroll across corporate departments requires flawless statutory accuracy and timely compliance. In this project for \"Zenith Engineering & Automotive Components\", students process monthly salaries for 120 staff across executives, engineers, shop-floor machine operators, and security personnel. You will handle biometric punch logs, overtime hours, LOP leaves, statutory bonus calculations under the Bonus Act, gratuity provisions, monthly EPF ECR generation, and ESIC portal filings.",
+    "industryCategory": "Engineering & Manufacturing",
+    "accountingCategory": "Payroll & Labour Law Compliance",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Multi-Tier CTC & Salary Structure Architecture",
+      "Shift Attendance, Overtime & Leave Without Pay (LWP) Tracking",
+      "Statutory Bonus (8.33% to 20%) & Gratuity Liability Computation",
+      "EPF Wage Ceiling Rules & Electronic Challan-cum-Return (ECR)",
+      "ESIC Portal Monthly Filing & Full & Final (F&F) Settlements"
     ],
-    softwareUsed: [
-      'Microsoft Excel 365',
-      'Power Query (ETL Engine)',
-      'Power Pivot & Data Models',
-      'Office 365 Cloud',
+    "softwareUsed": [
+      "Payroll Automation Spreadsheets",
+      "Tally Prime Payroll",
+      "Unified PF Portal Simulator"
     ],
-    learningObjectives: [
-      'Write dynamic zero-drag formula models using XLOOKUP, FILTER, UNIQUE, LET, and custom LAMBDA functions',
-      'Implement advanced features including cascading dropdowns, What-If analysis, Solver, and conditional formatting audit rules',
-      'Troubleshoot 500+ complex workplace errors and clean messy ERP/banking dumps within minutes',
-      'Solve 250+ timed corporate interview tests and build automated C-Suite executive MIS dashboards',
+    "learningObjectives": [
+      "Generate monthly salary sheets and bank NEFT transfer advice for 100+ employees",
+      "Accurately calculate employee and employer contributions for EPF, EPS, EDLI, and ESIC",
+      "Compute statutory bonus and gratuity liabilities per Labour Law provisions"
     ],
-    businessScenario:
-      'A fast-growing multi-branch trading and manufacturing corporate receives disparate sales, purchase, and banking dumps across 5 regional offices each month. The finance desk requires automated data transformation pipelines, error-free financial reconciliations, robust auditing models, and one-click refreshable KPI dashboards for senior leadership.',
-    tasksToComplete: [
-      'Topic 1 (250+ Formulas): Deploy dynamic array formulas (XLOOKUP, FILTER, UNIQUE, SORTBY, SEQUENCE, LET, LAMBDA) to automate payroll, inventory valuation, and multi-currency sales models without dragging formulas',
-      'Topic 2 (Excel Features): Build multi-level cascading dropdowns using INDIRECT/XLOOKUP, establish custom formula-driven conditional formatting rules for audit variances, and run 2-variable What-If sensitivity tables and Solver cost optimization',
-      'Topic 3 (500+ Troubleshooting): Diagnose and resolve 500+ real-world spreadsheet errors (#N/A, #VALUE!, #REF!, #CALC!, #SPILL!), remove non-printable characters (CHAR 160), fix text-stored numbers, break circular calculation loops, and repair corrupted workbooks',
-      'Topic 4 (250+ Interview Questions): Complete 250+ actual corporate interview test challenges under timed exam conditions, including 50,000-row bank ledger reconciliations, automated tax deduction tables, and mouse-free keyboard speed modeling',
-      'Topic 5 (Executive MIS Reports): Build an automated ETL data pipeline using Power Query to consolidate 12 monthly CSV branch files, construct a Star Schema data model in Power Pivot, and deliver interactive C-Suite dashboards (Sales vs Collection, Debtor Aging, Cash Flow) with timeline slicers and one-click refresh',
+    "businessScenario": "Zenith Engineering employs 35 white-collar staff and 85 factory floor workers working across 3 shifts. The HR department must ensure monthly salaries are credited by the 7th and statutory PF/ESI challans paid by the 15th without fail.",
+    "tasksToComplete": [
+      "Import biometric attendance CSV files and calculate payable days and overtime hours",
+      "Apply salary deductions: PF, ESIC, Professional Tax, TDS Section 192, and staff loan advances",
+      "Format and validate text file for EPF Unified Member portal ECR upload",
+      "Calculate Full & Final settlement for two resigned employees including earned leave encashment"
     ],
-    expectedOutcomes: [
-      'Fully automated corporate MIS model ready for executive board presentation with one-click refresh',
-      'Zero formula errors, circular loops, or corrupt data in enterprise financial sheets',
-      'Complete master repository of 250+ solved corporate interview test problems and dynamic array templates',
-      'Ready-to-deploy automated ETL pipeline extracting, transforming, and loading multi-branch commercial data',
+    "expectedOutcomes": [
+      "Department-wise monthly payroll register with statutory liability breakdown",
+      "EPF ECR text file and ESIC monthly contribution summary sheet",
+      "Individual password-protected salary slips ready for email distribution"
     ],
-    coverImageUrl: '/images/ylcc_tds_brochure_slate_copper.png',
-    media: [
+    "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+    "media": [
       {
-        id: 'med-19-1',
-        url: '/images/ylcc_tds_brochure_slate_copper.png',
-        name: 'Excel 365 MIS Architecture',
-        type: 'image/png',
-        size: '3.7 MB',
-        caption: 'Executive MIS dashboard design, dynamic array calculations, and Power Query ETL workflows',
-      },
+        "id": "med-10-1",
+        "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+        "name": "Corporate Payroll Architecture",
+        "type": "image/png",
+        "size": "2.8 MB",
+        "caption": "Salary register, overtime computation, EPF ECR, and ESIC return filing model"
+      }
     ],
-    resources: [
+    "resources": [
       {
-        id: 'res-19-1',
-        title: 'Corporate Excel 365 & MIS Automation Project Dossier',
-        url: '/sample-docs/YLCC-Course-Costing-Excel.pdf',
-        fileType: 'pdf',
-        fileSize: '59 KB',
-        isDownloadable: true,
-      },
-      {
-        id: 'res-19-2',
-        title: '250+ Formulas, 500+ Troubleshooting Scenarios & Executive Dashboard Master Workbook',
-        url: '/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf',
-        fileType: 'xlsx',
-        fileSize: '165 KB',
-        isDownloadable: true,
-      },
+        "id": "res-10-1",
+        "title": "Corporate Payroll & Statutory Labour Compliance Project Manual",
+        "url": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
+        "fileType": "pdf",
+        "fileSize": "60 KB",
+        "isDownloadable": true
+      }
     ],
-    practiceTimeHours: 30,
-    academicYear: '2025-26',
-    facultyMentor: 'Vikas Khandelwal',
-    isFeatured: true,
-    status: 'published',
-    displayOrder: 3,
-    createdAt: '2026-01-15',
-    updatedAt: '2026-03-08',
+    "practiceTimeHours": 22,
+    "academicYear": "2025-26",
+    "facultyMentor": "CS Meenakshi Sharma",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 19,
+    "createdAt": "2025-11-18",
+    "updatedAt": "2026-02-05"
   },
+  {
+    "id": "proj-12",
+    "slug": "architect-interior-decorator-project-accounting",
+    "title": "Architect & Interior Decorator Project Accounting & Stage Billing",
+    "shortDescription": "Accounting for professional architectural and interior consulting firms: project milestone billing, 3D visualization sub-contracts, site supervision fees, and Section 194J TDS reconciliations.",
+    "detailedDescription": "Architecture and interior design studios operate on intellectual capital, concept design phases, and project supervision retainers. For \"Studio Forma Architects & Interior Designers\", you will manage client design contracts, stage-wise fee billing (Concept 20%, Municipal Sanction 30%, Working Drawings 30%, Handover 20%), 3D renderer vendor payments, site engineer travel expenses, and client TDS deductions under Section 194J.",
+    "industryCategory": "Architecture & Professional Design",
+    "accountingCategory": "Professional Services & Milestone Billing",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "Project-wise Milestone Invoicing & Advance Fees",
+      "Sub-contractor TDS Deduction (Draftsmen, 3D Renderers, Structural Engineers)",
+      "Client TDS Section 194J Reconciliation via Form 26AS",
+      "Project Profitability & Consultant Billing Hours Tracking",
+      "Client Reimbursable Expenses (Municipal Fees, Printing, Site Travel)"
+    ],
+    "softwareUsed": [
+      "Tally Prime Multi-Project",
+      "Architectural Fee Billing Spreadsheets"
+    ],
+    "learningObjectives": [
+      "Invoice architectural consulting fees in alignment with statutory Council of Architecture stages",
+      "Reconcile 10% TDS deducted by corporate and individual clients against Form 26AS / AIS",
+      "Separate professional service fees from pass-through client statutory sanction expenses"
+    ],
+    "businessScenario": "Studio Forma is designing 3 luxury residential bungalows and a commercial shopping arcade. The studio charges a combination of square-foot rates and percentage-of-cost fees. Managing client milestone approvals is essential for steady cash flow.",
+    "tasksToComplete": [
+      "Draft stage-wise GST tax invoices based on architectural project milestone sign-offs",
+      "Book external structural consultant fees and apply TDS under Section 194J",
+      "Reconcile quarterly 26AS tax credits and track pending client TDS certificates",
+      "Calculate net project profitability per square foot designed"
+    ],
+    "expectedOutcomes": [
+      "Project-by-project profitability register showing billable vs unbilled hours",
+      "Client fee outstanding aging report linked to construction milestones",
+      "Reconciled Form 26AS tax credit ledger ready for annual income tax filing"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-12-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Architectural Fee Architecture",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Milestone billing, consultant sub-contracts, and 26AS reconciliation model"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-12-1",
+        "title": "Architect & Interior Design Accounting Project Brief",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 18,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 20,
+    "createdAt": "2025-11-26",
+    "updatedAt": "2026-02-12"
+  },
+  {
+    "id": "proj-13",
+    "slug": "builder-real-estate-site-costing",
+    "title": "Real Estate Builder & Multi-Site Construction Costing",
+    "shortDescription": "Costing and accounting for a multi-story residential housing project: land acquisition, cement/steel procurement, contractor running bills, RERA escrow bank accounts, and GST under residential real estate rules.",
+    "detailedDescription": "Real estate construction is one of the most capital-intensive and heavily regulated sectors in India. In this project for \"Aashiyana Infratech Developers\" (constructing a 120-unit luxury apartment complex \"Aashiyana Residency\"), students manage site-wise cost accounting, cement and TMT steel delivery registers, contractor running account (RA) bill measurements, retention money, RERA 70% escrow bank account rules, and GST under the affordable (1%) vs non-affordable (5%) residential scheme without ITC.",
+    "industryCategory": "Real Estate & Infrastructure Construction",
+    "accountingCategory": "Construction Contract & RERA Accounting",
+    "difficultyLevel": "Executive",
+    "skillsCovered": [
+      "Site-wise Cost Centers (Civil, Electrical, Plumbing, Finishing)",
+      "Contractor Running Account (RA) Bill Passing & Retention Deductions",
+      "TDS under Section 194C on Labour & Construction Contracts",
+      "RERA 70% Escrow Bank Account Fund Transfer Compliance",
+      "GST Residential Real Estate Regime (5% without ITC & 80% Procurement Rule)"
+    ],
+    "softwareUsed": [
+      "Tally Prime Construction Costing",
+      "Civil Engineering RA Bill Spreadsheets"
+    ],
+    "learningObjectives": [
+      "Audit contractor RA bills verifying engineer measurement book (MB) records and retention money",
+      "Enforce the 80% procurement rule from registered GST dealers to prevent RCM penalties under RERA",
+      "Maintain separate site books and escrow bank accounts per RERA statutory norms"
+    ],
+    "businessScenario": "Aashiyana Residency is a ₹45 Crore project under construction. Materials arrive in bulk: ready-mix concrete, TMT steel, bricks, and tiles. Sub-contractors submit bi-weekly RA bills. The Chief Financial Officer must monitor cost per square foot constructed.",
+    "tasksToComplete": [
+      "Enter material delivery challans and match with weighbridge slips and purchase bills",
+      "Process civil contractor RA Bill #04: deduct 5% retention, 2% TDS (194C), and material advances",
+      "Calculate monthly construction cost per sq. ft. of super built-up area",
+      "Reconcile the 70% RERA designated project escrow account against architect stage certificates"
+    ],
+    "expectedOutcomes": [
+      "Site-wise cost sheet showing civil, MEP, and finishing expenditures against budget",
+      "Contractor ledger statement displaying cumulative billings, retentions, and payments",
+      "RERA procurement compliance audit statement for statutory filing"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_maroon.png",
+    "media": [
+      {
+        "id": "med-13-1",
+        "url": "/images/ylcc_tds_brochure_maroon.png",
+        "name": "Construction Site Cost Matrix",
+        "type": "image/png",
+        "size": "2.8 MB",
+        "caption": "Civil contractor RA bills, retention deduction, and RERA escrow fund model"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-13-1",
+        "title": "Builder & Construction Site Costing Project Dossier",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "63 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 30,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 21,
+    "createdAt": "2025-11-30",
+    "updatedAt": "2026-02-15"
+  },
+  {
+    "id": "proj-14",
+    "slug": "job-worker-inventory-cost-control",
+    "title": "Job-Worker Inventory & Multi-Stage Processing Cost Control",
+    "shortDescription": "Inventory control and costing for outsourced manufacturing operations: delivery challans (ITC-04), raw material conversion losses, job-work processing charges, and finished item stock reconciliations.",
+    "detailedDescription": "Manufacturing enterprises routinely outsource specialized processing stages (dyeing, embroidery, lathe turning, heat treatment, powder coating) to third-party job-workers. In this project for \"Heritage Textiles & Garment Exports\", students manage the full job-work accounting cycle. You will issue raw fabrics via GST Job Work Delivery Challans, track material lying at job-worker premises, calculate processing loss percentages, audit job-worker conversion invoices, and file quarterly GST Form ITC-04 returns.",
+    "industryCategory": "Textiles & Precision Engineering",
+    "accountingCategory": "Outsourced Processing & Job-Work Costing",
+    "difficultyLevel": "Intermediate",
+    "skillsCovered": [
+      "GST Job Work Challan Preparation (Rule 55)",
+      "Tracking Material in Transit & at Job-Worker Premises",
+      "Allowable Processing Loss vs Unauthorized Material Wastage",
+      "Job-Work Processing Invoices & Section 194C TDS",
+      "Quarterly Form ITC-04 Preparation and Goods Return Reconciliation"
+    ],
+    "softwareUsed": [
+      "Tally Prime Job Work Module",
+      "Textile Processing Loss Worksheets"
+    ],
+    "learningObjectives": [
+      "Master the legal 1-year / 3-year time limit for return of capital goods and inputs under GST job-work",
+      "Reconcile raw fabric meters issued against finished dyed garments received",
+      "Compile and validate quarterly Form ITC-04 data for the GST portal"
+    ],
+    "businessScenario": "Heritage Textiles issues greige fabric to 4 specialized processors: bleaching, printing, computerized embroidery, and buttoning. Processors must return finished fabric within 30 days with standard 3% cutting loss.",
+    "tasksToComplete": [
+      "Generate Rule 55 Delivery Challans for raw fabric dispatch to multiple processors",
+      "Record receipts of finished processed goods and reconcile material balances",
+      "Audit processing bills, verify rates per meter, and book TDS under Section 194C",
+      "Prepare quarterly Form ITC-04 statement for goods dispatched to and received from job workers"
+    ],
+    "expectedOutcomes": [
+      "Job-worker wise material balance ledger showing live stock lying outside factory",
+      "Processing loss variance report identifying processors exceeding standard wastage",
+      "Completed Form ITC-04 return ready for quarterly GST upload"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+    "media": [
+      {
+        "id": "med-14-1",
+        "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+        "name": "Job Work Architecture",
+        "type": "image/png",
+        "size": "2.8 MB",
+        "caption": "Job work delivery challan, conversion loss calculation, and ITC-04 reconciliation"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-14-1",
+        "title": "Job-Worker Inventory & Processing Costing Project File",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "63 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 20,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": false,
+    "status": "published",
+    "displayOrder": 22,
+    "createdAt": "2025-12-04",
+    "updatedAt": "2026-02-18"
+  },
+  {
+    "id": "proj-15",
+    "slug": "government-contractor-thekedar-site-costing",
+    "title": "Government Contractor (Thekedar) Road, Bridge & Bhavan Site Costing",
+    "shortDescription": "Accounting for government infrastructure contractors (PWD / CPWD / NHAI): tender BOQ estimation, earnest money (EMD), security deposit, GST-TDS & IT-TDS deductions, and running bills.",
+    "detailedDescription": "Government infrastructure contracting operates under distinct procurement rules, government treasury bills, statutory retention funds, and double TDS deductions. In this project for \"Khandelwal Infra Projects Ltd.\" (contractor executing road widening, highway bridges, and government school bhavans), students manage the entire accounting cycle. You will account for tender Earnest Money Deposits (EMD), bank guarantees, Bill of Quantities (BOQ) site costing, PWD measurement books, running bills passed by government treasuries, 2% GST-TDS (Section 51), and 2% IT-TDS (Section 194C).",
+    "industryCategory": "Government Contracting & Public Infrastructure",
+    "accountingCategory": "Public Works & Tender Project Costing",
+    "difficultyLevel": "Executive",
+    "skillsCovered": [
+      "Tender Bill of Quantities (BOQ) Cost Estimation & Quotation Analysis",
+      "Earnest Money Deposit (EMD) & Bank Guarantee (BG) Accounting",
+      "PWD / CPWD Running Account (RA) Bill Processing & Measurement Books",
+      "Double TDS Accounting: IT-TDS (194C) and 2% GST-TDS (Section 51)",
+      "Security Deposit & Performance Guarantee Release Reconciliations"
+    ],
+    "softwareUsed": [
+      "Tally Prime Government Project Costing",
+      "PWD Tender Accounting Spreadsheets"
+    ],
+    "learningObjectives": [
+      "Reconcile net treasury payments received in bank against gross PWD bill amounts",
+      "Track security deposit deductions released only upon expiration of the defect liability period",
+      "Reconcile GST-TDS certificates (Form GSTR-7A) issued by government departments"
+    ],
+    "businessScenario": "Khandelwal Infra Projects has won a ₹12.5 Crore PWD tender for 15 km highway widening and 2 major bridges. Every government running bill is subjected to deductions: 5% security deposit, 2% Income Tax TDS, 2% GST-TDS, 1% labour welfare cess, and testing charges.",
+    "tasksToComplete": [
+      "Enter contract tender award, EMD mobilization advances, and bank guarantee commissions",
+      "Prepare gross RA bill entries and account for all 5 statutory government treasury deductions",
+      "Reconcile monthly GST-TDS credits on the GST portal (GSTR-7A) and accept TDS credits",
+      "Maintain site-wise bitumen, aggregate, cement, and diesel consumption records"
+    ],
+    "expectedOutcomes": [
+      "Site-wise profitability statement for roads, bridges, and building contracts",
+      "Government deduction reconciliation register (TDS, GST-TDS, Cess, Security Deposit)",
+      "Complete treasury bill realization statement"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-15-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Government Thekedar Model",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "PWD tender running bills, treasury deductions, and GSTR-7A reconciliation"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-15-1",
+        "title": "Government Contractor (Thekedar) Project Costing Manual",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "63 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 23,
+    "createdAt": "2025-12-08",
+    "updatedAt": "2026-02-20"
+  },
+  {
+    "id": "proj-16",
+    "slug": "multi-branch-multi-chain-franchise-accounting",
+    "title": "Multi-Branch & Multi-Chain Business Accounting (Javed Habib Model)",
+    "shortDescription": "Consolidated and inter-branch accounting for multi-outlet retail & salon chains: branch stock transfers, royalty fee calculation, centralized marketing fund, and inter-branch ledger reconciliations.",
+    "detailedDescription": "Operating a retail chain across 15+ company-owned and franchisee-operated outlets requires sophisticated branch accounting and tight inventory controls. In this project inspired by the \"Javed Habib Salon & Wellness Chain\" model, students manage financial operations for a 12-branch network. You will record centralized warehouse purchases, branch stock transfers via GST Delivery Challans, compute monthly franchisee royalty fees and centralized marketing fund contributions, reconcile inter-branch accounts, and prepare consolidated corporate balance sheets.",
+    "industryCategory": "Retail Chain & Franchise Network",
+    "accountingCategory": "Branch Accounting & Franchise Consolidations",
+    "difficultyLevel": "Executive",
+    "skillsCovered": [
+      "Company-Owned (COCO) vs Franchisee-Operated (FOFO) Accounting",
+      "Inter-Branch Stock Transfers & Goods-in-Transit Reconciliations",
+      "Franchise Royalty (8% of Gross Sales) & Marketing Fund Billing",
+      "Centralized Vendor Procurement vs Local Branch Petty Cash Controls",
+      "Head Office (HO) vs Branch Current Account Elimination & Consolidated P&L"
+    ],
+    "softwareUsed": [
+      "Tally Prime Multi-Branch Suite",
+      "Retail Chain Franchise Management Engine"
+    ],
+    "learningObjectives": [
+      "Master inter-branch stock transfers and eliminate unrealized branch profits on closing stock",
+      "Calculate and bill monthly franchise royalty fees and reconcile salon POS collections",
+      "Consolidate separate branch trial balances into a unified corporate Balance Sheet"
+    ],
+    "businessScenario": "The salon chain operates 5 company-owned outlets and 7 franchisee units across 3 cities. The Head Office purchases hair care products in bulk from Loreal and Wella and distributes them to branches. Monthly royalty must be billed based on live POS revenue reports.",
+    "tasksToComplete": [
+      "Record bulk warehouse purchases and inter-branch stock transfer challans",
+      "Generate monthly franchise royalty invoices with GST and track realization",
+      "Perform month-end inter-branch reconciliation and resolve goods-in-transit differences",
+      "Prepare consolidated Profit & Loss statement showing individual branch contributions"
+    ],
+    "expectedOutcomes": [
+      "Consolidated corporate balance sheet and branch-by-branch P&L ranking",
+      "Fully reconciled Inter-Branch Current Account balances with zero unposted debits",
+      "Franchisee royalty and marketing fund collection statement"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+    "media": [
+      {
+        "id": "med-16-1",
+        "url": "/images/ylcc_tds_brochure_v2.png",
+        "name": "Multi-Branch Chain Matrix",
+        "type": "image/png",
+        "size": "3.8 MB",
+        "caption": "Inter-branch transfers, franchise royalty billing, and consolidated balance sheet"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-16-1",
+        "title": "Multi-Branch & Franchise Chain Accounting Project Dossier",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 26,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 24,
+    "createdAt": "2025-12-12",
+    "updatedAt": "2026-02-22"
+  },
+  {
+    "id": "proj-17",
+    "slug": "corporate-accounts-operator-11-pillars-simulation",
+    "title": "Corporate Accounts Operator Desk: 11 Practical Pillars Live Simulation",
+    "shortDescription": "End-to-end practical desk simulation of an active corporate trading firm: daily transactions, GST sale billing, purchase feeding, CapEx/Revenue expenses, E-Way bills, E-invoices, transportation, party balance reconciliation, and real-time stock view.",
+    "detailedDescription": "Step into the shoes of an Accounts Operator at 'Shree Shyam Industrial Hardware & Distribution Pvt. Ltd.'. In this comprehensive project simulation, students execute all 11 foundational day-to-day accounting desk operations across an entire operating quarter. From handling day-to-day cash and bank transactions, issuing statutory GST invoices, feeding vendor purchase bills, capitalizing equipment CapEx, recording operating revenue expenditures, generating portal E-Way bills and government E-invoices, to booking transportation LRs with GTA RCM, scrutinizing party balances, and managing godown inventory stock views.",
+    "industryCategory": "Corporate Trading & Distribution",
+    "accountingCategory": "Enterprise Desk Operations",
+    "difficultyLevel": "Foundational",
+    "skillsCovered": [
+      "Day-to-Day Transaction Vouchers (F4, F5, F6, F7)",
+      "GST Sale Billing & Tax Invoices (B2B / B2C)",
+      "Vendor Purchase Feeding & ITC Eligibility",
+      "Revenue vs Capital Expenditure Accounting",
+      "Capital Investment & Partner Equity Ledgers",
+      "E-Way Bill Generation & In-Transit Compliance",
+      "E-Invoice IRN & Signed QR Code Workflows",
+      "Transportation LR Booking & GTA Reverse Charge",
+      "Debtors & Creditors Party Balance Reconciliation",
+      "Real-Time Stock View & Godown Inventory Control"
+    ],
+    "softwareUsed": [
+      "Tally Prime 4.0",
+      "Busy Accounting 21",
+      "GST & E-Way Portal Simulator",
+      "Excel 365 Ledgers"
+    ],
+    "learningObjectives": [
+      "Execute live day-to-day voucher entries and maintain cash/bank books with zero negative balances",
+      "Generate accurate GST tax invoices with HSN codes and statutory E-Way Bills & E-Invoices on government portals",
+      "Scrutinize vendor purchase bills, record transportation LRs, and account for GTA Reverse Charge (RCM)",
+      "Reconcile customer and supplier party balances using bill-by-bill matching and maintain real-time godown inventory"
+    ],
+    "businessScenario": "Shree Shyam Industrial Traders Pvt. Ltd. operates a central distribution warehouse and two regional godowns, supplying industrial hardware to 250+ B2B clients and receiving regular supplies from 40+ manufacturers. The accounts operator desk must process daily transactions without backlogs, generate error-free GST invoices with mandatory E-Way and E-Invoice details for shipments above threshold, settle transporter freight bills, track debtor aging to protect working capital, and tally physical warehouse stock against book inventory.",
+    "tasksToComplete": [
+      "Topic 1 (Day-to-Day Transactions): Record 50+ live daily transaction vouchers (Receipt, Payment, Journal, Contra) and reconcile petty cash imprest with cash in hand",
+      "Topic 2 (Sale Billing): Generate B2B tax invoices with multi-tier GST rates (18% and 28%), verify HSN codes, and process Credit Notes for customer rate disputes",
+      "Topic 3 (Purchase Feeding): Verify and feed inward vendor purchase invoices against POs, audit rate variances, and record Debit Notes for damaged supplies",
+      "Topic 4 (Revenue Expenditure): Book monthly office rent, utility bills, factory electricity, and create month-end accrual adjustments for outstanding expenses",
+      "Topic 5 (Capital Investment): Account for equity infusion by directors into company bank accounts and maintain partner/director capital ledgers",
+      "Topic 6 (Capital Expenditure): Capitalize new industrial packaging machinery and commercial delivery van, accounting for transit insurance and depreciation schedules",
+      "Topic 7 (E-Way Bill): Generate statutory E-Way bills on the portal for interstate consignments exceeding ₹50,000 and update vehicle numbers for transit transshipment",
+      "Topic 8 (E-Invoice): Upload B2B invoice JSON to the Invoice Registration Portal (IRP), generate unique 64-character IRN, and print digitally signed QR codes",
+      "Topic 9 (Transportation): Book transporter Lorry Receipts (LRs), compute GTA 5% Reverse Charge Mechanism (RCM) tax liability, and deduct Section 194C TDS",
+      "Topic 10 (Party Balance): Scrutinize Sundry Debtors and Creditors aging ledgers, perform bill-by-bill reconciliation, and generate balance confirmation letters",
+      "Topic 11 (Stock View): Monitor real-time item-wise stock balances, execute godown-to-godown transfer vouchers, and tally physical inventory against book balances"
+    ],
+    "expectedOutcomes": [
+      "Complete, balanced general ledger and error-free trial balance for the operational quarter",
+      "100% statutory compliance on GST invoices, E-Way bills, and E-Invoice IRN archives",
+      "Fully reconciled debtor and creditor aging registers with verified counterparty balances",
+      "Zero inventory variance between physical warehouse count and real-time stock ledgers"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-17-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Accounts Operator Live Desk Workflow",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Live accounting simulation covering all 11 foundational desk operations"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-17-1",
+        "title": "Accounts Operator 11 Pillars Master Practice Dossier",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      },
+      {
+        "id": "res-17-2",
+        "title": "Daily Voucher Entries, Sale-Purchase & Party Ledger Master Template",
+        "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+        "fileType": "xlsx",
+        "fileSize": "124 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "Rajesh Soni",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 25,
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-03-01"
+  },
+  {
+    "id": "proj-18",
+    "slug": "corporate-accounts-manager-11-pillars-simulation",
+    "title": "Corporate Accounts Manager Desk: 11 Practical Pillars Live Simulation",
+    "shortDescription": "End-to-end practical supervisory desk simulation of an enterprise business: live voucher feeding scrutiny, books monitoring, debtor/supplier cycle aging, firm legal matters, sales team performance, multi-dimensional stock reports, internal audit checklists, income tax audit prep, age-wise inventory control, and negative ledger tracking.",
+    "detailedDescription": "Step into the role of an Accounts Manager at Shree Shyam Industrial Hardware & Distribution Pvt. Ltd. In this comprehensive project simulation, students lead an active accounting department and execute all 11 foundational managerial desk operations across an entire fiscal year. From scrutinizing day-to-day voucher feeding across junior operator desks, monitoring books to eliminate suspense, implementing strict period-wise debtor credit control, optimizing supplier payment cycles, reviewing commercial legal agreements, evaluating sales team collection performance, generating multi-dimensional stock reports, conducting monthly internal accounting audits, preparing Form 3CD Income Tax Audit working papers, managing age-wise inventory, to resolving negative ledger and cash balance alerts.",
+    "industryCategory": "Corporate Trading & Distribution",
+    "accountingCategory": "Managerial Supervision & Internal Audit",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Live Voucher Feeding Scrutiny (F4, F5, F6, F7)",
+      "Accounts Book & General Ledger Monitoring",
+      "Debtors Aging & Collection Cycle Tracking",
+      "Suppliers Credit Cycle & Payment Scheduling",
+      "Firm Legal Matters & Commercial Agreements",
+      "Sales Team Performance & Commission Monitoring",
+      "Multi-Dimensional Stock Valuation (Item/Brand/Category)",
+      "Monthly Account Internal Audit & Controls",
+      "Yearly Income Tax Audit (Form 3CD Preparation)",
+      "Age-Wise Inventory Control & Dead Stock Liquidation",
+      "Negative Ledger & Cash Balance Alert Resolution"
+    ],
+    "softwareUsed": [
+      "Tally Prime Multi-User",
+      "Excel 365 MIS & Power Query",
+      "Income Tax Filing Utility",
+      "Audit Automation Sheets"
+    ],
+    "learningObjectives": [
+      "Supervise daily voucher entries across junior desks and maintain balanced books with zero negative balances",
+      "Enforce period-wise credit control on debtor collections and optimize vendor payment cycles to protect liquidity",
+      "Execute monthly internal accounting audits, detect control leakages, and prepare Form 3CD Income Tax Audit schedules",
+      "Generate multi-dimensional stock profitability reports and manage age-wise inventory to eliminate dead stock"
+    ],
+    "businessScenario": "At Shree Shyam Industrial Hardware & Distribution Pvt. Ltd., the accounting department handles 300+ monthly vendor bills, 800+ customer invoices, and ₹12 Crores in annual turnover. As Accounts Manager, you must ensure that junior voucher feeding is 100% audited daily, debtor collection cycles are tracked (30/60/90 days) to prevent defaults, supplier terms are maximized for cash discounts, sales teams are evaluated on real recoveries, internal monthly audits are conducted without delay, inventory is audited age-wise to purge dead stock, and year-end books are prepared for statutory CA Tax Audit.",
+    "tasksToComplete": [
+      "Topic 1 (Checking All Feeding Day to Day Live Basis): Scrutinize 100+ daily vouchers entered by junior operators, verify supporting documents, correct wrong ledger heads, and authorize entry postings",
+      "Topic 2 (Accounts Book Monitor): Review Cash Book, Bank Books, and General Ledgers daily, identify and clear suspense account balances, and verify trial balance balancing",
+      "Topic 3 (Debtors Cycle / Track Collection Period Wise): Build period-wise aging schedules (0–30, 31–60, 61–90, 90+ days), enforce credit limits, and issue balance confirmation letters",
+      "Topic 4 (Suppliers Cycle / Track Collection Period Wise): Track vendor credit terms, compile payment maturity registers, capture early payment cash discounts, and verify 3-way matching",
+      "Topic 5 (Firm Legal Matters): Review commercial agreements, warehouse lease contracts, vendor SLAs, and draft legal demand notices under Section 138 for dishonored cheques",
+      "Topic 6 (Sales Team Monitoring): Audit salesperson targets vs actual billing and real cash collection recovery, and calculate monthly sales commissions and incentive deductions",
+      "Topic 7 (Stock Item Wise / Brand Wise / Category Wise Report): Extract multi-tier inventory reports in Excel and Tally, calculating gross margin contribution by item, brand, and category",
+      "Topic 8 (Monthly Account Internal Audit): Conduct an end-of-month internal audit checklist across 25 verification points, detect expense leakages, and compile management audit memos",
+      "Topic 9 (Yearly Income Tax Audit): Prepare year-end finalized balance sheet schedules, compile Form 3CD annexures (40(a)(ia), 43B, 269SS/T), and draft IT Act depreciation schedules",
+      "Topic 10 (Inventory Control Age Wise): Classify godown inventory into aging buckets (0–30, 31–90, 91–180, 180+ days), identify non-moving dead stock, and propose liquidation write-downs",
+      "Topic 11 (Negative Ledger Monitoring): Audit ledger accounts for negative cash in hand, negative warehouse stock items, and abnormal credit balances in asset accounts, and execute rectifications"
+    ],
+    "expectedOutcomes": [
+      "Zero unverified vouchers, suspense balances, or negative cash/stock records across all operating quarters",
+      "Overdue debtors beyond 60 days reduced by 40% through systematic period-wise tracking and credit limits",
+      "Comprehensive monthly internal audit dossier with identified cost savings and variance explanations",
+      "100% completed Form 3CD Income Tax Audit documentation dossier ready for statutory Chartered Accountant review"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-18-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Accounts Manager Supervisory Desk Workflow",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Live accounting managerial simulation covering all 11 executive desk operations"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-18-1",
+        "title": "Accounts Manager 11 Pillars Master Practice Dossier",
+        "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      },
+      {
+        "id": "res-18-2",
+        "title": "Internal Audit Checklists, Aging MIS & Tax Audit 3CD Master Worksheets",
+        "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+        "fileType": "xlsx",
+        "fileSize": "138 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 32,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 26,
+    "createdAt": "2026-01-12",
+    "updatedAt": "2026-03-05"
+  },
+  {
+    "id": "proj-19",
+    "slug": "corporate-excel-365-mis-automation-project",
+    "title": "Corporate Excel 365 & Executive MIS Reporting Live Simulation",
+    "shortDescription": "Master corporate spreadsheet automation: 250+ modern dynamic array formulas, advanced workplace productivity features, 500+ error troubleshooting scenarios, 250+ corporate interview challenges, and Power Query executive MIS dashboards.",
+    "detailedDescription": "In this intensive practical simulation project, students take charge of corporate reporting and business intelligence for a multi-division enterprise. You will deploy 250+ modern Excel 365 functions (XLOOKUP, FILTER, UNIQUE, LET, LAMBDA), configure workplace productivity features (cascading validation, What-If models, formula-driven conditional formatting), troubleshoot and recover 500+ corrupted files and broken formula models, solve 250+ real accounting machine interview tests, and build automated one-click executive MIS dashboards using Power Query ETL.",
+    "industryCategory": "Corporate Finance & Analytics",
+    "accountingCategory": "MIS & Business Intelligence",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "250+ Modern Formulas & Dynamic Arrays (XLOOKUP, FILTER, UNIQUE)",
+      "Advanced Workplace Features & Cascading Data Validation",
+      "500+ Error Recovery & Formula Diagnostics (#N/A, #SPILL!, Loops)",
+      "250+ Corporate Machine Interview & Speed Modeling Tests",
+      "Automated MIS Dashboards & Power Query ETL Pipelines"
+    ],
+    "softwareUsed": [
+      "Microsoft Excel 365",
+      "Power Query (ETL Engine)",
+      "Power Pivot & Data Models",
+      "Office 365 Cloud"
+    ],
+    "learningObjectives": [
+      "Write dynamic zero-drag formula models using XLOOKUP, FILTER, UNIQUE, LET, and custom LAMBDA functions",
+      "Implement advanced features including cascading dropdowns, What-If analysis, Solver, and conditional formatting audit rules",
+      "Troubleshoot 500+ complex workplace errors and clean messy ERP/banking dumps within minutes",
+      "Solve 250+ timed corporate interview tests and build automated C-Suite executive MIS dashboards"
+    ],
+    "businessScenario": "A fast-growing multi-branch trading and manufacturing corporate receives disparate sales, purchase, and banking dumps across 5 regional offices each month. The finance desk requires automated data transformation pipelines, error-free financial reconciliations, robust auditing models, and one-click refreshable KPI dashboards for senior leadership.",
+    "tasksToComplete": [
+      "Topic 1 (250+ Formulas): Deploy dynamic array formulas (XLOOKUP, FILTER, UNIQUE, SORTBY, SEQUENCE, LET, LAMBDA) to automate payroll, inventory valuation, and multi-currency sales models without dragging formulas",
+      "Topic 2 (Excel Features): Build multi-level cascading dropdowns using INDIRECT/XLOOKUP, establish custom formula-driven conditional formatting rules for audit variances, and run 2-variable What-If sensitivity tables and Solver cost optimization",
+      "Topic 3 (500+ Troubleshooting): Diagnose and resolve 500+ real-world spreadsheet errors (#N/A, #VALUE!, #REF!, #CALC!, #SPILL!), remove non-printable characters (CHAR 160), fix text-stored numbers, break circular calculation loops, and repair corrupted workbooks",
+      "Topic 4 (250+ Interview Questions): Complete 250+ actual corporate interview test challenges under timed exam conditions, including 50,000-row bank ledger reconciliations, automated tax deduction tables, and mouse-free keyboard speed modeling",
+      "Topic 5 (Executive MIS Reports): Build an automated ETL data pipeline using Power Query to consolidate 12 monthly CSV branch files, construct a Star Schema data model in Power Pivot, and deliver interactive C-Suite dashboards (Sales vs Collection, Debtor Aging, Cash Flow) with timeline slicers and one-click refresh"
+    ],
+    "expectedOutcomes": [
+      "Fully automated corporate MIS model ready for executive board presentation with one-click refresh",
+      "Zero formula errors, circular loops, or corrupt data in enterprise financial sheets",
+      "Complete master repository of 250+ solved corporate interview test problems and dynamic array templates",
+      "Ready-to-deploy automated ETL pipeline extracting, transforming, and loading multi-branch commercial data"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-19-1",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Excel 365 MIS Architecture",
+        "type": "image/png",
+        "size": "3.7 MB",
+        "caption": "Executive MIS dashboard design, dynamic array calculations, and Power Query ETL workflows"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-19-1",
+        "title": "Corporate Excel 365 & MIS Automation Project Dossier",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "59 KB",
+        "isDownloadable": true
+      },
+      {
+        "id": "res-19-2",
+        "title": "250+ Formulas, 500+ Troubleshooting Scenarios & Executive Dashboard Master Workbook",
+        "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+        "fileType": "xlsx",
+        "fileSize": "165 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 30,
+    "academicYear": "2025-26",
+    "facultyMentor": "Vikas Khandelwal",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 27,
+    "createdAt": "2026-01-15",
+    "updatedAt": "2026-03-08"
+  }
 ];
 
 export const initialFaculty: Faculty[] = [

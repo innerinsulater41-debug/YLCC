@@ -1680,6 +1680,681 @@
   ],
   "projects": [
     {
+      "id": "proj-mfg-1",
+      "slug": "fmcg-food-processing-manufacturing-costing",
+      "title": "FMCG Food Processing Plant: Multi-Stage BOM & Batch Costing",
+      "shortDescription": "Complete factory accounting for a high-volume biscuit & confectionery plant: multi-tier BOM for flour, edible oils & sweeteners, baking heat shrinkage loss, packaging laminate consumption, and finished batch unit costing.",
+      "detailedDescription": "In this industrial training project, students manage production ledgers for \"Annapurna Food Products Ltd.\", a large-scale biscuit and confectionery manufacturer. You will configure multi-level Bill of Materials (BOM) in Tally Prime, record raw ingredient issuance from central silos, pass production vouchers with baking heat loss (evaporation loss), account for corrugated box and BOPP printed wrapper consumption, calculate unit cost per carton, and prepare Cost of Goods Manufactured (COGM) statements.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Recipe BOM & Batch Stage Costing",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Multi-Level Bill of Materials (BOM) Configuration",
+        "Raw Material Requisition & Godown Transfer Vouchers",
+        "Baking Heat Evaporation Loss & Burning Scrap Accounting",
+        "Secondary Packaging & Corrugated Carton Apportionment",
+        "Cost of Goods Manufactured (COGM) & Per-Packet Unit Costing"
+      ],
+      "softwareUsed": [
+        "Tally Prime Manufacturing",
+        "Excel Batch Costing Engine",
+        "Food ERP Simulator"
+      ],
+      "learningObjectives": [
+        "Configure compound units (KG, Quintal, Gram, Carton) and automated production voucher types in Tally Prime",
+        "Differentiate between normal baking moisture loss and abnormal burnt dough wastage",
+        "Derive final selling price and distributor trade margin based on net manufacturing cost"
+      ],
+      "businessScenario": "Annapurna Food Products produces 50,000 biscuit packets daily across 3 shifts. The plant uses maida, sugar, palm oil, leavening agents, and 3-ply corrugated cartons. Fluctuation in palm oil prices requires monthly revision of standard vs actual recipe costs.",
+      "tasksToComplete": [
+        "Set up BOM for 3 biscuit variants (Glucose, Marie, Cream Sandwich) including raw materials and packaging",
+        "Pass monthly Production Vouchers in Tally recording raw material consumption and finished output",
+        "Record 2.8% standard moisture evaporation loss and scrap recovery accounting",
+        "Compute final factory cost per carton and reconcile with factory trial balance"
+      ],
+      "expectedOutcomes": [
+        "Production and stock consumption register with yield percentage reports",
+        "Standard vs actual batch variance analysis sheet",
+        "Distributor pricing schedule with gross margin thresholds"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+      "media": [
+        {
+          "id": "med-mfg-1",
+          "url": "/images/ylcc_tds_brochure_v2.png",
+          "name": "Food Manufacturing BOM Architecture",
+          "type": "image/png",
+          "size": "3.5 MB",
+          "caption": "Multi-level recipe BOM, baking loss accounting, and carton unit costing"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-1-1",
+          "title": "FMCG Food Processing Plant Production Manual & Batch Cost Sheets",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "65 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-1-2",
+          "title": "Baking Evaporation Loss & Recipe Variance Calculation Model",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "xlsx",
+          "fileSize": "142 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 1,
+      "createdAt": "2025-11-01",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-2",
+      "slug": "textile-garment-manufacturing-costing",
+      "title": "Textile & Garment Manufacturing: Yarn to Finished Apparel Costing",
+      "shortDescription": "End-to-end multi-process accounting for an integrated textile mill: raw cotton/yarn spinning, fabric weaving, bleaching/dyeing job-work (GST ITC-04), cutting shrinkage, and ready-to-wear apparel SKU costing.",
+      "detailedDescription": "Textile manufacturing passes through sequential transformation stages where raw material changes physical state and unit of measurement (from KG of yarn to meters of grey fabric to stitched garment pieces). In this simulation for \"Rajasthan Weaving & Apparel Mills\", students manage process cost sheets across spinning, weaving, external dyeing job-work, cutting room shrinkage, button/zipper accessories consumption, and final garment export packaging.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Process Costing & Job-Work ITC-04",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "Multi-Stage Process Costing (Yarn to Greige to Finished Fabric)",
+        "External Job-Work Challans under Section 143 & Form GST ITC-04",
+        "Fabric Shrinkage, Comber Noil & Cutting Waste Accounting",
+        "Accessories & Trims BOM (Buttons, Zippers, Thread, Labels)",
+        "Export Garment SKU Costing & Duty Drawback Records"
+      ],
+      "softwareUsed": [
+        "Tally Prime 4.0",
+        "Textile ERP Process Master",
+        "GST Offline ITC-04 Tool"
+      ],
+      "learningObjectives": [
+        "Track material balance when units change from weight (KG) to length (Meters) to count (Pieces)",
+        "File quarterly GST ITC-04 for goods dispatched to dyeing and embroidery job-workers",
+        "Compute stage-wise cost additions and accurately value Work-in-Progress (WIP)"
+      ],
+      "businessScenario": "Rajasthan Weaving Mills procures raw cotton yarn, weaves denim and twill fabrics, sends grey cloth to Surat for chemical dyeing, and manufactures finished jeans and shirts in Jaipur for retail brands.",
+      "tasksToComplete": [
+        "Record yarn issuance and weaving production entries with comber noil waste realization",
+        "Issue delivery challans for 10,000 meters grey cloth to dye house and track return within 180 days",
+        "Compile quarterly Form GST ITC-04 on the GST portal simulator",
+        "Calculate garment piece cost including fabric consumption per meter and tailor stitching piece-rate"
+      ],
+      "expectedOutcomes": [
+        "Complete stage-wise WIP inventory valuation statement",
+        "GST ITC-04 quarterly compliance audit log",
+        "Finished apparel SKU costing sheet with break-even wholesale price"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-mfg-2",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Textile Process Flow Diagram",
+          "type": "image/png",
+          "size": "3.8 MB",
+          "caption": "Yarn conversion, job-work ITC-04 challans, and garment SKU costing structure"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-2-1",
+          "title": "Textile Mill Process Costing & Job-Work Accounting Manual",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "68 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-2-2",
+          "title": "GST Form ITC-04 Offline Job-Work Reconciliation Master",
+          "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+          "fileType": "xlsx",
+          "fileSize": "135 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 2,
+      "createdAt": "2025-11-04",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-3",
+      "slug": "steel-fabrication-rolling-mill-costing",
+      "title": "Steel Fabrication & Rolling Mill: Ingot Conversion & Job-Work Costing",
+      "shortDescription": "Heavy industrial costing for an induction furnace & structural steel fabrication plant: MS scrap & sponge iron melting, heavy electricity tariff allocation, Section 143 job-work challans, and mill burning scale scrap accounting.",
+      "detailedDescription": "Steel manufacturing is a capital and power-intensive industry where yield percentages and burning losses dictate profitability. In this project for \"Kalinga Steel & Structural Fabtech\", students handle production accounting for induction furnace melting, continuous casting of billets, hot re-rolling into TMT bars and MS angles, and customized pre-engineered building (PEB) structural fabrication. You will calculate high-tension (HT) electricity tariff per metric ton, account for mill scale burning loss (3.5%), track job-work under Section 143, and reconcile scrap recovery.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Heavy Fabrication & Power Cost Absorption",
+      "difficultyLevel": "Executive",
+      "skillsCovered": [
+        "Induction Furnace Scrap & Sponge Iron Melting Ratios",
+        "High-Tension (HT) Electricity & Industrial Fuel Cost Absorption",
+        "Mill Scale Burning Loss (3.5%) & Scrap Recovery Accounting",
+        "Job-Work Inward/Outward Challans under Section 143",
+        "TMT Bar & Structural MS Angles Metric Ton Unit Costing"
+      ],
+      "softwareUsed": [
+        "Tally Prime Manufacturing",
+        "Steel Melting Heat Sheet Model",
+        "Excel Cost Center"
+      ],
+      "learningObjectives": [
+        "Allocate monthly electricity bills exceeding ₹40 Lakhs across induction furnace and rolling mill stages",
+        "Account for burning losses and by-products like iron slag and mill scale",
+        "Prepare tender cost estimates for heavy structural pre-engineered building (PEB) projects"
+      ],
+      "businessScenario": "Kalinga Steel processes 1,200 metric tons of steel monthly. Raw material includes sponge iron, heavy melting scrap, and ferro-alloys. The plant also takes outside job-work for rolling third-party billets into 12mm TMT bars on conversion charges.",
+      "tasksToComplete": [
+        "Prepare Heat Sheets recording furnace charge mix, ferro-alloy additions, and liquid steel yield",
+        "Compute electricity cost per MT of billet produced using time-of-day (TOD) tariff slabs",
+        "Record outward Section 143 challans and job-work conversion billing with 18% GST",
+        "Calculate finished TMT bar cost and reconcile stock registers with weighing scale slips"
+      ],
+      "expectedOutcomes": [
+        "Heat-wise production costing report and yield summary",
+        "Electricity and fuel power cost absorption analysis",
+        "Job-work conversion ledger with zero pending reconciliation items"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+      "media": [
+        {
+          "id": "med-mfg-3",
+          "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+          "name": "Steel Mill Heat Costing Workflow",
+          "type": "image/png",
+          "size": "3.6 MB",
+          "caption": "Melting heat charges, power allocation, and structural fabrication stage costing"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-3-1",
+          "title": "Steel Rolling Mill & Heavy Engineering Fabrication Project Guide",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "72 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-3-2",
+          "title": "Furnace Heat Yield & High-Tension Power Cost Apportionment Model",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "xlsx",
+          "fileSize": "160 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 30,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 3,
+      "createdAt": "2025-11-08",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-4",
+      "slug": "pharmaceutical-formulations-batch-costing",
+      "title": "Pharmaceutical Formulations Plant: Batch Expiry & Active Ingredient Costing",
+      "shortDescription": "Statutory pharmaceutical production accounting: Active Pharmaceutical Ingredients (API) & excipients BOM, Batch Manufacturing Record (BMR) ledgers, cleanroom HVAC overheads, QC rejection reserves, and DPCO price ceilings.",
+      "detailedDescription": "Pharmaceutical manufacturing is governed by strict regulatory compliance, mandatory batch traceability, and price control orders. In this project for \"Aura Lifesciences Formulations Ltd.\", students manage accounts for tablet, capsule, and liquid oral manufacturing. You will track Active Pharmaceutical Ingredients (API) with potency assay percentages, account for Batch Manufacturing Records (BMR), allocate HEPA cleanroom HVAC power overheads, handle quality control (QC) laboratory rejections, track near-expiry medicine provisions, and ensure compliance with DPCO ceiling prices.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "BMR & Expiry Batch Valuation",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "API (Active Ingredient) & Excipient Formulation BOM",
+        "Batch Manufacturing Record (BMR) & Batch Traceability Vouchers",
+        "Controlled Cleanroom HVAC & Quality Control Lab Overhead Allocation",
+        "QC Rejection, Near-Expiry Stock Provisions & Drug Recall Accounting",
+        "Drug Price Control Orders (DPCO) Maximum Retail Price Validation"
+      ],
+      "softwareUsed": [
+        "Tally Prime Batch & Expiry Module",
+        "Pharma BMR Costing Engine",
+        "NPPA Regulatory Simulator"
+      ],
+      "learningObjectives": [
+        "Implement batch-wise and expiry-wise inventory tracking in Tally Prime for sterile medicines",
+        "Account for chemical assay potency adjustments when raw materials have variable active content",
+        "Calculate maximum permitted selling price under National Pharmaceutical Pricing Authority (NPPA)"
+      ],
+      "businessScenario": "Aura Lifesciences produces Paracetamol 650mg tablets, Azithromycin 500mg, and Cough Syrups. Each batch requires raw API, binders, coatings, blister PVC/Alu foils, and mono-cartons. Batches undergo 14-day microbiology testing before release.",
+      "tasksToComplete": [
+        "Create batch masters with manufacturing date, expiry date, and shelf-life alerts",
+        "Pass production vouchers for 100,000 Paracetamol tablets with coating weight gain adjustments",
+        "Apportion microbiology testing lab expenses and cleanroom maintenance overheads",
+        "Pass provisioning entries for batch lots failing QC dissolution tests"
+      ],
+      "expectedOutcomes": [
+        "Batch-wise profitability and cost breakdown statement",
+        "Mandatory batch traceability audit report for regulatory inspections",
+        "DPCO pricing validation worksheet ensuring 100% statutory adherence"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-mfg-4",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Pharma BMR Ledger Protocol",
+          "type": "image/png",
+          "size": "3.4 MB",
+          "caption": "Batch record trace, API assay potency adjustments, and expiry provisions"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-4-1",
+          "title": "Pharmaceutical Plant Batch Costing & Regulatory Audit Guidelines",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "64 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-4-2",
+          "title": "Pharma BMR Batch Traceability & Near-Expiry Provision Model",
+          "url": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
+          "fileType": "xlsx",
+          "fileSize": "148 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "CS Meenakshi Sharma",
+      "isFeatured": false,
+      "status": "published",
+      "displayOrder": 4,
+      "createdAt": "2025-11-12",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-5",
+      "slug": "plastic-polymers-injection-moulding-costing",
+      "title": "Plastic Polymers & Injection Moulding: Regrind Scrap & Unit Costing",
+      "shortDescription": "High-speed injection & blow moulding factory accounting: virgin polymer granules (HDPE/PP/PET) & masterbatch BOM, machine tonnage hour rates, mould tooling amortization per shot, and runner regrind scrap recycling.",
+      "detailedDescription": "Plastic container and component manufacturing requires precision tracking of machine cycle times and material regrinding. In this project for \"NeoPlast Polymers & Packaging\", students calculate the cost of manufacturing rigid containers, caps, and industrial crates. You will track raw polymer granules (PP, HDPE, PET) and color masterbatches, calculate Machine Hour Rate (MHR) across 150-ton to 450-ton injection machines, amortize customer-specific mould tooling costs per shot, and account for runner regrind reuse without compromising tensile specifications.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Machine Hour Rate & Scrap Regrinding",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Virgin Resin (HDPE/PP/PET) & Masterbatch Pigment BOM",
+        "Machine Hour Rate (MHR) Computation for Injection Moulding Presses",
+        "Mould Die Tooling Depreciation & Per-Shot Amortization",
+        "Sprue & Runner Scrap Regrinding, Blending Ratio & Valuation",
+        "Per-Gram Finished Component Costing & Minimum Order Quantity (MOQ)"
+      ],
+      "softwareUsed": [
+        "Tally Prime Manufacturing",
+        "MHR Excel Modeling Sheet",
+        "Plastic Molding Estimator"
+      ],
+      "learningObjectives": [
+        "Calculate exact machine hourly operating cost including 3-phase electric power and chiller units",
+        "Value recycled regrind plastic resin versus virgin prime raw material",
+        "Derive quote prices per 1,000 units based on component weight in grams and cycle time in seconds"
+      ],
+      "businessScenario": "NeoPlast operates 8 automatic injection moulding machines manufacturing bottle caps and paint containers. Client moulds are kept under custody for exclusive production runs. Raw material prices change fortnightly based on Reliance polymer index.",
+      "tasksToComplete": [
+        "Establish BOM for 500ml lubricant container with flip-top cap",
+        "Compute hourly cost rate for a 250-Ton Toshiba injection moulding machine",
+        "Record grinding of runner waste into re-usable flakes and pass blended consumption vouchers",
+        "Generate customer quotation comparing 100% virgin polymer vs 20% recycled blend"
+      ],
+      "expectedOutcomes": [
+        "Machine Hour Rate (MHR) master calculation worksheet",
+        "Scrap generation, regrinding and stock reconciliation register",
+        "Component piece-cost card showing weight, cycle time, and margin"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+      "media": [
+        {
+          "id": "med-mfg-5",
+          "url": "/images/ylcc_tds_brochure_v2.png",
+          "name": "Plastic Moulding MHR Model",
+          "type": "image/png",
+          "size": "3.7 MB",
+          "caption": "Machine hour rate breakdown, mould amortization, and regrind blending balance"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-5-1",
+          "title": "Plastic Injection Moulding Plant Accounting & Costing Guide",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "61 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-5-2",
+          "title": "Machine Hour Rate (MHR) & Mould Tooling Amortization Calculator",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "xlsx",
+          "fileSize": "138 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 24,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": false,
+      "status": "published",
+      "displayOrder": 5,
+      "createdAt": "2025-11-15",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-11",
+      "slug": "furniture-showroom-custom-product-costing",
+      "title": "Furniture Showroom & Modular Woodcraft Manufacturing & Costing",
+      "shortDescription": "Costing and accounting for a bespoke wooden and modular furniture showroom: raw timber and hardware requisition, Bill of Materials (BOM), carpenter piece-rate labour, cutting scrap salvage, and turnkey site installation.",
+      "detailedDescription": "Customized manufacturing involves unique material combinations and variable labour requirements for each customer order. In this project for \"Royal Oak Custom Woodcraft & Interior Furniture\", students manage accounts for customized furniture orders (executive desks, modular kitchens, sofa suites, conference tables). You will prepare unit Bill of Materials (BOM) for timber, plywood, laminates, and fittings, compute carpenter piece-rate labour, allocate machine depreciation, and bill site installation.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Job-Order & Custom Woodcraft BOM",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Bill of Materials (BOM) for Custom Woodcraft Orders",
+        "Raw Material Requisitions (Timber, Laminate, Hardware, Adhesives)",
+        "Carpenter Piece-Rate vs Daily Labour Allocation",
+        "Finished Goods Costing & Markup Pricing Strategy",
+        "Customer Stage Advances & Site Installation Billing"
+      ],
+      "softwareUsed": [
+        "Tally Prime BOM Module",
+        "Furniture Costing & Quotation Excel Engine"
+      ],
+      "learningObjectives": [
+        "Build accurate BOM cost sheets for customized furniture items to avoid quote underpricing",
+        "Track raw material scrap, cutting wastage, and salvage timber valuation",
+        "Manage customer advance payments and milestone billing for interior turnkey projects"
+      ],
+      "businessScenario": "Royal Oak manufactures bespoke wooden interiors for residential villas and corporate offices. Each order requires customized dimensions, Italian hardware, and multi-coat PU polishing. An inaccurate cost estimate can turn a profitable project into a heavy loss.",
+      "tasksToComplete": [
+        "Create Bill of Materials in Tally Prime for 5 distinct furniture models",
+        "Record material issuance from wood godown to production workshop floor",
+        "Compute total unit manufacturing cost including labour and factory rent allocation",
+        "Generate final GST invoice including site delivery and installation charges"
+      ],
+      "expectedOutcomes": [
+        "Standardized job-cost card for customized furniture manufacturing",
+        "Timber and hardware stock consumption register with wastage percentages",
+        "Order profitability comparison report showing quoted price vs actual cost"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+      "media": [
+        {
+          "id": "med-11-1",
+          "url": "/images/ylcc_tds_brochure_v2.png",
+          "name": "Furniture Cost Sheet",
+          "type": "image/png",
+          "size": "3.8 MB",
+          "caption": "BOM configuration, timber consumption, and custom furniture pricing model"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-11-1",
+          "title": "Furniture Custom Manufacturing Costing Project Dossier",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "63 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 24,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": false,
+      "status": "published",
+      "displayOrder": 6,
+      "createdAt": "2025-11-22",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-7",
+      "slug": "automobile-ancillary-precision-machining-costing",
+      "title": "Automobile Ancillaries: Precision CNC Machining & OEM Stage Costing",
+      "shortDescription": "Tier-1 automobile supplier practical accounting: forged steel blanks to CNC turned gears & shafts, multi-stage heat treatment & phosphating, OEM Just-In-Time (JIT) schedules, tooling wear amortization, and rejection debit notes.",
+      "detailedDescription": "Automotive tier-1 ancillaries operate under stringent quality standards and OEM delivery schedules. In this simulation for \"Precision AutoDrive Components Ltd.\", students handle accounting for precision machining of automotive transmission gears, wheel hubs, and engine valves. You will track raw forged blanks, allocate multi-axis CNC machine amortization, pass vouchers for induction heat treatment and phosphating, account for customer quality rejections (PPM tracking), manage tooling insert wear costs, and process OEM supply invoices with electronic delivery schedules.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Automotive Stage Costing & Tooling Amortization",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "Raw Forging & Cast Blank Requisition Vouchers",
+        "Multi-Stage Machining (CNC Turning, Hobbing, Grinding, Washing)",
+        "Specialized Tooling Insert & Cutting Fluid Cost Amortization",
+        "Customer Rejection Debit Notes & PPM Defect Accounting",
+        "OEM JIT Consignment Stock & Delivery Schedule Billing"
+      ],
+      "softwareUsed": [
+        "Tally Prime 4.0",
+        "Automotive Tier-1 Costing Worksheets",
+        "E-Way Bill & IRN Engine"
+      ],
+      "learningObjectives": [
+        "Track stage-by-stage value addition across cutting, heat treatment, and surface finishing",
+        "Account for tooling wear and insert consumption per 100 components machined",
+        "Reconcile customer self-billing portals (Maruti / Tata Motors / Mahindra) with sales accounts"
+      ],
+      "businessScenario": "Precision AutoDrive supplies 25,000 transmission gear blanks monthly to automotive OEMs. Parts failing micron-level coordinate measuring machine (CMM) tolerances are returned with penalty debit notes.",
+      "tasksToComplete": [
+        "Configure stage-wise BOM covering forged blanks, carbide inserts, and quenching oils",
+        "Record stage completion transfers from CNC machine shop to heat-treatment furnace",
+        "Pass accounting entries for customer rejection debit notes and scrap value recovery",
+        "Prepare monthly customer reconciliation statement against OEM remittance advice"
+      ],
+      "expectedOutcomes": [
+        "Automotive component stage-cost audit sheet",
+        "Tooling and cutting consumable consumption ledger",
+        "OEM portal reconciled debtor ledger with zero discrepancy"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-mfg-7",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Auto Components Stage Costing Engine",
+          "type": "image/png",
+          "size": "3.5 MB",
+          "caption": "Forging blank feeding, CNC machining stages, tooling wear, and OEM delivery reconciliation"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-7-1",
+          "title": "Automobile Ancillary Stage Costing & Tooling Amortization Dossier",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "66 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-7-2",
+          "title": "OEM Self-Billing Portal vs Sales Register Reconciliation Sheet",
+          "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+          "fileType": "xlsx",
+          "fileSize": "145 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 7,
+      "createdAt": "2025-11-26",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-8",
+      "slug": "paints-chemical-resins-manufacturing-costing",
+      "title": "Paints & Chemical Resins: Dispersion Yield & Packaging Costing",
+      "shortDescription": "Specialty chemical and decorative coatings factory accounting: liquid solvent, pigment & alkyd resin dispersion, high-speed bead mill yield variance, tin/drum filling losses, hazardous material compliance, and per-liter standard costing.",
+      "detailedDescription": "Paints and chemical coatings manufacturing involves batch reactions where volatile solvents evaporate during high-speed dispersion and sand milling. In this project for \"Apex Coatings & Industrial Polymers\", students manage the accounts of an industrial resin and decorative paint manufacturing unit. You will record formulations of alkyd resins, titanium dioxide pigments, and mineral solvents, compute batch dispersion yields, account for tin and HDPE drum filling line losses, track hazardous waste disposal compliance, and establish standard vs actual cost per liter.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Chemical Batch Yield & Formulation Costing",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Liquid Chemical Formulation BOM (Resins, Pigments, Solvents, Additives)",
+        "High-Speed Dispersion & Sand Mill Evaporation Yield Variances",
+        "Automated Filling Line Tin & Pail Container Packaging Consumption",
+        "Pollution Control Board & Effluent Treatment CapEx Accounting",
+        "Standard vs Actual Cost Variance per Liter & Bulk Kilogram"
+      ],
+      "softwareUsed": [
+        "Tally Prime Manufacturing",
+        "Chemical Batch Yield Engine",
+        "Excel 365 Variance Model"
+      ],
+      "learningObjectives": [
+        "Handle density and specific gravity conversions between weight (KG) and volume (Liters)",
+        "Calculate evaporation solvent loss percentages during high-temperature resin cooking",
+        "Allocate packaging expenses across 1-liter tins, 4-liter cans, and 20-liter industrial pails"
+      ],
+      "businessScenario": "Apex Coatings produces synthetic enamels, acrylic emulsions, and epoxy primers. Chemical raw materials are purchased in metric tons and tanker loads, while finished goods are sold through paint dealer networks in liters.",
+      "tasksToComplete": [
+        "Set up Tally Prime multi-compound units (KG to Liters based on Specific Gravity 1.25)",
+        "Record batch production of 5,000 liters white gloss enamel with pigment grinding loss",
+        "Issue empty tins, handles, printed labels, and outer cartons to packaging floor",
+        "Compute final cost per liter and establish dealer wholesale price list with cash discounts"
+      ],
+      "expectedOutcomes": [
+        "Chemical batch formulation yield and loss variance statement",
+        "Density conversion inventory register with zero measurement discrepancies",
+        "Dealer price matrix showing gross margins across packaging sizes"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+      "media": [
+        {
+          "id": "med-mfg-8",
+          "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
+          "name": "Paint Formulation Cost Matrix",
+          "type": "image/png",
+          "size": "3.7 MB",
+          "caption": "Resin batch reactions, solvent evaporation losses, and container packaging economics"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-8-1",
+          "title": "Paints & Chemical Resins Batch Costing Manual & Formula Sheets",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "63 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-8-2",
+          "title": "Density-to-Volume Unit Conversion & Evaporation Loss Model",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "xlsx",
+          "fileSize": "132 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 25,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": false,
+      "status": "published",
+      "displayOrder": 8,
+      "createdAt": "2025-11-29",
+      "updatedAt": "2026-03-01"
+    },
+    {
+      "id": "proj-mfg-9",
+      "slug": "electronics-electrical-appliance-assembly-costing",
+      "title": "Electronics & Electrical Appliance Assembly: SMT PCB & Warranty Costing",
+      "shortDescription": "High-tech electronics assembly accounting: Surface Mount (SMT) component BOM, wave soldering & ESD line assembly, customs import duty on ICs, testing yield fallout, and 1-year product warranty replacement provisions.",
+      "detailedDescription": "Electronics and electrical appliance assembly involves thousands of miniature micro-components, sensitive clean-room assembly lines, and warranty liabilities. In this practical simulation for \"VoltCore Electronics & LED Appliances\", students manage accounts for an electronics manufacturing service (EMS) plant assembling smart LED fixtures, power inverters, and IoT control boards. You will configure high-density BOMs for surface-mount ICs, capacitors, and PCB boards, account for customs duty and freight on imported components, record wave soldering testing rejections, and compute 1-year warranty replacement liability reserves.",
+      "industryCategory": "Manufacturing Industry",
+      "accountingCategory": "Electronics Assembly BOM & Warranty Reserves",
+      "difficultyLevel": "Executive",
+      "skillsCovered": [
+        "SMT Component Bill of Materials (Microcontrollers, SMD Diodes, Multi-layer PCBs)",
+        "Customs Basic Duty (BCD), Social Welfare Surcharge & IGST on Imported ICs",
+        "Surface Mount Assembly & Burn-In Testing Yield Fallout Accounting",
+        "Statutory 1-Year Warranty Replacement Provisioning (Ind AS 37)",
+        "Finished Appliance Unit Costing (Driver, Housing, Optic Lens & Box)"
+      ],
+      "softwareUsed": [
+        "Tally Prime Manufacturing",
+        "Customs Import Duty Calculator",
+        "Electronics Cost Workbook"
+      ],
+      "learningObjectives": [
+        "Capitalize customs clearance, port terminal charges, and inland freight into imported component costs",
+        "Manage high-volume small-value inventory with zero component shrinkage or ESD damage losses",
+        "Create prudent accounting provisions for expected customer warranty return claims"
+      ],
+      "businessScenario": "VoltCore Electronics imports microchips from Taiwan and manufactures 20,000 smart LED drivers and solar inverters monthly. Components are issued to high-speed pick-and-place robot lines where defective boards undergo manual rework.",
+      "tasksToComplete": [
+        "Record Bill of Entry import purchase entry with customs duty capitalization into item land cost",
+        "Pass automated assembly production vouchers for 5,000 LED driver units",
+        "Account for rework soldering cost and scrapped PCB components",
+        "Compute 2.5% standard warranty liability provision under Ind AS 37 provisions"
+      ],
+      "expectedOutcomes": [
+        "Landed cost calculation sheet for imported electronic components",
+        "Pick-and-place line assembly yield and scrap report",
+        "Product warranty reserve schedule and unit profitability summary"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
+      "media": [
+        {
+          "id": "med-mfg-9",
+          "url": "/images/ylcc_tds_brochure_v2.png",
+          "name": "Electronics EMS Costing Framework",
+          "type": "image/png",
+          "size": "3.6 MB",
+          "caption": "SMT component import costing, pick-and-place line scrap, and warranty provisioning"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-mfg-9-1",
+          "title": "Electronics Manufacturing & EMS Plant Costing Project Manual",
+          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+          "fileType": "pdf",
+          "fileSize": "67 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-mfg-9-2",
+          "title": "Import Landed Cost & Warranty Provisioning Financial Model",
+          "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+          "fileType": "xlsx",
+          "fileSize": "152 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "CS Meenakshi Sharma",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 9,
+      "createdAt": "2025-12-02",
+      "updatedAt": "2026-03-01"
+    },
+    {
       "id": "proj-1",
       "slug": "hospital-business-accounting-system",
       "title": "Hospital Business Accounting & Patient Billing System",
@@ -1751,7 +2426,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 1,
+      "displayOrder": 10,
       "createdAt": "2025-10-15",
       "updatedAt": "2026-01-10"
     },
@@ -1818,7 +2493,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 2,
+      "displayOrder": 11,
       "createdAt": "2025-10-18",
       "updatedAt": "2026-01-12"
     },
@@ -1885,7 +2560,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 3,
+      "displayOrder": 12,
       "createdAt": "2025-10-22",
       "updatedAt": "2026-01-15"
     },
@@ -1952,7 +2627,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": false,
       "status": "published",
-      "displayOrder": 4,
+      "displayOrder": 13,
       "createdAt": "2025-10-25",
       "updatedAt": "2026-01-18"
     },
@@ -2019,7 +2694,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": false,
       "status": "published",
-      "displayOrder": 5,
+      "displayOrder": 14,
       "createdAt": "2025-10-28",
       "updatedAt": "2026-01-20"
     },
@@ -2087,7 +2762,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": false,
       "status": "published",
-      "displayOrder": 6,
+      "displayOrder": 15,
       "createdAt": "2025-11-02",
       "updatedAt": "2026-01-22"
     },
@@ -2164,7 +2839,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 7,
+      "displayOrder": 16,
       "createdAt": "2025-11-05",
       "updatedAt": "2026-01-25"
     },
@@ -2232,7 +2907,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 8,
+      "displayOrder": 17,
       "createdAt": "2025-11-10",
       "updatedAt": "2026-01-28"
     },
@@ -2300,7 +2975,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 9,
+      "displayOrder": 18,
       "createdAt": "2025-11-14",
       "updatedAt": "2026-02-01"
     },
@@ -2368,76 +3043,9 @@
       "facultyMentor": "CS Meenakshi Sharma",
       "isFeatured": false,
       "status": "published",
-      "displayOrder": 10,
+      "displayOrder": 19,
       "createdAt": "2025-11-18",
       "updatedAt": "2026-02-05"
-    },
-    {
-      "id": "proj-11",
-      "slug": "furniture-showroom-custom-product-costing",
-      "title": "Furniture Showroom Custom Product Manufacturing & Costing",
-      "shortDescription": "Costing and accounting for a bespoke wooden and modular furniture showroom: raw timber and hardware requisition, Bill of Materials (BOM), carpenter piece-rate labour, and delivery installation.",
-      "detailedDescription": "Customized manufacturing involves unique material combinations and variable labour requirements for each customer order. In this project for \"Royal Oak Custom Woodcraft & Interior Furniture\", students manage accounts for customized furniture orders (executive desks, modular kitchens, sofa suites, conference tables). You will prepare unit Bill of Materials (BOM) for timber, plywood, laminates, and fittings, compute carpenter piece-rate labour, allocate machine depreciation, and bill site installation.",
-      "industryCategory": "Furniture & Interior Manufacturing",
-      "accountingCategory": "Job-Order & Batch Costing",
-      "difficultyLevel": "Intermediate",
-      "skillsCovered": [
-        "Bill of Materials (BOM) for Custom Woodcraft Orders",
-        "Raw Material Requisitions (Timber, Laminate, Hardware, Adhesives)",
-        "Carpenter Piece-Rate vs Daily Labour Allocation",
-        "Finished Goods Costing & Markup Pricing Strategy",
-        "Customer Stage Advances & Site Installation Billing"
-      ],
-      "softwareUsed": [
-        "Tally Prime BOM Module",
-        "Furniture Costing & Quotation Excel Engine"
-      ],
-      "learningObjectives": [
-        "Build accurate BOM cost sheets for customized furniture items to avoid quote underpricing",
-        "Track raw material scrap, cutting wastage, and salvage timber valuation",
-        "Manage customer advance payments and milestone billing for interior turnkey projects"
-      ],
-      "businessScenario": "Royal Oak manufactures bespoke wooden interiors for residential villas and corporate offices. Each order requires customized dimensions, Italian hardware, and multi-coat PU polishing. An inaccurate cost estimate can turn a profitable project into a heavy loss.",
-      "tasksToComplete": [
-        "Create Bill of Materials in Tally Prime for 5 distinct furniture models",
-        "Record material issuance from wood godown to production workshop floor",
-        "Compute total unit manufacturing cost including labour and factory rent allocation",
-        "Generate final GST invoice including site delivery and installation charges"
-      ],
-      "expectedOutcomes": [
-        "Standardized job-cost card for customized furniture manufacturing",
-        "Timber and hardware stock consumption register with wastage percentages",
-        "Order profitability comparison report showing quoted price vs actual cost"
-      ],
-      "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
-      "media": [
-        {
-          "id": "med-11-1",
-          "url": "/images/ylcc_tds_brochure_v2.png",
-          "name": "Furniture Cost Sheet",
-          "type": "image/png",
-          "size": "3.8 MB",
-          "caption": "BOM configuration, timber consumption, and custom furniture pricing model"
-        }
-      ],
-      "resources": [
-        {
-          "id": "res-11-1",
-          "title": "Furniture Custom Manufacturing Costing Project Dossier",
-          "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
-          "fileType": "pdf",
-          "fileSize": "63 KB",
-          "isDownloadable": true
-        }
-      ],
-      "practiceTimeHours": 20,
-      "academicYear": "2025-26",
-      "facultyMentor": "Rajesh Soni",
-      "isFeatured": false,
-      "status": "published",
-      "displayOrder": 11,
-      "createdAt": "2025-11-22",
-      "updatedAt": "2026-02-08"
     },
     {
       "id": "proj-12",
@@ -2502,7 +3110,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": false,
       "status": "published",
-      "displayOrder": 12,
+      "displayOrder": 20,
       "createdAt": "2025-11-26",
       "updatedAt": "2026-02-12"
     },
@@ -2569,7 +3177,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 13,
+      "displayOrder": 21,
       "createdAt": "2025-11-30",
       "updatedAt": "2026-02-15"
     },
@@ -2636,7 +3244,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": false,
       "status": "published",
-      "displayOrder": 14,
+      "displayOrder": 22,
       "createdAt": "2025-12-04",
       "updatedAt": "2026-02-18"
     },
@@ -2703,7 +3311,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 15,
+      "displayOrder": 23,
       "createdAt": "2025-12-08",
       "updatedAt": "2026-02-20"
     },
@@ -2770,7 +3378,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 16,
+      "displayOrder": 24,
       "createdAt": "2025-12-12",
       "updatedAt": "2026-02-22"
     },
@@ -2861,7 +3469,7 @@
       "facultyMentor": "Rajesh Soni",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 1,
+      "displayOrder": 25,
       "createdAt": "2026-01-10",
       "updatedAt": "2026-03-01"
     },
@@ -2953,7 +3561,7 @@
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 2,
+      "displayOrder": 26,
       "createdAt": "2026-01-12",
       "updatedAt": "2026-03-05"
     },
@@ -3033,7 +3641,7 @@
       "facultyMentor": "Vikas Khandelwal",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 3,
+      "displayOrder": 27,
       "createdAt": "2026-01-15",
       "updatedAt": "2026-03-08"
     }

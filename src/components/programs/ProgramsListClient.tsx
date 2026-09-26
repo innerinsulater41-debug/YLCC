@@ -118,22 +118,25 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filtered.map((prog) => {
-            const isExecutiveTrack =
+            const isFullWidthTrack =
               prog.id === 'prog-1' ||
               prog.id === 'prog-2' ||
               prog.id === 'prog-3' ||
               prog.id === 'prog-10' ||
               prog.id === 'prog-11' ||
               prog.id === 'prog-12' ||
-              prog.id === 'prog-13';
+              prog.id === 'prog-13' ||
+              prog.id === 'prog-4' ||
+              prog.id === 'prog-5' ||
+              prog.id === 'prog-6';
 
             const isPrimaryTheme =
-              isExecutiveTrack ||
+              isFullWidthTrack ||
               prog.category === 'Tally Prime' ||
               prog.category === 'Accounts Manager & Audit';
 
             const isFullWidth =
-              isExecutiveTrack &&
+              isFullWidthTrack &&
               selectedCategory === 'All' &&
               !search.trim();
 

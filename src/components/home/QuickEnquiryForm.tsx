@@ -12,7 +12,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
     name: '',
     email: '',
     phone: '',
-    programOfInterest: 'Business Operations with Tally Prime',
+    programOfInterest: 'Business Operations',
     preferredBatch: 'Morning Batch (8:30 AM – 10:30 AM)',
     message: '',
   });
@@ -43,7 +43,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
         name: '',
         email: '',
         phone: '',
-        programOfInterest: 'Business Operations with Tally Prime',
+        programOfInterest: 'Business Operations',
         preferredBatch: 'Morning Batch (8:30 AM – 10:30 AM)',
         message: '',
       });
@@ -135,7 +135,7 @@ export default function QuickEnquiryForm({ programsList }: QuickEnquiryFormProps
             onChange={(e) => setFormData({ ...formData, programOfInterest: e.target.value })}
             className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] focus:border-transparent text-[#2A1810]"
           >
-            <option value="Business Operations with Tally Prime">Business Operations with Tally Prime</option>
+            <option value="Business Operations">Business Operations</option>
             <option value="Accounts Manager Professional Program">Accounts Manager Professional Program</option>
             <option value="Banking Operations & CC Limits">Banking Operations & CC Limits</option>
             <option value="GST Practitioner Masterclass">GST Practitioner Masterclass</option>

@@ -48,7 +48,7 @@ export const initialPrograms: Program[] = [
     id: 'prog-1',
     slug: 'accounts-operator',
     title: 'Business Operations',
-    category: 'Accounting Operations',
+    category: 'Tally Prime',
     shortDescription:
       'Master 11 core accounting operations: Day-to-Day Transactions, Sale Billing, Purchase Feeding, Revenue & Capital Expenditure, Capital Investment, E-Way Bill, E-Invoice, Transportation, Party Balance, and Stock View.',
     detailedDescription:

@@ -118,14 +118,21 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filtered.map((prog) => {
-            const isPrimaryTheme =
-              prog.category === 'Tally Prime' ||
+            const isExecutiveTrack =
               prog.id === 'prog-1' ||
-              prog.category === 'Accounts Manager & Audit' ||
-              prog.id === 'prog-2';
+              prog.id === 'prog-2' ||
+              prog.id === 'prog-3' ||
+              prog.id === 'prog-10' ||
+              prog.id === 'prog-11' ||
+              prog.id === 'prog-12';
+
+            const isPrimaryTheme =
+              isExecutiveTrack ||
+              prog.category === 'Tally Prime' ||
+              prog.category === 'Accounts Manager & Audit';
 
             const isFullWidth =
-              (prog.id === 'prog-1' || prog.id === 'prog-2') &&
+              isExecutiveTrack &&
               selectedCategory === 'All' &&
               !search.trim();
 
@@ -188,7 +195,13 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                             </span>
                             <span className="text-[11px] font-semibold text-[#8B5A2B]">100% Live Ledgers</span>
                           </div>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2.5">
+                          <div
+                            className={
+                              prog.modules.length <= 4
+                                ? 'grid grid-cols-1 gap-y-2.5'
+                                : 'grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2.5'
+                            }
+                          >
                             {prog.modules.map((mod, i) => (
                               <div key={mod.id} className="text-xs text-[#57534E] flex items-start gap-2">
                                 <span className="w-4 h-4 rounded-full flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5 bg-[#8B5A2B] text-white">
@@ -296,8 +309,8 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </div>
                 )}
 
-                {/* Partition Divider after Accounts Manager */}
-                {prog.id === 'prog-2' && selectedCategory === 'All' && !search.trim() && (
+                {/* Partition Divider after Executive Track (SALES ANALYSIS) */}
+                {prog.id === 'prog-12' && selectedCategory === 'All' && !search.trim() && (
                   <div className="md:col-span-2 py-4">
                     <div className="relative flex items-center justify-center">
                       <div className="absolute inset-0 flex items-center">

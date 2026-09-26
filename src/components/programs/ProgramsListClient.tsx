@@ -115,46 +115,64 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {filtered.map((prog) => (
-            <div
-              key={prog.id}
-              className="bg-white rounded-2xl border border-[#E5D8CA] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#8B5A2B] transition-all flex flex-col justify-between"
-            >
-              <div className="p-6 sm:p-8 space-y-5">
-                {/* Header Meta */}
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#FAF6F0] px-3 py-1 rounded-full border border-[#E5D8CA]">
-                    {prog.category}
-                  </span>
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
-                    <span>Offline Classroom Lab</span>
+          {filtered.map((prog) => {
+            const isTallyPrime = prog.category === 'Tally Prime' || prog.id === 'prog-1';
+            return (
+              <div
+                key={prog.id}
+                className={`bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all flex flex-col justify-between ${
+                  isTallyPrime
+                    ? 'border-2 border-[#8B5A2B]/40 hover:border-[#8B5A2B]'
+                    : 'border border-[#E5D8CA] hover:border-[#8B5A2B]'
+                }`}
+              >
+                <div className="p-6 sm:p-8 space-y-5">
+                  {/* Header Meta */}
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <span
+                      className={`text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full border shadow-xs transition-colors ${
+                        isTallyPrime
+                          ? 'bg-[#8B5A2B] text-white border-[#7A4E24]'
+                          : 'text-[#8B5A2B] bg-[#FAF6F0] border-[#E5D8CA]'
+                      }`}
+                    >
+                      {prog.category}
+                    </span>
+                    <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+                      <span>Offline Classroom Lab</span>
+                    </div>
                   </div>
-                </div>
 
-                <div>
-                  <h3 className="text-xl font-serif font-bold text-[#2A1810] hover:text-[#8B5A2B] transition-colors">
-                    <Link href={`/programs/${prog.slug}`}>{prog.title}</Link>
-                  </h3>
-                  <p className="text-xs text-[#57534E] leading-relaxed mt-2.5">
-                    {prog.shortDescription}
-                  </p>
-                </div>
-
-                {/* Modules breakdown */}
-                <div className="space-y-2 pt-2 border-t border-[#EFE6DD]">
-                  <span className="text-xs font-bold text-[#2A1810] block">Curriculum Modules:</span>
-                  <div className="space-y-1.5">
-                    {prog.modules.map((mod, i) => (
-                      <div key={mod.id} className="text-xs text-[#57534E] flex items-start gap-2">
-                        <span className="w-4 h-4 rounded-full bg-[#EFE6DD] text-[#8B5A2B] flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">
-                          {i + 1}
-                        </span>
-                        <span className="font-medium text-[#2A1810]">{mod.title}</span>
-                      </div>
-                    ))}
+                  <div>
+                    <h3 className="text-xl font-serif font-bold text-[#2A1810] hover:text-[#8B5A2B] transition-colors">
+                      <Link href={`/programs/${prog.slug}`}>{prog.title}</Link>
+                    </h3>
+                    <p className="text-xs text-[#57534E] leading-relaxed mt-2.5">
+                      {prog.shortDescription}
+                    </p>
                   </div>
-                </div>
+
+                  {/* Modules breakdown */}
+                  <div className="space-y-2 pt-2 border-t border-[#EFE6DD]">
+                    <span className="text-xs font-bold text-[#2A1810] block">Curriculum Modules:</span>
+                    <div className="space-y-1.5">
+                      {prog.modules.map((mod, i) => (
+                        <div key={mod.id} className="text-xs text-[#57534E] flex items-start gap-2">
+                          <span
+                            className={`w-4 h-4 rounded-full flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5 ${
+                              isTallyPrime
+                                ? 'bg-[#8B5A2B] text-white'
+                                : 'bg-[#EFE6DD] text-[#8B5A2B]'
+                            }`}
+                          >
+                            {i + 1}
+                          </span>
+                          <span className="font-medium text-[#2A1810]">{mod.title}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
                 {/* Tools & Eligibility */}
                 <div className="pt-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-[#78716C] border-t border-[#EFE6DD]">
@@ -203,7 +221,8 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </Link>
                 </div>
               </div>
-          ))}
+            );
+          })}
         </div>
       )}
 

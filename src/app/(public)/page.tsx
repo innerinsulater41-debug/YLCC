@@ -282,7 +282,13 @@ export default async function HomePage() {
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
                     Offline Classroom
                   </span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#FAF6F0] px-2 py-0.5 rounded border border-[#E5D8CA]">
+                  <span
+                    className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border transition-colors ${
+                      prog.category === 'Tally Prime' || prog.id === 'prog-1'
+                        ? 'bg-[#8B5A2B] text-white border-[#7A4E24]'
+                        : 'text-[#8B5A2B] bg-[#FAF6F0] border-[#E5D8CA]'
+                    }`}
+                  >
                     {prog.category}
                   </span>
                 </div>

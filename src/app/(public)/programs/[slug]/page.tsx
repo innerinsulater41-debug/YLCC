@@ -61,7 +61,13 @@ export default async function ProgramDetailPage({ params }: ProgramDetailProps) 
           </div>
 
           <div className="space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#EFE6DD] px-3 py-1 rounded-full border border-[#D8C5B2]">
+            <span
+              className={`text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full border shadow-xs inline-block transition-colors ${
+                program.category === 'Tally Prime' || program.id === 'prog-1'
+                  ? 'bg-[#8B5A2B] text-white border-[#7A4E24]'
+                  : 'text-[#8B5A2B] bg-[#EFE6DD] border-[#D8C5B2]'
+              }`}
+            >
               {program.category}
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2A1810] leading-tight max-w-4xl">

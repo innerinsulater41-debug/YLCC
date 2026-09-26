@@ -157,10 +157,10 @@ export default function Footer({ settings }: FooterProps) {
             </ul>
           </div>
 
-          {/* Col 3: Practical Projects & Case Studies */}
+          {/* Col 3: Industrial Training & Case Studies */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-[#3D2314] pb-2">
-              30 Practical Projects
+              30 Industrial Training Projects
             </h4>
             <div className="grid grid-cols-1 gap-1.5 text-xs text-[#D8C5B2]">
               <Link href="/projects" className="hover:text-white transition-colors">

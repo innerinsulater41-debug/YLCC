@@ -38,7 +38,7 @@ export default function AdminSidebar({ user }: AdminSidebarProps) {
 
   const navItems = [
     { name: 'Dashboard Overview', href: '/admin', icon: LayoutDashboard },
-    { name: 'Practical Projects', href: '/admin/projects', icon: Briefcase },
+    { name: 'Industrial Training', href: '/admin/projects', icon: Briefcase },
     { name: 'Training Programs', href: '/admin/programs', icon: BookOpen },
     { name: 'Student Enquiries', href: '/admin/enquiries', icon: Inbox },
     { name: 'Admissions', href: '/admin/applications', icon: GraduationCap },

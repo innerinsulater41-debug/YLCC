@@ -53,7 +53,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailProps) 
             </Link>
             <span>/</span>
             <Link href="/projects" className="hover:text-white">
-              Practical Projects
+              Industrial Training
             </Link>
             <span>/</span>
             <span className="text-white font-semibold">{project.industryCategory}</span>

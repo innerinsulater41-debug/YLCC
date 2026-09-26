@@ -51,7 +51,7 @@ export default function Header({ settings }: HeaderProps) {
     { name: 'Home', href: '/' },
     { name: 'About YLCC', href: '/about' },
     { name: 'Training Programs', href: '/programs' },
-    { name: 'Practical Projects', href: '/projects' },
+    { name: 'Industrial Training', href: '/projects' },
     { name: 'Advanced Excel', href: '/advanced-excel' },
     { name: 'Faculty', href: '/faculty' },
     { name: 'Student Success', href: '/student-success' },

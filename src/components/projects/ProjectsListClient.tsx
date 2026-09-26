@@ -82,7 +82,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
 
           <div className="md:col-span-3 text-right text-xs text-[#78716C]">
             Showing <strong className="text-[#2A1810]">{filtered.length}</strong> of{' '}
-            {projects.length} Practical Projects
+            {projects.length} Industrial Training Projects
           </div>
         </div>
 

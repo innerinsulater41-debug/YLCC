@@ -3,7 +3,7 @@ import { db } from '@/lib/db';
 import ProjectsListClient from '@/components/projects/ProjectsListClient';
 
 export const metadata = {
-  title: '30 Multi-Business Practical Accounting Projects | YLCC',
+  title: '30 Multi-Business Industrial Training Projects | YLCC',
   description:
     'Hands-on practical case studies across 30 Indian industries: Hospital patient billing, Hotel operations, Logistics freight, FMCG distributor networking, Builder site costing, and Govt contractor (Thekedar) tenders.',
 };
@@ -20,7 +20,7 @@ export default async function ProjectsPage() {
             Multi-Business Practice Arena
           </span>
           <h1 className="text-3xl sm:text-5xl font-serif font-bold text-[#2A1810]">
-            The 30 Multi-Business Practical Projects
+            The 30 Multi-Business Industrial Training Projects
           </h1>
           <p className="text-sm sm:text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
             Every project simulates complete financial years for real-world businesses. You don’t just learn rules—you maintain ledgers, calculate taxes, reconcile vendor discrepancies, and finalize balance sheets.

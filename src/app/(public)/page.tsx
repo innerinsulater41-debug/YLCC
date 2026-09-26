@@ -93,7 +93,7 @@ export default async function HomePage() {
                   className="bg-[#EFE6DD] hover:bg-[#E5D8CA] text-[#2A1810] border border-[#D8C5B2] px-6 py-3.5 rounded-xl font-semibold text-sm transition-all flex items-center gap-2"
                 >
                   <Briefcase className="w-4 h-4 text-[#8B5A2B]" />
-                  <span>View 30 Practical Projects</span>
+                  <span>View 30 Industrial Training Projects</span>
                 </Link>
 
                 <Link
@@ -411,7 +411,7 @@ export default async function HomePage() {
               Multi-Business Experience
             </span>
             <h2 className="text-3xl font-serif font-bold text-[#2A1810]">
-              The 30 Multi-Business Practical Projects
+              The 30 Multi-Business Industrial Training Projects
             </h2>
             <p className="text-sm text-[#57534E] max-w-2xl">
               Gain the equivalent of 2 years of industry experience across hospitals, hotels, freight logistics, real estate, government thekedars, and franchise chains.

@@ -17,6 +17,7 @@ import {
   Building2,
   Sparkles,
   Scale,
+  Store,
 } from 'lucide-react';
 import { Project } from '@/types';
 
@@ -32,10 +33,14 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   const industries = useMemo(() => {
     const set = new Set(projects.map((p) => p.industryCategory));
     const list = Array.from(set);
-    // Position 'Manufacturing Industry' first right after 'All'
+    // Position Manufacturing first, Legal second, Traders third
+    const order = ['Manufacturing Industry', 'Legal & Taxation', 'Traders Industry'];
     list.sort((a, b) => {
-      if (a === 'Manufacturing Industry') return -1;
-      if (b === 'Manufacturing Industry') return 1;
+      const idxA = order.indexOf(a);
+      const idxB = order.indexOf(b);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
       return a.localeCompare(b);
     });
     return ['All', ...list];
@@ -62,17 +67,24 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   const isDefaultView = selectedIndustry === 'All' && !search.trim() && selectedDifficulty === 'All';
   const isMfgOnlyView = selectedIndustry === 'Manufacturing Industry' && !search.trim() && selectedDifficulty === 'All';
   const isLegalOnlyView = selectedIndustry === 'Legal & Taxation' && !search.trim() && selectedDifficulty === 'All';
+  const isTraderOnlyView = selectedIndustry === 'Traders Industry' && !search.trim() && selectedDifficulty === 'All';
 
   const manufacturingProjects = useMemo(() => {
     return filtered.filter((p) => p.industryCategory === 'Manufacturing Industry');
   }, [filtered]);
 
-  const otherProjects = useMemo(() => {
+  const legalProjects = useMemo(() => {
     return filtered.filter((p) => p.industryCategory === 'Legal & Taxation');
+  }, [filtered]);
+
+  const traderProjects = useMemo(() => {
+    return filtered.filter((p) => p.industryCategory === 'Traders Industry');
   }, [filtered]);
 
   const renderProjectCard = (proj: Project) => {
     const isMfg = proj.industryCategory === 'Manufacturing Industry';
+    const isLegal = proj.industryCategory === 'Legal & Taxation';
+    const isTrader = proj.industryCategory === 'Traders Industry';
     return (
       <div
         key={proj.id}
@@ -84,6 +96,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             <div className="flex items-center justify-between text-[11px] text-[#C4AE96] mb-2">
               <span className="uppercase font-bold tracking-wider flex items-center gap-1.5">
                 {isMfg && <Factory className="w-3.5 h-3.5 text-[#C4AE96]" />}
+                {isLegal && <Scale className="w-3.5 h-3.5 text-[#C4AE96]" />}
+                {isTrader && <Store className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {proj.industryCategory}
               </span>
               <span className="bg-[#8B5A2B] text-white px-2 py-0.5 rounded text-[10px] font-semibold">
@@ -195,6 +209,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               }`}
             >
               {ind === 'Manufacturing Industry' && <Factory className="w-3 h-3" />}
+              {ind === 'Legal & Taxation' && <Scale className="w-3 h-3" />}
+              {ind === 'Traders Industry' && <Store className="w-3 h-3" />}
               {ind}
             </button>
           ))}
@@ -254,8 +270,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
           )}
 
           {/* Section 2: LEGAL & TAXATION */}
-          {(isDefaultView || isLegalOnlyView) && otherProjects.length > 0 && (
-            <div className={isDefaultView ? "pt-12 space-y-8" : "space-y-8"}>
+          {(isDefaultView || isLegalOnlyView) && legalProjects.length > 0 && (
+            <div id="legal-taxation-section" className={isDefaultView ? "pt-12 space-y-8" : "space-y-8"}>
               <div className={`${isDefaultView ? "border-t-2 border-dashed border-[#D8C5B2] pt-12" : "py-6 sm:py-8"} text-center space-y-4`}>
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
                   <Scale className="w-4 h-4 text-[#8B5A2B]" />
@@ -273,13 +289,44 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
                 </p>
 
                 <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
-                  <span>{otherProjects.length} Practical Projects</span>
+                  <span>{legalProjects.length} Practical Projects</span>
                 </div>
               </div>
 
               {/* Legal & Taxation Projects Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {otherProjects.map((proj) => renderProjectCard(proj))}
+                {legalProjects.map((proj) => renderProjectCard(proj))}
+              </div>
+            </div>
+          )}
+
+          {/* Section 3: TRADERS INDUSTRY */}
+          {(isDefaultView || isTraderOnlyView) && traderProjects.length > 0 && (
+            <div id="traders-industry-section" className={isDefaultView ? "pt-12 space-y-8" : "space-y-8"}>
+              <div className={`${isDefaultView ? "border-t-2 border-dashed border-[#D8C5B2] pt-12" : "py-6 sm:py-8"} text-center space-y-4`}>
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
+                  <Store className="w-4 h-4 text-[#8B5A2B]" />
+                  <span>Wholesale, Retail & Multi-Brand Distribution</span>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
+                  TRADERS INDUSTRY
+                </h2>
+
+                <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
+
+                <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
+                  Practical commercial trade accounting: Electronic Showroom serial number &amp; consumer EMI finance, Multi-Brand FMCG distribution with primary-secondary schemes, and Medicine Wholesale with batch &amp; expiry controls.
+                </p>
+
+                <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
+                  <span>{traderProjects.length} Practical Projects</span>
+                </div>
+              </div>
+
+              {/* Traders Industry Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {traderProjects.map((proj) => renderProjectCard(proj))}
               </div>
             </div>
           )}

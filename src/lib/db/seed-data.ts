@@ -2996,6 +2996,244 @@ export const initialProjects: Project[] = [
     "createdAt": "2025-10-25",
     "updatedAt": "2026-03-01"
   }
+,
+  {
+      "id": "proj-trader-1",
+      "slug": "electronic-showroom-multi-brand-emi-accounting",
+      "title": "Electronic Showroom: Multi-Brand Consumer Durables, Serial Number Tracking & EMI Scheme Accounting",
+      "shortDescription": "Comprehensive retail & showroom accounting for electronics & consumer durables: Multi-brand serial number/IMEI tracking, Bajaj Finance/HDB consumer EMI reconciliations, brand secondary schemes, warranty claim settlement, and GST rate compliance.",
+      "detailedDescription": "Step into the fast-paced retail operations of 'Apex Electronics & Digital Mega-Showroom', simulating a ₹12-Crore multi-brand consumer durables dealership (Sony, Samsung, LG, Daikin, Apple). Students manage complete showroom floor-to-book accounting: barcode and unique serial number/IMEI inventory tracking to prevent warranty fraud, booking consumer durable loan disbursements through Bajaj Finserv, HDB Financial, and Pine Labs credit card EMI machines (accounting for 1.5% - 3% subvention charges and merchant discount rates), handling brand secondary trade schemes, volume target achievement credit notes, extended warranty sales, demo unit amortization, and multi-slab GST compliance (18% for computers/gadgets, 28% for luxury ACs and large screen TVs) with integrated E-Way bills for home deliveries.",
+      "industryCategory": "Traders Industry",
+      "accountingCategory": "Showroom Retail & Consumer Finance Accounting",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+          "Serial Number & IMEI Unique Barcode Stock Control in Tally Prime",
+          "Bajaj Finserv & Credit Card Zero-Cost EMI Settlement & Subvention Accounting",
+          "Brand Target Rebate, Secondary Scheme & Rate Difference Credit Notes",
+          "Extended Warranty Billing, Demo Display Amortization & Transit Damage Claims",
+          "Mixed & Composite GST Slabs (18% vs 28%) & Delivery Challan / E-Way Bills"
+      ],
+      "softwareUsed": [
+          "Tally Prime 4.0 Multi-Location POS",
+          "Pine Labs & Bajaj Finance Merchant Simulator",
+          "Advanced Excel 365 Retail Inventory Tracker"
+      ],
+      "learningObjectives": [
+          "Master item-level serial number and IMEI barcode tracking to maintain zero-leakage inventory across high-value electronics",
+          "Account for consumer finance loan files, calculating down payments, finance company direct disbursal, subvention commission, and bank gateway charges",
+          "Reconcile monthly vendor accounts with corporate brands (Samsung, LG, Sony) capturing volume bonuses, display incentives, and price drop claims",
+          "Execute multi-rate GST invoicing, reverse charge on delivery logistics, and accurate GSTR-1 outward filing"
+      ],
+      "businessScenario": "Managing 'Apex Electronics Mega-Showroom' with 3 branch outlets across high-street commercial hubs. During the festive season, 45% of sales occur through zero-cost EMI (Bajaj Finance, HDB, Credit Card Pine Labs). The accounts executive must track the physical serial numbers of each TV/Refrigerator sold, record finance company pay-outs net of processing and MDR fees, book manufacturer trade promotional schemes, and handle customer return replacements with matching warranty credit notes.",
+      "tasksToComplete": [
+          "Configure inventory masters with compulsory serial number and IMEI tracking for 350+ electronic SKUs in Tally Prime",
+          "Record 60 multi-payment showroom POS sales vouchers combining customer cash, credit card swipe, and Bajaj Finserv loan sanction",
+          "Prepare finance company reconciliation statement matching gross loan approvals against bank credit net of subvention charges",
+          "Process manufacturer target rebate credit notes from Samsung and LG, adjusting accounts payable and input tax credits",
+          "Prepare month-end showroom gross profit analysis by brand category (Smartphones vs Home Appliances vs Audio)"
+      ],
+      "expectedOutcomes": [
+          "Serial-Numbered Electronic Inventory Master & Physical Audit Statement",
+          "Bajaj Finance & Card Gateway EMI Settlement & Subvention Working Sheet",
+          "Brand Secondary Scheme, Target Rebate & Warranty Replacement Register",
+          "Monthly Showroom Sales, Gross Margin & GST Return Summary"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+          {
+              "id": "med-t-1",
+              "url": "/images/ylcc_tds_brochure_slate_copper.png",
+              "name": "Electronic Showroom Serial Number & EMI Finance Workflow",
+              "type": "image/png",
+              "size": "3.2 MB",
+              "caption": "Showroom floor billing, serial barcode tracking, and finance company loan reconciliation"
+          }
+      ],
+      "resources": [
+          {
+              "id": "res-t-1",
+              "title": "Electronic Showroom & Consumer Durables Practical Accounting Dossier",
+              "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+              "fileType": "pdf",
+              "fileSize": "82 KB",
+              "isDownloadable": true
+          },
+          {
+              "id": "res-t-2",
+              "title": "Serial Number Inventory & Consumer Finance Subvention Calculator (Excel)",
+              "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+              "fileType": "xlsx",
+              "fileSize": "145 KB",
+              "isDownloadable": true
+          }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 14,
+      "createdAt": "2026-01-10",
+      "updatedAt": "2026-03-28"
+  },
+  {
+      "id": "proj-trader-2",
+      "slug": "multi-brand-distribution-stockist-channel-schemes-accounting",
+      "title": "Multi-Brand Distribution: Super-Stockist Channel Margin, Primary-Secondary Schemes & Credit Control",
+      "shortDescription": "Large-scale wholesale & super-stockist distribution accounting: Principal company primary purchases vs dealer secondary billing, Buy-10-Get-1 schemes, rate difference credit notes, salesman beat collection, and PDC credit control.",
+      "detailedDescription": "Step into the operations of 'Om Sai Multi-Brand Distributing Agency', simulating an authorized master distributor and super-stockist representing FMCG, cosmetics, and packaged goods conglomerates (HUL, ITC, Nestlé, Dabur) supplying to over 600 retail stores across 12 urban sales routes. Students take charge of complete distribution finance: reconciling primary supplier purchase invoices against secondary trade billing, calculating quantity-based schemes ('Buy 12 Dozen Get 1 Free', QPS - Quantity Purchase Schemes), managing Turn Over Discounts (TOD) and Cash Discounts (CD), processing rate difference claims when companies revise MRPs, administering daily salesman route-wise van loading sheets, cash/UPI collection handovers, Post-Dated Cheque (PDC) ledgers, dealer credit limit locking, and Bank Cash Credit (CC) limit stock statements.",
+      "industryCategory": "Traders Industry",
+      "accountingCategory": "Wholesale Distribution & Channel Scheme Accounting",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+          "Primary Company Billing vs Secondary Retailer Route Sales Accounting",
+          "Trade Promotional Schemes (QPS, Free Goods, Cash Discount & Trade Margin)",
+          "Rate Difference & Expiry/Damage Claims Debit-Credit Note Processing",
+          "Salesman Daily Route/Beat Cash Handover & Outstanding Ageing Control",
+          "Post-Dated Cheques (PDC) Management & Bank CC Drawing Power Stock Statements"
+      ],
+      "softwareUsed": [
+          "Tally Prime 4.0 Distribution Master",
+          "Excel 365 Route Beat Tracker",
+          "E-Invoicing & E-Way Bill Portal Simulator"
+      ],
+      "learningObjectives": [
+          "Master channel accounting mechanisms differentiating primary purchases from principal corporations and secondary sales to retailers",
+          "Accurately calculate and account for multi-layer trade schemes, free quantity distributions, and taxable trade discounts without GST calculation errors",
+          "Execute strict credit control through debtor ageing schedules, PDC cheque register maintenance, and automated credit freeze protocols",
+          "Compile monthly bank drawing power statements reflecting paid stock, trade debtors under 90 days, and bank cash credit limit margin requirements"
+      ],
+      "businessScenario": "Managing 'Om Sai Multi-Brand Distributing Agency' with ₹3.5 Crore monthly sales volume across 12 daily delivery vans covering 600+ retail kirana and supermarket outlets. The distribution accountant must verify factory primary consignments, calculate dealer margins (6% - 10%), record sales vans' daily beat cash & UPI settlements, generate credit notes for company-approved festive schemes, track bouncing cheques, and prepare drawing power statements for the bank CC limit.",
+      "tasksToComplete": [
+          "Record principal company primary stock purchase vouchers incorporating trade discounts, freight subsidies, and TCS under Section 206C(1H)",
+          "Execute batch secondary sales billing for 40 retail stores on Route-3 with automatic scheme allocation ('10+1 Free')",
+          "Reconcile salesman daily evening van collection: cash deposit, UPI QR transactions, and credit balances",
+          "Generate and book rate-difference debit notes against manufacturer companies for price reduction protection",
+          "Prepare monthly Debtor Outstanding Ageing Analysis (0-30, 31-60, 61-90, 90+ days) and Bank CC Stock Statement"
+      ],
+      "expectedOutcomes": [
+          "Primary vs Secondary Multi-Brand Distribution Daybook & Scheme Audit",
+          "Salesman Route Beat Delivery & Cash Collection Reconciliation Register",
+          "Manufacturer Rate Difference & Free Goods Scheme Recovery Statement",
+          "Monthly Debtor Ageing Report & Bank CC Limit Drawing Power Calculation Sheet"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+          {
+              "id": "med-t-2",
+              "url": "/images/ylcc_tds_brochure_slate_copper.png",
+              "name": "Multi-Brand Distribution Channel Architecture",
+              "type": "image/png",
+              "size": "3.5 MB",
+              "caption": "Primary factory inwarding, secondary beat billing, and dealer credit control"
+          }
+      ],
+      "resources": [
+          {
+              "id": "res-t-3",
+              "title": "Multi-Brand Distribution & Super-Stockist Accounting Dossier",
+              "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+              "fileType": "pdf",
+              "fileSize": "88 KB",
+              "isDownloadable": true
+          },
+          {
+              "id": "res-t-4",
+              "title": "Route Beat Settlement & Channel Margin Scheme Calculator (Excel)",
+              "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+              "fileType": "xlsx",
+              "fileSize": "158 KB",
+              "isDownloadable": true
+          }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 15,
+      "createdAt": "2026-01-15",
+      "updatedAt": "2026-03-28"
+  },
+  {
+      "id": "proj-trader-3",
+      "slug": "medicine-pharma-wholesale-retail-batch-expiry-accounting",
+      "title": "Medicine Wholesale & Pharma Retail: Batch Number, Expiry Return & Drug License (DL) Compliance Accounting",
+      "shortDescription": "Pharmaceutical wholesale & retail chemist accounting: Drug License (Form 20B/21B) compliance, mandatory batch & expiry tracking, FEFO dispatch, near-expiry & breakage return credit notes, and PTS/PTR pricing.",
+      "detailedDescription": "Step into the critical compliance and commercial accounting environment of 'Sanjeevani Medico-Pharma Wholesale & Retail Agencies', simulating a licensed pharmaceutical distributor and retail pharmacy network supplying life-saving medications, generic drugs, and surgical consumables to hospitals, clinics, and 300+ chemists. Students master stringent pharmaceutical accounting requirements: Drug License (DL Form 20B wholesale / 21B retail) statutory recording, mandatory batch-number and manufacturing/expiry date entry for every single formulation, automated FEFO (First-Expiry-First-Out) dispatch sequencing, pricing hierarchy calculations between PTS (Price to Stockist), PTR (Price to Retailer), Trade Margin, and MRP inclusive of GST, handling near-expiry and breakage/leakage return reverse logistics with C&F replacement credit notes, Narcotic / Schedule H/H1 register maintenance, and monthly GSTR-1 / GSTR-3B tax reconciliations on 5% and 12% pharmaceutical tax slabs.",
+      "industryCategory": "Traders Industry",
+      "accountingCategory": "Pharmaceutical Wholesale & Statutory Health Supply Accounting",
+      "difficultyLevel": "Executive",
+      "skillsCovered": [
+          "Mandatory Batch Number & Expiry Date Inventory Management in Tally/Marg",
+          "FEFO (First-Expiry First-Out) Sales Picking & Dispatch Automation",
+          "Pharma Price Structure: PTS (Stockist), PTR (Retailer), Margin & MRP Calculations",
+          "Near-Expiry, Breakage & Damaged Medicine Credit Note & Reverse Logistics",
+          "Drug License (Form 20B/21B), Schedule H Register & Multi-Slab GST Compliance"
+      ],
+      "softwareUsed": [
+          "Tally Prime 4.0 Pharma Edition",
+          "Marg ERP Pharma Accounting Simulator",
+          "Excel 365 Expiry Risk & Dump Stock Tracker"
+      ],
+      "learningObjectives": [
+          "Enforce rigorous batch-wise inventory controls and FEFO dispatch rules to eliminate stock write-offs and prevent expired drug dispensing",
+          "Compute exact pharmaceutical pricing equations reconciling manufacturer invoice prices (PTS), chemist wholesale rates (PTR), retailer margins, and government DPCO price ceilings",
+          "Manage the complete reverse logistics workflow for near-expiry and damaged medicine returns through GST-compliant debit and credit notes",
+          "Maintain statutory pharmaceutical documentation including Drug License master verification, Schedule H prescription registers, and GST audit schedules"
+      ],
+      "businessScenario": "Simulating 'Sanjeevani Medico-Pharma Agencies', stocking over 2,200 pharmaceutical SKUs (antibiotics, cardiac tablets, syrups, insulin vials, surgical items). The pharma accountant must ensure every sales invoice displays the chemist's valid Drug License number (20B/21B), enforce FEFO dispatch to sell closest-expiry batches first, process monthly credit notes for medicines expiring within 90 days returned by retail pharmacies, claim reimbursement from C&F manufacturing depots (Cipla, Sun Pharma, Abbott), and maintain zero tax discrepancy on 5% vs 12% GST items.",
+      "tasksToComplete": [
+          "Create batch-enabled inventory masters with manufacturing dates, expiry dates, and DPCO ceiling rates for 400+ pharma items",
+          "Record hospital and retail chemist sales invoices with auto-printing of Batch No., Expiry Date, and Chemist DL Number",
+          "Configure automated FEFO dispatch rule in Tally Prime / Marg ERP to prevent selling later batches before earlier expiry stock",
+          "Process 25 near-expiry medicine return vouchers from chemists, issuing credit notes and compiling C&F company claim debit notes",
+          "Prepare monthly Pharma Expired & Dump Stock Provision Report and GST Input Tax Credit Reconciliation statement"
+      ],
+      "expectedOutcomes": [
+          "Batch-Wise Pharma Inventory Ledger with Near-Expiry Alert Analysis",
+          "Retail Chemist Sales Invoices with Statutory Drug License (DL) & Expiry Prints",
+          "Medicine Expiry & Breakage Return Claim Reconciliation Register",
+          "Pharma Trade Margin (PTS vs PTR vs MRP) & Schedule H Compliance Dossier"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+          {
+              "id": "med-t-3",
+              "url": "/images/ylcc_tds_brochure_slate_copper.png",
+              "name": "Pharma Wholesale Batch & Expiry Management Cycle",
+              "type": "image/png",
+              "size": "3.8 MB",
+              "caption": "Batch tracking, FEFO dispatch, drug license compliance, and expiry reverse logistics"
+          }
+      ],
+      "resources": [
+          {
+              "id": "res-t-5",
+              "title": "Medicine Wholesale & Pharma Chemist Practical Accounting Dossier",
+              "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+              "fileType": "pdf",
+              "fileSize": "95 KB",
+              "isDownloadable": true
+          },
+          {
+              "id": "res-t-6",
+              "title": "Pharma PTS-PTR Margin & Batch Expiry Risk Calculator (Excel)",
+              "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+              "fileType": "xlsx",
+              "fileSize": "172 KB",
+              "isDownloadable": true
+          }
+      ],
+      "practiceTimeHours": 30,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 16,
+      "createdAt": "2026-01-20",
+      "updatedAt": "2026-03-28"
+  }
 ];
 
 export const initialFaculty: Faculty[] = [

@@ -128,6 +128,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               prog.id === 'prog-12' ||
               prog.id === 'prog-13' ||
               prog.id === 'prog-14' ||
+              prog.id === 'prog-15' ||
               prog.id === 'prog-4' ||
               prog.id === 'prog-5' ||
               prog.id === 'prog-6' ||
@@ -332,8 +333,8 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </div>
                 )}
 
-                {/* Partition Divider between Cost Accounting and Advanced Excel */}
-                {prog.id === 'prog-7' && selectedCategory === 'All' && !search.trim() && (
+                {/* Partition Divider between Automate Purchase Order and Advanced Excel */}
+                {prog.id === 'prog-15' && selectedCategory === 'All' && !search.trim() && (
                   <div className="md:col-span-2 py-4">
                     <div className="relative flex items-center justify-center">
                       <div className="absolute inset-0 flex items-center">

@@ -225,6 +225,15 @@ export const db = {
     ) {
       return data.projects.find((p) => p.id === 'proj-mfg-10') || null;
     }
+    // Support legacy slug and aliases for GSTR-3B & GSTR-2B project
+    if (
+      slug === 'hospital-business-accounting-system' ||
+      slug === 'gstr3b-2b' ||
+      slug === 'gstr-3b-2b' ||
+      slug === 'gstr-3b-2b-reconciliation'
+    ) {
+      return data.projects.find((p) => p.id === 'proj-1') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

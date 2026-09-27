@@ -304,7 +304,7 @@ export default function ProjectFormClient({ initialProject, isEditing = false }:
             <input
               type="text"
               required
-              placeholder="e.g. Hospital Business Accounting & Patient Billing System"
+              placeholder="e.g. GSTR-3B & GSTR-2B Live Portal Matching & Return Filing"
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
               className="w-full px-3 py-2 text-sm bg-[#FAF6F0] border border-[#D8C5B2] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#8B5A2B] text-[#2A1810]"

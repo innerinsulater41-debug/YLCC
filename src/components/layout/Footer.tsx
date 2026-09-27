@@ -164,7 +164,7 @@ export default function Footer({ settings }: FooterProps) {
             </h4>
             <div className="grid grid-cols-1 gap-1.5 text-xs text-[#D8C5B2]">
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Hospital Patient Billing System
+                • GSTR-3B & GSTR-2B ITC Matching
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
                 • College Accounting & Fees

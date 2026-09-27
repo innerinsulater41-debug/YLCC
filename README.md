@@ -34,7 +34,7 @@ The website is crafted with a bespoke **Cream & Beige** financial palette tailor
 ## 🏢 The 30 Multi-Business Practical Projects Library
 
 Every student practices complete financial years across 30 authentic Indian industries:
-1. **Hospital Business Accounting & Patient Billing System** (IPD/OPD, Doctor 194J shares, TPA mediclaim reconciliation)
+1. **GSTR-3B & GSTR-2B: Live Portal Matching, ITC Reconciliations & Tax Settlement** (Purchase register 2B Milan, Section 17(5) blocked credit, Rule 88A tax offset, DRC-01B/C replies)
 2. **College Accounting & Student Fee Reconciliation System** (Installment fees, scholarship grants, hostel/mess ledgers)
 3. **Freight Logistics & Fleet Transport Management Accounting** (Trip sheets, Fastag, diesel cards, GTA RCM on freight)
 4. **Automobile & Electronics Service Centre Multi-Job Accounting** (Job Cards, spare parts inventory, OEM warranty claims)

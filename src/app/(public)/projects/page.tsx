@@ -5,7 +5,7 @@ import ProjectsListClient from '@/components/projects/ProjectsListClient';
 export const metadata = {
   title: '30 Multi-Business Industrial Training Projects | YLCC',
   description:
-    'Hands-on practical case studies across 30 Indian industries: Hospital patient billing, Hotel operations, Logistics freight, FMCG distributor networking, Builder site costing, and Govt contractor (Thekedar) tenders.',
+    'Hands-on practical case studies across 30 Indian industries: GSTR-3B & 2B compliance, Hotel operations, Logistics freight, FMCG distributor networking, Builder site costing, and Govt contractor (Thekedar) tenders.',
 };
 
 export default async function ProjectsPage() {

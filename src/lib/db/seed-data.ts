@@ -2672,79 +2672,84 @@ export const initialProjects: Project[] = [
   },
   {
     "id": "proj-1",
-    "slug": "hospital-business-accounting-system",
-    "title": "Hospital Business Accounting & Patient Billing System",
-    "shortDescription": "Complete accounting for a 100-bed multi-specialty hospital: IPD/OPD patient billing, doctor consultant revenue shares, pharmacy inventory, and TPA insurance claims.",
-    "detailedDescription": "In this practical project, students manage the complete financial accounts of \"Jeevandhara Multi-Specialty Hospital\". You will handle patient admission deposits, OPD consultation billing, pharmacy dispensary stock tracking, doctor visiting fees vs revenue-sharing agreements, and reconciliation of cashless mediclaim receivables from Third Party Administrators (TPAs).",
-    "industryCategory": "Healthcare & Hospitals",
-    "accountingCategory": "Service & Retail Accounting",
-    "difficultyLevel": "Intermediate",
+    "slug": "gstr-3b-2b-reconciliation-return-filing",
+    "title": "GSTR-3B & GSTR-2B: Live Portal Matching, ITC Reconciliations & Tax Settlement",
+    "shortDescription": "Practical monthly GST filing & ITC audit simulation: Purchase book vs GSTR-2B automated matching, Section 17(5) blocked credit reversals, Table 4 ITC distribution, Rule 88A set-off rules, and Electronic Cash/Credit ledger payment.",
+    "detailedDescription": "In this comprehensive statutory GST compliance simulation, students step into the role of a Corporate Tax & GST Compliance Lead for 'Bharat TaxServe & Allied Industries'. Students take ownership of the critical end-to-end monthly return filing cycle under GSTR-3B and GSTR-2B: executing multi-column automated 2B reconciliation (matching 800+ vendor purchase entries against GST portal JSON downloads), identifying missing vendor invoices and ineligible credits under Section 16(2)(aa), calculating mandatory ITC reversals under Rule 42 and Section 17(5) blocked credits, reporting Table 3.1 outward liabilities and RCM inwards, executing optimal tax payment set-off under Rule 88A (exhausting IGST credit before CGST/SGST), generating PMT-06 cash challans, computing Section 50 net cash interest for delayed filings, and replying to automated portal notices under Form DRC-01B and DRC-01C.",
+    "industryCategory": "Legal & Taxation",
+    "accountingCategory": "GST Return Filing & ITC Reconciliation",
+    "difficultyLevel": "Advanced",
     "skillsCovered": [
-      "IPD / OPD Billing Structures",
-      "Doctor Revenue Sharing (TDS 194J)",
-      "Pharmacy Inventory & Batch Control",
-      "TPA Insurance Claims Reconciliation",
-      "Medical Equipment Capitalization & AMC Bookings"
+      "Automated GSTR-2B vs Purchase Register Invoice Matching (2B Milan)",
+      "Section 16(2)(aa) Vendor Filing Scrutiny & 180-Day Payment Reversals",
+      "Section 17(5) Blocked Credits & Rule 42/43 Exempt Supply Reversals",
+      "GSTR-3B Table 3.1 Outward Tax & Table 3.1(d) Inward RCM Determinations",
+      "Rule 88A / Section 49 Tax Set-Off Optimization & PMT-06 Cash Challans",
+      "Form DRC-01B (1 vs 3B) & DRC-01C (2B vs 3B) Departmental Notice Replies"
     ],
     "softwareUsed": [
-      "Tally Prime 4.0",
-      "Excel 365 Financials",
-      "Pharmacy Stock Manager"
+      "Official GST Portal Simulator",
+      "Excel 2B Automated Matching Macro",
+      "Tally Prime 4.0 GST Engine",
+      "GST Offline Return Tool"
     ],
     "learningObjectives": [
-      "Account for multi-stream hospital revenues (OPD, IPD, Diagnostics, Pharmacy)",
-      "Accurately withhold TDS under Section 194J on doctor visiting fees and surgical sharing",
-      "Reconcile TPA insurance claims and track deductions, co-pays, and claim delays"
+      "Perform multi-criteria automated matching between client purchase daybooks and portal GSTR-2B to capture 100% legitimate ITC without portal mismatch flags",
+      "Segregate eligible ITC from blocked credits under Section 17(5) (motor vehicles, food/catering, personal items) and exempt ratio reversals under Rule 42",
+      "Master the statutory set-off hierarchy mandated by Rule 88A and Sections 49/49A to minimize cash payouts and avoid working capital blockage",
+      "Draft formal audit reconciliations and automated justification responses for GST portal scrutiny notices Form DRC-01B and DRC-01C"
     ],
-    "businessScenario": "Jeevandhara Hospital operates 100 beds, an in-house pathology lab, and a round-the-clock medical store. Monthly revenues cross ₹75 Lakhs across private cash patients, corporate panels, and government health schemes (Ayushman / RGHS). The accounts manager must ensure live billing, prevent medicine expiry losses, and reconcile insurance settlements.",
+    "businessScenario": "Simulating 'Bharat TaxServe & Allied Industries', handling monthly GST compliance for a mid-market manufacturing and trading conglomerate with ₹4.5 Crore monthly taxable turnover. On the 14th of every month, GSTR-2B is generated with over 800 supplier invoices. The tax accountant must identify suppliers who collected GST but failed to file GSTR-1, identify invoices where vendor GSTINs are suspended, compute Reverse Charge (RCM) liabilities on transport and legal counsel fees, and calculate exact cash ledger top-ups required on the 20th deadline to file GSTR-3B with zero interest penalty.",
     "tasksToComplete": [
-      "Record daily OPD cash receipts and IPD admission advance vouchers",
-      "Process monthly doctor consultancy bills with TDS deduction under 194J",
-      "Reconcile pharmacy medicine purchases, credit terms, and near-expiry stock returns",
-      "Prepare monthly TPA outstanding aging report and submit reconciliation to management"
+      "Import 850 client purchase vouchers and official portal GSTR-2B JSON into Excel 2B Milan Engine and categorize matches, value mismatches, and missing vendor bills",
+      "Prepare Table 4 ITC computation sheet segregating Eligible All Other ITC, Import of Goods, RCM Inward ITC, and Section 17(5) Ineligible Reversals",
+      "Compute Table 3.1 outward liabilities across B2B registered sales, zero-rated exports, and GTA / Legal advocate reverse charge mechanisms",
+      "Run Rule 88A tax offset sequence in Tally Prime / GST Simulator, generate PMT-06 NEFT/RTGS challans for cash shortfall, and record GSTR-3B filing entries",
+      "Draft an automated reconciliation response against portal scrutiny difference notices (DRC-01B for sales and DRC-01C for ITC variation)"
     ],
     "expectedOutcomes": [
-      "Complete trial balance and monthly P&L for hospital operations",
-      "Zero discrepancies between pharmacy physical inventory and books",
-      "Accurate TPA receivables register with clear aging breakdown"
+      "Comprehensive GSTR-2B vs Purchase Book 5-Way Reconciliation Statement",
+      "Table 4 ITC Eligibility & Section 17(5) Blocked Credit Working Sheet",
+      "Rule 88A Cash vs Credit Utilization Matrix & PMT-06 Bank Payment Challan",
+      "Draft Compliance Replies for Form DRC-01B & DRC-01C Discrepancy Notices"
     ],
     "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
     "media": [
       {
         "id": "med-1-1",
         "url": "/images/ylcc_tds_brochure_slate_copper.png",
-        "name": "Hospital Billing Framework",
+        "name": "GSTR-3B & 2B Reconciliation & Set-Off Workflow",
         "type": "image/png",
         "size": "3.7 MB",
-        "caption": "Hospital departmental billing and doctor payout schedule"
+        "caption": "GSTR-2B auto-drafted matching, Rule 88A tax offset order, and electronic ledger payment"
       }
     ],
     "resources": [
       {
         "id": "res-1-1",
-        "title": "Hospital Multi-Specialty Project Brief & Patient Billing Data",
+        "title": "GSTR-3B & GSTR-2B Comprehensive Practical Filing & Audit Dossier",
         "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
         "fileType": "pdf",
-        "fileSize": "59 KB",
+        "fileSize": "74 KB",
         "isDownloadable": true
       },
       {
         "id": "res-1-2",
-        "title": "Hospital Doctor Payout & TPA Reconciliation Model",
+        "title": "Automated GSTR-2B Milan & Rule 88A Tax Offset Calculator (Excel)",
         "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
         "fileType": "xlsx",
-        "fileSize": "124 KB",
+        "fileSize": "162 KB",
         "isDownloadable": true
       }
     ],
-    "practiceTimeHours": 24,
+    "practiceTimeHours": 26,
     "academicYear": "2025-26",
-    "facultyMentor": "Rajesh Soni",
+    "facultyMentor": "CA Alok Maheshwari",
     "isFeatured": true,
     "status": "published",
-    "displayOrder": 10,
+    "displayOrder": 11,
     "createdAt": "2025-10-15",
-    "updatedAt": "2026-01-10"
+    "updatedAt": "2026-03-01"
   },
   {
     "id": "proj-2",
@@ -4121,7 +4126,7 @@ export const initialFAQs: FAQ[] = [
     category: 'Practical Projects',
     question: 'What are the 30 Multi-Business Practical Projects?',
     answer:
-      'The 30 practical projects simulate complete financial years for real-world businesses: Hospital patient billing, College student fee management, Freight transport logistics, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model).',
+      'The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, College student fee management, Freight transport logistics, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model).',
   },
   {
     id: 'faq-4',

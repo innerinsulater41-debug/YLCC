@@ -2097,10 +2097,10 @@
     },
     {
       "id": "proj-mfg-4",
-      "slug": "quadbury-chocolate-manufacturing-costing",
-      "title": "Quadbury Chocolates Manufacturing: Multi-Stage Cocoa BOM & Batch Costing",
-      "shortDescription": "Complete factory cost accounting for a high-speed Quadbury chocolate manufacturing plant: cocoa liquor & butter refining, multi-stage conching, cooling tunnel tempering, golden foil/BOPP wrapping, and temperature-controlled batch costing.",
-      "detailedDescription": "In this advanced industrial training simulation, students manage factory accounts and production cost sheets for 'Quadbury Confectionery & Chocolates Ltd.', an automated chocolate plant producing flagship milk chocolate bars (Dairy Silk, Roast Almond, and Fruit & Nut lines). Students configure multi-tier recipe Bills of Material (BOM) in Tally Prime Manufacturing, record bulk raw material issuance (cocoa mass, deodorized cocoa butter, whole milk powder, granulated sugar, soy lecithin, and roasted nuts), pass multi-stage Production Journals accounting for conching moisture loss and broken bar remelting rework, allocate heavy thermal refining and cooling tunnel refrigeration power overheads, apportion golden barrier foils and printed outer display cartons, determine landed manufacturing cost per chocolate bar SKU, and maintain cold-chain transit melting risk provisions.",
+      "slug": "cadbury-chocolate-manufacturing-costing",
+      "title": "Cadbury Chocolates Manufacturing: Multi-Stage Cocoa BOM & Batch Costing",
+      "shortDescription": "Complete factory cost accounting for a high-speed Cadbury chocolate manufacturing plant: cocoa liquor & butter refining, multi-stage conching, cooling tunnel tempering, golden foil/BOPP wrapping, and temperature-controlled batch costing.",
+      "detailedDescription": "In this advanced industrial training simulation, students manage factory accounts and production cost sheets for 'Cadbury Confectionery & Chocolates Ltd.', an automated chocolate plant producing flagship milk chocolate bars (Dairy Silk, Roast Almond, and Fruit & Nut lines). Students configure multi-tier recipe Bills of Material (BOM) in Tally Prime Manufacturing, record bulk raw material issuance (cocoa mass, deodorized cocoa butter, whole milk powder, granulated sugar, soy lecithin, and roasted nuts), pass multi-stage Production Journals accounting for conching moisture loss and broken bar remelting rework, allocate heavy thermal refining and cooling tunnel refrigeration power overheads, apportion golden barrier foils and printed outer display cartons, determine landed manufacturing cost per chocolate bar SKU, and maintain cold-chain transit melting risk provisions.",
       "industryCategory": "Manufacturing Industry",
       "accountingCategory": "Cocoa Recipe BOM & Cold-Chain Batch Costing",
       "difficultyLevel": "Advanced",
@@ -2114,7 +2114,7 @@
       ],
       "softwareUsed": [
         "Tally Prime Manufacturing",
-        "Quadbury Confectionery ERP Simulator",
+        "Cadbury Confectionery ERP Simulator",
         "Excel Chocolate Batch Cost Engine"
       ],
       "learningObjectives": [
@@ -2123,9 +2123,9 @@
         "Allocate heavy plant utility costs including continuous 24-hour concher motor loads, thermal heating jackets, and ammonia cooling tunnel refrigeration to individual production batches",
         "Derive exact manufacturing cost per consumer bar SKU (40g, 60g, 150g Silk) and structure distributor trade margins with cold-chain transport allowances"
       ],
-      "businessScenario": "Simulating 'Quadbury Confectionery & Chocolates Ltd.', a high-speed automated chocolate plant producing 1,50,000 chocolate bars daily across 3 continuous shifts. The manufacturing process imports African cocoa mass and deodorized cocoa butter, blends them with Indian dairy milk powder and sugar, refines the mixture through 5-roll refiners below 20 microns, and conches the mass for 36 hours. The molten chocolate is tempered, deposited into polycarbonate moulds with roasted whole almonds, cooled in chilled tunnels, and wrapped in hermetic barrier foil. Students manage production accounting amid volatile global cocoa butter prices, high electricity tariffs for climate-controlled processing halls (maintained at 18°C), packaging flow-wrap reel waste, and seasonal festive inventory buildup.",
+      "businessScenario": "Simulating 'Cadbury Confectionery & Chocolates Ltd.', a high-speed automated chocolate plant producing 1,50,000 chocolate bars daily across 3 continuous shifts. The manufacturing process imports African cocoa mass and deodorized cocoa butter, blends them with Indian dairy milk powder and sugar, refines the mixture through 5-roll refiners below 20 microns, and conches the mass for 36 hours. The molten chocolate is tempered, deposited into polycarbonate moulds with roasted whole almonds, cooled in chilled tunnels, and wrapped in hermetic barrier foil. Students manage production accounting amid volatile global cocoa butter prices, high electricity tariffs for climate-controlled processing halls (maintained at 18°C), packaging flow-wrap reel waste, and seasonal festive inventory buildup.",
       "tasksToComplete": [
-        "Set up multi-level Recipe BOM in Tally Prime for 3 flagship Quadbury variants: Dairy Milk Silk (60g), Roast Almond Bar (140g), and Crackle Crunch (40g) including raw ingredients, barrier foils, and outer shippers",
+        "Set up multi-level Recipe BOM in Tally Prime for 3 flagship Cadbury variants: Dairy Milk Silk (60g), Roast Almond Bar (140g), and Crackle Crunch (40g) including raw ingredients, barrier foils, and outer shippers",
         "Pass Raw Material Requisition and Godown Transfer Vouchers from Central Cold Storage to the Mixing, Refining, and Conching Floor",
         "Record Multi-Stage Manufacturing Journals capturing conching evaporation loss (1.5%), broken bar de-moulding scrap rework, and roasted almond inclusion dosing",
         "Apportion packaging overheads including primary golden aluminium foil rolls, printed BOPP flow-wraps, and 24-piece retail shelf display boxes",
@@ -2142,7 +2142,7 @@
         {
           "id": "med-mfg-4",
           "url": "/images/ylcc_tds_brochure_slate_copper.png",
-          "name": "Quadbury Chocolate Manufacturing BOM & Process Flow Diagram",
+          "name": "Cadbury Chocolate Manufacturing BOM & Process Flow Diagram",
           "type": "image/png",
           "size": "3.4 MB",
           "caption": "Cocoa mass blending, conching, cooling tunnel tempering, and barrier packaging flow"
@@ -2151,7 +2151,7 @@
       "resources": [
         {
           "id": "res-mfg-4-1",
-          "title": "Quadbury Chocolate Manufacturing Plant Standard Costing SOP & Batch Manual",
+          "title": "Cadbury Chocolate Manufacturing Plant Standard Costing SOP & Batch Manual",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
           "fileSize": "74 KB",

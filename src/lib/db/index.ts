@@ -187,8 +187,11 @@ export const db = {
     if (slug === 'steel-fabrication-rolling-mill-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-3') || null;
     }
-    // Support legacy slug for Pharma project
-    if (slug === 'pharmaceutical-formulations-batch-costing') {
+    // Support legacy slug for Pharma / Quadbury project
+    if (
+      slug === 'pharmaceutical-formulations-batch-costing' ||
+      slug === 'quadbury-chocolate-manufacturing-costing'
+    ) {
       return data.projects.find((p) => p.id === 'proj-mfg-4') || null;
     }
     return null;

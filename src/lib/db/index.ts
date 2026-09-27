@@ -210,6 +210,10 @@ export const db = {
     if (slug === 'paints-chemical-resins-manufacturing-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-8') || null;
     }
+    // Support legacy slug for Electronics / Rusk project
+    if (slug === 'electronics-electrical-appliance-assembly-costing') {
+      return data.projects.find((p) => p.id === 'proj-mfg-9') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

@@ -2497,74 +2497,78 @@
     },
     {
       "id": "proj-mfg-9",
-      "slug": "electronics-electrical-appliance-assembly-costing",
-      "title": "Electronics & Electrical Appliance Assembly: SMT PCB & Warranty Costing",
-      "shortDescription": "High-tech electronics assembly accounting: Surface Mount (SMT) component BOM, wave soldering & ESD line assembly, customs import duty on ICs, testing yield fallout, and 1-year product warranty replacement provisions.",
-      "detailedDescription": "Electronics and electrical appliance assembly involves thousands of miniature micro-components, sensitive clean-room assembly lines, and warranty liabilities. In this practical simulation for \"VoltCore Electronics & LED Appliances\", students manage accounts for an electronics manufacturing service (EMS) plant assembling smart LED fixtures, power inverters, and IoT control boards. You will configure high-density BOMs for surface-mount ICs, capacitors, and PCB boards, account for customs duty and freight on imported components, record wave soldering testing rejections, and compute 1-year warranty replacement liability reserves.",
+      "slug": "rusk-bakery-toast-manufacturing-costing",
+      "title": "Rusk & Twice-Baked Toast Manufacturing: Multi-Stage Baking, Slicing Scrap & Carton Costing",
+      "shortDescription": "Industrial bakery & toast manufacturing accounting: Maida & Suji dough kneading, proofing, two-stage tunnel oven baking, 24-hr loaf conditioning, high-speed slicing trim scrap, moisture evaporation loss (32%), and FMCG flow-wrap packaging costing.",
+      "detailedDescription": "In this specialized high-speed commercial bakery simulation, students take charge of factory cost ledgers for 'GoldenCrisp Bakeries & Premium Toast Ltd.' (an automated industrial bakery manufacturing premium Elaichi, Milk, and Suji Rusk operating on the Britannia Toastea/Parle standard). Students configure multi-stage Bills of Materials (BOM) in Tally Prime Manufacturing: raw wheat flour (Maida), semolina (Suji), edible vegetable fat, sugar, yeast, and cardamom; pass manufacturing journals across the sponge dough fermentation, first oven baking (loaf creation), 18-hour cooling and staling conditioning, high-speed rotary multi-blade slicing (recording end-crust trimmings and crumb loss), and second toasting oven run (accounting for 30%+ total moisture evaporation loss); manage by-product rusk powder salvaging; allocate moisture-barrier metallized BOPP flow-wrap rolls and master corrugated shipper cartons; and compute landed unit cost per 200g, 400g, and family jumbo pack.",
       "industryCategory": "Manufacturing Industry",
-      "accountingCategory": "Electronics Assembly BOM & Warranty Reserves",
-      "difficultyLevel": "Executive",
+      "accountingCategory": "Twice-Baked Toast BOM, Moisture Loss & Flow-Wrap Costing",
+      "difficultyLevel": "Intermediate",
       "skillsCovered": [
-        "SMT Component Bill of Materials (Microcontrollers, SMD Diodes, Multi-layer PCBs)",
-        "Customs Basic Duty (BCD), Social Welfare Surcharge & IGST on Imported ICs",
-        "Surface Mount Assembly & Burn-In Testing Yield Fallout Accounting",
-        "Statutory 1-Year Warranty Replacement Provisioning (Ind AS 37)",
-        "Finished Appliance Unit Costing (Driver, Housing, Optic Lens & Box)"
+        "Multi-Stage Bakery Recipe BOM (Maida, Suji, Yeast, Sugar, Vegetable Shortening, Elaichi)",
+        "Two-Stage Tunnel Oven Baking & Thermal PNG/Diesel Fuel Heat Energy Absorption",
+        "Loaf Conditioning, Slicing Trim Scrap & Crumb Powder By-Product Recovery",
+        "Total Moisture Evaporation Loss & Baking Yield Shrinkage Accounting (30-34%)",
+        "Flow-Wrap Metallized BOPP Pillow Packs & Corrugated Master Carton Packaging",
+        "Per-Pack Landed SKU Costing (200g, 400g Family Pack) & Transit Breakage Reserves"
       ],
       "softwareUsed": [
         "Tally Prime Manufacturing",
-        "Customs Import Duty Calculator",
-        "Electronics Cost Workbook"
+        "Commercial Bakery Production ERP",
+        "Excel Rusk Batch Yield & Fuel Absorption Engine"
       ],
       "learningObjectives": [
-        "Capitalize customs clearance, port terminal charges, and inland freight into imported component costs",
-        "Manage high-volume small-value inventory with zero component shrinkage or ESD damage losses",
-        "Create prudent accounting provisions for expected customer warranty return claims"
+        "Configure multi-level compound BOMs in Tally Prime tracking bulk flour in Metric Tons, shortening in Kgs, cardamom in Grams, and finished crisp rusk in Master Cartons/Pouches",
+        "Accurately account for the two distinct baking stages where first bake forms soft loaves and second bake dehydrates slices to achieve crisp texture with 32% cumulative moisture loss",
+        "Calculate and value end-slice crust trimming wastage and broken toast pieces converted into bakery breadcrumb by-products",
+        "Determine exact cost absorption for tunnel oven thermal energy (PNG/LPG/Diesel) and primary moisture-barrier packaging film per individual SKU"
       ],
-      "businessScenario": "VoltCore Electronics imports microchips from Taiwan and manufactures 20,000 smart LED drivers and solar inverters monthly. Components are issued to high-speed pick-and-place robot lines where defective boards undergo manual rework.",
+      "businessScenario": "Simulating 'GoldenCrisp Bakeries & Premium Toast Ltd.', a mechanized plant producing 18 metric tons of packaged rusk daily across three automated continuous lines. Maida, Suji, and shortening are mixed into 500kg batches, fermented, divided, and baked into 1.2-meter long bread loaves in a 30-meter tunnel oven. Loaves are conditioned for 18 hours in humidity-controlled cooling tunnels before being sliced by 42-blade band slicers and sent through a second radiant toasting oven. Students manage accounting across high dough yield variances, loaf slicing scrap, oven gas fuel bills, brittle product transit breakage returns from distributors, and FMCG trade margin pricing.",
       "tasksToComplete": [
-        "Record Bill of Entry import purchase entry with customs duty capitalization into item land cost",
-        "Pass automated assembly production vouchers for 5,000 LED driver units",
-        "Account for rework soldering cost and scrapped PCB components",
-        "Compute 2.5% standard warranty liability provision under Ind AS 37 provisions"
+        "Set up multi-stage Recipe BOMs in Tally Prime for 3 flagship lines: Premium Elaichi Rusk (400g), Whole Wheat Suji Toast (250g), and Milk Butter Toast (200g)",
+        "Record Raw Material Requisition and Godown Transfer Vouchers for Maida, Suji, Refined Shortening, Baker's Yeast, Spices, and Metallized BOPP Rolls",
+        "Pass Multi-Stage Manufacturing Journals: Stage-1 Dough Kneading & First Bake, Loaf Conditioning, Slicing with 4.5% trim scrap, and Stage-2 Toasting with 22% secondary moisture loss",
+        "Apportion tunnel oven piped natural gas (PNG) fuel, cooling tunnel ventilation power, and factory hygiene/FSSAI testing overheads to individual production shifts",
+        "Compile Per-Pack Landed Cost Cards, compute distributor trade margins, and prepare Route Delivery Reconciliation Statements accounting for 1.8% transit breakage claims"
       ],
       "expectedOutcomes": [
-        "Landed cost calculation sheet for imported electronic components",
-        "Pick-and-place line assembly yield and scrap report",
-        "Product warranty reserve schedule and unit profitability summary"
+        "Daily Bakery Two-Stage Baking Mass Balance & Moisture Evaporation Reconciliation",
+        "Flour, Shortening, Sugar & Gas Fuel Consumption vs Standard Yield Register",
+        "Rusk Landed Unit Cost Cards (200g, 250g, 400g packs) with Primary & Master Carton Absorption",
+        "Bakery Distributor Price List, Breakage Replacement & Trade Scheme Profitability Report"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
       "media": [
         {
           "id": "med-mfg-9",
           "url": "/images/ylcc_tds_brochure_v2.png",
-          "name": "Electronics EMS Costing Framework",
+          "name": "Rusk Bakery Plant Flowchart & Process Costing",
           "type": "image/png",
           "size": "3.6 MB",
-          "caption": "SMT component import costing, pick-and-place line scrap, and warranty provisioning"
+          "caption": "Two-stage baking process, loaf slicing scrap, moisture dehydration, and flow-wrap packaging"
         }
       ],
       "resources": [
         {
           "id": "res-mfg-9-1",
-          "title": "Electronics Manufacturing & EMS Plant Costing Project Manual",
+          "title": "Rusk & Twice-Baked Toast Manufacturing SOP & Batch Costing Dossier",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
-          "fileSize": "67 KB",
+          "fileSize": "68 KB",
           "isDownloadable": true
         },
         {
           "id": "res-mfg-9-2",
-          "title": "Import Landed Cost & Warranty Provisioning Financial Model",
+          "title": "Bakery Moisture Loss, Slicing Yield & Oven Fuel Costing Model (Excel)",
           "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
           "fileType": "xlsx",
-          "fileSize": "152 KB",
+          "fileSize": "146 KB",
           "isDownloadable": true
         }
       ],
-      "practiceTimeHours": 28,
+      "practiceTimeHours": 26,
       "academicYear": "2025-26",
-      "facultyMentor": "CS Meenakshi Sharma",
+      "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
       "displayOrder": 9,

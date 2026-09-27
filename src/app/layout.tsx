@@ -3,13 +3,14 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'YLCC | Commerce, Accounting & Professional Skills Training Institute',
-    template: '%s | YLCC Commerce Institute',
+    default: 'YLCC | Business & Skill Accelerator',
+    template: '%s | YLCC Business & Skill Accelerator',
   },
   description:
-    'YLCC offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through 30 multi-business projects in Kanpur.',
+    'YLCC offers real-world practical training in Accounting Operations, GST, TDS/TCS, Banking CC Limits, Corporate Payroll, Cost Accounting, and Corporate Excel 365 through multi-business projects in Kanpur.',
   keywords: [
     'YLCC',
+    'Business & Skill Accelerator',
     'Commerce Institute',
     'Accounting Course Kanpur',
     'Practical GST Training',
@@ -22,14 +23,14 @@ export const metadata: Metadata = {
     'Accounts Manager Training',
     'Tally Prime Course',
   ],
-  authors: [{ name: 'YLCC Commerce & Accounting Institute' }],
+  authors: [{ name: 'YLCC Business & Skill Accelerator' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   openGraph: {
-    title: 'YLCC | Commerce & Professional Accounting Institute',
+    title: 'YLCC | Business & Skill Accelerator',
     description:
-      'Master live day-to-day accounting, taxation, banking documentation, and Advanced Excel through 30 multi-business practical projects.',
+      'Master live day-to-day accounting, taxation, banking documentation, and Advanced Excel through multi-business practical projects.',
     url: 'https://ylcccommerce.in',
-    siteName: 'YLCC Commerce Institute',
+    siteName: 'YLCC Business & Skill Accelerator',
     locale: 'en_IN',
     type: 'website',
   },

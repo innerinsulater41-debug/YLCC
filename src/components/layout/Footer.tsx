@@ -42,7 +42,7 @@ export default function Footer({ settings }: FooterProps) {
               </div>
               <div>
                 <h3 className="text-xl font-serif font-bold text-white tracking-tight">YLCC</h3>
-                <p className="text-xs text-[#C4AE96] font-medium">Commerce & Accounting Institute</p>
+                <p className="text-xs text-[#C4AE96] font-medium">Business & Skill Accelerator</p>
               </div>
             </div>
 
@@ -259,7 +259,7 @@ export default function Footer({ settings }: FooterProps) {
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A68A70] gap-4">
-          <p>© {currentYear} YLCC — Commerce & Accounting Institute. All rights reserved.</p>
+          <p>© {currentYear} YLCC — Business & Skill Accelerator. All rights reserved.</p>
 
           <div className="flex flex-wrap items-center gap-4 text-[11px]">
             <Link href="/privacy" className="hover:text-white transition-colors">

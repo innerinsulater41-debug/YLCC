@@ -129,8 +129,8 @@ export default function Header({ settings }: HeaderProps) {
                 <span className="text-2xl font-serif font-extrabold tracking-tight text-[#2A1810]">
                   YLCC
                 </span>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#8B5A2B] bg-[#EFE6DD] px-2 py-0.5 rounded border border-[#D8C5B2]">
-                  Commerce Institute
+                <span className="text-[8.5px] sm:text-[9.5px] font-bold uppercase tracking-wider text-[#8B5A2B] bg-[#EFE6DD] px-1.5 sm:px-2 py-0.5 rounded border border-[#D8C5B2] whitespace-nowrap">
+                  BUSINESS & SKILL ACCELERATOR
                 </span>
               </div>
             </div>

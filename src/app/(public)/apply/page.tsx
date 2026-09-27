@@ -3,9 +3,9 @@ import { db } from '@/lib/db';
 import AdmissionFormClient from '@/components/admission/AdmissionFormClient';
 
 export const metadata = {
-  title: 'Apply for Admission | YLCC Practical Commerce Institute',
+  title: 'Apply for Admission | YLCC Business & Skill Accelerator',
   description:
-    'Submit your admission application for practical accounting, GST, TDS/TCS, Banking CC Limits, or Corporate Excel 365 batches at YLCC Jaipur.',
+    'Submit your admission application for practical accounting, GST, TDS/TCS, Banking CC Limits, or Corporate Excel 365 batches at YLCC.',
 };
 
 export default async function ApplyPage() {

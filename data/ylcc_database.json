@@ -2257,65 +2257,78 @@
     },
     {
       "id": "proj-11",
-      "slug": "furniture-showroom-custom-product-costing",
-      "title": "Furniture Showroom & Modular Woodcraft Manufacturing & Costing",
-      "shortDescription": "Costing and accounting for a bespoke wooden and modular furniture showroom: raw timber and hardware requisition, Bill of Materials (BOM), carpenter piece-rate labour, cutting scrap salvage, and turnkey site installation.",
-      "detailedDescription": "Customized manufacturing involves unique material combinations and variable labour requirements for each customer order. In this project for \"Royal Oak Custom Woodcraft & Interior Furniture\", students manage accounts for customized furniture orders (executive desks, modular kitchens, sofa suites, conference tables). You will prepare unit Bill of Materials (BOM) for timber, plywood, laminates, and fittings, compute carpenter piece-rate labour, allocate machine depreciation, and bill site installation.",
+      "slug": "packaged-drinking-mineral-water-manufacturing-costing",
+      "title": "Packaged Mineral Water Manufacturing: Multi-Stage RO, PET Blow-Moulding & Per-Bottle Costing",
+      "shortDescription": "Complete factory accounting for an automated mineral water & packaged drinking water bottling plant: raw borewell extraction, multi-stage RO & ozonation, mineral dosing BOM, PET preform blow-moulding, BOPP labeling, LDPE shrink bundling, and per-bottle SKU costing (250ml, 500ml, 1L & 20L Jars).",
+      "detailedDescription": "In this high-volume beverage manufacturing simulation, students take charge of factory cost ledgers for 'AquaPure Beverages & Packaged Drinking Water Ltd.' (an authorized manufacturing and bottling plant operating on the Bisleri/Kinley standard). Students configure multi-stage Bills of Material (BOM) in Tally Prime Manufacturing, record raw borewell water extraction and RO reject water losses (30%), manage mineral salt dosing ledgers (magnesium sulfate, potassium bicarbonate), record PET preform issuance and high-pressure stretch blow-moulding electricity overheads, account for tamper-evident screw caps, printed BOPP roll-fed labels, and heat-shrink film bundles (12-pack and 24-pack), maintain returnable 20-Liter polycarbonate jar deposit registers, calculate exact landed production cost per bottle SKU (₹10, ₹20 and 20L jars), and audit statutory BIS (IS 14543) and FSSAI testing laboratory overheads.",
       "industryCategory": "Manufacturing Industry",
-      "accountingCategory": "Job-Order & Custom Woodcraft BOM",
+      "accountingCategory": "RO Purification, Blow Moulding & Per-Bottle Costing",
       "difficultyLevel": "Intermediate",
       "skillsCovered": [
-        "Bill of Materials (BOM) for Custom Woodcraft Orders",
-        "Raw Material Requisitions (Timber, Laminate, Hardware, Adhesives)",
-        "Carpenter Piece-Rate vs Daily Labour Allocation",
-        "Finished Goods Costing & Markup Pricing Strategy",
-        "Customer Stage Advances & Site Installation Billing"
+        "Multi-Stage Mineral Water Recipe BOM (Raw Water, Mineral Salts, PET Preforms)",
+        "Borewell Water Extraction, Multi-Stage RO Reject Loss & Ozonation Accounting",
+        "PET Preform Stretch Blow-Moulding & High-Pressure Compressor Power Absorption",
+        "Monoblock Bottling, Tamper-Evident Capping & BOPP Label Apportionment",
+        "Secondary LDPE Heat-Shrink Wrap Bundling & 20L Returnable Jar Deposit Register",
+        "Per-Bottle Landed SKU Costing (250ml, 500ml, 1L, 2L, 20L Jars) & Freight Margins"
       ],
       "softwareUsed": [
-        "Tally Prime BOM Module",
-        "Furniture Costing & Quotation Excel Engine"
+        "Tally Prime Manufacturing",
+        "Mineral Water Bottling ERP Simulator",
+        "Excel Per-Bottle SKU Costing Engine"
       ],
       "learningObjectives": [
-        "Build accurate BOM cost sheets for customized furniture items to avoid quote underpricing",
-        "Track raw material scrap, cutting wastage, and salvage timber valuation",
-        "Manage customer advance payments and milestone billing for interior turnkey projects"
+        "Configure compound multi-stage Bills of Materials (BOM) in Tally Prime tracking input water in Liters/KLD, chemicals in Grams, preforms in Pieces, and finished output in Cases/Shrink Packs",
+        "Account for normal Reverse Osmosis (RO) reject water loss (28% - 32%) and allocate sand/carbon filter backwash water treatment costs",
+        "Calculate packaging material cost absorption where PET preforms, caps, BOPP labels, and LDPE shrink film constitute 70%+ of total finished goods prime cost",
+        "Structure returnable container accounting for 20-Liter polycarbonate water dispensers (refundable security deposits, crate/jar breakage, sanitization caustic washes)"
       ],
-      "businessScenario": "Royal Oak manufactures bespoke wooden interiors for residential villas and corporate offices. Each order requires customized dimensions, Italian hardware, and multi-coat PU polishing. An inaccurate cost estimate can turn a profitable project into a heavy loss.",
+      "businessScenario": "Simulating 'AquaPure Beverages & Packaged Drinking Water Ltd.', a high-speed automated bottling and mineral water packaging plant producing 80,000 bottles (1-Liter and 500ml) plus 3,500 twenty-liter reusable jars daily across two 10-hour shifts. The plant extracts groundwater under Central Ground Water Authority (CGWA) meter limits, treats water through dual media sand filters, 5-stage RO membranes, remineralization dosing tanks, UV sterilizers, and ozone contact towers. Virgin PET preforms are blow-moulded on 4-cavity rotary blowers into 1L bottles, conveyed into a monoblock rinser-filler-capper running at 150 BPM, labeled with wrap-around BOPP film, and bundled into 12-pack shrink cases. Students manage daily production accounting: high power consumption from 30-bar high-pressure air compressors, preform drop and burst rejections, shrink film heating tunnel electricity, and distributor route logistics margins.",
       "tasksToComplete": [
-        "Create Bill of Materials in Tally Prime for 5 distinct furniture models",
-        "Record material issuance from wood godown to production workshop floor",
-        "Compute total unit manufacturing cost including labour and factory rent allocation",
-        "Generate final GST invoice including site delivery and installation charges"
+        "Set up multi-level Recipe BOM in Tally Prime for 3 flagship water SKUs: 1-Liter Packaged Drinking Water (12-pack bundle), 500ml Travel Pack (24-pack bundle), and 20-Liter Commercial Office Dispenser Jar",
+        "Record Raw Material Requisition and Godown Transfer Vouchers for PET preforms, tamper-proof caps, mineral salts, and LDPE shrink rolls from Central Warehouse to Bottling Bay",
+        "Pass Multi-Stage Manufacturing Journals for Raw Water Pumping, RO Purification & Reject Effluent (30%), Ozonation Dosing, and Stretch Blow Moulding with 0.8% preform blow defect scrap",
+        "Apportion rotary bottle blower electric power, high-pressure air compressor loads, and BIS/FSSAI laboratory testing overheads to individual production runs",
+        "Compile the final Per-Bottle Unit Cost Sheet, compute wholesale dealer margins, and prepare Route Delivery Reconciliation Statements for distributor trucks"
       ],
       "expectedOutcomes": [
-        "Standardized job-cost card for customized furniture manufacturing",
-        "Timber and hardware stock consumption register with wastage percentages",
-        "Order profitability comparison report showing quoted price vs actual cost"
+        "Daily Water Treatment Mass Balance & RO Yield Reconciliation Statement",
+        "Packaging Material (Preforms, Caps, Labels, Shrink Film) Consumption Register",
+        "Per-Bottle Landed Cost Model (250ml, 500ml, 1L & 20L Jars) with Energy Absorption",
+        "Returnable 20-Liter Jar Customer Security Deposit & Breakage Ledger Audit"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
       "media": [
         {
           "id": "med-11-1",
           "url": "/images/ylcc_tds_brochure_v2.png",
-          "name": "Furniture Cost Sheet",
+          "name": "Mineral Water Bottling Plant BOM & Flowchart",
           "type": "image/png",
           "size": "3.8 MB",
-          "caption": "BOM configuration, timber consumption, and custom furniture pricing model"
+          "caption": "RO purification, mineral dosing, PET stretch blow-moulding, and bottling cost structure"
         }
       ],
       "resources": [
         {
           "id": "res-11-1",
-          "title": "Furniture Custom Manufacturing Costing Project Dossier",
+          "title": "Packaged Mineral Water Bottling Plant Manufacturing & Costing SOP Guide",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
-          "fileSize": "63 KB",
+          "fileSize": "66 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-11-2",
+          "title": "Mineral Water Per-Bottle SKU Costing & Shrink Bundling Calculator (Excel)",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "xlsx",
+          "fileSize": "142 KB",
           "isDownloadable": true
         }
       ],
       "practiceTimeHours": 24,
       "academicYear": "2025-26",
-      "facultyMentor": "Rajesh Soni",
+      "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": false,
       "status": "published",
       "displayOrder": 6,

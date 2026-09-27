@@ -198,6 +198,10 @@ export const db = {
     if (slug === 'plastic-polymers-injection-moulding-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-5') || null;
     }
+    // Support legacy slug for Furniture / Mineral Water project
+    if (slug === 'furniture-showroom-custom-product-costing') {
+      return data.projects.find((p) => p.id === 'proj-11') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

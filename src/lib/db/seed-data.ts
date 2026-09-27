@@ -2593,16 +2593,16 @@ export const initialProjects: Project[] = [
   {
     "id": "proj-mfg-10",
     "slug": "event-management-production-stage-fabrication-costing",
-    "title": "Event Infrastructure & Production: Stage Fabrication, German Hanger Setup & Turnkey Event Costing",
+    "title": "Event Management: Stage Fabrication, German Hanger Setup & Turnkey Event Costing",
     "shortDescription": "Turnkey event management & stage production accounting: aluminum trussing & German hanger dome setup, CNC stage backdrop fabrication, AV & LED wall power logistics, artist TDS compliance, and multi-day mega event job costing.",
-    "detailedDescription": "In this dynamic experiential event production simulation, students take charge of commercial finance and cost ledgers for 'GrandSpectra Events & Stage Infrastructure Ltd.' (a high-capacity turnkey event management and set production company executing luxury destination weddings, corporate summits, and music festivals). Students configure multi-stage Bills of Materials (BOM) in Tally Prime: modular aluminum trussing grids, fire-retardant German hanger tents, timber/acrylic stage riser fabrication, and vinyl backdrops; track diesel generator power fuel consumption and AV equipment wear amortization; record artist/performer bookings with statutory TDS under Sections 194C and 194J; manage music copyright licenses (IPRS/PPL) and municipal venue permits; control perishable floral decor write-offs and reusable prop rental ledgers; and generate comprehensive Event Job Cost Cards with client milestone advance billing.",
+    "detailedDescription": "In this dynamic experiential event management simulation, students take charge of commercial finance and cost ledgers for 'GrandSpectra Event Management & Stage Production Ltd.' (a high-capacity turnkey event management and set production company executing luxury destination weddings, corporate summits, and music festivals). Students configure multi-stage Bills of Materials (BOM) in Tally Prime: modular aluminum trussing grids, fire-retardant German hanger tents, timber/acrylic stage riser fabrication, and vinyl backdrops; track diesel generator power fuel consumption and AV equipment wear amortization; record artist/performer bookings with statutory TDS under Sections 194C and 194J; manage music copyright licenses (IPRS/PPL) and municipal venue permits; control perishable floral decor write-offs and reusable prop rental ledgers; and generate comprehensive Event Job Cost Cards with client milestone advance billing.",
     "industryCategory": "Manufacturing Industry",
-    "accountingCategory": "Event Stage Fabrication, AV Infrastructure & Job Costing",
+    "accountingCategory": "Event Management, Stage Fabrication & Job Costing",
     "difficultyLevel": "Advanced",
     "skillsCovered": [
       "Multi-Stage Event Setup BOM (Trussing, Stage Risers, Acrylic Backdrops, Drapes)",
       "German Hanger Dome Tent Erection, Flooring & Carpet Laying Costing (Sq.Ft based)",
-      "AV Production Logistics, Silent DG Set Diesel Fuel & Equipment Wear Amortization",
+      "AV & Event Logistics, Silent DG Set Diesel Fuel & Equipment Wear Amortization",
       "Statutory Event Compliance: TDS u/s 194C & 194J, IPRS/PPL Music Copyright & GST 18%",
       "Perishable Floral Decor Write-Offs vs Reusable Thematic Prop Inventory Tracking",
       "Turnkey Event Job Cost Sheet, Client Milestone Advances & Event P&L Reconciliation"
@@ -2618,7 +2618,7 @@ export const initialProjects: Project[] = [
       "Differentiate between 100% consumable event expenses (fresh flowers, custom print flex, fireworks) and reusable assets (sound consoles, LED panels, furniture lounges)",
       "Calculate gross margin contribution per event and prepare client reconciliation statements reconciling advance payments against final billing"
     ],
-    "businessScenario": "Simulating 'GrandSpectra Events & Stage Infrastructure Ltd.', contracted to execute a 3-day high-profile corporate product launch and global summit with a ₹1.85 Crore turnkey budget. Scope of work encompasses erecting a 15,000 sq.ft air-conditioned German hanger tent, constructing a 60-foot curved 4K LED backdrop stage, rigging a 40-ton aluminum box truss system, coordinating 12 international tech keynote speakers and celebrity entertainers, and providing 350 KVA synchronized DG power. Students manage real-time cost accounting: last-minute vendor price escalations, local authority permit charges, artist rider TDS deductions, on-site generator fuel logs, and post-event inventory retrieval audits.",
+    "businessScenario": "Simulating 'GrandSpectra Event Management & Stage Production Ltd.', contracted to execute a 3-day high-profile corporate product launch and global summit with a ₹1.85 Crore turnkey budget. Scope of work encompasses erecting a 15,000 sq.ft air-conditioned German hanger tent, constructing a 60-foot curved 4K LED backdrop stage, rigging a 40-ton aluminum box truss system, coordinating 12 international tech keynote speakers and celebrity entertainers, and providing 350 KVA synchronized DG power. Students manage real-time cost accounting: last-minute vendor price escalations, local authority permit charges, artist rider TDS deductions, on-site generator fuel logs, and post-event inventory retrieval audits.",
     "tasksToComplete": [
       "Set up Project Job Costing in Tally Prime for a 3-day Mega Event: Main Stage Fabrication, Exhibition Hanger Structure, and Gala Dinner Lounge",
       "Record stores issues for fabrication materials: MS hollow pipes, commercial plywood, acrylic sheets, LED strip lights, and carpet rolls",
@@ -2628,7 +2628,7 @@ export const initialProjects: Project[] = [
     ],
     "expectedOutcomes": [
       "Turnkey Event Master Budget vs Actual Cost Variance Report",
-      "Event Infrastructure Fabrication & Sub-Contractor Consumption Register",
+      "Event Management Production & Sub-Contractor Consumption Register",
       "Statutory Event Compliance Schedule (TDS 194C/194J, IPRS/PPL Licensing & GST)",
       "Post-Event Asset Retrieval & Damaged Prop Reconciliation Audit"
     ],
@@ -2637,7 +2637,7 @@ export const initialProjects: Project[] = [
       {
         "id": "med-mfg-10",
         "url": "/images/ylcc_tds_brochure_slate_copper.png",
-        "name": "Event Infrastructure & Stage Production Costing Framework",
+        "name": "Event Management & Stage Production Costing Framework",
         "type": "image/png",
         "size": "3.8 MB",
         "caption": "Stage fabrication, German hanger dome, AV infrastructure, and turnkey event costing"
@@ -2646,7 +2646,7 @@ export const initialProjects: Project[] = [
     "resources": [
       {
         "id": "res-mfg-10-1",
-        "title": "Turnkey Event Infrastructure & Production Costing SOP Manual",
+        "title": "Turnkey Event Management & Production Costing SOP Manual",
         "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
         "fileType": "pdf",
         "fileSize": "72 KB",

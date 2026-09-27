@@ -173,7 +173,13 @@ export const db = {
   },
   getProjectBySlug: async (slug: string): Promise<Project | null> => {
     const data = ensureDatabase();
-    return data.projects.find((p) => p.slug === slug) || null;
+    const project = data.projects.find((p) => p.slug === slug);
+    if (project) return project;
+    // Support legacy slug for FMCG project
+    if (slug === 'fmcg-food-processing-manufacturing-costing') {
+      return data.projects.find((p) => p.id === 'proj-mfg-1') || null;
+    }
+    return null;
   },
   saveProject: async (project: Project): Promise<Project> => {
     const data = ensureDatabase();

@@ -1872,68 +1872,72 @@ export const initialPrograms: Program[] = [
 export const initialProjects: Project[] = [
   {
     "id": "proj-mfg-1",
-    "slug": "fmcg-food-processing-manufacturing-costing",
-    "title": "FMCG Food Processing Plant: Multi-Stage BOM & Batch Costing",
-    "shortDescription": "Complete factory accounting for a high-volume biscuit & confectionery plant: multi-tier BOM for flour, edible oils & sweeteners, baking heat shrinkage loss, packaging laminate consumption, and finished batch unit costing.",
-    "detailedDescription": "In this industrial training project, students manage production ledgers for \"Annapurna Food Products Ltd.\", a large-scale biscuit and confectionery manufacturer. You will configure multi-level Bill of Materials (BOM) in Tally Prime, record raw ingredient issuance from central silos, pass production vouchers with baking heat loss (evaporation loss), account for corrugated box and BOPP printed wrapper consumption, calculate unit cost per carton, and prepare Cost of Goods Manufactured (COGM) statements.",
+    "slug": "britannia-biscuits-manufacturing-costing",
+    "title": "Britannia Biscuits Manufacturing: Multi-Stage BOM & Batch Costing",
+    "shortDescription": "Complete factory accounting for a Britannia Biscuits contract manufacturing plant: multi-tier recipe BOM for flour, edible oils & sweeteners, continuous tunnel oven moisture loss, printed BOPP flexible packaging, and finished batch carton costing.",
+    "detailedDescription": "In this industrial training simulation, students take on the role of Factory Accounts Manager for an automated contract manufacturing plant dedicated to Britannia Biscuits (producing flagship lines like Good Day Butter, Marie Gold, and Bourbon Cream). Students configure multi-stage Bill of Materials (BOM) in Tally Prime Manufacturing, record bulk raw material issuance (refined wheat flour/maida, specialty vegetable fats, invert sugar syrup, cocoa solids, and leavening agents) from central silos to high-speed dough mixers, pass multi-stage Production Journals accounting for 2.85% oven baking heat evaporation loss and rejected biscuit dough recycle scrap, track tertiary corrugated outer cartons (CFB) and BOPP laminate roll consumption, calculate exact landed unit cost per consumer SKU and shipper carton, and finalize monthly Cost of Goods Manufactured (COGM) and stock yield audit statements.",
     "industryCategory": "Manufacturing Industry",
-    "accountingCategory": "Recipe BOM & Batch Stage Costing",
+    "accountingCategory": "Biscuit Recipe BOM & Batch Costing",
     "difficultyLevel": "Intermediate",
     "skillsCovered": [
-      "Multi-Level Bill of Materials (BOM) Configuration",
-      "Raw Material Requisition & Godown Transfer Vouchers",
-      "Baking Heat Evaporation Loss & Burning Scrap Accounting",
-      "Secondary Packaging & Corrugated Carton Apportionment",
-      "Cost of Goods Manufactured (COGM) & Per-Packet Unit Costing"
+      "Multi-Level Biscuit Recipe BOM (Good Day, Marie Gold)",
+      "Raw Material Requisition & Bulk Silo Transfers",
+      "Baking Oven Moisture Loss & Dough Scrap Accounting",
+      "BOPP Film Wrappers & Corrugated Shipper Carton Apportionment",
+      "Finished Goods COGM & Per-Packet SKU Batch Costing",
+      "Britannia Principal Contract Conversion & Yield Reconciliation"
     ],
     "softwareUsed": [
       "Tally Prime Manufacturing",
-      "Excel Batch Costing Engine",
-      "Food ERP Simulator"
+      "Excel Biscuit Batch Costing Engine",
+      "Factory ERP Production Simulator"
     ],
     "learningObjectives": [
-      "Configure compound units (KG, Quintal, Gram, Carton) and automated production voucher types in Tally Prime",
-      "Differentiate between normal baking moisture loss and abnormal burnt dough wastage",
-      "Derive final selling price and distributor trade margin based on net manufacturing cost"
+      "Configure compound units (Metric Ton, Quintal, KG, Grams, Packets, Shipper Cartons) and automated Manufacturing Journal voucher types in Tally Prime",
+      "Calculate and distinguish between normal baking oven moisture loss (2.5% - 3.2%) and abnormal dough burning or packaging conveyor waste",
+      "Set up recipe Bill of Materials (BOM) with multiple stages: Dough Mixing, Tunnel Oven Baking, Cream Sandwiching, and Multi-pack Flow-wrap Packing",
+      "Derive net cost per consumer biscuit packet (₹5, ₹10, ₹30 SKUs) and calculate factory conversion charges for principal company settlement"
     ],
-    "businessScenario": "Annapurna Food Products produces 50,000 biscuit packets daily across 3 shifts. The plant uses maida, sugar, palm oil, leavening agents, and 3-ply corrugated cartons. Fluctuation in palm oil prices requires monthly revision of standard vs actual recipe costs.",
+    "businessScenario": "Simulating a high-speed Britannia Biscuits automated manufacturing and contract packaging unit producing 1,20,000 consumer packets per day across three shifts. The factory processes bulk raw ingredients including Maida (wheat flour), refined palm oil, dairy butter, invert sugar, milk solids, and food-grade leavening agents. Students manage production accounting under real-world factory volatility: daily ingredient price shifts, moisture evaporation during high-temperature continuous tunnel oven baking, scrap dough recycling back to the mixer, secondary BOPP metallic foil wrap consumption, and bulk 5-ply corrugated shipper carton packaging for national distribution.",
     "tasksToComplete": [
-      "Set up BOM for 3 biscuit variants (Glucose, Marie, Cream Sandwich) including raw materials and packaging",
-      "Pass monthly Production Vouchers in Tally recording raw material consumption and finished output",
-      "Record 2.8% standard moisture evaporation loss and scrap recovery accounting",
-      "Compute final factory cost per carton and reconcile with factory trial balance"
+      "Configure multi-level BOM in Tally Prime for 3 flagship Britannia biscuit lines: Good Day Rich Butter Cookies (60g), Marie Gold Tea Biscuits (120g), and Treat Bourbon Chocolate Cream (100g)",
+      "Record Raw Material Requisition and Godown Transfer Vouchers from Central Raw Material Silos and Liquid Oil Tanks to the Shop Floor Mixing Section",
+      "Pass Manufacturing Production Journals in Tally recording raw batch dough inputs, baking oven moisture evaporation loss (standard 2.85%), and broken biscuit scrap rework",
+      "Apportion packaging overheads including primary BOPP printed flexible laminate rolls, tear tape, and outer corrugated master cartons (72 packets per shipper box)",
+      "Generate Batch Cost Sheet, determine factory conversion margin per MT, and reconcile production yield with plant floor logbooks and factory trial balance"
     ],
     "expectedOutcomes": [
-      "Production and stock consumption register with yield percentage reports",
-      "Standard vs actual batch variance analysis sheet",
-      "Distributor pricing schedule with gross margin thresholds"
+      "Batch-wise Recipe Production & Stock Consumption Register in Tally Prime",
+      "Standard vs. Actual Baking Yield & Moisture Loss Variance Analysis Model",
+      "Unit Cost Sheet per Packet (₹5 & ₹10 SKUs) & Master Carton Reconciliation",
+      "Contract Manufacturing Conversion Fee & GST Invoice Summary for Principal"
     ],
     "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
     "media": [
       {
         "id": "med-mfg-1",
         "url": "/images/ylcc_tds_brochure_v2.png",
-        "name": "Food Manufacturing BOM Architecture",
+        "name": "Britannia Biscuit Manufacturing BOM & Costing Flowchart",
         "type": "image/png",
         "size": "3.5 MB",
-        "caption": "Multi-level recipe BOM, baking loss accounting, and carton unit costing"
+        "caption": "Multi-level biscuit recipe BOM, tunnel oven baking loss, and packaging unit costing"
       }
     ],
     "resources": [
       {
         "id": "res-mfg-1-1",
-        "title": "FMCG Food Processing Plant Production Manual & Batch Cost Sheets",
+        "title": "Britannia Biscuits Factory Production SOP & Multi-Stage Batch Cost Sheets",
         "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
         "fileType": "pdf",
-        "fileSize": "65 KB",
+        "fileSize": "68 KB",
         "isDownloadable": true
       },
       {
         "id": "res-mfg-1-2",
-        "title": "Baking Evaporation Loss & Recipe Variance Calculation Model",
+        "title": "Biscuit Baking Moisture Loss & Recipe Material Variance Model (Excel)",
         "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
         "fileType": "xlsx",
-        "fileSize": "142 KB",
+        "fileSize": "148 KB",
         "isDownloadable": true
       }
     ],

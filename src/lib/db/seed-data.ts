@@ -2032,68 +2032,72 @@ export const initialProjects: Project[] = [
   },
   {
     "id": "proj-mfg-3",
-    "slug": "steel-fabrication-rolling-mill-costing",
-    "title": "Steel Fabrication & Rolling Mill: Ingot Conversion & Job-Work Costing",
-    "shortDescription": "Heavy industrial costing for an induction furnace & structural steel fabrication plant: MS scrap & sponge iron melting, heavy electricity tariff allocation, Section 143 job-work challans, and mill burning scale scrap accounting.",
-    "detailedDescription": "Steel manufacturing is a capital and power-intensive industry where yield percentages and burning losses dictate profitability. In this project for \"Kalinga Steel & Structural Fabtech\", students handle production accounting for induction furnace melting, continuous casting of billets, hot re-rolling into TMT bars and MS angles, and customized pre-engineered building (PEB) structural fabrication. You will calculate high-tension (HT) electricity tariff per metric ton, account for mill scale burning loss (3.5%), track job-work under Section 143, and reconcile scrap recovery.",
+    "slug": "milk-manufacturing-dairy-processing-costing",
+    "title": "Milk Manufacturing & Dairy Processing: Multi-Stage FAT/SNF & By-Product Costing",
+    "shortDescription": "End-to-end industrial costing for an automated milk processing & dairy plant: raw milk tanker reception, two-axis FAT & SNF pricing, HTST pasteurization, standardized pouch packaging (FCM/Toned), and joint-product cream/ghee & SMP costing.",
+    "detailedDescription": "In this executive-level industrial accounting simulation, students take charge of factory cost ledgers for 'Saraswati Cooperative Dairy & Milk Processing Union' (operating a 2,00,000 Liters/Day automated dairy plant). Students manage raw milk procurement from village collection centers and bulk milk chilling units (BMC), record weighbridge and tanker dipstick reconciliation, pass multi-stage Dairy Production Journals based on two-axis FAT% and SNF% standard formulas, allocate pasteurization energy costs (steam boiler and glycol refrigeration chillers), account for joint-product separation into dairy cream, table butter, ghee, and Skimmed Milk Powder (SMP) using the Net Realizable Value (NRV) method, record high-speed FFS co-extruded poly film pouch packaging and returnable plastic crate registers, and calculate landed cost per liter across Full Cream Milk (FCM), Toned Milk, and Double Toned SKUs for cold-chain route distribution.",
     "industryCategory": "Manufacturing Industry",
-    "accountingCategory": "Heavy Fabrication & Power Cost Absorption",
+    "accountingCategory": "Two-Axis FAT/SNF & Joint-Product Process Costing",
     "difficultyLevel": "Executive",
     "skillsCovered": [
-      "Induction Furnace Scrap & Sponge Iron Melting Ratios",
-      "High-Tension (HT) Electricity & Industrial Fuel Cost Absorption",
-      "Mill Scale Burning Loss (3.5%) & Scrap Recovery Accounting",
-      "Job-Work Inward/Outward Challans under Section 143",
-      "TMT Bar & Structural MS Angles Metric Ton Unit Costing"
+      "Two-Axis Raw Milk Procurement Pricing (FAT % & SNF % Formulas)",
+      "Multi-Stage Milk Pasteurization & Standardization Recipe BOM",
+      "Joint & By-Product Costing (Dairy Cream, White Butter, Ghee & SMP)",
+      "FFS Poly Film Pouch Packaging & Returnable Plastic Crate Accounting",
+      "Cold-Chain Reefer Route Logistics & Chilling Transit Loss Control",
+      "Per-Liter Consumer SKU Costing (Full Cream, Toned, Double Toned)"
     ],
     "softwareUsed": [
       "Tally Prime Manufacturing",
-      "Steel Melting Heat Sheet Model",
-      "Excel Cost Center"
+      "Dairy ERP Milk Procurement Engine",
+      "Excel FAT-SNF Matrix Cost Simulator"
     ],
     "learningObjectives": [
-      "Allocate monthly electricity bills exceeding ₹40 Lakhs across induction furnace and rolling mill stages",
-      "Account for burning losses and by-products like iron slag and mill scale",
-      "Prepare tender cost estimates for heavy structural pre-engineered building (PEB) projects"
+      "Master two-axis milk procurement settlement formulas calculating payable rates based on variable Fat % (3.5% - 8.5%) and SNF % (8.0% - 9.5%) with automated chilling allowances and acidity penalties",
+      "Configure compound multi-stage Bills of Material (BOM) in Tally Prime for Raw Milk separation, standardization into Full Cream (6% Fat), Toned (3% Fat), and Double Toned (1.5% Fat) variants",
+      "Apply Joint and By-Product Costing (NRV & Physical Measure Methods) to apportion joint processing expenses across pasteurized milk pouches, bulk cream, ghee, and Skimmed Milk Powder (SMP)",
+      "Reconcile daily mass balance (liquid milk in Liters vs finished packaged pouches) and control plant processing shrinkage, separator desludging loss, and FFS packaging pinhole bursts"
     ],
-    "businessScenario": "Kalinga Steel processes 1,200 metric tons of steel monthly. Raw material includes sponge iron, heavy melting scrap, and ferro-alloys. The plant also takes outside job-work for rolling third-party billets into 12mm TMT bars on conversion charges.",
+    "businessScenario": "Simulating 'Saraswati Cooperative Dairy Union', an automated milk processing and dairy manufacturing plant processing 2,00,000 liters of raw cow and buffalo milk daily across two collection shifts. Raw milk arrives via insulated road tankers from 42 village bulk milk cooling centers (BMC). The plant standardizes raw milk into three retail lines (Full Cream Gold, Standard Toned, and Double Toned Diet), packages them into 500ml and 1000ml pouches using automated vertical form-fill-seal (FFS) machines, and diverts excess dairy cream into high-margin butter and ghee manufacturing. Students manage complex process accounting: fluctuating seasonal procurement rates, transit chilling evaporation losses, heavy boiler steam and ammonia refrigeration power absorption, returnable crate deposit tracking, and morning retail route reconciliation.",
     "tasksToComplete": [
-      "Prepare Heat Sheets recording furnace charge mix, ferro-alloy additions, and liquid steel yield",
-      "Compute electricity cost per MT of billet produced using time-of-day (TOD) tariff slabs",
-      "Record outward Section 143 challans and job-work conversion billing with 18% GST",
-      "Calculate finished TMT bar cost and reconcile stock registers with weighing scale slips"
+      "Set up Dairy Chart of Accounts in Tally Prime with multi-units (Liters, Kilograms, Fat-Kg, SNF-Kg, Crates, Metric Tons) and create standardized production voucher types",
+      "Prepare Milk Procurement Sheets recording tanker arrival, gross/tare weights, lab quality test slips (Fat %, SNF %, MBRT, CLR), and compute vendor billing using the 2-axis pricing grid",
+      "Pass Multi-Stage Manufacturing Journals for Raw Milk Reception, Centrifugal Separation into Skim Milk and Cream, and HTST Pasteurization standardization",
+      "Apportion joint plant overheads (boiler biomass fuel, chilling refrigeration power, Clean-In-Place chemicals) between liquid milk pouches, Ghee tins, and SMP bags",
+      "Record packaging material consumption (co-extruded LDPE pouch rolls, crate washing detergents), track 24-pouch plastic delivery crate returns, and compile the final Per-Liter Unit Cost Sheet"
     ],
     "expectedOutcomes": [
-      "Heat-wise production costing report and yield summary",
-      "Electricity and fuel power cost absorption analysis",
-      "Job-work conversion ledger with zero pending reconciliation items"
+      "Daily Milk Mass Balance & Fat/SNF Yield Reconciliation Statement",
+      "Two-Axis Raw Milk Procurement Billing & BMC Vendor Ledger Audit",
+      "Joint-Product & By-Product Net Realizable Value (NRV) Allocation Sheet",
+      "Finished Milk Pouches (FCM, Toned, Double Toned) Landed Cost & Route Profitability Report"
     ],
     "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
     "media": [
       {
         "id": "med-mfg-3",
         "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
-        "name": "Steel Mill Heat Costing Workflow",
+        "name": "Dairy Processing & Milk Manufacturing Plant Flowchart",
         "type": "image/png",
         "size": "3.6 MB",
-        "caption": "Melting heat charges, power allocation, and structural fabrication stage costing"
+        "caption": "Milk reception, FAT/SNF standardization, pasteurization, and joint-product costing architecture"
       }
     ],
     "resources": [
       {
         "id": "res-mfg-3-1",
-        "title": "Steel Rolling Mill & Heavy Engineering Fabrication Project Guide",
+        "title": "Milk Manufacturing & Dairy Processing Plant Standard Operating Costing Manual",
         "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
         "fileType": "pdf",
-        "fileSize": "72 KB",
+        "fileSize": "76 KB",
         "isDownloadable": true
       },
       {
         "id": "res-mfg-3-2",
-        "title": "Furnace Heat Yield & High-Tension Power Cost Apportionment Model",
+        "title": "Two-Axis Raw Milk FAT-SNF Procurement Pricing & Yield Reconciliation Model",
         "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
         "fileType": "xlsx",
-        "fileSize": "160 KB",
+        "fileSize": "165 KB",
         "isDownloadable": true
       }
     ],

@@ -183,6 +183,10 @@ export const db = {
     if (slug === 'textile-garment-manufacturing-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-2') || null;
     }
+    // Support legacy slug for Steel project
+    if (slug === 'steel-fabrication-rolling-mill-costing') {
+      return data.projects.find((p) => p.id === 'proj-mfg-3') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

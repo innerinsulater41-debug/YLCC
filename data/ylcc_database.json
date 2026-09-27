@@ -2417,68 +2417,72 @@
     },
     {
       "id": "proj-mfg-8",
-      "slug": "paints-chemical-resins-manufacturing-costing",
-      "title": "Paints & Chemical Resins: Dispersion Yield & Packaging Costing",
-      "shortDescription": "Specialty chemical and decorative coatings factory accounting: liquid solvent, pigment & alkyd resin dispersion, high-speed bead mill yield variance, tin/drum filling losses, hazardous material compliance, and per-liter standard costing.",
-      "detailedDescription": "Paints and chemical coatings manufacturing involves batch reactions where volatile solvents evaporate during high-speed dispersion and sand milling. In this project for \"Apex Coatings & Industrial Polymers\", students manage the accounts of an industrial resin and decorative paint manufacturing unit. You will record formulations of alkyd resins, titanium dioxide pigments, and mineral solvents, compute batch dispersion yields, account for tin and HDPE drum filling line losses, track hazardous waste disposal compliance, and establish standard vs actual cost per liter.",
+      "slug": "namkeen-snacks-food-processing-costing",
+      "title": "Namkeen & Traditional Snacks: Multi-Stage Frying, Oil Absorption & Pouch Costing",
+      "shortDescription": "High-volume Indian snacks & namkeen factory accounting: Besan & pulse flour extrusion, continuous deep-frying oil absorption (25%), nitrogen-flushed pouch packaging, ₹5/₹10 price-point grammage shrinkage, and distributor batch costing.",
+      "detailedDescription": "In this realistic FMCG snacks manufacturing simulation, students take charge of factory cost ledgers for 'HaldiBhog Snacks & Traditional Namkeen Ltd.' (a high-speed automated namkeen plant producing Bikaneri Bhujia, Aloo Bhujia, Khatta Meetha Mixture, and Ratlami Sev operating on the Haldiram/Bikaji standard). Students configure multi-stage Bills of Materials (BOM) in Tally Prime Manufacturing: raw gram flour (Besan), moth dal, spices, and refined palmolein oil; track continuous fryer deep-frying oil absorption ledgers (24-28% oil retention); account for extrusion moisture evaporation losses (18%); record tumbling drum spice dusting; allocate nitrogen-flushed printed metallized BOPP pouch rolls and corrugated outer cartons; structure price-point packet grammage shrinkage (₹5 and ₹10 SKUs); and compute batch-wise per-kg and per-pouch landed manufacturing cost.",
       "industryCategory": "Manufacturing Industry",
-      "accountingCategory": "Chemical Batch Yield & Formulation Costing",
+      "accountingCategory": "Snack Extrusion, Oil Absorption & Pouch Costing",
       "difficultyLevel": "Intermediate",
       "skillsCovered": [
-        "Liquid Chemical Formulation BOM (Resins, Pigments, Solvents, Additives)",
-        "High-Speed Dispersion & Sand Mill Evaporation Yield Variances",
-        "Automated Filling Line Tin & Pail Container Packaging Consumption",
-        "Pollution Control Board & Effluent Treatment CapEx Accounting",
-        "Standard vs Actual Cost Variance per Liter & Bulk Kilogram"
+        "Multi-Stage Namkeen Recipe BOM (Besan, Moth Dal, Edible Oil, Spices & Masala Blends)",
+        "Continuous Fryer Oil Absorption & Moisture Evaporation Loss Accounting (22-28%)",
+        "Rotary Tumbler Dry Seasoning Dosing & Flavor Adhesion Wastage Tracking",
+        "Form-Fill-Seal (FFS) Nitrogen-Flushed Multi-Layer Pouch & Carton Costing",
+        "Price-Point Grammage Cost Adjustment (₹5, ₹10, ₹20 SKUs vs Commodity Inflation)",
+        "Per-KG Bulk vs Landed Per-Pouch FMCG Distributor Margin Structure"
       ],
       "softwareUsed": [
         "Tally Prime Manufacturing",
-        "Chemical Batch Yield Engine",
-        "Excel 365 Variance Model"
+        "FMCG Namkeen Batch Costing ERP",
+        "Excel Snack SKU Grammage & Margin Model"
       ],
       "learningObjectives": [
-        "Handle density and specific gravity conversions between weight (KG) and volume (Liters)",
-        "Calculate evaporation solvent loss percentages during high-temperature resin cooking",
-        "Allocate packaging expenses across 1-liter tins, 4-liter cans, and 20-liter industrial pails"
+        "Configure compound multi-stage Bills of Materials (BOM) in Tally Prime tracking pulses/flours in Kgs, frying oil in Liters/MT, seasoning in Grams, and finished output in Cases/Pouches",
+        "Account for deep-frying oil absorption dynamics where frying oil accounts for 30%+ of finished namkeen weight and prime product cost",
+        "Manage packaging roll consumption in square meters and square centimeters for multi-track vertical form-fill-seal (VFFS) machines with nitrogen flushing",
+        "Calculate landed cost per pouch across multiple price points (₹5, ₹10 impulse packs vs 400g/1kg family packs) and evaluate distributor trade schemes"
       ],
-      "businessScenario": "Apex Coatings produces synthetic enamels, acrylic emulsions, and epoxy primers. Chemical raw materials are purchased in metric tons and tanker loads, while finished goods are sold through paint dealer networks in liters.",
+      "businessScenario": "Simulating 'HaldiBhog Snacks & Traditional Namkeen Ltd.', a fully mechanized snack food factory processing 25 metric tons of namkeen daily across two shifts. Key production lines include continuous Bikaneri Bhujia dough extrusion into 190°C palmolein oil fryers, Aloo Bhujia potato flake mash blending, and high-speed multi-head weigher bagging lines packaging 120 pouches per minute. Raw material costs fluctuate weekly with wholesale mandi prices of pulses, spices, and edible oil. Students manage daily production accounting: fryer oil top-ups and spent oil degradation, gas/diesel boiler heating expenses, packaging foil laminate tear scrap, and distributor primary freight allowances.",
       "tasksToComplete": [
-        "Set up Tally Prime multi-compound units (KG to Liters based on Specific Gravity 1.25)",
-        "Record batch production of 5,000 liters white gloss enamel with pigment grinding loss",
-        "Issue empty tins, handles, printed labels, and outer cartons to packaging floor",
-        "Compute final cost per liter and establish dealer wholesale price list with cash discounts"
+        "Configure multi-level Recipe BOMs in Tally Prime for 4 flagship namkeen products: Bikaneri Bhujia, Aloo Bhujia, All-in-One Khatta Meetha Mixture, and Ratlami Spicy Sev",
+        "Record Raw Material Requisition and Godown Transfer Vouchers for Besan, Moth Flour, Spices, Edible Palmolein Oil, and Metallized BOPP Rolls",
+        "Pass Multi-Stage Manufacturing Journals for Dough Kneading, Continuous Frying (recording 25% oil absorption and 16% moisture evaporation), and Tumbler Seasoning",
+        "Apportion boiler steam fuel (agro-briquettes), continuous fryer electricity, nitrogen gas cylinders, and FSSAI lab quality testing overheads to individual batch runs",
+        "Compile Per-Pouch Landed Cost Cards, compute super-stockist and retail trade discounts, and model grammage reductions for ₹5 and ₹10 price-point packets under pulse price inflation"
       ],
       "expectedOutcomes": [
-        "Chemical batch formulation yield and loss variance statement",
-        "Density conversion inventory register with zero measurement discrepancies",
-        "Dealer price matrix showing gross margins across packaging sizes"
+        "Daily Namkeen Batch Formulation & Oil Absorption Reconciliation Statement",
+        "Frying Oil, Flours & Seasoning Raw Material Consumption Register",
+        "Per-Pouch Landed Unit Cost Cards (₹5, ₹10, 200g, 400g, 1Kg packs) with Nitrogen Foil Absorption",
+        "FMCG Distributor Price List & Trade Scheme (12+1 Free) Profitability Matrix"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
       "media": [
         {
           "id": "med-mfg-8",
           "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
-          "name": "Paint Formulation Cost Matrix",
+          "name": "Namkeen Processing Plant Flowchart & BOM",
           "type": "image/png",
           "size": "3.7 MB",
-          "caption": "Resin batch reactions, solvent evaporation losses, and container packaging economics"
+          "caption": "Besan dough extrusion, continuous fryer oil absorption, nitrogen pouching, and batch costing"
         }
       ],
       "resources": [
         {
           "id": "res-mfg-8-1",
-          "title": "Paints & Chemical Resins Batch Costing Manual & Formula Sheets",
+          "title": "Namkeen & Traditional Snacks Manufacturing & Batch Costing SOP Dossier",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
-          "fileSize": "63 KB",
+          "fileSize": "67 KB",
           "isDownloadable": true
         },
         {
           "id": "res-mfg-8-2",
-          "title": "Density-to-Volume Unit Conversion & Evaporation Loss Model",
+          "title": "Namkeen Oil Absorption, Pouch Grammage & Margin Simulator (Excel)",
           "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
           "fileType": "xlsx",
-          "fileSize": "132 KB",
+          "fileSize": "144 KB",
           "isDownloadable": true
         }
       ],

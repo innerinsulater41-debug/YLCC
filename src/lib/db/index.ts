@@ -206,6 +206,10 @@ export const db = {
     if (slug === 'automobile-ancillary-precision-machining-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-7') || null;
     }
+    // Support legacy slug for Paints & Chemical Resins / Namkeen project
+    if (slug === 'paints-chemical-resins-manufacturing-costing') {
+      return data.projects.find((p) => p.id === 'proj-mfg-8') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

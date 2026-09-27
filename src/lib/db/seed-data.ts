@@ -2112,68 +2112,72 @@ export const initialProjects: Project[] = [
   },
   {
     "id": "proj-mfg-4",
-    "slug": "pharmaceutical-formulations-batch-costing",
-    "title": "Pharmaceutical Formulations Plant: Batch Expiry & Active Ingredient Costing",
-    "shortDescription": "Statutory pharmaceutical production accounting: Active Pharmaceutical Ingredients (API) & excipients BOM, Batch Manufacturing Record (BMR) ledgers, cleanroom HVAC overheads, QC rejection reserves, and DPCO price ceilings.",
-    "detailedDescription": "Pharmaceutical manufacturing is governed by strict regulatory compliance, mandatory batch traceability, and price control orders. In this project for \"Aura Lifesciences Formulations Ltd.\", students manage accounts for tablet, capsule, and liquid oral manufacturing. You will track Active Pharmaceutical Ingredients (API) with potency assay percentages, account for Batch Manufacturing Records (BMR), allocate HEPA cleanroom HVAC power overheads, handle quality control (QC) laboratory rejections, track near-expiry medicine provisions, and ensure compliance with DPCO ceiling prices.",
+    "slug": "quadbury-chocolate-manufacturing-costing",
+    "title": "Quadbury Chocolates Manufacturing: Multi-Stage Cocoa BOM & Batch Costing",
+    "shortDescription": "Complete factory cost accounting for a high-speed Quadbury chocolate manufacturing plant: cocoa liquor & butter refining, multi-stage conching, cooling tunnel tempering, golden foil/BOPP wrapping, and temperature-controlled batch costing.",
+    "detailedDescription": "In this advanced industrial training simulation, students manage factory accounts and production cost sheets for 'Quadbury Confectionery & Chocolates Ltd.', an automated chocolate plant producing flagship milk chocolate bars (Dairy Silk, Roast Almond, and Fruit & Nut lines). Students configure multi-tier recipe Bills of Material (BOM) in Tally Prime Manufacturing, record bulk raw material issuance (cocoa mass, deodorized cocoa butter, whole milk powder, granulated sugar, soy lecithin, and roasted nuts), pass multi-stage Production Journals accounting for conching moisture loss and broken bar remelting rework, allocate heavy thermal refining and cooling tunnel refrigeration power overheads, apportion golden barrier foils and printed outer display cartons, determine landed manufacturing cost per chocolate bar SKU, and maintain cold-chain transit melting risk provisions.",
     "industryCategory": "Manufacturing Industry",
-    "accountingCategory": "BMR & Expiry Batch Valuation",
+    "accountingCategory": "Cocoa Recipe BOM & Cold-Chain Batch Costing",
     "difficultyLevel": "Advanced",
     "skillsCovered": [
-      "API (Active Ingredient) & Excipient Formulation BOM",
-      "Batch Manufacturing Record (BMR) & Batch Traceability Vouchers",
-      "Controlled Cleanroom HVAC & Quality Control Lab Overhead Allocation",
-      "QC Rejection, Near-Expiry Stock Provisions & Drug Recall Accounting",
-      "Drug Price Control Orders (DPCO) Maximum Retail Price Validation"
+      "Multi-Stage Cocoa Recipe BOM (Cocoa Mass, Butter & Milk Powder)",
+      "Refining, Conching & Cooling Tunnel Energy Cost Absorption",
+      "Broken Chocolate Re-melting Rework & Scrap Recovery Accounting",
+      "Golden Barrier Foil, Flow-Wrap & Display Carton Apportionment",
+      "Air-Conditioned Cold-Chain Transit & Melting Damage Provisions",
+      "Per-Bar SKU Landed Costing (₹10, ₹20, ₹40, ₹100 Silk Lines)"
     ],
     "softwareUsed": [
-      "Tally Prime Batch & Expiry Module",
-      "Pharma BMR Costing Engine",
-      "NPPA Regulatory Simulator"
+      "Tally Prime Manufacturing",
+      "Quadbury Confectionery ERP Simulator",
+      "Excel Chocolate Batch Cost Engine"
     ],
     "learningObjectives": [
-      "Implement batch-wise and expiry-wise inventory tracking in Tally Prime for sterile medicines",
-      "Account for chemical assay potency adjustments when raw materials have variable active content",
-      "Calculate maximum permitted selling price under National Pharmaceutical Pricing Authority (NPPA)"
+      "Configure multi-tier recipe Bills of Materials (BOM) in Tally Prime for Milk Chocolate, Dark Chocolate, and Nut Inclusions with compound units (Metric Ton, KG, Grams, Bars, Display Boxes)",
+      "Accurately distinguish between normal conching moisture evaporation loss (1.2% - 1.8%) and 100% recoverable broken bar remelting rework",
+      "Allocate heavy plant utility costs including continuous 24-hour concher motor loads, thermal heating jackets, and ammonia cooling tunnel refrigeration to individual production batches",
+      "Derive exact manufacturing cost per consumer bar SKU (40g, 60g, 150g Silk) and structure distributor trade margins with cold-chain transport allowances"
     ],
-    "businessScenario": "Aura Lifesciences produces Paracetamol 650mg tablets, Azithromycin 500mg, and Cough Syrups. Each batch requires raw API, binders, coatings, blister PVC/Alu foils, and mono-cartons. Batches undergo 14-day microbiology testing before release.",
+    "businessScenario": "Simulating 'Quadbury Confectionery & Chocolates Ltd.', a high-speed automated chocolate plant producing 1,50,000 chocolate bars daily across 3 continuous shifts. The manufacturing process imports African cocoa mass and deodorized cocoa butter, blends them with Indian dairy milk powder and sugar, refines the mixture through 5-roll refiners below 20 microns, and conches the mass for 36 hours. The molten chocolate is tempered, deposited into polycarbonate moulds with roasted whole almonds, cooled in chilled tunnels, and wrapped in hermetic barrier foil. Students manage production accounting amid volatile global cocoa butter prices, high electricity tariffs for climate-controlled processing halls (maintained at 18°C), packaging flow-wrap reel waste, and seasonal festive inventory buildup.",
     "tasksToComplete": [
-      "Create batch masters with manufacturing date, expiry date, and shelf-life alerts",
-      "Pass production vouchers for 100,000 Paracetamol tablets with coating weight gain adjustments",
-      "Apportion microbiology testing lab expenses and cleanroom maintenance overheads",
-      "Pass provisioning entries for batch lots failing QC dissolution tests"
+      "Set up multi-level Recipe BOM in Tally Prime for 3 flagship Quadbury variants: Dairy Milk Silk (60g), Roast Almond Bar (140g), and Crackle Crunch (40g) including raw ingredients, barrier foils, and outer shippers",
+      "Pass Raw Material Requisition and Godown Transfer Vouchers from Central Cold Storage to the Mixing, Refining, and Conching Floor",
+      "Record Multi-Stage Manufacturing Journals capturing conching evaporation loss (1.5%), broken bar de-moulding scrap rework, and roasted almond inclusion dosing",
+      "Apportion packaging overheads including primary golden aluminium foil rolls, printed BOPP flow-wraps, and 24-piece retail shelf display boxes",
+      "Compute final Batch Cost Sheet per metric ton and per bar SKU, calculate cold-chain reefer delivery allowances, and reconcile finished goods inventory with plant floor shift logs"
     ],
     "expectedOutcomes": [
-      "Batch-wise profitability and cost breakdown statement",
-      "Mandatory batch traceability audit report for regulatory inspections",
-      "DPCO pricing validation worksheet ensuring 100% statutory adherence"
+      "Batch-wise Chocolate Recipe Production & Stock Consumption Register in Tally Prime",
+      "Standard vs. Actual Cocoa Butter Yield & Conching Loss Variance Model",
+      "Per-Bar Landed Cost Sheet (₹10, ₹20, ₹40 & ₹100 SKUs) with Distributor Margin Schedule",
+      "Cold-Chain Storage & Temperature Risk Provision Audit Statement"
     ],
     "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
     "media": [
       {
         "id": "med-mfg-4",
         "url": "/images/ylcc_tds_brochure_slate_copper.png",
-        "name": "Pharma BMR Ledger Protocol",
+        "name": "Quadbury Chocolate Manufacturing BOM & Process Flow Diagram",
         "type": "image/png",
         "size": "3.4 MB",
-        "caption": "Batch record trace, API assay potency adjustments, and expiry provisions"
+        "caption": "Cocoa mass blending, conching, cooling tunnel tempering, and barrier packaging flow"
       }
     ],
     "resources": [
       {
         "id": "res-mfg-4-1",
-        "title": "Pharmaceutical Plant Batch Costing & Regulatory Audit Guidelines",
+        "title": "Quadbury Chocolate Manufacturing Plant Standard Costing SOP & Batch Manual",
         "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
         "fileType": "pdf",
-        "fileSize": "64 KB",
+        "fileSize": "74 KB",
         "isDownloadable": true
       },
       {
         "id": "res-mfg-4-2",
-        "title": "Pharma BMR Batch Traceability & Near-Expiry Provision Model",
+        "title": "Cocoa Recipe Variance & Cold-Chain Batch Unit Costing Model (Excel)",
         "url": "/sample-docs/YLCC-Course-TDS-Payroll.pdf",
         "fileType": "xlsx",
-        "fileSize": "148 KB",
+        "fileSize": "152 KB",
         "isDownloadable": true
       }
     ],

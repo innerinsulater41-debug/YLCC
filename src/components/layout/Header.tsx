@@ -129,11 +129,11 @@ export default function Header({ settings }: HeaderProps) {
                 <span className="text-2xl font-serif font-extrabold tracking-tight text-[#2A1810]">
                   YLCC
                 </span>
-                <span className="inline-flex flex-col items-center justify-center text-center text-[#8B5A2B] bg-[#EFE6DD] px-2 py-1 rounded border border-[#D8C5B2] leading-none shrink-0 select-none">
-                  <span className="text-[7.5px] sm:text-[8px] font-bold uppercase tracking-wider whitespace-nowrap">
+                <span className="inline-flex flex-col items-center justify-center text-center text-[#5C3214] bg-[#EFE6DD] px-2.5 py-1 rounded-md border border-[#C5AE96] leading-tight shrink-0 select-none shadow-[0_1px_2px_rgba(42,24,16,0.05)]">
+                  <span className="text-[9px] sm:text-[9.5px] font-extrabold uppercase tracking-wider whitespace-nowrap">
                     Business &amp; Skill
                   </span>
-                  <span className="text-[7.5px] sm:text-[8px] font-bold uppercase tracking-[0.16em] whitespace-nowrap mt-0.5">
+                  <span className="text-[9px] sm:text-[9.5px] font-extrabold uppercase tracking-[0.16em] whitespace-nowrap">
                     Accelerator
                   </span>
                 </span>

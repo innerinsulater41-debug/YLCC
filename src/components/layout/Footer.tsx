@@ -160,14 +160,14 @@ export default function Footer({ settings }: FooterProps) {
           {/* Col 3: Industrial Training & Case Studies */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-[#3D2314] pb-2">
-              30 Industrial Training Projects
+              Industrial Training Projects
             </h4>
             <div className="grid grid-cols-1 gap-1.5 text-xs text-[#D8C5B2]">
               <Link href="/projects" className="hover:text-white transition-colors">
                 • GSTR-3B & GSTR-2B ITC Matching
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • GSTR-1 & E-Invoicing
+                • GSTR-1 & E-Invoicing Portal
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
                 • Corporate TDS & TCS Compliance
@@ -176,26 +176,29 @@ export default function Footer({ settings }: FooterProps) {
                 • Corporate Payroll & Labour Laws
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Hotel & Banquet Operations
+                • Britannia Biscuit Manufacturing
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • FMCG Wholesale Beat Distributorship
+                • Peter England Garment Costing
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Real Estate Builder Site Costing
+                • Dairy Processing & Milk Costing
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Govt Thekedar (Roads & Bridges)
+                • Furniture & Interior Decor Costing
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Franchise Retail Chain (Javed Habib Model)
+                • Namkeen & Rusk Food Production
+              </Link>
+              <Link href="/projects" className="hover:text-white transition-colors">
+                • Event Management Costing
               </Link>
               <div className="pt-1">
                 <Link
                   href="/projects"
                   className="text-xs font-semibold text-[#C4AE96] hover:text-white flex items-center gap-1"
                 >
-                  <span>View all 16 business projects →</span>
+                  <span>View all practical projects →</span>
                 </Link>
               </div>
             </div>

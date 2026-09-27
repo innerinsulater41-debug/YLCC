@@ -61,13 +61,14 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
 
   const isDefaultView = selectedIndustry === 'All' && !search.trim() && selectedDifficulty === 'All';
   const isMfgOnlyView = selectedIndustry === 'Manufacturing Industry' && !search.trim() && selectedDifficulty === 'All';
+  const isLegalOnlyView = selectedIndustry === 'Legal & Taxation' && !search.trim() && selectedDifficulty === 'All';
 
   const manufacturingProjects = useMemo(() => {
     return filtered.filter((p) => p.industryCategory === 'Manufacturing Industry');
   }, [filtered]);
 
   const otherProjects = useMemo(() => {
-    return filtered.filter((p) => p.industryCategory !== 'Manufacturing Industry');
+    return filtered.filter((p) => p.industryCategory === 'Legal & Taxation');
   }, [filtered]);
 
   const renderProjectCard = (proj: Project) => {
@@ -217,62 +218,66 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             Reset all filters
           </button>
         </div>
-      ) : isDefaultView || isMfgOnlyView ? (
-        /* Sectioned View: Centered MANUFACTURING INDUSTRY Heading & Grid */
+      ) : isDefaultView || isMfgOnlyView || isLegalOnlyView ? (
+        /* Sectioned View: MANUFACTURING INDUSTRY and/or LEGAL & TAXATION */
         <div className="space-y-12">
-          {/* Centered Heading for MANUFACTURING INDUSTRY */}
-          <div className="text-center py-6 sm:py-8 space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE6DD] border border-[#D8C5B2] text-[#8B5A2B] text-xs font-bold uppercase tracking-wider shadow-2xs">
-              <Factory className="w-4 h-4 text-[#8B5A2B]" />
-              <span>Core Production, BOM & Plant Costing</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2A1810] tracking-tight">
-              MANUFACTURING INDUSTRY
-            </h2>
-
-            <div className="w-24 h-1 bg-[#8B5A2B] mx-auto rounded-full" />
-
-            <p className="text-sm sm:text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
-              Complete practical factory accounting simulations across {manufacturingProjects.length} core manufacturing sectors — master Bill of Materials (BOM), Multi-Stage Production Journals, Job-Work (GST ITC-04), Scrap &amp; Wastage Control, and Finished Goods Unit Costing.
-            </p>
-
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#8B5A2B] bg-white px-3.5 py-1.5 rounded-full border border-[#E5D8CA] shadow-2xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#8B5A2B]" />
-              <span>{manufacturingProjects.length} Signature Manufacturing Projects</span>
-            </div>
-          </div>
-
-          {/* 9 Manufacturing Projects in a 3x3 Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {manufacturingProjects.map((proj) => renderProjectCard(proj))}
-          </div>
-
-            {/* If viewing All, show Partition for Legal & Taxation Projects */}
-            {isDefaultView && otherProjects.length > 0 && (
-              <div className="pt-12 space-y-8">
-                <div className="border-t-2 border-dashed border-[#D8C5B2] pt-12 text-center space-y-4">
-                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
-                    <Scale className="w-4 h-4 text-[#8B5A2B]" />
-                    <span>Legal, Taxation & Corporate Compliance</span>
-                  </div>
-
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
-                    LEGAL &amp; TAXATION
-                  </h2>
-
-                  <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
-
-                  <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
-                    Real-world GST, TDS/TCS, corporate taxation, statutory compliance, banking limits, and commercial practical cases across corporate sectors.
-                  </p>
-
-                  <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
-                    <span>{otherProjects.length} Practical Projects</span>
-                  </div>
+          {/* Section 1: MANUFACTURING INDUSTRY */}
+          {(isDefaultView || isMfgOnlyView) && (
+            <>
+              <div className="text-center py-6 sm:py-8 space-y-4">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE6DD] border border-[#D8C5B2] text-[#8B5A2B] text-xs font-bold uppercase tracking-wider shadow-2xs">
+                  <Factory className="w-4 h-4 text-[#8B5A2B]" />
+                  <span>Core Production, BOM & Plant Costing</span>
                 </div>
 
-              {/* Other Projects Grid */}
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2A1810] tracking-tight">
+                  MANUFACTURING INDUSTRY
+                </h2>
+
+                <div className="w-24 h-1 bg-[#8B5A2B] mx-auto rounded-full" />
+
+                <p className="text-sm sm:text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
+                  Complete practical factory accounting simulations across {manufacturingProjects.length} core manufacturing sectors — master Bill of Materials (BOM), Multi-Stage Production Journals, Job-Work (GST ITC-04), Scrap &amp; Wastage Control, and Finished Goods Unit Costing.
+                </p>
+
+                <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#8B5A2B] bg-white px-3.5 py-1.5 rounded-full border border-[#E5D8CA] shadow-2xs">
+                  <Sparkles className="w-3.5 h-3.5 text-[#8B5A2B]" />
+                  <span>{manufacturingProjects.length} Signature Manufacturing Projects</span>
+                </div>
+              </div>
+
+              {/* Manufacturing Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {manufacturingProjects.map((proj) => renderProjectCard(proj))}
+              </div>
+            </>
+          )}
+
+          {/* Section 2: LEGAL & TAXATION */}
+          {(isDefaultView || isLegalOnlyView) && otherProjects.length > 0 && (
+            <div className={isDefaultView ? "pt-12 space-y-8" : "space-y-8"}>
+              <div className={`${isDefaultView ? "border-t-2 border-dashed border-[#D8C5B2] pt-12" : "py-6 sm:py-8"} text-center space-y-4`}>
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
+                  <Scale className="w-4 h-4 text-[#8B5A2B]" />
+                  <span>Legal, Taxation & Corporate Compliance</span>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
+                  LEGAL &amp; TAXATION
+                </h2>
+
+                <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
+
+                <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
+                  Real-world GST, TDS/TCS, corporate taxation, statutory compliance, banking limits, and commercial practical cases across corporate sectors.
+                </p>
+
+                <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
+                  <span>{otherProjects.length} Practical Projects</span>
+                </div>
+              </div>
+
+              {/* Legal & Taxation Projects Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {otherProjects.map((proj) => renderProjectCard(proj))}
               </div>

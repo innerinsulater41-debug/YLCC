@@ -2591,6 +2591,86 @@ export const initialProjects: Project[] = [
     "updatedAt": "2026-03-01"
   },
   {
+    "id": "proj-mfg-10",
+    "slug": "event-management-production-stage-fabrication-costing",
+    "title": "Event Infrastructure & Production: Stage Fabrication, German Hanger Setup & Turnkey Event Costing",
+    "shortDescription": "Turnkey event management & stage production accounting: aluminum trussing & German hanger dome setup, CNC stage backdrop fabrication, AV & LED wall power logistics, artist TDS compliance, and multi-day mega event job costing.",
+    "detailedDescription": "In this dynamic experiential event production simulation, students take charge of commercial finance and cost ledgers for 'GrandSpectra Events & Stage Infrastructure Ltd.' (a high-capacity turnkey event management and set production company executing luxury destination weddings, corporate summits, and music festivals). Students configure multi-stage Bills of Materials (BOM) in Tally Prime: modular aluminum trussing grids, fire-retardant German hanger tents, timber/acrylic stage riser fabrication, and vinyl backdrops; track diesel generator power fuel consumption and AV equipment wear amortization; record artist/performer bookings with statutory TDS under Sections 194C and 194J; manage music copyright licenses (IPRS/PPL) and municipal venue permits; control perishable floral decor write-offs and reusable prop rental ledgers; and generate comprehensive Event Job Cost Cards with client milestone advance billing.",
+    "industryCategory": "Manufacturing Industry",
+    "accountingCategory": "Event Stage Fabrication, AV Infrastructure & Job Costing",
+    "difficultyLevel": "Advanced",
+    "skillsCovered": [
+      "Multi-Stage Event Setup BOM (Trussing, Stage Risers, Acrylic Backdrops, Drapes)",
+      "German Hanger Dome Tent Erection, Flooring & Carpet Laying Costing (Sq.Ft based)",
+      "AV Production Logistics, Silent DG Set Diesel Fuel & Equipment Wear Amortization",
+      "Statutory Event Compliance: TDS u/s 194C & 194J, IPRS/PPL Music Copyright & GST 18%",
+      "Perishable Floral Decor Write-Offs vs Reusable Thematic Prop Inventory Tracking",
+      "Turnkey Event Job Cost Sheet, Client Milestone Advances & Event P&L Reconciliation"
+    ],
+    "softwareUsed": [
+      "Tally Prime Manufacturing",
+      "Event Job Costing & Production ERP",
+      "Excel Turnkey Event Budget & Variance Engine"
+    ],
+    "learningObjectives": [
+      "Structure project job-cost ledgers in Tally Prime tracking bespoke set fabrication in Sq.Ft, structural trussing in Running Meters, and rental gear in Day-Shifts",
+      "Account for heavy logistics freight, crane/scissor-lift rentals, and on-site manual riggers piece-rate wage allocation under strict 48-hour setup deadlines",
+      "Differentiate between 100% consumable event expenses (fresh flowers, custom print flex, fireworks) and reusable assets (sound consoles, LED panels, furniture lounges)",
+      "Calculate gross margin contribution per event and prepare client reconciliation statements reconciling advance payments against final billing"
+    ],
+    "businessScenario": "Simulating 'GrandSpectra Events & Stage Infrastructure Ltd.', contracted to execute a 3-day high-profile corporate product launch and global summit with a ₹1.85 Crore turnkey budget. Scope of work encompasses erecting a 15,000 sq.ft air-conditioned German hanger tent, constructing a 60-foot curved 4K LED backdrop stage, rigging a 40-ton aluminum box truss system, coordinating 12 international tech keynote speakers and celebrity entertainers, and providing 350 KVA synchronized DG power. Students manage real-time cost accounting: last-minute vendor price escalations, local authority permit charges, artist rider TDS deductions, on-site generator fuel logs, and post-event inventory retrieval audits.",
+    "tasksToComplete": [
+      "Set up Project Job Costing in Tally Prime for a 3-day Mega Event: Main Stage Fabrication, Exhibition Hanger Structure, and Gala Dinner Lounge",
+      "Record stores issues for fabrication materials: MS hollow pipes, commercial plywood, acrylic sheets, LED strip lights, and carpet rolls",
+      "Pass accounting entries for sub-contractor hire vouchers: Line-array audio systems, moving head truss lighting, 4K LED panels, and heavy-duty 350 KVA DG sets with diesel logs",
+      "Execute statutory TDS deductions on celebrity anchors, international performers (Sec 194J @ 10%), security agencies (Sec 194C @ 2%), and venue lease rents (Sec 194I)",
+      "Prepare the final Event Job-Order Cost Card, evaluate actual vs budgeted spend variances, and generate final GST tax invoices with milestone advance adjustments"
+    ],
+    "expectedOutcomes": [
+      "Turnkey Event Master Budget vs Actual Cost Variance Report",
+      "Event Infrastructure Fabrication & Sub-Contractor Consumption Register",
+      "Statutory Event Compliance Schedule (TDS 194C/194J, IPRS/PPL Licensing & GST)",
+      "Post-Event Asset Retrieval & Damaged Prop Reconciliation Audit"
+    ],
+    "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+    "media": [
+      {
+        "id": "med-mfg-10",
+        "url": "/images/ylcc_tds_brochure_slate_copper.png",
+        "name": "Event Infrastructure & Stage Production Costing Framework",
+        "type": "image/png",
+        "size": "3.8 MB",
+        "caption": "Stage fabrication, German hanger dome, AV infrastructure, and turnkey event costing"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res-mfg-10-1",
+        "title": "Turnkey Event Infrastructure & Production Costing SOP Manual",
+        "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
+        "fileType": "pdf",
+        "fileSize": "72 KB",
+        "isDownloadable": true
+      },
+      {
+        "id": "res-mfg-10-2",
+        "title": "Event Budgeting, Vendor Rate Matrix & TDS Compliance Engine (Excel)",
+        "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+        "fileType": "xlsx",
+        "fileSize": "155 KB",
+        "isDownloadable": true
+      }
+    ],
+    "practiceTimeHours": 28,
+    "academicYear": "2025-26",
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
+    "status": "published",
+    "displayOrder": 10,
+    "createdAt": "2025-12-05",
+    "updatedAt": "2026-03-01"
+  },
+  {
     "id": "proj-1",
     "slug": "hospital-business-accounting-system",
     "title": "Hospital Business Accounting & Patient Billing System",

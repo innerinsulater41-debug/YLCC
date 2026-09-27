@@ -214,6 +214,14 @@ export const db = {
     if (slug === 'electronics-electrical-appliance-assembly-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-9') || null;
     }
+    // Support aliases for Event Management project
+    if (
+      slug === 'event-management' ||
+      slug === 'event-management-costing' ||
+      slug === 'event-management-production-costing'
+    ) {
+      return data.projects.find((p) => p.id === 'proj-mfg-10') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

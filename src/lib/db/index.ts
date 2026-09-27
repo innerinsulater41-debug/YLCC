@@ -179,6 +179,10 @@ export const db = {
     if (slug === 'fmcg-food-processing-manufacturing-costing') {
       return data.projects.find((p) => p.id === 'proj-mfg-1') || null;
     }
+    // Support legacy slug for Textile project
+    if (slug === 'textile-garment-manufacturing-costing') {
+      return data.projects.find((p) => p.id === 'proj-mfg-2') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

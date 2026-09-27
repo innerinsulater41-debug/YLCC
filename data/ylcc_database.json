@@ -1937,68 +1937,72 @@
     },
     {
       "id": "proj-mfg-2",
-      "slug": "textile-garment-manufacturing-costing",
-      "title": "Textile & Garment Manufacturing: Yarn to Finished Apparel Costing",
-      "shortDescription": "End-to-end multi-process accounting for an integrated textile mill: raw cotton/yarn spinning, fabric weaving, bleaching/dyeing job-work (GST ITC-04), cutting shrinkage, and ready-to-wear apparel SKU costing.",
-      "detailedDescription": "Textile manufacturing passes through sequential transformation stages where raw material changes physical state and unit of measurement (from KG of yarn to meters of grey fabric to stitched garment pieces). In this simulation for \"Rajasthan Weaving & Apparel Mills\", students manage process cost sheets across spinning, weaving, external dyeing job-work, cutting room shrinkage, button/zipper accessories consumption, and final garment export packaging.",
+      "slug": "peter-england-shirts-manufacturing-costing",
+      "title": "Peter England Shirts Manufacturing: Fabric to Finished Apparel Costing",
+      "shortDescription": "Complete factory accounting for a dedicated Peter England formal & casual shirts manufacturing plant: fabric rolls (woven cotton, linen & blends), fusing collar interlinings, CAD cutting room wastage, external washing/embroidery job-work (GST ITC-04), piece-rate stitching wages, and finished shirt SKU costing.",
+      "detailedDescription": "In this advanced industrial training simulation, students manage production ledgers and cost accounting for an authorized contract manufacturing facility producing Peter England shirts (Slim Fit, Classic Formal, Linen Casuals, and Premium Twill). Students configure multi-stage Bill of Materials (BOM) in Tally Prime Manufacturing, record fabric issuance from central fabric stores by meterage and rolls, track CAD marker lay cutting room shrinkage (2.5% to 4%) and cut-piece generation, dispatch collar & cuff parts for specialized embroidery and enzyme washing to job-workers under GST Section 143 delivery challans, file Form GST ITC-04, record trims consumption (branded mother-of-pearl buttons, poly-core sewing threads, woven brand tags, wash-care labels, butterfly collar stays), allocate progressive stitching line piece-rate wages based on Standard Allowed Minutes (SAM), and determine landed factory cost per shirt SKU before retail distributor dispatches.",
       "industryCategory": "Manufacturing Industry",
-      "accountingCategory": "Process Costing & Job-Work ITC-04",
+      "accountingCategory": "Shirt BOM, Process Costing & Job-Work ITC-04",
       "difficultyLevel": "Advanced",
       "skillsCovered": [
-        "Multi-Stage Process Costing (Yarn to Greige to Finished Fabric)",
-        "External Job-Work Challans under Section 143 & Form GST ITC-04",
-        "Fabric Shrinkage, Comber Noil & Cutting Waste Accounting",
-        "Accessories & Trims BOM (Buttons, Zippers, Thread, Labels)",
-        "Export Garment SKU Costing & Duty Drawback Records"
+        "Multi-Level Shirt BOM (Fabric, Interlining, Buttons)",
+        "Cutting Lay Shrinkage & Job-Work Challans (ITC-04)",
+        "Stitching Line Piece-Rate & Finished Shirt Unit Costing",
+        "Collar & Cuff Fusing Interlining Material Consumption",
+        "Quarterly Form GST ITC-04 Job-Work Filing & Reconciliation",
+        "Garment SKU Unit Costing (Slim Fit, Regular, Casual Lines)"
       ],
       "softwareUsed": [
-        "Tally Prime 4.0",
-        "Textile ERP Process Master",
+        "Tally Prime Manufacturing",
+        "Garment ERP Production Cost Master",
         "GST Offline ITC-04 Tool"
       ],
       "learningObjectives": [
-        "Track material balance when units change from weight (KG) to length (Meters) to count (Pieces)",
-        "File quarterly GST ITC-04 for goods dispatched to dyeing and embroidery job-workers",
-        "Compute stage-wise cost additions and accurately value Work-in-Progress (WIP)"
+        "Track multi-unit material balance as inventory converts from Length (Meters of woven fabric) to Bundles (Cut components) to Counts (Finished Shirts)",
+        "Issue Delivery Challans under GST Section 143 and file quarterly Form GST ITC-04 for external enzyme washing, screen printing, and collar embroidery job-workers",
+        "Configure progressive stage-wise Bill of Materials (BOM) covering fabric, interlining, sewing thread, buttons, brand tags, and polybags",
+        "Calculate piece-rate stitching operator wages using Standard Allowed Minutes (SAM) and derive landed wholesale cost per finished shirt SKU"
       ],
-      "businessScenario": "Rajasthan Weaving Mills procures raw cotton yarn, weaves denim and twill fabrics, sends grey cloth to Surat for chemical dyeing, and manufactures finished jeans and shirts in Jaipur for retail brands.",
+      "businessScenario": "Simulating 'Aditya Apparel Mills', a dedicated contract garment manufacturing facility producing 45,000 Peter England shirts monthly for Madura Fashion & Lifestyle / Aditya Birla Fashion and Retail (ABFRL). The factory sources 100% Giza and organic cotton fabrics in 100-meter rolls, cuts collars, cuffs, sleeves, and front plackets in automated spreading and cutting bays, dispatches cut panels for enzyme washing and brand embroidery to Surat and Tirupur job-workers, and stitches finished shirts across 8 conveyor production lines. Students must maintain continuous inventory valuation between meterage (fabric length), cut pieces (dozens/bundles), and finished garments (SKUs), reconcile job-work material under 180-day GST norms, and finalize standard vs actual batch cost sheets.",
       "tasksToComplete": [
-        "Record yarn issuance and weaving production entries with comber noil waste realization",
-        "Issue delivery challans for 10,000 meters grey cloth to dye house and track return within 180 days",
-        "Compile quarterly Form GST ITC-04 on the GST portal simulator",
-        "Calculate garment piece cost including fabric consumption per meter and tailor stitching piece-rate"
+        "Configure multi-stage Bill of Materials (BOM) in Tally Prime for 3 Peter England shirt variants (Classic White Twill Formal 40/42, Sky Blue Linen Casual, and Micro-Check Slim Fit) covering shell fabric, fusing, interlining, and trims",
+        "Record raw fabric roll issuance from Central Fabric Godown to Cutting Bay and calculate marker lay efficiency, end-bit wastage, and cutting loss (3.2%)",
+        "Issue GST Delivery Challans under Section 143 for sending cut panels to external job-workers for collar fusing, enzyme washing, and chest logo embroidery; reconcile returns within 180 days",
+        "Prepare and validate quarterly Form GST ITC-04 returns on the offline GST tool for job-work inputs dispatched, received back, and scrap generated",
+        "Pass assembly line stitching wage vouchers using piece-rate system, allocate factory overheads (boiler steam, cutting machine depreciation, finishing ironing), and calculate landed cost per finished shirt"
       ],
       "expectedOutcomes": [
-        "Complete stage-wise WIP inventory valuation statement",
-        "GST ITC-04 quarterly compliance audit log",
-        "Finished apparel SKU costing sheet with break-even wholesale price"
+        "Comprehensive Shirt Multi-Stage WIP & Finished Goods Valuation Register",
+        "Quarterly Form GST ITC-04 Job-Work Reconciliation & Audit Sheet",
+        "Fabric Consumption Variance (Standard 1.65m vs Actual Cut) Cost Sheet",
+        "Finished Shirt SKU Pricing & Subcontractor Conversion Fee Invoice"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
       "media": [
         {
           "id": "med-mfg-2",
           "url": "/images/ylcc_tds_brochure_slate_copper.png",
-          "name": "Textile Process Flow Diagram",
+          "name": "Peter England Shirt Manufacturing BOM & Cost Flow Architecture",
           "type": "image/png",
           "size": "3.8 MB",
-          "caption": "Yarn conversion, job-work ITC-04 challans, and garment SKU costing structure"
+          "caption": "Fabric roll consumption, cutting room shrinkage, job-work ITC-04, and shirt SKU unit costing"
         }
       ],
       "resources": [
         {
           "id": "res-mfg-2-1",
-          "title": "Textile Mill Process Costing & Job-Work Accounting Manual",
+          "title": "Peter England Shirts Factory Manufacturing SOP & Multi-Stage Cost Sheet",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
-          "fileSize": "68 KB",
+          "fileSize": "72 KB",
           "isDownloadable": true
         },
         {
           "id": "res-mfg-2-2",
-          "title": "GST Form ITC-04 Offline Job-Work Reconciliation Master",
+          "title": "Garment Job-Work GST Form ITC-04 Offline Reconciliation Master (Excel)",
           "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
           "fileType": "xlsx",
-          "fileSize": "135 KB",
+          "fileSize": "145 KB",
           "isDownloadable": true
         }
       ],

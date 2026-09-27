@@ -19,6 +19,7 @@ import {
   Scale,
   Store,
   Wrench,
+  Landmark,
 } from 'lucide-react';
 import { Project } from '@/types';
 
@@ -34,8 +35,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   const industries = useMemo(() => {
     const set = new Set(projects.map((p) => p.industryCategory));
     const list = Array.from(set);
-    // Position Manufacturing first, Legal second, Traders third, Service fourth
-    const order = ['Manufacturing Industry', 'Legal & Taxation', 'Traders Industry', 'Service Industry'];
+    // Position Manufacturing first, Legal second, Traders third, Service fourth, Account fifth
+    const order = ['Manufacturing Industry', 'Legal & Taxation', 'Traders Industry', 'Service Industry', 'Account Industry'];
     list.sort((a, b) => {
       const idxA = order.indexOf(a);
       const idxB = order.indexOf(b);
@@ -70,6 +71,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   const isLegalOnlyView = selectedIndustry === 'Legal & Taxation' && !search.trim() && selectedDifficulty === 'All';
   const isTraderOnlyView = selectedIndustry === 'Traders Industry' && !search.trim() && selectedDifficulty === 'All';
   const isServiceOnlyView = selectedIndustry === 'Service Industry' && !search.trim() && selectedDifficulty === 'All';
+  const isAccountOnlyView = selectedIndustry === 'Account Industry' && !search.trim() && selectedDifficulty === 'All';
 
   const manufacturingProjects = useMemo(() => {
     return filtered.filter((p) => p.industryCategory === 'Manufacturing Industry');
@@ -87,11 +89,16 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
     return filtered.filter((p) => p.industryCategory === 'Service Industry');
   }, [filtered]);
 
+  const accountProjects = useMemo(() => {
+    return filtered.filter((p) => p.industryCategory === 'Account Industry');
+  }, [filtered]);
+
   const renderProjectCard = (proj: Project) => {
     const isMfg = proj.industryCategory === 'Manufacturing Industry';
     const isLegal = proj.industryCategory === 'Legal & Taxation';
     const isTrader = proj.industryCategory === 'Traders Industry';
     const isService = proj.industryCategory === 'Service Industry';
+    const isAccount = proj.industryCategory === 'Account Industry';
     return (
       <div
         key={proj.id}
@@ -106,6 +113,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
                 {isLegal && <Scale className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {isTrader && <Store className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {isService && <Wrench className="w-3.5 h-3.5 text-[#C4AE96]" />}
+                {isAccount && <Landmark className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {proj.industryCategory}
               </span>
               <span className="bg-[#8B5A2B] text-white px-2 py-0.5 rounded text-[10px] font-semibold">
@@ -220,6 +228,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               {ind === 'Legal & Taxation' && <Scale className="w-3 h-3" />}
               {ind === 'Traders Industry' && <Store className="w-3 h-3" />}
               {ind === 'Service Industry' && <Wrench className="w-3 h-3" />}
+              {ind === 'Account Industry' && <Landmark className="w-3 h-3" />}
               {ind}
             </button>
           ))}
@@ -243,8 +252,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             Reset all filters
           </button>
         </div>
-      ) : isDefaultView || isMfgOnlyView || isLegalOnlyView || isTraderOnlyView || isServiceOnlyView ? (
-        /* Sectioned View: MANUFACTURING, LEGAL & TAXATION, TRADERS, and SERVICE INDUSTRY */
+      ) : isDefaultView || isMfgOnlyView || isLegalOnlyView || isTraderOnlyView || isServiceOnlyView || isAccountOnlyView ? (
+        /* Sectioned View: MANUFACTURING, LEGAL & TAXATION, TRADERS, SERVICE, and ACCOUNT INDUSTRY */
         <div className="space-y-12">
           {/* Section 1: MANUFACTURING INDUSTRY */}
           {(isDefaultView || isMfgOnlyView) && (
@@ -367,6 +376,37 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               {/* Service Industry Projects Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {serviceProjects.map((proj) => renderProjectCard(proj))}
+              </div>
+            </div>
+          )}
+
+          {/* Section 5: ACCOUNT INDUSTRY */}
+          {(isDefaultView || isAccountOnlyView) && accountProjects.length > 0 && (
+            <div id="account-industry-section" className={isDefaultView ? "pt-12 space-y-8" : "space-y-8"}>
+              <div className={`${isDefaultView ? "border-t-2 border-dashed border-[#D8C5B2] pt-12" : "py-6 sm:py-8"} text-center space-y-4`}>
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
+                  <Landmark className="w-4 h-4 text-[#8B5A2B]" />
+                  <span>Auditing, Banking Controls &amp; Working Capital Treasury</span>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
+                  ACCOUNT INDUSTRY
+                </h2>
+
+                <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
+
+                <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
+                  Executive corporate accounting &amp; financial operations: Internal &amp; statutory year-end audit finalisation, automated purchase order procurement workflows, vendor payment aging &amp; cash flows, automated bank reconciliation (BRS), and banking CC limit drawing power statements.
+                </p>
+
+                <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
+                  <span>{accountProjects.length} Practical Projects</span>
+                </div>
+              </div>
+
+              {/* Account Industry Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {accountProjects.map((proj) => renderProjectCard(proj))}
               </div>
             </div>
           )}

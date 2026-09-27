@@ -3849,6 +3849,411 @@
       "displayOrder": 24,
       "createdAt": "2026-03-05",
       "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-acc-1",
+      "slug": "internal-yearly-statutory-audit-vouching-finalisation",
+      "title": "Internal & Yearly Audit: Vouching, Ledger Scrutiny, Depreciation Schedules & Balance Sheet Finalisation",
+      "shortDescription": "Executive internal & statutory year-end audit finalisation: Comprehensive voucher verification, ledger scrutiny, Fixed Asset Register (FAR) depreciation calculation, provision adjustments, and trial balance to Balance Sheet & P&L finalisation.",
+      "detailedDescription": "Step into the role of an Assistant Corporate Auditor conducting thorough internal and year-end statutory audit preparation for a multi-crore enterprise. Students learn authentic corporate desk audit methodologies: 100% vouching of high-value cash and bank payments, sample vouching for purchases and expenses, ledger scrutiny to catch misclassified capital vs revenue expenditure, preparing Fixed Asset Register (FAR) with dual depreciation schedules under Companies Act 2013 (SLM/WDV) vs Income Tax Act 1961 (block of assets), scrutiny of debtor/creditor balances with balance confirmation letters, verifying statutory dues provisions (GST, TDS, PF, ESIC, Advance Tax), inventory physical verification reconciliation, and passing closing journal entries to finalise the Balance Sheet and Statement of Profit & Loss.",
+      "industryCategory": "Account Industry",
+      "accountingCategory": "Corporate Auditing & Financial Statement Finalisation",
+      "difficultyLevel": "Executive",
+      "skillsCovered": [
+        "Voucher Audit, Supporting Bill Verification & Internal Control Scrutiny",
+        "Fixed Asset Register (FAR) & Dual Depreciation (Companies Act vs IT Act)",
+        "Sundry Debtors & Creditors Ledger Scrutiny & Balance Confirmation Auditing",
+        "Year-End Provisioning, Prepaid/Outstanding Adjustments & Closing Journals",
+        "Trial Balance Scrutiny to Balance Sheet & Statement of Profit & Loss Finalisation"
+      ],
+      "softwareUsed": [
+        "Tally Prime Audit & Compliance Edition",
+        "Advanced Excel 365 Audit Working Sheets",
+        "MCA XBRL Financial Finalisation Toolkit"
+      ],
+      "learningObjectives": [
+        "Master systematic vouching techniques and identify internal control deficiencies in purchase, expense, and payment cycles",
+        "Prepare comprehensive Fixed Asset Registers with accurate SLM/WDV depreciation schedules comparing Book vs Tax figures",
+        "Execute detailed ledger scrutiny to detect revenue leakages, unadjusted advances, and unprovided liabilities",
+        "Draft year-end closing entries and prepare audit-ready Schedule III Balance Sheet and Profit & Loss statements"
+      ],
+      "businessScenario": "You are assigned to the corporate accounting team of 'Kalyan Infracon & Trading Pvt Ltd' (turnover ₹42 Crore) preparing files for the upcoming annual statutory audit by the Chartered Accountant firm. The accounts manager requires a complete audit file: supporting documentation for all payments exceeding ₹50,000, fixed asset addition proof with invoice and installation certificates, computation of depreciation, verification of MSME vendor 45-day payment compliance, provisioning for employee bonuses and unpaid utilities, and finalisation of trial balance without unclassified suspense items.",
+      "tasksToComplete": [
+        "Conduct vouching of 60 journal, payment, and contra vouchers against tax invoices, e-way bills, and payment advices",
+        "Reconcile physical fixed assets with FAR, computing depreciation under Schedule II of Companies Act and Section 32 of Income Tax Act",
+        "Draft MSME vendor ageing analysis to verify compliance with Section 43B(h) and compute disallowed payables",
+        "Prepare year-end provision vouchers for audit fees, bonus, electricity, advance tax, and deferred tax liability (DTL)",
+        "Generate final audit working papers, audited Trial Balance, Balance Sheet, and P&L statement with notes to accounts"
+      ],
+      "expectedOutcomes": [
+        "Comprehensive Statutory Audit Working Paper File & Vouching Scrutiny Checklist",
+        "Fixed Asset Register with Dual Depreciation Schedule (Book vs IT Act)",
+        "MSME Section 43B(h) Vendor Compliance & Interest Calculation Worksheet",
+        "Final Audited Balance Sheet, Profit & Loss Account and Notes to Accounts"
+      ],
+      "coverImageUrl": "/images/ylcc_corporate_payroll_slate_copper.png",
+      "media": [
+        {
+          "id": "med-acc-1",
+          "url": "/images/ylcc_corporate_payroll_slate_copper.png",
+          "name": "Corporate Audit & Balance Sheet Finalisation Dossier",
+          "type": "image/png",
+          "size": "3.4 MB",
+          "caption": "Audit vouching working papers, FAR depreciation schedules, and statutory balance sheet finalisation"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-acc-1",
+          "title": "Statutory & Internal Audit Master Checklist & Working Papers",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "92 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-acc-2",
+          "title": "Fixed Asset Register & Depreciation Calculator (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "164 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 25,
+      "seoTitle": "Internal & Yearly Statutory Audit Course | Balance Sheet Finalisation | YLCC",
+      "seoDescription": "Master corporate internal and statutory audit desk work: Vouching, FAR depreciation, MSME compliance, provision entries, and Balance Sheet finalisation in Kanpur at YLCC.",
+      "createdAt": "2025-02-15T00:00:00.000Z",
+      "updatedAt": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "id": "proj-acc-2",
+      "slug": "automated-purchase-order-procurement-3way-matching",
+      "title": "Automate Purchase Order: Requisition, Multi-Level Approval, 3-Way Invoice Matching & GRN Reconciliation",
+      "shortDescription": "End-to-end automated procurement & purchase accounting: Purchase Requisition (PR) to Purchase Order (PO) workflow, multi-tier managerial approval matrices, Goods Receipt Note (GRN) store verification, and 3-way invoice matching.",
+      "detailedDescription": "Experience modern automated enterprise procurement and purchase desk accounting simulating a high-volume commercial organization. Students master the complete Procure-to-Pay (P2P) automation cycle: Creating itemized purchase requisitions from department heads, obtaining RFQs (Request for Quotations) from multiple vendors, preparing vendor comparative rate evaluation sheets, issuing system-generated Purchase Orders with delivery lead times and payment terms, tracking Goods Receipt Notes (GRN) at the warehouse dock, inspecting physical counts against delivery challans, and implementing rigorous 3-Way Matching (matching PO unit price, GRN accepted quantity, and Vendor Tax Invoice) before passing accounting vouchers in Tally Prime, eliminating unauthorized purchases, duplicate invoices, and price discrepancies.",
+      "industryCategory": "Account Industry",
+      "accountingCategory": "Procure-to-Pay (P2P) & Procurement Operations Accounting",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Purchase Requisition (PR) to PO Automated Workflow & RFQ Comparative Analysis",
+        "Goods Receipt Note (GRN) Store Verification & Material Inward Inspection",
+        "Automated 3-Way Invoice Matching (PO vs GRN vs Vendor Tax Invoice)",
+        "Debit Note Issuance for Rate Difference, Short Supply & Rejected Material",
+        "Vendor Purchase Register Reconciliation with GSTR-2B ITC Eligibility"
+      ],
+      "softwareUsed": [
+        "Tally Prime 4.0 Procurement Module",
+        "Zoho Books / ERP P2P Simulator",
+        "Excel 365 3-Way Matching Automation Worksheet"
+      ],
+      "learningObjectives": [
+        "Design and execute a streamlined Purchase Requisition, Approval, and PO generation cycle",
+        "Enforce 3-way matching controls between Purchase Order, Warehouse GRN, and Vendor Invoice",
+        "Accurately account for material rejections, freight inward additions, and purchase returns via Debit Notes",
+        "Maintain vendor purchase sub-ledgers aligned with GSTR-2B input tax credit eligibility"
+      ],
+      "businessScenario": "Working at 'Apex Engineering & Hardware Corp', managing ₹2.5 Crore monthly purchase orders across raw steel, hardware consumables, and packaging material. The procurement accountant must compare vendor quotes, issue automated Purchase Orders with pre-configured delivery schedules, record Store GRN receipts, perform 3-way matching to catch quantity variances and pricing surges, issue debit notes for damaged consignments, and release approved bills to the accounts payable desk for scheduling.",
+      "tasksToComplete": [
+        "Build an automated vendor quotation comparative matrix in Excel selecting optimal vendor based on price, credit term, and delivery lead time",
+        "Generate 25 structured Purchase Orders in Tally Prime with GST rate specification, delivery milestones, and payment conditions",
+        "Process Warehouse Goods Receipt Notes (GRN) recording accepted, rejected, and short-supplied quantities",
+        "Perform 3-way matching reconciliation on 25 vendor invoices, highlighting and resolving price and quantity discrepancies",
+        "Issue Debit Notes for short shipments and rejected stock, updating vendor ledgers and GST ITC reversals"
+      ],
+      "expectedOutcomes": [
+        "Automated Vendor Quotation Comparative Matrix & PO Requisition Log",
+        "Store Goods Receipt Note (GRN) & Physical Stock Inward Register",
+        "3-Way Invoice Matching Audit Reconciliation Sheet with Variance Tracker",
+        "Vendor Debit Note Register & Purchase Ledger Reconciliation Summary"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-acc-2",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Automated Purchase Order & 3-Way Match Workflow",
+          "type": "image/png",
+          "size": "3.1 MB",
+          "caption": "Procure-to-pay workflow: Purchase requisition, approval matrix, GRN inspection, and 3-way invoice matching"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-acc-3",
+          "title": "Enterprise Procurement & Purchase Order Control Manual",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "88 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-acc-4",
+          "title": "Automated 3-Way Invoice Matching & PO Tracker (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "152 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 24,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 26,
+      "seoTitle": "Automated Purchase Order & 3-Way Invoice Matching Course | YLCC Kanpur",
+      "seoDescription": "Learn automated Purchase Order (PO) creation, vendor quotation matrix, GRN verification, and 3-way invoice matching in Tally Prime and Excel at YLCC.",
+      "createdAt": "2025-02-15T00:00:00.000Z",
+      "updatedAt": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "id": "proj-acc-3",
+      "slug": "corporate-payment-finance-vendor-aging-cashflow",
+      "title": "Payment & Finance: Vendor Aging Analysis, Bill-to-Bill Payment Processing, Petty Cash & Cash Flow Management",
+      "shortDescription": "Corporate treasury payment operations & cash desk finance: Vendor aging schedules, bill-by-bill settlement priority, batch NEFT/RTGS banking payout files, imprest petty cash control, and 13-week rolling cash flow forecasting.",
+      "detailedDescription": "Operate the central treasury and accounts payable desk of a thriving mid-sized commercial enterprise. Students learn how professional finance controllers allocate and execute business disbursements while safeguarding corporate liquidity: Generating Accounts Payable Aging Reports (0-30, 31-60, 61-90, 90+ days), prioritizing payments based on vendor credit terms, cash discount incentives, and MSME statutory payment limits, processing bill-to-bill voucher settlements in Tally Prime, preparing bulk NEFT/RTGS payment instruction templates for corporate net-banking, managing the imprest petty cash float with expense voucher approvals, and constructing a dynamic 13-week rolling Cash Flow Forecast model in Excel to predict working capital surpluses and funding deficits.",
+      "industryCategory": "Account Industry",
+      "accountingCategory": "Treasury Operations & Accounts Payable Management",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Accounts Payable (AP) Vendor Aging Schedule & Payment Priority Matrix",
+        "Bill-by-Bill Payment Voucher Settlement & Cash Discount Optimization",
+        "Corporate Net-Banking Batch NEFT/RTGS Bulk Payout File Preparation",
+        "Imprest Petty Cash System, Expense Vouchers & Surprise Cash Verification",
+        "13-Week Rolling Cash Flow Forecasting & Liquidity Budgeting in Excel"
+      ],
+      "softwareUsed": [
+        "Tally Prime Treasury & Banking Suite",
+        "Advanced Excel 365 Financial Cash Flow Model",
+        "Corporate Net Banking Portal Simulator (HDFC / ICICI Corporate CMS)"
+      ],
+      "learningObjectives": [
+        "Analyze Accounts Payable aging to optimize working capital cycles and avoid supplier hold-ups",
+        "Execute bill-by-bill accounting settlements capturing cash discounts and early-payment rebates",
+        "Prepare error-free bulk banking disbursement files compliant with corporate bank payment protocols",
+        "Develop rolling cash flow projection models ensuring sufficient liquidity for statutory and operational dues"
+      ],
+      "businessScenario": "You are the Treasury & Accounts Payable Executive at 'Vanguard Industrial Supplies Pvt Ltd', handling weekly vendor disbursements of ₹35-50 Lakhs. You must scrutinize approved invoices, evaluate vendor aging, claim early payment cash discounts (2/10 net 30), prepare bulk payment files for HDFC Corporate Banking, manage the head-office imprest petty cash drawer, and report weekly cash inflows vs outflows to the Chief Financial Officer.",
+      "tasksToComplete": [
+        "Extract and analyze vendor aging reports in Tally Prime, categorizing 50+ vendor accounts by due dates and MSME status",
+        "Process 40 bill-by-bill payment vouchers adjusting advances, debit notes, and early-settlement cash discounts",
+        "Create a validated corporate batch banking upload sheet for NEFT/RTGS payments with beneficiary IFSC and account numbers",
+        "Audit 30 petty cash expense vouchers, replenish imprest fund, and reconcile physical cash box balances",
+        "Construct a 13-week dynamic Cash Flow Forecast model projecting collections, supplier payouts, payroll, and GST liabilities"
+      ],
+      "expectedOutcomes": [
+        "Comprehensive Accounts Payable Aging Schedule & Payment Allocation Sheet",
+        "Bill-to-Bill Payment Settlement Daybook with Cash Discount Register",
+        "Bank-Ready Batch NEFT/RTGS Payment Instruction Manifest",
+        "13-Week Rolling Corporate Cash Flow Projection & Liquidity Model"
+      ],
+      "coverImageUrl": "/images/ylcc_corporate_payroll_slate_copper.png",
+      "media": [
+        {
+          "id": "med-acc-3",
+          "url": "/images/ylcc_corporate_payroll_slate_copper.png",
+          "name": "Corporate Treasury & Payment Operations Dossier",
+          "type": "image/png",
+          "size": "3.3 MB",
+          "caption": "Vendor aging analysis, batch NEFT/RTGS banking payouts, and rolling corporate cash flow model"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-acc-5",
+          "title": "Accounts Payable & Corporate Treasury Operations Handbook",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "85 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-acc-6",
+          "title": "13-Week Corporate Rolling Cash Flow Forecasting Model (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "158 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 24,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 27,
+      "seoTitle": "Corporate Payment & Finance Course | Vendor Aging & Cash Flow | YLCC",
+      "seoDescription": "Practical training in Accounts Payable aging, bill-by-bill settlement, corporate batch NEFT/RTGS payouts, and rolling cash flow modeling at YLCC.",
+      "createdAt": "2025-02-15T00:00:00.000Z",
+      "updatedAt": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "id": "proj-acc-4",
+      "slug": "bank-reconciliation-statement-brs-automated-reconciliation",
+      "title": "Bank Reconciliation: Automated BRS, Multi-Account E-Statement Import, Cheque Clearing & Bank Charges Scrutiny",
+      "shortDescription": "Precision banking reconciliation & cash control: Automated Bank Reconciliation Statement (BRS), electronic bank statement (CSV/MT940) import, unrepresented cheques & uncredited deposits tracking, and bank fee adjustment entries.",
+      "detailedDescription": "Master the quintessential desk skill demanded of every corporate accountant—flawless, daily and monthly Bank Reconciliation Statements (BRS) across multiple operational current accounts, overdrafts, and collection accounts. Students work with real-world banking statement feeds: Importing electronic bank statements (CSV/Excel/MT940) into Tally Prime, automated auto-matching of cheque numbers and UTR references, identifying timing differences including cheques issued but not presented for payment and cheques deposited but not credited, spotting direct bank debits (ECS/NACH mandates, loan EMIs, bank interest, charges & GST on banking services), identifying dishonoured cheques, and passing necessary adjustment entries in company books to ensure exact alignment between Bank Ledger and Bank Statement balance.",
+      "industryCategory": "Account Industry",
+      "accountingCategory": "Banking Operations & Cash Management Accounting",
+      "difficultyLevel": "Foundational",
+      "skillsCovered": [
+        "Bank Reconciliation Statement (BRS) Principles & Discrepancy Identification",
+        "Auto-BRS Electronic Bank Statement Import (CSV, Excel, MT940 Formats)",
+        "Cheques Issued Not Presented & Cheques Deposited Not Cleared Tracking",
+        "Direct Bank Debits/Credits Adjustment: ECS, Bank Charges, Interest & Taxes",
+        "Dishonoured Cheque / Return Memo Accounting with Customer Penalties"
+      ],
+      "softwareUsed": [
+        "Tally Prime Auto-BRS Engine",
+        "Excel 365 Advanced Lookup & Reconciliation Template",
+        "HDFC / SBI / ICICI Corporate E-Statement Simulator"
+      ],
+      "learningObjectives": [
+        "Understand the fundamental causes of difference between Company Cash Book and Bank Statement",
+        "Leverage automated reconciliation tools in modern accounting software for high-volume transactions",
+        "Isolate timing differences from actual book-entry omissions and post corrective journal entries",
+        "Prepare audit-compliant monthly Bank Reconciliation Statements across multiple corporate bank accounts"
+      ],
+      "businessScenario": "Managing the banking desk for 'Orient Distributors & Retailers', which operates 3 active commercial bank accounts (HDFC Current Account for customer collections, SBI Cash Credit Account for vendor disbursements, and ICICI Sweep Account for surplus treasury). Every month-end, the company's books differ from bank balances due to transit cheques, customer direct RTGS credits without payment advice, ECS auto-debits for vehicle insurance, and bank service charges with 18% GST. You must perform automated BRS, resolve unmatched transactions, and submit signed reconciliation statements to the internal auditor.",
+      "tasksToComplete": [
+        "Import electronic bank statements containing 150+ transactions into Tally Prime and configure auto-reconciliation parameters",
+        "Track and list unrepresented cheques and uncredited collection deposits across all 3 bank accounts",
+        "Pass adjustment vouchers for direct bank charges, interest debits, POS swipe machine commissions, and direct customer remittances",
+        "Account for cheque return memos including debiting customer ledger and levying cheque bounce penalty charges",
+        "Generate final certified monthly Bank Reconciliation Statements for HDFC, SBI, and ICICI accounts"
+      ],
+      "expectedOutcomes": [
+        "Monthly Multi-Bank Reconciliation Statements (BRS) with Full Audit Trail",
+        "Unrepresented Cheque & Stale Cheque Ageing Analysis Register",
+        "Direct Bank Debit / Credit Adjustment Voucher Daybook",
+        "Automated Excel Bank vs Book Cross-Match Reconciliation Model"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-acc-4",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Automated Bank Reconciliation & Multi-Account BRS",
+          "type": "image/png",
+          "size": "3.2 MB",
+          "caption": "E-statement import, cheque clearance tracking, auto-matching, and monthly certified BRS statements"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-acc-7",
+          "title": "Bank Reconciliation Statement (BRS) Standard Operating Procedure",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "82 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-acc-8",
+          "title": "Multi-Bank BRS Auto-Reconciliation Template (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "145 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 22,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 28,
+      "seoTitle": "Bank Reconciliation Statement (BRS) Practical Course | YLCC Kanpur",
+      "seoDescription": "Master corporate Bank Reconciliation Statements (BRS) in Tally Prime and Excel. Learn e-statement auto-matching, transit cheque tracking, and adjustment entries at YLCC.",
+      "createdAt": "2025-02-15T00:00:00.000Z",
+      "updatedAt": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "id": "proj-acc-5",
+      "slug": "bank-cc-limit-drawing-power-stock-statement-cma",
+      "title": "Bank CC Limit Maintain: Monthly Stock Statement, Drawing Power (DP) Calculation, Creditors Margin & CMA Report",
+      "shortDescription": "Commercial banking Cash Credit (CC) limit & working capital maintenance: Monthly bank stock statements, Drawing Power (DP) calculation formula, unpaid creditors & obsolete stock margins, penal interest avoidance, and CMA data preparation.",
+      "detailedDescription": "Specialize in high-demand corporate banking accounting: Managing and maintaining a multi-crore Bank Cash Credit (CC) & Overdraft (OD) working capital facility. Students gain practical mastery over bank reporting compliance: Compiling monthly Stock Statements in the bank's prescribed format, calculating Drawing Power (DP) based on paid stock and eligible book debts (under 90 days), applying mandatory bank margins (typically 25% on inventory and 40% on debtors), deducting unpaid sundry creditors / LC liability, verifying insurance coverage with bank hypothecation clause, tracking stock inspection compliance, preventing punitive penal interest from limit overdrawing, and preparing the complete CMA (Credit Monitoring Arrangement) Data Report in Excel for annual limit renewal and enhancement with commercial banks.",
+      "industryCategory": "Account Industry",
+      "accountingCategory": "Working Capital Finance & Commercial Banking Credit Management",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "Bank Prescribed Monthly Stock & Book Debt Statement Compilation",
+        "Drawing Power (DP) Formula Computation with Bank Margins (Inventory & Debtors)",
+        "Sundry Creditors Deductions, LC Liability & Obsolete Stock Exclusion",
+        "Hypothecation Insurance Policy Endorsement & Bank Inspection Compliance",
+        "CMA (Credit Monitoring Arrangement) Data Sheet Preparation for Loan Renewal"
+      ],
+      "softwareUsed": [
+        "Advanced Excel 365 Bank DP & CMA Data Model",
+        "Tally Prime CC Limit & Hypothecated Stock Tracking",
+        "Commercial Bank Working Capital Assessment Portal Simulator"
+      ],
+      "learningObjectives": [
+        "Calculate Drawing Power (DP) accurately from Tally inventory and debtor balances applying bank margin norms",
+        "Distinguish between total current assets and bank-eligible current assets (excluding >90 days overdue debtors)",
+        "Prepare certified monthly stock and debtor statements for timely submission to avoid penal bank interest",
+        "Construct comprehensive 5-year CMA Data statements (Operating Statement, Balance Sheet analysis, Fund Flow, Working Capital Assessment)"
+      ],
+      "businessScenario": "You are the Senior Finance Officer at 'Shree Ganesh Polychem Ltd', which holds an sanctioned Cash Credit (CC) limit of ₹5.00 Crore with State Bank of India (SBI). The bank mandates submission of the monthly Stock & Book Debt Statement by the 7th of every month to determine Drawing Power. An incorrect calculation or delayed submission results in 2% penal interest and freezing of limit withdrawals. You must extract Tally stock and debtor balances, apply margin rules, calculate net DP, and prepare the annual CMA data for renewal of the limit.",
+      "tasksToComplete": [
+        "Extract physical raw material, WIP, and finished goods valuations along with debtor ageing from Tally Prime",
+        "Filter out obsolete inventory, goods in transit without invoice, and sundry debtors outstanding beyond 90 days",
+        "Compute Drawing Power (DP) by deducting unpaid trade creditors from eligible inventory and applying 25% margin on stock and 40% margin on debtors",
+        "Draft the official Bank Stock & Book Debt Statement in SBI's prescribed Annexure format with hypothecation certificate",
+        "Build the 5-sheet CMA Data Report in Excel comprising Form I, Form II (Operating Statement), Form III (Balance Sheet Analysis), Form IV (Comparative Current Assets/Liabilities), and Form V (Maximum Permissible Bank Finance - MPBF calculation)"
+      ],
+      "expectedOutcomes": [
+        "Certified Monthly Bank Stock & Book Debt Statement in SBI Annexure Format",
+        "Drawing Power (DP) Calculation & Limit Utilization Monitoring Sheet",
+        "5-Year CMA (Credit Monitoring Arrangement) Data Assessment Model in Excel",
+        "Bank Working Capital Ratio Analysis & MPBF (Tandon/Chore Committee) Worksheet"
+      ],
+      "coverImageUrl": "/images/ylcc_corporate_payroll_slate_copper.png",
+      "media": [
+        {
+          "id": "med-acc-5",
+          "url": "/images/ylcc_corporate_payroll_slate_copper.png",
+          "name": "Bank CC Limit Drawing Power & CMA Data Toolkit",
+          "type": "image/png",
+          "size": "3.5 MB",
+          "caption": "Stock & book debt statements, Drawing Power (DP) computation, and 5-year bank CMA report"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-acc-9",
+          "title": "Bank CC Limit Stock Statement & Drawing Power Computation Guide",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "95 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-acc-10",
+          "title": "SBI Prescribed Stock Statement & 5-Year CMA Data Model (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "185 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 29,
+      "seoTitle": "Bank CC Limit Maintain & CMA Report Practical Course | YLCC Kanpur",
+      "seoDescription": "Learn Bank CC Limit Drawing Power (DP) calculation, monthly stock statements, creditors margin deductions, and CMA data preparation at YLCC.",
+      "createdAt": "2025-02-15T00:00:00.000Z",
+      "updatedAt": "2025-02-15T00:00:00.000Z"
     }
   ],
   "faculty": [

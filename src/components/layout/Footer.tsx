@@ -170,7 +170,7 @@ export default function Footer({ settings }: FooterProps) {
                 • GSTR-1 & E-Invoicing
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Freight Logistics & RCM on GTA
+                • Corporate TDS & TCS Compliance
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
                 • Automobile Service Centre Jobs

@@ -2819,70 +2819,85 @@
     },
     {
       "id": "proj-3",
-      "slug": "logistics-transport-fleet-accounting",
-      "title": "Freight Logistics: Transporter Hisab, Consignment & City Tracking",
-      "shortDescription": "Accounting for inter-state freight carriers: Transporter Hisab (trip advances & fuel settlement), Consignment Tracking (Bilty/LR registers), and City-Wise transport route monitoring.",
-      "detailedDescription": "Transport and logistics businesses handle thousands of trips across states with cash advances, fuel slips, toll charges, and broker commissions. In this signature practical project for \"Speedways Freight Logistics\", students master all 3 foundational pillars of transport desk accounting: Transporter Hisab (reconciling driver cash advances, diesel consumption, Fastag tolls, and owner-operator payments), Consignment Tracking (monitoring Bilty/LR entries, dispatch weights, proof of delivery, and detention charges), and City-Wise Transport Tracking (managing route profitability across major freight corridors, inter-city vehicle transit times, and GTA statutory compliances under Section 194C and GST RCM).",
-      "industryCategory": "Logistics & Transportation",
-      "accountingCategory": "Fleet & Service Operations",
+      "slug": "corporate-tds-tcs-withholding-traces-compliance",
+      "title": "Corporate TDS & TCS: Multi-Section Deductions, Challan 281, Form 26Q/24Q & TRACES Portal",
+      "shortDescription": "Complete withholding tax & corporate compliance simulation: Section deductions (194C, 194J, 194I, 194Q, 194R), TCS (206C/206C(1H)), Challan 281 e-payments, Form 24Q/26Q quarterly filings, and TRACES Form 16/16A generation.",
+      "detailedDescription": "In this intensive direct tax and statutory compliance simulation, students step into the role of a Corporate Tax & Withholding Manager for 'Zenith Infotech & Commercial Enterprises Ltd'. You take full operational charge of the company's direct tax withholding responsibilities: auditing 650+ vendor and contractor invoices to determine exact TDS deduction thresholds and rates under Sections 194C (contractors & transporter sub-section 6 declarations), 194J (10% professional vs 2% technical fees), 194I (rent on land/building 10% vs plant/machinery 2%), 194H (commission/brokerage 5%), 194Q (buyer tax deduction on goods purchases above ₹50L), and 194R (perquisites & business benefits); resolving Section 194Q vs 206C(1H) priority conflicts; verifying higher deduction rates under Sections 206AB and 206CCA for non-filers of income tax returns; executing monthly electronic tax deposits via Challan ITNS 281 through the Income Tax e-filing portal; calculating Section 201(1A) mandatory interest for late deductions or deposits; preparing and validating quarterly returns Form 26Q and Form 24Q (Salary with Annexure II Old vs New Regime Section 115BAC) using NSDL Return Preparation Utility (RPU) and File Validation Utility (FVU); downloading Consolidated Files (.conso) and Justification Reports from the TRACES portal; resolving short deduction/short payment defaults; and bulk-generating digitally signed Form 16 and Form 16A certificates.",
+      "industryCategory": "Legal & Taxation",
+      "accountingCategory": "Direct Taxation & Statutory Withholding",
       "difficultyLevel": "Advanced",
       "skillsCovered": [
-        "Transportor Hisab / Fleet Accounts Settlement",
-        "Consignment Tracking (Bilty / LR Register)",
-        "City-Wise Transport & Destination Route Tracking",
-        "Goods Transport Agency (GTA) 5% RCM Accounting",
-        "Broker Commission & TDS Section 194C Compliances"
+        "Multi-Section Withholding (194C, 194J, 194I, 194H, 194Q & 194R)",
+        "Higher Deduction for Non-Filers under Sections 206AB & 206CCA",
+        "Monthly Challan ITNS 281 E-Payment & BSR Code / Challan Reconciliation",
+        "Quarterly Form 26Q & 24Q Filing with NSDL RPU & FVU Utilities",
+        "Section 115BAC Salary Tax Computations (Old vs New Regime Annexure II)",
+        "TRACES Portal Operations (Form 16/16A, Justification Reports & Corrections)"
       ],
       "softwareUsed": [
-        "Tally Prime 4.0",
-        "Logistics Fuel & Mileage Excel Tool"
+        "NSDL e-Gov Return Preparation Utility (RPU)",
+        "File Validation Utility (FVU)",
+        "TRACES Corporate Portal Simulator",
+        "Income Tax E-Filing Portal (Challan 281 Engine)",
+        "Tally Prime 4.0 Direct Tax Module"
       ],
       "learningObjectives": [
-        "Master complete Transporter Hisab: advance disbursements, diesel cards, Fastag tolls, and trip margin balancing",
-        "Maintain live Consignment Tracking registers (Bilty/LR) with bill-by-bill matching and Proof of Delivery (POD)",
-        "Perform City-Wise transport route profitability analysis and enforce GTA RCM & Section 194C TDS compliances"
+        "Audit corporate vendor invoices and accurately apply TDS rates, thresholds, and lower deduction certificates under Section 197",
+        "Execute monthly Challan 281 payments with accurate Major/Minor heads and map BSR codes with zero bank payment discrepancies",
+        "Prepare error-free quarterly e-TDS returns (Form 26Q and Form 24Q) using NSDL RPU and troubleshoot FVU validation error files",
+        "Operate the TRACES portal to process online correction statements, download Conso files, and issue authentic Form 16/16A certificates"
       ],
-      "businessScenario": "Speedways Logistics operates 28 heavy commercial trucks and hires 40+ market trucks monthly for Delhi-Mumbai-Jaipur routes. Each trip involves driver cash advance (₹25,000), diesel fleet card swipes, Fastag tolls, and delivery detention charges. Accurate trip settlement is vital to stop cash leakages.",
+      "businessScenario": "Zenith Infotech & Commercial Enterprises Ltd engages over 400 active suppliers, IT consultants, transport operators, building landlords, and 150 full-time corporate employees. On the 7th of every month, corporate TDS must be accurately deposited to prevent steep interest penalties under Section 201(1A). At quarter-end, the accounts desk must match PANs with the Income Tax portal, verify 206AB non-filer status, validate Section 194C(6) transporter declarations to exempt TDS, compile Form 26Q and Form 24Q, generate .fvu files, and download verified Form 16/16A certificates from TRACES for seamless vendor relations.",
       "tasksToComplete": [
-        "Topic 1 (Transportor Hisab): Reconcile transporter freight ledgers, driver trip advances, diesel fuel cards, Fastag tolls, broker commissions, and final trip profit & loss statements",
-        "Topic 2 (Consignment Track): Track consignment notes (Bilty/LR) from dispatch to delivery, record billing weights, demurrage charges, POD (Proof of Delivery) submissions, and customer freight billing",
-        "Topic 3 (City Wise Transport Tracking): Route-wise freight ledger monitoring (e.g. Delhi, Mumbai, Ahmedabad, Jaipur), destination city delivery timelines, transit detention charges, and inter-city vehicle mileage profitability",
-        "Statutory Compliance: Verify GTA GST Reverse Charge (RCM 5% vs forward 12%), obtain sub-section (6) PAN declarations for transporter TDS exemptions under Section 194C"
+        "Audit 650 vendor and contractor bills, classify TDS sections (194C, 194J, 194I, 194Q, 194R), and record withholding entries in Tally Prime",
+        "Compute monthly TDS liability, calculate Section 201(1A) interest if any, and simulate Challan 281 payment on the Income Tax portal",
+        "Compile Form 26Q for non-salary vendor payouts using NSDL RPU, map Challan BSR/Challan No., and generate validated .fvu file",
+        "Prepare Form 24Q Annexure I and Annexure II for 150 employees comparing tax slabs under Section 115BAC New vs Old Tax Regime",
+        "Process a TRACES correction return for PAN errors and download digitally signed Form 16A quarterly certificates for all vendors"
       ],
       "expectedOutcomes": [
-        "Complete fleet operational P&L showing cost per metric tonne per km across major routes",
-        "Error-free consignment tracking register and Proof of Delivery (POD) audit trail",
-        "Clear RCM tax liability statement and zero unresolved driver advances at month-end"
+        "Monthly TDS Deductions & Challan 281 Reconciliation Register",
+        "Validated Form 26Q & Form 24Q e-TDS Return Files (.fvu and .html receipts)",
+        "Employee Form 16 (Part A & B) and Vendor Form 16A PDF Certificate Dossier",
+        "Zero Demand Notice Status on TRACES Justification Report"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_maroon.png",
       "media": [
         {
           "id": "med-3-1",
           "url": "/images/ylcc_tds_brochure_maroon.png",
-          "name": "Logistics Fleet Cost Model",
+          "name": "Corporate TDS & TRACES Workflow",
           "type": "image/png",
           "size": "2.8 MB",
-          "caption": "Fleet trip expense settlement and vehicle margin tracking"
+          "caption": "Corporate multi-section TDS withholding, Challan 281 e-tax payment, and TRACES certificate issuance"
         }
       ],
       "resources": [
         {
           "id": "res-3-1",
-          "title": "Logistics Accounting & GTA Compliance Practice File",
+          "title": "Corporate TDS & TCS Practical Master Withholding Dossier",
           "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
           "fileType": "pdf",
-          "fileSize": "59 KB",
+          "fileSize": "82 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-3-2",
+          "title": "TDS Multi-Section Calculator & Form 26Q / 24Q RPU Preparation Tool (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "168 KB",
           "isDownloadable": true
         }
       ],
-      "practiceTimeHours": 25,
+      "practiceTimeHours": 26,
       "academicYear": "2025-26",
-      "facultyMentor": "Rajesh Soni",
+      "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
       "displayOrder": 12,
       "createdAt": "2025-10-22",
-      "updatedAt": "2026-01-15"
+      "updatedAt": "2026-03-01"
     },
     {
       "id": "proj-4",
@@ -4128,7 +4143,7 @@
       "id": "faq-3",
       "category": "Practical Projects",
       "question": "What are the 30 Multi-Business Practical Projects?",
-      "answer": "The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, GSTR-1 & E-Invoicing outward reporting, Freight transport logistics, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model)."
+      "answer": "The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, GSTR-1 & E-Invoicing outward reporting, Corporate TDS & TCS withholding & TRACES compliance, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model)."
     },
     {
       "id": "faq-4",

@@ -243,6 +243,16 @@ export const db = {
     ) {
       return data.projects.find((p) => p.id === 'proj-2') || null;
     }
+    // Support legacy slug and aliases for Corporate TDS project
+    if (
+      slug === 'logistics-transport-fleet-accounting' ||
+      slug === 'tds' ||
+      slug === 'tds-compliance' ||
+      slug === 'corporate-tds' ||
+      slug === 'corporate-tds-tcs'
+    ) {
+      return data.projects.find((p) => p.id === 'proj-3') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

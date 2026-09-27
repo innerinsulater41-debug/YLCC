@@ -317,7 +317,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </div>
                 )}
 
-                {/* Partition Divider after Executive Track (Automate Purchase Order & Inventory Control) */}
+                {/* Partition Divider after Executive Track (Portfolio Investment Maintain) */}
                 {prog.id === 'prog-14' && selectedCategory === 'All' && !search.trim() && (
                   <div className="md:col-span-2 py-4">
                     <div className="relative flex items-center justify-center">

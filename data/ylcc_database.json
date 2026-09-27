@@ -977,91 +977,91 @@
     },
     {
       "id": "prog-14",
-      "slug": "automate-purchase-order-inventory-control",
-      "title": "AUTOMATE PURCHASE ORDER & INVENTORY CONTROL",
-      "category": "Automate Purchase Order & Inventory Control",
-      "shortDescription": "Master automated purchase orders and scientific inventory control: Setting minimum reorder stock levels, generating automatic shortage purchase order lists, and placing purchase orders with lowest historical cost vendor analysis.",
-      "detailedDescription": "Industrial enterprises, high-volume trading distributors, and retail organizations require scientific procurement workflows to prevent stockouts and eliminate costly emergency spot purchases. This practical course provides hands-on execution on live accounting software: Configuring automated reorder levels and safety stock thresholds in Tally Prime, generating dynamic purchase order lists based on real-time stock deficits, and placing cost-effective purchase orders by evaluating multi-vendor price histories to secure the lowest purchase rates.",
+      "slug": "portfolio-investment-maintain",
+      "title": "PORTFOLIO INVESTMENT MAINTAIN",
+      "category": "Portfolio Investment Maintain",
+      "shortDescription": "Master personal and corporate portfolio investment accounting: Tracking fixed deposits (FDRs), mutual funds, direct equities & bank accounts, automating insurance premium calendars, and managing policy maturity records.",
+      "detailedDescription": "High-net-worth individuals (HNIs), business promoters, family offices, and corporate accounts executives manage substantial wealth distributed across diverse financial instruments. This practical desk masterclass trains accountants and finance professionals to systematically track and maintain complete personal and corporate investment portfolios: Recording Fixed Deposit Receipts (FDRs) with cumulative interest accruals, maintaining mutual fund SIPs, direct stock equity holdings, and multi-bank liquid reserves, building dynamic insurance premium payment calendars to prevent policy lapses, and managing maturity proceeds, surrender values, and tax-exempt Section 10(10D) policy maturity records.",
       "duration": "1 Month",
       "mode": "Offline Classroom",
-      "fees": 11500,
+      "fees": 12000,
       "discountedFees": 8999,
-      "eligibility": "Commerce students, purchase coordinators, warehouse managers, store accountants, and business owners",
+      "eligibility": "Commerce students, wealth management accountants, personal tax planners, and business family executives",
       "softwareTools": [
-        "Tally Prime 4.0 (Purchase & Inventory)",
-        "Excel 365 Procurement Automation",
-        "Vendor Rate History Register",
-        "Automated Reorder Trigger Utilities"
+        "Excel 365 Wealth Portfolio Engine",
+        "Tally Prime Investment Ledgers",
+        "Mutual Fund & CAMS/KFintech Statements",
+        "Insurance Premium Schedule Trackers"
       ],
       "facultyId": "fac-2",
       "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & Operations Mentors)",
       "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
       "availableSeats": 8,
       "startDate": "1st & 15th of Every Month",
-      "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
-      "certificateInfo": "YLCC Certified Purchase Order & Inventory Control Specialist",
+      "brochureUrl": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+      "certificateInfo": "YLCC Certified Portfolio Investment & Wealth Records Specialist",
       "isFeatured": true,
       "status": "published",
       "displayOrder": 8,
-      "coreCompetenciesHeading": "3 Essential Practical Skills You Master",
-      "coreCompetenciesSubheading": "Hands-on practical execution covering Minimum Stock Level Set, Automatic Purchase Order List, and Place Purchase Order (Minimum Cost History).",
+      "coreCompetenciesHeading": "3 Core Investment Management Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical execution covering Personal Investment Maintenance, Insurance Premium Calendar Automation, and Policy Maturity Tracking.",
       "coreCompetencies": [
         {
-          "title": "Minimum Stock Level Set",
-          "description": "Setting minimum safety stock levels, maximum storage limits, and reorder point (ROP) thresholds to ensure continuous operations without stockouts."
+          "title": "Maintain Personal Investment (FDR, MF, Share, Bank)",
+          "description": "Comprehensive accounting and tracking across Bank Fixed Deposits (FDRs), equity mutual fund NAVs, direct stock trading portfolios, and multi-bank savings ledgers."
         },
         {
-          "title": "Automatic Purchase Order List",
-          "description": "Configuring software rules to dynamically compile shortage purchase requirement lists across all depleted raw material and finished inventory items."
+          "title": "Insurance Premium Calendar",
+          "description": "Creating automated annual and monthly premium payment schedules, grace period reminders, and ECS bank mandate tracking to safeguard life and general policies."
         },
         {
-          "title": "Place Purchase Order (Minimum Cost History)",
-          "description": "Analyzing historical purchase ledgers to extract lowest supplier quotes and issuing formal purchase orders to minimize procurement expenses."
+          "title": "Policies Maturity Record",
+          "description": "Tracking policy maturity dates, guaranteed survival bonuses, maturity claim paperwork, surrender value realizations, and Section 10(10D) tax compliance."
         }
       ],
       "modules": [
         {
           "id": "mod-14-1",
-          "title": "Minimum Stock Level Set",
+          "title": "Maintain Personal Investment (FDR, Mutual Fund, Share, Bank etc.)",
           "topics": [
-            "Configuring minimum reorder levels, maximum capacity limits, and safety buffers in Tally Prime 4.0",
-            "Lead time evaluation: Factoring vendor delivery turnaround time and daily consumption velocity",
-            "Preventing production downtime, stockout penalties, and emergency spot purchases through automated alerts",
-            "Perpetual inventory tracking: Reconciling physical stock counts with digital ERP ledger balances"
+            "Fixed Deposit Receipts (FDRs): Tracking bank deposit tenures, compounding interest accruals, Form 26AS/AIS TDS credits, and cumulative vs non-cumulative schemes",
+            "Mutual Funds: Recording lumpsum investments & SIPs, tracking historical NAV valuations, dividend payout/reinvestment accounting, and realized capital gains (STCG/LTCG)",
+            "Direct Equity & Demat Accounts: Managing demat transaction statements, contract notes, STT deductions, bonus shares, rights issues, and dividend reconciliation",
+            "Multi-Bank Account Auditing: Reconciling savings accounts, auto-sweep balances, liquid mutual fund reserves, and monthly net-worth consolidation"
           ],
           "durationHours": 12
         },
         {
           "id": "mod-14-2",
-          "title": "Automatic Purchase Order List",
+          "title": "Insurance Premium Calendar",
           "topics": [
-            "Automated purchase order generation workflows triggered upon breach of minimum reorder points",
-            "Compiling dynamic pending purchase requisition lists across multiple raw materials and trading SKUs",
-            "Economic Order Quantity (EOQ) optimization: Balancing order placement costs against inventory holding costs",
-            "Automating batch purchase indent creation, multi-level departmental purchase approvals, and internal audit sign-offs"
+            "Building an automated annual insurance premium calendar across Life (Term, Endowment, ULIP) and General (Health, Motor, Fire) policies",
+            "Renewal schedule alerts: Managing premium payment frequency (Monthly, Quarterly, Half-Yearly, Annual) and statutory grace period countdowns",
+            "ECS/NACH mandate audit: Reconciling automated bank auto-debits against official insurer premium receipts and preventing accidental policy lapses",
+            "Income Tax Section 80C & 80D compliance: Documenting eligible life premium and health mediclaim deductions for tax return filing"
           ],
           "durationHours": 12
         },
         {
           "id": "mod-14-3",
-          "title": "Place Purchase Order (Minimum Cost History)",
+          "title": "Policies Maturity Record",
           "topics": [
-            "Analyzing historical vendor purchase registers to identify all-time lowest procurement rates per item",
-            "Multi-vendor quotation comparison: Evaluating freight terms, cash discount rebates, credit periods, and delivery SLAs",
-            "Issuing formal Purchase Orders (POs) with statutory GSTIN, HSN codes, payment terms, and delivery schedules",
-            "Three-way matching audit: Reconciling Purchase Order (PO), Goods Receipt Note (GRN), and Vendor Tax Invoice before payment release"
+            "Compiling comprehensive master registers of all active policies, policyholder nominees, sum assured guarantees, and surrender values",
+            "Tracking maturity milestone dates, money-back survival payouts, and automated maturity claim intimation workflows with insurance companies",
+            "Documenting maturity discharge vouchers, NEFT mandate submissions, original bond verification, and insurance ombudsman settlement compliance",
+            "Taxability of maturity proceeds: Analyzing Section 10(10D) exemptions, high-premium ULIP/traditional policy taxation amendments, and TDS under Section 194DA"
           ],
           "durationHours": 12
         }
       ],
       "learningOutcomes": [
-        "Configure automated minimum stock levels, reorder points, and safety buffers in Tally Prime",
-        "Generate automated purchase order deficiency lists to eliminate stockouts and production delays",
-        "Evaluate historical supplier pricing registers to place purchase orders at the lowest available market rate",
-        "Execute 3-way matching between Purchase Orders, Goods Receipt Notes (GRNs), and Vendor Tax Invoices"
+        "Maintain centralized ledger registers for bank FDRs, mutual fund portfolios, shares, and savings accounts",
+        "Automate insurance premium payment calendars to eliminate delayed penalties and policy lapses",
+        "Track insurance policy maturity schedules, survival benefits, and process claim settlements efficiently",
+        "Reconcile annual interest accruals, capital gains, and dividend payouts with Form 26AS and AIS"
       ],
-      "seoTitle": "Automate Purchase Order & Inventory Control Course | YLCC Jaipur",
-      "seoDescription": "Learn automated purchase orders and scientific inventory control at YLCC: Minimum stock level setting, automatic PO lists, and lowest cost vendor placement."
+      "seoTitle": "Portfolio Investment Maintain Course | Wealth & Insurance Accounting | YLCC",
+      "seoDescription": "Learn practical personal portfolio investment maintenance at YLCC Jaipur: FDR, Mutual Funds, Direct Shares, Insurance Premium Calendars, and Policy Maturity Records."
     },
     {
       "id": "prog-4",

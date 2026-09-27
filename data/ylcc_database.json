@@ -2337,74 +2337,78 @@
     },
     {
       "id": "proj-mfg-7",
-      "slug": "automobile-ancillary-precision-machining-costing",
-      "title": "Automobile Ancillaries: Precision CNC Machining & OEM Stage Costing",
-      "shortDescription": "Tier-1 automobile supplier practical accounting: forged steel blanks to CNC turned gears & shafts, multi-stage heat treatment & phosphating, OEM Just-In-Time (JIT) schedules, tooling wear amortization, and rejection debit notes.",
-      "detailedDescription": "Automotive tier-1 ancillaries operate under stringent quality standards and OEM delivery schedules. In this simulation for \"Precision AutoDrive Components Ltd.\", students handle accounting for precision machining of automotive transmission gears, wheel hubs, and engine valves. You will track raw forged blanks, allocate multi-axis CNC machine amortization, pass vouchers for induction heat treatment and phosphating, account for customer quality rejections (PPM tracking), manage tooling insert wear costs, and process OEM supply invoices with electronic delivery schedules.",
+      "slug": "furniture-manufacturing-timber-modular-costing",
+      "title": "Furniture Manufacturing: Solid Wood, Modular Board & Turnkey Job Costing",
+      "shortDescription": "Commercial wooden & modular furniture plant accounting: seasoned hardwood lumber & HDHMR board cutting, CNC routing & veneer pressing, German hardware BOM, multi-stage PU polish & lacquer finishing, carpenter piece-rate labour, and job-order batch costing.",
+      "detailedDescription": "In this advanced furniture manufacturing simulation, students take charge of factory cost ledgers for 'WoodCraft Living & Architectural Furnishings Ltd.' (a high-capacity mechanized woodworking plant producing solid teakwood furniture, modular wardrobes, and corporate office workstations). Students configure multi-stage Bills of Materials (BOM) in Tally Prime Manufacturing: raw timber log breakdown, seasoning kiln moisture shrinkage (12%), panel saw optimization & cutting scrap recovery, decorative veneer & cold-press laminate bonding, European soft-close hardware & drawer runners, automated spray PU polishing line overheads, skilled carpenter piece-rate vs hourly labour allocation, client stage-wise advance billing, and batch-wise landed unit costing.",
       "industryCategory": "Manufacturing Industry",
-      "accountingCategory": "Automotive Stage Costing & Tooling Amortization",
+      "accountingCategory": "Timber Seasoning, Modular Panel BOM & Job Costing",
       "difficultyLevel": "Advanced",
       "skillsCovered": [
-        "Raw Forging & Cast Blank Requisition Vouchers",
-        "Multi-Stage Machining (CNC Turning, Hobbing, Grinding, Washing)",
-        "Specialized Tooling Insert & Cutting Fluid Cost Amortization",
-        "Customer Rejection Debit Notes & PPM Defect Accounting",
-        "OEM JIT Consignment Stock & Delivery Schedule Billing"
+        "Multi-Stage Furniture BOM (Seasoned Timber, HDHMR/Plywood, Veneers, Hardware Fittings)",
+        "Raw Lumber Log Conversion, Kiln Drying Moisture Shrinkage & Wood Waste Loss (15-20%)",
+        "Panel Nesting Optimization, CNC Routing & Edge-Banding Chemical Absorption",
+        "PU/Melamine Polish, Stainers, Sanding Abrasives & Spray Booth Power Overheads",
+        "Carpenter & Craftsman Piece-Rate Job Cards vs Direct Daily Wages Allocation",
+        "Custom Job-Order Cost Sheet, Installation Milestone Invoicing & GST 18% Compliance"
       ],
       "softwareUsed": [
-        "Tally Prime 4.0",
-        "Automotive Tier-1 Costing Worksheets",
-        "E-Way Bill & IRN Engine"
+        "Tally Prime Manufacturing",
+        "Furniture Job-Order Costing ERP",
+        "Excel Modular Woodcraft BOM Engine"
       ],
       "learningObjectives": [
-        "Track stage-by-stage value addition across cutting, heat treatment, and surface finishing",
-        "Account for tooling wear and insert consumption per 100 components machined",
-        "Reconcile customer self-billing portals (Maruti / Tata Motors / Mahindra) with sales accounts"
+        "Configure multi-level compound BOMs in Tally Prime tracking timber in Cubic Feet (CFT), sheet materials in Sq.Ft, hardware in Sets/Pieces, and lacquer in Liters",
+        "Calculate raw lumber sawmill conversion loss, kiln-drying shrinkage, and wood shaving/sawdust salvage scrap recovery",
+        "Account for architectural hardware kits (telescopic drawer channels, hydraulic hinges, handles, locks) constituting 35%+ of modular unit cost",
+        "Compute landed manufacturing cost per furniture SKU (Executive Desk, 6-Seater Dining Table, 3-Door Modular Wardrobe, Ergonomic Workstation)"
       ],
-      "businessScenario": "Precision AutoDrive supplies 25,000 transmission gear blanks monthly to automotive OEMs. Parts failing micron-level coordinate measuring machine (CMM) tolerances are returned with penalty debit notes.",
+      "businessScenario": "Simulating 'WoodCraft Living & Architectural Furnishings Ltd.', operating an 80,000 sq.ft mechanized woodworking factory executing both catalog furniture batches (1,500 units monthly) and large-scale corporate turnkey fit-out contracts. The plant consumes Canadian Pine, African Teak, and Action TESA HDHMR boards. Students manage accounting across sawmills, CNC router bays, cold-press laminate bonding, edge-banding lines, and automated PU finishing spray booths, reconciling high raw material cutting scrap, carpenter piece-work vouchers, and client site installation advances.",
       "tasksToComplete": [
-        "Configure stage-wise BOM covering forged blanks, carbide inserts, and quenching oils",
-        "Record stage completion transfers from CNC machine shop to heat-treatment furnace",
-        "Pass accounting entries for customer rejection debit notes and scrap value recovery",
-        "Prepare monthly customer reconciliation statement against OEM remittance advice"
+        "Set up multi-stage Recipe BOMs in Tally Prime for 3 flagship furniture lines: Solid Teak Dining Suite (CFT-based), 3-Door Modular Wardrobe (Panel & Edge-band based), and Corporate Acoustic Workstation (Aluminium & Fabric based)",
+        "Record raw material stores issues: Hardwood logs, HDHMR boards, Decorative Veneer, Fevicol Marine Adhesives, Soft-Close Hinges, and PU Sealer/Gloss Topcoat",
+        "Pass Multi-Stage Manufacturing Journal entries for Timber Seasoning Shrinkage, Panel Saw Cutting Scrap (14% off-cut loss), Sub-Assembly, and Spray Booth Finishing",
+        "Apportion dust-extraction systems power, spray booth compressor loads, and factory floor supervisor wages to individual job batches",
+        "Generate Job Cost Cards, calculate gross profit margins, and prepare Site Delivery & Installation Milestone Billing invoices"
       ],
       "expectedOutcomes": [
-        "Automotive component stage-cost audit sheet",
-        "Tooling and cutting consumable consumption ledger",
-        "OEM portal reconciled debtor ledger with zero discrepancy"
+        "Timber Conversion & Panel Optimization Yield Reconciliation Statement",
+        "Architectural Hardware & Consumables Consumption Register",
+        "Furniture Job-Order & Per-Unit Batch Landed Cost Cards (CFT vs Sq.Ft models)",
+        "Customer Stage Advance, Retention Money & Site Installation Register"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
       "media": [
         {
           "id": "med-mfg-7",
           "url": "/images/ylcc_tds_brochure_slate_copper.png",
-          "name": "Auto Components Stage Costing Engine",
+          "name": "Woodcraft & Modular Furniture Plant Flowchart & BOM",
           "type": "image/png",
           "size": "3.5 MB",
-          "caption": "Forging blank feeding, CNC machining stages, tooling wear, and OEM delivery reconciliation"
+          "caption": "Timber log conversion, CNC panel cutting, PU finishing booths, and job-order costing system"
         }
       ],
       "resources": [
         {
           "id": "res-mfg-7-1",
-          "title": "Automobile Ancillary Stage Costing & Tooling Amortization Dossier",
+          "title": "Furniture Manufacturing & Modular Woodcraft Costing Dossier",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
-          "fileSize": "66 KB",
+          "fileSize": "68 KB",
           "isDownloadable": true
         },
         {
           "id": "res-mfg-7-2",
-          "title": "OEM Self-Billing Portal vs Sales Register Reconciliation Sheet",
+          "title": "Modular Furniture BOM & Job-Order Cost Sheet Calculator (Excel)",
           "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
           "fileType": "xlsx",
-          "fileSize": "145 KB",
+          "fileSize": "148 KB",
           "isDownloadable": true
         }
       ],
       "practiceTimeHours": 26,
       "academicYear": "2025-26",
-      "facultyMentor": "Rajesh Soni",
+      "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
       "displayOrder": 7,

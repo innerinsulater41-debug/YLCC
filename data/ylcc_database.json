@@ -976,6 +976,94 @@
       "seoDescription": "Master field sales CRM in Jaipur: Live Geo Tracking, Daily Expenses, Attendance & Salary, and Daily Visit Records (DVR) at YLCC."
     },
     {
+      "id": "prog-14",
+      "slug": "automate-purchase-order-inventory-control",
+      "title": "AUTOMATE PURCHASE ORDER & INVENTORY CONTROL",
+      "category": "Automate Purchase Order & Inventory Control",
+      "shortDescription": "Master automated purchase orders and scientific inventory control: Setting minimum reorder stock levels, generating automatic shortage purchase order lists, and placing purchase orders with lowest historical cost vendor analysis.",
+      "detailedDescription": "Industrial enterprises, high-volume trading distributors, and retail organizations require scientific procurement workflows to prevent stockouts and eliminate costly emergency spot purchases. This practical course provides hands-on execution on live accounting software: Configuring automated reorder levels and safety stock thresholds in Tally Prime, generating dynamic purchase order lists based on real-time stock deficits, and placing cost-effective purchase orders by evaluating multi-vendor price histories to secure the lowest purchase rates.",
+      "duration": "1 Month",
+      "mode": "Offline Classroom",
+      "fees": 11500,
+      "discountedFees": 8999,
+      "eligibility": "Commerce students, purchase coordinators, warehouse managers, store accountants, and business owners",
+      "softwareTools": [
+        "Tally Prime 4.0 (Purchase & Inventory)",
+        "Excel 365 Procurement Automation",
+        "Vendor Rate History Register",
+        "Automated Reorder Trigger Utilities"
+      ],
+      "facultyId": "fac-2",
+      "facultyName": "Rajesh Soni & Vikas Khandelwal (Senior Corporate & Operations Mentors)",
+      "batchTiming": "Morning: 7:30 AM – 9:00 AM | Evening: 6:30 PM – 8:00 PM | Sunday Intensive",
+      "availableSeats": 8,
+      "startDate": "1st & 15th of Every Month",
+      "brochureUrl": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+      "certificateInfo": "YLCC Certified Purchase Order & Inventory Control Specialist",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 8,
+      "coreCompetenciesHeading": "3 Essential Practical Skills You Master",
+      "coreCompetenciesSubheading": "Hands-on practical execution covering Minimum Stock Level Set, Automatic Purchase Order List, and Place Purchase Order (Minimum Cost History).",
+      "coreCompetencies": [
+        {
+          "title": "Minimum Stock Level Set",
+          "description": "Setting minimum safety stock levels, maximum storage limits, and reorder point (ROP) thresholds to ensure continuous operations without stockouts."
+        },
+        {
+          "title": "Automatic Purchase Order List",
+          "description": "Configuring software rules to dynamically compile shortage purchase requirement lists across all depleted raw material and finished inventory items."
+        },
+        {
+          "title": "Place Purchase Order (Minimum Cost History)",
+          "description": "Analyzing historical purchase ledgers to extract lowest supplier quotes and issuing formal purchase orders to minimize procurement expenses."
+        }
+      ],
+      "modules": [
+        {
+          "id": "mod-14-1",
+          "title": "Minimum Stock Level Set",
+          "topics": [
+            "Configuring minimum reorder levels, maximum capacity limits, and safety buffers in Tally Prime 4.0",
+            "Lead time evaluation: Factoring vendor delivery turnaround time and daily consumption velocity",
+            "Preventing production downtime, stockout penalties, and emergency spot purchases through automated alerts",
+            "Perpetual inventory tracking: Reconciling physical stock counts with digital ERP ledger balances"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-14-2",
+          "title": "Automatic Purchase Order List",
+          "topics": [
+            "Automated purchase order generation workflows triggered upon breach of minimum reorder points",
+            "Compiling dynamic pending purchase requisition lists across multiple raw materials and trading SKUs",
+            "Economic Order Quantity (EOQ) optimization: Balancing order placement costs against inventory holding costs",
+            "Automating batch purchase indent creation, multi-level departmental purchase approvals, and internal audit sign-offs"
+          ],
+          "durationHours": 12
+        },
+        {
+          "id": "mod-14-3",
+          "title": "Place Purchase Order (Minimum Cost History)",
+          "topics": [
+            "Analyzing historical vendor purchase registers to identify all-time lowest procurement rates per item",
+            "Multi-vendor quotation comparison: Evaluating freight terms, cash discount rebates, credit periods, and delivery SLAs",
+            "Issuing formal Purchase Orders (POs) with statutory GSTIN, HSN codes, payment terms, and delivery schedules",
+            "Three-way matching audit: Reconciling Purchase Order (PO), Goods Receipt Note (GRN), and Vendor Tax Invoice before payment release"
+          ],
+          "durationHours": 12
+        }
+      ],
+      "learningOutcomes": [
+        "Configure automated minimum stock levels, reorder points, and safety buffers in Tally Prime",
+        "Generate automated purchase order deficiency lists to eliminate stockouts and production delays",
+        "Evaluate historical supplier pricing registers to place purchase orders at the lowest available market rate",
+        "Execute 3-way matching between Purchase Orders, Goods Receipt Notes (GRNs), and Vendor Tax Invoices"
+      ],
+      "seoTitle": "Automate Purchase Order & Inventory Control Course | YLCC Jaipur",
+      "seoDescription": "Learn automated purchase orders and scientific inventory control at YLCC: Minimum stock level setting, automatic PO lists, and lowest cost vendor placement."
+    },
+    {
       "id": "prog-4",
       "slug": "gst-practitioner",
       "title": "GST Practitioner Practical Masterclass",
@@ -1003,7 +1091,7 @@
       "certificateInfo": "YLCC Certified Practical GST Practitioner Credentials",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 8,
+      "displayOrder": 9,
       "coreCompetenciesHeading": "9 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical desk execution covering the complete statutory GST compliance cycle from transaction feeding to annual returns and audit.",
       "coreCompetencies": [
@@ -1183,7 +1271,7 @@
       "certificateInfo": "YLCC Certified Withholding Tax & TDS Specialist",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 9,
+      "displayOrder": 10,
       "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical desk execution covering the complete statutory TDS & TCS compliance cycle from transaction feeding to return filing, TRACES certificates, and live client projects.",
       "coreCompetencies": [
@@ -1302,7 +1390,7 @@
       "certificateInfo": "YLCC Certified Corporate Payroll & Labour Compliance Executive",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 10,
+      "displayOrder": 11,
       "coreCompetenciesHeading": "3 Core Payroll Management & Statutory Pillars You Master",
       "coreCompetenciesSubheading": "Hands-on practical desk execution covering duty & attendance maintenance, overtime, statutory bonus & gratuity, Labour Law wage generation, and ESI/PF portal compliance.",
       "coreCompetencies": [
@@ -1391,7 +1479,7 @@
       "certificateInfo": "YLCC Certified Industrial Cost Accountant & Inventory Controller",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 11,
+      "displayOrder": 12,
       "coreCompetenciesHeading": "10 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on practical desk execution covering industrial inventory control, manufacturing BOM, builder site costing, government tender costing, and contract/job-work economics.",
       "coreCompetencies": [
@@ -1585,7 +1673,7 @@
       "certificateInfo": "YLCC Certified Corporate Excel 365 & MIS Specialist",
       "isFeatured": true,
       "status": "published",
-      "displayOrder": 12,
+      "displayOrder": 13,
       "coreCompetenciesHeading": "5 Essential Practical Skills You Master",
       "coreCompetenciesSubheading": "Hands-on corporate spreadsheet mastery covering 250+ modern Excel 365 dynamic formulas, advanced productivity features, 500+ workplace troubleshooting scenarios, 250+ interview challenges, and automated MIS reporting.",
       "coreCompetencies": [

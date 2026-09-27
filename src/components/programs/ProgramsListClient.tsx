@@ -127,6 +127,7 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
               prog.id === 'prog-11' ||
               prog.id === 'prog-12' ||
               prog.id === 'prog-13' ||
+              prog.id === 'prog-14' ||
               prog.id === 'prog-4' ||
               prog.id === 'prog-5' ||
               prog.id === 'prog-6' ||
@@ -316,8 +317,8 @@ export default function ProgramsListClient({ programs }: ProgramsListClientProps
                   </div>
                 )}
 
-                {/* Partition Divider after Executive Track (CRM) */}
-                {prog.id === 'prog-13' && selectedCategory === 'All' && !search.trim() && (
+                {/* Partition Divider after Executive Track (Automate Purchase Order & Inventory Control) */}
+                {prog.id === 'prog-14' && selectedCategory === 'All' && !search.trim() && (
                   <div className="md:col-span-2 py-4">
                     <div className="relative flex items-center justify-center">
                       <div className="absolute inset-0 flex items-center">

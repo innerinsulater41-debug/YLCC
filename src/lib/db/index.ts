@@ -234,6 +234,15 @@ export const db = {
     ) {
       return data.projects.find((p) => p.id === 'proj-1') || null;
     }
+    // Support legacy slug and aliases for GSTR-1 project
+    if (
+      slug === 'college-accounting-fee-management' ||
+      slug === 'gstr1' ||
+      slug === 'gstr-1' ||
+      slug === 'gstr-1-outward-supplies'
+    ) {
+      return data.projects.find((p) => p.id === 'proj-2') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

@@ -167,7 +167,7 @@ export default function Footer({ settings }: FooterProps) {
                 • GSTR-3B & GSTR-2B ITC Matching
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • College Accounting & Fees
+                • GSTR-1 & E-Invoicing
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
                 • Freight Logistics & RCM on GTA

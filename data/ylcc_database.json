@@ -2738,70 +2738,84 @@
     },
     {
       "id": "proj-2",
-      "slug": "college-accounting-fee-management",
-      "title": "College Accounting & Student Fee Reconciliation System",
-      "shortDescription": "Manage financial books of a premier educational institute: semester fee collections, scholarship distributions, faculty salaries, lab expenditure, and hostel accounts.",
-      "detailedDescription": "Educational institutions have unique accounting requirements governed by trust regulations, fee regulatory committees, and student installment schedules. This project simulates \"Vidyapeeth Degree College\". You will account for multi-installment student fee collection, government scholarship adjustments, university examination fees, lab consumable expenses, faculty payroll, and library book purchases.",
-      "industryCategory": "Education & Institutional",
-      "accountingCategory": "Trust & Institutional Accounting",
-      "difficultyLevel": "Intermediate",
+      "slug": "gstr-1-outward-supplies-e-invoicing-filing",
+      "title": "GSTR-1 & E-Invoicing: Outward Supplies, B2B/B2C Reporting & IRP Integration",
+      "shortDescription": "Comprehensive outward supplies filing & e-invoicing masterclass: Table 4 B2B registered sales, Table 5 B2C Large, Table 7 B2C Small, Table 9 Amendments, Table 12 HSN summaries, and IRP e-invoicing.",
+      "detailedDescription": "In this comprehensive outward tax compliance simulation, students step into the role of a Senior GST Compliance Associate for 'Apex Global Trade & Distribution Ltd'. You take end-to-end charge of the monthly GSTR-1 preparation and portal filing cycle: generating e-Invoices on the NIC/IRP portal with 64-character IRN and QR codes, reporting high-value B2B taxable invoices under Table 4, segregating inter-state B2C Large transactions under Table 5, aggregating intra-state and state-wise B2C Small under Table 7, issuing credit/debit notes under Table 9B, executing monthly amendments to previous period invoices under Table 9A, preparing 6-digit & 8-digit HSN/SAC summary under Table 12 with UQC validation, issuing Table 13 document issued summaries, validating E-Way Bill (Part A & B) data integration, and generating JSON payloads via the GST Offline Tool for flawless portal upload without error files.",
+      "industryCategory": "Legal & Taxation",
+      "accountingCategory": "GST Outward Compliance & E-Invoicing",
+      "difficultyLevel": "Advanced",
       "skillsCovered": [
-        "Installment Fee Accounting & Defaulter Tracking",
-        "Government Scholarship Adjustments",
-        "Faculty Salary & Guest Lecture Vouchers",
-        "Hostel & Mess Separate Ledger Balancing",
-        "Depreciation on Educational Infrastructure"
+        "IRP E-Invoicing (IRN Generation, QR Code & JSON Schema Validation)",
+        "GSTR-1 Table 4 (B2B Supplies) & Table 6 (Exports & SEZ Zero-Rated)",
+        "Table 5 (B2C Large Inter-State) & Table 7 (B2C Small State-Wise Aggregates)",
+        "Table 9A/9B/9C Amendments & Credit/Debit Notes (CDNR & CDNUR)",
+        "Table 12 HSN/SAC Summary with UQC Quantities & Tax Slab Breakup",
+        "E-Way Bill (Part A/B) Sync, Table 13 Document Series & Offline Tool JSON"
       ],
       "softwareUsed": [
-        "Tally Prime",
-        "Excel 365 Student Master Database"
+        "Official GST Portal Simulator",
+        "IRP E-Invoice Portal Sandbox",
+        "Tally Prime 4.0 GST Engine",
+        "GST Offline Return Tool"
       ],
       "learningObjectives": [
-        "Maintain student-wise fee subsidiary ledgers with installment due dates",
-        "Reconcile government scholarship grants credited through PFMS portal",
-        "Finalize institutional Income & Expenditure accounts and Balance Sheet"
+        "Generate real-time E-Invoices with unique Invoice Reference Numbers (IRN) and signed QR codes compliant with Rule 48(4)",
+        "Master accurate classification across Tables 4, 5, 6, 7, 8, and 9 to ensure zero mismatch notices under Form DRC-01B",
+        "Reconcile dispatch daybooks with E-Way Bill portals and populate Table 12 HSN summaries with mandatory 6-digit HSN codes",
+        "Process invoice amendments, credit note adjustments, and resolve portal validation error JSON files prior to final submission"
       ],
-      "businessScenario": "Vidyapeeth College educates 1,800 students across Commerce, Science, and Arts streams. Fees are payable in two equal installments. The college also runs an attached 250-capacity hostel and operates 12 college buses. The accountant must monitor defaulter lists and manage monthly fuel and driver expenses.",
+      "businessScenario": "Apex Global Trade & Distribution Ltd operates multi-state warehouses with an annual turnover of ₹22 Crores. With over 1,200 monthly commercial dispatches across manufacturing OEMs, registered distributors (B2B), retail consumers across 14 states (B2C), and duty-free exports to Dubai, compliance is critical. The GST team must generate real-time IRNs for all B2B transactions above the mandatory threshold, auto-populate Part-A E-way bills, audit Table 12 HSN summaries, and file GSTR-1 before the 11th of every month so that customers can claim legitimate ITC in their GSTR-2B.",
       "tasksToComplete": [
-        "Feed semester fee receipts across cash, UPI, and bank transfers into student ledgers",
-        "Reconcile scholarship grants received from the Social Justice Department",
-        "Generate monthly staff salary registers and guest faculty TDS vouchers",
-        "Prepare income and expenditure account separating general fund from endowment funds"
+        "Generate e-invoices with IRN, Ack No., and QR codes for 450 B2B sales dispatches using Tally Prime and IRP sandbox",
+        "Prepare and categorize the monthly Outward Sales Register into GSTR-1 Tables 4 (B2B), 5 (B2C Large), 7 (B2C Small), and 6A (Exports)",
+        "Issue Table 9B Credit Notes for sales returns, rate differences, and cash discounts, and enter Table 9A prior-month invoice corrections",
+        "Compile Table 12 HSN-wise summary verifying 6-digit codes, taxable values, UQCs, and CGST/SGST/IGST tax breakdowns",
+        "Export GSTR-1 JSON via GST Offline Return Tool, resolve portal schema validation errors, and execute live test filing on the GST simulator"
       ],
       "expectedOutcomes": [
-        "Comprehensive student fee outstanding statement sorted by course and semester",
-        "Reconciled hostel and mess operating accounts",
-        "Institutional financial statements prepared for statutory audit"
+        "Flawless GSTR-1 Monthly Return Filing Statement with zero portal validation errors",
+        "IRP E-Invoice & E-Way Bill Register with active IRNs and dispatch logs",
+        "Table 12 HSN/SAC Summary & Table 13 Document Series Audit Trail",
+        "Zero DRC-01B difference between GSTR-1 outward liability and GSTR-3B Table 3.1"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
       "media": [
         {
           "id": "med-2-1",
           "url": "/images/ylcc_tds_brochure_v2.png",
-          "name": "College Ledger Architecture",
+          "name": "GSTR-1 & E-Invoicing Architecture",
           "type": "image/png",
           "size": "3.8 MB",
-          "caption": "Institutional fee management and fund accounting structure"
+          "caption": "GSTR-1 multi-table classification, IRP e-invoicing schema, and portal upload workflow"
         }
       ],
       "resources": [
         {
           "id": "res-2-1",
-          "title": "College Institutional Accounting Project Dossier",
+          "title": "GSTR-1 & E-Invoice Complete Outward Compliance Dossier",
           "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
           "fileType": "pdf",
-          "fileSize": "59 KB",
+          "fileSize": "78 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-2-2",
+          "title": "GSTR-1 Table-Wise Outward Compilation & HSN Calculator (Excel)",
+          "url": "/sample-docs/YLCC-Course-Banking-GST.pdf",
+          "fileType": "xlsx",
+          "fileSize": "148 KB",
           "isDownloadable": true
         }
       ],
-      "practiceTimeHours": 20,
+      "practiceTimeHours": 26,
       "academicYear": "2025-26",
       "facultyMentor": "CA Alok Maheshwari",
       "isFeatured": true,
       "status": "published",
       "displayOrder": 11,
       "createdAt": "2025-10-18",
-      "updatedAt": "2026-01-12"
+      "updatedAt": "2026-03-01"
     },
     {
       "id": "proj-3",
@@ -4114,7 +4128,7 @@
       "id": "faq-3",
       "category": "Practical Projects",
       "question": "What are the 30 Multi-Business Practical Projects?",
-      "answer": "The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, College student fee management, Freight transport logistics, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model)."
+      "answer": "The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, GSTR-1 & E-Invoicing outward reporting, Freight transport logistics, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model)."
     },
     {
       "id": "faq-4",

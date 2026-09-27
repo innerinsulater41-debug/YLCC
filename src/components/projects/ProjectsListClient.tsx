@@ -16,6 +16,7 @@ import {
   Factory,
   Building2,
   Sparkles,
+  Scale,
 } from 'lucide-react';
 import { Project } from '@/types';
 
@@ -233,7 +234,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             <div className="w-24 h-1 bg-[#8B5A2B] mx-auto rounded-full" />
 
             <p className="text-sm sm:text-base text-[#57534E] max-w-3xl mx-auto leading-relaxed">
-              Complete practical factory accounting simulations across 9 core manufacturing sectors — master Bill of Materials (BOM), Multi-Stage Production Journals, Job-Work (GST ITC-04), Scrap & Wastage Control, and Finished Goods Unit Costing.
+              Complete practical factory accounting simulations across {manufacturingProjects.length} core manufacturing sectors — master Bill of Materials (BOM), Multi-Stage Production Journals, Job-Work (GST ITC-04), Scrap &amp; Wastage Control, and Finished Goods Unit Costing.
             </p>
 
             <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#8B5A2B] bg-white px-3.5 py-1.5 rounded-full border border-[#E5D8CA] shadow-2xs">
@@ -247,29 +248,29 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             {manufacturingProjects.map((proj) => renderProjectCard(proj))}
           </div>
 
-          {/* If viewing All, show Partition for Commercial, Trading & Service Industries */}
-          {isDefaultView && otherProjects.length > 0 && (
-            <div className="pt-12 space-y-8">
-              <div className="border-t-2 border-dashed border-[#D8C5B2] pt-12 text-center space-y-4">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
-                  <Building2 className="w-4 h-4 text-[#8B5A2B]" />
-                  <span>Commercial, Trading & Institutional Sectors</span>
+            {/* If viewing All, show Partition for Legal & Taxation Projects */}
+            {isDefaultView && otherProjects.length > 0 && (
+              <div className="pt-12 space-y-8">
+                <div className="border-t-2 border-dashed border-[#D8C5B2] pt-12 text-center space-y-4">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
+                    <Scale className="w-4 h-4 text-[#8B5A2B]" />
+                    <span>Legal, Taxation & Corporate Compliance</span>
+                  </div>
+
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
+                    LEGAL &amp; TAXATION
+                  </h2>
+
+                  <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
+
+                  <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
+                    Real-world GST, TDS/TCS, corporate taxation, statutory compliance, banking limits, and commercial practical cases across corporate sectors.
+                  </p>
+
+                  <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
+                    <span>{otherProjects.length} Practical Projects</span>
+                  </div>
                 </div>
-
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
-                  COMMERCIAL, TRADING & SERVICE INDUSTRIES
-                </h2>
-
-                <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
-
-                <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
-                  Real-world accounting, billing, taxation and compliance practical cases across healthcare, hospitality, logistics, real estate, institutions, and corporate trading desks.
-                </p>
-
-                <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
-                  <span>{otherProjects.length} Practical Projects</span>
-                </div>
-              </div>
 
               {/* Other Projects Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

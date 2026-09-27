@@ -2193,7 +2193,7 @@ export const initialProjects: Project[] = [
   {
     "id": "proj-mfg-5",
     "slug": "modular-interior-fitout-manufacturing-costing",
-    "title": "Modular Interior Manufacturing: CNC Nesting, Edge-Banding & Sq.Ft Costing",
+    "title": "Interior Decor",
     "shortDescription": "End-to-end factory accounting for an automated modular interior & architectural fit-out plant: HDHMR/Plywood sheet nesting, CNC routing, PVC edge-banding, Blum/Hettich hardware BOM, sheet off-cut scrap recovery, and per-square-foot (Sq.Ft) carcass/shutter costing.",
     "detailedDescription": "In this comprehensive industrial accounting simulation, students take charge of manufacturing accounts for 'Spaceline Modular Interiors & Architectural Fit-Outs Pvt. Ltd.', a modern interior factory manufacturing modular kitchens, commercial office workstations, wardrobes, and acoustic wall panels. Students configure multi-level Bills of Material (BOM) in Tally Prime Manufacturing, record bulk sheet issuance (8x4 BWP Marine Plywood, HDHMR boards, acrylic and matte laminates) by square meter and sheet count, calculate CNC beam-saw cutting optimization yield and off-cut board salvage accounting (distinguishing reusable off-cuts from scrap), apportion hot-melt PUR edge-banding adhesives and premium architectural hardware (soft-close tandem drawers, concealed hinges, aluminium profile handles), allocate CNC machine hour rates (MHR) and PU lacquer spray booth overheads, and derive accurate finished cost per square foot (Sq.Ft) for knock-down (CKD) modular client deliveries.",
     "industryCategory": "Manufacturing Industry",

@@ -195,7 +195,10 @@ export const db = {
       return data.projects.find((p) => p.id === 'proj-mfg-4') || null;
     }
     // Support legacy slug for Plastic / Interior project
-    if (slug === 'plastic-polymers-injection-moulding-costing') {
+    if (
+      slug === 'plastic-polymers-injection-moulding-costing' ||
+      slug === 'interior-decor'
+    ) {
       return data.projects.find((p) => p.id === 'proj-mfg-5') || null;
     }
     // Support legacy slug for Furniture / Mineral Water project

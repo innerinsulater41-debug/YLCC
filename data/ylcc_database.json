@@ -3217,6 +3217,638 @@
       "displayOrder": 16,
       "createdAt": "2026-01-20",
       "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-1",
+      "slug": "activa-service-center-automobile-jobcard-accounting",
+      "title": "Activa Service Center: Two-Wheeler Workshop, Job Card Labor, Genuine Spare Parts & Free Service Reimbursement",
+      "shortDescription": "Authorized two-wheeler Activa workshop & dealership service center accounting: Job card opening, labor vs genuine spare parts billing, OEM warranty replacement claims, mechanic incentive commission, and oil & lubricant stock control.",
+      "detailedDescription": "Step into the service operations of 'Honda Activa Authorized Two-Wheeler Service Center & Spares Depot', simulating a busy 12-bay automotive service workshop handling 45+ Activa scooters daily. Students master end-to-end workshop accounting: Job card intake, estimating labor charges vs genuine spare parts consumption, segregating 1st, 2nd, and 3rd Free Service coupon reimbursements from Honda Motorcycle & Scooter India (HMSI), booking paid periodic maintenance services (PMS), engine oil and lubricant batch tracking, accident insurance repair claims with cashless surveyor approvals, mechanic piece-rate labor incentive calculations, and composite GST invoicing (18% for service labor, 28% for automotive spare parts).",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Automobile Workshop & Dealership Service Accounting",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Job Card Creation, Workshop Bay Allocation & Labor/Parts Estimation",
+        "Free Service Coupon Billing & OEM Manufacturer Warranty Reimbursement Claims",
+        "Automotive Spare Parts Inventory, Lubricant Batch Control & Scrap Reconciliation",
+        "Cashless Insurance Accidental Repair Billing & Surveyor Assessment Worksheets",
+        "Composite GST Invoicing: 18% Mechanic Labor vs 28% Automotive Spare Parts"
+      ],
+      "softwareUsed": [
+        "Tally Prime 4.0 Automobile Workshop Module",
+        "Excel 365 Job Card Tracker",
+        "HMSI Dealer Management Portal Simulator"
+      ],
+      "learningObjectives": [
+        "Master job card lifecycle tracking separating mechanic labor services from physical automotive spare parts consumption",
+        "Account for OEM manufacturer warranty and free service coupon reimbursements without revenue leakage",
+        "Process accidental repair insurance files reconciling garage estimates with insurance surveyor assessment sheets",
+        "Apply accurate composite GST slabs (18% service labor vs 28% spare parts) and maintain zero tax discrepancy"
+      ],
+      "businessScenario": "Managing 'Honda Activa Authorized Two-Wheeler Service Center' handling 45+ Activa scooters daily across periodic maintenance, free warranty coupons, and major engine overhauls. The service accountant must track job cards, verify genuine spare parts issued from store, submit monthly free-service coupon bundles to HMSI for credit note reimbursement, calculate mechanic commission, and reconcile cashless insurance repair payments from ICICI Lombard and HDFC ERGO.",
+      "tasksToComplete": [
+        "Create job-card based service invoices for 30 customer vehicles with detailed labor charges and genuine spare part line-items in Tally Prime",
+        "Prepare monthly OEM Free Service Coupon Reimbursement Claim statement for submission to Honda Motorcycle India",
+        "Reconcile engine oil, brake shoe, and belt inventory with physical stock count and scrap recovery register",
+        "Process cashless accidental repair files with surveyor depreciation deductions and customer excess share collection",
+        "Compile monthly Service Workshop Gross Margin Statement (Labor Margin vs Spare Parts Margin)"
+      ],
+      "expectedOutcomes": [
+        "Automotive Job Card Register & Dual-Head Labor/Parts Invoicing Daybook",
+        "OEM Manufacturer Free Service & Warranty Replacement Claim Statement",
+        "Cashless Accidental Insurance Repair Reconciliation & Excess Collection Sheet",
+        "Monthly Workshop Profitability & Mechanic Incentive Calculation Report"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-1",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Activa Service Center Job Card & Spares Workflow",
+          "type": "image/png",
+          "size": "3.2 MB",
+          "caption": "Job card intake, parts estimation, warranty claim processing, and composite GST invoicing"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-1",
+          "title": "Two-Wheeler Service Center & Workshop Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "84 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-2",
+          "title": "Job Card Labor vs Spare Parts & Warranty Claim Calculator (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "148 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 17,
+      "createdAt": "2026-02-01",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-2",
+      "slug": "college-accounting-fee-management-reconciliation",
+      "title": "College Accounting: Student Fee Management, Concession Reconciliations, Faculty Payroll & UGC Grant Auditing",
+      "shortDescription": "Higher education institutional accounting for degree colleges: Semester tuition & lab fee collection, installment tracking, category fee concessions, hostel & bus transport reconciliations, faculty payroll, and trust balance sheet finalization.",
+      "detailedDescription": "Step into the central accounts department of 'Maharaja Agrasen Degree & Professional College' (affiliated with State University, enrolling 3,500+ students across B.Com, BBA, BCA, and MBA). Students manage comprehensive academic institution finance: semester-wise tuition, library, laboratory, and examination fee scheduling, automated ERP fee collection reconciliations against bank payment gateways (BillDesk, Razorpay), managing government merit and category scholarship fee waivers (Social Welfare Department disbursements), hostel mess and campus transport fee allocations, faculty UGC scale payroll (EPF, TDS Section 192), university enrollment exam fee remittances, and preparing Section 12A/80G charitable trust income & expenditure accounts.",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Educational Institution & Trust Accounting",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "Student Ledger Master & Multi-Head Fee Scheduling (Tuition, Lab, Exam, Library)",
+        "Online Fee Gateway Reconciliations, Bank Auto-Debit & Cheque Bouncing Registers",
+        "Government Scholarship Subsidies, Merit Concessions & Installment Ageing",
+        "Hostel Mess, Campus Bus Fleet & Canteen Revenue/Cost Allocation",
+        "Charitable Educational Trust Income & Expenditure Account & Form 10B Audit Schedules"
+      ],
+      "softwareUsed": [
+        "Tally Prime Educational Trust Mode",
+        "College ERP Fee Portal Simulator",
+        "Excel 365 Student Fee Master"
+      ],
+      "learningObjectives": [
+        "Configure multi-head student ledgers managing course tuition, examination, and developmental fees across academic semesters",
+        "Reconcile high-volume digital fee transactions from bank portals, segregating clearance fees from pending installments",
+        "Manage social welfare department scholarship subsidies, fee concession waivers, and student refund requests",
+        "Finalize charitable educational trust financial statements adhering to Section 12A/80G audit norms"
+      ],
+      "businessScenario": "Managing central finance for a 3,500-student degree and management college during semester admission and examination cycle. Over ₹18 Crore in annual fee receipts must be processed across online portals, bank drafts, and education loan remittances. The accounts officer must reconcile student ledger dues, adjust state government post-matric scholarship waivers, disburse UGC faculty payroll with statutory deductions, and compile the annual trust balance sheet for university audit.",
+      "tasksToComplete": [
+        "Generate semester fee demand rolls for 450 students across B.Com and MBA programs with customized scholarship discounts",
+        "Reconcile daily online payment gateway statements (BillDesk/Razorpay) against student ERP roll numbers and bank credits",
+        "Process 40 semester fee installment deferral applications and maintain overdue fee ageing schedules",
+        "Compile monthly faculty and non-teaching staff payroll sheet incorporating UGC scales, EPF, and Section 192 TDS",
+        "Prepare Annual Income & Expenditure Statement and Balance Sheet for College Trust Audit"
+      ],
+      "expectedOutcomes": [
+        "Semester Student Fee Collection & Outstanding Dues Ageing Report",
+        "Bank Payment Gateway Fee Reconciliation & Bounced Draft Register",
+        "Faculty & Staff Monthly Payroll Schedule with Statutory Remittance Vouchers",
+        "College Charitable Trust Annual Financial Statements & Audit Schedules"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-2",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "College Fee Management & Trust Audit Cycle",
+          "type": "image/png",
+          "size": "3.4 MB",
+          "caption": "Student fee scheduling, gateway reconciliation, scholarship waivers, and trust audit"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-3",
+          "title": "College & Educational Trust Practical Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "89 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-4",
+          "title": "Student Fee Roll & Payment Gateway Reconciliation Engine (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "162 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 18,
+      "createdAt": "2026-02-05",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-3",
+      "slug": "tour-travels-holiday-package-agent-accounting",
+      "title": "Tour & Travels: Holiday Package Costing, Airline/Hotel Commission, Forex & TCS on Foreign Remittance",
+      "shortDescription": "Comprehensive tour operator & travel agency accounting: Domestic & international holiday package costing, airline ticket markup, hotel B2B net rates, Rule 26/LRS Section 206C(1G) TCS compliance, and GST on Tour Operator services.",
+      "detailedDescription": "Step into the commercial operations of 'GlobeQuest Holidays & International Travels', simulating an IATA-accredited travel agency and tour operator curating domestic (Kashmir, Goa, Kerala) and outbound international holiday packages (Dubai, Europe, Thailand). Students manage complete travel industry accounting: costing customized tour itineraries (group flights, hotel rooms, sightseeing coaches, guides, visa fees), calculating gross booking value vs net B2B agent payables, booking airline IATA BSP commissions, hotel credit vouchers, processing mandatory Tax Collected at Source (TCS) on Liberalised Remittance Scheme (LRS) overseas tour packages under Section 206C(1G) (5% vs 20%), applying GST on tour operator services (5% without ITC or 18% with ITC), and handling customer cancellation refund penalties.",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Travel Agency & Tour Operator Accounting",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Itinerary Costing & Profit Margin Calculation for Group & FIT Tour Packages",
+        "Airline IATA BSP Settlement, Flight Markup & GDS Portal Billing Reconciliation",
+        "Hotel B2B Vouchers, Transport Contractor Billing & Visa Fee Accounting",
+        "Section 206C(1G) TCS on Outbound Overseas Tour Packages & Challan 281 Filing",
+        "GST on Tour Operators (5% Composition without ITC vs 18% Normal) & Credit Notes"
+      ],
+      "softwareUsed": [
+        "Tally Prime Travel Agency Edition",
+        "Amadeus / Galileo GDS Portal Simulator",
+        "Excel 365 Tour Costing Calculator"
+      ],
+      "learningObjectives": [
+        "Calculate multi-component tour package costs including airfare, accommodation, transfers, and overseas supplier forex remittances",
+        "Reconcile weekly IATA Billing and Settlement Plan (BSP) flight tickets and commission statements",
+        "Accurately compute and deposit Section 206C(1G) TCS on foreign tour packages, filing quarterly Form 27EQ returns",
+        "Master GST invoicing rules specific to tour operators, differentiating 5% non-ITC billing from 18% corporate consulting"
+      ],
+      "businessScenario": "Managing 'GlobeQuest Holidays & International Travels' handling 80+ group departures and corporate offsites monthly. The travel accountant must issue customer tour invoices, track international supplier forex outward remittances through Authorized Dealer banks, deduct and deposit mandatory Section 206C(1G) TCS for Europe/Dubai bookings, reconcile airline BSP statements, and issue cancellation credit notes as per contractual penalty terms.",
+      "tasksToComplete": [
+        "Build a complete per-pax costing sheet for a 6-Night Dubai & Abu Dhabi group tour package covering flights, visa, hotels, and desert safari",
+        "Record IATA BSP weekly ticket purchase settlement voucher incorporating agency commission and airline taxes",
+        "Calculate and account for Section 206C(1G) TCS on 15 international holiday package bookings with PAN verification",
+        "Generate GST-compliant tour operator sales invoices under 5% non-ITC scheme with mandatory itinerary details",
+        "Process customer booking cancellation vouchers with tiered retention charges and hotel refund credits"
+      ],
+      "expectedOutcomes": [
+        "Tour Itinerary Profitability & Cost Breakdown Working Schedule",
+        "IATA Airline BSP Ticket Reconciled Settlement Sheet",
+        "Section 206C(1G) Overseas Tour Package TCS Register & Form 27EQ Draft",
+        "Tour Operator GST Sales Daybook & Refund Adjustment Register"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-3",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Tour & Travels Holiday Costing & TCS Workflow",
+          "type": "image/png",
+          "size": "3.5 MB",
+          "caption": "Package costing, airline BSP reconciliation, Section 206C(1G) TCS, and travel GST"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-5",
+          "title": "Tour Operator & Travel Agency Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "86 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-6",
+          "title": "Holiday Package Costing & Section 206C(1G) TCS Engine (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "155 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 19,
+      "createdAt": "2026-02-10",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-4",
+      "slug": "mobile-service-center-repair-warranty-accounting",
+      "title": "Mobile Service Center: Smartphone Chip-Level Repair, Touch Screen Replacement & Brand Warranty Claims",
+      "shortDescription": "Authorized & multi-brand smartphone service center accounting: Customer intake job sheet, spare parts consumption (OLED displays, batteries, ICs), out-of-warranty labor charges, brand warranty reimbursements, and e-waste scrap disposal.",
+      "detailedDescription": "Step into the technical repair center of 'iFix Mobile Care & Authorized Brand Service Hub', simulating an ISO-certified smartphone and gadget service center servicing 60+ devices daily (Apple iPhone, Samsung Galaxy, OnePlus, Xiaomi). Students manage precision repair accounting: generating customer repair estimation job sheets with IMEI barcode logs, booking component spare parts inventory (OEM OLED screens, lithium batteries, camera modules, charging flex), segregating in-warranty repairs (free repair with warranty claim debit notes to brands) from out-of-warranty chargeable repairs, technician repair commission, handling scrap disposal of damaged displays and motherboards under E-Waste management norms, and 18% GST invoicing on smartphone repair service and hardware spare parts.",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Electronics Repair & Warranty Accounting",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Repair Job Sheet Intake, IMEI Barcode Verification & Customer Diagnosis Estimates",
+        "Component Spare Parts Stock Control (Display Screens, Batteries, Charging Flex)",
+        "Brand In-Warranty Reimbursement Claims & Replacement Part Credit Notes",
+        "Technician Incentive Commission Calculation based on Repair Difficulty Level",
+        "18% GST Invoicing on Smartphone Repair Services & E-Waste Scrap Disposal Accounting"
+      ],
+      "softwareUsed": [
+        "Tally Prime Service POS",
+        "Mobile Repair ERP Simulator",
+        "Excel 365 Technician Incentive Tracker"
+      ],
+      "learningObjectives": [
+        "Maintain precise IMEI-linked component inventory tracking delicate display and micro-soldering spare parts",
+        "Segregate brand warranty replacement vouchers from paid retail repairs to eliminate unrecovered parts cost",
+        "Compute technician piece-rate productivity incentives based on motherboard chip-level repair success ratios",
+        "Account for damaged parts scrap recovery and environmentally certified e-waste recycler sales"
+      ],
+      "businessScenario": "Managing 'iFix Mobile Care Hub' servicing 60+ smartphones daily across screen damage, liquid ingress, and battery degradation. The accountant must log every incoming phone with its unique IMEI, track genuine replacement parts drawn by technicians, invoice paid customers via POS UPI/Card, claim brand warranty reimbursements from Samsung/OnePlus depots, and maintain the hazardous battery e-waste disposal manifest.",
+      "tasksToComplete": [
+        "Create 25 repair job sheets with IMEI details, diagnosis checklist, and customer price authorization",
+        "Record replacement screen and battery stock issue vouchers from secure store to technician repair desks",
+        "Prepare monthly Brand Warranty Repair Reimbursement Claim with courier tracking for defective parts sent to OEM",
+        "Calculate monthly technician performance incentives based on completed repairs and warranty repeat return rates",
+        "Generate monthly Repair Service Revenue and Spare Parts Gross Margin Report"
+      ],
+      "expectedOutcomes": [
+        "Smartphone IMEI-Linked Job Sheet Register & Repair Service Daybook",
+        "Brand Warranty Defective Part Replacement Reimbursement Dossier",
+        "Repair Technician Productivity & Commission Payment Schedule",
+        "Mobile Repair Store Inventory Audit & E-Waste Disposal Register"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-4",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Mobile Service Center Repair & Warranty Workflow",
+          "type": "image/png",
+          "size": "3.1 MB",
+          "caption": "IMEI logging, component spare inventory, brand warranty claims, and technician incentives"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-7",
+          "title": "Mobile Service Center & Gadget Repair Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "81 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-8",
+          "title": "Smartphone Spare Parts Stock & Technician Commission Calculator (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "142 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 24,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 20,
+      "createdAt": "2026-02-15",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-5",
+      "slug": "salon-industry-multi-branch-chain-accounting",
+      "title": "Salon Industry: Multi-Outlet Luxury Salon & Spa Chain, Stylist Commission, Product Inventory & POS Billing",
+      "shortDescription": "Franchise & chain accounting for premium salon & grooming lounges (Javed Habib Model): Service POS billing, stylist tier commissions, professional chemical consumption vs retail counter sales, package memberships, and salon branch P&L.",
+      "detailedDescription": "Step into the corporate accounts of 'LuxeStudio & Barber Lounge Chain', simulating a multi-branch beauty, hair styling, and wellness spa franchise operating 5 company-owned and franchisee outlets (Javed Habib Model). Students master salon floor-to-headquarters accounting: daily POS workstation billing across hair styling, chemical coloring, bridal makeup, and facial spa therapies, segregating service revenue from retail cosmetic product counter sales (L'Oréal, Matrix, Schwarzkopf), calculating multi-tier stylist/beautician commissions (10% - 25% of service value net of product cost), tracking internal consumption of shampoos, bleaches, and hair color tubes, accounting for prepaid customer loyalty memberships, gift vouchers, package redemptions, and preparing monthly unit-wise P&L statements across salon branches.",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Salon Franchise & Grooming Chain Accounting",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "Salon POS Multi-Service Invoicing, Stylist Allocation & Tip/Gratuity Split",
+        "Professional Backbar Chemical & Consumable Stock Tracking vs Retail Product Sales",
+        "Stylist & Aesthetician Tiered Incentive Commission Computation (Daily & Monthly)",
+        "Prepaid Loyalty Memberships, Package Cards & Advance Revenue Deferrals",
+        "Branch-Wise Salon Operating P&L, Chair Rental Costing & Inter-Branch Stock Transfers"
+      ],
+      "softwareUsed": [
+        "Tally Prime Multi-Branch Mode",
+        "Salon POS & Spa Software Simulator",
+        "Excel 365 Stylist Commission Calculator"
+      ],
+      "learningObjectives": [
+        "Master retail salon POS operations managing multi-service billing, stylist assignment, and discount coupons",
+        "Control professional backbar consumable consumption (color tubes, developer, keratin) to prevent internal inventory theft",
+        "Compute daily and monthly stylist tier commissions based on net service billing and product cross-selling",
+        "Account for prepaid membership card advances under GAAP revenue recognition rules"
+      ],
+      "businessScenario": "Managing central accounts for 'LuxeStudio Chain' with 5 premium city branches. Daily business involves over 200 client appointments across hair treatments, spa facials, and grooming packages. The salon accountant must reconcile daily front-desk cash/card collections, verify internal consumption of salon cosmetics, calculate commission payouts for 25 stylists, and produce branch-wise operating profit statements.",
+      "tasksToComplete": [
+        "Record 40 customer POS salon bills in Tally Prime capturing diverse services, stylist names, and retail product sales",
+        "Prepare daily consumption journal vouchers for salon backbar products (shampoos, bleach powders, hair colors)",
+        "Calculate monthly stylist commission sheet adjusting for product cost deductions and performance threshold tiers",
+        "Record prepaid annual membership advance collections and process monthly service redemption deductions",
+        "Prepare comparative 5-branch Salon Profit & Loss Statement (Revenue per Chair vs Operating Cost)"
+      ],
+      "expectedOutcomes": [
+        "Salon POS Sales Daybook with Stylist Attribution & Payment Breakdown",
+        "Backbar Cosmetic Consumable Internal Consumption vs Theoretical Recipe Audit",
+        "Stylist & Beautician Monthly Performance Commission Working Schedule",
+        "Branch-Wise Salon Comparative P&L Statement & Chair Utilization Analysis"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-5",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Salon Franchise Multi-Branch Operations Architecture",
+          "type": "image/png",
+          "size": "3.6 MB",
+          "caption": "POS service billing, backbar inventory, stylist commission tiers, and branch P&L"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-9",
+          "title": "Salon Chain & Luxury Grooming Lounge Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "87 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-10",
+          "title": "Stylist Commission & Salon Branch P&L Cost Engine (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "156 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 21,
+      "createdAt": "2026-02-20",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-6",
+      "slug": "hotel-industry-hospitality-multi-revenue-accounting",
+      "title": "Hotel Industry: Multi-Revenue Resort & Hotel Accounting (Room Tariff, Restaurant POS, Banquet Hall & Amenities)",
+      "shortDescription": "Complete hospitality property accounting: Front office Property Management System (PMS), room tariff night audit, restaurant & bar F&B POS billing, banquet wedding event costing, OTA commission reconciliation, and 12% vs 18% hotel GST slabs.",
+      "detailedDescription": "Step into the finance office of 'Grand Heritage Palace Resort & Luxury Hotel' (120 guest rooms, 2 multi-cuisine restaurants, 2 wedding banquet halls, swimming pool, and spa). Students manage the complex multi-revenue streams of hospitality accounting: front-office room check-in folio management, night audit room charge posting, room service Kitchen Order Tickets (KOT) and restaurant POS billing, wedding and corporate banquet package billing (hall rental, per-plate catering, audio-visual decor), OTA (MakeMyTrip, Booking.com, Agoda) gross booking reconciliation net of 15%-20% commissions and Section 194-O TDS, raw food ingredient store requisition and plate cost analysis, statutory luxury and GST slab determination (12% for rooms below ₹7,500, 18% for higher tariffs and banqueting), and monthly hotel departmental P&L (Rooms vs F&B vs Banquets).",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Hospitality & Multi-Revenue Hotel Accounting",
+      "difficultyLevel": "Executive",
+      "skillsCovered": [
+        "Front Office Guest Folio, PMS Room Tariff Posting & Night Audit Reconciliations",
+        "Food & Beverage (F&B) Restaurant POS Billing, KOT Settlement & Bar Stocks",
+        "Banquet Wedding Event Costing: Hall Charges, Per-Plate Food & Turnkey Packages",
+        "OTA (MakeMyTrip, Booking.com) Net Remittance Reconciliations & Section 194-O TDS",
+        "Departmental Hospitality P&L (Rooms vs F&B vs Banquet) & Multi-Slab GST (12% vs 18%)"
+      ],
+      "softwareUsed": [
+        "Tally Prime Hospitality Suite",
+        "Hotel PMS & KOT Simulator",
+        "Excel 365 Night Audit & Plate Cost Engine"
+      ],
+      "learningObjectives": [
+        "Execute front office night audit reconciliations validating room occupancy, guest ledger balances, and city ledger credits",
+        "Manage food & beverage cost accounting linking restaurant POS KOT orders to raw kitchen ingredient inventory",
+        "Reconcile online travel agent (OTA) payouts verifying gross guest receipts, portal commission deductions, and e-commerce TDS",
+        "Prepare departmental hospitality operating statements according to the Uniform System of Accounts for the Lodging Industry (USALI)"
+      ],
+      "businessScenario": "Managing financial operations for 'Grand Heritage Palace Resort' with ₹2.8 Crore monthly turnover across room stays, destination weddings, and fine-dining restaurants. The hotel financial controller must verify daily night audit reports, check guest folios, settle corporate credit bookings, record banquet advance contracts, and reconcile OTA portal payments against room occupancy records.",
+      "tasksToComplete": [
+        "Audit daily Front Office PMS room revenue reports and post night audit journal vouchers into Tally Prime",
+        "Reconcile restaurant POS food & beverage revenue against kitchen raw material issues and calculate food cost %",
+        "Generate a complete 500-guest wedding banquet billing contract with food catering, hall rental, and audio-visual charges",
+        "Reconcile MakeMyTrip and Booking.com monthly payout statements net of commissions and Section 194-O TDS",
+        "Prepare Departmental Income Statement (Rooms Department vs F&B vs Banqueting)"
+      ],
+      "expectedOutcomes": [
+        "Hotel PMS Daily Night Audit & Guest Ledger Trial Balance",
+        "Restaurant & Bar F&B Sales Reconciliation & Kitchen Food Cost Sheet",
+        "Wedding Banquet Event Costing & Advance Payment Settlement Record",
+        "OTA Portal Commission & Net Remittance Audit Statement (USALI Format)"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-6",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Hotel Multi-Revenue Operations Architecture",
+          "type": "image/png",
+          "size": "3.9 MB",
+          "caption": "Front office PMS, night audit, restaurant POS, banquet costing, and USALI P&L"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-11",
+          "title": "Hotel & Resort Comprehensive Hospitality Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "96 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-12",
+          "title": "Hotel Night Audit, Banquet Costing & Food Cost Calculator (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "178 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 30,
+      "academicYear": "2025-26",
+      "facultyMentor": "CA Alok Maheshwari",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 22,
+      "createdAt": "2026-02-25",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-7",
+      "slug": "freight-logistics-transporter-fleet-bilty-accounting",
+      "title": "Logistics: Freight Forwarding, Transporter Bilty / Consignment, Fleet Diesel Trip Costing & E-Way Bill Reconciliation",
+      "shortDescription": "Commercial freight forwarding & transport contractor accounting: Consignment Note (Bilty / LR) generation, trip advance vs diesel slips, vehicle trip P&L, driver bata hisab, Section 194C TDS on hired trucks, and GTA 5% RCM compliance.",
+      "detailedDescription": "Step into the traffic and dispatch accounts desk of 'GatiShakti Commercial Freight & National Logistics', simulating an interstate transport contractor and logistics aggregator controlling 80 owned heavy container trucks and a network of 250 attached market fleet vehicles. Students manage complete transport industry finance: issuing Consignment Notes (Goods Bilty / Lorry Receipt - LR), dispatching vehicles with valid RFID E-Way bills, issuing driver trip advances and tracking fuel pump diesel credit slips, calculating toll FASTag toll expenses, maintenance en route, driver per-diem (bata/khuraki), managing vehicle trip-wise profitability, booking detention and demurrage charges against consignors, verifying hired market truck hire freights with Section 194C TDS deduction (or Form 43B declaration for non-deduction on up to 10 trucks), and Goods Transport Agency (GTA) GST compliance (5% RCM by consignee vs 12% Forward Charge with ITC).",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Fleet Logistics & Transport Contractor Accounting",
+      "difficultyLevel": "Advanced",
+      "skillsCovered": [
+        "Consignment Note (Bilty / LR) Preparation, Weight Scale & Freight Fare Calculations",
+        "Trip Costing Engine: Diesel Pump Slips, FASTag Tolls, Driver Bata & Vehicle Trip P&L",
+        "Hired Market Truck Freights & Section 194C TDS Compliance (Form 43B Declarations)",
+        "Goods Transport Agency (GTA) GST: 5% Reverse Charge (RCM) vs 12% Forward Charge",
+        "Consignor Detention, Transit Damage Claim Settlement & Fleet Maintenance Ledger"
+      ],
+      "softwareUsed": [
+        "Tally Prime Transport & Fleet Edition",
+        "Logistics TMS Simulator",
+        "Excel 365 Trip P&L & Diesel Mileage Tracker"
+      ],
+      "learningObjectives": [
+        "Generate statutory Consignment Notes (Bilty/LR) with freight rates, detention terms, and E-Way bill linkage",
+        "Track trip expenses comparing driver cash advances against diesel slips, FASTag toll statements, and en route weighbridge receipts",
+        "Manage Section 194C TDS compliance on third-party market vehicle freights, verifying non-deduction declarations under Section 194C(6)",
+        "Account for Goods Transport Agency (GTA) tax compliance differentiating 5% RCM billed clients from 12% forward charge clients"
+      ],
+      "businessScenario": "Managing logistics finance for 'GatiShakti Commercial Freight' moving 500+ truckloads monthly across industrial freight corridors. The freight accountant must calculate vehicle freight billing, issue loading bilty documents, verify driver fuel slips from partner petrol pumps, audit FASTag toll passings, calculate hired market truck hire charges net of Section 194C TDS, and prepare trip profitability sheets for each container vehicle.",
+      "tasksToComplete": [
+        "Generate 30 interstate freight bilty (LR) vouchers with complete consignment details, freight rates, and E-Way bills",
+        "Prepare vehicle trip settlement sheet reconciling driver advance, diesel pump credit bills, FASTag toll debits, and driver bata",
+        "Process 15 hired truck freight payments, applying Section 194C TDS or recording Form 43B declarations",
+        "Generate monthly freight bills for industrial consignors with loading/unloading detention penalties",
+        "Compile Fleet Vehicle Trip Profitability Statement (Freight Earnings vs Total Trip Operational Cost)"
+      ],
+      "expectedOutcomes": [
+        "Goods Consignment Note (Bilty / LR) Register & Freight Sales Daybook",
+        "Vehicle Trip Settlement & Diesel Fuel Economy Mileage Audit Sheet",
+        "Hired Truck Contractor Freight & Section 194C TDS Deduction Statement",
+        "Monthly Freight Fleet Operating Profitability & Vehicle Utilization Report"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-7",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Freight Logistics Transport & Fleet Architecture",
+          "type": "image/png",
+          "size": "3.7 MB",
+          "caption": "Bilty creation, trip costing, diesel reconciliation, Section 194C TDS, and GTA compliance"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-13",
+          "title": "Freight Logistics & Transport Fleet Practical Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "91 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-14",
+          "title": "Fleet Trip P&L, Diesel Mileage & Section 194C TDS Calculator (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "164 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 28,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 23,
+      "createdAt": "2026-03-01",
+      "updatedAt": "2026-03-28"
+    },
+    {
+      "id": "proj-serv-8",
+      "slug": "shatabdi-travels-passenger-bus-fleet-accounting",
+      "title": "Shatabdi Travels: Intercity Passenger Bus Fleet Operations, Daily Trip Sheets, Online Seat Booking Portal & Bus Maintenance",
+      "shortDescription": "Intercity luxury AC sleeper & Volvo bus fleet passenger transport accounting: Daily trip collection sheets, RedBus / AbhiBus online portal seat booking reconciliations, driver/conductor diesel hisab, RTO road taxes, and bus overhaul costing.",
+      "detailedDescription": "Step into the operations control center of 'Shatabdi Travels & Fleet Lines', simulating a prominent interstate luxury passenger bus company operating a fleet of 35 multi-axle Volvo and BharatBenz AC sleeper buses across 18 high-density routes (e.g. Kanpur-Delhi, Lucknow-Jaipur, Varanasi-Gorakhpur). Students master passenger transport accounting: reconciling counter ticket window sales with online bus aggregator booking platforms (RedBus, AbhiBus, Paytm), deducting 10%-15% portal commissions and Section 194-O e-commerce TDS, daily trip collection sheets submitted by conductors, tracking bus-wise diesel consumption mileage (km/liter), toll tax FASTag expenses, en route passenger pickup agent commissions, managing driver/crew night halt allowances, RTO passenger tax and quarterly state road permit fees, booking tyre retreading and engine overhaul costs, and GST compliance on passenger transport (5% without ITC on AC buses).",
+      "industryCategory": "Service Industry",
+      "accountingCategory": "Passenger Transport & Bus Fleet Fleet Operations Accounting",
+      "difficultyLevel": "Intermediate",
+      "skillsCovered": [
+        "Daily Conductor Trip Sheet Settlement: Cash, Counter Bookings & Waybill Balance",
+        "RedBus / AbhiBus / OTA Online Seat Booking Reconciliation & Section 194-O TDS",
+        "Bus-Wise Diesel Consumption Mileage & Route Profitability Analysis",
+        "RTO State Road Permit Fees, Commercial Insurance & Fleet Maintenance Costing",
+        "Passenger Transport GST (5% Non-ITC AC Bus Slab) & Agent Commission Payouts"
+      ],
+      "softwareUsed": [
+        "Tally Prime Fleet Management",
+        "Online Bus Ticket Portal Simulator",
+        "Excel 365 Shatabdi Bus Trip P&L Tracker"
+      ],
+      "learningObjectives": [
+        "Reconcile daily bus conductor trip waybills comparing physical passenger manifests against cash handed over at terminal depots",
+        "Audit online booking portal remittances from RedBus and AbhiBus validating portal commission cuts and Section 194-O TDS deductions",
+        "Compute exact fuel mileage (kilometers per liter) per bus route to detect fuel theft and driver diesel pilferage",
+        "Account for statutory commercial vehicle expenditures including RTO quarterly passenger tax, fitness renewals, and insurance amortization"
+      ],
+      "businessScenario": "Managing financial administration for 'Shatabdi Travels' running 35 luxury AC buses carrying over 1,400 passengers daily on interstate highways. The fleet accountant must audit conductor trip envelopes containing physical cash and booking manifests, reconcile daily remittances from RedBus/Paytm APIs, verify diesel station credit accounts, record quarterly RTO road permit taxes, and calculate route-wise profitability.",
+      "tasksToComplete": [
+        "Audit 20 daily bus conductor waybills reconciling counter bookings, en route passenger boarding, and cash deposits",
+        "Reconcile weekly RedBus / AbhiBus portal payout statements against passenger seat charts net of 12% commission and Section 194-O TDS",
+        "Calculate diesel mileage and fuel cost per kilometer for 10 intercity routes (Kanpur-Delhi, Lucknow-Jaipur)",
+        "Record quarterly RTO passenger tax and vehicle comprehensive insurance premium amortization entries",
+        "Prepare Route-Wise Shatabdi Passenger Fleet Profit & Loss Statement (Ticket Revenue vs Operational Cost)"
+      ],
+      "expectedOutcomes": [
+        "Bus Conductor Daily Trip Waybill Settlement & Cash Reconciliation Register",
+        "Online Bus Booking Portal (RedBus / OTA) Settlement & TDS Reconciliation Sheet",
+        "Fleet Diesel Mileage Performance & Fuel Economy Audit Schedule",
+        "Route-Wise Shatabdi Passenger Transport Operating P&L Report"
+      ],
+      "coverImageUrl": "/images/ylcc_tds_brochure_slate_copper.png",
+      "media": [
+        {
+          "id": "med-s-8",
+          "url": "/images/ylcc_tds_brochure_slate_copper.png",
+          "name": "Shatabdi Travels Bus Fleet Operations Cycle",
+          "type": "image/png",
+          "size": "3.4 MB",
+          "caption": "Conductor waybills, online portal booking reconciliations, diesel mileage, and RTO taxes"
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-s-15",
+          "title": "Passenger Transport & Bus Fleet Operations Accounting Dossier",
+          "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
+          "fileType": "pdf",
+          "fileSize": "85 KB",
+          "isDownloadable": true
+        },
+        {
+          "id": "res-s-16",
+          "title": "Bus Route Trip P&L, Diesel Mileage & OTA Portal Reconciler (Excel)",
+          "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+          "fileType": "xlsx",
+          "fileSize": "152 KB",
+          "isDownloadable": true
+        }
+      ],
+      "practiceTimeHours": 26,
+      "academicYear": "2025-26",
+      "facultyMentor": "Rajesh Soni",
+      "isFeatured": true,
+      "status": "published",
+      "displayOrder": 24,
+      "createdAt": "2026-03-05",
+      "updatedAt": "2026-03-28"
     }
   ],
   "faculty": [

@@ -18,6 +18,7 @@ import {
   Sparkles,
   Scale,
   Store,
+  Wrench,
 } from 'lucide-react';
 import { Project } from '@/types';
 
@@ -33,8 +34,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   const industries = useMemo(() => {
     const set = new Set(projects.map((p) => p.industryCategory));
     const list = Array.from(set);
-    // Position Manufacturing first, Legal second, Traders third
-    const order = ['Manufacturing Industry', 'Legal & Taxation', 'Traders Industry'];
+    // Position Manufacturing first, Legal second, Traders third, Service fourth
+    const order = ['Manufacturing Industry', 'Legal & Taxation', 'Traders Industry', 'Service Industry'];
     list.sort((a, b) => {
       const idxA = order.indexOf(a);
       const idxB = order.indexOf(b);
@@ -68,6 +69,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
   const isMfgOnlyView = selectedIndustry === 'Manufacturing Industry' && !search.trim() && selectedDifficulty === 'All';
   const isLegalOnlyView = selectedIndustry === 'Legal & Taxation' && !search.trim() && selectedDifficulty === 'All';
   const isTraderOnlyView = selectedIndustry === 'Traders Industry' && !search.trim() && selectedDifficulty === 'All';
+  const isServiceOnlyView = selectedIndustry === 'Service Industry' && !search.trim() && selectedDifficulty === 'All';
 
   const manufacturingProjects = useMemo(() => {
     return filtered.filter((p) => p.industryCategory === 'Manufacturing Industry');
@@ -81,10 +83,15 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
     return filtered.filter((p) => p.industryCategory === 'Traders Industry');
   }, [filtered]);
 
+  const serviceProjects = useMemo(() => {
+    return filtered.filter((p) => p.industryCategory === 'Service Industry');
+  }, [filtered]);
+
   const renderProjectCard = (proj: Project) => {
     const isMfg = proj.industryCategory === 'Manufacturing Industry';
     const isLegal = proj.industryCategory === 'Legal & Taxation';
     const isTrader = proj.industryCategory === 'Traders Industry';
+    const isService = proj.industryCategory === 'Service Industry';
     return (
       <div
         key={proj.id}
@@ -98,6 +105,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
                 {isMfg && <Factory className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {isLegal && <Scale className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {isTrader && <Store className="w-3.5 h-3.5 text-[#C4AE96]" />}
+                {isService && <Wrench className="w-3.5 h-3.5 text-[#C4AE96]" />}
                 {proj.industryCategory}
               </span>
               <span className="bg-[#8B5A2B] text-white px-2 py-0.5 rounded text-[10px] font-semibold">
@@ -211,6 +219,7 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               {ind === 'Manufacturing Industry' && <Factory className="w-3 h-3" />}
               {ind === 'Legal & Taxation' && <Scale className="w-3 h-3" />}
               {ind === 'Traders Industry' && <Store className="w-3 h-3" />}
+              {ind === 'Service Industry' && <Wrench className="w-3 h-3" />}
               {ind}
             </button>
           ))}
@@ -234,8 +243,8 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
             Reset all filters
           </button>
         </div>
-      ) : isDefaultView || isMfgOnlyView || isLegalOnlyView ? (
-        /* Sectioned View: MANUFACTURING INDUSTRY and/or LEGAL & TAXATION */
+      ) : isDefaultView || isMfgOnlyView || isLegalOnlyView || isTraderOnlyView || isServiceOnlyView ? (
+        /* Sectioned View: MANUFACTURING, LEGAL & TAXATION, TRADERS, and SERVICE INDUSTRY */
         <div className="space-y-12">
           {/* Section 1: MANUFACTURING INDUSTRY */}
           {(isDefaultView || isMfgOnlyView) && (
@@ -327,6 +336,37 @@ export default function ProjectsListClient({ projects }: ProjectsListClientProps
               {/* Traders Industry Projects Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {traderProjects.map((proj) => renderProjectCard(proj))}
+              </div>
+            </div>
+          )}
+
+          {/* Section 4: SERVICE INDUSTRY */}
+          {(isDefaultView || isServiceOnlyView) && serviceProjects.length > 0 && (
+            <div id="service-industry-section" className={isDefaultView ? "pt-12 space-y-8" : "space-y-8"}>
+              <div className={`${isDefaultView ? "border-t-2 border-dashed border-[#D8C5B2] pt-12" : "py-6 sm:py-8"} text-center space-y-4`}>
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E5D8CA] text-[#78716C] text-xs font-bold uppercase tracking-wider">
+                  <Wrench className="w-4 h-4 text-[#8B5A2B]" />
+                  <span>Professional, Commercial &amp; Hospitality Services</span>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#2A1810]">
+                  SERVICE INDUSTRY
+                </h2>
+
+                <div className="w-20 h-0.5 bg-[#D8C5B2] mx-auto rounded-full" />
+
+                <p className="text-xs sm:text-sm text-[#57534E] max-w-2xl mx-auto leading-relaxed">
+                  Real-world service sector accounting: Two-wheeler Activa &amp; mobile service centers, College fee reconciliations, Tour &amp; Travels, Salon chains, Hotel hospitality, Freight logistics, and Shatabdi passenger bus fleet trip costing.
+                </p>
+
+                <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#78716C] bg-white px-3 py-1 rounded-full border border-[#E5D8CA]">
+                  <span>{serviceProjects.length} Practical Projects</span>
+                </div>
+              </div>
+
+              {/* Service Industry Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {serviceProjects.map((proj) => renderProjectCard(proj))}
               </div>
             </div>
           )}

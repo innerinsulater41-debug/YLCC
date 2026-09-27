@@ -253,6 +253,15 @@ export const db = {
     ) {
       return data.projects.find((p) => p.id === 'proj-3') || null;
     }
+    // Support legacy slug and aliases for Corporate Payroll project
+    if (
+      slug === 'service-centre-multi-job-accounting' ||
+      slug === 'payroll' ||
+      slug === 'corporate-payroll' ||
+      slug === 'payroll-statutory-compliance'
+    ) {
+      return data.projects.find((p) => p.id === 'proj-4') || null;
+    }
     return null;
   },
   saveProject: async (project: Project): Promise<Project> => {

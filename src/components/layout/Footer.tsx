@@ -173,7 +173,7 @@ export default function Footer({ settings }: FooterProps) {
                 • Corporate TDS & TCS Compliance
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
-                • Automobile Service Centre Jobs
+                • Corporate Payroll & Labour Laws
               </Link>
               <Link href="/projects" className="hover:text-white transition-colors">
                 • Hotel & Banquet Operations

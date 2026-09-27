@@ -37,7 +37,7 @@ Every student practices complete financial years across 30 authentic Indian indu
 1. **GSTR-3B & GSTR-2B: Live Portal Matching, ITC Reconciliations & Tax Settlement** (Purchase register 2B Milan, Section 17(5) blocked credit, Rule 88A tax offset, DRC-01B/C replies)
 2. **GSTR-1 & E-Invoicing: Outward Supplies, B2B/B2C Reporting & IRP Integration** (Table 4 B2B, Table 5/7 B2C, Table 9 Amendments, Table 12 HSN)
 3. **Corporate TDS & TCS: Multi-Section Deductions, Challan 281, Form 26Q/24Q & TRACES Portal** (Withholding 194C/J/I/Q/R, Challan 281, Form 26Q/24Q, TRACES 16/16A)
-4. **Automobile & Electronics Service Centre Multi-Job Accounting** (Job Cards, spare parts inventory, OEM warranty claims)
+4. **Corporate Payroll: EPF ECR, ESIC, Professional Tax, Gratuity & Section 192 TDS** (CTC modeling, biometric punch, ECR text upload, ESIC, PT, Bonus, 192 TDS)
 5. **Hotel & Hospitality Multi-Revenue Accounting** (Guest folios, night audit, restaurant POS, OTA commission 194O reconciliations)
 6. **FMCG Wholesale & Multi-Tier Distributor Network Accounting** (Primary vs secondary sales, manufacturer scheme claims, beat collections)
 7. **Comprehensive GST Business Practice Project** (B2B, B2C, SEZ, RCM, monthly GSTR-2B Milan and GSTR-3B offset)

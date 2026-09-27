@@ -2916,70 +2916,85 @@ export const initialProjects: Project[] = [
   },
   {
     "id": "proj-4",
-    "slug": "service-centre-multi-job-accounting",
-    "title": "Automobile & Electronics Service Centre Multi-Job Accounting",
-    "shortDescription": "Financial operations for authorized service centres: Job Card billing, spare parts inventory, labour charges, warranty claims reimbursement, and insurance accidental repairs.",
-    "detailedDescription": "Service centres blend physical spare parts sales with skilled labour services. This project covers \"Apex Auto Care & Authorized Service Hub\". You will track Job Cards from vehicle intake to gate pass, account for replacement spare parts at MRP, calculate mechanic labour charges, bill insurance survey accidental damages, and process warranty claims submitted to OEM manufacturers.",
-    "industryCategory": "Automobile & Consumer Electronics",
-    "accountingCategory": "Job-Card & Hybrid Sales-Service",
-    "difficultyLevel": "Intermediate",
+    "slug": "corporate-payroll-labour-law-statutory-compliance",
+    "title": "Corporate Payroll: EPF ECR, ESIC, Professional Tax, Gratuity & Section 192 TDS",
+    "shortDescription": "End-to-end corporate payroll & labour law compliance: CTC breakup, monthly attendance & overtime, EPF unified portal ECR upload, ESIC return filings, Professional Tax (PT), Payment of Bonus Act, Gratuity actuarial calculations, and Section 192 Salary TDS.",
+    "detailedDescription": "In this comprehensive direct labour & statutory compliance simulation, students step into the role of a Corporate Payroll & Compliance Specialist for 'Stallion Industrial Enterprises & Services Corp' (managing 250+ corporate employees across plant technicians, sales executives, and executive management). You take full ownership of the entire monthly payroll lifecycle: architecting tax-efficient Cost-to-Company (CTC) compensation structures (Basic Pay, HRA, Conveyance, Special Allowance, Food Coupons, LTA, and NPS under Section 80CCD(2)); computing gross salary from biometric punch logs, leave balances, and overtime hours under the Factories Act; calculating employee and employer statutory EPF contributions (12% employee, 3.67% EPF, 8.33% EPS, 0.5% EDLI, 0.5% Admin Charges) on the ₹15,000 statutory wage ceiling; generating and validating Electronic Challan cum Return (ECR) text files for bulk upload on the EPFO Unified Shram Suvidha Portal; computing ESIC contributions (0.75% employee + 3.25% employer) on gross wages below the ₹21,000 threshold and generating monthly IP contribution challans; deducting State-wise Professional Tax (PT slabs); calculating annual statutory bonus under the Payment of Bonus Act (8.33% to 20%); provisioning employee gratuity under the Payment of Gratuity Act (15 days' wages for every completed year of service); computing monthly employee withholding tax under Section 192 comparing Old vs New Tax Regime (Section 115BAC) taking into account declarations (Form 12BB), Section 80C, 80D, 24(b) home loan interest, and rebates; and issuing authenticated monthly pay slips with complete statutory breakdown.",
+    "industryCategory": "Legal & Taxation",
+    "accountingCategory": "Payroll & Labour Law Statutory Compliance",
+    "difficultyLevel": "Advanced",
     "skillsCovered": [
-      "Job Card Accounting & Labour Cost Allocation",
-      "Spare Parts Inventory & Counter Sales",
-      "OEM Warranty Claims Processing & Credit Notes",
-      "Accidental Insurance Surveyor Bill Settlement",
-      "Mixed GST Rates (18% Labour vs 28% Auto Spares)"
+      "CTC Compensation Structuring & Tax-Exempt Allowances (HRA, LTA, NPS 80CCD)",
+      "EPF Unified Portal: ECR Text File Generation, Contribution Challan & UAN Linking",
+      "ESIC Portal: Monthly Return Filing, IP Contribution Challan & Wage Ceiling Audit",
+      "Section 192 Salary TDS & Form 12BB Proofs (Old vs New Regime 115BAC)",
+      "State-Wise Professional Tax (PT) Slabs & Monthly Return Challans",
+      "Payment of Bonus Act (Allocable Surplus) & Payment of Gratuity Computations"
     ],
     "softwareUsed": [
-      "Tally Prime Job Costing",
-      "Automotive Workshop ERP Worksheets"
+      "EPFO Unified Employer Portal Simulator",
+      "ESIC Corporate Insurance Portal",
+      "Excel Corporate Payroll Master & CTC Modeling Engine",
+      "Tally Prime 4.0 Payroll & Statutory Module",
+      "Income Tax Section 192 / Form 12BB Tax Calculator"
     ],
     "learningObjectives": [
-      "Differentiate tax rates between spare parts (28%) and servicing labour (18%) on a single tax invoice",
-      "Account for warranty spare replacements reimbursed by the manufacturing company via credit note",
-      "Reconcile cashless accidental repair claims approved by General Insurance companies"
+      "Design tax-optimized CTC salary structures maximizing take-home pay while complying with the Code on Wages",
+      "Generate EPFO Electronic Challan cum Return (ECR) text format and reconcile UAN member contributions before the 15th monthly deadline",
+      "File monthly ESIC wage returns, generate online contribution payment challans, and maintain statutory registers (Form D, Form T)",
+      "Compute accurate monthly Section 192 TDS deductions under Section 115BAC New Tax Regime vs Old Regime and generate employee Form 16 Part B"
     ],
-    "businessScenario": "Apex Auto Care services 45 vehicles daily. Every repair order originates as a Job Card with mechanic assignment, parts requisitions from the parts store, and outside lathe work. Insurance repairs require surveyor re-inspection and liability split between customer and insurer.",
+    "businessScenario": "Stallion Industrial Enterprises & Services Corp employs 250 personnel comprising 140 factory workers earning wages below ₹21,000 (qualifying for ESIC and EPF), 80 corporate staff earning above statutory wage ceilings, and 30 senior executives. On the 1st of every month, biometric attendance, unpaid leave (LWP), and night shift overtime must be compiled. The payroll desk must compute exact net take-home pay, deduct statutory dues (EPF, ESIC, PT, TDS), upload ECR on the EPFO unified portal, file ESIC returns before the 15th, and disburse bank salary NEFT files without labour law non-compliance notices.",
     "tasksToComplete": [
-      "Convert completed Job Cards into statutory GST tax invoices with dual tax slabs",
-      "Record OEM warranty claims and reconcile manufacturer reimbursement credit notes",
-      "Perform monthly spare parts store physical inventory audit and write off scrap",
-      "Track technician efficiency and calculate monthly performance incentives"
+      "Process monthly biometric attendance records, calculate LWP pay cuts, overtime wages, and gross earnings for 250 employees in Excel",
+      "Apply statutory contribution formulas for EPF (Accounts 1, 2, 10, 21, 22) and generate error-free ECR text file for EPFO portal upload",
+      "Audit gross wages against the ₹21,000 ESIC ceiling, calculate monthly 4% combined contribution, and generate online ESIC payment challan",
+      "Evaluate employee investment declarations (Form 12BB: 80C, 80D, HRA rent receipts, home loan interest) and calculate Section 192 TDS under Old vs 115BAC New Regime",
+      "Compute annual statutory bonus provision under the Payment of Bonus Act and calculate gratuity liability for retiring staff"
     ],
     "expectedOutcomes": [
-      "Consolidated workshop profitability statement with parts margin vs labour margin",
-      "Reconciled insurance cashless claims ledger",
-      "Accurate auto spare parts inventory with reorder level warnings"
+      "Master Payroll Summary & Individual PDF Salary Slips with Statutory Breakup",
+      "Validated EPFO ECR File (.txt) & Electronic Challan Receipt",
+      "Monthly ESIC Return File & State-Wise Professional Tax Challan Register",
+      "Form 24Q Salary Annexure II Tax Working Sheet & Form 16 Part B Proforma"
     ],
     "coverImageUrl": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
     "media": [
       {
         "id": "med-4-1",
         "url": "/images/ylcc_tds_brochure_espresso_sage_improved.png",
-        "name": "Service Centre Workflow",
+        "name": "Corporate Payroll & Statutory Architecture",
         "type": "image/png",
         "size": "2.8 MB",
-        "caption": "Automotive job card, spare parts stock, and insurance billing workflow"
+        "caption": "Corporate CTC structuring, EPF ECR generation, ESIC compliance, and Section 192 TDS"
       }
     ],
     "resources": [
       {
         "id": "res-4-1",
-        "title": "Service Centre Accounting & Job Card Project Case Study",
+        "title": "Corporate Payroll & Labour Law Statutory Compliance Dossier",
         "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
         "fileType": "pdf",
-        "fileSize": "59 KB",
+        "fileSize": "85 KB",
+        "isDownloadable": true
+      },
+      {
+        "id": "res-4-2",
+        "title": "Automated Corporate Payroll, ECR Text Generator & 115BAC TDS Engine (Excel)",
+        "url": "/sample-docs/YLCC-Course-Accounts-Operator-Manager.pdf",
+        "fileType": "xlsx",
+        "fileSize": "175 KB",
         "isDownloadable": true
       }
     ],
-    "practiceTimeHours": 22,
+    "practiceTimeHours": 26,
     "academicYear": "2025-26",
-    "facultyMentor": "Rajesh Soni",
-    "isFeatured": false,
+    "facultyMentor": "CA Alok Maheshwari",
+    "isFeatured": true,
     "status": "published",
     "displayOrder": 13,
     "createdAt": "2025-10-25",
-    "updatedAt": "2026-01-18"
+    "updatedAt": "2026-03-01"
   },
   {
     "id": "proj-5",
@@ -4155,7 +4170,7 @@ export const initialFAQs: FAQ[] = [
     category: 'Practical Projects',
     question: 'What are the 30 Multi-Business Practical Projects?',
     answer:
-      'The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, GSTR-1 & E-Invoicing outward reporting, Corporate TDS & TCS withholding & TRACES compliance, Automobile service centres, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model).',
+      'The 30 practical projects simulate complete financial years for real-world businesses: GSTR-3B & GSTR-2B live portal matching & return filing, GSTR-1 & E-Invoicing outward reporting, Corporate TDS & TCS withholding & TRACES compliance, Corporate Payroll & Labour Law compliance, Boutique hotels, FMCG wholesale distribution, live GST B2B/B2C filings, Corporate TDS/TCS quarterly compliance, Banking CC Limit/CMA proposals, Corporate payroll for 100+ employees, Furniture showroom custom costing, Architect project billing, Real estate builder site costing, Job-worker inventory control, Government thekedar infrastructure tender costing, and Multi-branch franchise chain accounting (Javed Habib model).',
   },
   {
     id: 'faq-4',

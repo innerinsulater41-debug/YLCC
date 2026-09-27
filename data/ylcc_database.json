@@ -2177,68 +2177,72 @@
     },
     {
       "id": "proj-mfg-5",
-      "slug": "plastic-polymers-injection-moulding-costing",
-      "title": "Plastic Polymers & Injection Moulding: Regrind Scrap & Unit Costing",
-      "shortDescription": "High-speed injection & blow moulding factory accounting: virgin polymer granules (HDPE/PP/PET) & masterbatch BOM, machine tonnage hour rates, mould tooling amortization per shot, and runner regrind scrap recycling.",
-      "detailedDescription": "Plastic container and component manufacturing requires precision tracking of machine cycle times and material regrinding. In this project for \"NeoPlast Polymers & Packaging\", students calculate the cost of manufacturing rigid containers, caps, and industrial crates. You will track raw polymer granules (PP, HDPE, PET) and color masterbatches, calculate Machine Hour Rate (MHR) across 150-ton to 450-ton injection machines, amortize customer-specific mould tooling costs per shot, and account for runner regrind reuse without compromising tensile specifications.",
+      "slug": "modular-interior-fitout-manufacturing-costing",
+      "title": "Modular Interior Manufacturing: CNC Nesting, Edge-Banding & Sq.Ft Costing",
+      "shortDescription": "End-to-end factory accounting for an automated modular interior & architectural fit-out plant: HDHMR/Plywood sheet nesting, CNC routing, PVC edge-banding, Blum/Hettich hardware BOM, sheet off-cut scrap recovery, and per-square-foot (Sq.Ft) carcass/shutter costing.",
+      "detailedDescription": "In this comprehensive industrial accounting simulation, students take charge of manufacturing accounts for 'Spaceline Modular Interiors & Architectural Fit-Outs Pvt. Ltd.', a modern interior factory manufacturing modular kitchens, commercial office workstations, wardrobes, and acoustic wall panels. Students configure multi-level Bills of Material (BOM) in Tally Prime Manufacturing, record bulk sheet issuance (8x4 BWP Marine Plywood, HDHMR boards, acrylic and matte laminates) by square meter and sheet count, calculate CNC beam-saw cutting optimization yield and off-cut board salvage accounting (distinguishing reusable off-cuts from scrap), apportion hot-melt PUR edge-banding adhesives and premium architectural hardware (soft-close tandem drawers, concealed hinges, aluminium profile handles), allocate CNC machine hour rates (MHR) and PU lacquer spray booth overheads, and derive accurate finished cost per square foot (Sq.Ft) for knock-down (CKD) modular client deliveries.",
       "industryCategory": "Manufacturing Industry",
-      "accountingCategory": "Machine Hour Rate & Scrap Regrinding",
+      "accountingCategory": "Modular Sheet Nesting & Sq.Ft Process Costing",
       "difficultyLevel": "Intermediate",
       "skillsCovered": [
-        "Virgin Resin (HDPE/PP/PET) & Masterbatch Pigment BOM",
-        "Machine Hour Rate (MHR) Computation for Injection Moulding Presses",
-        "Mould Die Tooling Depreciation & Per-Shot Amortization",
-        "Sprue & Runner Scrap Regrinding, Blending Ratio & Valuation",
-        "Per-Gram Finished Component Costing & Minimum Order Quantity (MOQ)"
+        "Multi-Level Modular Interior BOM (Carcass Boards, Laminates & Hardware)",
+        "CNC Beam Saw 2D Sheet Nesting Yield & Off-Cut Scrap Accounting",
+        "High-Speed PVC Edge-Banding & PUR Hot-Melt Adhesive Consumption",
+        "Architectural Hardware Fitting BOM (Blum/Hettich Hinges & Channels)",
+        "CNC Machine Hour Rate (MHR) & PU Paint Spray Booth Cost Absorption",
+        "Per-Square-Foot (Sq.Ft) Finished Carcass & Shutter Unit Costing"
       ],
       "softwareUsed": [
         "Tally Prime Manufacturing",
-        "MHR Excel Modeling Sheet",
-        "Plastic Molding Estimator"
+        "Interior CAD/CAM Nesting ERP Simulator",
+        "Excel Sq.Ft Modular Costing Engine"
       ],
       "learningObjectives": [
-        "Calculate exact machine hourly operating cost including 3-phase electric power and chiller units",
-        "Value recycled regrind plastic resin versus virgin prime raw material",
-        "Derive quote prices per 1,000 units based on component weight in grams and cycle time in seconds"
+        "Configure compound multi-stage Bills of Materials (BOM) in Tally Prime converting raw 8x4 sheet materials into modular cabinets measured in Square Feet (Sq.Ft) and Running Feet (Rft)",
+        "Implement 2D cutting nest yield accounting to compute standard board wastage (8% - 12%) and establish a salvage register for reusable off-cut board pieces",
+        "Apportion architectural hardware kits (soft-close clip-on hinges, hydraulic lift-ups, telescopic channels) and edge-banding tape per linear meter of carcass",
+        "Calculate CNC Router and Edge-Bander Machine Hour Rates (MHR) and determine landed production cost per Sq.Ft for modular kitchen carcasses, acrylic shutters, and wardrobe units"
       ],
-      "businessScenario": "NeoPlast operates 8 automatic injection moulding machines manufacturing bottle caps and paint containers. Client moulds are kept under custody for exclusive production runs. Raw material prices change fortnightly based on Reliance polymer index.",
+      "businessScenario": "Simulating 'Spaceline Modular Interiors & Architectural Fit-Outs Pvt. Ltd.', an automated interior manufacturing facility producing 35,000 square feet of customized modular interior units monthly for luxury residential towers, corporate IT offices, and retail showrooms. The factory operates beam saws, 5-axis CNC machining centers, automated through-feed edge banders, and dust-free PU lacquer finishing spray booths. Raw materials include 8x4 foot calibrated marine ply, 18mm HDHMR, 1mm decorative laminates, 2mm PVC edge bands, and specialized architectural hardware fittings. Students manage factory production accounts: fluctuating wood panel rates, sheet cutting scrap vs reusable off-cuts, edge-bander glue pot consumption, machine hour overheads, flat-pack protective packaging (corner guards, air-bubble wrap, 5-ply cartons), and site installation dispatch billing.",
       "tasksToComplete": [
-        "Establish BOM for 500ml lubricant container with flip-top cap",
-        "Compute hourly cost rate for a 250-Ton Toshiba injection moulding machine",
-        "Record grinding of runner waste into re-usable flakes and pass blended consumption vouchers",
-        "Generate customer quotation comparing 100% virgin polymer vs 20% recycled blend"
+        "Configure multi-level BOM in Tally Prime for 3 flagship modular lines: High-Gloss Acrylic Modular Kitchen, 4-Door Sliding Wardrobe with Vanity, and Acoustic Fluted Wall Paneling",
+        "Record Raw Material Requisition and Godown Transfer Vouchers for 8x4 boards, laminates, and adhesive barrels from Central Raw Stores to the CNC Cutting Floor",
+        "Pass Multi-Stage Manufacturing Journals for Beam Saw Cutting, CNC 32mm System Drilling, and PVC Edge-Banding with 9.5% standard cutting scrap accounting",
+        "Allocate PU spray painting booth power, compressor overheads, and machine hour rates across custom lacquered shutter batches",
+        "Prepare Job-wise Modular Interior Cost Sheet, calculate landed cost per Square Foot (Sq.Ft), and reconcile finished CKD flat-pack pallets with client delivery dispatch notes"
       ],
       "expectedOutcomes": [
-        "Machine Hour Rate (MHR) master calculation worksheet",
-        "Scrap generation, regrinding and stock reconciliation register",
-        "Component piece-cost card showing weight, cycle time, and margin"
+        "Modular Interior Batch Production & Stock Consumption Register in Tally Prime",
+        "Board Nesting Yield & Usable Off-Cut Salvage Reconciliation Statement",
+        "Square-Foot (Sq.Ft) Carcass & Shutter Unit Costing Model with Hardware Breakdown",
+        "Commercial Client Fit-Out Job Cost Sheet & Site Delivery Dispatch Summary"
       ],
       "coverImageUrl": "/images/ylcc_tds_brochure_v2.png",
       "media": [
         {
           "id": "med-mfg-5",
           "url": "/images/ylcc_tds_brochure_v2.png",
-          "name": "Plastic Moulding MHR Model",
+          "name": "Modular Interior Manufacturing BOM & Workflow Diagram",
           "type": "image/png",
           "size": "3.7 MB",
-          "caption": "Machine hour rate breakdown, mould amortization, and regrind blending balance"
+          "caption": "Sheet nesting, edge-banding, architectural hardware BOM, and Sq.Ft costing structure"
         }
       ],
       "resources": [
         {
           "id": "res-mfg-5-1",
-          "title": "Plastic Injection Moulding Plant Accounting & Costing Guide",
+          "title": "Modular Interior & Fit-Out Manufacturing Factory Costing SOP Guide",
           "url": "/sample-docs/YLCC-Course-Costing-Excel.pdf",
           "fileType": "pdf",
-          "fileSize": "61 KB",
+          "fileSize": "70 KB",
           "isDownloadable": true
         },
         {
           "id": "res-mfg-5-2",
-          "title": "Machine Hour Rate (MHR) & Mould Tooling Amortization Calculator",
+          "title": "Board Nesting Yield & Square-Foot (Sq.Ft) Interior Cost Calculator (Excel)",
           "url": "/sample-docs/YLCC-16-Multi-Business-Practical-Projects.pdf",
           "fileType": "xlsx",
-          "fileSize": "138 KB",
+          "fileSize": "155 KB",
           "isDownloadable": true
         }
       ],
